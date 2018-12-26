@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="com.example.hassannaqvi.leaps_scaleup.ui.EndingActivity" />
+            type="com.example.hassannaqvi.fas.ui.EndingActivity" />
     </data>
 
     <ScrollView

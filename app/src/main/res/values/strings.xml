@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LEAPS Scale up</string>
+    <string name="app_name">Facility Audit Study</string>
 
     <!--copied Strings for splash, login and main screen-->
     <string name="action_sign_in_short">Sign in</string>
@@ -15,11 +15,12 @@
     <string name="no"> نه </string>
     <string name="dkn"> خبر ناهي </string>-->
 
+
     <string name="seconds">Seconds</string>
 
-    <string name="yes"> ھا </string>
-    <string name="no"> نہ </string>
-    <string name="dkn"> خبر نه آھي </string>
+    <string name="yes"> ہاں </string>
+    <string name="no"> نہیں </string>
+    <string name="dkn"> معلوم نہیں</string>
     <string name="not_applicable">	غير موضوع</string>
     <string name="sometimes">	ڪڏهن ڪڏهن   </string>
 
@@ -33,7 +34,7 @@
     <string name="often">اڪثر ڪري</string>
     <string name="almostA">هميشه</string>
 
-    <string name="other"> ٻيو ڪجھ </string>
+    <string name="other"> دیگر /تفصیل </string>
     <string name="month"> مهينا </string>
     <string name="year"> سال </string>
     <string name="day"> دن </string>
@@ -51,6 +52,166 @@
     <string name="nextSection">ايندڙ سيڪشن</string>
     <string name="end_interview">ختم ڪيو</string>
     <string name="addMember">افراد کا اندراج</string>
+
+    <!--Tool 1-->
+
+    <!--Section A-->
+
+    <string name="tool1">PRE, QUARTERLY, POST INTERVENTION HEALTH FACILITY ASSESSMENT</string>
+
+    <string name="section1">GENERAL INFORMATION</string>
+    <string name="fas01a00">سروے نمبر</string>
+    <string name="fas01a00a">انٹرونشن سے پہلے </string>
+    <string name="fas01a00b"> دوسرے کواٹر میں </string>
+    <string name="fas01a00c">تیسرے کواٹر میں </string>
+    <string name="fas01a00d"> انٹرونشن کے بعد</string>
+
+    <string name="fas01a02">مرکزِ صحت کا نام</string>
+    <string name="fas01a03">مرکزِ صحت کس جگہ واقع ہے</string>
+    <string name="fas01a03a">ضلع/علاقہ/صوبہ      </string>
+    <string name="fas01a03b">ڈسٹرکٹ </string>
+    <string name="fas01a03c">تحصیل  </string>
+    <string name="fas01a03d">یونین کونسل</string>
+    <string name="fas01a03e">گاؤں </string>
+    <string name="fas01a04">مرکزِ صحت کی اقسام</string>
+    <string name="fas01a04a">گورنمنٹ           </string>
+    <string name="fas01a04b"> اے کے ایچ ایس پی</string>
+
+    <string name="fas01a05">مرکزِ صحت کس معیار کا ہے </string>
+    <string name="fas01a05a">پرائمری            </string>
+    <string name="fas01a05b">سیکنڈری        </string>
+    <string name="fas01a05c">ٹرشری             </string>
+
+    <!--Section B include in section A-->
+    <string name="fas01a06">Do I have your agreement to proceed?</string>
+
+    <!--Section C-->
+
+    <string name="fas01c01">ہسپتال میں داخلوں کی تعداد</string>
+    <string name="fas01c02">مرکزِ صحت  پر ہونے والی زچگیوں کی تعداد </string>
+    <string name="fas01c03">مرکزِ صحت  پر زندہ پیدا ہونے والے بچوں کی تعداد </string>
+    <string name="fas01c04a">مرکز ِصحت پر مردہ بچوں کے لیے کونسی تعریف استعمال کی گئی  </string>
+    <string name="fas01c04a01">22  ہفتے یا اس سے کم اور 500 گرام یا اس سے کم ≤22 weeks and ≤500g  </string>
+    <string name="fas01c04a02">28 ہفتے یا اس سے کم 1000 گرام یا اس سے کم ≤28 weeks and ≤1000g  </string>
+
+    <string name="fas01c04b">مرکزِ صحت پر پیدا ہونے والے مردہ بچوں کی تعداد  </string>
+    <string name="fas01c05">زچگی کے دوران ہونے والی بچوں کی موت کی تعداد </string>
+    <string name="fas01c06">رکزِ صحت  پرپیدائش سے قبل  پیدا ہونے والے مردہ بچوں کی تعدا  </string>
+    <string name="fas01c07">مرکزِ صحت  پرپیدائش کے فوراً بعد بچوں کی اموات کی تعداد (1 سے 7 دنوں کے دوران) </string>
+    <string name="fas01c08">مرکزِ صحت  پر پیدائش کے بعد  بچوں کی اموات(1سے 28 دن کے دوران)  </string>
+    <string name="fas01c09">مرکزِ صحت  پر ہونے والے حاملہ عورتوں کی زچگی میں اموات کی تعداد </string>
+    <string name="fas01c10">اوزاروں کی مدد سے کی گئی زچگی  کی تعداد  </string>
+    <string name="fas01c11">مرکزِصحت پر ہونے والے بڑے آپریشن کے ذریعے ڈیلیوری کی تعداد  </string>
+    <string name="fas01c12">مرکزِصحت پر انتقال خون کی منتقلی کی تعداد </string>
+    <string name="fas01c13"> مرکزِصحت پر بچہ دانی نکال دینے والے آپریشن کی تعداد  </string>
+    <string name="fas01c14">ان خواتین کی تعداد جوزچگی کے بعد دوسرے مرکزِصحت پر بھیجی گئی  </string>
+    <string name="fas01c15"> ان نوزائیدہ بچوں کی تعداد جن کےسیپسس کا علاج  مرکزِ صحت پر ہوا  </string>
+    <string name="fas01c16">ان نوزائیدہ بچوں کی تعداد جن کےنمونیا کا علاج  مرکزِصحت پر ہوا  </string>
+    <string name="fas01c17">ان نوازائیدہ  بچوں کی تعداد جن  کو پیدائش کے وقت ایسفیکزیا ہو ا </string>
+    <string name="fas01c18">ان بچوں کی تعداد جن کے وزن پیدائش کے وقت 2500 گرام سے کم تھا   </string>
+    <string name="fas01c19">ان بچوں کی تعداد جن کی پیدائش 37 ہفتوں سے کم کے حمل پر  ہوئی  </string>
+    <string name="fas01c20">تاخیر کی کل تعداد جن کی پچھلے 4 مہینوں میں نشاندہی کی گئ  </string>
+    <string name="fas01c21">تاخیر 1 کی تعداد (صرف واقعات جو پچھلے 4 مہینوں میں ہوئے)  </string>
+    <string name="fas01c22">تاخیر 2 کی تعداد (صرف واقعات جو پچھلے 4 مہینوں میں ہوئے)  </string>
+    <string name="fas01c23">اخیر 3 کی تعداد (صرف واقعات جو پچھلے 4 مہینوں میں ہوئے)  </string>
+    <string name="fas01c24">تاخیر 1  اور تاخر2 ملا کر واقعات کی تعداد جو پچھلے 4 مہینوں میں ہوئے  </string>
+    <string name="fas01c25">تاخیر 1  اور تاخر3 ملا کر واقعات کی تعداد جو پچھلے 4 مہینوں میں ہوئے  </string>
+    <string name="fas01c26">تاخیر 2اور تاخر3 ملا کر واقعات کی تعداد جو پچھلے 4 مہینوں میں ہوئے  </string>
+    <string name="fas01c27">تاخیر 1 ، تاخیر 2 اور تاخر3 ملا کر واقعات کی تعداد جو پچھلے 4 مہینوں میں ہوئے  </string>
+
+    <string name="available">Available?  </string>
+    <string name="functioning">Functioning?  </string>
+    <string name="observed">مشاہدہ </string>
+    <string name="reported">اطلاع ہے لیکن دیکھا نہیں </string>
+    <string name="not_available">نہیں موجود  </string>
+
+
+    <!--Section D-->
+
+    <string name="fas01d01">تمام خواتین میں زچگی  کے فوراً بعد زیادہ خون بہہ جانے  کی روک تھام کے عمل  کے لیے انجیکشن اوکسی ٹوسن کا استعمال کیا</string>
+    <string name="fas01d02">پارٹو گرام کے ذریعہ سے لیبر کی نگرانی اور انتظام</string>
+    <string name="fas01d03">فوری اور خصوصی ماں کا دودھ پلانا</string>
+    <string name="fas01d04">مرکزِصحت پر حفظان صحت کے مطابق آنول نال کی دیکھ بھال (جراثیم سے پاک آلات کا استعمال)</string>
+    <string name="fas01d05">براہ کرم مجھے بتائیے کہ حمل  کے دوران اور بچے کی پیدائش کے بعد 12 مہینوں تک کیا مندرجہ ذیل سہولیات فراہم کی گئی ہیں۔</string>
+    <string name="fas01d06">حاملہ کے لیے اینٹی بائیوٹیکس (آئی وی یا آئی ایم  انجکشن) کا انتظام</string>
+    <string name="fas01d07">حاملہ کےلیے پوسٹ پارٹم ہیموریج کے علاج کے لیے آکسی ٹوسک (آئی وی یاآئی ایم انجکشن) کا انتظام</string>
+    <string name="fas01d08">حاملہ کے لیے پری ایکیلیمسیا کی روک تھام کے لیے میگنیشم سلفیٹ (آئی وی یا آئی ایم ) کا انتظام</string>
+    <string name="fas01d09">اوزار کی مدد سے زچگی </string>
+    <string name="fas01d10">آنول  نال کو ہاتھوں سے ہٹانا </string>
+    <string name="fas01d11">حمل کے باقیات کی صفائی </string>
+    <string name="fas01d12">نوازائیدہ بچہ کو ہوش میں لانے کے لیے  ایمبوبیگ اور مار ک  کا استعمال  </string>
+    <string name="fas01d13">بڑا آپریشن (سی سیکشن)  </string>
+    <string name="fas01d14">انتقال خون  </string>
+    <string name="fas01d15">انفیکشن کی روک تھام کے لیے پریٹرم یا طویل پروم(جھلیوں کا وقت سے پہلے ہٹ جانا ) کے لیے اینٹی بائیوٹیکس  </string>
+    <string name="fas01d16">وقت سے پہلےشروع ہونے  لیبر میں کورٹیکو اسٹیرائڈ کا استعمال  </string>
+    <string name="fas01d17">کے ایم سی (کینگرو مدر کیئر) پری میچور یا چھوٹے بچوں کے لیے  </string>
+    <string name="fas01d18">نیو نیٹل سیپسس کے لیے اینٹی بائیوٹِکس انجکشن کا استعمال   </string>
+    <string name="fas01d19">پیدائش کے وقت بچے کی دیکھ بھال کے لیے  قومی سطح پر موجود  گائیڈ لائن کا استعمال   </string>
+    <string name="fas01d20">پیدائش کے وقت بچے کی دیکھ بھال کے  لیےضروری چیک لسٹ (فہرست)  </string>
+    <string name="fas01d21">نوزائیدہ بچوں کی دیکھ بھال کی قومی سطح پر موجود  گائیڈ لائن کا استعمال  </string>
+    <string name="fas01d22">بی ای ایم او این سی  کے لیے کوئی نیشنل گائیڈ لائن </string>
+
+    <string name="fas01d23a">معائنے کے لیے فلش لائٹ </string>
+    <string name="fas01d24a">ڈیلیوری پیک </string>
+    <string name="fas01d25a">کورڈ کلیم </string>
+    <string name="fas01d26a">ایپی زیاٹومی سیزر(کینچی )</string>
+    <string name="fas01d27a">کورڈ کو کاٹنے کے لیے سیزر(کینچی یا بلیڈ) </string>
+    <string name="fas01d28a">ٹانگے لگانے کے لیے جراحی سوئی دھاگہ </string>
+    <string name="fas01d29a">جراحی سوئی ہولڈر </string>
+    <string name="fas01d30a">مینول و یکیوم ایکس ٹریکٹر</string>
+    <string name="fas01d31a">ویکیوم ایسپیر یٹراینڈ سی کٹ </string>
+    <string name="fas01d32a">انکیوبیٹر </string>
+    <string name="fas01d33a">غیرا ستعمال صاف لیکٹس دستانے </string>
+    <string name="fas01d34a">خالی پارٹو گرام </string>
+    <string name="fas01d35a">ڈیلیوری بیڈ </string>
+    <string name="fas01d36a">نوازئیدہ بچے  کو ہوش میں لانے کے لیے ری سکسی ٹیشن ٹیبل  کا استعمال ہیٹ سورس  کے ساتھ </string>
+    <string name="fas01d37a">نوازئیدہ بچوں کی ری سکسی ٹیشن کے لیے ایک نمبر سائزکا بیگ اور ماسک</string>
+    <string name="fas01d38a">نوازئیدہ بچوں کی ری سکسی ٹیشن کے لیے صفر نمبر سائزکا بیگ اور ماسک </string>
+    <string name="fas01d39a">الیکٹرک سکشن پمپ (سیکشن کے آلات) </string>
+    <string name="fas01d40a">کیتیھٹر نوازئیدہ بچوں کی سیکشن کے لیے سیکشن کے آلات </string>
+    <string name="fas01d41a">سیکشن بلب ایک بار استعمال کے لیے</string>
+    <string name="fas01d42a">جراثیم سے پاک سکشن بلب ایک سے زائد بار استعمال کے لیے </string>
+    <string name="fas01d43a">اسپیکیولم </string>
+    <string name="fas01d44a">شیر خوار بچہ کا وزن کرنے کی مشین </string>
+    <string name="fas01d45a">فشار خون (بلڈ پریشر) چیک کرنے کے لیے ڈیجیٹل یا مینول مشین اسٹیتھو اسکوپ کے ساتھ</string>
+    <string name="fas01d46a">صاف ستھرا استعمال کا پانی (پائپ نل بالتی اور پور کچن /باروچی خانہ ) </string>
+    <string name="fas01d47a">ہاتھ دھونے کے لیے مائع صابن اور صابن </string>
+    <string name="fas01d48a">Fetoscope فیٹو اسکوپ </string>
+    <string name="fas01d49a">ڈوپٹون یا جنین کی نگرانی </string>
+    <string name="fas01d50a">الٹرا ساؤنڈ مشین </string>
+
+
+    <!--Section E-->
+    <string name="fas01e01">کیا اس جگہ  پر زچہ و بچہ کی نگہداشت /دیکھ بھال کے ادویات اور دوسری سہولیات میسر ہیں؟</string>
+    <string name="fas01e02a">نوزائیدہ بچوں کی آنکھوں میں لگانے کا اینٹی بائیوٹک مرہم (سلور نائٹیڑیٹ</string>
+    <string name="fas01e03a">جینٹا مائی سین انجکشن</string>
+    <string name="fas01e04a">ایمپسلین پاؤڈر انجکشن کے لیے</string>
+    <string name="fas01e05a">انجیک ٹیبل کیونائیسن</string>
+    <string name="fas01e06a">انجیک ٹیبل آرھومیتھر</string>
+    <string name="fas01e07a">دوسرے انجیک ٹیبل اینٹی ملیریا</string>
+    <string name="fas01e08a">سپوسٹری آرتھیو میتھرے</string>
+    <string name="fas01e09a">اورل اے سی ٹی اے ایل جیسا کہ کورٹیم</string>
+    <string name="fas01e10a">آرتھیو سیفٹ/ اورل آرٹیمیٹر</string>
+    <string name="fas01e11a">اورل ایموڈیقین</string>
+    <string name="fas01e12a">اورل فینسیڈر</string>
+    <string name="fas01e13a">اورل کینن</string>
+    <string name="fas01e14a">دوسرے اور ل اینٹی ملیریا</string>
+    <string name="fas01e15a">ڈاکٹر کی ہدایات پر سیفیلس کے علاج کے لیے پینسلین</string>
+    <string name="fas01e16a">ہائیڈ رالیزین</string>
+    <string name="fas01e17a">اوکسی ٹوسین انجکشن</string>
+    <string name="fas01e18">وکسی ٹوسین اگر موجود ہے تو کیا یہ ٹھنڈی جگہ پر رکھا ہوا ہے؟</string>
+
+
+    <!--Section F-->
+    <string name="fas01f01">کیا آپ کے پاس زچہ و بچہ کی دیکھ بھال کے لیے ہنگامی ایمرجنسی موجود ہے</string>
+    <string name="fas01f02">کیا یہاں پیشہ ور ماہر صحت موجود ہیں جو 24 گھنٹے/ ہفتہ کے اختتام پر اور عام تعطیلات میں بڑا آپریشن کرسکتے ہیں ؟</string>
+    <string name="fas01f03">کیا  اس مرکزِ صحت پر  پیشہ ور بے ہوشی کے ماہر موجود ہیں جو 24 گھنٹے/  ہفتہ کے اختتام پر عام اور تعطیلات میں بے ہوشی کی دوا ء دیں؟</string>
+    <string name="fas01f04">کیا یہاں ایمرجنسی میں جانے اور آنے کے لیے ایک فعال ایمبولینس یا دوسری گاڑیاں ہیں جو سہولت فراہم کرسکے ؟</string>
+    <string name="fas01f05a">کیا اس جگہ ایمر جنسی میں ایمبولینس تک رسائی ممکن ہے جو ایمر جنسی کی صورت میں مریض کو ایک  مرکزِ صحت سے دوسر ےمرکزِ صحت لے جاسکے ؟
+(ہفتے کے آخر اورعام تعطیلات میں بھی )
+</string>
+    <string name="fas01f05b">کیا آج ایمبولینس یا دیگر ہنگامی گاڑی کو چلانے کے لیے فیول موجود ہے</string>
+
 
     <!--Form 01-->
 

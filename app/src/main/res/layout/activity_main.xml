@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.hassannaqvi.leaps_scaleup.ui.MainActivity">
+    tools:context="com.example.hassannaqvi.fas.ui.MainActivity">
 
     <data>
 
         <variable
             name="callback"
-            type="com.example.hassannaqvi.leaps_scaleup.ui.MainActivity" />
+            type="com.example.hassannaqvi.fas.ui.MainActivity" />
     </data>
 
     <LinearLayout
@@ -131,8 +131,7 @@
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
                         android:layout_weight="1"
                         android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:onClick='@{(v) -> callback.openForm("1a")}'>
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -169,8 +168,7 @@
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
                         android:layout_weight="1"
                         android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:onClick='@{(v) -> callback.openForm("1b")}'>
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <LinearLayout
                             android:layout_width="239dp"
@@ -215,8 +213,7 @@
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
                         android:layout_weight="1"
                         android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:onClick='@{(v) -> callback.openForm("6")}'>
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -254,8 +251,7 @@
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
                         android:layout_weight="1"
                         android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:onClick='@{(v) -> callback.openForm("4")}'>
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -301,8 +297,7 @@
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
                         android:layout_weight="1"
                         android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:onClick='@{(v) -> callback.openForm("7")}'>
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -339,8 +334,7 @@
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
                         android:layout_weight="1"
                         android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:onClick='@{(v) -> callback.openForm("5")}'>
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -387,8 +381,7 @@
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
                         android:layout_weight="1"
                         android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:onClick='@{(v) -> callback.openForm("8")}'>
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -426,8 +419,7 @@
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
                         android:layout_weight="1"
                         android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:onClick='@{(v) -> callback.openForm("9")}'>
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -472,8 +464,7 @@
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
-                        android:layout_weight="1"
-                        android:onClick='@{(v) -> callback.openDeviation()}'>
+                        android:layout_weight="1">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -508,8 +499,7 @@
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
-                        android:layout_weight="1"
-                        android:onClick="@{() -> callback.uploadData()}">
+                        android:layout_weight="1">
 
                         <LinearLayout
                             android:layout_width="match_parent"

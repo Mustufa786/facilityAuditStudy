@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.hassannaqvi.leaps_scaleup">
+    package="com.example.hassannaqvi.fas">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
@@ -34,7 +34,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".ui.EndInterview"
@@ -68,14 +67,25 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
-            android:name=".ui.Form01Enrolment"
+            android:name=".ui.SectionCActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
-
         <activity
-            android:name=".ui.YouthInfoActivity"
+            android:name=".ui.SectionDActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".ui.SectionD02Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".ui.SectionEActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".ui.SectionFActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"></activity>
     </application>
 
 </manifest>
