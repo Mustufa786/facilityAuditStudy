@@ -85,7 +85,11 @@
         <activity
             android:name=".ui.SectionFActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme1"></activity>
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".ui.SectionA_tool_2Activity" />
+        <activity android:name=".ui.SectionB_tool_2Activity" />
+        <activity android:name=".ui.SectionC_tool_2Activity" />
+        <activity android:name=".ui.SectionD_tool_2Activity"></activity>
     </application>
 
 </manifest>

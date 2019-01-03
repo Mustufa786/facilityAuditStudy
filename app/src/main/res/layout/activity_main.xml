@@ -135,7 +135,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:orientation="vertical">
 
@@ -144,98 +144,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
                                 android:gravity="center"
-                                android:text="Enrolment and Household SES - Population Survey"
+                                android:text="@string/tool1"
                                 android:textColor="@color/colorPrimaryDark" />
 
-                            <ImageView
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/house" />
-
-                        </LinearLayout>
-
-                    </android.support.v7.widget.CardView>
-
-                    <View
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent" />
-
-                    <android.support.v7.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="@dimen/cardview_compat_inset_shadow"
-                        android:layout_weight="1"
-                        android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground">
-
-                        <LinearLayout
-                            android:layout_width="239dp"
-                            android:layout_height="99dp"
-                            android:layout_margin="10dp"
-                            android:orientation="vertical">
-
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"
-                                android:gravity="center"
-                                android:text="Enrolment and Household SES - School Cohort"
-                                android:textColor="@color/colorPrimaryDark" />
-
-                            <ImageView
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/school" />
-
-                        </LinearLayout>
-
-                    </android.support.v7.widget.CardView>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-
-
-                    <android.support.v7.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="@dimen/cardview_compat_inset_shadow"
-                        android:layout_weight="1"
-                        android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="50dp"
                                 android:layout_marginTop="10dp"
+                                android:layout_marginStart="90dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Child Anthropometry"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:text="TOOL 1"
+                                android:textStyle="bold"
+                                android:textSize="17sp"
+                                android:textColor="@color/colorPrimary" />
 
-                            <ImageView
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/boy" />
 
                         </LinearLayout>
 
@@ -255,26 +177,29 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:orientation="vertical">
 
                             <TextView
+                                android:textSize="16sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
-                                android:layout_marginStart="20dp"
                                 android:gravity="center"
-                                android:text="Executive Function Skills - Child"
+                                android:text="@string/tool2"
                                 android:textColor="@color/colorPrimaryDark" />
 
-                            <ImageView
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                android:layout_gravity="center"
+                            <TextView
                                 android:layout_marginTop="5dp"
-                                android:src="@drawable/solution" />
-
+                                android:layout_marginStart="90dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="TOOL 2"
+                                android:textStyle="bold"
+                                android:textSize="17sp"
+                                android:textColor="@color/colorPrimary" />
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
@@ -282,174 +207,10 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
 
 
-                    <android.support.v7.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="@dimen/cardview_compat_inset_shadow"
-                        android:layout_weight="1"
-                        android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:gravity="center"
-                                android:text="Enrolment and Questionare - Youth"
-                                android:textColor="@color/colorPrimaryDark" />
-
-                            <ImageView
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/girl" />
-
-                        </LinearLayout>
-
-                    </android.support.v7.widget.CardView>
-
-                    <View
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent" />
-
-                    <android.support.v7.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="@dimen/cardview_compat_inset_shadow"
-                        android:layout_weight="1"
-                        android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"
-                                android:layout_marginStart="50dp"
-                                android:layout_marginTop="5dp"
-                                android:gravity="center"
-                                android:text="IDELA Scoring sheet"
-                                android:textColor="@color/colorPrimaryDark" />
-
-                            <ImageView
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/graduate" />
-
-                        </LinearLayout>
-
-                    </android.support.v7.widget.CardView>
 
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-
-
-                    <android.support.v7.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="@dimen/cardview_compat_inset_shadow"
-                        android:layout_weight="1"
-                        android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="20dp"
-                                android:layout_marginTop="10dp"
-                                android:gravity="center"
-                                android:text="Youth EF Skills Scoring Booklet"
-                                android:textColor="@color/colorPrimaryDark" />
-
-                            <ImageView
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/youth" />
-
-                        </LinearLayout>
-
-                    </android.support.v7.widget.CardView>
-
-                    <View
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent" />
-
-                    <android.support.v7.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="@dimen/cardview_compat_inset_shadow"
-                        android:layout_weight="1"
-                        android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"
-                                android:layout_marginStart="20dp"
-                                android:layout_marginTop="5dp"
-                                android:gravity="center"
-                                android:text="Youth Participant Questionaire"
-                                android:textColor="@color/colorPrimaryDark" />
-
-                            <ImageView
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/faq" />
-
-                        </LinearLayout>
-
-                    </android.support.v7.widget.CardView>
-
-
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -473,45 +234,9 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="60dp"
-                                android:layout_marginTop="10dp"
-                                android:text="Protocol Deviation"
-                                android:textColor="@color/colorPrimaryDark" />
-
-                            <ImageView
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
                                 android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/deviation" />
-
-                        </LinearLayout>
-
-                    </android.support.v7.widget.CardView>
-
-                    <View
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent" />
-
-                    <android.support.v7.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="@dimen/cardview_compat_inset_shadow"
-                        android:layout_weight="1">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:orientation="vertical">
-
-                            <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="80dp"
-                                android:layout_marginTop="10dp"
                                 android:text="Upload Data"
                                 android:textColor="@color/colorPrimaryDark" />
 
