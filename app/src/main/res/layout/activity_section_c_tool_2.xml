@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.hassannaqvi.fas.ui.SectionC_tool_2Activity">
+    tools:context="com.example.hassannaqvi.fas.ui.tool2.SectionC_tool_2Activity">
 
     <data>
 
@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="com.example.hassannaqvi.fas.ui.SectionC_tool_2Activity" />
+            type="com.example.hassannaqvi.fas.ui.tool2.SectionC_tool_2Activity" />
     </data>
 
     <ScrollView
@@ -411,8 +411,8 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
-                            android:text='@{fas02c030196.checked? fas02c030196x.getText.toString : ""}'
-                            android:visibility='@{fas02c030196.checked? View.VISIBLE : View.GONE}' />
+                            android:text='@{fas02c030196.checked ? fas02c030196x.getText.toString : ""}'
+                            android:visibility='@{fas02c030196.checked ? View.VISIBLE : View.GONE}' />
 
 
                     </RadioGroup>
@@ -556,8 +556,8 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
-                            android:text='@{fas02c0496.checked? fas02c0496x.getText.toString : ""}'
-                            android:visibility='@{fas02c0496.checked? View.VISIBLE : View.GONE}' />
+                            android:text='@{fas02c0496.checked ? fas02c0496x.getText.toString : ""}'
+                            android:visibility='@{fas02c0496.checked ? View.VISIBLE : View.GONE}' />
 
 
                     </RadioGroup>
@@ -586,47 +586,47 @@
                         android:id="@+id/fldGrpfas02c04a"
                         style="@style/linerlayout_view">
 
-                        <Checkbox
+                        <CheckBox
                             android:id="@+id/fas02c0401a"
                             style="@style/checkbox"
                             android:text="@string/fas02c0401a" />
 
-                        <Checkbox
+                        <CheckBox
                             android:id="@+id/fas02c0401b"
                             style="@style/checkbox"
                             android:text="@string/fas02c0401b" />
 
-                        <Checkbox
+                        <CheckBox
                             android:id="@+id/fas02c0401c"
                             style="@style/checkbox"
                             android:text="@string/fas02c0401c" />
 
-                        <Checkbox
+                        <CheckBox
                             android:id="@+id/fas02c0401d"
                             style="@style/checkbox"
                             android:text="@string/fas02c0401d" />
 
-                        <Checkbox
+                        <CheckBox
                             android:id="@+id/fas02c0401e"
                             style="@style/checkbox"
                             android:text="@string/fas02c0401e" />
 
-                        <Checkbox
+                        <CheckBox
                             android:id="@+id/fas02c0401f"
                             style="@style/checkbox"
                             android:text="@string/fas02c0401f" />
 
-                        <Checkbox
+                        <CheckBox
                             android:id="@+id/fas02c0401g"
                             style="@style/checkbox"
                             android:text="@string/fas02c0401g" />
 
-                        <Checkbox
+                        <CheckBox
                             android:id="@+id/fas02c0401h"
                             style="@style/checkbox"
                             android:text="@string/fas02c0401h" />
 
-                        <Checkbox
+                        <CheckBox
                             android:id="@+id/fas02c040196"
                             style="@style/checkbox"
                             android:text="@string/other" />
@@ -640,9 +640,7 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
-                            android:tag="fas02c040196"
-                            android:text='@{fas02c040196.checked? fas02c040196x.getText.toString : ""}'
-                            android:visibility='@{fas02c040196.checked? View.VISIBLE : View.GONE}' />
+                            android:tag="fas02c040196" />
 
                     </LinearLayout>
 
@@ -687,8 +685,8 @@
                             android:layout_margin="10dp"
                             android:hint="@string/week"
                             android:inputType="number"
-                            android:text='@{fas02c0402a.checked? fas02c0402w.getText.toString : ""}'
-                            android:visibility='@{fas02c0402a.checked? View.VISIBLE : View.GONE}' />
+                            android:text='@{fas02c0402a.checked ? fas02c0402w.getText.toString : ""}'
+                            android:visibility='@{fas02c0402a.checked ? View.VISIBLE : View.GONE}' />
 
                         <RadioButton
                             android:id="@+id/fas02c0402b"
@@ -706,8 +704,8 @@
                             android:layout_margin="10dp"
                             android:hint="@string/month"
                             android:inputType="number"
-                            android:text='@{fas02c0402b.checked? fas02c0402m.getText.toString : ""}'
-                            android:visibility='@{fas02c0402b.checked? View.VISIBLE : View.GONE}' />
+                            android:text='@{fas02c0402b.checked ? fas02c0402m.getText.toString : ""}'
+                            android:visibility='@{fas02c0402b.checked ? View.VISIBLE : View.GONE}' />
 
                         <RadioButton
                             android:id="@+id/fas02c040298"
@@ -746,8 +744,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:hint="@string/times"
-                        android:inputType="number"
-                        android:visibility='@{fas02c040398.checked? View.GONE : View.VISIBLE}' />
+                        android:inputType="number" />
 
                     <CheckBox
                         android:id="@+id/fas02c040398"
@@ -891,8 +888,8 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas02c0406a"
                             android:inputType="text"
-                            android:text='@{fas02c0406a.checked? fas02c0406ax.getText.toString : ""}'
-                            android:visibility='@{fas02c0406a.checked? View.VISIBLE : View.GONE}' />
+                            android:text='@{fas02c0406a.checked ? fas02c0406ax.getText.toString : ""}'
+                            android:visibility='@{fas02c0406a.checked ? View.VISIBLE : View.GONE}' />
 
                         <RadioButton
                             android:id="@+id/fas02c0406b"
@@ -911,8 +908,8 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas02c0406b"
                             android:inputType="text"
-                            android:text='@{fas02c0406b.checked? fas02c0406bx.getText.toString : ""}'
-                            android:visibility='@{fas02c0406b.checked? View.VISIBLE : View.GONE}' />
+                            android:text='@{fas02c0406b.checked ? fas02c0406bx.getText.toString : ""}'
+                            android:visibility='@{fas02c0406b.checked ? View.VISIBLE : View.GONE}' />
 
                         <RadioButton
                             android:id="@+id/fas02c0406c"
@@ -931,8 +928,8 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
-                            android:text='@{fas02c0406c.checked? fas02c0406cx.getText.toString : ""}'
-                            android:visibility='@{fas02c0406c.checked? View.VISIBLE : View.GONE}' />
+                            android:text='@{fas02c0406c.checked ? fas02c0406cx.getText.toString : ""}'
+                            android:visibility='@{fas02c0406c.checked ? View.VISIBLE : View.GONE}' />
 
 
                     </RadioGroup>
@@ -1166,8 +1163,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:hint="@string/fas02c04c"
-                        android:inputType="number"
-                        android:visibility='@{fas02c040998.checked? View.GONE : View.VISIBLE}' />
+                        android:inputType="number" />
 
 
                     <CheckBox
@@ -1393,8 +1389,8 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
-                            android:text='@{fas02c0596.checked? fas02c0596x.getText.toString : ""}'
-                            android:visibility='@{fas02c0596.checked? View.VISIBLE : View.GONE}' />
+                            android:text='@{fas02c0596.checked ? fas02c0596x.getText.toString : ""}'
+                            android:visibility='@{fas02c0596.checked ? View.VISIBLE : View.GONE}' />
 
 
                     </RadioGroup>
@@ -1528,9 +1524,7 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
-                            android:tag="fas02c0696"
-                            android:text='@{fas02c0696.checked? fas02c0696x.getText.toString : ""}'
-                            android:visibility='@{fas02c0696.checked? View.VISIBLE : View.GONE}' />
+                            android:tag="fas02c0696" />
 
                     </LinearLayout>
 
@@ -1671,8 +1665,8 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
-                            android:text='@{fas02c0796.checked? fas02c0796x.getText.toString : ""}'
-                            android:visibility='@{fas02c0796.checked? View.VISIBLE : View.GONE}' />
+                            android:text='@{fas02c0796.checked ? fas02c0796x.getText.toString : ""}'
+                            android:visibility='@{fas02c0796.checked ? View.VISIBLE : View.GONE}' />
 
                         <RadioButton
                             android:id="@+id/fas02c0798"
@@ -1772,9 +1766,7 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
-                            android:tag="fas02c0896"
-                            android:text='@{fas02c0896.checked? fas02c0896x.getText.toString : ""}'
-                            android:visibility='@{fas02c0896.checked? View.VISIBLE : View.GONE}' />
+                            android:tag="fas02c0896" />
 
                     </LinearLayout>
 
@@ -2426,9 +2418,7 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
-                            android:tag="fas02c100196"
-                            android:text='@{fas02c100196.checked? fas02c100196x.getText.toString : ""}'
-                            android:visibility='@{fas02c100196.checked? View.VISIBLE : View.GONE}' />
+                            android:tag="fas02c100196" />
 
                     </LinearLayout>
 
@@ -2531,8 +2521,8 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
-                            android:text='@{fas02c1196.checked? fas02c1196x.getText.toString : ""}'
-                            android:visibility='@{fas02c1196.checked? View.VISIBLE : View.GONE}' />
+                            android:text='@{fas02c1196.checked ? fas02c1196x.getText.toString : ""}'
+                            android:visibility='@{fas02c1196.checked ? View.VISIBLE : View.GONE}' />
 
 
                     </RadioGroup>
@@ -2628,8 +2618,8 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
-                            android:text='@{fas02c110196.checked? fas02c110196x.getText.toString : ""}'
-                            android:visibility='@{fas02c110196.checked? View.VISIBLE : View.GONE}' />
+                            android:text='@{fas02c110196.checked ? fas02c110196x.getText.toString : ""}'
+                            android:visibility='@{fas02c110196.checked ? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
 

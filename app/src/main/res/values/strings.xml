@@ -63,6 +63,12 @@
     <string name="tool2">Pre and Post Community Assessment of Stages in Seeking Care</string>
 
     <string name="section1">GENERAL INFORMATION</string>
+    <string name="section3">HEALTH FACILITY DATA</string>
+    <string name="section4">QUALITY OF CARE DELIVERY CHECKLIST</string>
+    <string name="section402">QUALITY OF CARE DELIVERY CHECKLIST</string>
+    <string name="section5">FACILITY STOCK OF OBSTETRIC CARE MEDICINE CHECKLIST</string>
+    <string name="section6">EMERCENY BEmONC/CEmONC SERVICES CHECKLIST</string>
+
     <string name="fas01a00">سروے نمبر</string>
     <string name="fas01a00a">انٹرونشن سے پہلے </string>
     <string name="fas01a00b"> دوسرے کواٹر میں </string>
@@ -130,7 +136,6 @@
 
 
     <!--Section D-->
-
     <string name="fas01d01">تمام خواتین میں زچگی  کے فوراً بعد زیادہ خون بہہ جانے  کی روک تھام کے عمل  کے لیے انجیکشن اوکسی ٹوسن کا استعمال کیا</string>
     <string name="fas01d02">پارٹو گرام کے ذریعہ سے لیبر کی نگرانی اور انتظام</string>
     <string name="fas01d03">فوری اور خصوصی ماں کا دودھ پلانا</string>
@@ -153,6 +158,8 @@
     <string name="fas01d20">پیدائش کے وقت بچے کی دیکھ بھال کے  لیےضروری چیک لسٹ (فہرست)  </string>
     <string name="fas01d21">نوزائیدہ بچوں کی دیکھ بھال کی قومی سطح پر موجود  گائیڈ لائن کا استعمال  </string>
     <string name="fas01d22">بی ای ایم او این سی  کے لیے کوئی نیشنل گائیڈ لائن </string>
+
+    <string name="fas01dHeading"> برائے کرم مجھے بتائیے کیا مندرجہ ذیل آلات جو ڈیلیوری کے لیے استعمال ہوتے ہیں آج مرکزِصحت پر موجود ہیں؟ </string>
 
     <string name="fas01d23a">معائنے کے لیے فلش لائٹ </string>
     <string name="fas01d24a">ڈیلیوری پیک </string>
@@ -305,6 +312,14 @@
     <string name="fas02c04l">اس حمل کے دوران آپ نے اپنا طبی معانئہ کہاں کروایا ؟</string>
 
     <string name="fas02c0401"> آپ نے کس سے معائنہ کروایا تھا ؟ </string>
+    <string name="fas02c0401a"> ڈاکٹر </string>
+    <string name="fas02c0401b"> نرس/کمیونٹی مڈوائف/ایل ایچ وی </string>
+    <string name="fas02c0401c"> دائی  </string>
+    <string name="fas02c0401d"> لیڈی ہیلتھ ورکر </string>
+    <string name="fas02c0401e"> ہومیو پیتھک </string>
+    <string name="fas02c0401f"> حکیم </string>
+    <string name="fas02c0401g"> ڈسپنسری /کمپاونڈر </string>
+    <string name="fas02c0401h"> رشتہ دار/دوست </string>
 
     <string name="fas02c0402"> جب آپ نے اس حمل کے دوران پہلی دفعہ معائنہ کروایا تو آپ کا حمل کتنے ہفتوں ،یا مہینہ کا تھا؟ </string>
 
@@ -370,7 +385,7 @@
     <string name="fas02c07d"> ایل ایچ وی </string>
     <string name="fas02c07e"> ڈائی </string>
     <string name="fas02c07f"> کمیونٹی مڈ وائف </string>
-    <string name="fas02c0g"> لیڈی ہیلتھ ورکر </string>
+    <string name="fas02c07g"> لیڈی ہیلتھ ورکر </string>
     <string name="fas02c07h"> رشتہ دار/دوست </string>
     <string name="fas02c07i"> خود/کوئی موجود نہیں </string>
     <string name="fas02c07j"> دوسرا شخص(وضاحت کریں) </string>

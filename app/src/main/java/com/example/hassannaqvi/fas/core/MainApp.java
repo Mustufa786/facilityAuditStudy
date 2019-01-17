@@ -125,11 +125,18 @@ public class MainApp extends Application {
         return ageInYears;
     }
 
+    public static void stActivity(final Context context, final Activity activity, final Class NextActivityClass, final Object objectData) {
+        activity.finish();
+        Intent end_intent = new Intent(context, NextActivityClass);
+        end_intent.putExtra(CONSTANTS._URI_FC_OBJ, (Serializable) objectData);
+        context.startActivity(end_intent);
+    }
+
     public static void endActivity(final Context context, final Activity activity, final Class EndActivityClass, final boolean complete, final Object objectData) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 context);
         alertDialogBuilder
-                .setMessage("Do you want to Exit??")
+                .setMessage("Do you want to " + (complete ? "End Interview!!" : "Exit??"))
                 .setCancelable(false)
                 .setPositiveButton("Yes",
                         new DialogInterface.OnClickListener() {

@@ -36,9 +36,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.EndInterview"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".ui.LoginActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name="im.dino.dbinspector.activities.DbInspectorActivity">
@@ -59,37 +56,33 @@
             android:name=".ui.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.StartActivity"
+            android:name=".ui.tool1.InfoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
-            android:name=".ui.InfoActivity"
+            android:name=".ui.tool1.SectionCActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
-            android:name=".ui.SectionCActivity"
+            android:name=".ui.tool1.SectionDActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
-            android:name=".ui.SectionDActivity"
+            android:name=".ui.tool1.SectionD02Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
-            android:name=".ui.SectionD02Activity"
+            android:name=".ui.tool1.SectionEActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
-            android:name=".ui.SectionEActivity"
+            android:name=".ui.tool1.SectionFActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
-        <activity
-            android:name=".ui.SectionFActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme1" />
-        <activity android:name=".ui.SectionA_tool_2Activity" />
-        <activity android:name=".ui.SectionB_tool_2Activity" />
-        <activity android:name=".ui.SectionC_tool_2Activity" />
-        <activity android:name=".ui.SectionD_tool_2Activity"></activity>
+        <activity android:name=".ui.tool2.SectionA_tool_2Activity" />
+        <activity android:name=".ui.tool2.SectionB_tool_2Activity" />
+        <activity android:name=".ui.tool2.SectionC_tool_2Activity" />
+        <activity android:name=".ui.tool2.SectionD_tool_2Activity"></activity>
     </application>
 
 </manifest>
