@@ -8,7 +8,7 @@ import android.widget.Toast;
 import com.example.hassannaqvi.fas.R;
 import com.example.hassannaqvi.fas.core.CONSTANTS;
 import com.example.hassannaqvi.fas.core.MainApp;
-import com.example.hassannaqvi.fas.data.entities.Forms_04_05;
+import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivitySectionCBinding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
 import com.example.hassannaqvi.fas.validation.validatorClass;
@@ -16,7 +16,7 @@ import com.example.hassannaqvi.fas.validation.validatorClass;
 public class SectionCActivity extends AppCompatActivity {
 
     ActivitySectionCBinding bi;
-    private Forms_04_05 fc;
+    private Forms fc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class SectionCActivity extends AppCompatActivity {
 
     private void setContentUI() {
         this.setTitle(R.string.section3);
-        fc = (Forms_04_05) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
+        fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
     }
 
     public void BtnContinue() {

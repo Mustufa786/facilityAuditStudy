@@ -10,7 +10,7 @@ import com.example.hassannaqvi.fas.R;
 import com.example.hassannaqvi.fas.RMOperations.crudOperations;
 import com.example.hassannaqvi.fas.core.MainApp;
 import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
-import com.example.hassannaqvi.fas.data.entities.Forms_04_05;
+import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivityInfoBinding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
 import com.example.hassannaqvi.fas.ui.LoginActivity;
@@ -22,11 +22,11 @@ public class InfoActivity extends AppCompatActivity {
 
     private static final String TAG = InfoActivity.class.getName();
     ActivityInfoBinding bi;
-    private Forms_04_05 fc;
+    Forms childDT;
     String fTYPE = "", fExt = "", deviceID;
     Class<?> routeClass;
-    Forms_04_05 childDT;
-    Forms_04_05.Simple_Forms_04_05 sInfo_parse;
+    Forms.Simple_Forms_04_05 sInfo_parse;
+    private Forms fc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,9 +109,8 @@ public class InfoActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() {
-        fc = new Forms_04_05();
+        fc = new Forms();
     }
-
 
     private boolean formValidation() {
         return validatorClass.EmptyCheckingContainer(this, bi.fldGrpllInfoA);

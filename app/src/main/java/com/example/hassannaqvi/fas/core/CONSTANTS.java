@@ -7,6 +7,10 @@ public interface CONSTANTS {
     String URL_DEVICES = "devices.php";
     String URL_FORMS = "forms.php";
 
-    String _URI_FC_OBJ = "obj_fc";
+    String _URI_END_FLAG = "complete";
+    String _URI_FC_OBJ = "fc_data";
+
+    String _URI_FORM_TOOL1 = "ftool1";
+    String _URI_FORM_TOOL2 = "ftool2";
 
 }

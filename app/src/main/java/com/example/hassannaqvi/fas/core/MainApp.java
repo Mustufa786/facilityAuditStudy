@@ -20,7 +20,6 @@ import android.text.format.DateFormat;
 
 import com.example.hassannaqvi.fas.contracts.FamilyMembersContract;
 import com.example.hassannaqvi.fas.contracts.FormsContract;
-import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.utils.TypefaceUtil;
 
 import java.io.Serializable;
@@ -144,9 +143,8 @@ public class MainApp extends Application {
                                                 int id) {
                                 activity.finish();
                                 Intent end_intent = new Intent(context, EndActivityClass);
-                                end_intent.putExtra("complete", complete);
-                                end_intent.putExtra("typeFlag", objectData.getClass().equals(Forms.class));
-                                end_intent.putExtra("fc_data", (Serializable) objectData);
+                                end_intent.putExtra(CONSTANTS._URI_END_FLAG, complete);
+                                end_intent.putExtra(CONSTANTS._URI_FC_OBJ, (Serializable) objectData);
                                 context.startActivity(end_intent);
                             }
                         });

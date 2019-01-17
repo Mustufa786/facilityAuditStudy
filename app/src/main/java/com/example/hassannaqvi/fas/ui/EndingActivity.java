@@ -8,9 +8,9 @@ import android.widget.Toast;
 
 import com.example.hassannaqvi.fas.R;
 import com.example.hassannaqvi.fas.RMOperations.crudOperations;
+import com.example.hassannaqvi.fas.core.CONSTANTS;
 import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
 import com.example.hassannaqvi.fas.data.entities.Forms;
-import com.example.hassannaqvi.fas.data.entities.Forms_04_05;
 import com.example.hassannaqvi.fas.databinding.ActivityEndingBinding;
 import com.example.hassannaqvi.fas.validation.validatorClass;
 
@@ -27,8 +27,7 @@ public class EndingActivity extends AppCompatActivity {
     String dtToday = new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime());
 
     ActivityEndingBinding bi;
-    Forms_04_05 fc04_05;
-    Forms fc_;
+    Forms fc;
     boolean flag;
 
     @Override
@@ -40,7 +39,7 @@ public class EndingActivity extends AppCompatActivity {
 
         this.setTitle("End Interview");
 
-        Boolean check = getIntent().getExtras().getBoolean("complete");
+        Boolean check = getIntent().getExtras().getBoolean(CONSTANTS._URI_END_FLAG);
 
         if (check) {
             bi.istatusa.setEnabled(true);
@@ -54,11 +53,7 @@ public class EndingActivity extends AppCompatActivity {
             bi.istatusd.setEnabled(true);
         }
 
-        flag = getIntent().getBooleanExtra("typeFlag", false);
-        if (flag)
-            fc_ = (Forms) getIntent().getSerializableExtra("fc_data");
-        else
-            fc04_05 = (Forms_04_05) getIntent().getSerializableExtra("fc_data");
+        fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
     }
 
@@ -74,21 +69,13 @@ public class EndingActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() {
-        if (flag) {
-            fc_.setIstatus(bi.istatusa.isChecked() ? "1" : bi.istatusb.isChecked() ? "2" : bi.istatusc.isChecked() ? "3" : bi.istatusd.isChecked() ? "4" : "0");
-            fc_.setEndtime(dtToday);
-            fc_.setPdeviation(bi.pdeviationa.isChecked() ? "1" : bi.pdeviationb.isChecked() ? "2" : bi.pdeviationc.isChecked() ? "3" : "0");
-
-        } else {
-            fc04_05.setIstatus(bi.istatusa.isChecked() ? "1" : bi.istatusb.isChecked() ? "2" : bi.istatusc.isChecked() ? "3" : bi.istatusd.isChecked() ? "4" : "0");
-            fc04_05.setEndtime(dtToday);
-            fc04_05.setPdeviation(bi.pdeviationa.isChecked() ? "1" : bi.pdeviationb.isChecked() ? "2" : bi.pdeviationc.isChecked() ? "3" : "0");
-        }
+        fc.setIstatus(bi.istatusa.isChecked() ? "1" : bi.istatusb.isChecked() ? "2" : bi.istatusc.isChecked() ? "3" : bi.istatusd.isChecked() ? "4" : "0");
+        fc.setEndtime(dtToday);
     }
 
     public boolean UpdateDB() {
         try {
-            Long longID = new crudOperations(db, flag ? fc_ : fc04_05).execute(FormsDAO.class.getName(), "formsDao", flag ? "updateForm" : "updateForm_04_05").get();
+            Long longID = new crudOperations(db, fc).execute(FormsDAO.class.getName(), "formsDao", "updateForm").get();
             return longID == 1;
 
         } catch (InterruptedException e) {
@@ -101,9 +88,6 @@ public class EndingActivity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-        if (!validatorClass.EmptyRadioButton(this, bi.pdeviation, bi.pdeviationc, getString(R.string.pdeviation))) {
-            return false;
-        }
         return validatorClass.EmptyRadioButton(this, bi.istatus, bi.istatusb, getString(R.string.istatus));
     }
 
