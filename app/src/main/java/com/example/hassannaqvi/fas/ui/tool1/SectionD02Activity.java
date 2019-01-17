@@ -5,13 +5,22 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
+import com.example.hassannaqvi.fas.JSON.GeneratorClass;
 import com.example.hassannaqvi.fas.R;
+import com.example.hassannaqvi.fas.RMOperations.crudOperations;
 import com.example.hassannaqvi.fas.core.CONSTANTS;
 import com.example.hassannaqvi.fas.core.MainApp;
+import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
 import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivitySectionD02Binding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
+import com.example.hassannaqvi.fas.utils.JsonUtils;
 import com.example.hassannaqvi.fas.validation.ValidatorClass;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.concurrent.ExecutionException;
 
 public class SectionD02Activity extends AppCompatActivity {
 
@@ -46,22 +55,36 @@ public class SectionD02Activity extends AppCompatActivity {
         }
     }
 
-
     private boolean UpdateDB() {
+        try {
 
+            Long longID = new crudOperations(this, FormsDAO.class.getName(), "formsDao", "updateForm", fc).execute().get();
+            return longID == 1;
 
-        return true;
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
 
+        return false;
     }
 
     private void SaveDraft() {
+        JSONObject Json2 = GeneratorClass.getContainerJSON(bi.fldGrpllSecD02, true);
 
+        try {
+            JSONObject s4_merge = JsonUtils.mergeJSONObjects(new JSONObject(fc.getSa4()), Json2);
+
+            fc.setSa4(String.valueOf(s4_merge));
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
     }
 
-
     private boolean formValidation() {
-
         return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecD02);
     }
 

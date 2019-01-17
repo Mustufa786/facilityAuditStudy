@@ -45,13 +45,13 @@
                             android:textSize="20sp" />
 
                         <RadioGroup
-                            android:id="@+id/fas01a00"
+                            android:id="@+id/fas01c00"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
                             <RadioButton
-                                android:id="@+id/fas01a00a"
+                                android:id="@+id/fas01c00a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
@@ -59,7 +59,7 @@
                                 android:text="@string/fas01a00a" />
 
                             <RadioButton
-                                android:id="@+id/fas01a00b"
+                                android:id="@+id/fas01c00b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
@@ -67,7 +67,7 @@
                                 android:text="@string/fas01a00b" />
 
                             <RadioButton
-                                android:id="@+id/fas01a00c"
+                                android:id="@+id/fas01c00c"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
@@ -75,7 +75,7 @@
                                 android:text="@string/fas01a00c" />
 
                             <RadioButton
-                                android:id="@+id/fas01a00d"
+                                android:id="@+id/fas01c00d"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
@@ -108,9 +108,9 @@
                             android:id="@+id/fas01c001"
                             style="@style/textInput"
                             android:enabled="false"
+                            android:hint="@string/fas01a02"
                             android:inputType="number"
                             android:maxLength="4" />
-
 
                     </LinearLayout>
 
@@ -134,13 +134,9 @@
                         <EditText
                             android:id="@+id/fas01c01"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c01"
-                            android:inputType="text" />
-
+                            android:inputType="number"
+                            android:maxLength="3" />
 
                     </LinearLayout>
 
@@ -164,12 +160,9 @@
                         <EditText
                             android:id="@+id/fas01c02"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c02"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -194,12 +187,9 @@
                         <EditText
                             android:id="@+id/fas01c03"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c03"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -276,13 +266,9 @@
                         <EditText
                             android:id="@+id/fas01c04b"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c04b"
-                            android:inputType="text" />
-
+                            android:inputType="number"
+                            android:maxLength="3" />
 
                     </LinearLayout>
 
@@ -306,13 +292,9 @@
                         <EditText
                             android:id="@+id/fas01c05"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c05"
-                            android:inputType="text" />
-
+                            android:inputType="number"
+                            android:maxLength="3" />
 
                     </LinearLayout>
 
@@ -336,12 +318,9 @@
                         <EditText
                             android:id="@+id/fas01c06"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c06"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -366,12 +345,9 @@
                         <EditText
                             android:id="@+id/fas01c07"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c07"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -396,12 +372,9 @@
                         <EditText
                             android:id="@+id/fas01c08"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c08"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -426,12 +399,9 @@
                         <EditText
                             android:id="@+id/fas01c09"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c09"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -456,12 +426,9 @@
                         <EditText
                             android:id="@+id/fas01c10"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c10"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -486,12 +453,9 @@
                         <EditText
                             android:id="@+id/fas01c11"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c11"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -516,12 +480,9 @@
                         <EditText
                             android:id="@+id/fas01c12"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c12"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -546,12 +507,9 @@
                         <EditText
                             android:id="@+id/fas01c13"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c13"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -576,12 +534,9 @@
                         <EditText
                             android:id="@+id/fas01c14"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c14"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -606,12 +561,9 @@
                         <EditText
                             android:id="@+id/fas01c15"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c15"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -636,12 +588,9 @@
                         <EditText
                             android:id="@+id/fas01c16"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c16"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -666,12 +615,9 @@
                         <EditText
                             android:id="@+id/fas01c17"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c17"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -696,12 +642,9 @@
                         <EditText
                             android:id="@+id/fas01c18"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c18"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -726,12 +669,9 @@
                         <EditText
                             android:id="@+id/fas01c19"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c19"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -756,12 +696,9 @@
                         <EditText
                             android:id="@+id/fas01c20"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c20"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -786,12 +723,9 @@
                         <EditText
                             android:id="@+id/fas01c21"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c21"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -816,12 +750,9 @@
                         <EditText
                             android:id="@+id/fas01c22"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c22"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -846,12 +777,9 @@
                         <EditText
                             android:id="@+id/fas01c23"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c23"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -876,12 +804,9 @@
                         <EditText
                             android:id="@+id/fas01c24"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c24"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -906,12 +831,9 @@
                         <EditText
                             android:id="@+id/fas01c25"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c25"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -936,12 +858,9 @@
                         <EditText
                             android:id="@+id/fas01c26"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c26"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -966,12 +885,9 @@
                         <EditText
                             android:id="@+id/fas01c27"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/fas01c27"
-                            android:inputType="text" />
+                            android:inputType="number"
+                            android:maxLength="3" />
 
 
                     </LinearLayout>

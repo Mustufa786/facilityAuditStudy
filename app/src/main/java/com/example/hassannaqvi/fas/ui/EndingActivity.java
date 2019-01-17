@@ -18,8 +18,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.ExecutionException;
 
-import static com.example.hassannaqvi.fas.ui.LoginActivity.db;
-
 
 public class EndingActivity extends AppCompatActivity {
 
@@ -75,7 +73,7 @@ public class EndingActivity extends AppCompatActivity {
 
     public boolean UpdateDB() {
         try {
-            Long longID = new crudOperations(db, fc).execute(FormsDAO.class.getName(), "formsDao", "updateForm").get();
+            Long longID = new crudOperations(this, FormsDAO.class.getName(), "formsDao", "updateForm", fc).execute().get();
             return longID == 1;
 
         } catch (InterruptedException e) {

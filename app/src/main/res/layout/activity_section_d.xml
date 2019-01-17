@@ -45,13 +45,13 @@
                             android:textSize="20sp" />
 
                         <RadioGroup
-                            android:id="@+id/fas01a00"
+                            android:id="@+id/fas01d00"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
                             <RadioButton
-                                android:id="@+id/fas01a00a"
+                                android:id="@+id/fas01d00a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
@@ -59,7 +59,7 @@
                                 android:text="@string/fas01a00a" />
 
                             <RadioButton
-                                android:id="@+id/fas01a00b"
+                                android:id="@+id/fas01d00b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
@@ -67,7 +67,7 @@
                                 android:text="@string/fas01a00b" />
 
                             <RadioButton
-                                android:id="@+id/fas01a00c"
+                                android:id="@+id/fas01d00c"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
@@ -75,7 +75,7 @@
                                 android:text="@string/fas01a00c" />
 
                             <RadioButton
-                                android:id="@+id/fas01a00d"
+                                android:id="@+id/fas01d00d"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"

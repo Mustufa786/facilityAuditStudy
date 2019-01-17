@@ -51,8 +51,8 @@
     <string name="istatusb">نا مکمل</string>
     <string name="istatusc">انکار کردیا</string>
     <string name="istatusd">گھر بند ہے</string>
-    <string name="nextSection">ايندڙ سيڪشن</string>
-    <string name="end_interview">ختم ڪيو</string>
+    <string name="nextSection">اگلا سیکشن</string>
+    <string name="end_interview">اختتام</string>
     <string name="addMember">افراد کا اندراج</string>
 
     <!--Tool 1-->
@@ -75,6 +75,7 @@
     <string name="fas01a00c">تیسرے کواٹر میں </string>
     <string name="fas01a00d"> انٹرونشن کے بعد</string>
 
+    <string name="fas01a01">مرکزِ صحت کا نمبر</string>
     <string name="fas01a02">مرکزِ صحت کا نام</string>
     <string name="fas01a03">مرکزِ صحت کس جگہ واقع ہے</string>
     <string name="fas01a03a">ضلع/علاقہ/صوبہ      </string>

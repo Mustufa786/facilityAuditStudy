@@ -1,5 +1,7 @@
 package com.example.hassannaqvi.fas.get.server;
 
+import android.content.Context;
+
 import com.example.hassannaqvi.fas.RMOperations.crudOperations;
 import com.example.hassannaqvi.fas.RMOperations.syncOperations;
 import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
@@ -13,7 +15,7 @@ import static com.example.hassannaqvi.fas.ui.LoginActivity.db;
 
 public abstract class GetSyncFncs {
 
-    public static void syncUsers(JSONArray userlist) {
+    public static void syncUsers(Context mContext, JSONArray userlist) {
 
         new syncOperations(db).execute(FormsDAO.class.getName(), "formsDao", "deleteUsers");
 
@@ -25,7 +27,7 @@ public abstract class GetSyncFncs {
                 String password = jsonObjectUser.getString("password");
 
                 Users users = new Users(userName, password);
-                new crudOperations(db, users).execute(FormsDAO.class.getName(), "formsDao", "insertUsers").get();
+                new crudOperations(mContext, FormsDAO.class.getName(), "formsDao", "insertUsers", users).execute().get();
             }
             db.close();
 
@@ -33,7 +35,7 @@ public abstract class GetSyncFncs {
         }
     }
 
-    public static void syncClusters(JSONArray clusterList) {
+    public static void syncClusters(Context mContext, JSONArray clusterList) {
 
         new syncOperations(db).execute(FormsDAO.class.getName(), "formsDao", "deleteClusters");
 
@@ -45,7 +47,7 @@ public abstract class GetSyncFncs {
                 Clusters clusters = new Clusters();
                 clusters.Sync(jsonObjectUser);
 
-                new crudOperations(db, clusters).execute(FormsDAO.class.getName(), "formsDao", "insertClusters").get();
+                new crudOperations(mContext, FormsDAO.class.getName(), "formsDao", "insertClusters", clusters).execute().get();
             }
             db.close();
 

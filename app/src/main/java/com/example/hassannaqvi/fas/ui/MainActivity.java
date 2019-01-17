@@ -32,6 +32,8 @@ import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivityMainBinding;
 import com.example.hassannaqvi.fas.get.db.GetAllDBData;
 import com.example.hassannaqvi.fas.sync.SyncAllData;
+import com.example.hassannaqvi.fas.ui.tool1.InfoActivity;
+import com.example.hassannaqvi.fas.ui.tool2.SectionA_tool_2Activity;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -236,98 +238,62 @@ public class MainActivity extends Activity {
     }
 
     public void openForm(String fType) {
-//        final Intent oF = new Intent(MainActivity.this, selectedForm(fType))
-//                .putExtra("fType", fType);
-//
-//        if (sharedPref.getString("tagName", null) != "" && sharedPref.getString("tagName", null) != null && !MainApp.userName.equals("0000")) {
-//            startActivity(oF);
-//        } else {
-//
-//            builder = new AlertDialog.Builder(MainActivity.this);
-//            ImageView img = new ImageView(getApplicationContext());
-//            img.setImageResource(R.drawable.tagimg);
-//            img.setPadding(0, 15, 0, 15);
-//            builder.setCustomTitle(img);
-//
-//            final EditText input = new EditText(MainActivity.this);
-//            input.setInputType(InputType.TYPE_CLASS_TEXT);
-//            builder.setView(input);
-//
-//
-//            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-//                @Override
-//                public void onClick(DialogInterface dialog, int which) {
-//                    m_Text = input.getText().toString();
-//                    if (!m_Text.equals("")) {
-//                        editor.putString("tagName", m_Text);
-//                        editor.commit();
-//
-//                        if (!MainApp.userName.equals("0000")) {
-//                            startActivity(oF);
-//                        }
-//                    }
-//                }
-//            });
-//            builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-//                @Override
-//                public void onClick(DialogInterface dialog, int which) {
-//                    dialog.cancel();
-//                }
-//            });
-//
-//            builder.show();
-//        }
+        final Intent oF = new Intent(MainActivity.this, selectedForm(fType));
+
+        if (sharedPref.getString("tagName", null) != "" && sharedPref.getString("tagName", null) != null && !MainApp.userName.equals("0000")) {
+            startActivity(oF);
+        } else {
+
+            builder = new AlertDialog.Builder(MainActivity.this);
+            ImageView img = new ImageView(getApplicationContext());
+            img.setImageResource(R.drawable.tagimg);
+            img.setPadding(0, 15, 0, 15);
+            builder.setCustomTitle(img);
+
+            final EditText input = new EditText(MainActivity.this);
+            input.setInputType(InputType.TYPE_CLASS_TEXT);
+            builder.setView(input);
+
+            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    m_Text = input.getText().toString();
+                    if (!m_Text.equals("")) {
+                        editor.putString("tagName", m_Text);
+                        editor.commit();
+
+                        if (!MainApp.userName.equals("0000")) {
+                            startActivity(oF);
+                        }
+                    }
+                }
+            });
+            builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.cancel();
+                }
+            });
+
+            builder.show();
+        }
     }
 
-//    public void openDeviation() {
-//        final Intent oF = new Intent(MainActivity.this, Form14Activity.class);
-//        startActivity(oF);
-//    }
+    private Class<?> selectedForm(String fType) {
 
-//    private Class<?> selectedForm(String fType) {
-//
-//        Class retClass = null;
-//
-//        switch (fType) {
-//            case "1a":
-//            case "1b":
-//                retClass = Form01Enrolment.class;
-//                break;
-//            case "4":
-//            case "5":
-//            case "6":
-//                retClass = InfoActivity.class;
-//                break;
-//            case "7":
-//                retClass = Form07Activity.class;
-//                break;
-//            case "8":
-//                retClass = YouthInfoActivity.class;
-//                break;
-//            case "9":
-//                retClass = YouthInfoActivity.class;
-//                break;
-//        }
-//
-//        return retClass;
-//    }
+        Class retClass = null;
 
-//    public void openAnthro() {
-//        startActivity(new Intent(this, Form6AnthroActivity.class));
-//    }
+        switch (fType) {
+            case "t1":
+                retClass = InfoActivity.class;
+                break;
+            case "t2":
+                retClass = SectionA_tool_2Activity.class;
+                break;
+        }
 
-//    public void openYouthEnrol() {
-//        startActivity(new Intent(MainActivity.this, Form07Activity.class));
-//    }
-
-//    public void openEF() {
-//        Toast.makeText(this, "This form is under construction", Toast.LENGTH_SHORT).show();
-////        startActivity(new Intent(MainActivity.this, Form05IdBAActivity.class));
-//    }
-
-//    public void openYouthEF() {
-//        startActivity(new Intent(MainActivity.this, Form05IdBAActivity.class));
-//    }
+        return retClass;
+    }
 
     public void openDB() {
         Intent dbmanager = new Intent(getApplicationContext(), DbInspectorActivity.class);

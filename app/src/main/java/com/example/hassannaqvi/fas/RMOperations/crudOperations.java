@@ -1,5 +1,6 @@
 package com.example.hassannaqvi.fas.RMOperations;
 
+import android.content.Context;
 import android.os.AsyncTask;
 
 import com.example.hassannaqvi.fas.data.AppDatabase;
@@ -13,16 +14,22 @@ import java.lang.reflect.Method;
 
 public class crudOperations extends AsyncTask<String, Void, Long> {
 
-    AppDatabase db;
-    Object forms;
+    private AppDatabase db;
+    private Object objForms;
+    private Context mContext;
+    private String className, DAOClassRef, DAOClassFncRef;
 
-    public crudOperations(AppDatabase db, Object forms) {
-        this.db = db;
-        this.forms = forms;
+    public crudOperations(Context mContext, String className, String DAOClassRef, String DAOClassFncRef, Object objForms) {
+        this.mContext = mContext;
+        this.className = className;
+        this.DAOClassRef = DAOClassRef;
+        this.DAOClassFncRef = DAOClassFncRef;
+        this.objForms = objForms;
     }
 
     @Override
     protected Long doInBackground(String... fnNames) {
+        db = AppDatabase.getDatabase(mContext);
 
         Long longID = new Long(0);
 
@@ -30,15 +37,15 @@ public class crudOperations extends AsyncTask<String, Void, Long> {
 
             Method[] fn = db.getClass().getDeclaredMethods();
             for (Method method : fn) {
-                if (method.getName().equals(fnNames[1])) {
+                if (method.getName().equals(DAOClassRef)) {
 
-                    Class<?> fnClass = Class.forName(fnNames[0]);
+                    Class<?> fnClass = Class.forName(className);
 
                     for (Method method2 : fnClass.getDeclaredMethods()) {
-                        if (method2.getName().equals(fnNames[2])) {
+                        if (method2.getName().equals(DAOClassFncRef)) {
 
-                            longID = Long.valueOf(String.valueOf(fnClass.getMethod(method2.getName(), forms.getClass())
-                                    .invoke(db.getClass().getMethod(fnNames[1]).invoke(db), forms)));
+                            longID = Long.valueOf(String.valueOf(fnClass.getMethod(method2.getName(), objForms.getClass())
+                                    .invoke(db.getClass().getMethod(DAOClassRef).invoke(db), objForms)));
 
                             break;
                         }

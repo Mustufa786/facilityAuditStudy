@@ -29,8 +29,7 @@ public class Forms implements Serializable {
     private String username = ""; // Interviewer
     private String participantID = ""; // Child ID
     private String participantName = ""; // Child Name
-    private String sInfo = "";   // Section Info
-    private String sa1 = "";     // Section 1
+    private String sa1 = "";     // Section 1 - Info
     private String sa2 = "";     // Section 2
     private String sa3 = "";     // Section 3
     private String sa4 = "";     // Section 4
@@ -65,7 +64,6 @@ public class Forms implements Serializable {
         this.participantID = forms.participantID;
         this.participantName = forms.participantName;
         this.studyID = forms.studyID;
-        this.sInfo = forms.sInfo;
         this.sa1 = forms.sa1;
         this.sa2 = forms.sa2;
         this.sa3 = forms.sa3;
@@ -128,9 +126,6 @@ public class Forms implements Serializable {
         json.put("round", this.round == null ? JSONObject.NULL : this.round);
         json.put("pdeviation", this.pdeviation == null ? JSONObject.NULL : this.pdeviation);
 
-        if (!this.sInfo.equals("")) {
-            json.put("sInfo", this.sInfo.equals("") ? JSONObject.NULL : new JSONObject(this.sInfo));
-        }
         if (!this.sa1.equals("")) {
             json.put("sa1", this.sa1.equals("") ? JSONObject.NULL : new JSONObject(this.sa1));
         }
@@ -232,14 +227,6 @@ public class Forms implements Serializable {
 
     public void setStudyID(String studyID) {
         this.studyID = studyID;
-    }
-
-    public String getSInfo() {
-        return sInfo;
-    }
-
-    public void setSInfo(String sInfo) {
-        this.sInfo = sInfo;
     }
 
     public String getSa1() {

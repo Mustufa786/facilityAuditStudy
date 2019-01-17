@@ -5,13 +5,20 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
+import com.example.hassannaqvi.fas.JSON.GeneratorClass;
 import com.example.hassannaqvi.fas.R;
+import com.example.hassannaqvi.fas.RMOperations.crudOperations;
 import com.example.hassannaqvi.fas.core.CONSTANTS;
 import com.example.hassannaqvi.fas.core.MainApp;
+import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
 import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivitySectionDBinding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
 import com.example.hassannaqvi.fas.validation.ValidatorClass;
+
+import org.json.JSONObject;
+
+import java.util.concurrent.ExecutionException;
 
 public class SectionDActivity extends AppCompatActivity {
 
@@ -47,14 +54,23 @@ public class SectionDActivity extends AppCompatActivity {
     }
 
     private boolean UpdateDB() {
+        try {
 
+            Long longID = new crudOperations(this, FormsDAO.class.getName(), "formsDao", "updateForm", fc).execute().get();
+            return longID == 1;
 
-        return true;
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
+        return false;
     }
 
     private void SaveDraft() {
-
-
+        JSONObject Json = GeneratorClass.getContainerJSON(bi.fldGrpllSecD, true);
+        fc.setSa4(String.valueOf(Json));
     }
 
     private boolean formValidation() {

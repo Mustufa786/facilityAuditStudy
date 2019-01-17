@@ -40,17 +40,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="50dp"
                 android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="50dp">
+                android:paddingBottom="@dimen/activity_vertical_margin">
 
                 <TextView
                     android:id="@+id/lblheader"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@color/dullWhile"
                     android:text="Message!!!"
                     android:textColor="@color/colorPrimary"
@@ -60,8 +60,8 @@
                     android:id="@+id/lblMainMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@color/colorPrimary"
                     android:padding="10dp"
                     android:text="Main Menu"
@@ -119,9 +119,9 @@
                     android:id="@+id/layout1"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
-                    android:layout_marginEnd="10dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
                     android:orientation="horizontal">
 
 
@@ -131,7 +131,8 @@
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
                         android:layout_weight="1"
                         android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground">
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:onClick='@{(v) -> callback.openForm("t1")}'>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -148,15 +149,15 @@
                                 android:textColor="@color/colorPrimaryDark" />
 
                             <TextView
-                                android:layout_marginTop="10dp"
-                                android:layout_marginStart="90dp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginStart="90dp"
+                                android:layout_marginTop="10dp"
                                 android:gravity="center"
                                 android:text="TOOL 1"
-                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="17sp"
-                                android:textColor="@color/colorPrimary" />
+                                android:textStyle="bold" />
 
 
                         </LinearLayout>
@@ -173,7 +174,8 @@
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
                         android:layout_weight="1"
                         android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground">
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:onClick='@{(v) -> callback.openForm("t2")}'>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -182,24 +184,24 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:textSize="16sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
                                 android:gravity="center"
                                 android:text="@string/tool2"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16sp" />
 
                             <TextView
-                                android:layout_marginTop="5dp"
-                                android:layout_marginStart="90dp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginStart="90dp"
+                                android:layout_marginTop="5dp"
                                 android:gravity="center"
                                 android:text="TOOL 2"
-                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="17sp"
-                                android:textColor="@color/colorPrimary" />
+                                android:textStyle="bold" />
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
@@ -208,16 +210,12 @@
                 </LinearLayout>
 
 
-
-
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
-                    android:layout_marginEnd="10dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
                     android:orientation="horizontal">
 
 
@@ -234,9 +232,9 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:layout_gravity="center"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:text="Upload Data"
                                 android:textColor="@color/colorPrimaryDark" />
 
@@ -300,8 +298,8 @@
                     android:id="@+id/openForm01a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@color/colorPrimary"
                     android:text="Enrolment and Household SES - Population Survey"
 
@@ -312,8 +310,8 @@
                     android:id="@+id/openForm01b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@color/colorPrimary"
                     android:text="Enrolment and Household SES - School Cohort"
 
@@ -324,8 +322,8 @@
                     android:id="@+id/openAnthro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@color/colorPrimary"
                     android:text="Child Anthropometry"
 
@@ -336,8 +334,8 @@
                     android:id="@+id/openEF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@color/colorPrimary"
                     android:text="Executive Function Skills - Child"
 
@@ -348,8 +346,8 @@
                     android:id="@+id/openYouthEnrol"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@color/colorPrimary"
                     android:text="Enrolment and Questionare - Youth"
 
@@ -360,8 +358,8 @@
                     android:id="@+id/openYouthEF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@color/colorPrimary"
                     android:text="Executive Function Skills - Youth"
 
@@ -373,8 +371,8 @@
                     android:id="@+id/openA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:onClick="openA"
                     android:text="OPEN A"
                     android:visibility="gone" />
@@ -383,8 +381,8 @@
                     android:id="@+id/openB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:onClick="openB"
                     android:text="OPEN B"
                     android:visibility="gone" />
@@ -393,8 +391,8 @@
                     android:id="@+id/openC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:onClick="openC"
                     android:text="OPEN C"
                     android:visibility="gone" />
@@ -403,8 +401,8 @@
                     android:id="@+id/openD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:onClick="openD"
                     android:text="OPEN D"
                     android:visibility="gone" />
@@ -413,8 +411,8 @@
                     android:id="@+id/openE"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:onClick="openE"
                     android:text="OPEN E"
                     android:visibility="gone" />
@@ -423,8 +421,8 @@
                     android:id="@+id/openF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:onClick="openF"
                     android:text="OPEN F"
                     android:visibility="gone" />
@@ -433,8 +431,8 @@
                     android:id="@+id/openG"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:onClick="openG"
                     android:text="OPEN G"
                     android:visibility="gone" />
@@ -443,8 +441,8 @@
                     android:id="@+id/openH"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:onClick="openH"
                     android:text="OPEN H"
                     android:visibility="gone" />
@@ -453,8 +451,8 @@
                     android:id="@+id/openI"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:onClick="openI"
                     android:text="OPEN I"
                     android:visibility="gone" />
@@ -463,8 +461,8 @@
                     android:id="@+id/openJ"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:onClick="openJ"
                     android:text="OPEN J"
                     android:visibility="gone" />
@@ -473,8 +471,8 @@
                     android:id="@+id/openK"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:onClick="openK"
                     android:text="OPEN K"
                     android:visibility="gone" />
@@ -483,8 +481,8 @@
                     android:id="@+id/openLMO"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:onClick="openLMO"
                     android:text="OPEN LMO"
                     android:visibility="gone" />
@@ -493,8 +491,8 @@
                     android:id="@+id/syncServer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@color/colorPrimary"
                     android:onClick="syncServer"
                     android:text="Upload Data"
@@ -505,8 +503,8 @@
                     android:id="@+id/openDB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@color/colorPrimary"
                     android:onClick="openDB"
                     android:text="Open Database Manager"
@@ -523,8 +521,8 @@
                         android:id="@+id/syncDevice"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
                         android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
                         android:background="@color/colorPrimary"
                         android:onClick="syncDevice"
                         android:text="Download Data"
@@ -534,8 +532,8 @@
                         android:id="@+id/downloadApp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
                         android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
                         android:background="@color/red"
                         android:text="DOWNLOAD APP"
                         android:textColor="@color/white"
@@ -545,8 +543,8 @@
                         android:id="@+id/updateApp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
                         android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
                         android:background="@color/colorPrimary"
                         android:onClick="updateApp"
                         android:text="Update App"
@@ -566,8 +564,8 @@
                         android:id="@+id/testGPS"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
                         android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
                         android:onClick="testGPS"
                         android:text="Test GPS Coordinates" />
                 </LinearLayout>

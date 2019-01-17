@@ -90,10 +90,10 @@ public class GetAllData extends AsyncTask<String, String, String> {
 
                     switch (syncClass) {
                         case "User":
-                            GetSyncFncs.syncUsers(jsonArray);
+                            GetSyncFncs.syncUsers(mContext, jsonArray);
                             break;
                         case "Clusters":
-                            GetSyncFncs.syncClusters(jsonArray);
+                            GetSyncFncs.syncClusters(mContext, jsonArray);
                             break;
                     }
 
