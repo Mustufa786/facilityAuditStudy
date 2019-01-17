@@ -79,10 +79,22 @@
             android:name=".ui.tool1.SectionFActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
-        <activity android:name=".ui.tool2.SectionA_tool_2Activity" />
-        <activity android:name=".ui.tool2.SectionB_tool_2Activity" />
-        <activity android:name=".ui.tool2.SectionC_tool_2Activity" />
-        <activity android:name=".ui.tool2.SectionD_tool_2Activity"></activity>
+        <activity
+            android:name=".ui.tool2.SectionA_tool_2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".ui.tool2.SectionB_tool_2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".ui.tool2.SectionC_tool_2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".ui.tool2.SectionD_tool_2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
     </application>
 
 </manifest>
