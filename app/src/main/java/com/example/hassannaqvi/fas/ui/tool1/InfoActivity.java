@@ -14,7 +14,7 @@ import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivityInfoBinding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
 import com.example.hassannaqvi.fas.ui.LoginActivity;
-import com.example.hassannaqvi.fas.validation.validatorClass;
+import com.example.hassannaqvi.fas.validation.ValidatorClass;
 
 import java.util.concurrent.ExecutionException;
 
@@ -113,7 +113,7 @@ public class InfoActivity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-        return validatorClass.EmptyCheckingContainer(this, bi.fldGrpllInfoA);
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllInfoA);
     }
 
     public void BtnEnd() {

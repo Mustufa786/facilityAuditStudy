@@ -12,7 +12,7 @@ import com.example.hassannaqvi.fas.core.CONSTANTS;
 import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
 import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivityEndingBinding;
-import com.example.hassannaqvi.fas.validation.validatorClass;
+import com.example.hassannaqvi.fas.validation.ValidatorClass;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -88,7 +88,7 @@ public class EndingActivity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-        return validatorClass.EmptyRadioButton(this, bi.istatus, bi.istatusb, getString(R.string.istatus));
+        return ValidatorClass.EmptyRadioButton(this, bi.istatus, bi.istatusb, getString(R.string.istatus));
     }
 
     @Override

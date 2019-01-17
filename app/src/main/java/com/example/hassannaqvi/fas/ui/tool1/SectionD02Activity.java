@@ -11,7 +11,7 @@ import com.example.hassannaqvi.fas.core.MainApp;
 import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivitySectionD02Binding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
-import com.example.hassannaqvi.fas.validation.validatorClass;
+import com.example.hassannaqvi.fas.validation.ValidatorClass;
 
 public class SectionD02Activity extends AppCompatActivity {
 
@@ -62,7 +62,7 @@ public class SectionD02Activity extends AppCompatActivity {
 
     private boolean formValidation() {
 
-        return validatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecD02);
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecD02);
     }
 
     public void BtnEnd() {

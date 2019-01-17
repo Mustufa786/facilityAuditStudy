@@ -28,7 +28,7 @@ import java.lang.reflect.Field;
  * modified by ramsha.seed on 7/8/2018
  */
 
-public abstract class validatorClass {
+public abstract class ValidatorClass {
 
     public static boolean EmptyTextBox(Context context, EditText txt, String msg) {
         if (TextUtils.isEmpty(txt.getText().toString())) {
