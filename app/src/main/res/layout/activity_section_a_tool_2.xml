@@ -26,7 +26,7 @@
 
         <LinearLayout style="@style/linerlayout_view">
 
-            <!--fas01a00-->
+            <!--fas02a00-->
             <android.support.v7.widget.CardView style="@style/cardView">
 
                 <LinearLayout style="@style/linerlayout_view">
@@ -42,13 +42,13 @@
                         android:textSize="20sp" />
 
                     <RadioGroup
-                        android:id="@+id/fas01a00"
+                        android:id="@+id/fas02a00"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <RadioButton
-                            android:id="@+id/fas01a00a"
+                            android:id="@+id/fas02a00a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
@@ -56,7 +56,7 @@
                             android:text="@string/fas01a00a" />
 
                         <RadioButton
-                            android:id="@+id/fas01a00b"
+                            android:id="@+id/fas02a00b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
@@ -64,7 +64,7 @@
                             android:text="@string/fas01a00b" />
 
                         <RadioButton
-                            android:id="@+id/fas01a00c"
+                            android:id="@+id/fas02a00c"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
@@ -72,7 +72,7 @@
                             android:text="@string/fas01a00c" />
 
                         <RadioButton
-                            android:id="@+id/fas01a00d"
+                            android:id="@+id/fas02a00d"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
@@ -86,7 +86,7 @@
 
             </android.support.v7.widget.CardView>
 
-            <!--fas01a01-->
+            <!--fas02a001-->
             <android.support.v7.widget.CardView style="@style/cardView">
 
                 <LinearLayout style="@style/linerlayout_view">
@@ -96,18 +96,16 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:background="@color/colorPrimary"
-                        android:text="@string/fas01a02"
+                        android:text="@string/fas01a01"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white"
                         android:textSize="20sp" />
 
-                    <Spinner
-                        android:id="@+id/fas01a02"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:padding="10dp"></Spinner>
-
+                    <EditText
+                        android:id="@+id/fas02a001"
+                        style="@style/textInput"
+                        android:inputType="number"
+                        android:maxLength="4" />
 
                 </LinearLayout>
 
@@ -138,8 +136,6 @@
                         android:id="@+id/fas02a01"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
-
-
 
                 </LinearLayout>
 
