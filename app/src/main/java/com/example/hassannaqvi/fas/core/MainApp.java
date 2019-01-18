@@ -124,11 +124,23 @@ public class MainApp extends Application {
         return ageInYears;
     }
 
-    public static void stActivity(final Context context, final Activity activity, final Class NextActivityClass, final Object objectData) {
-        activity.finish();
-        Intent end_intent = new Intent(context, NextActivityClass);
-        end_intent.putExtra(CONSTANTS._URI_FC_OBJ, (Serializable) objectData);
-        context.startActivity(end_intent);
+    public static void stActivity(final Context currentContext, final Activity currentActivity, final Class nextActivity, final Object currentFormInstance) {
+        currentActivity.finish();
+        Intent end_intent = new Intent(currentContext, nextActivity);
+        end_intent.putExtra(CONSTANTS._URI_FC_OBJ, (Serializable) currentFormInstance);
+        currentContext.startActivity(end_intent);
+    }
+
+    public static void setParamValues(final Context mContext, final String key, final String value) {
+        SharedPreferences shared = mContext.getSharedPreferences("DataParams", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = shared.edit();
+        editor.putString(key, value);
+        editor.commit();
+    }
+
+    public static String getParamValue(final Context mContext, final String key) {
+        SharedPreferences shared = mContext.getSharedPreferences("DataParams", Context.MODE_PRIVATE);
+        return shared.getString(key, "0");
     }
 
     public static void endActivity(final Context context, final Activity activity, final Class EndActivityClass, final boolean complete, final Object objectData) {

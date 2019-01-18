@@ -86,7 +86,7 @@ public class ClearClass {
         }
     }*/
 
-    public static void ClearAllCardFields(CardView container, Boolean flag) {
+    private static void ClearAllCardFields(CardView container, Boolean flag) {
         for (int i = 0; i < container.getChildCount(); i++) {
             View v = container.getChildAt(i);
             if (v instanceof CheckBox) {
@@ -126,6 +126,11 @@ public class ClearClass {
                 ((EditText) v).setError(null);
                 v.clearFocus();
 
+                if (flag != null)
+                    v.setEnabled(flag);
+
+            } else if (v instanceof RadioButton) {
+                ((RadioButton) v).setChecked(false);
                 if (flag != null)
                     v.setEnabled(flag);
 

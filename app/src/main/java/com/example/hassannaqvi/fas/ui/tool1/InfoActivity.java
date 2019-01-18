@@ -81,6 +81,11 @@ public class InfoActivity extends AppCompatActivity {
 
         SaveDraft();
         if (UpdateDB()) {
+
+            String surveyType = bi.fas01a00a.isChecked() ? "1" : bi.fas01a00b.isChecked() ? "2" : bi.fas01a00c.isChecked() ? "3" : bi.fas01a00d.isChecked() ? "4" : "0";
+            MainApp.setParamValues(this, CONSTANTS._URI_DATAMAP_SURVEY_TYPE, surveyType);
+            MainApp.setParamValues(this, CONSTANTS._URI_DATAMAP_HF_NO, bi.fas01a01.getText().toString());
+
             MainApp.stActivity(this, this, SectionCActivity.class, fc);
         } else {
             Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
@@ -180,6 +185,5 @@ public class InfoActivity extends AppCompatActivity {
         }
 
     }
-
 
 }

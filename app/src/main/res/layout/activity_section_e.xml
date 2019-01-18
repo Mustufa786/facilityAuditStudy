@@ -199,6 +199,7 @@
                             android:id="@+id/fas01e02a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -331,6 +332,7 @@
                             android:id="@+id/fas01e03a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -463,6 +465,7 @@
                             android:id="@+id/fas01e04a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -595,6 +598,7 @@
                             android:id="@+id/fas01e05a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -727,6 +731,7 @@
                             android:id="@+id/fas01e06a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -859,6 +864,7 @@
                             android:id="@+id/fas01e07a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -991,6 +997,7 @@
                             android:id="@+id/fas01e08a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -1123,6 +1130,7 @@
                             android:id="@+id/fas01e09a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -1255,6 +1263,7 @@
                             android:id="@+id/fas01e10a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -1387,6 +1396,7 @@
                             android:id="@+id/fas01e11a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -1519,6 +1529,7 @@
                             android:id="@+id/fas01e12a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -1651,6 +1662,7 @@
                             android:id="@+id/fas01e13a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -1783,6 +1795,7 @@
                             android:id="@+id/fas01e14a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -1915,6 +1928,7 @@
                             android:id="@+id/fas01e15a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -2047,6 +2061,7 @@
                             android:id="@+id/fas01e16a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -2179,6 +2194,7 @@
                             android:id="@+id/fas01e17a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton

@@ -14,6 +14,7 @@ import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
 import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivitySectionDBinding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
+import com.example.hassannaqvi.fas.validation.ClearClass;
 import com.example.hassannaqvi.fas.validation.ValidatorClass;
 
 import org.json.JSONObject;
@@ -38,6 +39,12 @@ public class SectionDActivity extends AppCompatActivity {
         this.setTitle(R.string.section4);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
+        ClearClass.ClearAllFields(bi.fas01d00, false);
+        String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_SURVEY_TYPE);
+        if (!getSurvey.equals("0"))
+            bi.fas01d00.check(bi.fas01d00.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
+
+        bi.fas01d001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
     }
 
     public void BtnContinue() {
