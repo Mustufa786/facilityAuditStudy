@@ -32,7 +32,7 @@ import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivityMainBinding;
 import com.example.hassannaqvi.fas.get.db.GetAllDBData;
 import com.example.hassannaqvi.fas.sync.SyncAllData;
-import com.example.hassannaqvi.fas.ui.tool1.SectionEActivity;
+import com.example.hassannaqvi.fas.ui.tool1.InfoActivity;
 import com.example.hassannaqvi.fas.ui.tool2.SectionA_tool_2Activity;
 
 import java.io.File;
@@ -285,7 +285,7 @@ public class MainActivity extends Activity {
 
         switch (fType) {
             case "t1":
-                retClass = SectionEActivity.class;
+                retClass = InfoActivity.class;
                 break;
             case "t2":
                 retClass = SectionA_tool_2Activity.class;
