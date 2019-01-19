@@ -40,7 +40,14 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a_tool_2);
         bi.setCallback(this);
 
+        //    this.setTitle(R.string.section1);
+        setContentUI();
+    }
+
+    private void setContentUI() {
         deviceID = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
+        bi.fas02a02.setManager(getSupportFragmentManager());
+
     }
 
     public void BtnContinue() {
@@ -49,11 +56,11 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
 
         try {
             SaveDraft();
-        if (UpdateDB()) {
-            MainApp.stActivity(this, this, SectionB_tool_2Activity.class, fc);
-        } else {
-            Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
-        }
+            if (UpdateDB()) {
+                MainApp.stActivity(this, this, SectionB_tool_2Activity.class, fc);
+            } else {
+                Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
+            }
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -98,42 +105,39 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         setGPS(fc);
 
 
-        JSONObject s02 = new JSONObject();
+        JSONObject s01 = new JSONObject();
 
 
-        s02.put("fas01a00",
+        s01.put("fas01a00",
                 bi.fas02a00a.isChecked() ? "1"
                         : bi.fas02a00b.isChecked() ? "2"
                         : bi.fas02a00c.isChecked() ? "3"
                         : bi.fas02a00d.isChecked() ? "4" : "0");
 
-        s02.put("fas02a001", bi.fas02a001.getText().toString());
-        s02.put("fas02a01", bi.fas02a01.getText().toString());
+        s01.put("fas02a001", bi.fas02a001.getText().toString());
+        s01.put("fas02a01", bi.fas02a01.getText().toString());
 
-        s02.put("fas02a02", bi.fas02a02.getText().toString());
+        s01.put("fas02a02", bi.fas02a02.getText().toString());
 
 
-        s02.put("fas02a07",
+        s01.put("fas02a07",
                 bi.fas02a07a.isChecked() ? "1"
                         : bi.fas02a07b.isChecked() ? "2"
                         : "0");
 
+        s01.put("fas02a08a", bi.fas02a08a.isChecked() ? "1" : "0");
+        s01.put("fas02a08b", bi.fas02a08b.isChecked() ? "2" : "0");
+        s01.put("fas02a08c", bi.fas02a08c.isChecked() ? "3" : "0");
+        s01.put("fas02a08d", bi.fas02a08d.isChecked() ? "4" : "0");
+        s01.put("fas02a0896", bi.fas02a0896.isChecked() ? "96" : "0");
+        s01.put("fas02a0896x", bi.fas02a0896x.getText().toString());
 
-        /*s02.put("fas02a08",
-                bi.fas02a08a.isChecked() ? "1"
-                        : bi.fas02a08b.isChecked() ? "2"
-                        : bi.fas02a08c.isChecked() ? "3"
-                        : bi.fas02a08d.isChecked() ? "4"
-                        : bi.fas02a0896.isChecked() ? "96"
-                        : "0");*/
-        s02.put("fas02a0896x", bi.fas02a0896x.getText().toString());
-
+        fc.setSa1(String.valueOf(s01));
 
     }
 
     private boolean formValidation() {
-
-        return true;
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpSecAtool02);
     }
 
     public void BtnEnd() {
