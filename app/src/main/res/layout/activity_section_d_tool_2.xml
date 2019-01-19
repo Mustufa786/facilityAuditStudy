@@ -24,673 +24,663 @@
         android:paddingBottom="5sp">
 
         <LinearLayout style="@style/linerlayout_view">
-            <!--
-
-                        &lt;!&ndash;fas02d01&ndash;&gt;
-                        <android.support.v7.widget.CardView style="@style/cardView">
-
-                            <LinearLayout style="@style/linerlayout_view">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_horizontal"
-                                    android:background="@color/colorPrimary"
-                                    android:text="@string/fas02d01"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@android:color/white"
-                                    android:textSize="20sp" />
-
-                                <RadioGroup
-                                    android:id="@+id/fas02d01"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d01a"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d01b"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-
-
-                                </RadioGroup>
-
-
-                            </LinearLayout>
-
-                        </android.support.v7.widget.CardView>
-
-                        &lt;!&ndash;fas02d02&ndash;&gt;
-                        <android.support.v7.widget.CardView style="@style/cardView">
-
-                            <LinearLayout style="@style/linerlayout_view">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_horizontal"
-                                    android:background="@color/colorPrimary"
-                                    android:text="@string/fas02d02"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@android:color/white"
-                                    android:textSize="20sp" />
-
-                                <RadioGroup
-                                    android:id="@+id/fas02d02"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d02a"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d02a" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d02b"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d02b" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d02c"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d02c" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d02d"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d02d" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d02e"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d02e" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d02f"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d02f" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d02f"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d02f" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d02g"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d02g" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d02h"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d02h" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d02i"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d02i" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d02j"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d02j" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d02k"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d02k" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d0298"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/dkn" />
-
-
-                                </RadioGroup>
-
-
-                            </LinearLayout>
-
-                        </android.support.v7.widget.CardView>
-
-                        &lt;!&ndash;fas02d03&ndash;&gt;
-                        <android.support.v7.widget.CardView style="@style/cardView">
-
-                            <LinearLayout style="@style/linerlayout_view">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_horizontal"
-                                    android:background="@color/colorPrimary"
-                                    android:text="@string/fas02d03"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@android:color/white"
-                                    android:textSize="20sp" />
-
-                                <RadioGroup
-                                    android:id="@+id/fas02d03"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d03a"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d03b"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-
-
-                                </RadioGroup>
-
-
-                            </LinearLayout>
-
-                        </android.support.v7.widget.CardView>
-
-                        &lt;!&ndash;fas02d04&ndash;&gt;
-                        <android.support.v7.widget.CardView style="@style/cardView">
-
-                            <LinearLayout style="@style/linerlayout_view">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_horizontal"
-                                    android:background="@color/colorPrimary"
-                                    android:text="@string/fas02d04"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@android:color/white"
-                                    android:textSize="20sp" />
-
-                                <RadioGroup
-                                    android:id="@+id/fas02d04"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d04a"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d04a" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d04b"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d04b" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d04c"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d04c" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d04d"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d04d" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d04e"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d04e" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d04f"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d04f" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d04g"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d04g" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d04h"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d04h" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d04i"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d04i" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d04j"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d04j" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d04k"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d04k" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d04l"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d04l" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d04m"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d04m" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d0498"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/dkn" />
-
-
-                                </RadioGroup>
-
-
-                            </LinearLayout>
-
-                        </android.support.v7.widget.CardView>
-
-
-                        &lt;!&ndash;fas02d05&ndash;&gt;
-                        <android.support.v7.widget.CardView style="@style/cardView">
-
-                            <LinearLayout style="@style/linerlayout_view">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_horizontal"
-                                    android:background="@color/colorPrimary"
-                                    android:text="@string/fas02d05"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@android:color/white"
-                                    android:textSize="20sp" />
-
-                                <RadioGroup
-                                    android:id="@+id/fas02d05"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d05a"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d05b"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-
-
-                                </RadioGroup>
-
-
-                            </LinearLayout>
-
-                        </android.support.v7.widget.CardView>
-
-                        &lt;!&ndash;fas02d06&ndash;&gt;
-                        <android.support.v7.widget.CardView style="@style/cardView">
-
-                            <LinearLayout style="@style/linerlayout_view">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_horizontal"
-                                    android:background="@color/colorPrimary"
-                                    android:text="@string/fas02d06"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@android:color/white"
-                                    android:textSize="20sp" />
-
-                                <RadioGroup
-                                    android:id="@+id/fas02d06"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d06a"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d06a" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d06b"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d06b" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d06c"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d06c" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d06d"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d06d" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d06e"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d06e" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d06f"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d06f" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d06g"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d06g" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d06h"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d06h" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d0698"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/dkn" />
-
-
-                                </RadioGroup>
-
-
-                            </LinearLayout>
-
-                        </android.support.v7.widget.CardView>
-
-                        &lt;!&ndash;fas02d07    &ndash;&gt;
-                        <android.support.v7.widget.CardView style="@style/cardView">
-
-                            <LinearLayout style="@style/linerlayout_view">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_horizontal"
-                                    android:background="@color/colorPrimary"
-                                    android:text="@string/fas02d07  "
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@android:color/white"
-                                    android:textSize="20sp" />
-
-                                <RadioGroup
-                                    android:id="@+id/fas02d07   "
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d07   a"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d07   b"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-
-
-                                </RadioGroup>
-
-
-                            </LinearLayout>
-
-                        </android.support.v7.widget.CardView>
-
-                        &lt;!&ndash;fas02d08&ndash;&gt;
-                        <android.support.v7.widget.CardView style="@style/cardView">
-
-                            <LinearLayout style="@style/linerlayout_view">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_horizontal"
-                                    android:background="@color/colorPrimary"
-                                    android:text="@string/fas02d08"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@android:color/white"
-                                    android:textSize="20sp" />
-
-                                <RadioGroup
-                                    android:id="@+id/fas02d08"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d08a"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d08a" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d08b"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d08b" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d08c"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d08c" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d08d"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d08d" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d08e"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d08e" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d08f"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d08f" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d08g"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d08g" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d08h"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d08h" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d08i"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02d08i" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02d0898"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/dkn" />
-
-
-                                </RadioGroup>
-
-
-                            </LinearLayout>
-
-                        </android.support.v7.widget.CardView>
-            -->
+
+            <!--fas02d01-->
+            <android.support.v7.widget.CardView style="@style/cardView">
+
+                <LinearLayout style="@style/linerlayout_view">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/fas02d01"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/fas02d01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/fas02d01a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d01b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--fas02d02-->
+            <android.support.v7.widget.CardView style="@style/cardView">
+
+                <LinearLayout style="@style/linerlayout_view">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/fas02d02"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/fas02d02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/fas02d02a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d02a" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d02b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d02b" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d02c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d02c" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d02d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d02d" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d02e"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d02e" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d02f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d02f" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d02g"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d02g" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d02h"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d02h" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d02i"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d02i" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d02j"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d02j" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d02k"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d02k" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d0298"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/dkn" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--fas02d03-->
+            <android.support.v7.widget.CardView style="@style/cardView">
+
+                <LinearLayout style="@style/linerlayout_view">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/fas02d03"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/fas02d03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/fas02d03a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d03b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--fas02d04-->
+            <android.support.v7.widget.CardView style="@style/cardView">
+
+                <LinearLayout style="@style/linerlayout_view">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/fas02d04"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/fas02d04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/fas02d04a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d04a" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d04b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d04b" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d04c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d04c" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d04d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d04d" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d04e"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d04e" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d04f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d04f" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d04g"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d04g" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d04h"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d04h" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d04i"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d04i" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d04j"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d04j" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d04k"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d04k" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d04l"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d04l" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d04m"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d04m" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d0498"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/dkn" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <!--fas02d05-->
+            <android.support.v7.widget.CardView style="@style/cardView">
+
+                <LinearLayout style="@style/linerlayout_view">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/fas02d05"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/fas02d05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/fas02d05a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d05b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--fas02d06-->
+            <android.support.v7.widget.CardView style="@style/cardView">
+
+                <LinearLayout style="@style/linerlayout_view">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/fas02d06"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/fas02d06"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/fas02d06a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d06a" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d06b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d06b" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d06c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d06c" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d06d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d06d" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d06e"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d06e" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d06f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d06f" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d06g"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d06g" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d06h"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d06h" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d0698"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/dkn" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--fas02d07    -->
+            <android.support.v7.widget.CardView style="@style/cardView">
+
+                <LinearLayout style="@style/linerlayout_view">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/fas02d07"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/fas02d07"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/fas02d07a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d07b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--fas02d08-->
+            <android.support.v7.widget.CardView style="@style/cardView">
+
+                <LinearLayout style="@style/linerlayout_view">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/fas02d08"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/fas02d08"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/fas02d08a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d08a" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d08b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d08b" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d08c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d08c" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d08d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d08d" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d08e"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d08e" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d08f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d08f" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d08g"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d08g" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d08h"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d08h" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d08i"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/fas02d08i" />
+
+                        <RadioButton
+                            android:id="@+id/fas02d0898"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/dkn" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
 
 
             <!--  = = = = =  END OF FORM FIELDS  = = = = = -->
