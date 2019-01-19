@@ -51,43 +51,40 @@
                         android:textSize="20sp" />
 
                     <RadioGroup
-                        android:id="@+id/fas02b01a"
+                        android:id="@+id/fas02b0101"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <RadioButton
-                            android:id="@+id/fas02b01a01"
+                            android:id="@+id/fas02b0101a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
                             android:text="@string/month" />
 
-
                         <EditText
-                            android:id="@+id/fas02b01a01x"
+                            android:id="@+id/fas02b0101ax"
                             style="@style/textInput"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
                             android:hint="@string/month"
                             android:inputType="number"
-                            android:text='@{fas02b01a01.checked? fas02b01a01x.getText.toString : ""}'
-                            android:visibility='@{fas02b01a01.checked? View.VISIBLE : View.GONE}' />
-
+                            android:text='@{fas02b0101a.checked? fas02b0101ax.getText.toString : ""}'
+                            android:visibility='@{fas02b0101a.checked? View.VISIBLE : View.GONE}' />
 
                         <RadioButton
-                            android:id="@+id/fas02b01a02"
+                            android:id="@+id/fas02b0101b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
-                            android:text="@string/fas02b01a01" />
+                            android:text="@string/fas02b0101b" />
 
 
                     </RadioGroup>
-
 
                     <TextView
                         android:layout_width="match_parent"
@@ -100,43 +97,39 @@
                         android:textSize="20sp" />
 
                     <RadioGroup
-                        android:id="@+id/fas02b01b"
+                        android:id="@+id/fas02b0102"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <RadioButton
-                            android:id="@+id/fas02b01b01"
+                            android:id="@+id/fas02b0102a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
                             android:text="@string/year" />
 
-
                         <EditText
-                            android:id="@+id/fas02b01b01x"
+                            android:id="@+id/fas02b0102ax"
                             style="@style/textInput"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
                             android:hint="@string/year"
                             android:inputType="number"
-                            android:text='@{fas02b01b01.checked? fas02b01b01x.getText.toString : ""}'
-                            android:visibility='@{fas02b01b01.checked? View.VISIBLE : View.GONE}' />
-
+                            android:text='@{fas02b0102a.checked? fas02b0102ax.getText.toString : ""}'
+                            android:visibility='@{fas02b0102a.checked? View.VISIBLE : View.GONE}' />
 
                         <RadioButton
-                            android:id="@+id/fas02b01b02"
+                            android:id="@+id/fas02b0102b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
-                            android:text="@string/fas02b01b02" />
-
+                            android:text="@string/fas02b0102b" />
 
                     </RadioGroup>
-
 
                 </LinearLayout>
 
@@ -159,7 +152,7 @@
 
 
                     <EditText
-                        android:id="@+id/fas02b01ax"
+                        android:id="@+id/fas02b01a"
                         style="@style/textInput"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

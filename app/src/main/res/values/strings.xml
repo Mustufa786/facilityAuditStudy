@@ -239,8 +239,8 @@
     <!--Section B-->
 
     <string name="fas02b01">آپ کی پیدائش کس مہینے اور سال میں ہوئی تھی</string>
-    <string name="fas02b01a01">مہینہ معلوم نہیں</string>
-    <string name="fas02b01b02">سال معلوم نہیں </string>
+    <string name="fas02b0101b">مہینہ معلوم نہیں</string>
+    <string name="fas02b0102b">سال معلوم نہیں </string>
 
     <string name="fas02b01a">آپ کی عمر کتنی ہے ؟</string>
     <string name="fas02b02">کیا آپ نے کبھی رسمی تعلیم حاصل کی ہے ؟</string>

@@ -119,13 +119,13 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
                         : "0");
 
 
-        s02.put("fas02a08",
+        /*s02.put("fas02a08",
                 bi.fas02a08a.isChecked() ? "1"
                         : bi.fas02a08b.isChecked() ? "2"
                         : bi.fas02a08c.isChecked() ? "3"
                         : bi.fas02a08d.isChecked() ? "4"
                         : bi.fas02a0896.isChecked() ? "96"
-                        : "0");
+                        : "0");*/
         s02.put("fas02a0896x", bi.fas02a0896x.getText().toString());
 
 
