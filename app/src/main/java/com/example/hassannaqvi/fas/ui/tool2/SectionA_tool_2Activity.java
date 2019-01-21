@@ -149,7 +149,7 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         if (!ValidatorClass.EmptyTextBox(this, bi.fas02a001, getString(R.string.fas01a01)))
             return;
 
-
+// ds
         if (UpdateDB()) {
             MainApp.endActivity(this, this, EndingActivity.class, false, fc);
         } else {
