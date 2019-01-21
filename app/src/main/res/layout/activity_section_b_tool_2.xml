@@ -23,7 +23,10 @@
         android:paddingRight="5sp"
         android:paddingBottom="5sp">
 
-        <LinearLayout style="@style/linerlayout_view">
+        <LinearLayout
+
+            android:id="@+id/fldGrpllSecB02"
+            style="@style/linerlayout_view">
 
             <!--fas02b01-->
             <android.support.v7.widget.CardView style="@style/cardView">
