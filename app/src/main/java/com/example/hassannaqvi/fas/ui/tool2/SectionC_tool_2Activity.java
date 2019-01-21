@@ -542,7 +542,6 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-        return
 
 
         return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecC02);

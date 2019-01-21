@@ -11,6 +11,10 @@ import com.example.hassannaqvi.fas.core.MainApp;
 import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivitySectionDTool2Binding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
+import com.example.hassannaqvi.fas.validation.ValidatorClass;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class SectionD_tool_2Activity extends AppCompatActivity {
 
@@ -53,14 +57,111 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
 
     }
 
-    private void SaveDraft() {
+    private void SaveDraft() throws JSONException {
+
+
+        JSONObject s02 = new JSONObject();
+
+
+        s02.put("fas02d01",
+                bi.fas02d01a.isChecked() ? "1"
+                        : bi.fas02d01b.isChecked() ? "2"
+                        : "0");
+
+        s02.put("fas02d02",
+                bi.fas02d02a.isChecked() ? "1"
+                        : bi.fas02d02b.isChecked() ? "2"
+                        : bi.fas02d02c.isChecked() ? "3"
+                        : bi.fas02d02d.isChecked() ? "4"
+                        : bi.fas02d02e.isChecked() ? "5"
+                        : bi.fas02d02f.isChecked() ? "6"
+                        : bi.fas02d02g.isChecked() ? "7"
+                        : bi.fas02d02h.isChecked() ? "8"
+                        : bi.fas02d02i.isChecked() ? "9"
+                        : bi.fas02d02j.isChecked() ? "10"
+                        : bi.fas02d02k.isChecked() ? "11"
+                        : bi.fas02d02l.isChecked() ? "12"
+                        : bi.fas02d0296.isChecked() ? "96"
+
+
+                        : "0");
+
+
+        s02.put("fas02d03",
+                bi.fas02d03a.isChecked() ? "1"
+                        : bi.fas02d03b.isChecked() ? "2"
+                        : "0");
+
+
+        s02.put("fas02d04",
+                bi.fas02d04a.isChecked() ? "1"
+                        : bi.fas02d04b.isChecked() ? "2"
+                        : bi.fas02d04c.isChecked() ? "3"
+                        : bi.fas02d04d.isChecked() ? "4"
+                        : bi.fas02d04e.isChecked() ? "5"
+                        : bi.fas02d04f.isChecked() ? "6"
+                        : bi.fas02d04g.isChecked() ? "7"
+                        : bi.fas02d04h.isChecked() ? "8"
+                        : bi.fas02d04i.isChecked() ? "9"
+                        : bi.fas02d04j.isChecked() ? "10"
+                        : bi.fas02d04k.isChecked() ? "11"
+                        : bi.fas02d04l.isChecked() ? "12"
+                        : bi.fas02d04m.isChecked() ? "13"
+                        : bi.fas02d0496.isChecked() ? "96"
+
+
+                        : "0");
+
+
+        s02.put("fas02d05",
+                bi.fas02d05a.isChecked() ? "1"
+                        : bi.fas02d05b.isChecked() ? "2"
+                        : "0");
+
+
+        s02.put("fas02d06",
+                bi.fas02d06a.isChecked() ? "1"
+                        : bi.fas02d06b.isChecked() ? "2"
+                        : bi.fas02d06c.isChecked() ? "3"
+                        : bi.fas02d06d.isChecked() ? "4"
+                        : bi.fas02d06e.isChecked() ? "5"
+                        : bi.fas02d06f.isChecked() ? "6"
+                        : bi.fas02d06g.isChecked() ? "7"
+                        : bi.fas02d06h.isChecked() ? "8"
+                        : bi.fas02d0698.isChecked() ? "98"
+
+
+                        : "0");
+
+
+        s02.put("fas02d07",
+                bi.fas02d07a.isChecked() ? "1"
+                        : bi.fas02d07b.isChecked() ? "2"
+                        : "0");
+
+
+        s02.put("fas02d08",
+                bi.fas02d08a.isChecked() ? "1"
+                        : bi.fas02d08b.isChecked() ? "2"
+                        : bi.fas02d08c.isChecked() ? "3"
+                        : bi.fas02d08d.isChecked() ? "4"
+                        : bi.fas02d08e.isChecked() ? "5"
+                        : bi.fas02d08f.isChecked() ? "6"
+                        : bi.fas02d08g.isChecked() ? "7"
+                        : bi.fas02d08h.isChecked() ? "8"
+                        : bi.fas02d0898.isChecked() ? "98"
+
+
+                        : "0");
+
+
 
     }
 
 
     private boolean formValidation() {
-//        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecD02);
-        return true;
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecD02);
+
     }
 
     public void BtnEnd() {
