@@ -40,8 +40,11 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
 
         if (!formValidation())
             return;
-
-        SaveDraft();
+        try {
+            SaveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         if (UpdateDB()) {
             MainApp.endActivity(this, this, EndingActivity.class, true, fc);
         } else {
@@ -80,8 +83,8 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                         : bi.fas02d02i.isChecked() ? "9"
                         : bi.fas02d02j.isChecked() ? "10"
                         : bi.fas02d02k.isChecked() ? "11"
-                        : bi.fas02d02l.isChecked() ? "12"
-                        : bi.fas02d0296.isChecked() ? "96"
+
+                        : bi.fas02d0298.isChecked() ? "98"
 
 
                         : "0");
@@ -107,7 +110,7 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                         : bi.fas02d04k.isChecked() ? "11"
                         : bi.fas02d04l.isChecked() ? "12"
                         : bi.fas02d04m.isChecked() ? "13"
-                        : bi.fas02d0496.isChecked() ? "96"
+                        : bi.fas02d0498.isChecked() ? "98"
 
 
                         : "0");
@@ -149,11 +152,7 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                         : bi.fas02d08f.isChecked() ? "6"
                         : bi.fas02d08g.isChecked() ? "7"
                         : bi.fas02d08h.isChecked() ? "8"
-                        : bi.fas02d0898.isChecked() ? "98"
-
-
-                        : "0");
-
+                        : bi.fas02d0898.isChecked() ? "98" : "0");
 
 
     }

@@ -25,7 +25,11 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
     public void BtnContinue() {
         if (!formValidation())
             return;
-        SaveDraft();
+        try {
+            SaveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         if (UpdateDB()) {
             startActivity(new Intent(this, SectionB_tool_2Activity.class));
         } else {
@@ -339,11 +343,9 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
                         : bi.fas02c19g.isChecked() ? "23"
                         : bi.fas02c19h.isChecked() ? "24"
                         : bi.fas02c19i.isChecked() ? "25"
-                        : bi.fas02c19j.isChecked() ? "96"
-                        : bi.fas02c19k.isChecked() ? "98"
+                        : bi.fas02c1996.isChecked() ? "96"
+                        : bi.fas02c1998.isChecked() ? "98"
                         : "0");
-
-
         s02.put("fas02c1996x", bi.fas02c1996x.getText().toString());
 
 
@@ -524,17 +526,17 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         s02.put("fas02c2596x", bi.fas02c2596x.getText().toString());
 
 
-        s02.put("fas02c26a",
-                bi.fas02c26aa.isChecked() ? "1"
-                        : bi.fas02c26ab.isChecked() ? "2"
-                        : bi.fas02c26ac.isChecked() ? "3"
-                        : bi.fas02c26ad.isChecked() ? "4"
-                        : bi.fas02c26ae.isChecked() ? "5"
-                        : bi.fas02c26af.isChecked() ? "6"
-                        : bi.fas02c26a96.isChecked() ? "96"
+        s02.put("fas02c2601",
+                bi.fas02c26a.isChecked() ? "1"
+                        : bi.fas02c26b.isChecked() ? "2"
+                        : bi.fas02c26c.isChecked() ? "3"
+                        : bi.fas02c26d.isChecked() ? "4"
+                        : bi.fas02c26e.isChecked() ? "5"
+                        : bi.fas02c26f.isChecked() ? "6"
+                        : bi.fas02c2696.isChecked() ? "96"
                         : "0");
 
-        s02.put("fas02c26a96x", bi.fas02c26a96x.getText().toString());
+        s02.put("fas02c2696x", bi.fas02c2696x.getText().toString());
 
 
 
