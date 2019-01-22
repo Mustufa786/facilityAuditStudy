@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.hassannaqvi.fas.ui.tool2.SectionD_tool_2Activity">
+    tools:context=".ui.SectionD_tool_2Activity">
 
     <data>
 

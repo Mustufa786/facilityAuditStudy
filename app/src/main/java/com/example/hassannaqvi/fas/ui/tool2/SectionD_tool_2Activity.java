@@ -6,8 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.fas.R;
+import com.example.hassannaqvi.fas.RMOperations.crudOperations;
 import com.example.hassannaqvi.fas.core.CONSTANTS;
 import com.example.hassannaqvi.fas.core.MainApp;
+import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
 import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivitySectionDTool2Binding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
@@ -15,6 +17,8 @@ import com.example.hassannaqvi.fas.validation.ValidatorClass;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.concurrent.ExecutionException;
 
 public class SectionD_tool_2Activity extends AppCompatActivity {
 
@@ -31,15 +35,14 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
     }
 
     private void setContentUI() {
-        this.setTitle(R.string.section4);
+        this.setTitle(R.string.section4_tool2);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
-
     }
 
     public void BtnContinue() {
-
         if (!formValidation())
             return;
+
         try {
             SaveDraft();
         } catch (JSONException e) {
@@ -52,26 +55,33 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
         }
     }
 
-
     private boolean UpdateDB() {
+        try {
 
+            Long longID = new crudOperations(this, FormsDAO.class.getName(), "formsDao", "updateForm", fc).execute().get();
+            return longID == 1;
 
-        return true;
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
 
+        return false;
     }
 
     private void SaveDraft() throws JSONException {
 
 
-        JSONObject s02 = new JSONObject();
+        JSONObject s04 = new JSONObject();
 
 
-        s02.put("fas02d01",
+        s04.put("fas02d01",
                 bi.fas02d01a.isChecked() ? "1"
                         : bi.fas02d01b.isChecked() ? "2"
                         : "0");
 
-        s02.put("fas02d02",
+        s04.put("fas02d02",
                 bi.fas02d02a.isChecked() ? "1"
                         : bi.fas02d02b.isChecked() ? "2"
                         : bi.fas02d02c.isChecked() ? "3"
@@ -90,13 +100,13 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                         : "0");
 
 
-        s02.put("fas02d03",
+        s04.put("fas02d03",
                 bi.fas02d03a.isChecked() ? "1"
                         : bi.fas02d03b.isChecked() ? "2"
                         : "0");
 
 
-        s02.put("fas02d04",
+        s04.put("fas02d04",
                 bi.fas02d04a.isChecked() ? "1"
                         : bi.fas02d04b.isChecked() ? "2"
                         : bi.fas02d04c.isChecked() ? "3"
@@ -116,13 +126,13 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                         : "0");
 
 
-        s02.put("fas02d05",
+        s04.put("fas02d05",
                 bi.fas02d05a.isChecked() ? "1"
                         : bi.fas02d05b.isChecked() ? "2"
                         : "0");
 
 
-        s02.put("fas02d06",
+        s04.put("fas02d06",
                 bi.fas02d06a.isChecked() ? "1"
                         : bi.fas02d06b.isChecked() ? "2"
                         : bi.fas02d06c.isChecked() ? "3"
@@ -137,13 +147,13 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                         : "0");
 
 
-        s02.put("fas02d07",
+        s04.put("fas02d07",
                 bi.fas02d07a.isChecked() ? "1"
                         : bi.fas02d07b.isChecked() ? "2"
                         : "0");
 
 
-        s02.put("fas02d08",
+        s04.put("fas02d08",
                 bi.fas02d08a.isChecked() ? "1"
                         : bi.fas02d08b.isChecked() ? "2"
                         : bi.fas02d08c.isChecked() ? "3"
@@ -154,13 +164,13 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                         : bi.fas02d08h.isChecked() ? "8"
                         : bi.fas02d0898.isChecked() ? "98" : "0");
 
+        fc.setSa4(String.valueOf(s04));
 
     }
 
 
     private boolean formValidation() {
         return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecD02);
-
     }
 
     public void BtnEnd() {

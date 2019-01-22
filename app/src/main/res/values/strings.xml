@@ -69,6 +69,10 @@
     <string name="section5">FACILITY STOCK OF OBSTETRIC CARE MEDICINE CHECKLIST</string>
     <string name="section6">EMERCENY BEmONC/CEmONC SERVICES CHECKLIST</string>
 
+    <string name="section1_tool2">PRE AND POST COMMUNITY ASSESSMENT OF STAGES IN SEEKING CARE</string>
+    <string name="section2_tool2">WOMAN’S INFORMATION MODULE (WI)</string>
+    <string name="section3_tool2">ANTENATAL AND CHILDBIRTH MODULE (CB)</string>
+    <string name="section4_tool2">DANGER SIGNS MODULE (DW)</string>
 
     <string name="fas01a00">سروے نمبر</string>
     <string name="fas01a00a">انٹرونشن سے پہلے </string>

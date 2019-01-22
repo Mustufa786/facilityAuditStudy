@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.hassannaqvi.fas.ui.tool2.SectionB_tool_2Activity">
+    tools:context=".ui.SectionB_tool_2Activity">
 
     <data>
 
@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="com.example.hassannaqvi.fas.ui.tool2.SectionA_tool_2Activity" />
+            type="com.example.hassannaqvi.fas.ui.tool2.SectionB_tool_2Activity" />
     </data>
 
     <ScrollView

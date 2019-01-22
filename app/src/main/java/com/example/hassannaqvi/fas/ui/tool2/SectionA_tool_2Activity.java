@@ -40,14 +40,14 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a_tool_2);
         bi.setCallback(this);
 
-        //    this.setTitle(R.string.section1);
         setContentUI();
     }
 
     private void setContentUI() {
+        this.setTitle(R.string.section1_tool2);
+
         deviceID = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
         bi.fas02a02.setManager(getSupportFragmentManager());
-
     }
 
     public void BtnContinue() {
@@ -149,13 +149,11 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         if (!ValidatorClass.EmptyTextBox(this, bi.fas02a001, getString(R.string.fas01a01)))
             return;
 
-// ds
         if (UpdateDB()) {
             MainApp.endActivity(this, this, EndingActivity.class, false, fc);
         } else {
             Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
         }
-
 
     }
 
