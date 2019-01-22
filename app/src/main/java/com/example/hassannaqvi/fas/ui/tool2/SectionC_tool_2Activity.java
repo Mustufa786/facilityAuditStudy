@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.fas.R;
+import com.example.hassannaqvi.fas.databinding.ActivitySectionCTool2Binding;
 import com.example.hassannaqvi.fas.validation.ValidatorClass;
 
 import org.json.JSONException;

@@ -16,7 +16,6 @@ import org.json.JSONObject;
 
 public class SectionB_tool_2Activity extends AppCompatActivity {
 
-
     private ActivitySectionBTool2Binding bi;
     private Forms fb;
 
