@@ -114,6 +114,8 @@ public class SyncAllData extends AsyncTask<String, String, String> {
 
                         connection.setDoOutput(true);
                         connection.setDoInput(true);
+                        connection.setReadTimeout(100000 /* milliseconds */);
+                        connection.setConnectTimeout(150000 /* milliseconds */);
                         connection.setInstanceFollowRedirects(false);
                         connection.setRequestMethod("POST");
                         connection.setRequestProperty("Content-Type", "application/json");

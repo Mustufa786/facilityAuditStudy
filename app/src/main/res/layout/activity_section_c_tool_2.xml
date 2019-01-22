@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.SectionC_tool_2Activity">
+    tools:context=".ui.tool2.SectionC_tool_2Activity">
 
     <data>
 
@@ -64,7 +64,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
-                            android:text="@string/fas01a00b" />
+                            android:text="@string/fas01a00b"
+                            android:visibility="gone" />
 
                         <RadioButton
                             android:id="@+id/fas02c00c"
@@ -72,7 +73,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
-                            android:text="@string/fas01a00c" />
+                            android:text="@string/fas01a00c"
+                            android:visibility="gone" />
 
                         <RadioButton
                             android:id="@+id/fas02c00d"
@@ -98,7 +100,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:background="@color/colorPrimary"
-                        android:text="@string/fas01a02"
+                        android:text="@string/fas01a01"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white"
                         android:textSize="20sp" />
@@ -106,6 +108,8 @@
                     <EditText
                         android:id="@+id/fas02c001"
                         style="@style/textInput"
+                        android:enabled="false"
+                        android:hint="@string/fas01a01"
                         android:inputType="number"
                         android:maxLength="4" />
 
@@ -114,7 +118,7 @@
 
             </android.support.v7.widget.CardView>
 
-            <!--fas02cmw1-->
+            <!--fas02cmw01-->
             <android.support.v7.widget.CardView style="@style/cardView">
 
                 <LinearLayout style="@style/linerlayout_view">
@@ -131,11 +135,12 @@
 
 
                     <EditText
-                        android:id="@+id/fas02cmw1"
+                        android:id="@+id/fas02cmw01"
                         style="@style/textInput"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
+                        android:enabled="false"
                         android:hint="@string/fas02a01"
                         android:inputType="number" />
 
@@ -668,52 +673,50 @@
 
 
                     <CheckBox
-                            android:id="@+id/fas02c07a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:layout_weight="1"
-                            android:text="@string/week" />
+                        android:id="@+id/fas02c07a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:text="@string/week" />
 
-                        <EditText
-                            android:id="@+id/fas02c07w"
-                            style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:hint="@string/week"
-                            android:inputType="number"
-                            android:text='@{fas02c07a.checked ? fas02c07w.getText.toString : ""}'
-                            android:visibility='@{fas02c07a.checked ? View.VISIBLE : View.GONE}' />
-
-                    <CheckBox
-                            android:id="@+id/fas02c07b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:layout_weight="1"
-                            android:text="@string/month" />
-
-                        <EditText
-                            android:id="@+id/fas02c07m"
-                            style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:hint="@string/month"
-                            android:inputType="number"
-                            android:text='@{fas02c07b.checked ? fas02c07m.getText.toString : ""}'
-                            android:visibility='@{fas02c07b.checked ? View.VISIBLE : View.GONE}' />
+                    <EditText
+                        android:id="@+id/fas02c07w"
+                        style="@style/textInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="@string/week"
+                        android:inputType="number"
+                        android:text='@{fas02c07a.checked ? fas02c07w.getText.toString : ""}'
+                        android:visibility='@{fas02c07a.checked ? View.VISIBLE : View.GONE}' />
 
                     <CheckBox
-                            android:id="@+id/fas02c0798"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:layout_weight="1"
-                            android:text="@string/dkn" />
+                        android:id="@+id/fas02c07b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:text="@string/month" />
 
+                    <EditText
+                        android:id="@+id/fas02c07m"
+                        style="@style/textInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="@string/month"
+                        android:inputType="number"
+                        android:text='@{fas02c07b.checked ? fas02c07m.getText.toString : ""}'
+                        android:visibility='@{fas02c07b.checked ? View.VISIBLE : View.GONE}' />
 
+                    <CheckBox
+                        android:id="@+id/fas02c0798"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:text="@string/dkn" />
 
 
                 </LinearLayout>
@@ -865,67 +868,64 @@
 
 
                     <CheckBox
-                            android:id="@+id/fas02c11a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:layout_weight="1"
-                            android:text="@string/fas02c11a" />
+                        android:id="@+id/fas02c11a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:text="@string/fas02c11a" />
 
-                        <EditText
-                            android:id="@+id/fas02c11ax"
-                            style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                            android:hint="@string/fas02c11a"
-                            android:inputType="text"
-                            android:text='@{fas02c11a.checked ? fas02c11ax.getText.toString : ""}'
-                            android:visibility='@{fas02c11a.checked ? View.VISIBLE : View.GONE}' />
-
-                    <CheckBox
-                            android:id="@+id/fas02c11b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:layout_weight="1"
-                            android:text="@string/fas02c11b" />
-
-                        <EditText
-                            android:id="@+id/fas02c11bx"
-                            style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                            android:hint="@string/fas02c11b"
-                            android:inputType="text"
-                            android:text='@{fas02c11b.checked ? fas02c11bx.getText.toString : ""}'
-                            android:visibility='@{fas02c11b.checked ? View.VISIBLE : View.GONE}' />
+                    <EditText
+                        android:id="@+id/fas02c11ax"
+                        style="@style/textInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="@string/fas02c11a"
+                        android:inputType="text"
+                        android:text='@{fas02c11a.checked ? fas02c11ax.getText.toString : ""}'
+                        android:visibility='@{fas02c11a.checked ? View.VISIBLE : View.GONE}' />
 
                     <CheckBox
-                            android:id="@+id/fas02c11c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:layout_weight="1"
-                            android:text="@string/other" />
+                        android:id="@+id/fas02c11b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:text="@string/fas02c11b" />
 
-                        <EditText
-                            android:id="@+id/fas02c11cx"
-                            style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                            android:hint="@string/other"
-                            android:inputType="text"
-                            android:text='@{fas02c11c.checked ? fas02c11cx.getText.toString : ""}'
-                            android:visibility='@{fas02c11c.checked ? View.VISIBLE : View.GONE}' />
+                    <EditText
+                        android:id="@+id/fas02c11bx"
+                        style="@style/textInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="@string/fas02c11b"
+                        android:inputType="text"
+                        android:text='@{fas02c11b.checked ? fas02c11bx.getText.toString : ""}'
+                        android:visibility='@{fas02c11b.checked ? View.VISIBLE : View.GONE}' />
 
+                    <CheckBox
+                        android:id="@+id/fas02c11c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:text="@string/other" />
 
-
+                    <EditText
+                        android:id="@+id/fas02c11cx"
+                        style="@style/textInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="@string/other"
+                        android:inputType="text"
+                        android:text='@{fas02c11c.checked ? fas02c11cx.getText.toString : ""}'
+                        android:visibility='@{fas02c11c.checked ? View.VISIBLE : View.GONE}' />
 
 
                 </LinearLayout>

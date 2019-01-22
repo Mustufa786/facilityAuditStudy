@@ -57,6 +57,12 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         try {
             SaveDraft();
             if (UpdateDB()) {
+
+                String surveyType = bi.fas02a00a.isChecked() ? "1" : bi.fas02a00d.isChecked() ? "4" : "0";
+                MainApp.setParamValues(this, CONSTANTS._URI_DATAMAP_02_SURVEY_TYPE, surveyType);
+                MainApp.setParamValues(this, CONSTANTS._URI_DATAMAP_02_HF_NO, bi.fas02a001.getText().toString());
+                MainApp.setParamValues(this, CONSTANTS._URI_DATAMAP_02_W_ID, bi.fas02amw01.getText().toString());
+
                 MainApp.stActivity(this, this, SectionB_tool_2Activity.class, fc);
             } else {
                 Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
@@ -108,14 +114,14 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         JSONObject s01 = new JSONObject();
 
 
-        s01.put("fas01a00",
+        s01.put("fas02a00",
                 bi.fas02a00a.isChecked() ? "1"
                         : bi.fas02a00b.isChecked() ? "2"
                         : bi.fas02a00c.isChecked() ? "3"
                         : bi.fas02a00d.isChecked() ? "4" : "0");
 
         s01.put("fas02a001", bi.fas02a001.getText().toString());
-        s01.put("fas02a01", bi.fas02a01.getText().toString());
+        s01.put("fas02amw01", bi.fas02amw01.getText().toString());
 
         s01.put("fas02a02", bi.fas02a02.getText().toString());
 
@@ -144,7 +150,7 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
 
         if (!ValidatorClass.EmptyRadioButton(this, bi.fas02a00, bi.fas02a00a, getString(R.string.fas01a00)))
             return;
-        if (!ValidatorClass.EmptyTextBox(this, bi.fas02a01, getString(R.string.fas02a01)))
+        if (!ValidatorClass.EmptyTextBox(this, bi.fas02amw01, getString(R.string.fas02a01)))
             return;
         if (!ValidatorClass.EmptyTextBox(this, bi.fas02a001, getString(R.string.fas01a01)))
             return;

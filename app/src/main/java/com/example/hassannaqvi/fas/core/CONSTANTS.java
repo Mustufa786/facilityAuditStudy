@@ -17,4 +17,8 @@ public interface CONSTANTS {
     String _URI_DATAMAP_SURVEY_TYPE = "fas01a00";
     String _URI_DATAMAP_HF_NO = "fas01a01";
 
+    String _URI_DATAMAP_02_SURVEY_TYPE = "fas02c00";
+    String _URI_DATAMAP_02_HF_NO = "fas01c001";
+    String _URI_DATAMAP_02_W_ID = "fas01cmw01";
+
 }

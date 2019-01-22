@@ -13,6 +13,7 @@ import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
 import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivitySectionCTool2Binding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
+import com.example.hassannaqvi.fas.validation.ClearClass;
 import com.example.hassannaqvi.fas.validation.ValidatorClass;
 
 import org.json.JSONException;
@@ -37,6 +38,13 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
     private void setContentUI() {
         this.setTitle(R.string.section3_tool2);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
+
+        ClearClass.ClearAllFields(bi.fas02c00, false);
+        String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_02_SURVEY_TYPE);
+        if (!getSurvey.equals("0"))
+            bi.fas02c00.check(bi.fas02c00.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
+        bi.fas02c001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_02_HF_NO));
+        bi.fas02cmw01.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_02_W_ID));
     }
 
     public void BtnContinue() {
@@ -74,10 +82,8 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
         JSONObject s03 = new JSONObject();
 
-
         s03.put("fas02c001", bi.fas02c001.getText().toString());
-        s03.put("fas02cmw1", bi.fas02cmw1.getText().toString());
-
+        s03.put("fas02cmw01", bi.fas02cmw01.getText().toString());
 
         s03.put("fas02c01",
                 bi.fas02c01a.isChecked() ? "1"

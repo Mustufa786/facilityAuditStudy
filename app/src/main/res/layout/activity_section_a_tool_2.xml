@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.SectionA_tool_2Activity">
+    tools:context=".ui.tool2.SectionA_tool_2Activity">
 
     <data>
 
@@ -65,7 +65,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
-                                android:text="@string/fas01a00b" />
+                                android:text="@string/fas01a00b"
+                                android:visibility="gone" />
 
                             <RadioButton
                                 android:id="@+id/fas02a00c"
@@ -73,7 +74,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
-                                android:text="@string/fas01a00c" />
+                                android:text="@string/fas01a00c"
+                                android:visibility="gone" />
 
                             <RadioButton
                                 android:id="@+id/fas02a00d"
@@ -108,6 +110,7 @@
                         <EditText
                             android:id="@+id/fas02a001"
                             style="@style/textInput"
+                            android:hint="@string/fas01a01"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -115,7 +118,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas02a01-->
+                <!--fas02amw01-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -132,7 +135,7 @@
 
 
                         <EditText
-                            android:id="@+id/fas02a01"
+                            android:id="@+id/fas02amw01"
                             style="@style/textInput"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
