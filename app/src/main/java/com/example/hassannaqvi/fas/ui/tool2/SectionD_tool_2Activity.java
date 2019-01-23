@@ -3,6 +3,7 @@ package com.example.hassannaqvi.fas.ui.tool2;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.fas.R;
@@ -13,6 +14,7 @@ import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
 import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivitySectionDTool2Binding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
+import com.example.hassannaqvi.fas.validation.ClearClass;
 import com.example.hassannaqvi.fas.validation.ValidatorClass;
 
 import org.json.JSONException;
@@ -32,12 +34,58 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
         bi.setCallback(this);
 
         setContentUI();
+        setListenersUI();
     }
 
     private void setContentUI() {
         this.setTitle(R.string.section4_tool2);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
     }
+
+
+    private void setListenersUI() {
+
+        //   fas02d01
+        bi.fas02d01.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.fas02d01a.getId())
+                    ClearClass.ClearAllFields(bi.fldGrpllSecD02fas02d02, null);
+            }
+        });
+
+
+        //   fas02d03
+        bi.fas02d03.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.fas02d03a.getId())
+                    ClearClass.ClearAllFields(bi.fldGrpllSecD02fas02d04, null);
+            }
+        });
+
+        //   fas02d05
+        bi.fas02d05.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.fas02d05a.getId())
+                    ClearClass.ClearAllFields(bi.fldGrpllSecD02fas02d06, null);
+            }
+        });
+
+
+        //   fas02d07
+        bi.fas02d07.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.fas02d07a.getId())
+                    ClearClass.ClearAllFields(bi.fldGrpllSecD02fas02d08, null);
+            }
+        });
+
+
+    }
+
 
     public void BtnContinue() {
         if (!formValidation())

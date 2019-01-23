@@ -75,7 +75,14 @@
                 </android.support.v7.widget.CardView>
 
                 <!--fas02d02-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView
+
+
+                    android:id="@+id/fldGrpllSecD02fas02d02"
+                    style="@style/cardView"
+
+
+                    android:visibility="@{fas02d01b.checked ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -245,7 +252,12 @@
                 </android.support.v7.widget.CardView>
 
                 <!--fas02d04-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/fldGrpllSecD02fas02d04"
+
+                    style="@style/cardView"
+
+                    android:visibility="@{fas02d03b.checked ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -432,7 +444,11 @@
                 </android.support.v7.widget.CardView>
 
                 <!--fas02d06-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/fldGrpllSecD02fas02d06"
+
+                    style="@style/cardView"
+                    android:visibility="@{fas02d05b.checked ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -578,7 +594,11 @@
                 </android.support.v7.widget.CardView>
 
                 <!--fas02d08-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/fldGrpllSecD02fas02d08"
+
+                    style="@style/cardView"
+                    android:visibility="@{fas02d07b.checked ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout style="@style/linerlayout_view">
 
