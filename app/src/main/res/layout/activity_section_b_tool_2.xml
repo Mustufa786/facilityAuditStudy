@@ -24,7 +24,6 @@
         android:paddingBottom="5sp">
 
         <LinearLayout
-
             android:id="@+id/fldGrpllSecB02"
             style="@style/linerlayout_view">
 
@@ -75,8 +74,9 @@
                             android:layout_margin="10dp"
                             android:hint="@string/month"
                             android:inputType="number"
-                            android:text='@{fas02b0101a.checked? fas02b0101ax.getText.toString : ""}'
-                            android:visibility='@{fas02b0101a.checked? View.VISIBLE : View.GONE}' />
+                            android:tag="fas02b0101a"
+                            android:text='@{fas02b0101a.checked ? fas02b0101ax.getText.toString : ""}'
+                            android:visibility='@{fas02b0101a.checked ? View.VISIBLE : View.GONE}' />
 
                         <RadioButton
                             android:id="@+id/fas02b0101b"
@@ -121,8 +121,9 @@
                             android:layout_margin="10dp"
                             android:hint="@string/year"
                             android:inputType="number"
-                            android:text='@{fas02b0102a.checked? fas02b0102ax.getText.toString : ""}'
-                            android:visibility='@{fas02b0102a.checked? View.VISIBLE : View.GONE}' />
+                            android:tag="fas02b0102a"
+                            android:text='@{fas02b0102a.checked ? fas02b0102ax.getText.toString : ""}'
+                            android:visibility='@{fas02b0102a.checked ? View.VISIBLE : View.GONE}' />
 
                         <RadioButton
                             android:id="@+id/fas02b0102b"
