@@ -3,6 +3,12 @@ package com.example.hassannaqvi.fas.ui.tool2;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.fas.R;
@@ -25,6 +31,7 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
     private ActivitySectionCTool2Binding bi;
     private Forms fc;
+    private boolean c23Flag = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +40,7 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         bi.setCallback(this);
 
         setContentUI();
+        setListenersUI();
     }
 
     private void setContentUI() {
@@ -45,6 +53,194 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
             bi.fas02c00.check(bi.fas02c00.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
         bi.fas02c001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_02_HF_NO));
         bi.fas02cmw01.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_02_W_ID));
+    }
+
+    private void setListenersUI() {
+
+//        fas02c08t
+        bi.fas02c08t.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if (bi.fas02c08t.getText().toString().length() > 0) {
+                    bi.fas02c0898.setChecked(false);
+                    bi.fas02c0898.setEnabled(false);
+                } else {
+                    bi.fas02c0898.setEnabled(true);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+        bi.fas02c0898.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    bi.fas02c08t.setText(null);
+                    bi.fas02c08t.setEnabled(false);
+                } else {
+                    bi.fas02c08t.setTag(null);
+                    bi.fas02c08t.setEnabled(true);
+                }
+            }
+        });
+
+//        fas02c14
+        bi.fas02c14.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if (bi.fas02c14.getText().toString().length() > 0) {
+                    bi.fas02c1498.setChecked(false);
+                    bi.fas02c1498.setEnabled(false);
+                } else {
+                    bi.fas02c1498.setEnabled(true);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+        bi.fas02c1498.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    bi.fas02c14.setText(null);
+                    bi.fas02c14.setEnabled(false);
+                } else {
+                    bi.fas02c14.setTag(null);
+                    bi.fas02c14.setEnabled(true);
+                }
+            }
+        });
+
+//        fas02c24f
+        bi.fas02c24f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c10a, false);
+                    bi.fldGrpfas02c10a.setTag("-1");
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c10a, true);
+                    bi.fldGrpfas02c10a.setTag(null);
+                }
+            }
+        });
+
+//        fas02c01
+        bi.fas02c01.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.fas02c01a.getId())
+                    ClearClass.ClearAllFields(bi.fldGrpllSecC02a, null);
+            }
+        });
+
+//        fas02c03
+        bi.fas02c03.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.fas02c03a.getId())
+                    ClearClass.ClearAllFields(bi.fldGrpllSecC02b, null);
+            }
+        });
+
+//        fas02c10
+        bi.fas02c10.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.fas02c10a.getId()) {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c11, null);
+                }
+            }
+        });
+
+//        fas02c17
+        bi.fas02c17.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.fas02c17a.getId() || i != bi.fas02c17b.getId()) {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c18, null);
+                }
+            }
+        });
+
+//        fas02c19
+        CheckBox.OnCheckedChangeListener chbxc19 = new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (!bi.fas02c19e.isChecked() || !bi.fas02c19f.isChecked())
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c20, null);
+            }
+        };
+        bi.fas02c19e.setOnCheckedChangeListener(chbxc19);
+        bi.fas02c19f.setOnCheckedChangeListener(chbxc19);
+        bi.fas02c1998.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c19, false);
+                    bi.fldGrpfas02c19.setTag("-1");
+                    bi.fas02c1998.setTag(null);
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c19, true);
+                    bi.fldGrpfas02c19.setTag(null);
+                    bi.fas02c1998.setTag("-1");
+                }
+            }
+        });
+
+//        fas02c21
+        bi.fas02c21.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.fas02c21a.getId())
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c22, null);
+            }
+        });
+
+//        fas02c23
+        RadioGroup.OnCheckedChangeListener rdg23 = new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                c23Flag = i == bi.fas02c2301b.getId();
+                c23Flag = i == bi.fas02c2302b.getId();
+                c23Flag = i == bi.fas02c2303b.getId();
+                c23Flag = i == bi.fas02c2304b.getId();
+                c23Flag = i == bi.fas02c2305b.getId();
+                c23Flag = i == bi.fas02c2306b.getId();
+
+                if (c23Flag) {
+                    bi.fldGrpfas02c24.setVisibility(View.VISIBLE);
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c24, null);
+                    bi.fldGrpfas02c24.setVisibility(View.GONE);
+                }
+
+            }
+        };
+        bi.fas02c2301.setOnCheckedChangeListener(rdg23);
+        bi.fas02c2302.setOnCheckedChangeListener(rdg23);
+        bi.fas02c2303.setOnCheckedChangeListener(rdg23);
+        bi.fas02c2304.setOnCheckedChangeListener(rdg23);
+        bi.fas02c2305.setOnCheckedChangeListener(rdg23);
+        bi.fas02c2306.setOnCheckedChangeListener(rdg23);
+
     }
 
     public void BtnContinue() {
@@ -189,23 +385,9 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
         s03.put("fas02c0696x", bi.fas02c0696x.getText().toString());
 
-
-        s03.put("fas02c07a",
-                bi.fas02c07a.isChecked() ? "1"
-                        : "0");
+        s03.put("fas02c07", bi.fas02c07a.isChecked() ? "1" : bi.fas02c07b.isChecked() ? "2" : bi.fas02c0798.isChecked() ? "98" : "0");
         s03.put("fas02c07w", bi.fas02c07w.getText().toString());
-
-
-        s03.put("fas02c07b",
-                bi.fas02c07b.isChecked() ? "1"
-                        : "0");
         s03.put("fas02c07m", bi.fas02c07m.getText().toString());
-
-
-        s03.put("fas02c0798",
-                bi.fas02c0798.isChecked() ? "1"
-                        : "0");
-
 
         s03.put("fas02c0898",
                 bi.fas02c0898.isChecked() ? "1"
@@ -367,19 +549,18 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         s03.put("fas02c1896x", bi.fas02c1896x.getText().toString());
 
 
-        s03.put("fas02c19",
-                bi.fas02c19a.isChecked() ? "11"
-                        : bi.fas02c19b.isChecked() ? "12"
-                        : bi.fas02c19c.isChecked() ? "13"
-                        : bi.fas02c19d.isChecked() ? "14"
-                        : bi.fas02c19e.isChecked() ? "21"
-                        : bi.fas02c19f.isChecked() ? "22"
-                        : bi.fas02c19g.isChecked() ? "23"
-                        : bi.fas02c19h.isChecked() ? "24"
-                        : bi.fas02c19i.isChecked() ? "25"
-                        : bi.fas02c1996.isChecked() ? "96"
-                        : bi.fas02c1998.isChecked() ? "98"
-                        : "0");
+        s03.put("fas02c19a", bi.fas02c19a.isChecked() ? "11" : "0");
+        s03.put("fas02c19b", bi.fas02c19b.isChecked() ? "12" : "0");
+        s03.put("fas02c19c", bi.fas02c19c.isChecked() ? "13" : "0");
+        s03.put("fas02c19d", bi.fas02c19d.isChecked() ? "14" : "0");
+        s03.put("fas02c19e", bi.fas02c19e.isChecked() ? "21" : "0");
+        s03.put("fas02c19f", bi.fas02c19f.isChecked() ? "22" : "0");
+        s03.put("fas02c19g", bi.fas02c19g.isChecked() ? "23" : "0");
+        s03.put("fas02c19h", bi.fas02c19h.isChecked() ? "24" : "0");
+        s03.put("fas02c19i", bi.fas02c19i.isChecked() ? "25" : "0");
+        s03.put("fas02c1996", bi.fas02c1996.isChecked() ? "96" : "0");
+        s03.put("fas02c1998", bi.fas02c1998.isChecked() ? "98" : "0");
+
         s03.put("fas02c1996x", bi.fas02c1996x.getText().toString());
 
 
@@ -477,38 +658,38 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         s03.put("fas02c2301",
                 bi.fas02c2301a.isChecked() ? "1"
                         : bi.fas02c2301b.isChecked() ? "2"
-                        : bi.fas02c2301c.isChecked() ? "98"
+                        : bi.fas02c230198.isChecked() ? "98"
                         : "0");
 
         s03.put("fas02c2302",
                 bi.fas02c2302a.isChecked() ? "1"
                         : bi.fas02c2302b.isChecked() ? "2"
-                        : bi.fas02c2302c.isChecked() ? "98"
+                        : bi.fas02c230298.isChecked() ? "98"
                         : "0");
 
 
         s03.put("fas02c2303",
                 bi.fas02c2303a.isChecked() ? "1"
                         : bi.fas02c2303b.isChecked() ? "2"
-                        : bi.fas02c2303c.isChecked() ? "98"
+                        : bi.fas02c230398.isChecked() ? "98"
                         : "0");
 
         s03.put("fas02c2304",
                 bi.fas02c2304a.isChecked() ? "1"
                         : bi.fas02c2304b.isChecked() ? "2"
-                        : bi.fas02c2304c.isChecked() ? "98"
+                        : bi.fas02c230498.isChecked() ? "98"
                         : "0");
 
         s03.put("fas02c2305",
                 bi.fas02c2305a.isChecked() ? "1"
                         : bi.fas02c2305b.isChecked() ? "2"
-                        : bi.fas02c2305c.isChecked() ? "98"
+                        : bi.fas02c230598.isChecked() ? "98"
                         : "0");
 
         s03.put("fas02c2306",
                 bi.fas02c2306a.isChecked() ? "1"
                         : bi.fas02c2306b.isChecked() ? "2"
-                        : bi.fas02c2306c.isChecked() ? "98"
+                        : bi.fas02c230698.isChecked() ? "98"
                         : "0");
 
 
