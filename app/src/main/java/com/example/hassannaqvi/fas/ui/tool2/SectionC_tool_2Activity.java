@@ -79,18 +79,7 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
             }
         });
-        bi.fas02c0898.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b) {
-                    bi.fas02c08t.setText(null);
-                    bi.fas02c08t.setEnabled(false);
-                } else {
-                    bi.fas02c08t.setTag(null);
-                    bi.fas02c08t.setEnabled(true);
-                }
-            }
-        });
+
 
 //        fas02c14
         bi.fas02c14.addTextChangedListener(new TextWatcher() {
