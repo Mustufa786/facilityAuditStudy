@@ -400,6 +400,7 @@
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                     android:hint="@string/other"
                                     android:inputType="text"
+                                    android:tag="fas02c0496"
                                     android:text='@{fas02c0496.checked ? fas02c0496x.getText.toString : ""}'
                                     android:visibility='@{fas02c0496.checked ? View.VISIBLE : View.GONE}' />
 
@@ -550,6 +551,7 @@
                                         android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                         android:hint="@string/other"
                                         android:inputType="text"
+                                        android:tag="fas02c0596"
                                         android:text='@{fas02c0596.checked ? fas02c0596x.getText.toString : ""}'
                                         android:visibility='@{fas02c0596.checked ? View.VISIBLE : View.GONE}' />
 
@@ -1350,6 +1352,7 @@
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                     android:hint="@string/other"
                                     android:inputType="text"
+                                    android:tag="fas02c17f"
                                     android:text='@{fas02c17f.checked ? fas02c17fx.getText.toString : ""}'
                                     android:visibility='@{fas02c17f.checked ? View.VISIBLE : View.GONE}' />
 
@@ -1378,6 +1381,7 @@
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                     android:hint="@string/other"
                                     android:inputType="text"
+                                    android:tag="fas02c17h"
                                     android:text='@{fas02c17h.checked ? fas02c17hx.getText.toString : ""}'
                                     android:visibility='@{fas02c17h.checked ? View.VISIBLE : View.GONE}' />
 
@@ -1398,6 +1402,7 @@
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                     android:hint="@string/other"
                                     android:inputType="text"
+                                    android:tag="fas02c1796"
                                     android:text='@{fas02c1796.checked ? fas02c1796x.getText.toString : ""}'
                                     android:visibility='@{fas02c1796.checked ? View.VISIBLE : View.GONE}' />
 
@@ -2488,7 +2493,9 @@
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                     android:hint="@string/other"
                                     android:inputType="text"
-                                    android:tag="fas02c2496" />
+                                    android:tag="fas02c2496"
+                                    android:text='@{fas02c2496.checked ? fas02c2496x.getText.toString : ""}'
+                                    android:visibility='@{fas02c2496.checked ? View.VISIBLE : View.GONE}' />
 
                             </LinearLayout>
 
@@ -2591,6 +2598,7 @@
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                     android:hint="@string/other"
                                     android:inputType="text"
+                                    android:tag="fas02c2596"
                                     android:text='@{fas02c2596.checked ? fas02c2596x.getText.toString : ""}'
                                     android:visibility='@{fas02c2596.checked ? View.VISIBLE : View.GONE}' />
 
@@ -2688,6 +2696,7 @@
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                     android:hint="@string/other"
                                     android:inputType="text"
+                                    android:tag="fas02c2696"
                                     android:text='@{fas02c2696.checked ? fas02c2696x.getText.toString : ""}'
                                     android:visibility='@{fas02c2696.checked ? View.VISIBLE : View.GONE}' />
 

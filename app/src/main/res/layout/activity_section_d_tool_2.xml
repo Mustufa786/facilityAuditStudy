@@ -462,8 +462,9 @@
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
+                        <LinearLayout style="@style/linerlayout_view_wt_bound">
 
-                        <CheckBox
+                            <CheckBox
                                 android:id="@+id/fas02d06a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -471,7 +472,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06a" />
 
-                        <CheckBox
+                            <CheckBox
                                 android:id="@+id/fas02d06b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -479,7 +480,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06b" />
 
-                        <CheckBox
+                            <CheckBox
                                 android:id="@+id/fas02d06c"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -487,7 +488,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06c" />
 
-                        <CheckBox
+                            <CheckBox
                                 android:id="@+id/fas02d06d"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -495,7 +496,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06d" />
 
-                        <CheckBox
+                            <CheckBox
                                 android:id="@+id/fas02d06e"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -503,7 +504,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06e" />
 
-                        <CheckBox
+                            <CheckBox
                                 android:id="@+id/fas02d06f"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -511,7 +512,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06f" />
 
-                        <CheckBox
+                            <CheckBox
                                 android:id="@+id/fas02d06g"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -519,7 +520,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06g" />
 
-                        <CheckBox
+                            <CheckBox
                                 android:id="@+id/fas02d06h"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -527,7 +528,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06h" />
 
-                        <CheckBox
+                            <CheckBox
                                 android:id="@+id/fas02d0698"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -535,7 +536,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/dkn" />
 
-
+                        </LinearLayout>
 
 
                     </LinearLayout>
