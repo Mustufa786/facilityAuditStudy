@@ -82,7 +82,7 @@
                     style="@style/cardView"
 
 
-                    android:visibility="@{fas02d01b.checked ? View.VISIBLE : View.GONE}">
+                    android:visibility="@{fas02d01a.checked ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -257,7 +257,7 @@
 
                     style="@style/cardView"
 
-                    android:visibility="@{fas02d03b.checked ? View.VISIBLE : View.GONE}">
+                    android:visibility="@{fas02d03a.checked ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -448,7 +448,7 @@
                     android:id="@+id/fldGrpllSecD02fas02d06"
 
                     style="@style/cardView"
-                    android:visibility="@{fas02d05b.checked ? View.VISIBLE : View.GONE}">
+                    android:visibility="@{fas02d05a.checked ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -598,7 +598,7 @@
                     android:id="@+id/fldGrpllSecD02fas02d08"
 
                     style="@style/cardView"
-                    android:visibility="@{fas02d07b.checked ? View.VISIBLE : View.GONE}">
+                    android:visibility="@{fas02d07a.checked ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout style="@style/linerlayout_view">
 

@@ -79,7 +79,17 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
             }
         });
-
+        bi.fas02c0898.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    bi.fas02c08t.setText(null);
+                    bi.fas02c08t.setEnabled(false);
+                } else {
+                    bi.fas02c08t.setEnabled(true);
+                }
+            }
+        });
 
 //        fas02c14
         bi.fas02c14.addTextChangedListener(new TextWatcher() {
@@ -110,7 +120,6 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
                     bi.fas02c14.setText(null);
                     bi.fas02c14.setEnabled(false);
                 } else {
-                    bi.fas02c14.setTag(null);
                     bi.fas02c14.setEnabled(true);
                 }
             }
@@ -143,8 +152,11 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         bi.fas02c03.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i == bi.fas02c03a.getId())
+                if (i == bi.fas02c03a.getId()) {
+                    bi.fas02c04.clearCheck();
+                } else {
                     ClearClass.ClearAllFields(bi.fldGrpllSecC02b, null);
+                }
             }
         });
 
@@ -207,12 +219,12 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
-                c23Flag = i == bi.fas02c2301b.getId();
-                c23Flag = i == bi.fas02c2302b.getId();
-                c23Flag = i == bi.fas02c2303b.getId();
-                c23Flag = i == bi.fas02c2304b.getId();
-                c23Flag = i == bi.fas02c2305b.getId();
-                c23Flag = i == bi.fas02c2306b.getId();
+                c23Flag = bi.fas02c2301b.isChecked();
+                c23Flag = bi.fas02c2302b.isChecked();
+                c23Flag = bi.fas02c2303b.isChecked();
+                c23Flag = bi.fas02c2304b.isChecked();
+                c23Flag = bi.fas02c2305b.isChecked();
+                c23Flag = bi.fas02c2306b.isChecked();
 
                 if (c23Flag) {
                     bi.fldGrpfas02c24.setVisibility(View.VISIBLE);
