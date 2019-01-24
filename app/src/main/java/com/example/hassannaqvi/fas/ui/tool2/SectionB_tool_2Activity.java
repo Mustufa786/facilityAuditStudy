@@ -3,6 +3,7 @@ package com.example.hassannaqvi.fas.ui.tool2;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.fas.R;
@@ -13,6 +14,7 @@ import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
 import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivitySectionBTool2Binding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
+import com.example.hassannaqvi.fas.validation.ClearClass;
 import com.example.hassannaqvi.fas.validation.ValidatorClass;
 
 import org.json.JSONException;
@@ -32,11 +34,34 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
         bi.setCallback(this);
 
         setContentUI();
+        setListeners();
     }
 
     private void setContentUI() {
         this.setTitle(R.string.section3_tool2);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
+    }
+
+    private void setListeners() {
+
+//        fas02b03
+        bi.fas02b03.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.fas02b03a.getId())
+                    ClearClass.ClearAllFields(bi.fldGrpfas02ba, null);
+            }
+        });
+
+//        fas02b04
+        bi.fas02b04.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.fas02b04a.getId())
+                    ClearClass.ClearAllFields(bi.fldGrpfas02bb, null);
+            }
+        });
+
     }
 
     public void BtnContinue() {

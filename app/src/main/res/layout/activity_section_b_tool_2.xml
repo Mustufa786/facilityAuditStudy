@@ -216,10 +216,11 @@
             </android.support.v7.widget.CardView>
 
             <LinearLayout
+                android:id="@+id/fldGrpfas02ba"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility='@{fas02b03a.checked? View.VISIBLE : View.GONE}'>
+                android:visibility='@{fas02b03a.checked ? View.VISIBLE : View.GONE}'>
 
                 <!--fas02b04-->
                 <android.support.v7.widget.CardView style="@style/cardView">
@@ -283,10 +284,11 @@
                 </android.support.v7.widget.CardView>
 
                 <LinearLayout
+                    android:id="@+id/fldGrpfas02bb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:visibility='@{!fas02b04a.checked? View.VISIBLE : View.GONE}'>
+                    android:visibility='@{fas02b04a.checked ? View.GONE : View.VISIBLE}'>
 
                     <!--fas02b05-->
                     <android.support.v7.widget.CardView style="@style/cardView">
