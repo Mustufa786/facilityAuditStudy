@@ -1311,6 +1311,10 @@
                                     android:layout_weight="1"
                                     android:text="@string/fas02c17b" />
 
+                                <TextView
+                                    style="@style/textView2"
+                                    android:text="Public Health Sector" />
+
                                 <RadioButton
                                     android:id="@+id/fas02c17c"
                                     android:layout_width="match_parent"
@@ -1356,6 +1360,11 @@
                                     android:text='@{fas02c17f.checked ? fas02c17fx.getText.toString : ""}'
                                     android:visibility='@{fas02c17f.checked ? View.VISIBLE : View.GONE}' />
 
+
+                                <TextView
+                                    style="@style/textView2"
+                                    android:text="Private Health Sector" />
+
                                 <RadioButton
                                     android:id="@+id/fas02c17g"
                                     android:layout_width="match_parent"
@@ -1384,6 +1393,14 @@
                                     android:tag="fas02c17h"
                                     android:text='@{fas02c17h.checked ? fas02c17hx.getText.toString : ""}'
                                     android:visibility='@{fas02c17h.checked ? View.VISIBLE : View.GONE}' />
+
+                                <RadioButton
+                                    android:id="@+id/fas02c17i"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/fas02c17i" />
 
                                 <RadioButton
                                     android:id="@+id/fas02c1796"
