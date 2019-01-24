@@ -487,7 +487,7 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
                         : bi.fas02c17f.isChecked() ? "16"
                         : bi.fas02c17g.isChecked() ? "21"
                         : bi.fas02c17h.isChecked() ? "26"
-
+                        : bi.fas02c17i.isChecked() ? "31"
                         : bi.fas02c1796.isChecked() ? "96"
                         : "0");
 
