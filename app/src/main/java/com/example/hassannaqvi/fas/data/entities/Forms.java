@@ -5,14 +5,14 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
 
-import com.example.hassannaqvi.fas.data.AppDatabase;
+import com.example.hassannaqvi.fas.core.CONSTANTS;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.Serializable;
 
-@Entity(tableName = AppDatabase.Sub_DBConnection.TABLE_FORMS)
+@Entity(tableName = CONSTANTS.TABLE_FORMS)
 public class Forms implements Serializable {
 
     @Ignore

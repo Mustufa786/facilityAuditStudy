@@ -131,10 +131,6 @@ public class MainActivity extends Activity {
         }
         /*TagID End*/
 
-
-//        Binding setting
-//        DatabaseHelper db = new DatabaseHelper(this);
-
 //        Admin checking
         if (MainApp.admin) {
             mainBinding.adminsec.setVisibility(View.VISIBLE);

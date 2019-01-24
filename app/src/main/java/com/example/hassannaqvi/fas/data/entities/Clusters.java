@@ -4,12 +4,12 @@ import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
-import com.example.hassannaqvi.fas.data.AppDatabase;
+import com.example.hassannaqvi.fas.core.CONSTANTS;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-@Entity(tableName = AppDatabase.Sub_DBConnection.TABLE_CLUSTERS)
+@Entity(tableName = CONSTANTS.TABLE_CLUSTERS)
 public class Clusters {
 
     @PrimaryKey(autoGenerate = true)

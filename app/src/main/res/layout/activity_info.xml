@@ -253,6 +253,7 @@
                                 android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                 android:hint="@string/other"
                                 android:inputType="text"
+                                android:tag="fas01a0496"
                                 android:text='@{fas01a0496.checked? fas01a0496x.getText.toString : ""}'
                                 android:visibility='@{fas01a0496.checked? View.VISIBLE : View.GONE}' />
 

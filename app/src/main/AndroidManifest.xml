@@ -46,9 +46,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".core.AndroidDatabaseManager"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".ui.EndingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />

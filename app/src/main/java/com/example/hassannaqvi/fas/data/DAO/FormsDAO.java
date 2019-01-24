@@ -5,7 +5,7 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 import android.arch.persistence.room.Update;
 
-import com.example.hassannaqvi.fas.data.AppDatabase;
+import com.example.hassannaqvi.fas.core.CONSTANTS;
 import com.example.hassannaqvi.fas.data.entities.Clusters;
 import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.data.entities.Users;
@@ -27,10 +27,10 @@ public interface FormsDAO {
     @Insert
     Long insertClusters(Clusters clusters);
 
-    @Query("DELETE from " + AppDatabase.Sub_DBConnection.TABLE_USERS)
+    @Query("DELETE from " + CONSTANTS.TABLE_USERS)
     int deleteUsers();
 
-    @Query("DELETE from " + AppDatabase.Sub_DBConnection.TABLE_CLUSTERS)
+    @Query("DELETE from " + CONSTANTS.TABLE_CLUSTERS)
     int deleteClusters();
 
     /*Update methods after upload on server*/

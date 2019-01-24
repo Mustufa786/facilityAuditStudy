@@ -114,15 +114,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
         try {
             long installedOn = this
                     .getPackageManager()
-                    .getPackageInfo("com.example.hassannaqvi.leaps_scaleup", 0)
+                    .getPackageInfo("com.example.hassannaqvi.fas", 0)
                     .lastUpdateTime;
             Integer versionCode = this
                     .getPackageManager()
-                    .getPackageInfo("com.example.hassannaqvi.leaps_scaleup", 0)
+                    .getPackageInfo("com.example.hassannaqvi.fas", 0)
                     .versionCode;
             String versionName = this
                     .getPackageManager()
-                    .getPackageInfo("com.example.hassannaqvi.leaps_scaleup", 0)
+                    .getPackageInfo("com.example.hassannaqvi.fas", 0)
                     .versionName;
             bi.txtinstalldate.setText("Ver. " + versionName + "." + String.valueOf(versionCode) + " \r\n( Last Updated: " + new SimpleDateFormat("dd MMM. yyyy").format(new Date(installedOn)) + " )");
 
@@ -431,7 +431,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
 
     public void dbBackup() {
 
-        sharedPref = getSharedPreferences("leapsScaleUp", MODE_PRIVATE);
+        sharedPref = getSharedPreferences("facilityauditsurvey", MODE_PRIVATE);
         editor = sharedPref.edit();
 
         if (sharedPref.getBoolean("flag", true)) {
@@ -444,7 +444,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
                 editor.commit();
             }
 
-            File folder = new File(Environment.getExternalStorageDirectory() + File.separator + "DMU-LEAPSSUP");
+            File folder = new File(Environment.getExternalStorageDirectory() + File.separator + CONSTANTS.DATABASE_NAME);
             boolean success = true;
             if (!folder.exists()) {
                 success = folder.mkdirs();
@@ -479,8 +479,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
                         output.close();
                         fis.close();*/
 
-                        String dbFileName = this.getDatabasePath(AppDatabase.Sub_DBConnection.DATABASE_NAME).getAbsolutePath();
-                        String outFileName = DirectoryName + File.separator + AppDatabase.Sub_DBConnection.DATABASE_NAME + ".db";
+                        String dbFileName = this.getDatabasePath(CONSTANTS.DATABASE_NAME).getAbsolutePath();
+                        String outFileName = DirectoryName + File.separator + CONSTANTS.DATABASE_NAME + ".db";
 
                         File currentDB = new File(dbFileName);
                         File backupDB = new File(outFileName);
@@ -864,8 +864,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
 
                     Toast.makeText(LoginActivity.this, "Sync Users", Toast.LENGTH_LONG).show();
                     new GetAllData(mContext, "User", MainApp._HOST_URL + CONSTANTS.URL_USERS).execute();
-                    Toast.makeText(LoginActivity.this, "Sync Clusters", Toast.LENGTH_LONG).show();
-                    new GetAllData(mContext, "Clusters", MainApp._HOST_URL + CONSTANTS.URL_CLUSTERS).execute();
+                    /*Toast.makeText(LoginActivity.this, "Sync Clusters", Toast.LENGTH_LONG).show();
+                    new GetAllData(mContext, "Clusters", MainApp._HOST_URL + CONSTANTS.URL_CLUSTERS).execute();*/
                 }
             });
 

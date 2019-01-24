@@ -2,6 +2,12 @@ package com.example.hassannaqvi.fas.core;
 
 public interface CONSTANTS {
 
+    String DATABASE_NAME = "facility_audit";
+    int DATABASE_VERSION = 1;
+    String TABLE_FORMS = "forms";
+    String TABLE_USERS = "users";
+    String TABLE_CLUSTERS = "clusters";
+
     String URL_USERS = "users.php";
     String URL_CLUSTERS = "clusters.php";
     String URL_DEVICES = "devices.php";
@@ -9,7 +15,6 @@ public interface CONSTANTS {
 
     String _URI_END_FLAG = "complete";
     String _URI_FC_OBJ = "fc_data";
-
 
     String _URI_FORM_TOOL1 = "ftool1";
     String _URI_FORM_TOOL2 = "ftool2";
