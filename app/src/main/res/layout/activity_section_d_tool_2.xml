@@ -462,13 +462,8 @@
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
-                        <RadioGroup
-                            android:id="@+id/fas02d06"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
 
-                            <RadioButton
+                        <CheckBox
                                 android:id="@+id/fas02d06a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -476,7 +471,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06a" />
 
-                            <RadioButton
+                        <CheckBox
                                 android:id="@+id/fas02d06b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -484,7 +479,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06b" />
 
-                            <RadioButton
+                        <CheckBox
                                 android:id="@+id/fas02d06c"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -492,7 +487,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06c" />
 
-                            <RadioButton
+                        <CheckBox
                                 android:id="@+id/fas02d06d"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -500,7 +495,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06d" />
 
-                            <RadioButton
+                        <CheckBox
                                 android:id="@+id/fas02d06e"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -508,7 +503,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06e" />
 
-                            <RadioButton
+                        <CheckBox
                                 android:id="@+id/fas02d06f"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -516,7 +511,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06f" />
 
-                            <RadioButton
+                        <CheckBox
                                 android:id="@+id/fas02d06g"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -524,7 +519,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06g" />
 
-                            <RadioButton
+                        <CheckBox
                                 android:id="@+id/fas02d06h"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -532,7 +527,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06h" />
 
-                            <RadioButton
+                        <CheckBox
                                 android:id="@+id/fas02d0698"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -541,7 +536,6 @@
                                 android:text="@string/dkn" />
 
 
-                        </RadioGroup>
 
 
                     </LinearLayout>
