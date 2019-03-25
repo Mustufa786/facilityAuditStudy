@@ -80,7 +80,7 @@
     <string name="fas01a00c">تیسرے کواٹر میں </string>
     <string name="fas01a00d"> انٹرونشن کے بعد</string>
 
-    <string name="fas01a01">مرکزِ صحت کا نمبر</string>
+    <string name="fas01a01">مرکزِ صحت کا اسٹیڈی نمبر </string>
     <string name="fas01a02">مرکزِ صحت کا نام</string>
     <string name="fas01a03">مرکزِ صحت کس جگہ واقع ہے</string>
     <string name="fas01a03a">ضلع/علاقہ/صوبہ      </string>
@@ -146,7 +146,8 @@
     <string name="fas01d02">پارٹو گرام کے ذریعہ سے لیبر کی نگرانی اور انتظام</string>
     <string name="fas01d03">فوری اور خصوصی ماں کا دودھ پلانا</string>
     <string name="fas01d04">مرکزِصحت پر حفظان صحت کے مطابق آنول نال کی دیکھ بھال (جراثیم سے پاک آلات کا استعمال)</string>
-    <string name="fas01d05">براہ کرم مجھے بتائیے کہ حمل  کے دوران اور بچے کی پیدائش کے بعد 12 مہینوں تک کیا مندرجہ ذیل سہولیات فراہم کی گئی ہیں۔</string>
+    <string name="fas01d05"> مرکز صحت پر درجہ حرارت کا تحفظ (پیدائش کے بعد 6 گھنٹے تک پہلے غسل میں تاخیر)</string>
+    <string name="fas01da">براہ کرم مجھے بتائیے کہ حمل  کے دوران اور بچے کی پیدائش کے بعد 12 مہینوں تک کیا مندرجہ ذیل سہولیات فراہم کی گئی ہیں۔</string>
     <string name="fas01d06">حاملہ کے لیے اینٹی بائیوٹیکس (آئی وی یا آئی ایم  انجکشن) کا انتظام</string>
     <string name="fas01d07">حاملہ کےلیے پوسٹ پارٹم ہیموریج کے علاج کے لیے آکسی ٹوسک (آئی وی یاآئی ایم انجکشن) کا انتظام</string>
     <string name="fas01d08">حاملہ کے لیے پری ایکیلیمسیا کی روک تھام کے لیے میگنیشم سلفیٹ (آئی وی یا آئی ایم ) کا انتظام</string>
@@ -220,9 +221,8 @@
     <string name="fas01e12a"> ہائی ڈیرزین انجیک ٹیبل </string>
     <string name="fas01e13a"> ہائی ڈیرزین انجیک ٹیبل </string>
     <string name="fas01e14a"> ویلیم انجیک ٹیبل </string>
-    <string name="fas01e15a"> کورٹیسکو سٹرائیڈ </string>
-    <string name="fas01e15a"> (منہ سے دوائی کھانا)اورل فنسیڑار </string>
-    <string name="fas01e16a"> (منہ سے دوائی کھانا)اورل کونین </string>
+    <string name="fas01e15a">اورل فنسیڑار (منہ سے دوائی کھانا)</string>
+    <string name="fas01e16a">اورل کونین  (منہ سے دوائی کھانا)</string>
     <string name="fas01e17a"> دوسرے اورل اینٹی ملیریا </string>
     <string name="fas01e18"> اوکسیٹوسن انجیکشن </string>
     <string name="fas01e18a"> اوکسیٹوسن انجیکشن </string>

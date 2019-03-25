@@ -380,6 +380,10 @@
 
                 </android.support.v7.widget.CardView>
 
+                <TextView
+                    style="@style/textView2"
+                    android:text="@string/fas01da" />
+
                 <!--fas01d06-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 

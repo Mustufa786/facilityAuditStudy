@@ -68,52 +68,6 @@ public class SectionD02Activity extends AppCompatActivity {
             bi.fas01d33b.clearCheck();
         else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d34a03.getId())
             bi.fas01d34b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d35a03.getId())
-            bi.fas01d35b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d36a03.getId())
-            bi.fas01d36b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d37a03.getId())
-            bi.fas01d37b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d38a03.getId())
-            bi.fas01d38b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d39a03.getId())
-            bi.fas01d39b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d40a03.getId())
-            bi.fas01d40b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d41a03.getId())
-            bi.fas01d41b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d42a03.getId())
-            bi.fas01d42b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d43a03.getId())
-            bi.fas01d43b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d44a03.getId())
-            bi.fas01d44b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d45a03.getId())
-            bi.fas01d45b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d46a03.getId())
-            bi.fas01d46b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d47a03.getId())
-            bi.fas01d47b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d48a03.getId())
-            bi.fas01d48b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d49a03.getId())
-            bi.fas01d49b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d50a03.getId())
-            bi.fas01d50b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d51a03.getId())
-            bi.fas01d51b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d52a03.getId())
-            bi.fas01d52b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d53a03.getId())
-            bi.fas01d53b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d54a03.getId())
-            bi.fas01d54b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d55a03.getId())
-            bi.fas01d55b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d56a03.getId())
-            bi.fas01d56b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d57a03.getId())
-            bi.fas01d57b.clearCheck();
     }
 
 
@@ -124,7 +78,7 @@ public class SectionD02Activity extends AppCompatActivity {
 
         SaveDraft();
         if (UpdateDB()) {
-            MainApp.stActivity(this, this, SectionEActivity.class, fc);
+            MainApp.stActivity(this, this, SectionD03Activity.class, fc);
         } else {
             Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
         }
