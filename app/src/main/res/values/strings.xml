@@ -210,21 +210,25 @@
     <string name="fas01e02a">نوزائیدہ بچوں کی آنکھوں میں لگانے کا اینٹی بائیوٹک مرہم (سلور نائٹیڑیٹ</string>
     <string name="fas01e03a">جینٹا مائی سین انجکشن</string>
     <string name="fas01e04a">ایمپسلین پاؤڈر انجکشن کے لیے</string>
-    <string name="fas01e05a">انجیک ٹیبل کیونائیسن</string>
-    <string name="fas01e06a">انجیک ٹیبل آرھومیتھر</string>
-    <string name="fas01e07a">دوسرے انجیک ٹیبل اینٹی ملیریا</string>
-    <string name="fas01e08a">سپوسٹری آرتھیو میتھرے</string>
-    <string name="fas01e09a">اورل اے سی ٹی اے ایل جیسا کہ کورٹیم</string>
-    <string name="fas01e10a">آرتھیو سیفٹ/ اورل آرٹیمیٹر</string>
-    <string name="fas01e11a">اورل ایموڈیقین</string>
-    <string name="fas01e12a">اورل فینسیڈر</string>
-    <string name="fas01e13a">اورل کینن</string>
-    <string name="fas01e14a">دوسرے اور ل اینٹی ملیریا</string>
-    <string name="fas01e15a">ڈاکٹر کی ہدایات پر سیفیلس کے علاج کے لیے پینسلین</string>
-    <string name="fas01e16a">ہائیڈ رالیزین</string>
-    <string name="fas01e17a">اوکسی ٹوسین انجکشن</string>
-    <string name="fas01e18a">وکسی ٹوسین اگر موجود ہے تو کیا یہ ٹھنڈی جگہ پر رکھا ہوا ہے؟</string>
-
+    <string name="fas01e05a"> بنزائیل پنسیلین انجکشن </string>
+    <string name="fas01e06a"> ارمل سیلائن انجیک ٹیبل </string>
+    <string name="fas01e07a"> گیر رین لیکٹیٹ انجیک ٹیبل </string>
+    <string name="fas01e08a"> ہیمسل انجیک ٹیبل </string>
+    <string name="fas01e09a"> ڈسٹروز واٹر٪25 انجیک ٹیبل </string>
+    <string name="fas01e10a"> ڈیکوڈرون انجیک ٹیبل </string>
+    <string name="fas01e11a"> لیسک انجیک ٹیبل </string>
+    <string name="fas01e12a"> ہائی ڈیرزین انجیک ٹیبل </string>
+    <string name="fas01e13a"> ہائی ڈیرزین انجیک ٹیبل </string>
+    <string name="fas01e14a"> ویلیم انجیک ٹیبل </string>
+    <string name="fas01e15a"> کورٹیسکو سٹرائیڈ </string>
+    <string name="fas01e15a"> (منہ سے دوائی کھانا)اورل فنسیڑار </string>
+    <string name="fas01e16a"> (منہ سے دوائی کھانا)اورل کونین </string>
+    <string name="fas01e17a"> دوسرے اورل اینٹی ملیریا </string>
+    <string name="fas01e18"> اوکسیٹوسن انجیکشن </string>
+    <string name="fas01e18a"> اوکسیٹوسن انجیکشن </string>
+    <string name="fas01e18b"> اوکسیٹوسن اگر موجود ہے تو کیا یہ ٹھنڈی جگہ پر رکھا ہوا ہے؟ </string>
+    <string name="fas01e19a"> میگنیشیم سلفیٹ </string>
+    <string name="fas01e20a"> ایوڈین سلوشن </string>
 
     <!--Section F-->
     <string name="fas01f01">کیا آپ کے پاس زچہ و بچہ کی دیکھ بھال کے لیے ہنگامی ایمرجنسی موجود ہے</string>
