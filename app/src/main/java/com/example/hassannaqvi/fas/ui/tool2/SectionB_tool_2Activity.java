@@ -122,11 +122,13 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
 
 
         s02.put("fas02b04",
-                bi.fas02b04a.isChecked() ? "0"
-                        : bi.fas02b04b.isChecked() ? "1"
-                        : bi.fas02b04c.isChecked() ? "2"
-                        : bi.fas02b04d.isChecked() ? "3"
+                bi.fas02b04a.isChecked() ? "1"
+                        : bi.fas02b04b.isChecked() ? "2"
+                        : bi.fas02b04c.isChecked() ? "3"
+                        : bi.fas02b04d.isChecked() ? "4"
+                        : bi.fas02b0499.isChecked() ? "99"
                         : "0");
+
         s02.put("fas02b05", bi.fas02b05.getText().toString());
 
 
@@ -136,6 +138,7 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
                         : bi.fas02b06c.isChecked() ? "3"
                         : bi.fas02b06c.isChecked() ? "4"
                         : bi.fas02b06e.isChecked() ? "5"
+                        : bi.fas02b0699.isChecked() ? "99"
                         : "0");
 
 
