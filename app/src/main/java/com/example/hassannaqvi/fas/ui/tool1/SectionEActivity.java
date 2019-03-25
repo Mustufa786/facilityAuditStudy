@@ -81,6 +81,12 @@ public class SectionEActivity extends AppCompatActivity {
             bi.fas01e16b.clearCheck();
         else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e17a03.getId())
             bi.fas01e17b.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e18a03.getId())
+            bi.fas01e18b.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e19a03.getId())
+            bi.fas01e19b.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e20a03.getId())
+            bi.fas01e20b.clearCheck();
     }
 
     public void BtnContinue() {

@@ -168,33 +168,41 @@
     <string name="fas01dHeading"> برائے کرم مجھے بتائیے کیا مندرجہ ذیل آلات جو ڈیلیوری کے لیے استعمال ہوتے ہیں آج مرکزِصحت پر موجود ہیں؟ </string>
 
     <string name="fas01d23a">معائنے کے لیے فلش لائٹ </string>
-    <string name="fas01d24a">ڈیلیوری پیک </string>
-    <string name="fas01d25a">کورڈ کلیم </string>
-    <string name="fas01d26a">ایپی زیاٹومی سیزر(کینچی )</string>
-    <string name="fas01d27a">کورڈ کو کاٹنے کے لیے سیزر(کینچی یا بلیڈ) </string>
-    <string name="fas01d28a">ٹانگے لگانے کے لیے جراحی سوئی دھاگہ </string>
-    <string name="fas01d29a">جراحی سوئی ہولڈر </string>
-    <string name="fas01d30a">مینول و یکیوم ایکس ٹریکٹر</string>
-    <string name="fas01d31a">ویکیوم ایسپیر یٹراینڈ سی کٹ </string>
-    <string name="fas01d32a">انکیوبیٹر </string>
-    <string name="fas01d33a">غیرا ستعمال صاف لیکٹس دستانے </string>
-    <string name="fas01d34a">خالی پارٹو گرام </string>
-    <string name="fas01d35a">ڈیلیوری بیڈ </string>
-    <string name="fas01d36a">نوازئیدہ بچے  کو ہوش میں لانے کے لیے ری سکسی ٹیشن ٹیبل  کا استعمال ہیٹ سورس  کے ساتھ </string>
-    <string name="fas01d37a">نوازئیدہ بچوں کی ری سکسی ٹیشن کے لیے ایک نمبر سائزکا بیگ اور ماسک</string>
-    <string name="fas01d38a">نوازئیدہ بچوں کی ری سکسی ٹیشن کے لیے صفر نمبر سائزکا بیگ اور ماسک </string>
-    <string name="fas01d39a">الیکٹرک سکشن پمپ (سیکشن کے آلات) </string>
-    <string name="fas01d40a">کیتیھٹر نوازئیدہ بچوں کی سیکشن کے لیے سیکشن کے آلات </string>
-    <string name="fas01d41a">سیکشن بلب ایک بار استعمال کے لیے</string>
-    <string name="fas01d42a">جراثیم سے پاک سکشن بلب ایک سے زائد بار استعمال کے لیے </string>
-    <string name="fas01d43a">اسپیکیولم </string>
-    <string name="fas01d44a">شیر خوار بچہ کا وزن کرنے کی مشین </string>
-    <string name="fas01d45a">فشار خون (بلڈ پریشر) چیک کرنے کے لیے ڈیجیٹل یا مینول مشین اسٹیتھو اسکوپ کے ساتھ</string>
-    <string name="fas01d46a">صاف ستھرا استعمال کا پانی (پائپ نل بالتی اور پور کچن /باروچی خانہ ) </string>
-    <string name="fas01d47a">ہاتھ دھونے کے لیے مائع صابن اور صابن </string>
-    <string name="fas01d48a">Fetoscope فیٹو اسکوپ </string>
-    <string name="fas01d49a">ڈوپٹون یا جنین کی نگرانی </string>
-    <string name="fas01d50a">الٹرا ساؤنڈ مشین </string>
+    <!--<string name="fas01d24a">ڈیلیوری پیک </string>-->
+    <string name="fas01d24a">کورڈ کلیم </string>
+    <string name="fas01d25a">ایپی زیاٹومی سیزر(کینچی )</string>
+    <string name="fas01d26a">کورڈ کو کاٹنے کے لیے سیزر(کینچی یا بلیڈ) </string>
+    <string name="fas01d27a">ٹانگے لگانے کے لیے جراحی سوئی دھاگہ </string>
+    <string name="fas01d28a">جراحی سوئی ہولڈر </string>
+    <string name="fas01d29a">مینول و یکیوم ایکس ٹریکٹر</string>
+    <string name="fas01d30a">ویکیوم ایسپیر یٹراینڈ سی کٹ </string>
+    <string name="fas01d31a">انکیوبیٹر </string>
+    <string name="fas01d32a">غیرا ستعمال صاف لیکٹس دستانے </string>
+    <string name="fas01d33a">خالی پارٹو گرام </string>
+    <string name="fas01d34a">ڈیلیوری بیڈ </string>
+    <string name="fas01d35a">نوازئیدہ بچے  کو ہوش میں لانے کے لیے ری سکسی ٹیشن ٹیبل  کا استعمال ہیٹ سورس  کے ساتھ </string>
+    <string name="fas01d36a">نوازئیدہ بچوں کی ری سکسی ٹیشن کے لیے ایک نمبر سائزکا بیگ اور ماسک</string>
+    <string name="fas01d37a">نوازئیدہ بچوں کی ری سکسی ٹیشن کے لیے صفر نمبر سائزکا بیگ اور ماسک </string>
+    <string name="fas01d38a">الیکٹرک سکشن پمپ (سیکشن کے آلات) </string>
+    <string name="fas01d39a">کیتیھٹر نوازئیدہ بچوں کی سیکشن کے لیے سیکشن کے آلات </string>
+    <string name="fas01d40a">سیکشن بلب ایک بار استعمال کے لیے</string>
+    <string name="fas01d41a">جراثیم سے پاک سکشن بلب ایک سے زائد بار استعمال کے لیے </string>
+    <string name="fas01d42a">اسپیکیولم </string>
+    <string name="fas01d43a">شیر خوار بچہ کا وزن کرنے کی مشین </string>
+    <string name="fas01d44a">فشار خون (بلڈ پریشر) چیک کرنے کے لیے ڈیجیٹل یا مینول مشین اسٹیتھو اسکوپ کے ساتھ</string>
+    <string name="fas01d45a">صاف ستھرا استعمال کا پانی (پائپ نل بالتی اور پور کچن /باروچی خانہ ) </string>
+    <string name="fas01d46a">ہاتھ دھونے کے لیے مائع صابن اور صابن </string>
+    <string name="fas01d47a">Fetoscope فیٹو اسکوپ </string>
+    <string name="fas01d48a">ڈوپٹون یا جنین کی نگرانی </string>
+    <string name="fas01d49a">الٹرا ساؤنڈ مشین </string>
+    <string name="fas01d50a"> 5 ملی لیٹر والی ڈسپوزایبل سرنج </string>
+    <string name="fas01d51a"> 2.5 ملی لیٹر والی ڈسپوزایبل سرنج </string>
+    <string name="fas01d52a"> 24 جی والی باٹر فلائی انجکشن </string>
+    <string name="fas01d53a"> 23 جی والی باٹر فلائی انجکشن </string>
+    <string name="fas01d54a"> 18جی کا آئی/ وی کینولہ </string>
+    <string name="fas01d55a"> 20 جی کا آئی/ وی کینولہ </string>
+    <string name="fas01d56a"> 22 جی کا آئی/ وی کینولہ </string>
+    <string name="fas01d57a"> غیراستعمال صاف دستانے(ڈسپوزیبل) </string>
 
 
     <!--Section E-->
@@ -215,7 +223,7 @@
     <string name="fas01e15a">ڈاکٹر کی ہدایات پر سیفیلس کے علاج کے لیے پینسلین</string>
     <string name="fas01e16a">ہائیڈ رالیزین</string>
     <string name="fas01e17a">اوکسی ٹوسین انجکشن</string>
-    <string name="fas01e18">وکسی ٹوسین اگر موجود ہے تو کیا یہ ٹھنڈی جگہ پر رکھا ہوا ہے؟</string>
+    <string name="fas01e18a">وکسی ٹوسین اگر موجود ہے تو کیا یہ ٹھنڈی جگہ پر رکھا ہوا ہے؟</string>
 
 
     <!--Section F-->

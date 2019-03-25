@@ -100,6 +100,20 @@ public class SectionD02Activity extends AppCompatActivity {
             bi.fas01d49b.clearCheck();
         else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d50a03.getId())
             bi.fas01d50b.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d51a03.getId())
+            bi.fas01d51b.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d52a03.getId())
+            bi.fas01d52b.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d53a03.getId())
+            bi.fas01d53b.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d54a03.getId())
+            bi.fas01d54b.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d55a03.getId())
+            bi.fas01d55b.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d56a03.getId())
+            bi.fas01d56b.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d57a03.getId())
+            bi.fas01d57b.clearCheck();
     }
 
 
