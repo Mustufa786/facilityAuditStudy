@@ -54,7 +54,7 @@ public class SectionFActivity extends AppCompatActivity {
 
         SaveDraft();
         if (UpdateDB()) {
-            MainApp.endActivity(this, this, EndingActivity.class, true, fc);
+            MainApp.endActivitySetRouting(this, this, EndingActivity.class, true, fc);
         } else {
             Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
         }
@@ -85,6 +85,6 @@ public class SectionFActivity extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        MainApp.endActivity(this, this, EndingActivity.class, false, fc);
+        MainApp.endActivityDirectRouting(this, this, EndingActivity.class, false, fc);
     }
 }

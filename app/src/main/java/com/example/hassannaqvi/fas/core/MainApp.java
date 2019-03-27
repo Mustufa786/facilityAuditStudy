@@ -18,6 +18,7 @@ import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.text.format.DateFormat;
 
+import com.example.hassannaqvi.fas.R;
 import com.example.hassannaqvi.fas.utils.TypefaceUtil;
 
 import java.io.Serializable;
@@ -138,21 +139,28 @@ public class MainApp extends Application {
         return shared.getString(key, "0");
     }
 
-    public static void endActivity(final Context context, final Activity activity, final Class EndActivityClass, final boolean complete, final Object objectData) {
+    public static void endActivitySetRouting(final Context context, final Activity activity, final Class EndActivityClass, final boolean complete, final Object objectData) {
+        activity.finish();
+        Intent end_intent = new Intent(context, EndActivityClass);
+        end_intent.putExtra(CONSTANTS._URI_END_FLAG, complete);
+        end_intent.putExtra(CONSTANTS._URI_FC_OBJ, (Serializable) objectData);
+        context.startActivity(end_intent);
+    }
+
+    public static void endActivityDirectRouting(final Context context, final Activity activity, final Class EndActivityClass, final boolean complete, final Object objectData) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 context);
         alertDialogBuilder
+                .setTitle("END INTERVIEW")
+                .setIcon(R.drawable.ic_power_settings_new_black_24dp)
+                .setCancelable(false)
                 .setMessage("Do you want to " + (complete ? "End Interview!!" : "Exit??"))
                 .setCancelable(false)
                 .setPositiveButton("Yes",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,
                                                 int id) {
-                                activity.finish();
-                                Intent end_intent = new Intent(context, EndActivityClass);
-                                end_intent.putExtra(CONSTANTS._URI_END_FLAG, complete);
-                                end_intent.putExtra(CONSTANTS._URI_FC_OBJ, (Serializable) objectData);
-                                context.startActivity(end_intent);
+                                endActivitySetRouting(context, activity, EndActivityClass, complete, objectData);
                             }
                         });
         alertDialogBuilder.setNegativeButton("No",
@@ -164,6 +172,7 @@ public class MainApp extends Application {
         AlertDialog alert = alertDialogBuilder.create();
         alert.show();
     }
+
 
     @Override
     public void onCreate() {

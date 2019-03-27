@@ -146,7 +146,7 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
             e.printStackTrace();
         }
         if (UpdateDB()) {
-            MainApp.endActivity(this, this, EndingActivity.class, true, fc);
+            MainApp.endActivitySetRouting(this, this, EndingActivity.class, true, fc);
         } else {
             Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
         }
@@ -233,8 +233,6 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
         s04.put("fas02d0298",
                 bi.fas02d0298.isChecked() ? "1"
                         : "0");
-
-
 
 
         s04.put("fas02d03",
@@ -330,7 +328,6 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                         : "0");
 
 
-
         s04.put("fas02d07",
                 bi.fas02d07a.isChecked() ? "1"
                         : bi.fas02d07b.isChecked() ? "2"
@@ -358,6 +355,6 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        MainApp.endActivity(this, this, EndingActivity.class, false, fc);
+        MainApp.endActivityDirectRouting(this, this, EndingActivity.class, false, fc);
     }
 }

@@ -1,6 +1,8 @@
 package com.example.hassannaqvi.fas.ui.tool2;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -155,11 +157,36 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         if (!ValidatorClass.EmptyTextBox(this, bi.fas02a001, getString(R.string.fas01a01)))
             return;
 
-        if (UpdateDB()) {
-            MainApp.endActivity(this, this, EndingActivity.class, false, fc);
-        } else {
-            Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
-        }
+        new AlertDialog.Builder(this)
+                .setTitle("END INTERVIEW")
+                .setIcon(R.drawable.ic_power_settings_new_black_24dp)
+                .setCancelable(false)
+                .setCancelable(false)
+                .setMessage("Do you want to End Interview??")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                        try {
+                            SaveDraft();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        if (!UpdateDB()) {
+                            Toast.makeText(SectionA_tool_2Activity.this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+
+                        MainApp.endActivitySetRouting(SectionA_tool_2Activity.this, SectionA_tool_2Activity.this, EndingActivity.class, false, fc);
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                })
+                .show();
 
     }
 

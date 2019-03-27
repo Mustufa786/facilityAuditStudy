@@ -140,6 +140,6 @@ public class SectionD03Activity extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        MainApp.endActivity(this, this, EndingActivity.class, false, fc);
+        MainApp.endActivityDirectRouting(this, this, EndingActivity.class, false, fc);
     }
 }

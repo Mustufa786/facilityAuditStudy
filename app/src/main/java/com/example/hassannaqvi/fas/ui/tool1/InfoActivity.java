@@ -1,6 +1,8 @@
 package com.example.hassannaqvi.fas.ui.tool1;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -148,12 +150,31 @@ public class InfoActivity extends AppCompatActivity {
         if (!ValidatorClass.EmptyTextBox(this, bi.fas01a02, getString(R.string.fas01a02)))
             return;
 
-        SaveDraft();
-        if (UpdateDB()) {
-            MainApp.endActivity(this, this, EndingActivity.class, false, fc);
-        } else {
-            Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
-        }
+        new AlertDialog.Builder(this)
+                .setTitle("END INTERVIEW")
+                .setIcon(R.drawable.ic_power_settings_new_black_24dp)
+                .setCancelable(false)
+                .setCancelable(false)
+                .setMessage("Do you want to End Interview??")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        SaveDraft();
+                        if (!UpdateDB()) {
+                            Toast.makeText(InfoActivity.this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+
+                        MainApp.endActivitySetRouting(InfoActivity.this, InfoActivity.this, EndingActivity.class, false, fc);
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                })
+                .show();
     }
 
     public void setGPS(Forms fc) {
