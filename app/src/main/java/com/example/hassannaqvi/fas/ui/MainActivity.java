@@ -379,8 +379,7 @@ public class MainActivity extends Activity {
             NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
             if (networkInfo != null && networkInfo.isConnected()) {
 
-//            new SyncDevice(this).execute();
-                Toast.makeText(getApplicationContext(), "Syncing Forms", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Syncing Forms", Toast.LENGTH_SHORT).show();
 
                 /*Upload Form TOOL 1*/
                 Collection collection1 = null;
