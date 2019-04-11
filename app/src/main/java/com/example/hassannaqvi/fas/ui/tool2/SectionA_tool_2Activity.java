@@ -49,7 +49,6 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         this.setTitle(R.string.section1_tool2);
 
         deviceID = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
-        bi.fas02a02.setManager(getSupportFragmentManager());
     }
 
     public void BtnContinue() {
