@@ -77,9 +77,7 @@
 
     <string name="fas01a00">سروے نمبر</string>
     <string name="fas01a00a">انٹرونشن سے پہلے </string>
-    <string name="fas01a00b"> دوسرے کواٹر میں </string>
-    <string name="fas01a00c">تیسرے کواٹر میں </string>
-    <string name="fas01a00d"> انٹرونشن کے بعد</string>
+    <string name="fas01a00b"> انٹرونشن کے بعد</string>
 
     <string name="fas01a01">مرکزِ صحت کا اسٹیڈی نمبر </string>
     <string name="fas01a02">مرکزِ صحت کا نام</string>
@@ -89,7 +87,7 @@
     <string name="fas01a03c">تحصیل  </string>
     <string name="fas01a03d">یونین کونسل</string>
     <string name="fas01a03e">گاؤں </string>
-    <string name="fas01a04">مرکزِ صحت کی اقسام</string>
+    <string name="fas01a04">مرکزِ صحت کی قسم</string>
     <string name="fas01a04a">گورنمنٹ           </string>
     <string name="fas01a04b"> اے کے ایچ ایس پی</string>
 
@@ -99,7 +97,7 @@
     <string name="fas01a05c">ٹرشری             </string>
 
     <!--Section B include in section A-->
-    <string name="fas01a06">Do I have your agreement to proceed?</string>
+    <string name="fas01a20">Do I have your agreement to proceed?</string>
 
     <!--Section C-->
 
