@@ -34,11 +34,7 @@
 
                         <RadioGroup
                             android:id="@+id/fas02c00"
-
-                            style="@style/i_radiogroup"
-
-
-                            >
+                            style="@style/i_radiogroup">
 
                             <RadioButton
                                 android:id="@+id/fas02c00a"
@@ -51,17 +47,6 @@
                                 style="@style/i_radiobutton"
                                 android:text="@string/fas01a00b"
                                 android:visibility="gone" />
-
-                            <RadioButton
-                                android:id="@+id/fas02c00c"
-                                style="@style/i_radiobutton"
-                                android:text="@string/fas01a00c"
-                                android:visibility="gone" />
-
-                            <RadioButton
-                                android:id="@+id/fas02c00d"
-                                style="@style/i_radiobutton"
-                                android:text="@string/fas01a00d" />
 
                         </RadioGroup>
 

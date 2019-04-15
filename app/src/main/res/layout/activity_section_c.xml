@@ -66,22 +66,6 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas01a00b" />
 
-                            <RadioButton
-                                android:id="@+id/fas01c00c"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/fas01a00c" />
-
-                            <RadioButton
-                                android:id="@+id/fas01c00d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/fas01a00d" />
-
                         </RadioGroup>
 
 
