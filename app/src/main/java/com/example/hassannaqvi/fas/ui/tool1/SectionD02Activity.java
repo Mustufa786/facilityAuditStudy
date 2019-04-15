@@ -44,30 +44,50 @@ public class SectionD02Activity extends AppCompatActivity {
     }
 
     public void onRadioClickChanged(RadioGroup radioGroup, int id) {
-        if (radioGroup.getCheckedRadioButtonId() == bi.fas01d23a03.getId())
-            bi.fas01d23b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d24a03.getId())
-            bi.fas01d24b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d25a03.getId())
-            bi.fas01d25b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d26a03.getId())
-            bi.fas01d26b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d27a03.getId())
-            bi.fas01d27b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d28a03.getId())
-            bi.fas01d28b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d29a03.getId())
-            bi.fas01d29b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d30a03.getId())
-            bi.fas01d30b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d31a03.getId())
-            bi.fas01d31b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d32a03.getId())
-            bi.fas01d32b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d33a03.getId())
-            bi.fas01d33b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01d34a03.getId())
-            bi.fas01d34b.clearCheck();
+        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1423avc.getId())
+            bi.hfa1423bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1424avc.getId())
+            bi.hfa1424bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1425avc.getId())
+            bi.hfa1425bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1426avc.getId())
+            bi.hfa1426bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1427avc.getId())
+            bi.hfa1427bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1428avc.getId())
+            bi.hfa1428bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1429avc.getId())
+            bi.hfa1429bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1430avc.getId())
+            bi.hfa1430bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1431avc.getId())
+            bi.hfa1431bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1432avc.getId())
+            bi.hfa1432bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1433avc.getId())
+            bi.hfa1433bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1434avc.getId())
+            bi.hfa1434bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1435avc.getId())
+            bi.hfa1435bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1436avc.getId())
+            bi.hfa1436bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1437avc.getId())
+            bi.hfa1437bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1438avc.getId())
+            bi.hfa1438bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1439avc.getId())
+            bi.hfa1439bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1440avc.getId())
+            bi.hfa1440bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1441avc.getId())
+            bi.hfa1441bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1442avc.getId())
+            bi.hfa1442bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1443avc.getId())
+            bi.hfa1443bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1444avc.getId())
+            bi.hfa1444bf.clearCheck();
     }
 
 

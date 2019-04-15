@@ -29,7 +29,7 @@
                 android:id="@+id/fldGrpllSecC"
                 style="@style/linerlayout_view_wt_bound">
 
-                <!--fas01a00-->
+                <!--hfa1100-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -39,32 +39,32 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01a00"
+                            android:text="@string/hfa1100"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <RadioGroup
-                            android:id="@+id/fas01c00"
+                            android:id="@+id/hfa1300"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
                             <RadioButton
-                                android:id="@+id/fas01c00a"
+                                android:id="@+id/hfa1300a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
-                                android:text="@string/fas01a00a" />
+                                android:text="@string/hfa1100a" />
 
                             <RadioButton
-                                android:id="@+id/fas01c00b"
+                                android:id="@+id/hfa1300b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
-                                android:text="@string/fas01a00b" />
+                                android:text="@string/hfa1100b" />
 
                         </RadioGroup>
 
@@ -73,7 +73,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c001-->
+                <!--hfa13001-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -83,16 +83,16 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01a02"
+                            android:text="@string/hfa1102"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c001"
+                            android:id="@+id/hfa13001"
                             style="@style/textInput"
                             android:enabled="false"
-                            android:hint="@string/fas01a02"
+                            android:hint="@string/hfa1102"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -100,7 +100,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c01-->
+                <!--hfa1301-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -110,15 +110,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c01"
+                            android:text="@string/hfa1301"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c01"
+                            android:id="@+id/hfa1301"
                             style="@style/textInput"
-                            android:hint="@string/fas01c01"
+                            android:hint="@string/hfa1301"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -126,7 +126,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c02-->
+                <!--hfa1302-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -136,42 +136,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c02"
+                            android:text="@string/hfa1302"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c02"
+                            android:id="@+id/hfa1302"
                             style="@style/textInput"
-                            android:hint="@string/fas01c02"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
-
-                    </LinearLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <!--fas01c03-->
-                <android.support.v7.widget.CardView style="@style/cardView">
-
-                    <LinearLayout style="@style/linerlayout_view">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/fas01c03"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:id="@+id/fas01c03"
-                            style="@style/textInput"
-                            android:hint="@string/fas01c03"
+                            android:hint="@string/hfa1302"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -180,7 +153,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c04a-->
+                <!--hfa1303-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -190,35 +163,62 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c04a"
+                            android:text="@string/hfa1303"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/hfa1303"
+                            style="@style/textInput"
+                            android:hint="@string/hfa1303"
+                            android:inputType="number"
+                            android:maxLength="3" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--hfa1304-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout style="@style/linerlayout_view">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/hfa1304a"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <RadioGroup
-                            android:id="@+id/fas01c04a"
+                            android:id="@+id/hfa1304"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
                             <RadioButton
-                                android:id="@+id/fas01c04a01"
+                                android:id="@+id/hfa1304a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
-                                android:text="@string/fas01c04a01" />
+                                android:text="@string/hfa1304a" />
 
                             <RadioButton
-                                android:id="@+id/fas01c04a02"
+                                android:id="@+id/hfa1304b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
-                                android:text="@string/fas01c04a02" />
+                                android:text="@string/hfa1304b" />
 
                             <RadioButton
-                                android:id="@+id/fas01c04a96"
+                                android:id="@+id/hfa130496"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
@@ -232,7 +232,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c04b-->
+                <!--hfa1305-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -242,15 +242,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c04b"
+                            android:text="@string/hfa1305"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c04b"
+                            android:id="@+id/hfa1305"
                             style="@style/textInput"
-                            android:hint="@string/fas01c04b"
+                            android:hint="@string/hfa1305"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -258,7 +258,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c05-->
+                <!--hfa1306-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -268,41 +268,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c05"
+                            android:text="@string/hfa1306"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c05"
+                            android:id="@+id/hfa1306"
                             style="@style/textInput"
-                            android:hint="@string/fas01c05"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
-                    </LinearLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <!--fas01c06-->
-                <android.support.v7.widget.CardView style="@style/cardView">
-
-                    <LinearLayout style="@style/linerlayout_view">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/fas01c06"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:id="@+id/fas01c06"
-                            style="@style/textInput"
-                            android:hint="@string/fas01c06"
+                            android:hint="@string/hfa1306"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -311,7 +285,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c07-->
+                <!--hfa1307-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -321,15 +295,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c07"
+                            android:text="@string/hfa1307"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c07"
+                            android:id="@+id/hfa1307"
                             style="@style/textInput"
-                            android:hint="@string/fas01c07"
+                            android:hint="@string/hfa1307"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -338,7 +312,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c08-->
+                <!--hfa1308-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -348,15 +322,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c08"
+                            android:text="@string/hfa1308"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c08"
+                            android:id="@+id/hfa1308"
                             style="@style/textInput"
-                            android:hint="@string/fas01c08"
+                            android:hint="@string/hfa1308"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -365,7 +339,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c09-->
+                <!--hfa1309-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -375,15 +349,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c09"
+                            android:text="@string/hfa1309"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c09"
+                            android:id="@+id/hfa1309"
                             style="@style/textInput"
-                            android:hint="@string/fas01c09"
+                            android:hint="@string/hfa1309"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -392,7 +366,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c10-->
+                <!--hfa1310-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -402,15 +376,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c10"
+                            android:text="@string/hfa1310"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c10"
+                            android:id="@+id/hfa1310"
                             style="@style/textInput"
-                            android:hint="@string/fas01c10"
+                            android:hint="@string/hfa1310"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -419,7 +393,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c11-->
+                <!--hfa1311-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -429,15 +403,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c11"
+                            android:text="@string/hfa1311"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c11"
+                            android:id="@+id/hfa1311"
                             style="@style/textInput"
-                            android:hint="@string/fas01c11"
+                            android:hint="@string/hfa1311"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -446,7 +420,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c12-->
+                <!--hfa1312-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -456,15 +430,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c12"
+                            android:text="@string/hfa1312"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c12"
+                            android:id="@+id/hfa1312"
                             style="@style/textInput"
-                            android:hint="@string/fas01c12"
+                            android:hint="@string/hfa1312"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -473,7 +447,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c13-->
+                <!--hfa1313-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -483,15 +457,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c13"
+                            android:text="@string/hfa1313"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c13"
+                            android:id="@+id/hfa1313"
                             style="@style/textInput"
-                            android:hint="@string/fas01c13"
+                            android:hint="@string/hfa1313"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -500,7 +474,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c14-->
+                <!--hfa1314-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -510,15 +484,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c14"
+                            android:text="@string/hfa1314"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c14"
+                            android:id="@+id/hfa1314"
                             style="@style/textInput"
-                            android:hint="@string/fas01c14"
+                            android:hint="@string/hfa1314"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -527,7 +501,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c15-->
+                <!--hfa1315-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -537,15 +511,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c15"
+                            android:text="@string/hfa1315"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c15"
+                            android:id="@+id/hfa1315"
                             style="@style/textInput"
-                            android:hint="@string/fas01c15"
+                            android:hint="@string/hfa1315"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -554,7 +528,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c16-->
+                <!--hfa1316-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -564,15 +538,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c16"
+                            android:text="@string/hfa1316"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c16"
+                            android:id="@+id/hfa1316"
                             style="@style/textInput"
-                            android:hint="@string/fas01c16"
+                            android:hint="@string/hfa1316"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -581,7 +555,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c17-->
+                <!--hfa1317-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -591,15 +565,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c17"
+                            android:text="@string/hfa1317"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c17"
+                            android:id="@+id/hfa1317"
                             style="@style/textInput"
-                            android:hint="@string/fas01c17"
+                            android:hint="@string/hfa1317"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -608,7 +582,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c18-->
+                <!--hfa1318-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -618,15 +592,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c18"
+                            android:text="@string/hfa1318"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c18"
+                            android:id="@+id/hfa1318"
                             style="@style/textInput"
-                            android:hint="@string/fas01c18"
+                            android:hint="@string/hfa1318"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -635,7 +609,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c19-->
+                <!--hfa1319-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -645,15 +619,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c19"
+                            android:text="@string/hfa1319"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c19"
+                            android:id="@+id/hfa1319"
                             style="@style/textInput"
-                            android:hint="@string/fas01c19"
+                            android:hint="@string/hfa1319"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -662,7 +636,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c20-->
+                <!--hfa1320-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -672,15 +646,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c20"
+                            android:text="@string/hfa1320"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c20"
+                            android:id="@+id/hfa1320"
                             style="@style/textInput"
-                            android:hint="@string/fas01c20"
+                            android:hint="@string/hfa1320"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -689,7 +663,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c21-->
+                <!--hfa1321-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -699,15 +673,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c21"
+                            android:text="@string/hfa1321"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c21"
+                            android:id="@+id/hfa1321"
                             style="@style/textInput"
-                            android:hint="@string/fas01c21"
+                            android:hint="@string/hfa1321"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -716,7 +690,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c22-->
+                <!--hfa1322-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -726,15 +700,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c22"
+                            android:text="@string/hfa1322"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c22"
+                            android:id="@+id/hfa1322"
                             style="@style/textInput"
-                            android:hint="@string/fas01c22"
+                            android:hint="@string/hfa1322"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -743,7 +717,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c23-->
+                <!--hfa1323-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -753,15 +727,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c23"
+                            android:text="@string/hfa1323"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c23"
+                            android:id="@+id/hfa1323"
                             style="@style/textInput"
-                            android:hint="@string/fas01c23"
+                            android:hint="@string/hfa1323"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -770,7 +744,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c24-->
+                <!--hfa1324-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -780,15 +754,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c24"
+                            android:text="@string/hfa1324"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c24"
+                            android:id="@+id/hfa1324"
                             style="@style/textInput"
-                            android:hint="@string/fas01c24"
+                            android:hint="@string/hfa1324"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -797,7 +771,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c25-->
+                <!--hfa1325-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -807,15 +781,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c25"
+                            android:text="@string/hfa1325"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c25"
+                            android:id="@+id/hfa1325"
                             style="@style/textInput"
-                            android:hint="@string/fas01c25"
+                            android:hint="@string/hfa1325"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -824,7 +798,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c26-->
+                <!--hfa1326-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -834,15 +808,15 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c26"
+                            android:text="@string/hfa1326"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c26"
+                            android:id="@+id/hfa1326"
                             style="@style/textInput"
-                            android:hint="@string/fas01c26"
+                            android:hint="@string/hfa1326"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -851,7 +825,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--fas01c27-->
+                <!--hfa1327-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -861,15 +835,123 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01c27"
+                            android:text="@string/hfa1327"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/fas01c27"
+                            android:id="@+id/hfa1327"
                             style="@style/textInput"
-                            android:hint="@string/fas01c27"
+                            android:hint="@string/hfa1327"
+                            android:inputType="number"
+                            android:maxLength="3" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--hfa1328-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout style="@style/linerlayout_view">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/hfa1328"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/hfa1328"
+                            style="@style/textInput"
+                            android:hint="@string/hfa1328"
+                            android:inputType="number"
+                            android:maxLength="3" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--hfa1329-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout style="@style/linerlayout_view">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/hfa1329"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/hfa1329"
+                            style="@style/textInput"
+                            android:hint="@string/hfa1329"
+                            android:inputType="number"
+                            android:maxLength="3" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--hfa1330-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout style="@style/linerlayout_view">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/hfa1330"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/hfa1330"
+                            style="@style/textInput"
+                            android:hint="@string/hfa1330"
+                            android:inputType="number"
+                            android:maxLength="3" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--hfa1331-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout style="@style/linerlayout_view">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/hfa1331"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/hfa1331"
+                            style="@style/textInput"
+                            android:hint="@string/hfa1331"
                             android:inputType="number"
                             android:maxLength="3" />
 

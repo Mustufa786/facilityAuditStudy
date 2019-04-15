@@ -28,7 +28,7 @@
                         <TextView
 
                             style="@style/i_textview"
-                            android:text="@string/fas01a00"
+                            android:text="@string/hfa1100"
 
                             />
 
@@ -40,12 +40,12 @@
                                 android:id="@+id/fas02c00a"
                                 style="@style/i_radiobutton"
 
-                                android:text="@string/fas01a00a" />
+                                android:text="@string/hfa1100a" />
 
                             <RadioButton
                                 android:id="@+id/fas02c00b"
                                 style="@style/i_radiobutton"
-                                android:text="@string/fas01a00b"
+                                android:text="@string/hfa1100b"
                                 android:visibility="gone" />
 
                         </RadioGroup>
@@ -62,13 +62,13 @@
                         <TextView
 
                             style="@style/i_textview"
-                            android:text="@string/fas01a01" />
+                            android:text="@string/hfa1101" />
 
                         <EditText
                             android:id="@+id/fas02c001"
                             style="@style/textInput"
                             android:enabled="false"
-                            android:hint="@string/fas01a01"
+                            android:hint="@string/hfa1101"
                             android:inputType="number"
                             android:maxLength="4" />
 

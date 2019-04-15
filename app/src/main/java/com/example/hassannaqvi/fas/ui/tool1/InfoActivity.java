@@ -84,9 +84,9 @@ public class InfoActivity extends AppCompatActivity {
         SaveDraft();
         if (UpdateDB()) {
 
-            String surveyType = bi.fas01a00a.isChecked() ? "1" : bi.fas01a00b.isChecked() ? "2" : "0";
+            String surveyType = bi.hfa1100a.isChecked() ? "1" : bi.hfa1100b.isChecked() ? "2" : "0";
             MainApp.setParamValues(this, CONSTANTS._URI_DATAMAP_SURVEY_TYPE, surveyType);
-            MainApp.setParamValues(this, CONSTANTS._URI_DATAMAP_HF_NO, bi.fas01a01.getText().toString());
+            MainApp.setParamValues(this, CONSTANTS._URI_DATAMAP_HF_NO, bi.hfa1101.getText().toString());
 
             MainApp.stActivity(this, this, SectionCActivity.class, fc);
         } else {
@@ -143,11 +143,11 @@ public class InfoActivity extends AppCompatActivity {
 
     public void BtnEnd() {
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.fas01a00, bi.fas01a00a, getString(R.string.fas01a00)))
+        if (!ValidatorClass.EmptyRadioButton(this, bi.hfa1100, bi.hfa1100a, getString(R.string.hfa1100)))
             return;
-        if (!ValidatorClass.EmptyTextBox(this, bi.fas01a01, getString(R.string.fas01a01)))
+        if (!ValidatorClass.EmptyTextBox(this, bi.hfa1101, getString(R.string.hfa1101)))
             return;
-        if (!ValidatorClass.EmptyTextBox(this, bi.fas01a02, getString(R.string.fas01a02)))
+        if (!ValidatorClass.EmptyTextBox(this, bi.hfa1102, getString(R.string.hfa1102)))
             return;
 
         new AlertDialog.Builder(this)

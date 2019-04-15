@@ -39,12 +39,12 @@ public class SectionCActivity extends AppCompatActivity {
         this.setTitle(R.string.section3);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
-        ClearClass.ClearAllFields(bi.fas01c00, false);
+        ClearClass.ClearAllFields(bi.hfa1300, false);
         String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_SURVEY_TYPE);
         if (!getSurvey.equals("0"))
-            bi.fas01c00.check(bi.fas01c00.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
+            bi.hfa1300.check(bi.hfa1300.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
 
-        bi.fas01c001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
+        bi.hfa13001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
 
     }
 

@@ -40,7 +40,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01a00"
+                            android:text="@string/hfa1100"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
@@ -57,7 +57,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
-                                android:text="@string/fas01a00a" />
+                                android:text="@string/hfa1100a" />
 
                             <RadioButton
                                 android:id="@+id/fas02a00b"
@@ -65,7 +65,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
-                                android:text="@string/fas01a00b"
+                                android:text="@string/hfa1100b"
                                 android:visibility="gone" />
 
                         </RadioGroup>
@@ -85,7 +85,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas01a01"
+                            android:text="@string/hfa1101"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
@@ -93,7 +93,7 @@
                         <EditText
                             android:id="@+id/fas02a001"
                             style="@style/textInput"
-                            android:hint="@string/fas01a01"
+                            android:hint="@string/hfa1101"
                             android:inputType="number"
                             android:maxLength="4" />
 

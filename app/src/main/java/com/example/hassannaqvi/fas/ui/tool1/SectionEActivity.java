@@ -40,55 +40,54 @@ public class SectionEActivity extends AppCompatActivity {
         this.setTitle(R.string.section5);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
-        ClearClass.ClearAllFields(bi.fas01e00, false);
+        ClearClass.ClearAllFields(bi.hfa1500, false);
         String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_SURVEY_TYPE);
         if (!getSurvey.equals("0"))
-            bi.fas01e00.check(bi.fas01e00.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
+            bi.hfa1500.check(bi.hfa1500.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
 
-        bi.fas01e001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
+        bi.hfa15001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
     }
 
     public void onRadioClickChanged(RadioGroup radioGroup, int id) {
-        if (radioGroup.getCheckedRadioButtonId() == bi.fas01e02a03.getId())
-            bi.fas01e02b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e03a03.getId())
-            bi.fas01e03b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e04a03.getId())
-            bi.fas01e04b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e05a03.getId())
-            bi.fas01e05b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e06a03.getId())
-            bi.fas01e06b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e07a03.getId())
-            bi.fas01e07b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e08a03.getId())
-            bi.fas01e08b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e09a03.getId())
-            bi.fas01e09b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e10a03.getId())
-            bi.fas01e10b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e11a03.getId())
-            bi.fas01e11b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e12a03.getId())
-            bi.fas01e12b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e13a03.getId())
-            bi.fas01e13b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e14a03.getId())
-            bi.fas01e14b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e15a03.getId())
-            bi.fas01e15b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e16a03.getId())
-            bi.fas01e16b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e17a03.getId())
-            bi.fas01e17b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e1803.getId())
-            bi.fas01e18a.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e18a03.getId())
-            bi.fas01e18b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e19a03.getId())
-            bi.fas01e19b.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.fas01e20a03.getId())
-            bi.fas01e20b.clearCheck();
+        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1502avc.getId())
+            bi.hfa1502bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1503avc.getId())
+            bi.hfa1503bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1504avc.getId())
+            bi.hfa1504bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1505avc.getId())
+            bi.hfa1505bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1506avc.getId())
+            bi.hfa1506bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1507avc.getId())
+            bi.hfa1507bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1508avc.getId())
+            bi.hfa1508bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1509avc.getId())
+            bi.hfa1509bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1510avc.getId())
+            bi.hfa1510bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1511avc.getId())
+            bi.hfa1511bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1512avc.getId())
+            bi.hfa1512bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1513avc.getId())
+            bi.hfa1513bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1514avc.getId())
+            bi.hfa1514bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1515avc.getId())
+            bi.hfa1515bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1516avc.getId())
+            bi.hfa1516bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1517avc.getId())
+            bi.hfa1517bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1518avc.getId()) {
+            bi.hfa1518bv.clearCheck();
+            bi.hfa1519bv.clearCheck();
+        } else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1520avc.getId())
+            bi.hfa1519bv.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1521avc.getId())
+            bi.hfa1520bv.clearCheck();
     }
 
     public void BtnContinue() {

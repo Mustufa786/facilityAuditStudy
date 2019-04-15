@@ -18,7 +18,7 @@
 
         <TextView
             style="@style/textView2"
-            android:text="@string/fas01dHeading" />
+            android:text="@string/hfa14Heading" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                     android:id="@+id/fldGrpllSecD02"
                     style="@style/linerlayout_view_wt_bound">
 
-                    <!--fas01d23a-->
+                    <!--hfa1423av-->
                     <android.support.v7.widget.CardView style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
@@ -42,7 +42,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d23a"
+                                android:text="@string/hfa1423av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -59,14 +59,14 @@
                                 android:textSize="20sp" />
 
                             <RadioGroup
-                                android:id="@+id/fas01d23a"
+                                android:id="@+id/hfa1423av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:onCheckedChanged="@{callback.onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d23a01"
+                                    android:id="@+id/hfa1423ava"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -74,7 +74,7 @@
                                     android:text="@string/observed" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d23a02"
+                                    android:id="@+id/hfa1423avb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -82,7 +82,7 @@
                                     android:text="@string/reported" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d23a03"
+                                    android:id="@+id/hfa1423avc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -96,10 +96,10 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d23b-->
+                    <!--hfa1423bf-->
                     <android.support.v7.widget.CardView
                         style="@style/cardView"
-                        android:visibility='@{!fas01d23a03.checked? View.VISIBLE : View.GONE}'>
+                        android:visibility='@{!hfa1423avc.checked? View.VISIBLE : View.GONE}'>
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -108,7 +108,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d23a"
+                                android:text="@string/hfa1423av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -126,13 +126,13 @@
 
 
                             <RadioGroup
-                                android:id="@+id/fas01d23b"
+                                android:id="@+id/hfa1423bf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d23b01"
+                                    android:id="@+id/hfa1423bfa"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -140,7 +140,7 @@
                                     android:text="@string/yes" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d23b02"
+                                    android:id="@+id/hfa1423bfb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -148,7 +148,7 @@
                                     android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d23b98"
+                                    android:id="@+id/hfa1423bf98"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -163,7 +163,7 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d24a-->
+                    <!--hfa1424av-->
                     <android.support.v7.widget.CardView style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
@@ -173,7 +173,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d24a"
+                                android:text="@string/hfa1424av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -189,16 +189,15 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
-
                             <RadioGroup
-                                android:id="@+id/fas01d24a"
+                                android:id="@+id/hfa1424av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:onCheckedChanged="@{callback.onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d24a01"
+                                    android:id="@+id/hfa1424ava"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -206,7 +205,7 @@
                                     android:text="@string/observed" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d24a02"
+                                    android:id="@+id/hfa1424avb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -214,7 +213,7 @@
                                     android:text="@string/reported" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d24a03"
+                                    android:id="@+id/hfa1424avc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -224,15 +223,14 @@
 
                             </RadioGroup>
 
-
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d24b-->
+                    <!--hfa1424bf-->
                     <android.support.v7.widget.CardView
                         style="@style/cardView"
-                        android:visibility='@{!fas01d24a03.checked? View.VISIBLE : View.GONE}'>
+                        android:visibility='@{!hfa1424avc.checked? View.VISIBLE : View.GONE}'>
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -241,7 +239,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d24a"
+                                android:text="@string/hfa1424av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -259,13 +257,13 @@
 
 
                             <RadioGroup
-                                android:id="@+id/fas01d24b"
+                                android:id="@+id/hfa1424bf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d24b01"
+                                    android:id="@+id/hfa1424bfa"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -273,7 +271,7 @@
                                     android:text="@string/yes" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d24b02"
+                                    android:id="@+id/hfa1424bfb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -281,7 +279,7 @@
                                     android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d24b98"
+                                    android:id="@+id/hfa1424bf98"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -296,7 +294,7 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d25a-->
+                    <!--hfa1425av-->
                     <android.support.v7.widget.CardView style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
@@ -306,7 +304,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d25a"
+                                android:text="@string/hfa1425av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -322,16 +320,15 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
-
                             <RadioGroup
-                                android:id="@+id/fas01d25a"
+                                android:id="@+id/hfa1425av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:onCheckedChanged="@{callback.onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d25a01"
+                                    android:id="@+id/hfa1425ava"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -339,7 +336,7 @@
                                     android:text="@string/observed" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d25a02"
+                                    android:id="@+id/hfa1425avb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -347,7 +344,7 @@
                                     android:text="@string/reported" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d25a03"
+                                    android:id="@+id/hfa1425avc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -357,15 +354,14 @@
 
                             </RadioGroup>
 
-
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d25b-->
+                    <!--hfa1425bf-->
                     <android.support.v7.widget.CardView
                         style="@style/cardView"
-                        android:visibility='@{!fas01d25a03.checked? View.VISIBLE : View.GONE}'>
+                        android:visibility='@{!hfa1425avc.checked? View.VISIBLE : View.GONE}'>
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -374,7 +370,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d25a"
+                                android:text="@string/hfa1425av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -392,13 +388,13 @@
 
 
                             <RadioGroup
-                                android:id="@+id/fas01d25b"
+                                android:id="@+id/hfa1425bf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d25b01"
+                                    android:id="@+id/hfa1425bfa"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -406,7 +402,7 @@
                                     android:text="@string/yes" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d25b02"
+                                    android:id="@+id/hfa1425bfb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -414,7 +410,7 @@
                                     android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d25b98"
+                                    android:id="@+id/hfa1425bf98"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -429,7 +425,7 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d26a-->
+                    <!--hfa1426av-->
                     <android.support.v7.widget.CardView style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
@@ -439,7 +435,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d26a"
+                                android:text="@string/hfa1426av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -455,16 +451,15 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
-
                             <RadioGroup
-                                android:id="@+id/fas01d26a"
+                                android:id="@+id/hfa1426av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:onCheckedChanged="@{callback.onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d26a01"
+                                    android:id="@+id/hfa1426ava"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -472,7 +467,7 @@
                                     android:text="@string/observed" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d26a02"
+                                    android:id="@+id/hfa1426avb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -480,7 +475,7 @@
                                     android:text="@string/reported" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d26a03"
+                                    android:id="@+id/hfa1426avc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -490,15 +485,14 @@
 
                             </RadioGroup>
 
-
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d26b-->
+                    <!--hfa1426bf-->
                     <android.support.v7.widget.CardView
                         style="@style/cardView"
-                        android:visibility='@{!fas01d26a03.checked? View.VISIBLE : View.GONE}'>
+                        android:visibility='@{!hfa1426avc.checked? View.VISIBLE : View.GONE}'>
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -507,7 +501,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d26a"
+                                android:text="@string/hfa1426av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -525,13 +519,13 @@
 
 
                             <RadioGroup
-                                android:id="@+id/fas01d26b"
+                                android:id="@+id/hfa1426bf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d26b01"
+                                    android:id="@+id/hfa1426bfa"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -539,7 +533,7 @@
                                     android:text="@string/yes" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d26b02"
+                                    android:id="@+id/hfa1426bfb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -547,7 +541,7 @@
                                     android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d26b98"
+                                    android:id="@+id/hfa1426bf98"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -562,7 +556,7 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d27a-->
+                    <!--hfa1427av-->
                     <android.support.v7.widget.CardView style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
@@ -572,7 +566,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d27a"
+                                android:text="@string/hfa1427av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -588,16 +582,15 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
-
                             <RadioGroup
-                                android:id="@+id/fas01d27a"
+                                android:id="@+id/hfa1427av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:onCheckedChanged="@{callback.onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d27a01"
+                                    android:id="@+id/hfa1427ava"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -605,7 +598,7 @@
                                     android:text="@string/observed" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d27a02"
+                                    android:id="@+id/hfa1427avb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -613,7 +606,7 @@
                                     android:text="@string/reported" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d27a03"
+                                    android:id="@+id/hfa1427avc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -623,15 +616,14 @@
 
                             </RadioGroup>
 
-
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d27b-->
+                    <!--hfa1427bf-->
                     <android.support.v7.widget.CardView
                         style="@style/cardView"
-                        android:visibility='@{!fas01d27a03.checked? View.VISIBLE : View.GONE}'>
+                        android:visibility='@{!hfa1427avc.checked? View.VISIBLE : View.GONE}'>
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -640,7 +632,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d27a"
+                                android:text="@string/hfa1427av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -658,13 +650,13 @@
 
 
                             <RadioGroup
-                                android:id="@+id/fas01d27b"
+                                android:id="@+id/hfa1427bf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d27b01"
+                                    android:id="@+id/hfa1427bfa"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -672,7 +664,7 @@
                                     android:text="@string/yes" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d27b02"
+                                    android:id="@+id/hfa1427bfb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -680,7 +672,7 @@
                                     android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d27b98"
+                                    android:id="@+id/hfa1427bf98"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -695,7 +687,7 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d28a-->
+                    <!--hfa1428av-->
                     <android.support.v7.widget.CardView style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
@@ -705,7 +697,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d28a"
+                                android:text="@string/hfa1428av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -721,16 +713,15 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
-
                             <RadioGroup
-                                android:id="@+id/fas01d28a"
+                                android:id="@+id/hfa1428av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:onCheckedChanged="@{callback.onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d28a01"
+                                    android:id="@+id/hfa1428ava"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -738,7 +729,7 @@
                                     android:text="@string/observed" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d28a02"
+                                    android:id="@+id/hfa1428avb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -746,7 +737,7 @@
                                     android:text="@string/reported" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d28a03"
+                                    android:id="@+id/hfa1428avc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -756,15 +747,14 @@
 
                             </RadioGroup>
 
-
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d28b-->
+                    <!--hfa1428bf-->
                     <android.support.v7.widget.CardView
                         style="@style/cardView"
-                        android:visibility='@{!fas01d28a03.checked? View.VISIBLE : View.GONE}'>
+                        android:visibility='@{!hfa1428avc.checked? View.VISIBLE : View.GONE}'>
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -773,7 +763,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d28a"
+                                android:text="@string/hfa1428av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -791,13 +781,13 @@
 
 
                             <RadioGroup
-                                android:id="@+id/fas01d28b"
+                                android:id="@+id/hfa1428bf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d28b01"
+                                    android:id="@+id/hfa1428bfa"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -805,7 +795,7 @@
                                     android:text="@string/yes" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d28b02"
+                                    android:id="@+id/hfa1428bfb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -813,7 +803,7 @@
                                     android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d28b98"
+                                    android:id="@+id/hfa1428bf98"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -828,7 +818,7 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d29a-->
+                    <!--hfa1429av-->
                     <android.support.v7.widget.CardView style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
@@ -838,7 +828,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d29a"
+                                android:text="@string/hfa1429av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -854,16 +844,15 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
-
                             <RadioGroup
-                                android:id="@+id/fas01d29a"
+                                android:id="@+id/hfa1429av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:onCheckedChanged="@{callback.onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d29a01"
+                                    android:id="@+id/hfa1429ava"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -871,7 +860,7 @@
                                     android:text="@string/observed" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d29a02"
+                                    android:id="@+id/hfa1429avb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -879,7 +868,7 @@
                                     android:text="@string/reported" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d29a03"
+                                    android:id="@+id/hfa1429avc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -889,15 +878,14 @@
 
                             </RadioGroup>
 
-
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d29b-->
+                    <!--hfa1429bf-->
                     <android.support.v7.widget.CardView
                         style="@style/cardView"
-                        android:visibility='@{!fas01d29a03.checked? View.VISIBLE : View.GONE}'>
+                        android:visibility='@{!hfa1429avc.checked? View.VISIBLE : View.GONE}'>
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -906,7 +894,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d29a"
+                                android:text="@string/hfa1429av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -924,13 +912,13 @@
 
 
                             <RadioGroup
-                                android:id="@+id/fas01d29b"
+                                android:id="@+id/hfa1429bf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d29b01"
+                                    android:id="@+id/hfa1429bfa"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -938,7 +926,7 @@
                                     android:text="@string/yes" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d29b02"
+                                    android:id="@+id/hfa1429bfb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -946,7 +934,7 @@
                                     android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d29b98"
+                                    android:id="@+id/hfa1429bf98"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -961,7 +949,7 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d30a-->
+                    <!--hfa1430av-->
                     <android.support.v7.widget.CardView style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
@@ -971,7 +959,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d30a"
+                                android:text="@string/hfa1430av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -987,16 +975,15 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
-
                             <RadioGroup
-                                android:id="@+id/fas01d30a"
+                                android:id="@+id/hfa1430av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:onCheckedChanged="@{callback.onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d30a01"
+                                    android:id="@+id/hfa1430ava"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1004,7 +991,7 @@
                                     android:text="@string/observed" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d30a02"
+                                    android:id="@+id/hfa1430avb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1012,7 +999,7 @@
                                     android:text="@string/reported" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d30a03"
+                                    android:id="@+id/hfa1430avc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1022,15 +1009,14 @@
 
                             </RadioGroup>
 
-
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d30b-->
+                    <!--hfa1430bf-->
                     <android.support.v7.widget.CardView
                         style="@style/cardView"
-                        android:visibility='@{!fas01d30a03.checked? View.VISIBLE : View.GONE}'>
+                        android:visibility='@{!hfa1430avc.checked? View.VISIBLE : View.GONE}'>
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -1039,7 +1025,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d30a"
+                                android:text="@string/hfa1430av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -1057,13 +1043,13 @@
 
 
                             <RadioGroup
-                                android:id="@+id/fas01d30b"
+                                android:id="@+id/hfa1430bf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d30b01"
+                                    android:id="@+id/hfa1430bfa"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1071,7 +1057,7 @@
                                     android:text="@string/yes" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d30b02"
+                                    android:id="@+id/hfa1430bfb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1079,7 +1065,7 @@
                                     android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d30b98"
+                                    android:id="@+id/hfa1430bf98"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1094,7 +1080,7 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d31a-->
+                    <!--hfa1431av-->
                     <android.support.v7.widget.CardView style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
@@ -1104,7 +1090,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d31a"
+                                android:text="@string/hfa1431av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -1120,16 +1106,15 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
-
                             <RadioGroup
-                                android:id="@+id/fas01d31a"
+                                android:id="@+id/hfa1431av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:onCheckedChanged="@{callback.onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d31a01"
+                                    android:id="@+id/hfa1431ava"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1137,7 +1122,7 @@
                                     android:text="@string/observed" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d31a02"
+                                    android:id="@+id/hfa1431avb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1145,7 +1130,7 @@
                                     android:text="@string/reported" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d31a03"
+                                    android:id="@+id/hfa1431avc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1155,15 +1140,14 @@
 
                             </RadioGroup>
 
-
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d31b-->
+                    <!--hfa1431bf-->
                     <android.support.v7.widget.CardView
                         style="@style/cardView"
-                        android:visibility='@{!fas01d31a03.checked? View.VISIBLE : View.GONE}'>
+                        android:visibility='@{!hfa1431avc.checked? View.VISIBLE : View.GONE}'>
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -1172,7 +1156,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d31a"
+                                android:text="@string/hfa1431av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -1190,13 +1174,13 @@
 
 
                             <RadioGroup
-                                android:id="@+id/fas01d31b"
+                                android:id="@+id/hfa1431bf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d31b01"
+                                    android:id="@+id/hfa1431bfa"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1204,7 +1188,7 @@
                                     android:text="@string/yes" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d31b02"
+                                    android:id="@+id/hfa1431bfb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1212,7 +1196,7 @@
                                     android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d31b98"
+                                    android:id="@+id/hfa1431bf98"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1227,7 +1211,7 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d32a-->
+                    <!--hfa1432av-->
                     <android.support.v7.widget.CardView style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
@@ -1237,7 +1221,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d32a"
+                                android:text="@string/hfa1432av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -1253,16 +1237,15 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
-
                             <RadioGroup
-                                android:id="@+id/fas01d32a"
+                                android:id="@+id/hfa1432av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:onCheckedChanged="@{callback.onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d32a01"
+                                    android:id="@+id/hfa1432ava"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1270,7 +1253,7 @@
                                     android:text="@string/observed" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d32a02"
+                                    android:id="@+id/hfa1432avb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1278,7 +1261,7 @@
                                     android:text="@string/reported" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d32a03"
+                                    android:id="@+id/hfa1432avc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1288,15 +1271,14 @@
 
                             </RadioGroup>
 
-
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d32b-->
+                    <!--hfa1432bf-->
                     <android.support.v7.widget.CardView
                         style="@style/cardView"
-                        android:visibility='@{!fas01d32a03.checked? View.VISIBLE : View.GONE}'>
+                        android:visibility='@{!hfa1432avc.checked? View.VISIBLE : View.GONE}'>
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -1305,7 +1287,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d32a"
+                                android:text="@string/hfa1432av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -1323,13 +1305,13 @@
 
 
                             <RadioGroup
-                                android:id="@+id/fas01d32b"
+                                android:id="@+id/hfa1432bf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d32b01"
+                                    android:id="@+id/hfa1432bfa"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1337,7 +1319,7 @@
                                     android:text="@string/yes" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d2b02"
+                                    android:id="@+id/hfa1432bfb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1345,7 +1327,7 @@
                                     android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d32b98"
+                                    android:id="@+id/hfa1432bf98"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1360,7 +1342,7 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d33a-->
+                    <!--hfa1433av-->
                     <android.support.v7.widget.CardView style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
@@ -1370,7 +1352,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d33a"
+                                android:text="@string/hfa1433av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -1386,16 +1368,15 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
-
                             <RadioGroup
-                                android:id="@+id/fas01d33a"
+                                android:id="@+id/hfa1433av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:onCheckedChanged="@{callback.onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d33a01"
+                                    android:id="@+id/hfa1433ava"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1403,7 +1384,7 @@
                                     android:text="@string/observed" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d33a02"
+                                    android:id="@+id/hfa1433avb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1411,7 +1392,7 @@
                                     android:text="@string/reported" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d33a03"
+                                    android:id="@+id/hfa1433avc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1421,15 +1402,14 @@
 
                             </RadioGroup>
 
-
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d33b-->
+                    <!--hfa1433bf-->
                     <android.support.v7.widget.CardView
                         style="@style/cardView"
-                        android:visibility='@{!fas01d33a03.checked? View.VISIBLE : View.GONE}'>
+                        android:visibility='@{!hfa1433avc.checked? View.VISIBLE : View.GONE}'>
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -1438,7 +1418,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d33a"
+                                android:text="@string/hfa1433av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -1456,13 +1436,13 @@
 
 
                             <RadioGroup
-                                android:id="@+id/fas01d33b"
+                                android:id="@+id/hfa1433bf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d33b01"
+                                    android:id="@+id/hfa1433bfa"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1470,7 +1450,7 @@
                                     android:text="@string/yes" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d33b02"
+                                    android:id="@+id/hfa1433bfb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1478,7 +1458,7 @@
                                     android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d33b98"
+                                    android:id="@+id/hfa1433bf98"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1493,7 +1473,7 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d34a-->
+                    <!--hfa1434av-->
                     <android.support.v7.widget.CardView style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
@@ -1503,7 +1483,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d34a"
+                                android:text="@string/hfa1434av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -1519,16 +1499,15 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
-
                             <RadioGroup
-                                android:id="@+id/fas01d34a"
+                                android:id="@+id/hfa1434av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:onCheckedChanged="@{callback.onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d34a01"
+                                    android:id="@+id/hfa1434ava"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1536,7 +1515,7 @@
                                     android:text="@string/observed" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d34a02"
+                                    android:id="@+id/hfa1434avb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1544,7 +1523,7 @@
                                     android:text="@string/reported" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d34a03"
+                                    android:id="@+id/hfa1434avc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1554,15 +1533,14 @@
 
                             </RadioGroup>
 
-
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
 
-                    <!--fas01d34b-->
+                    <!--hfa1434bf-->
                     <android.support.v7.widget.CardView
                         style="@style/cardView"
-                        android:visibility='@{!fas01d34a03.checked? View.VISIBLE : View.GONE}'>
+                        android:visibility='@{!hfa1434avc.checked? View.VISIBLE : View.GONE}'>
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -1571,7 +1549,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/fas01d34a"
+                                android:text="@string/hfa1434av"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
@@ -1589,13 +1567,13 @@
 
 
                             <RadioGroup
-                                android:id="@+id/fas01d34b"
+                                android:id="@+id/hfa1434bf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/fas01d34b01"
+                                    android:id="@+id/hfa1434bfa"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1603,7 +1581,7 @@
                                     android:text="@string/yes" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d34b02"
+                                    android:id="@+id/hfa1434bfb"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
@@ -1611,7 +1589,1317 @@
                                     android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/fas01d34b98"
+                                    android:id="@+id/hfa1434bf98"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/dkn" />
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1435av-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1435av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/available"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <RadioGroup
+                                android:id="@+id/hfa1435av"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1435ava"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/observed" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1435avb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/reported" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1435avc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/not_available" />
+
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1435bf-->
+                    <android.support.v7.widget.CardView
+                        style="@style/cardView"
+                        android:visibility='@{!hfa1435avc.checked? View.VISIBLE : View.GONE}'>
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1435av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/functioning"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+
+                            <RadioGroup
+                                android:id="@+id/hfa1435bf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1435bfa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1435bfb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1435bf98"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/dkn" />
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1436av-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1436av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/available"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <RadioGroup
+                                android:id="@+id/hfa1436av"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1436ava"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/observed" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1436avb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/reported" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1436avc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/not_available" />
+
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1436bf-->
+                    <android.support.v7.widget.CardView
+                        style="@style/cardView"
+                        android:visibility='@{!hfa1436avc.checked? View.VISIBLE : View.GONE}'>
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1436av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/functioning"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+
+                            <RadioGroup
+                                android:id="@+id/hfa1436bf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1436bfa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1436bfb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1436bf98"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/dkn" />
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1437av-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1437av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/available"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <RadioGroup
+                                android:id="@+id/hfa1437av"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1437ava"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/observed" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1437avb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/reported" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1437avc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/not_available" />
+
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1437bf-->
+                    <android.support.v7.widget.CardView
+                        style="@style/cardView"
+                        android:visibility='@{!hfa1437avc.checked? View.VISIBLE : View.GONE}'>
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1437av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/functioning"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+
+                            <RadioGroup
+                                android:id="@+id/hfa1437bf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1437bfa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1437bfb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1437bf98"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/dkn" />
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1438av-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1438av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/available"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <RadioGroup
+                                android:id="@+id/hfa1438av"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1438ava"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/observed" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1438avb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/reported" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1438avc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/not_available" />
+
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1438bf-->
+                    <android.support.v7.widget.CardView
+                        style="@style/cardView"
+                        android:visibility='@{!hfa1438avc.checked? View.VISIBLE : View.GONE}'>
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1438av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/functioning"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+
+                            <RadioGroup
+                                android:id="@+id/hfa1438bf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1438bfa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1438bfb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1438bf98"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/dkn" />
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1439av-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1439av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/available"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <RadioGroup
+                                android:id="@+id/hfa1439av"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1439ava"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/observed" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1439avb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/reported" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1439avc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/not_available" />
+
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1439bf-->
+                    <android.support.v7.widget.CardView
+                        style="@style/cardView"
+                        android:visibility='@{!hfa1439avc.checked? View.VISIBLE : View.GONE}'>
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1439av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/functioning"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+
+                            <RadioGroup
+                                android:id="@+id/hfa1439bf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1439bfa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1439bfb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1439bf98"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/dkn" />
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1440av-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1440av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/available"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <RadioGroup
+                                android:id="@+id/hfa1440av"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1440ava"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/observed" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1440avb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/reported" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1440avc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/not_available" />
+
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1440bf-->
+                    <android.support.v7.widget.CardView
+                        style="@style/cardView"
+                        android:visibility='@{!hfa1440avc.checked? View.VISIBLE : View.GONE}'>
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1440av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/functioning"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+
+                            <RadioGroup
+                                android:id="@+id/hfa1440bf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1440bfa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1440bfb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1440bf98"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/dkn" />
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1441av-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1441av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/available"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <RadioGroup
+                                android:id="@+id/hfa1441av"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1441ava"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/observed" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1441avb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/reported" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1441avc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/not_available" />
+
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1441bf-->
+                    <android.support.v7.widget.CardView
+                        style="@style/cardView"
+                        android:visibility='@{!hfa1441avc.checked? View.VISIBLE : View.GONE}'>
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1441av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/functioning"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+
+                            <RadioGroup
+                                android:id="@+id/hfa1441bf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1441bfa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1441bfb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1441bf98"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/dkn" />
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1442av-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1442av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/available"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <RadioGroup
+                                android:id="@+id/hfa1442av"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1442ava"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/observed" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1442avb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/reported" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1442avc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/not_available" />
+
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1442bf-->
+                    <android.support.v7.widget.CardView
+                        style="@style/cardView"
+                        android:visibility='@{!hfa1442avc.checked? View.VISIBLE : View.GONE}'>
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1442av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/functioning"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+
+                            <RadioGroup
+                                android:id="@+id/hfa1442bf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1442bfa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1442bfb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1442bf98"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/dkn" />
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1443av-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1443av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/available"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <RadioGroup
+                                android:id="@+id/hfa1443av"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1443ava"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/observed" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1443avb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/reported" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1443avc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/not_available" />
+
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1443bf-->
+                    <android.support.v7.widget.CardView
+                        style="@style/cardView"
+                        android:visibility='@{!hfa1443avc.checked? View.VISIBLE : View.GONE}'>
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1443av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/functioning"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+
+                            <RadioGroup
+                                android:id="@+id/hfa1443bf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1443bfa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1443bfb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1443bf98"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/dkn" />
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1444av-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1444av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/available"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <RadioGroup
+                                android:id="@+id/hfa1444av"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1444ava"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/observed" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1444avb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/reported" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1444avc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/not_available" />
+
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--hfa1444bf-->
+                    <android.support.v7.widget.CardView
+                        style="@style/cardView"
+                        android:visibility='@{!hfa1444avc.checked? View.VISIBLE : View.GONE}'>
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1444av"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"
+                                android:text="@string/functioning"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+
+                            <RadioGroup
+                                android:id="@+id/hfa1444bf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/hfa1444bfa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1444bfb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/hfa1444bf98"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"

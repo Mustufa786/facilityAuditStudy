@@ -147,11 +147,11 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
 
     public void BtnEnd() {
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.fas02a00, bi.fas02a00a, getString(R.string.fas01a00)))
+        if (!ValidatorClass.EmptyRadioButton(this, bi.fas02a00, bi.fas02a00a, getString(R.string.hfa1100)))
             return;
         if (!ValidatorClass.EmptyTextBox(this, bi.fas02amw01, getString(R.string.fas02a01)))
             return;
-        if (!ValidatorClass.EmptyTextBox(this, bi.fas02a001, getString(R.string.fas01a01)))
+        if (!ValidatorClass.EmptyTextBox(this, bi.fas02a001, getString(R.string.hfa1101)))
             return;
 
         new AlertDialog.Builder(this)
