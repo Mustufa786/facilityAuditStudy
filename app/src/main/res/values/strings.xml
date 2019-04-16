@@ -70,6 +70,7 @@
     <string name="section402">QUALITY OF CARE DELIVERY CHECKLIST</string>
     <string name="section5">FACILITY STOCK OF OBSTETRIC CARE MEDICINE CHECKLIST</string>
     <string name="section6">EMERCENY BEmONC/CEmONC SERVICES CHECKLIST</string>
+    <string name="section7">Staffing</string>
 
     <string name="section1_tool2">PRE AND POST COMMUNITY ASSESSMENT OF STAGES IN SEEKING CARE</string>
     <string name="section2_tool2">WOMAN’S INFORMATION MODULE (WI)</string>
@@ -365,12 +366,13 @@
     <string name="hfa1706"> خاتون نرسنگ پروفیشنلز </string>
     <string name="hfa1707"> پیشہ ورانہ مرد مڈوائف </string>
     <string name="hfa1708"> پیشہ ورانہ خاتون مڈوائف </string>
-    <string name="hfa1709"> خاتون کمیونٹی ہیلتھ ورکرز </string>
-    <string name="hfa1710"> لیڈی ہیلتھ وزیٹر </string>
-    <string name="hfa1711"> مرد دیگر (وضاحت) </string>
-    <string name="hfa1712"> خاتون دیگر (وضاحت) </string>
-    <string name="hfa1713"> اس سہولت میں کتنے مرد لیڈرشیپ کی پوزیشن رکھتے ہیں؟ اس میں لیڈرشیپ اور مینجمنٹ پوزیشن شامل ہیں جن کے لئے اضافی تنخواہ فراہم کی جاتی ہے. مثال کے طور پر سہولیات کے سربراہ / ڈائریکٹر، محکموں کے سربراہ، یونٹس اور وارڈ کے سربرا اور ذیلی ملکی ہیلتھ مینجمنٹ ٹیم کے ارکان شامل ہیں </string>
-    <string name="hfa1714"> اس سہولت میں کتنے خواتین لیڈرشیپ کی پوزیشن رکھتے ہیں؟ اس میں لیڈرشیپ اور مینجمنٹ پوزیشن شامل ہیں جن کے لئے اضافی تنخواہ فراہم کی جاتی ہے. مثال کے طور پر سہولیات کے سربراہ / ڈائریکٹر، محکموں کے سربراہ، یونٹس اور وارڈ کے سربرا اور ذیلی ملکی ہیلتھ مینجمنٹ ٹیم کے ارکان شامل ہیں </string>
+    <string name="hfa1709">مرد کمیونٹی ہیلتھ ورکرز </string>
+    <string name="hfa1710"> خاتون کمیونٹی ہیلتھ ورکرز </string>
+    <string name="hfa1711"> لیڈی ہیلتھ وزیٹر </string>
+    <string name="hfa1712"> مرد دیگر (وضاحت) </string>
+    <string name="hfa1713"> خاتون دیگر (وضاحت) </string>
+    <string name="hfa1714"> اس سہولت میں کتنے مرد لیڈرشیپ کی پوزیشن رکھتے ہیں؟ اس میں لیڈرشیپ اور مینجمنٹ پوزیشن شامل ہیں جن کے لئے اضافی تنخواہ فراہم کی جاتی ہے. مثال کے طور پر سہولیات کے سربراہ / ڈائریکٹر، محکموں کے سربراہ، یونٹس اور وارڈ کے سربرا اور ذیلی ملکی ہیلتھ مینجمنٹ ٹیم کے ارکان شامل ہیں </string>
+    <string name="hfa1715"> اس سہولت میں کتنے خواتین لیڈرشیپ کی پوزیشن رکھتے ہیں؟ اس میں لیڈرشیپ اور مینجمنٹ پوزیشن شامل ہیں جن کے لئے اضافی تنخواہ فراہم کی جاتی ہے. مثال کے طور پر سہولیات کے سربراہ / ڈائریکٹر، محکموں کے سربراہ، یونٹس اور وارڈ کے سربرا اور ذیلی ملکی ہیلتھ مینجمنٹ ٹیم کے ارکان شامل ہیں </string>
 
     <!--Tool 2-->
     <!--Section A-->

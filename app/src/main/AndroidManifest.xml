@@ -80,6 +80,11 @@
             android:name=".ui.tool1.SectionFActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
+
+        <activity
+            android:name=".ui.tool1.SectionGActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
         <activity
             android:name=".ui.tool2.SectionA_tool_2Activity"
             android:screenOrientation="portrait"
