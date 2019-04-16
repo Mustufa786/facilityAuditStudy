@@ -12,7 +12,7 @@ import com.example.hassannaqvi.fas.core.CONSTANTS;
 import com.example.hassannaqvi.fas.core.MainApp;
 import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
 import com.example.hassannaqvi.fas.data.entities.Forms;
-import com.example.hassannaqvi.fas.databinding.ActivitySectionFBinding;
+import com.example.hassannaqvi.fas.databinding.ActivitySectionHBinding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
 import com.example.hassannaqvi.fas.validation.ClearClass;
 import com.example.hassannaqvi.fas.validation.ValidatorClass;
@@ -23,7 +23,7 @@ import java.util.concurrent.ExecutionException;
 
 public class SectionHActivity extends AppCompatActivity {
 
-    private ActivitySectionFBinding bi;
+    private ActivitySectionHBinding bi;
     private Forms fc;
 
     @Override
@@ -36,13 +36,13 @@ public class SectionHActivity extends AppCompatActivity {
     }
 
     private void setContentUI() {
-        this.setTitle(R.string.section6);
+        this.setTitle(R.string.hfa18);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
         ClearClass.ClearAllFields(bi.hfa1800, false);
         String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_SURVEY_TYPE);
         if (!getSurvey.equals("0"))
-            bi.hfa1800.check(bi.fas01f00.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
+            bi.hfa1800.check(bi.hfa1800.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
 
         bi.hfa18001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
     }
@@ -54,7 +54,7 @@ public class SectionHActivity extends AppCompatActivity {
 
         SaveDraft();
         if (UpdateDB()) {
-            MainApp.endActivitySetRouting(this, this, EndingActivity.class, true, fc);
+            MainApp.stActivity(this, this, SectionIActivity.class, fc);
         } else {
             Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
         }
@@ -77,7 +77,7 @@ public class SectionHActivity extends AppCompatActivity {
 
     private void SaveDraft() {
         JSONObject Json = GeneratorClass.getContainerJSON(bi.fldGrpllSecH, true);
-        fc.setSa6(String.valueOf(Json));
+        fc.setSa8(String.valueOf(Json));
     }
 
     private boolean formValidation() {
