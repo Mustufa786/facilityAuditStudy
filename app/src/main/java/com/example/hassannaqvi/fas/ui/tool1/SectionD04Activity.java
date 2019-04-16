@@ -100,7 +100,7 @@ public class SectionD04Activity extends AppCompatActivity {
 
         SaveDraft();
         if (UpdateDB()) {
-            MainApp.stActivity(this, this, SectionEActivity.class, fc);
+            MainApp.stActivity(this, this, SectionD05Activity.class, fc);
         } else {
             Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
         }
