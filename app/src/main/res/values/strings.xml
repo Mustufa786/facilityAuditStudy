@@ -413,6 +413,55 @@
     <string name="hfa1809d"> لیڈی ہیلتھ وزٹر </string>
     <string name="hfa1809e"> کمیونٹی مڈوائف </string>
 
+    <!--Section I-->
+    <string name="hfa1901"> کیا آپ کے علاقے میں کام کرنے والے دیگر صحت کے مراکز/ کلینک (گورنمنٹ یا نجی) سے ریفررل کیسسز کے وصولی کے لئے ایک رسمی نظام موجود ہے؟ </string>
+    <string name="hfa1902"> گر ہاں، رسمی ریفرل نظام کا پہلا قسم کیا ہے؟ </string>
+    <string name="hfa1902a"> رسمی / معاہدے کا انتظام </string>
+    <string name="hfa1902b"> غیررسمی مفاہمت </string>
+    <string name="hfa1902c"> خریدوفروخت کی حکمت عملی / طریقہ کار </string>
+    <string name="hfa1902d"> انفرادی کنسلٹنٹس کے ریفرل تعلقات </string>
+    <string name="hfa1903"> اگر ایک سے زیادہ اقسام ہیں تو رسمی ریفرل نظام کا دوسرا قسم کیا ہے؟ </string>
+    <string name="hfa1903a"> رسمی / معاہدے کا انتظام </string>
+    <string name="hfa1903b"> غیررسمی مفاہمت </string>
+    <string name="hfa1903c"> خریدوفروخت کی حکمت عملی / طریقہ کار </string>
+    <string name="hfa1903d"> انفرادی کنسلٹنٹس کے ریفرل تعلقات </string>
+    <string name="hfa1904"> اگر ایک سے زیادہ اقسام ہیں تو رسمی ریفرل نظام کا تیسرا قسم کیا ہے؟ </string>
+    <string name="hfa1904a"> رسمی / معاہدے کا انتظام </string>
+    <string name="hfa1904b"> غیررسمی مفاہمت </string>
+    <string name="hfa1904c"> خریدوفروخت کی حکمت عملی / طریقہ کار </string>
+    <string name="hfa1904d"> انفرادی کنسلٹنٹس کے ریفرل تعلقات </string>
+    <string name="hfa1905"> یا آپ کی مرکزِ صحت کیسسز کو دیگر مراکزِ صحت ریفرکرتی ہے ؟ </string>
+    <string name="hfa1906"> اگر ہاں، تو دوسرے مراکزِ صحت میں کیسسز ریفرل کرنے کا کیا طریقہ کار ہے؟ </string>
+    <string name="hfa1906a"> مریضوں کے ساتھ زبانی کالامی </string>
+    <string name="hfa1906b"> لکھ کر دیتے ہیں لیکن ریکارڈ رکھتے ہیں </string>
+    <string name="hfa1906c"> ریفر کرتے ہیں اور تمام ریفرل کا ریکارڑ رکھتے ہیں </string>
+    <string name="hfa1906d"> کوئی مخصوص پالیسی / طریقہ کار نہیں </string>
+    <string name="hfa1907"> کیا آپ اس بندے/مرکز صحت کو رائے اورہدایات فراہم کرتے ہیں جو کیس یہاں ریفر کرتے ہیں؟ </string>
+    <string name="hfa1907a"> ہمیشہ </string>
+    <string name="hfa1907b"> زیادہ تر </string>
+    <string name="hfa1907c"> کبھی کبھی </string>
+    <string name="hfa1907d"> کبھی نہیں </string>
+    <string name="hfa1908"> کیا آپ اس بندے/مرکز صحت سے رائے اورہدایات حاصل کرتے ہیں جہاں آپ کیس کے انتظام کے لئے ریفر کرتے ہیں؟ </string>
+    <string name="hfa1908a"> ہمیشہ </string>
+    <string name="hfa1908b"> زیادہ تر </string>
+    <string name="hfa1908c"> کبھی کبھی </string>
+    <string name="hfa1908d"> کبھی نہیں </string>
+    <string name="hfa1909"> کیا آپ کیسسز کونجی شعبے کے مراکزِ صحت کو ریفرکرتے ہیں؟ </string>
+    <string name="hfa1910"> آپ کیوں کیسسز کونجی شعبے کے مراکزِ صحت کو ریفرکرتے ہیں؟( بتائے گئے تمام جوابات کا انتخاب کرے) </string>
+    <string name="hfa1910a"> جب مرکزِصحت میں کیس کے انتظام کے لئے صلاحیت/مہارت نہیں ہو </string>
+    <string name="hfa1910b"> مریض یا تیماردار نجی شعبے میں بھجنے کے لئے درخواست کی ہو </string>
+    <string name="hfa1910c"> مرکزِ صحت مریضوں سے بھرا ہو اور مریض انتظار نہیں کرنا چاہتا ہو </string>
+    <string name="hfa1910d"> مریض کی حالت سنگین ہو اور سروس کی فراہمی خطرناک ہو </string>
+    <string name="hfa1911"> کیا آپ نجی شعبے کے مراکزِ صحت سے ریفر کیے گئے کیسسزکو قبول کرتے ہیں؟ </string>
+    <string name="hfa1912"> آپ نجی شعبے سے ریفر کیے گئے کیسسزکوکیوں قبول کرتے ہیں؟( بتائے گئے تمام جوابات کا انتخاب کرے) </string>
+    <string name="hfa1912a"> انسانی بنیادوں پر </string>
+    <string name="hfa1912b"> ہم لوگوں کو خدمات سے انکار نہیں کر سکتے ہیں </string>
+    <string name="hfa1912c"> مریض ہسپتال کی آمدنی کا ایک ذریعہ ہیں </string>
+    <string name="hfa1912d"> ہم نجی شعبے کے ساتھ اسٹاف کے وسائل کا حصہ ہیں </string>
+    <string name="hfa1912e"> ہمارے نجی شعبے کے ساتھ انتظامات ہیں </string>
+    <string name="hfa1912f"> کوئی خاص وجہ نہیں </string>
+
+
     <!--Tool 2-->
     <!--Section A-->
 
