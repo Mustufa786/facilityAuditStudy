@@ -88,14 +88,16 @@
             android:name=".ui.tool1.SectionFActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
-
         <activity
             android:name=".ui.tool1.SectionGActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
-
         <activity
             android:name=".ui.tool1.SectionHActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".ui.tool1.SectionIActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity

@@ -83,7 +83,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/hfa1102"
+                            android:text="@string/hfa1101"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
@@ -117,7 +117,6 @@
                         <EditText
                             android:id="@+id/hfa1701"
                             style="@style/textInput"
-                            android:enabled="false"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -144,7 +143,6 @@
                         <EditText
                             android:id="@+id/hfa1702"
                             style="@style/textInput"
-                            android:enabled="false"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -171,7 +169,6 @@
                         <EditText
                             android:id="@+id/hfa1703"
                             style="@style/textInput"
-                            android:enabled="false"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -198,7 +195,6 @@
                         <EditText
                             android:id="@+id/hfa1704"
                             style="@style/textInput"
-                            android:enabled="false"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -221,10 +217,10 @@
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
+
                         <EditText
                             android:id="@+id/hfa1705"
                             style="@style/textInput"
-                            android:enabled="false"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -251,14 +247,12 @@
                         <EditText
                             android:id="@+id/hfa1706"
                             style="@style/textInput"
-                            android:enabled="false"
                             android:inputType="number"
                             android:maxLength="4" />
 
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
-
 
 
                 <!--hfa1707-->
@@ -279,7 +273,6 @@
                         <EditText
                             android:id="@+id/hfa1707"
                             style="@style/textInput"
-                            android:enabled="false"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -287,8 +280,6 @@
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
-
-
 
 
                 <!--hfa1708-->
@@ -309,7 +300,6 @@
                         <EditText
                             android:id="@+id/hfa1708"
                             style="@style/textInput"
-                            android:enabled="false"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -317,7 +307,6 @@
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
-
 
 
                 <!--hfa1709-->
@@ -338,7 +327,6 @@
                         <EditText
                             android:id="@+id/hfa1709"
                             style="@style/textInput"
-                            android:enabled="false"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -346,11 +334,6 @@
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
-
-
-
-
-
 
 
                 <!--hfa1710-->
@@ -371,7 +354,6 @@
                         <EditText
                             android:id="@+id/hfa1710"
                             style="@style/textInput"
-                            android:enabled="false"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -379,7 +361,6 @@
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
-
 
 
                 <!--hfa1711-->
@@ -400,7 +381,6 @@
                         <EditText
                             android:id="@+id/hfa1711"
                             style="@style/textInput"
-                            android:enabled="false"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -428,9 +408,8 @@
                         <EditText
                             android:id="@+id/hfa1712"
                             style="@style/textInput"
-                            android:enabled="false"
 
-                         />
+                            />
 
 
                     </LinearLayout>
@@ -456,9 +435,8 @@
                         <EditText
                             android:id="@+id/hfa1713"
                             style="@style/textInput"
-                            android:enabled="false"
 
-                             />
+                            />
 
 
                     </LinearLayout>
@@ -484,7 +462,6 @@
                         <EditText
                             android:id="@+id/hfa1714"
                             style="@style/textInput"
-                            android:enabled="false"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -511,7 +488,6 @@
                         <EditText
                             android:id="@+id/hfa1715"
                             style="@style/textInput"
-                            android:enabled="false"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -519,7 +495,6 @@
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
-
 
 
             </LinearLayout>

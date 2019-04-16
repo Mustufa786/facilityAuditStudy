@@ -84,7 +84,7 @@
     <string name="hfa1100b"> انٹرونشن کے بعد</string>
 
     <string name="hfa1101">مرکزِ صحت کا اسٹیڈی نمبر </string>
-    <string name="hfa1102">مرکزِ صحت کا  اسٹیڈی نمبر </string>
+    <string name="hfa1102">مرکزِ صحت کا نام </string>
     <string name="hfa1103">مرکزِ صحت کس جگہ واقع ہے</string>
     <string name="hfa1103a">ضلع/علاقہ/صوبہ      </string>
     <string name="hfa1103b">ڈسٹرکٹ </string>
@@ -233,7 +233,7 @@
 
     <string name="hfa1415"> انتقال خون </string>
 
-    <string name="hfa1416"> کیا مریضوں کے لئے عطیہ خون کی کوئی پالیسی ہے؟ </string>
+    <string name="hfa1416"> کیا اس مرکزِ صحت میں بلڈبنک کی سہولت موجود ہیں؟ </string>
 
     <string name="hfa1417"> اگر ہاں، تو مرکزِ صحت میں استعمال ہونے والے خون کے اہم ذرائع کیاہیں؟ </string>
     <string name="hfa1417a"> مرکزِ صحت کا بلڈ بنک </string>
@@ -242,8 +242,7 @@
     <string name="hfa1417d"> نامعلوم ذریعہ </string>
     <string name="hfa1417e"> دیگر وضاحت کریں </string>
 
-    <string name="hfa1418"> کیا اس مرکزِ صحت میں بلڈبنک کی سہولت موجود ہیں؟ </string>
-
+    <string name="hfa1418"> کیا مریضوں کے لئے عطیہ خون کی کوئی پالیسی ہے؟ </string>
 
     <string name="hfa1419"> اگر ہاں، توعطیہ خون کی پہلی ترجیح کیا ہے؟ </string>
     <string name="hfa1419a"> خاندان یا خاندان کا متبادل ڈونر </string>
