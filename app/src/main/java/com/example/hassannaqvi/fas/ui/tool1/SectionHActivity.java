@@ -21,7 +21,7 @@ import org.json.JSONObject;
 
 import java.util.concurrent.ExecutionException;
 
-public class SectionGActivity extends AppCompatActivity {
+public class SectionHActivity extends AppCompatActivity {
 
     private ActivitySectionFBinding bi;
     private Forms fc;
@@ -29,22 +29,22 @@ public class SectionGActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_h);
         bi.setCallback(this);
 
         setContentUI();
     }
 
     private void setContentUI() {
-        this.setTitle(R.string.section7);
+        this.setTitle(R.string.section6);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
-
+        ClearClass.ClearAllFields(bi.hfa1800, false);
         String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_SURVEY_TYPE);
         if (!getSurvey.equals("0"))
-            bi.fas01f00.check(bi.fas01f00.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
+            bi.hfa1800.check(bi.fas01f00.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
 
-        bi.fas01f001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
+        bi.hfa18001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
     }
 
     public void BtnContinue() {
@@ -54,7 +54,7 @@ public class SectionGActivity extends AppCompatActivity {
 
         SaveDraft();
         if (UpdateDB()) {
-            MainApp.stActivity(this, this, SectionIActivity.class, fc);
+            MainApp.endActivitySetRouting(this, this, EndingActivity.class, true, fc);
         } else {
             Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
         }
@@ -76,12 +76,12 @@ public class SectionGActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() {
-        JSONObject Json = GeneratorClass.getContainerJSON(bi.fldGrpllSecF, true);
+        JSONObject Json = GeneratorClass.getContainerJSON(bi.fldGrpllSecH, true);
         fc.setSa6(String.valueOf(Json));
     }
 
     private boolean formValidation() {
-        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecF);
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecH);
     }
 
     public void BtnEnd() {
