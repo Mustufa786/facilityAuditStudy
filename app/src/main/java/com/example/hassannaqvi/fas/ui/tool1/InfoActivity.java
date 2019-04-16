@@ -36,7 +36,6 @@ public class InfoActivity extends AppCompatActivity {
     Forms childDT;
     String fTYPE = "", fExt = "", deviceID;
     Class<?> routeClass;
-    Forms.Simple_Forms_04_05 sInfo_parse;
     private Forms fc;
 
     @Override
@@ -45,7 +44,7 @@ public class InfoActivity extends AppCompatActivity {
 
         bi = DataBindingUtil.setContentView(this, R.layout.activity_info);
         bi.setCallback(this);
-        this.setTitle(R.string.section1);
+        this.setTitle(R.string.hfa11);
         deviceID = Settings.Secure.getString(InfoActivity.this.getContentResolver(), Settings.Secure.ANDROID_ID);
         setContentUI();
     }

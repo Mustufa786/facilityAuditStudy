@@ -12,9 +12,8 @@ import com.example.hassannaqvi.fas.core.CONSTANTS;
 import com.example.hassannaqvi.fas.core.MainApp;
 import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
 import com.example.hassannaqvi.fas.data.entities.Forms;
-import com.example.hassannaqvi.fas.databinding.ActivitySectionFBinding;
+import com.example.hassannaqvi.fas.databinding.ActivitySectionGBinding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
-import com.example.hassannaqvi.fas.validation.ClearClass;
 import com.example.hassannaqvi.fas.validation.ValidatorClass;
 
 import org.json.JSONObject;
@@ -23,7 +22,7 @@ import java.util.concurrent.ExecutionException;
 
 public class SectionGActivity extends AppCompatActivity {
 
-    private ActivitySectionFBinding bi;
+    private ActivitySectionGBinding bi;
     private Forms fc;
 
     @Override
@@ -36,15 +35,15 @@ public class SectionGActivity extends AppCompatActivity {
     }
 
     private void setContentUI() {
-        this.setTitle(R.string.section7);
+        this.setTitle(R.string.hfa17);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
 
         String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_SURVEY_TYPE);
         if (!getSurvey.equals("0"))
-            bi.fas01f00.check(bi.fas01f00.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
+            bi.hfa1700.check(bi.hfa1700.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
 
-        bi.fas01f001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
+        bi.hfa17001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
     }
 
     public void BtnContinue() {
@@ -76,12 +75,12 @@ public class SectionGActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() {
-        JSONObject Json = GeneratorClass.getContainerJSON(bi.fldGrpllSecF, true);
-        fc.setSa6(String.valueOf(Json));
+        JSONObject Json = GeneratorClass.getContainerJSON(bi.fldGrpllSecG, true);
+        fc.setSa7(String.valueOf(Json));
     }
 
     private boolean formValidation() {
-        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecF);
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecG);
     }
 
     public void BtnEnd() {

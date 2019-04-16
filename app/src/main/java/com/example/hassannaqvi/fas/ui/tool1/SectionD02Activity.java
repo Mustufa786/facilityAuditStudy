@@ -37,7 +37,7 @@ public class SectionD02Activity extends AppCompatActivity {
     }
 
     private void setContentUI() {
-        this.setTitle(R.string.section402);
+        this.setTitle(R.string.hfa14);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
     }

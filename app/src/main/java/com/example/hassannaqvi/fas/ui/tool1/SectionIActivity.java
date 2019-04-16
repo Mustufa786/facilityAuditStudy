@@ -12,40 +12,31 @@ import com.example.hassannaqvi.fas.core.CONSTANTS;
 import com.example.hassannaqvi.fas.core.MainApp;
 import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
 import com.example.hassannaqvi.fas.data.entities.Forms;
-import com.example.hassannaqvi.fas.databinding.ActivitySectionCBinding;
+import com.example.hassannaqvi.fas.databinding.ActivitySectionIBinding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
-import com.example.hassannaqvi.fas.validation.ClearClass;
 import com.example.hassannaqvi.fas.validation.ValidatorClass;
 
 import org.json.JSONObject;
 
 import java.util.concurrent.ExecutionException;
 
-public class SectionCActivity extends AppCompatActivity {
+public class SectionIActivity extends AppCompatActivity {
 
-    ActivitySectionCBinding bi;
+    ActivitySectionIBinding bi;
     private Forms fc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_c);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_i);
         bi.setCallback(this);
 
         setContentUI();
     }
 
     private void setContentUI() {
-        this.setTitle(R.string.hfa13);
+        this.setTitle(R.string.hfa19);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
-
-        ClearClass.ClearAllFields(bi.hfa1300, false);
-        String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_SURVEY_TYPE);
-        if (!getSurvey.equals("0"))
-            bi.hfa1300.check(bi.hfa1300.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
-
-        bi.hfa13001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
-
     }
 
     public void BtnContinue() {
@@ -78,12 +69,12 @@ public class SectionCActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() {
-        JSONObject Json = GeneratorClass.getContainerJSON(bi.fldGrpllSecC, true);
-        fc.setSa3(String.valueOf(Json));
+        JSONObject Json = GeneratorClass.getContainerJSON(bi.fldGrpllSecI, true);
+        fc.setSa9(String.valueOf(Json));
     }
 
     private boolean formValidation() {
-        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecC);
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecI);
     }
 
     public void BtnEnd() {

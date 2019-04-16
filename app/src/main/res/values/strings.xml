@@ -58,19 +58,20 @@
     <string name="addMember">افراد کا اندراج</string>
 
     <!--Tool 1-->
+    <string name="hfa11"> SECTION 1: General Information </string>
+    <string name="hfa12"> SECTION 2: Introduction and Consent </string>
+    <string name="hfa13"> SECTION 3. Health Facility Data </string>
+    <string name="hfa14"> SECTION 4. Quality of Care Delivery Checklist </string>
+    <string name="hfa15"> SECTION 5. Facility Stock of Obstetric Care Medicine Checklist </string>
+    <string name="hfa16"> SECTION 6. Emergency BEmONC/CEmONC Services Checklist </string>
+    <string name="hfa17"> SECTION 7. Staffing </string>
+    <string name="hfa18"> Section 8. Health Facility Management </string>
+    <string name="hfa19"> Section 9. Referral Mechanism </string>
 
     <!--Section A-->
 
     <string name="tool1">PRE, QUARTERLY, POST INTERVENTION HEALTH FACILITY ASSESSMENT</string>
     <string name="tool2">Pre and Post Community Assessment of Stages in Seeking Care</string>
-
-    <string name="section1">GENERAL INFORMATION</string>
-    <string name="section3">HEALTH FACILITY DATA</string>
-    <string name="section4">QUALITY OF CARE DELIVERY CHECKLIST</string>
-    <string name="section402">QUALITY OF CARE DELIVERY CHECKLIST</string>
-    <string name="section5">FACILITY STOCK OF OBSTETRIC CARE MEDICINE CHECKLIST</string>
-    <string name="section6">EMERCENY BEmONC/CEmONC SERVICES CHECKLIST</string>
-    <string name="section7">Staffing</string>
 
     <string name="section1_tool2">PRE AND POST COMMUNITY ASSESSMENT OF STAGES IN SEEKING CARE</string>
     <string name="section2_tool2">WOMAN’S INFORMATION MODULE (WI)</string>
@@ -460,7 +461,6 @@
     <string name="hfa1912d"> ہم نجی شعبے کے ساتھ اسٹاف کے وسائل کا حصہ ہیں </string>
     <string name="hfa1912e"> ہمارے نجی شعبے کے ساتھ انتظامات ہیں </string>
     <string name="hfa1912f"> کوئی خاص وجہ نہیں </string>
-
 
     <!--Tool 2-->
     <!--Section A-->

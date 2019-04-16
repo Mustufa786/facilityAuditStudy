@@ -40,7 +40,4 @@ public interface GetFncDAO {
     @Query("SELECT * FROM " + CONSTANTS.TABLE_FORMS + " where participantID=:part_id and istatus = '1' and formType != '14' order by id DESC")
     Forms checkParticipantExist(String part_id);
 
-    @Query("SELECT * FROM " + CONSTANTS.TABLE_FORMS + " where participantID=:part_id and pdeviation = '1' and istatus = '1' and formType != '14' order by id DESC")
-    Forms getParticipantRecord(String part_id);
-
 }

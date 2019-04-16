@@ -36,15 +36,15 @@ public class SectionFActivity extends AppCompatActivity {
     }
 
     private void setContentUI() {
-        this.setTitle(R.string.section6);
+        this.setTitle(R.string.hfa16);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
-        ClearClass.ClearAllFields(bi.fas01f00, false);
+        ClearClass.ClearAllFields(bi.hfa1600, false);
         String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_SURVEY_TYPE);
         if (!getSurvey.equals("0"))
-            bi.fas01f00.check(bi.fas01f00.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
+            bi.hfa1600.check(bi.hfa1600.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
 
-        bi.fas01f001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
+        bi.hfa16001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
     }
 
     public void BtnContinue() {

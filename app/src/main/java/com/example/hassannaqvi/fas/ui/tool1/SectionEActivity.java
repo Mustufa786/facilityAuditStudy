@@ -37,7 +37,7 @@ public class SectionEActivity extends AppCompatActivity {
     }
 
     private void setContentUI() {
-        this.setTitle(R.string.section5);
+        this.setTitle(R.string.hfa15);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
         ClearClass.ClearAllFields(bi.hfa1500, false);

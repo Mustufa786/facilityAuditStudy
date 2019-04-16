@@ -16,7 +16,7 @@ import java.io.Serializable;
 public class Forms implements Serializable {
 
     @Ignore
-    private final String _projectName = "MNCH-SRC2";
+    private final String _projectName = "FACILITY-AUDIT";
 
     @PrimaryKey(autoGenerate = true)
     private int id;
@@ -35,6 +35,9 @@ public class Forms implements Serializable {
     private String sa4 = "";     // Section 4
     private String sa5 = "";     // Section 5
     private String sa6 = "";     // Section 6
+    private String sa7 = "";     // Section 7
+    private String sa8 = "";     // Section 8
+    private String sa9 = "";     // Section 9
     private String istatus = "";
     private String endtime = "";
     private String clustercode = "";
@@ -51,7 +54,6 @@ public class Forms implements Serializable {
     private String synced_date = "";
     private String appversion = "";
     private String round = "";
-    private String pdeviation = ""; // Protocol Deviation Form
 
     @Ignore
     public Forms(Forms forms) {
@@ -70,6 +72,9 @@ public class Forms implements Serializable {
         this.sa4 = forms.sa4;
         this.sa5 = forms.sa5;
         this.sa6 = forms.sa6;
+        this.sa7 = forms.sa7;
+        this.sa8 = forms.sa8;
+        this.sa9 = forms.sa9;
         this.istatus = forms.istatus;
         this.endtime = forms.endtime;
         this.clustercode = forms.clustercode;
@@ -85,7 +90,6 @@ public class Forms implements Serializable {
         this.synced_date = forms.synced_date;
         this.appversion = forms.appversion;
         this.round = forms.round;
-        this.pdeviation = forms.pdeviation;
 
     }
 
@@ -99,14 +103,12 @@ public class Forms implements Serializable {
 
         json.put("projectName", this._projectName);
         json.put("_id", this.id == 0 ? JSONObject.NULL : this.id);
-//        json.put("uuid", this.uuid == null ? JSONObject.NULL : this.uuid);
         json.put("formType", this.formType == null ? JSONObject.NULL : this.formType);
         json.put("formDate", this.formDate == null ? JSONObject.NULL : this.formDate);
         json.put("uid", this.uid == null ? JSONObject.NULL : this.uid);
         json.put("username", this.username == null ? JSONObject.NULL : this.username);
         json.put("participantID", this.participantID == null ? JSONObject.NULL : this.participantID);
         json.put("participantName", this.participantName == null ? JSONObject.NULL : this.participantName);
-
         json.put("studyID", this.studyID == null ? JSONObject.NULL : this.studyID);
         json.put("clustercode", this.clustercode == null ? JSONObject.NULL : this.clustercode);
         json.put("endtime", this.endtime == null ? JSONObject.NULL : this.endtime);
@@ -118,13 +120,9 @@ public class Forms implements Serializable {
         json.put("deviceID", this.deviceID == null ? JSONObject.NULL : this.deviceID);
         json.put("gpsElev", this.gpsElev == null ? JSONObject.NULL : this.gpsElev);
         json.put("devicetagID", this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
-        /*json.put("synced", this.synced == null ? JSONObject.NULL : this.synced);
-        json.put("synced_date", this.synced_date == null ? JSONObject.NULL : this.synced_date);*/
         json.put("appversion", this.appversion == null ? JSONObject.NULL : this.appversion);
         json.put("istatus", this.istatus == null ? JSONObject.NULL : this.istatus);
-
         json.put("round", this.round == null ? JSONObject.NULL : this.round);
-        json.put("pdeviation", this.pdeviation == null ? JSONObject.NULL : this.pdeviation);
 
         if (!this.sa1.equals("")) {
             json.put("sa1", this.sa1.equals("") ? JSONObject.NULL : new JSONObject(this.sa1));
@@ -143,6 +141,15 @@ public class Forms implements Serializable {
         }
         if (!this.sa6.equals("")) {
             json.put("sa6", this.sa6.equals("") ? JSONObject.NULL : new JSONObject(this.sa6));
+        }
+        if (!this.sa7.equals("")) {
+            json.put("sa7", this.sa7.equals("") ? JSONObject.NULL : new JSONObject(this.sa7));
+        }
+        if (!this.sa8.equals("")) {
+            json.put("sa8", this.sa8.equals("") ? JSONObject.NULL : new JSONObject(this.sa8));
+        }
+        if (!this.sa9.equals("")) {
+            json.put("sa9", this.sa9.equals("") ? JSONObject.NULL : new JSONObject(this.sa9));
         }
 
 
@@ -277,6 +284,30 @@ public class Forms implements Serializable {
         this.sa6 = sa6;
     }
 
+    public String getSa7() {
+        return sa7;
+    }
+
+    public void setSa7(String sa7) {
+        this.sa7 = sa7;
+    }
+
+    public String getSa8() {
+        return sa8;
+    }
+
+    public void setSa8(String sa8) {
+        this.sa8 = sa8;
+    }
+
+    public String getSa9() {
+        return sa9;
+    }
+
+    public void setSa9(String sa9) {
+        this.sa9 = sa9;
+    }
+
     public String getEndtime() {
         return endtime;
     }
@@ -387,55 +418,6 @@ public class Forms implements Serializable {
 
     public void setRound(String round) {
         this.round = round;
-    }
-
-    public String getPdeviation() {
-        return pdeviation;
-    }
-
-    public void setPdeviation(String pdeviation) {
-        this.pdeviation = pdeviation;
-    }
-
-    public class Simple_Forms_04_05 {
-
-        String ls01a05, ls01a06, ls01a07, ls01a09, ls01f03, ls01f04, ls01f05d, ls01f05m, ls01f05y;
-
-        public String getLs01a05() {
-            return ls01a05;
-        }
-
-        public String getLs01a06() {
-            return ls01a06;
-        }
-
-        public String getLs01a07() {
-            return ls01a07;
-        }
-
-        public String getLs01a09() {
-            return ls01a09;
-        }
-
-        public String getLs01f03() {
-            return ls01f03;
-        }
-
-        public String getLs01f04() {
-            return ls01f04;
-        }
-
-        public String getLs01f05d() {
-            return ls01f05d;
-        }
-
-        public String getLs01f05m() {
-            return ls01f05m;
-        }
-
-        public String getLs01f05y() {
-            return ls01f05y;
-        }
     }
 
 }
