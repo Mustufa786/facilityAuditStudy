@@ -21,6 +21,7 @@
     <string name="yes"> ہاں </string>
     <string name="no"> نہیں </string>
     <string name="dkn"> معلوم نہیں</string>
+    <string name="non">کوئی نہیں  </string>
     <string name="not_applicable">	غير موضوع</string>
     <string name="sometimes">	ڪڏهن ڪڏهن   </string>
     <string name="refused"> جواب دینے سے انکار کیا </string>
@@ -80,7 +81,7 @@
     <string name="hfa1100b"> انٹرونشن کے بعد</string>
 
     <string name="hfa1101">مرکزِ صحت کا اسٹیڈی نمبر </string>
-    <string name="hfa1102">مرکزِ صحت کا نام</string>
+    <string name="hfa1102">مرکزِ صحت کا  اسٹیڈی نمبر </string>
     <string name="hfa1103">مرکزِ صحت کس جگہ واقع ہے</string>
     <string name="hfa1103a">ضلع/علاقہ/صوبہ      </string>
     <string name="hfa1103b">ڈسٹرکٹ </string>
@@ -193,7 +194,7 @@
 
 
     <!--Section D-->
-    <string name="hfa14Heading"> برائے کرم مجھے بتائیے کیا مندرجہ ذیل آلات جو ڈیلیوری کے لیے استعمال ہوتے ہیں آج مرکزِصحت پر موجود ہیں؟ </string>
+    <string name="hfa14Heading"> کیا اس مرکزِ صحت کے بلڈ بنک میں مندرجہ ذیل کے لیے اصولی طریقہ کار دستیاب ہیں؟</string>
     <string name="hfa1401"> تمام خواتین میں زچگی کے فوراً بعد زیادہ خون بہہ جانے کی روک تھام کے عمل کے لیے انجیکشن آکسیٹوسن کا استعمال کیا </string>
 
     <string name="hfa1402"> پارٹو گرام کے ذریعہ سے لیبر کی نگرانی اور انتظام </string>
@@ -224,7 +225,7 @@
 
     <string name="hfa1415"> انتقال خون </string>
 
-    <string name="hfa1416"> کیا اس مرکزِ صحت میں بلڈبنک کی سہولت موجود ہیں؟ </string>
+    <string name="hfa1416"> کیا مریضوں کے لئے عطیہ خون کی کوئی پالیسی ہے؟ </string>
 
     <string name="hfa1417"> اگر ہاں، تو مرکزِ صحت میں استعمال ہونے والے خون کے اہم ذرائع کیاہیں؟ </string>
     <string name="hfa1417a"> مرکزِ صحت کا بلڈ بنک </string>

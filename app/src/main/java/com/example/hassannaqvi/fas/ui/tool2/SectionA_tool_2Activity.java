@@ -39,10 +39,15 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a_tool_2);
-        bi.setCallback(this);
 
-        setContentUI();
+
+      //  bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a_tool_2);
+        setContentView(R.layout.i_testing);
+
+     //  setContentView(this, R.layout.i_testing);
+       // bi.setCallback(this);
+
+       // setContentUI();
     }
 
     private void setContentUI() {
