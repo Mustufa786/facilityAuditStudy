@@ -89,7 +89,6 @@ public class SectionHActivity extends AppCompatActivity {
         MainApp.endActivityDirectRouting(this, this, EndingActivity.class, false, fc);
     }
 
-
     public void onRadioClickChanged(RadioGroup radioGroup, int id) {
 
         if (radioGroup.getCheckedRadioButtonId() == bi.hfa1801.getId())

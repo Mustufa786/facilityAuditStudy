@@ -48,6 +48,7 @@
                             android:id="@+id/hfa1901"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -73,186 +74,188 @@
                 </android.support.v7.widget.CardView>
 
                 <!--hfa1902-->
-
                 <LinearLayout
                     android:id="@+id/fldGrpllSecI01"
-                    style="@style/linerlayout_view_wt_bound"></LinearLayout>
+                    style="@style/linerlayout_view_wt_bound"
+                    android:visibility='@{hfa1901a.checked? View.VISIBLE : View.GONE}'>
 
-                <android.support.v7.widget.CardView style="@style/cardView">
+                    <android.support.v7.widget.CardView style="@style/cardView">
 
-                    <LinearLayout style="@style/linerlayout_view">
+                        <LinearLayout style="@style/linerlayout_view">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1902"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1902"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
 
-                        <RadioGroup
-                            android:id="@+id/hfa1902"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            <RadioGroup
+                                android:id="@+id/hfa1902"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
 
-                            <RadioButton
-                                android:id="@+id/hfa1902a"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1902a" />
+                                <RadioButton
+                                    android:id="@+id/hfa1902a"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1902a" />
 
-                            <RadioButton
-                                android:id="@+id/hfa1902b"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1902b" />
+                                <RadioButton
+                                    android:id="@+id/hfa1902b"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1902b" />
 
-                            <RadioButton
-                                android:id="@+id/hfa1902c"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1902c" />
+                                <RadioButton
+                                    android:id="@+id/hfa1902c"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1902c" />
 
-                            <RadioButton
-                                android:id="@+id/hfa190298"
-                                style="@style/radiobutton"
-                                android:text="@string/dkn" />
+                                <RadioButton
+                                    android:id="@+id/hfa190298"
+                                    style="@style/radiobutton"
+                                    android:text="@string/dkn" />
 
-                            <RadioButton
-                                android:id="@+id/hfa190296"
-                                style="@style/radiobutton"
-                                android:text="@string/other" />
+                                <RadioButton
+                                    android:id="@+id/hfa190296"
+                                    style="@style/radiobutton"
+                                    android:text="@string/other" />
 
-                            <EditText
-                                android:id="@+id/hfa190296x"
-                                style="@style/EditText"
-                                android:hint="@string/other"
-                                android:text='@{hfa190296.checked ? hfa190296x.getText.toString : ""}'
-                                android:visibility='@{hfa190296.checked? View.VISIBLE : View.GONE}' />
+                                <EditText
+                                    android:id="@+id/hfa190296x"
+                                    style="@style/EditText"
+                                    android:hint="@string/other"
+                                    android:text='@{hfa190296.checked ? hfa190296x.getText.toString : ""}'
+                                    android:visibility='@{hfa190296.checked? View.VISIBLE : View.GONE}' />
 
-                        </RadioGroup>
+                            </RadioGroup>
 
-                    </LinearLayout>
+                        </LinearLayout>
 
-                </android.support.v7.widget.CardView>
+                    </android.support.v7.widget.CardView>
 
-                <!--hfa1903-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                    <!--hfa1903-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
 
-                    <LinearLayout style="@style/linerlayout_view">
+                        <LinearLayout style="@style/linerlayout_view">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1903"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1903"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
 
-                        <RadioGroup
-                            android:id="@+id/hfa1903"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            <RadioGroup
+                                android:id="@+id/hfa1903"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
 
-                            <RadioButton
-                                android:id="@+id/hfa1903a"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1903a" />
+                                <RadioButton
+                                    android:id="@+id/hfa1903a"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1903a" />
 
-                            <RadioButton
-                                android:id="@+id/hfa1903b"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1903b" />
+                                <RadioButton
+                                    android:id="@+id/hfa1903b"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1903b" />
 
-                            <RadioButton
-                                android:id="@+id/hfa1903c"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1903c" />
+                                <RadioButton
+                                    android:id="@+id/hfa1903c"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1903c" />
 
-                            <RadioButton
-                                android:id="@+id/hfa190398"
-                                style="@style/radiobutton"
-                                android:text="@string/dkn" />
+                                <RadioButton
+                                    android:id="@+id/hfa190398"
+                                    style="@style/radiobutton"
+                                    android:text="@string/dkn" />
 
-                            <RadioButton
-                                android:id="@+id/hfa190396"
-                                style="@style/radiobutton"
-                                android:text="@string/other" />
+                                <RadioButton
+                                    android:id="@+id/hfa190396"
+                                    style="@style/radiobutton"
+                                    android:text="@string/other" />
 
-                            <EditText
-                                android:id="@+id/hfa190396x"
-                                style="@style/EditText"
-                                android:hint="@string/other"
-                                android:text='@{hfa190396.checked ? hfa190396x.getText.toString : ""}'
-                                android:visibility='@{hfa190396.checked? View.VISIBLE : View.GONE}' />
+                                <EditText
+                                    android:id="@+id/hfa190396x"
+                                    style="@style/EditText"
+                                    android:hint="@string/other"
+                                    android:text='@{hfa190396.checked ? hfa190396x.getText.toString : ""}'
+                                    android:visibility='@{hfa190396.checked? View.VISIBLE : View.GONE}' />
 
-                        </RadioGroup>
+                            </RadioGroup>
 
-                    </LinearLayout>
+                        </LinearLayout>
 
-                </android.support.v7.widget.CardView>
+                    </android.support.v7.widget.CardView>
 
-                <!--hfa1904-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                    <!--hfa1904-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
 
-                    <LinearLayout style="@style/linerlayout_view">
+                        <LinearLayout style="@style/linerlayout_view">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1904"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1904"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
 
-                        <RadioGroup
-                            android:id="@+id/hfa1904"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            <RadioGroup
+                                android:id="@+id/hfa1904"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
 
-                            <RadioButton
-                                android:id="@+id/hfa1904a"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1904a" />
+                                <RadioButton
+                                    android:id="@+id/hfa1904a"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1904a" />
 
-                            <RadioButton
-                                android:id="@+id/hfa1904b"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1904b" />
+                                <RadioButton
+                                    android:id="@+id/hfa1904b"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1904b" />
 
-                            <RadioButton
-                                android:id="@+id/hfa1904c"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1904c" />
+                                <RadioButton
+                                    android:id="@+id/hfa1904c"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1904c" />
 
-                            <RadioButton
-                                android:id="@+id/hfa190498"
-                                style="@style/radiobutton"
-                                android:text="@string/dkn" />
+                                <RadioButton
+                                    android:id="@+id/hfa190498"
+                                    style="@style/radiobutton"
+                                    android:text="@string/dkn" />
 
-                            <RadioButton
-                                android:id="@+id/hfa190496"
-                                style="@style/radiobutton"
-                                android:text="@string/other" />
+                                <RadioButton
+                                    android:id="@+id/hfa190496"
+                                    style="@style/radiobutton"
+                                    android:text="@string/other" />
 
-                            <EditText
-                                android:id="@+id/hfa190496x"
-                                style="@style/EditText"
-                                android:hint="@string/other"
-                                android:text='@{hfa190496.checked ? hfa190496x.getText.toString : ""}'
-                                android:visibility='@{hfa190496.checked? View.VISIBLE : View.GONE}' />
+                                <EditText
+                                    android:id="@+id/hfa190496x"
+                                    style="@style/EditText"
+                                    android:hint="@string/other"
+                                    android:text='@{hfa190496.checked ? hfa190496x.getText.toString : ""}'
+                                    android:visibility='@{hfa190496.checked? View.VISIBLE : View.GONE}' />
 
-                        </RadioGroup>
+                            </RadioGroup>
 
-                    </LinearLayout>
+                        </LinearLayout>
 
-                </android.support.v7.widget.CardView>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
 
                 <!--hfa1905-->
                 <android.support.v7.widget.CardView style="@style/cardView">
@@ -273,6 +276,7 @@
                             android:id="@+id/hfa1905"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -298,167 +302,174 @@
                 </android.support.v7.widget.CardView>
 
                 <!--hfa1906-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <LinearLayout
+                    android:id="@+id/fldGrpllSecI02"
+                    style="@style/linerlayout_view_wt_bound"
+                    android:visibility='@{hfa1905a.checked? View.VISIBLE : View.GONE}'>
 
-                    <LinearLayout style="@style/linerlayout_view">
+                    <android.support.v7.widget.CardView style="@style/cardView">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1906"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                        <LinearLayout style="@style/linerlayout_view">
 
-                        <RadioGroup
-                            android:id="@+id/hfa1906"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1906"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
 
-                            <RadioButton
-                                android:id="@+id/hfa1906a"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1906a" />
+                            <RadioGroup
+                                android:id="@+id/hfa1906"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
 
-                            <RadioButton
-                                android:id="@+id/hfa1906b"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1906b" />
+                                <RadioButton
+                                    android:id="@+id/hfa1906a"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1906a" />
 
-                            <RadioButton
-                                android:id="@+id/hfa1906c"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1906c" />
+                                <RadioButton
+                                    android:id="@+id/hfa1906b"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1906b" />
 
-                            <RadioButton
-                                android:id="@+id/hfa190698"
-                                style="@style/radiobutton"
-                                android:text="@string/dkn" />
+                                <RadioButton
+                                    android:id="@+id/hfa1906c"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1906c" />
 
-                            <RadioButton
-                                android:id="@+id/hfa190696"
-                                style="@style/radiobutton"
-                                android:text="@string/other" />
+                                <RadioButton
+                                    android:id="@+id/hfa190698"
+                                    style="@style/radiobutton"
+                                    android:text="@string/dkn" />
 
-                            <EditText
-                                android:id="@+id/hfa190696x"
-                                style="@style/EditText"
-                                android:hint="@string/other"
-                                android:text='@{hfa190696.checked ? hfa190696x.getText.toString : ""}'
-                                android:visibility='@{hfa190696.checked? View.VISIBLE : View.GONE}' />
+                                <RadioButton
+                                    android:id="@+id/hfa190696"
+                                    style="@style/radiobutton"
+                                    android:text="@string/other" />
 
-                        </RadioGroup>
+                                <EditText
+                                    android:id="@+id/hfa190696x"
+                                    style="@style/EditText"
+                                    android:hint="@string/other"
+                                    android:text='@{hfa190696.checked ? hfa190696x.getText.toString : ""}'
+                                    android:visibility='@{hfa190696.checked? View.VISIBLE : View.GONE}' />
 
-                    </LinearLayout>
+                            </RadioGroup>
 
-                </android.support.v7.widget.CardView>
+                        </LinearLayout>
 
-                <!--hfa1907-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                    </android.support.v7.widget.CardView>
 
-                    <LinearLayout style="@style/linerlayout_view">
+                    <!--hfa1907-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1907"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                        <LinearLayout style="@style/linerlayout_view">
 
-                        <RadioGroup
-                            android:id="@+id/hfa1907"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1907"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
 
-                            <RadioButton
-                                android:id="@+id/hfa1907a"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1907a" />
+                            <RadioGroup
+                                android:id="@+id/hfa1907"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
 
-                            <RadioButton
-                                android:id="@+id/hfa1907b"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1907b" />
+                                <RadioButton
+                                    android:id="@+id/hfa1907a"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1907a" />
 
-                            <RadioButton
-                                android:id="@+id/hfa1907c"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1907c" />
+                                <RadioButton
+                                    android:id="@+id/hfa1907b"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1907b" />
 
-                            <RadioButton
-                                android:id="@+id/hfa190797"
-                                style="@style/radiobutton"
-                                android:text="@string/never" />
+                                <RadioButton
+                                    android:id="@+id/hfa1907c"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1907c" />
 
-                            <RadioButton
-                                android:id="@+id/hfa190798"
-                                style="@style/radiobutton"
-                                android:text="@string/dkn" />
+                                <RadioButton
+                                    android:id="@+id/hfa190797"
+                                    style="@style/radiobutton"
+                                    android:text="@string/never" />
 
-                        </RadioGroup>
+                                <RadioButton
+                                    android:id="@+id/hfa190798"
+                                    style="@style/radiobutton"
+                                    android:text="@string/dkn" />
 
-                    </LinearLayout>
+                            </RadioGroup>
 
-                </android.support.v7.widget.CardView>
+                        </LinearLayout>
 
-                <!--hfa1908-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                    </android.support.v7.widget.CardView>
 
-                    <LinearLayout style="@style/linerlayout_view">
+                    <!--hfa1908-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1908"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                        <LinearLayout style="@style/linerlayout_view">
 
-                        <RadioGroup
-                            android:id="@+id/hfa1908"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1908"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
 
-                            <RadioButton
-                                android:id="@+id/hfa1908a"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1908a" />
+                            <RadioGroup
+                                android:id="@+id/hfa1908"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
 
-                            <RadioButton
-                                android:id="@+id/hfa1908b"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1908b" />
+                                <RadioButton
+                                    android:id="@+id/hfa1908a"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1908a" />
 
-                            <RadioButton
-                                android:id="@+id/hfa1908c"
-                                style="@style/radiobutton"
-                                android:text="@string/hfa1908c" />
+                                <RadioButton
+                                    android:id="@+id/hfa1908b"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1908b" />
 
-                            <RadioButton
-                                android:id="@+id/hfa190897"
-                                style="@style/radiobutton"
-                                android:text="@string/never" />
+                                <RadioButton
+                                    android:id="@+id/hfa1908c"
+                                    style="@style/radiobutton"
+                                    android:text="@string/hfa1908c" />
 
-                            <RadioButton
-                                android:id="@+id/hfa190898"
-                                style="@style/radiobutton"
-                                android:text="@string/dkn" />
+                                <RadioButton
+                                    android:id="@+id/hfa190897"
+                                    style="@style/radiobutton"
+                                    android:text="@string/never" />
 
-                        </RadioGroup>
+                                <RadioButton
+                                    android:id="@+id/hfa190898"
+                                    style="@style/radiobutton"
+                                    android:text="@string/dkn" />
 
-                    </LinearLayout>
+                            </RadioGroup>
 
-                </android.support.v7.widget.CardView>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
 
                 <!--hfa1909-->
                 <android.support.v7.widget.CardView style="@style/cardView">
@@ -479,6 +490,7 @@
                             android:id="@+id/hfa1909"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -504,7 +516,9 @@
                 </android.support.v7.widget.CardView>
 
                 <!--hfa1910-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView
+                    style="@style/cardView"
+                    android:visibility='@{hfa1909a.checked? View.VISIBLE : View.GONE}'>
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -581,6 +595,7 @@
                             android:id="@+id/hfa1911"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onRadioClickChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -606,7 +621,9 @@
                 </android.support.v7.widget.CardView>
 
                 <!--hfa1912-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView
+                    style="@style/cardView"
+                    android:visibility='@{hfa1911a.checked? View.VISIBLE : View.GONE}'>
 
                     <LinearLayout style="@style/linerlayout_view">
 

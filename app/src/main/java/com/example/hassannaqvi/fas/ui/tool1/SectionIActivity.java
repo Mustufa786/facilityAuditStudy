@@ -3,6 +3,7 @@ package com.example.hassannaqvi.fas.ui.tool1;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.fas.JSON.GeneratorClass;
@@ -14,6 +15,7 @@ import com.example.hassannaqvi.fas.data.DAO.FormsDAO;
 import com.example.hassannaqvi.fas.data.entities.Forms;
 import com.example.hassannaqvi.fas.databinding.ActivitySectionIBinding;
 import com.example.hassannaqvi.fas.ui.EndingActivity;
+import com.example.hassannaqvi.fas.validation.ClearClass;
 import com.example.hassannaqvi.fas.validation.ValidatorClass;
 
 import org.json.JSONObject;
@@ -79,5 +81,22 @@ public class SectionIActivity extends AppCompatActivity {
 
     public void BtnEnd() {
         MainApp.endActivityDirectRouting(this, this, EndingActivity.class, false, fc);
+    }
+
+
+    public void onRadioClickChanged(RadioGroup radioGroup, int id) {
+
+        if (radioGroup.getCheckedRadioButtonId() != bi.hfa1901a.getId())
+            ClearClass.ClearAllFields(bi.fldGrpllSecI01, null);
+
+        if (radioGroup.getCheckedRadioButtonId() != bi.hfa1905a.getId())
+            ClearClass.ClearAllFields(bi.fldGrpllSecI02, null);
+
+        if (radioGroup.getCheckedRadioButtonId() != bi.hfa1909a.getId())
+            bi.hfa1910.clearCheck();
+
+        if (radioGroup.getCheckedRadioButtonId() != bi.hfa1911a.getId())
+            bi.hfa1912.clearCheck();
+
     }
 }
