@@ -379,6 +379,40 @@
     <string name="hfa1714"> اس سہولت میں کتنے مرد لیڈرشیپ کی پوزیشن رکھتے ہیں؟ اس میں لیڈرشیپ اور مینجمنٹ پوزیشن شامل ہیں جن کے لئے اضافی تنخواہ فراہم کی جاتی ہے. مثال کے طور پر سہولیات کے سربراہ / ڈائریکٹر، محکموں کے سربراہ، یونٹس اور وارڈ کے سربرا اور ذیلی ملکی ہیلتھ مینجمنٹ ٹیم کے ارکان شامل ہیں </string>
     <string name="hfa1715"> اس سہولت میں کتنے خواتین لیڈرشیپ کی پوزیشن رکھتے ہیں؟ اس میں لیڈرشیپ اور مینجمنٹ پوزیشن شامل ہیں جن کے لئے اضافی تنخواہ فراہم کی جاتی ہے. مثال کے طور پر سہولیات کے سربراہ / ڈائریکٹر، محکموں کے سربراہ، یونٹس اور وارڈ کے سربرا اور ذیلی ملکی ہیلتھ مینجمنٹ ٹیم کے ارکان شامل ہیں </string>
 
+    <!--Section H-->
+    <string name="hfa1801"> کیا آپکی مرکزِ صحت کی اسٹاف میٹنگ باقاعدگی سے ہوتی ہیں؟ </string>
+    <string name="hfa1802"> گر ہاں تو کتنی دفعہ؟ </string>
+    <string name="hfa1802a"> ہر دن </string>
+    <string name="hfa1802b"> ہفتہ وار </string>
+    <string name="hfa1802c"> مہینہ وار </string>
+    <string name="hfa1802d"> ہر چار مہینے بعد </string>
+    <string name="hfa1802e"> ضرورت پڑنے پر </string>
+    <string name="hfa1803"> کیا اس علاقے میں کمیونٹی کی سطح پرصحت سے متعلق میٹنگ ہوتی ہیں؟ </string>
+    <string name="hfa1804"> اگر ہاں تو کتنی دفعہ یہ منعقد ہوتی ہیں؟ </string>
+    <string name="hfa1804a"> ہر دن </string>
+    <string name="hfa1804b"> ہفتہ وار </string>
+    <string name="hfa1804c"> مہینہ وار </string>
+    <string name="hfa1804d"> ہر چار مہینے بعد </string>
+    <string name="hfa1804e"> ضرورت پڑنے پر </string>
+    <string name="hfa1805"> اگر ہاں توکیا آپ شامل ہوتے/ہوتی ہیں؟ </string>
+    <string name="hfa1806"> اور کون ان کمیونٹی سطح پرصحت سے متعلق میٹنگ میں شامل ہوتا/ہوتی ہیں؟ </string>
+    <string name="hfa1806a"> خواتین تنظیم کی کوئی ممبر </string>
+    <string name="hfa1806b"> لیڈی ہیلتھ وزٹر </string>
+    <string name="hfa1806c"> کمیونٹی مڈوائف </string>
+    <string name="hfa1807"> کیا یہ مرکزِ صحت خواتین اورنوزائیدہ کی اموات سے متعلق جانچ پڑتال کرتی ہے؟ </string>
+    <string name="hfa1808"> اگر ہاں، تو کتنی بار؟ </string>
+    <string name="hfa1808a"> ہر دن </string>
+    <string name="hfa1808b"> ہفتہ وار </string>
+    <string name="hfa1808c"> مہینہ وار </string>
+    <string name="hfa1808d"> ہر چار مہینے بعد </string>
+    <string name="hfa1808e"> ضرورت پڑنے پر </string>
+    <string name="hfa1809"> گر ہاں تو کون خواتین اورنوزائیدہ کی اموات سے متعلق جانچ پڑتال کی میٹنگ میں شرکت کرتا/کرتی ہے؟ </string>
+    <string name="hfa1809a"> میڈیکل سپرنٹنڈنٹ </string>
+    <string name="hfa1809b"> ماہر میڈیکل ڈاکٹر </string>
+    <string name="hfa1809c"> نرس </string>
+    <string name="hfa1809d"> لیڈی ہیلتھ وزٹر </string>
+    <string name="hfa1809e"> کمیونٹی مڈوائف </string>
+
     <!--Tool 2-->
     <!--Section A-->
 
