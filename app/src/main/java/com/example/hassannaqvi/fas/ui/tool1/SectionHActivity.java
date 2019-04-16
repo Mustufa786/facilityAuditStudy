@@ -91,24 +91,23 @@ public class SectionHActivity extends AppCompatActivity {
 
 
     public void onRadioClickChanged(RadioGroup radioGroup, int id) {
+
         if (radioGroup.getCheckedRadioButtonId() == bi.hfa1801.getId())
             bi.hfa1802.clearCheck();
+
         if (radioGroup.getCheckedRadioButtonId() == bi.hfa1803.getId()) {
             bi.hfa1804.clearCheck();
             bi.hfa1805.clearCheck();
             bi.hfa1806.clearCheck();
         }
 
-        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1805.getId()) {
+        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1805.getId())
             bi.hfa1806.clearCheck();
-        }
 
         if (radioGroup.getCheckedRadioButtonId() == bi.hfa1807.getId()) {
             bi.hfa1808.clearCheck();
             bi.hfa1809.clearCheck();
         }
-
-
 
     }
 }
