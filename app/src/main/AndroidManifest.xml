@@ -73,6 +73,14 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
+            android:name=".ui.tool1.SectionD04Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".ui.tool1.SectionD05Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
             android:name=".ui.tool1.SectionEActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
