@@ -153,7 +153,11 @@
                 </android.support.v7.widget.CardView>
 
                 <!--hfa1802-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView style="@style/cardView"
+
+                    android:visibility='@{!hfa1801a.checked? View.VISIBLE : View.GONE}'
+
+                    >
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -268,7 +272,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
-                                android:text="@string/hfa1802a" />
+                                android:text="@string/yes" />
 
                             <RadioButton
                                 android:id="@+id/hfa1803b"
@@ -276,7 +280,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
-                                android:text="@string/hfa1802b" />
+                                android:text="@string/yes" />
 
                             <RadioButton
                                 android:id="@+id/hfa1803c"
@@ -284,7 +288,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
-                                android:text="@string/hfa1802c" />
+                                android:text="@string/no" />
 
 
                             <RadioButton
@@ -293,34 +297,10 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
-                                android:text="@string/hfa1802d" />
-
-
-                            <RadioButton
-                                android:id="@+id/hfa1803e"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/hfa1802e" />
-
-
-
-                            <RadioButton
-                                android:id="@+id/hfa180398"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
                                 android:text="@string/dkn" />
 
 
-                            <EditText
-                                android:id="@+id/hfa1803x"
-                                style="@style/textInput"
-                                android:enabled="false"
 
-                                />
 
 
                         </RadioGroup>
@@ -331,7 +311,11 @@
                 </android.support.v7.widget.CardView>
 
                 <!--hfa1804-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView style="@style/cardView"
+
+                    android:visibility='@{!hfa1803a.checked? View.VISIBLE : View.GONE}'
+
+                    >
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -419,7 +403,11 @@
                 </android.support.v7.widget.CardView>
 
                 <!--hfa1805-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView style="@style/cardView"
+
+
+                    android:visibility='@{!hfa1803a.checked? View.VISIBLE : View.GONE}'
+                    >
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -472,7 +460,11 @@
                 </android.support.v7.widget.CardView>
 
                 <!--hfa1806-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView style="@style/cardView"
+
+
+                    android:visibility='@{!hfa1803a.checked?   View.VISIBLE : View.GONE}'
+                    >
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -618,7 +610,10 @@
 
 
                 <!--hfa1808-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView style="@style/cardView"
+
+                    android:visibility='@{!hfa1807a.checked? View.VISIBLE : View.GONE}'
+                    >
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -709,7 +704,10 @@
 
 
                 <!--hfa1809-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView style="@style/cardView"
+
+                    android:visibility='@{!hfa1807a.checked? View.VISIBLE : View.GONE}'
+                    >
 
                     <LinearLayout style="@style/linerlayout_view">
 

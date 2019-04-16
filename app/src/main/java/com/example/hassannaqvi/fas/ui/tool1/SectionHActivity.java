@@ -3,6 +3,7 @@ package com.example.hassannaqvi.fas.ui.tool1;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.fas.JSON.GeneratorClass;
@@ -86,5 +87,28 @@ public class SectionHActivity extends AppCompatActivity {
 
     public void BtnEnd() {
         MainApp.endActivityDirectRouting(this, this, EndingActivity.class, false, fc);
+    }
+
+
+    public void onRadioClickChanged(RadioGroup radioGroup, int id) {
+        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1801.getId())
+            bi.hfa1802.clearCheck();
+        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1803.getId()) {
+            bi.hfa1804.clearCheck();
+            bi.hfa1805.clearCheck();
+            bi.hfa1806.clearCheck();
+        }
+
+        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1805.getId()) {
+            bi.hfa1806.clearCheck();
+        }
+
+        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1807.getId()) {
+            bi.hfa1808.clearCheck();
+            bi.hfa1809.clearCheck();
+        }
+
+
+
     }
 }
