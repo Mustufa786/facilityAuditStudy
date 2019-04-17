@@ -7,7 +7,7 @@
 
         <variable
             name="callback"
-            type="com.example.hassannaqvi.fas.ui.LoginActivity" />
+            type="edu.aku.hassannaqvi.fas.ui.LoginActivity" />
     </data>
 
     <LinearLayout

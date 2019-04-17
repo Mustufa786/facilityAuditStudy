@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="com.example.hassannaqvi.fas.ui.tool1.InfoActivity" />
+            type="edu.aku.hassannaqvi.fas.ui.tool1.InfoActivity" />
     </data>
 
     <ScrollView
