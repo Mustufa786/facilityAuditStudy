@@ -53,7 +53,7 @@ public class SectionGActivity extends AppCompatActivity {
 
         SaveDraft();
         if (UpdateDB()) {
-            MainApp.stActivity(this, this, SectionIActivity.class, fc);
+            MainApp.stActivity(this, this, SectionHActivity.class, fc);
         } else {
             Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
         }

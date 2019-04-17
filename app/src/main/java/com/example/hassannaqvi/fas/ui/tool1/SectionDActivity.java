@@ -3,6 +3,7 @@ package com.example.hassannaqvi.fas.ui.tool1;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.fas.JSON.GeneratorClass;
@@ -33,6 +34,24 @@ public class SectionDActivity extends AppCompatActivity {
         bi.setCallback(this);
 
         setContentUI();
+        setListeners();
+    }
+
+    private void setListeners() {
+        bi.hfa1416.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.hfa1416a.getId())
+                    ClearClass.ClearAllFields(bi.fldGrpllSecD01, null);
+            }
+        });
+        bi.hfa1418.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.hfa1418.getId())
+                    ClearClass.ClearAllFields(bi.fldGrpllSecD02, null);
+            }
+        });
     }
 
     private void setContentUI() {
