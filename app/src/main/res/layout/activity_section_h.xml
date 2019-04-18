@@ -155,10 +155,7 @@
                 <!--hfa1802-->
                 <android.support.v7.widget.CardView
                     style="@style/cardView"
-
-                    android:visibility='@{!hfa1801a.checked? View.VISIBLE : View.GONE}'
-
-                    >
+                    android:visibility='@{!hfa1801a.checked? View.VISIBLE : View.GONE}'>
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -230,13 +227,23 @@
                                 android:layout_weight="1"
                                 android:text="@string/dkn" />
 
+                            <RadioButton
+                                android:id="@+id/hfa180296"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/other" />
 
                             <EditText
-                                android:id="@+id/hfa1802x"
+                                android:id="@+id/hfa180296x"
                                 style="@style/textInput"
-                                android:enabled="false"
-
-                                />
+                                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:hint="@string/other"
+                                android:inputType="text"
+                                android:tag="hfa180296"
+                                android:text='@{hfa180296.checked? hfa180296x.getText.toString : ""}'
+                                android:visibility='@{hfa180296.checked? View.VISIBLE : View.GONE}' />
 
 
                         </RadioGroup>
@@ -386,13 +393,23 @@
                                 android:layout_weight="1"
                                 android:text="@string/dkn" />
 
+                            <RadioButton
+                                android:id="@+id/hfa180496"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/other" />
 
                             <EditText
-                                android:id="@+id/hfa1804x"
+                                android:id="@+id/hfa180496x"
                                 style="@style/textInput"
-                                android:enabled="false"
-
-                                />
+                                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:hint="@string/other"
+                                android:inputType="text"
+                                android:tag="hfa180496"
+                                android:text='@{hfa180496.checked? hfa180496x.getText.toString : ""}'
+                                android:visibility='@{hfa180496.checked? View.VISIBLE : View.GONE}' />
 
 
                         </RadioGroup>
@@ -537,13 +554,23 @@
                                 android:layout_weight="1"
                                 android:text="@string/dkn" />
 
+                            <RadioButton
+                                android:id="@+id/hfa180696"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/other" />
 
                             <EditText
-                                android:id="@+id/hfa1806x"
+                                android:id="@+id/hfa180696x"
                                 style="@style/textInput"
-                                android:enabled="false"
-
-                                />
+                                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:hint="@string/other"
+                                android:inputType="text"
+                                android:tag="hfa180696"
+                                android:text='@{hfa180696.checked? hfa180696x.getText.toString : ""}'
+                                android:visibility='@{hfa180696.checked? View.VISIBLE : View.GONE}' />
 
 
                         </RadioGroup>
@@ -675,7 +702,6 @@
                                 android:layout_weight="1"
                                 android:text="@string/hfa1808e" />
 
-
                             <RadioButton
                                 android:id="@+id/hfa180898"
                                 android:layout_width="match_parent"
@@ -684,13 +710,23 @@
                                 android:layout_weight="1"
                                 android:text="@string/dkn" />
 
+                            <RadioButton
+                                android:id="@+id/hfa180896"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/other" />
 
                             <EditText
-                                android:id="@+id/hfa1808x"
+                                android:id="@+id/hfa180896x"
                                 style="@style/textInput"
-                                android:enabled="false"
-
-                                />
+                                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:hint="@string/other"
+                                android:inputType="text"
+                                android:tag="hfa180896"
+                                android:text='@{hfa180896.checked? hfa180896x.getText.toString : ""}'
+                                android:visibility='@{hfa180896.checked? View.VISIBLE : View.GONE}' />
 
 
                         </RadioGroup>
@@ -768,7 +804,6 @@
                                 android:layout_weight="1"
                                 android:text="@string/hfa1809e" />
 
-
                             <RadioButton
                                 android:id="@+id/hfa180998"
                                 android:layout_width="match_parent"
@@ -777,13 +812,23 @@
                                 android:layout_weight="1"
                                 android:text="@string/dkn" />
 
+                            <RadioButton
+                                android:id="@+id/hfa180996"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/other" />
 
                             <EditText
-                                android:id="@+id/hfa1809x"
+                                android:id="@+id/hfa180996x"
                                 style="@style/textInput"
-                                android:enabled="false"
-
-                                />
+                                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:hint="@string/other"
+                                android:inputType="text"
+                                android:tag="hfa180996"
+                                android:text='@{hfa180996.checked? hfa180996x.getText.toString : ""}'
+                                android:visibility='@{hfa180996.checked? View.VISIBLE : View.GONE}' />
 
 
                         </RadioGroup>
