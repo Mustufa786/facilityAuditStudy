@@ -53,17 +53,17 @@
 
                             <RadioButton
                                 android:id="@+id/hfa1901a"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/yes" />
 
                             <RadioButton
                                 android:id="@+id/hfa1901b"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/no" />
 
                             <RadioButton
                                 android:id="@+id/hfa190198"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/dkn" />
 
                         </RadioGroup>
@@ -101,27 +101,27 @@
 
                                 <RadioButton
                                     android:id="@+id/hfa1902a"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1902a" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1902b"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1902b" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1902c"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1902c" />
 
                                 <RadioButton
                                     android:id="@+id/hfa190298"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/dkn" />
 
                                 <RadioButton
                                     android:id="@+id/hfa190296"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/other" />
 
                                 <EditText
@@ -161,27 +161,27 @@
 
                                 <RadioButton
                                     android:id="@+id/hfa1903a"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1903a" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1903b"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1903b" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1903c"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1903c" />
 
                                 <RadioButton
                                     android:id="@+id/hfa190398"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/dkn" />
 
                                 <RadioButton
                                     android:id="@+id/hfa190396"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/other" />
 
                                 <EditText
@@ -221,27 +221,27 @@
 
                                 <RadioButton
                                     android:id="@+id/hfa1904a"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1904a" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1904b"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1904b" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1904c"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1904c" />
 
                                 <RadioButton
                                     android:id="@+id/hfa190498"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/dkn" />
 
                                 <RadioButton
                                     android:id="@+id/hfa190496"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/other" />
 
                                 <EditText
@@ -284,17 +284,17 @@
 
                             <RadioButton
                                 android:id="@+id/hfa1905a"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/yes" />
 
                             <RadioButton
                                 android:id="@+id/hfa1905b"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/no" />
 
                             <RadioButton
                                 android:id="@+id/hfa190598"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/dkn" />
 
                         </RadioGroup>
@@ -332,27 +332,27 @@
 
                                 <RadioButton
                                     android:id="@+id/hfa1906a"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1906a" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1906b"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1906b" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1906c"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1906c" />
 
                                 <RadioButton
                                     android:id="@+id/hfa190698"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/dkn" />
 
                                 <RadioButton
                                     android:id="@+id/hfa190696"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/other" />
 
                                 <EditText
@@ -392,27 +392,27 @@
 
                                 <RadioButton
                                     android:id="@+id/hfa1907a"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1907a" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1907b"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1907b" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1907c"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1907c" />
 
                                 <RadioButton
                                     android:id="@+id/hfa190797"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/never" />
 
                                 <RadioButton
                                     android:id="@+id/hfa190798"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/dkn" />
 
                             </RadioGroup>
@@ -444,27 +444,27 @@
 
                                 <RadioButton
                                     android:id="@+id/hfa1908a"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1908a" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1908b"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1908b" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1908c"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/hfa1908c" />
 
                                 <RadioButton
                                     android:id="@+id/hfa190897"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/never" />
 
                                 <RadioButton
                                     android:id="@+id/hfa190898"
-                                    style="@style/radiobutton"
+                                    style="@style/i_radiobutton"
                                     android:text="@string/dkn" />
 
                             </RadioGroup>
@@ -499,17 +499,17 @@
 
                             <RadioButton
                                 android:id="@+id/hfa1909a"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/yes" />
 
                             <RadioButton
                                 android:id="@+id/hfa1909b"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/no" />
 
                             <RadioButton
                                 android:id="@+id/hfa190998"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/dkn" />
 
                         </RadioGroup>
@@ -544,27 +544,27 @@
 
                             <RadioButton
                                 android:id="@+id/hfa1910a"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/hfa1910a" />
 
                             <RadioButton
                                 android:id="@+id/hfa1910b"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/hfa1910b" />
 
                             <RadioButton
                                 android:id="@+id/hfa1910c"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/hfa1910c" />
 
                             <RadioButton
                                 android:id="@+id/hfa191098"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/dkn" />
 
                             <RadioButton
                                 android:id="@+id/hfa191096"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/other" />
 
                             <EditText
@@ -605,17 +605,17 @@
 
                             <RadioButton
                                 android:id="@+id/hfa1911a"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/yes" />
 
                             <RadioButton
                                 android:id="@+id/hfa1911b"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/no" />
 
                             <RadioButton
                                 android:id="@+id/hfa191198"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/dkn" />
 
                         </RadioGroup>
@@ -650,37 +650,37 @@
 
                             <RadioButton
                                 android:id="@+id/hfa1912a"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/hfa1912a" />
 
                             <RadioButton
                                 android:id="@+id/hfa1912b"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/hfa1912b" />
 
                             <RadioButton
                                 android:id="@+id/hfa1912c"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/hfa1912c" />
 
                             <RadioButton
                                 android:id="@+id/hfa1912d"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/hfa1912d" />
 
                             <RadioButton
                                 android:id="@+id/hfa1912e"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/hfa1912e" />
 
                             <RadioButton
                                 android:id="@+id/hfa191298"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/dkn" />
 
                             <RadioButton
                                 android:id="@+id/hfa191296"
-                                style="@style/radiobutton"
+                                style="@style/i_radiobutton"
                                 android:text="@string/other" />
 
                             <EditText
