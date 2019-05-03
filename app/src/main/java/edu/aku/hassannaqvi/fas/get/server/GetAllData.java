@@ -95,6 +95,15 @@ public class GetAllData extends AsyncTask<String, String, String> {
                         case "Clusters":
                             GetSyncFncs.syncClusters(mContext, jsonArray);
                             break;
+                        case "Ucs":
+                            GetSyncFncs.syncUcs(mContext, jsonArray);
+                            break;
+                        case "Districts":
+                            GetSyncFncs.syncDistricts(mContext, jsonArray);
+                            break;
+                        case "hfa":
+                            GetSyncFncs.syncHfa(mContext, jsonArray);
+                            break;
                     }
 
                     pd.setMessage("Received: " + jsonArray.length());

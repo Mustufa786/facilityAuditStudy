@@ -86,10 +86,9 @@
     <string name="hfa1101">مرکزِ صحت کا اسٹیڈی نمبر </string>
     <string name="hfa1102">مرکزِ صحت کا نام </string>
     <string name="hfa1103">مرکزِ صحت کس جگہ واقع ہے</string>
-    <string name="hfa1103a">ضلع/علاقہ/صوبہ      </string>
-    <string name="hfa1103b">ڈسٹرکٹ </string>
-    <string name="hfa1103c">تحصیل  </string>
-    <string name="hfa1103d">یونین کونسل</string>
+    <string name="hfa1103a">ڈسٹرکٹ </string>
+    <string name="hfa1103b">یونین کونسل</string>
+    <string name="hfa1103c">ہیلت فیسیلیٹی</string>
     <string name="hfa1103e">گاؤں </string>
     <string name="hfa1104">مرکزِ صحت کی قسم</string>
     <string name="hfa1104a">گورنمنٹ           </string>

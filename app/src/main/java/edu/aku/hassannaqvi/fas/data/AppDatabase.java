@@ -9,10 +9,13 @@ import edu.aku.hassannaqvi.fas.core.CONSTANTS;
 import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
 import edu.aku.hassannaqvi.fas.data.DAO.GetFncDAO;
 import edu.aku.hassannaqvi.fas.data.entities.Clusters;
+import edu.aku.hassannaqvi.fas.data.entities.Districts;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
+import edu.aku.hassannaqvi.fas.data.entities.HFA;
+import edu.aku.hassannaqvi.fas.data.entities.UCs;
 import edu.aku.hassannaqvi.fas.data.entities.Users;
 
-@Database(entities = {Forms.class, Clusters.class, Users.class}, version = CONSTANTS.DATABASE_VERSION, exportSchema = false)
+@Database(entities = {Forms.class, Clusters.class, Users.class, Districts.class, UCs.class, HFA.class}, version = CONSTANTS.DATABASE_VERSION, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
 
     /*@VisibleForTesting

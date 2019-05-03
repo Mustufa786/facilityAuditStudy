@@ -7,7 +7,10 @@ import java.util.List;
 
 import edu.aku.hassannaqvi.fas.core.CONSTANTS;
 import edu.aku.hassannaqvi.fas.data.entities.Clusters;
+import edu.aku.hassannaqvi.fas.data.entities.Districts;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
+import edu.aku.hassannaqvi.fas.data.entities.HFA;
+import edu.aku.hassannaqvi.fas.data.entities.UCs;
 import edu.aku.hassannaqvi.fas.data.entities.Users;
 
 @Dao
@@ -39,5 +42,19 @@ public interface GetFncDAO {
 
     @Query("SELECT * FROM " + CONSTANTS.TABLE_FORMS + " where participantID=:part_id and istatus = '1' and formType != '14' order by id DESC")
     Forms checkParticipantExist(String part_id);
+
+
+    /*
+    * Spinner Items
+    */
+
+    @Query("SELECT * FROM " + CONSTANTS.TABLE_DISTRICTS)
+    List<Districts> getAllDistricts();
+
+    @Query("SELECT * FROM " + CONSTANTS.TABLE_UCS + " where dist_code=:distCode")
+    List<UCs> getAllUcsByDistricts(String distCode);
+
+    @Query("SELECT * FROM " + CONSTANTS.TABLE_HFA + " where dist_code=:distCode and uc_code=:UcCode")
+    List<HFA> getAllHfaByDistrictUC(String distCode, String UcCode);
 
 }

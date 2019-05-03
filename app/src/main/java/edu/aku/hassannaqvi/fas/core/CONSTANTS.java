@@ -7,9 +7,15 @@ public interface CONSTANTS {
     String TABLE_FORMS = "forms";
     String TABLE_USERS = "users";
     String TABLE_CLUSTERS = "clusters";
+    String TABLE_DISTRICTS = "districts";
+    String TABLE_UCS = "ucs";
+    String TABLE_HFA = "hfa";
 
     String URL_USERS = "users.php";
     String URL_CLUSTERS = "clusters.php";
+    String URL_DISTRICTS = "districts.php";
+    String URL_UCS = "ucs.php";
+    String URL_HFA = "health_facilities.php";
     String URL_DEVICES = "devices.php";
     String URL_FORMS = "forms.php";
 

@@ -7,7 +7,10 @@ import android.arch.persistence.room.Update;
 
 import edu.aku.hassannaqvi.fas.core.CONSTANTS;
 import edu.aku.hassannaqvi.fas.data.entities.Clusters;
+import edu.aku.hassannaqvi.fas.data.entities.Districts;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
+import edu.aku.hassannaqvi.fas.data.entities.HFA;
+import edu.aku.hassannaqvi.fas.data.entities.UCs;
 import edu.aku.hassannaqvi.fas.data.entities.Users;
 
 @Dao
@@ -27,11 +30,29 @@ public interface FormsDAO {
     @Insert
     Long insertClusters(Clusters clusters);
 
+    @Insert
+    Long insertDistricts(Districts dist);
+
+    @Insert
+    Long insertHFA(HFA hfa);
+
+    @Insert
+    Long insertUcs(UCs uc);
+
     @Query("DELETE from " + CONSTANTS.TABLE_USERS)
     int deleteUsers();
 
     @Query("DELETE from " + CONSTANTS.TABLE_CLUSTERS)
     int deleteClusters();
+
+    @Query("DELETE from " + CONSTANTS.TABLE_UCS)
+    int deleteUCs();
+
+    @Query("DELETE from " + CONSTANTS.TABLE_HFA)
+    int deleteHfa();
+
+    @Query("DELETE from " + CONSTANTS.TABLE_DISTRICTS)
+    int deleteDistricts();
 
     /*Update methods after upload on server*/
 

@@ -44,7 +44,6 @@ public class SectionGActivity extends AppCompatActivity {
         String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_SURVEY_TYPE);
         if (!getSurvey.equals("0"))
             bi.hfa1700.check(bi.hfa1700.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
-
         bi.hfa17001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_HF_NO));
     }
 

@@ -51,6 +51,7 @@ public class InfoActivity extends AppCompatActivity {
 
     private void setContentUI() {
 
+
     }
 
     private Class<?> selectedForm(String fType) {

@@ -131,55 +131,38 @@
 
                     <LinearLayout style="@style/linerlayout_view">
 
+
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1103"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1103a" />
 
-                        <RadioGroup
-                            android:id="@+id/hfa1103"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                        <Spinner
+                            android:id="@+id/hfa1103a"
+                            style="@style/spinner">
 
-                            <RadioButton
-                                android:id="@+id/hfa1103a"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/hfa1103a" />
+                        </Spinner>
 
-                            <RadioButton
-                                android:id="@+id/hfa1103b"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/hfa1103b" />
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/hfa1103b" />
 
-                            <RadioButton
-                                android:id="@+id/hfa1103c"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/hfa1103c" />
+                        <Spinner
+                            android:id="@+id/hfa1103b"
+                            style="@style/spinner">
 
-                            <RadioButton
-                                android:id="@+id/hfa1103d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/hfa1103d" />
+                        </Spinner>
 
-                        </RadioGroup>
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/hfa1103c" />
+
+                        <Spinner
+                            android:id="@+id/hfa1103c"
+                            style="@style/spinner">
+
+                        </Spinner>
+
+
 
 
                     </LinearLayout>
