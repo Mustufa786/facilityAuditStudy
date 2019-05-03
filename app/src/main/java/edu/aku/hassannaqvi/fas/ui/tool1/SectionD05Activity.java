@@ -44,18 +44,26 @@ public class SectionD05Activity extends AppCompatActivity {
     }
 
     public void onRadioClickChanged(RadioGroup radioGroup, int id) {
-        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1485avc.getId())
-            bi.hfa1485bf.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1486avc.getId())
-            bi.hfa1486bf.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1487avc.getId())
-            bi.hfa1487bf.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1488avc.getId())
-            bi.hfa1488bf.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1489avc.getId())
-            bi.hfa1489bf.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1490avc.getId())
-            bi.hfa1490bf.clearCheck();
+        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1453avc.getId())
+            bi.hfa1453bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1454avc.getId())
+            bi.hfa1454bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1455avc.getId())
+            bi.hfa1455bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1456avc.getId())
+            bi.hfa1456bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1457avc.getId())
+            bi.hfa1457bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1458avc.getId())
+            bi.hfa1458bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1459avc.getId())
+            bi.hfa1459bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1460avc.getId())
+            bi.hfa1460bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1461avc.getId())
+            bi.hfa1461bf.clearCheck();
+        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1462avc.getId())
+            bi.hfa1462bf.clearCheck();
     }
 
 

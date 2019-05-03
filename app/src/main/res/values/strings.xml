@@ -211,127 +211,132 @@
     <string name="hfa14Heading02"> کیا اس مرکزِ صحت کے بلڈ بنک میں مندرجہ ذیل کے لیے اصولی طریقہ کار دستیاب ہیں؟</string>
     <string name="hfa14Heading02a">Are the following documents available in the facility today? \n IF AVAILABLE ASK TO SEE THE DOCUMENT</string>
     <string name="hfa14Heading03">برائے کرم مجھے بتائیے کیا مندرجہ ذیل آلات جو ڈیلیوری کے لیے استعمال ہوتے ہیں آج مرکزِ صحت  پر موجود ہیں اور فعال ہیں؟ </string>
+
     <string name="hfa1401"> تمام خواتین میں زچگی کے فوراً بعد زیادہ خون بہہ جانے کی روک تھام کے عمل کے لیے انجیکشن آکسیٹوسن کا استعمال کیا </string>
 
     <string name="hfa1402"> پارٹو گرام کے ذریعہ سے لیبر کی نگرانی اور انتظام </string>
 
-    <string name="hfa1403"> پیدائش کے فوراً بعد بچے کو فوری اور خصوصی ماں کا دودھ پلانا </string>
+    <string name="hfa1403"> پیدائش کے فوراً بعد بچے کو فوری طور پر ماں کا دودھ پلانا </string>
 
-    <string name="hfa1404"> مرکزِ صحت پر حفظان صحت کے مطابق آنول نال کی دیکھ بھال (جراثیم سے پاک آلات کا استعمال) </string>
+    <string name="hfa1404"> پیدائش کے بعد بچے کو چھ ماہ تک صرف اور صرف ماں کا دودھ پلانا </string>
 
-    <string name="hfa1405"> مرکزِ صحت پر بچے کے درجہ حرارت کا تحفظ (پیدائش کے فوراً بعد بچے کو خشک کرنا) </string>
+    <string name="hfa1405"> مرکزِ صحت پر حفظان صحت کے مطابق آنول نال کی دیکھ بھال (جراثیم سے پاک آلات کا استعمال) </string>
 
-    <string name="hfa1406"> مرکزِ صحت پر درجہ حرارت کا تحفظ (پیدائش کے بعد 6 گھنٹے تک پہلے غسل میں تاخیر) </string>
+    <string name="hfa1406"> مرکزِ صحت پر بچے کے درجہ حرارت کا تحفظ (پیدائش کے فوراً بعد بچے کو خشک کرنا) </string>
 
-    <string name="hfa1407"> حاملہ کے لیے اینٹی بائیوٹیکس (آئی وی یا آئی ایم انجکشن) کا انتظام </string>
+    <string name="hfa1407"> مرکزِ صحت پر درجہ حرارت کا تحفظ (پیدائش کے بعد 6 گھنٹے تک پہلا غسل نہ دینا) </string>
 
-    <string name="hfa1408"> زچگی کے فوراً بعد زیادہ خون بہہ جانے کی روک تھام کے عمل کے لیے آکسیٹوسن کا علاج کے لیے انتظام (آئی وی یاآئی ایم انجکشن) </string>
+    <string name="hfa1408"> حاملہ کے لیے اینٹی بائیوٹیکس (آئی وی یا آئی ایم انجکشن) کا انتظام </string>
 
-    <string name="hfa1409"> حاملہ کے لیے پری-ایکیلیمسیا/ ایکیلیمسیا کی روک تھام کے لیے میگنیشم سلفیٹ (آئی وی یا آئی ایم ) کا انتظام </string>
+    <string name="hfa1409"> زچگی کے فوراً بعد زیادہ خون بہہ جانے کی روک تھام کے عمل کے لیے آکسیٹوسن کا علاج کے لیے انتظام (آئی وی یاآئی ایم انجکشن) </string>
 
-    <string name="hfa1410"> اوزار کی مدد سے زچگی </string>
+    <string name="hfa1410"> حاملہ کے لیے پری-ایکیلیمسیا/ ایکیلیمسیا کی روک تھام کے لیے میگنیشم سلفیٹ (آئی وی یا آئی ایم ) کا انتظام </string>
 
-    <string name="hfa1411"> پلاسینٹہ کو ہاتھوں سے نکالنا </string>
+    <string name="hfa1411"> اوزار کی مدد سے زچگی </string>
 
-    <string name="hfa1412"> حمل کے باقیات کی صفائی/ نکالنا </string>
+    <string name="hfa1412"> پلاسینٹہ کو ہاتھوں سے نکالنا </string>
 
-    <string name="hfa1413"> نوازائیدہ بچے کی زندگی کو بچانے کے لیے ایمبوبیگ اور ماسک کا استعمال </string>
+    <string name="hfa1413"> حمل کے باقیات کی صفائی/ نکالنا </string>
 
-    <string name="hfa1414"> بڑا آپریشن (سی سیکشن) </string>
+    <string name="hfa1414"> نوازائیدہ بچے کی زندگی کو بچانے کے لیے ایمبوبیگ اور ماسک کا استعمال </string>
+    <string name="hfa1415"> بڑا آپریشن (سی سیکشن) </string>
 
-    <string name="hfa1415"> انتقال خون </string>
+    <string name="hfa1416"> انتقال خون کی سہولت موجود ہے؟ </string>
 
-    <string name="hfa1416"> کیا اس مرکزِ صحت میں بلڈبنک کی سہولت موجود ہیں؟ </string>
+    <string name="hfa1417"> کیا اس مرکزِ صحت میں بلڈبنک صحیح طریقے سے کام رہا ہے؟ </string>
 
-    <string name="hfa1417"> اگر ہاں، تو مرکزِ صحت میں استعمال ہونے والے خون کے اہم ذرائع کیاہیں؟ </string>
-    <string name="hfa1417a"> مرکزِ صحت کا بلڈ بنک </string>
-    <string name="hfa1417b"> این جی او کا بلڈ بنک </string>
-    <string name="hfa1417c"> پرائیوٹ بلڈ بنک </string>
-    <string name="hfa1417d"> نامعلوم ذریعہ </string>
-    <string name="hfa1417e"> دیگر وضاحت کریں </string>
-    <string name="hfa1418"> کیا مریضوں کے لئے عطیہ خون کی کوئی پالیسی ہے؟ </string>
-    <string name="hfa1419"> اگر ہاں، توعطیہ خون کی پہلی ترجیح کیا ہے؟ </string>
-    <string name="hfa1419a"> خاندان یا خاندان کا متبادل ڈونر </string>
-    <string name="hfa1419b"> فری فراہم کرنے والا ڈونر </string>
-    <string name="hfa1419c"> پیشہ ور ڈونر </string>
-    <string name="hfa1420"> اگر ایک سے زیادہ ہوں توعطیہ خون کی دوسری ترجیح کیا ہے؟ </string>
-    <string name="hfa1420a"> خاندان یا خاندان کا متبادل ڈونر </string>
-    <string name="hfa1420b"> فری فراہم کرنے والا ڈونر </string>
-    <string name="hfa1420c"> پیشہ ور ڈونر </string>
-    <string name="hfa1421"> اگر دو سے زیادہ ہوں توعطیہ خون کی تیسرے ترجیح کیا ہے؟ </string>
-    <string name="hfa1421a"> خاندان یا خاندان کا متبادل ڈونر </string>
-    <string name="hfa1421b"> فری فراہم کرنے والا ڈونر </string>
-    <string name="hfa1421c"> پیشہ ور ڈونر </string>
-    <string name="hfa1422"> ڈونررجسثریشن </string>
-    <string name="hfa1423"> خون کا نمونہ لینے کے لیے </string>
-    <string name="hfa1424"> خون کا گروپ اور ملاپ </string>
-    <string name="hfa1425"> ایچ آئی وی / ایچ بی وی / ایچ سی وی کے لئے خون کی اسکریننگ </string>
-    <string name="hfa1426"> ڈونر سے خون لینے کا اصولی طریقہ کار </string>
-    <string name="hfa1427"> خون کی لیبلنگ/ خون کی مصنوعات کی اسٹوریج </string>
-    <string name="hfa1428"> انفیکشن کی روک تھام کے لیے پریٹرم یا طویل پروم(جھلیوں کا وقت سے پہلے ٹوٹ جانا ) کے لیے اینٹی بائیوٹیکس </string>
-    <string name="hfa1429"> وقت سے پہلےشروع ہونے والے بچے کی پیدائش کے درد میں کورٹیکو اسٹیرائڈ کا استعمال </string>
-    <string name="hfa1430"> کے ایم سی ( ماں اور بچے کا جلد سے جلد کا رابط) قبل از وقت پیدائش یا پیدائش کے وقت کم وزن بچوں کے لیے </string>
-    <string name="hfa1431"> نوزائیدہ سیپسس کے لیے اینٹی بائیوٹِکس انجکشن کا استعمال </string>
-    <string name="hfa1432"> پیدائش کے وقت بچے کی دیکھ بھال کے لیے قومی سطح پر موجود ہدایات کا استعمال </string>
-    <string name="hfa1433"> پیدائش کے وقت بچے کی دیکھ بھال کے لیےضروری چیک لسٹ (ہدایات کی فہرست) </string>
-    <string name="hfa1434"> نوزائیدہ بچوں کی دیکھ بھال کی قومی سطح پر موجود ہدایات کی فہرست کا استعمال </string>
-    <string name="hfa1435"> بنیادی ہنگامی بچے کی پیدائش اور نوزائیدہ کی دیکھ بھال کے لیے قومی سطح پر موجود ہدایات کی فہرست ( نیشنل گائیڈ لائن) </string>
-    <string name="hfa1436"> اجزاء کی تیاری </string>
-    <string name="hfa1437"> وصول کنندہ کا رجسٹریشن </string>
-    <string name="hfa1438"> فضلے کی تلفی </string>
+    <string name="hfa1418"> انفیکشن کی روک تھام کے لیے پریٹرم یا طویل پروم(بچہ دانی کا وقت سے پہلے پھٹ جانا) کے لیے اینٹی بائیوٹیکس </string>
 
-    <string name="hfa1439av"> معائنے کے لیے فلش لائٹ </string>
-    <string name="hfa1440av"> ناف باندھنے کےلئے کلیمپ کورڈ کلیم </string>
-    <string name="hfa1441av"> ایپی زیاٹومی سیزر( فرج شگافی قینچی) </string>
-    <string name="hfa1442av"> ناف کو کاٹنے کے لیے قینچی یا بلیڈ </string>
-    <string name="hfa1443av"> ٹانکے لگانے کے لیے جراحی سوئی دھاگہ </string>
-    <string name="hfa1444av"> جراحی سوئی ہولڈر </string>
-    <string name="hfa1445av"> مینول و یکیوم ایکس ٹریکٹر </string>
-    <string name="hfa1446av"> ویکیوم ایسپیر یٹراینڈ سی کٹ </string>
-    <string name="hfa1447av"> انکیوبیٹر </string>
-    <string name="hfa1448av"> صاف لیکٹس دستانے (ڈسپوزایبل) </string>
-    <string name="hfa1449av"> خالی پارٹو گراف </string>
-    <string name="hfa1450av"> ڈیلیوری بیڈ </string>
-    <string name="hfa1451av"> نوازئیدہ بچے کو ہوش میں لانے کے لیے ریسیسیٹیشن ٹیبل کا استعمال ہیٹ سورس کے ساتھ </string>
-    <string name="hfa1452av"> نوازئیدہ بچوں کی ریسیسیٹیشن کے لیے ایک نمبر سائزکا بیگ اور ماسک </string>
-    <string name="hfa1453av"> نوازئیدہ بچوں کی ریسیسیٹیشن کے لیے صفر نمبر سائزکا بیگ اور ماسک </string>
-    <string name="hfa1454av"> الیکٹرک سکشن پمپ (سیکشن کے آلات) </string>
-    <string name="hfa1455av"> سیکشن کیتیھٹر نوازئیدہ بچوں کی سیکشن کے لیے </string>
-    <string name="hfa1456av"> سکشن بلب ایک بار استعمال کے لیے </string>
-    <string name="hfa1457av"> جراثیم سے پاک سکشن بلب ایک سے زائد بار استعمال کے لیے </string>
-    <string name="hfa1458av"> اسپیکیولم </string>
-    <string name="hfa1459av"> شیر خوار بچہ کا وزن کرنے کی مشین </string>
-    <string name="hfa1460av"> فشار خون (بلڈ پریشر) چیک کرنے کے لیے ڈیجیٹل یا مینول مشین اسٹیتھو اسکوپ کے ساتھ </string>
-    <string name="hfa1461av"> صاف ستھرا استعمال کا پانی (پائپ نل بالٹی اور باروچی خانہ ) </string>
-    <string name="hfa1462av"> ہاتھ دھونے کے لیے مائع صابن اور صابن </string>
-    <string name="hfa1463av"> فیٹو اسکوپ </string>
-    <string name="hfa1464av"> ڈوپٹون یا جنین کی نگرانی </string>
-    <string name="hfa1465av"> الٹرا ساؤنڈ مشین </string>
-    <string name="hfa1466av"> 5ملی لیٹر والی ڈسپوزایبل سرنج </string>
-    <string name="hfa1467av"> 2.5ملی لیٹر والی ڈسپوزایبل سرنج </string>
-    <string name="hfa1468av"> 24 جی والی باٹر فلائی انجکشن </string>
-    <string name="hfa1469av"> 23 جی والی باٹر فلائی انجکشن </string>
-    <string name="hfa1470av"> 18جی کا آئی/ وی کینولہ </string>
-    <string name="hfa1471av"> 20 جی کا آئی/ وی کینولہ </string>
-    <string name="hfa1472av"> 22 جی کا آئی/ وی کینولہ </string>
-    <string name="hfa1473av"> غیراستعمال صاف دستانے(ڈسپوزیبل) </string>
-    <string name="hfa1474av"> خون ذخیرہ کرنے کی الماری </string>
-    <string name="hfa1475av"> خون شیکر </string>
-    <string name="hfa1476av"> لیب سنٹروفیوج مشین </string>
-    <string name="hfa1477av"> عام لیب ریفریجریٹر </string>
-    <string name="hfa1478av"> غسل خانہ </string>
-    <string name="hfa1479av"> مائیکرواسکوپ </string>
-    <string name="hfa1480av"> انکیوبیٹر </string>
-    <string name="hfa1481av"> سرنج کٹر </string>
-    <string name="hfa1482av"> یو پی ایس </string>
-    <string name="hfa1483av"> جنریٹر </string>
-    <string name="hfa1484av"> سینٹروفیجوج مشین </string>
-    <string name="hfa1485av"> اپہیرسس مشین </string>
-    <string name="hfa1486av"> پلازما فریزر </string>
-    <string name="hfa1487av"> پلازما ایکسٹریکٹر </string>
-    <string name="hfa1488av"> ایلسا ریڈر </string>
-    <string name="hfa1489av"> ایلسا واشر </string>
-    <string name="hfa1490av"> پلیٹیٹ ایجیٹیٹر </string>
+    <string name="hfa1419"> وقت سے پہلےشروع ہونے والے بچے کی پیدائش کے درد میں کورٹیزون کا استعمال </string>
+
+    <string name="hfa1420"> کے ایم سی ( ماں اور بچے کا جلد سے جلد کا رابط) قبل از وقت پیدائش یا پیدائش کے وقت اور کم وزن بچوں کے لیے </string>
+
+    <string name="hfa1421"> نوزائیدہ سیپسس کے لیے اینٹی بائیوٹِکس انجکشن کا استعمال </string>
+
+    <string name="hfa1422"> پیدائش کے وقت بچے کی دیکھ بھال کے لیے قومی سطح پر موجود ہدایات کا استعمال </string>
+
+    <string name="hfa1423"> پیدائش کے وقت بچے کی دیکھ بھال کے لیےضروری چیک لسٹ (ہدایات کی فہرست) </string>
+
+    <string name="hfa1424"> نوزائیدہ بچوں کی دیکھ بھال کی قومی سطح پر موجود ہدایات کی فہرست کا استعمال </string>
+
+    <string name="hfa1425"> بنیادی اور ہنگامی بچے کی پیدائش اور نوزائیدہ کی دیکھ بھال کے لیے قومی سطح پر موجود ہدایات کی فہرست ( نیشنل گائیڈ لائن) </string>
+
+
+    <string name="hfa1426av"> معائنے کے لیے فلش لائٹ </string>
+
+    <string name="hfa1427av"> ناف باندھنے کےلئے کلیمپ کورڈ کلیم </string>
+
+    <string name="hfa1428av"> ایپی زیاٹومی سیزر( فرج شگافی قینچی) </string>
+
+    <string name="hfa1429av"> ناف کو کاٹنے کے لیے قینچی یا بلیڈ </string>
+
+    <string name="hfa1430av"> ٹانکے لگانے کے لیے جراحی سوئی دھاگہ </string>
+
+    <string name="hfa1431av"> جراحی سوئی ہولڈر </string>
+
+    <string name="hfa1432av"> مینول ویکیوم ایکسٹرریکٹر </string>
+
+
+    <string name="hfa1433av"> ویکیوم اسپیریٹریا ڈی اینڈ سی کٹ </string>
+
+    <string name="hfa1434av"> انکیوبیٹر </string>
+
+    <string name="hfa1435av"> صاف لیٹکس د ستانے (ڈسپوزایبل) </string>
+
+    <string name="hfa1436av"> خالی پارٹو گراف </string>
+
+    <string name="hfa1437av"> ڈیلیوری بیڈ </string>
+
+    <string name="hfa1438av"> نوازئیدہ بچے کو ہوش میں لانے کے لیے ریسیسیٹیشن ٹیبل کا استعمال ہیٹ سورس کے ساتھ </string>
+
+    <string name="hfa1439av"> نوازئیدہ بچوں کی ریسیسیٹیشن کے لیے ایک نمبر سائزکا بیگ اور ماسک </string>
+
+    <string name="hfa1440av"> نوازئیدہ بچوں کی ریسیسیٹیشن کے لیے صفر نمبر سائزکا بیگ اور ماسک </string>
+
+    <string name="hfa1441av"> ایلکٹریک سکشن پمپ (سکشن کے آلات) </string>
+
+    <string name="hfa1442av"> سکشن کیتیھٹر نوازئیدہ بچوں کی سکشن کے لیے </string>
+
+    <string name="hfa1443av"> سکشن بلب ایک بار استعمال کے لیے </string>
+
+    <string name="hfa1444av"> جراثیم سے پاک سکشن بلب ایک سے زائد بار استعمال کے لیے </string>
+
+    <string name="hfa1445av"> اسپیکیولم </string>
+
+    <string name="hfa1446av"> شیرخوار بچے کی وزن کی مشین </string>
+
+    <string name="hfa1447av"> فشار خون (بلڈ پریشر) چیک کرنے کے لیے ڈیجیٹل یا مینول مشین اسٹیتھو اسکوپ کے ساتھ </string>
+
+    <string name="hfa1448av"> صاف ستھرا استعمال کا پانی (پائپ نل بالٹی اور باروچی خانہ ) </string>
+
+    <string name="hfa1449av"> ہاتھ دھونے کے لیے مائع صابن اور صابن </string>
+
+    <string name="hfa1450av"> فیٹو اسکوپ </string>
+
+    <string name="hfa1451av"> ڈیپٹون یا جنین کی نگرانی </string>
+
+    <string name="hfa1452av"> الٹرا ساؤنڈ مشین </string>
+
+    <string name="hfa1453av"> 5 ملی لیٹر ڈسپوزایبل سرنج </string>
+
+    <string name="hfa1454av"> 2.5 ملی لیٹر ڈسپوزایبل سرنج </string>
+
+    <string name="hfa1455av"> 24 جی بٹر فلائی انجکشن </string>
+
+    <string name="hfa1456av"> 23 جی بٹر فلائی انجکشن </string>
+
+    <string name="hfa1457av"> 18جی کا آئی/ وی کینولہ </string>
+
+    <string name="hfa1458av"> 20 جی آئی/ وی کینولہ </string>
+
+    <string name="hfa1459av"> 22 جی آئی/ وی کینولہ </string>
+
+    <string name="hfa1460av"> غیراستعمال شدہ صاف دستانے(ڈسپوزیبل) </string>
+
+    <string name="hfa1461av"> یو پی ایس </string>
+
+    <string name="hfa1462av"> جنریٹر </string>
+
 
     <!--Section E-->
     <string name="hfa1501">کیا اس جگہ  پر زچہ و بچہ کی نگہداشت /دیکھ بھال کے ادویات اور دوسری سہولیات میسر ہیں؟</string>
@@ -368,101 +373,105 @@
     <!--Section G-->
     <string name="hfa1701"> مرد جنرل پریکٹیشنرز(غیر ماہر طبی ڈاکٹروں کی تعداد) </string>
     <string name="hfa1702"> خواتین جنرل پریکٹیشنرز(غیر ماہر طبی ڈاکٹروں کی تعداد) </string>
-    <string name="hfa1703"> ماہر میڈیکل مرد ڈاکٹر </string>
-    <string name="hfa1704"> ماہر میڈیکل خاتون ڈاکٹر </string>
+    <string name="hfa1703"> ماہر میڈیکل مرد ڈاکٹروں کی تعداد </string>
+    <string name="hfa1704"> ماہر میڈیکل خاتون ڈاکٹروں کی تعداد </string>
     <string name="hfa1705"> مرد نرسنگ پروفیشنلز </string>
     <string name="hfa1706"> خاتون نرسنگ پروفیشنلز </string>
     <string name="hfa1707"> پیشہ ورانہ مرد مڈوائف </string>
     <string name="hfa1708"> پیشہ ورانہ خاتون مڈوائف </string>
-    <string name="hfa1709">مرد کمیونٹی ہیلتھ ورکرز </string>
-    <string name="hfa1710"> خاتون کمیونٹی ہیلتھ ورکرز </string>
-    <string name="hfa1711"> لیڈی ہیلتھ وزیٹر </string>
+    <string name="hfa1709"> خاتون لیڈی ہیلتھ ورکرز </string>
+    <string name="hfa1710"> لیڈی ہیلتھ وزیٹر </string>
+    <string name="hfa1711"> لیڈی ہیلتھ سپروائزر </string>
     <string name="hfa1712"> مرد دیگر (وضاحت) </string>
     <string name="hfa1713"> خاتون دیگر (وضاحت) </string>
 
     <!--Section H-->
-    <string name="hfa1801"> کیا آپکی مرکزِ صحت کی اسٹاف میٹنگ باقاعدگی سے ہوتی ہیں؟ </string>
-    <string name="hfa1802"> گر ہاں تو کتنی دفعہ؟ </string>
+    <string name="hfa1801"> کیا مرکزِ صحت کی اسٹاف میٹنگ باقاعدگی سے ہوتی ہیں؟ </string>
+
+
+    <string name="hfa1802"> کتنی دفعہ ہوتی ہیں؟ </string>
     <string name="hfa1802a"> ہر دن </string>
     <string name="hfa1802b"> ہفتہ وار </string>
     <string name="hfa1802c"> مہینہ وار </string>
     <string name="hfa1802d"> ہر چار مہینے بعد </string>
     <string name="hfa1802e"> ضرورت پڑنے پر </string>
+    <string name="hfa1802f"> معلوم نہیں </string>
+    <string name="hfa1802g"> دیگر وضاحت </string>
+
     <string name="hfa1803"> کیا اس علاقے میں کمیونٹی کی سطح پرصحت سے متعلق میٹنگ ہوتی ہیں؟ </string>
-    <string name="hfa1804"> اگر ہاں تو کتنی دفعہ یہ منعقد ہوتی ہیں؟ </string>
+
+    <string name="hfa1804"> کتنی دفعہ یہ منعقد ہوتی ہیں؟ </string>
     <string name="hfa1804a"> ہر دن </string>
     <string name="hfa1804b"> ہفتہ وار </string>
     <string name="hfa1804c"> مہینہ وار </string>
     <string name="hfa1804d"> ہر چار مہینے بعد </string>
     <string name="hfa1804e"> ضرورت پڑنے پر </string>
-    <string name="hfa1805"> اگر ہاں توکیا آپ شامل ہوتے/ہوتی ہیں؟ </string>
+    <string name="hfa1804f"> معلوم نہیں </string>
+
+    <string name="hfa1805"> کیا آپ شامل ہوتے/ہوتی ہیں؟ </string>
+
     <string name="hfa1806"> اور کون ان کمیونٹی سطح پرصحت سے متعلق میٹنگ میں شامل ہوتا/ہوتی ہیں؟ </string>
     <string name="hfa1806a"> خواتین تنظیم کی کوئی ممبر </string>
     <string name="hfa1806b"> لیڈی ہیلتھ وزٹر </string>
     <string name="hfa1806c"> کمیونٹی مڈوائف </string>
-    <string name="hfa1806d"> Social Activist  </string>
-    <string name="hfa1806e"> Village elder </string>
-    <string name="hfa1807"> کیا یہ مرکزِ صحت خواتین اورنوزائیدہ کی اموات سے متعلق جانچ پڑتال کرتی ہے؟ </string>
-    <string name="hfa1808"> اگر ہاں، تو کتنی بار؟ </string>
+
+
+    <string name="hfa1806e"> معلوم نہیں </string>
+    <string name="hfa1806g"> دیگر وضاحت </string>
+
+    <string name="hfa1807"> کیا یہ مرکزِ صحت خواتین اورنوزائیدہ کی اموات سے متعلق جانچ پڑتال کی میٹنگ کرتی ہے؟ </string>
+
+    <string name="hfa1808"> تو کتنی بار؟ </string>
     <string name="hfa1808a"> ہر دن </string>
     <string name="hfa1808b"> ہفتہ وار </string>
     <string name="hfa1808c"> مہینہ وار </string>
     <string name="hfa1808d"> ہر چار مہینے بعد </string>
     <string name="hfa1808e"> ضرورت پڑنے پر </string>
-    <string name="hfa1809"> گر ہاں تو کون خواتین اورنوزائیدہ کی اموات سے متعلق جانچ پڑتال کی میٹنگ میں شرکت کرتا/کرتی ہے؟ </string>
+    <string name="hfa1808f"> معلوم نہیں </string>
+    <string name="hfa1808g"> دیگر وضاحت </string>
+
+    <string name="hfa1809"> کون خواتین اورنوزائیدہ کی اموات سے متعلق جانچ پڑتال کی میٹنگ میں شرکت کرتا/کرتی ہے؟ </string>
     <string name="hfa1809a"> میڈیکل سپرنٹنڈنٹ </string>
     <string name="hfa1809b"> ماہر میڈیکل ڈاکٹر </string>
     <string name="hfa1809c"> نرس </string>
     <string name="hfa1809d"> لیڈی ہیلتھ وزٹر </string>
     <string name="hfa1809e"> کمیونٹی مڈوائف </string>
+    <string name="hfa1809f"> معلوم نہیں </string>
+    <string name="hfa1809g"> دیگر وضاحت </string>
+
 
     <!--Section I-->
-    <string name="hfa1901"> کیا آپ کے علاقے میں کام کرنے والے دیگر صحت کے مراکز/ کلینک (گورنمنٹ یا نجی) سے ریفررل کیسسز کے وصولی کے لئے ایک رسمی نظام موجود ہے؟ </string>
-    <string name="hfa1902"> گر ہاں، رسمی ریفرل نظام کا پہلا قسم کیا ہے؟ </string>
-    <string name="hfa1902a"> رسمی / معاہدے کا انتظام </string>
-    <string name="hfa1902b"> غیررسمی مفاہمت </string>
-    <string name="hfa1902c"> خریدوفروخت کی حکمت عملی / طریقہ کار </string>
-    <string name="hfa1902d"> انفرادی کنسلٹنٹس کے ریفرل تعلقات </string>
+    <string name="hfa1901"> کیا اس مرکزصحت میں ریفر کیےگئے کیسسز کے لئے مخصوص انتظام موجود ہے؟ </string>
+    <string name="hfa1902"> کہاں سے یہ کیسسز موصول ہوتے ہیں؟ </string>
+    <string name="hfa1902a"> بی ایچ یو </string>
+    <string name="hfa1902b"> آر ایچ سی </string>
+    <string name="hfa1902c"> ٹی ایچ کیو </string>
+    <string name="hfa1902d"> اے کے ایچ ایس پی </string>
+    <string name="hfa1902e"> معلوم نہیں </string>
+    <string name="hfa1902f"> دیگر وضاحت </string>
     <string name="hfa1903"> اگر ایک سے زیادہ اقسام ہیں تو رسمی ریفرل نظام کا دوسرا قسم کیا ہے؟ </string>
     <string name="hfa1903a"> رسمی / معاہدے کا انتظام </string>
     <string name="hfa1903b"> غیررسمی مفاہمت </string>
     <string name="hfa1903c"> خریدوفروخت کی حکمت عملی / طریقہ کار </string>
     <string name="hfa1903d"> انفرادی کنسلٹنٹس کے ریفرل تعلقات </string>
-    <string name="hfa1904"> اگر ایک سے زیادہ اقسام ہیں تو رسمی ریفرل نظام کا تیسرا قسم کیا ہے؟ </string>
-    <string name="hfa1904a"> رسمی / معاہدے کا انتظام </string>
-    <string name="hfa1904b"> غیررسمی مفاہمت </string>
-    <string name="hfa1904c"> خریدوفروخت کی حکمت عملی / طریقہ کار </string>
-    <string name="hfa1904d"> انفرادی کنسلٹنٹس کے ریفرل تعلقات </string>
-    <string name="hfa1905"> یا آپ کی مرکزِ صحت کیسسز کو دیگر مراکزِ صحت ریفرکرتی ہے ؟ </string>
-    <string name="hfa1906"> اگر ہاں، تو دوسرے مراکزِ صحت میں کیسسز ریفرل کرنے کا کیا طریقہ کار ہے؟ </string>
-    <string name="hfa1906a"> مریضوں کے ساتھ زبانی کالامی </string>
-    <string name="hfa1906b"> لکھ کر دیتے ہیں لیکن ریکارڈ رکھتے ہیں </string>
+    <string name="hfa1903e"> معلوم نہیں </string>
+    <string name="hfa1903f"> دیگر وضاحت </string>
+    <string name="hfa1904"> جو کیس یہاں ریفر کرتے ہیں ان کے بارے میں ریفر کرنے والے ہسپتال سے آپکو معلومات بھی فراہم کرتے ہیں؟ </string>
+    <string name="hfa1904a"> ہمیشہ </string>
+    <string name="hfa1904b"> زیادہ تر </string>
+    <string name="hfa1904c"> کبھی کبھی </string>
+    <string name="hfa1904d"> کبھی نہیں </string>
+    <string name="hfa1904e"> معلوم نہیں </string>
+    <string name="hfa1905"> کیا آپ کی مرکزِ صحت کیسسز کو دیگر مراکزِ صحت ریفرکرتی ہے ؟ </string>
+    <string name="hfa1906"> آپ کیسسز کہاں ریفر کرتے ہیں؟ </string>
+    <string name="hfa1906a"> گورنمنٹ ہسپتال </string>
+    <string name="hfa1906b"> اے کے ایچ پی ہسپتال </string>
     <string name="hfa1906c"> ریفر کرتے ہیں اور تمام ریفرل کا ریکارڑ رکھتے ہیں </string>
-    <string name="hfa1906d"> کوئی مخصوص پالیسی / طریقہ کار نہیں </string>
-    <string name="hfa1907"> کیا آپ اس بندے/مرکز صحت کو رائے اورہدایات فراہم کرتے ہیں جو کیس یہاں ریفر کرتے ہیں؟ </string>
-    <string name="hfa1907a"> ہمیشہ </string>
-    <string name="hfa1907b"> زیادہ تر </string>
-    <string name="hfa1907c"> کبھی کبھی </string>
-    <string name="hfa1907d"> کبھی نہیں </string>
-    <string name="hfa1908"> کیا آپ اس بندے/مرکز صحت سے رائے اورہدایات حاصل کرتے ہیں جہاں آپ کیس کے انتظام کے لئے ریفر کرتے ہیں؟ </string>
-    <string name="hfa1908a"> ہمیشہ </string>
-    <string name="hfa1908b"> زیادہ تر </string>
-    <string name="hfa1908c"> کبھی کبھی </string>
-    <string name="hfa1908d"> کبھی نہیں </string>
-    <string name="hfa1909"> کیا آپ کیسسز کونجی شعبے کے مراکزِ صحت کو ریفرکرتے ہیں؟ </string>
-    <string name="hfa1910"> آپ کیوں کیسسز کونجی شعبے کے مراکزِ صحت کو ریفرکرتے ہیں؟( بتائے گئے تمام جوابات کا انتخاب کرے) </string>
-    <string name="hfa1910a"> جب مرکزِصحت میں کیس کے انتظام کے لئے صلاحیت/مہارت نہیں ہو </string>
-    <string name="hfa1910b"> مریض یا تیماردار نجی شعبے میں بھجنے کے لئے درخواست کی ہو </string>
-    <string name="hfa1910c"> مرکزِ صحت مریضوں سے بھرا ہو اور مریض انتظار نہیں کرنا چاہتا ہو </string>
-    <string name="hfa1910d"> مریض کی حالت سنگین ہو اور سروس کی فراہمی خطرناک ہو </string>
-    <string name="hfa1911"> کیا آپ نجی شعبے کے مراکزِ صحت سے ریفر کیے گئے کیسسزکو قبول کرتے ہیں؟ </string>
-    <string name="hfa1912"> آپ نجی شعبے سے ریفر کیے گئے کیسسزکوکیوں قبول کرتے ہیں؟( بتائے گئے تمام جوابات کا انتخاب کرے) </string>
-    <string name="hfa1912a"> انسانی بنیادوں پر </string>
-    <string name="hfa1912b"> ہم لوگوں کو خدمات سے انکار نہیں کر سکتے ہیں </string>
-    <string name="hfa1912c"> مریض ہسپتال کی آمدنی کا ایک ذریعہ ہیں </string>
-    <string name="hfa1912d"> ہم نجی شعبے کے ساتھ اسٹاف کے وسائل کا حصہ ہیں </string>
-    <string name="hfa1912e"> ہمارے نجی شعبے کے ساتھ انتظامات ہیں </string>
-    <string name="hfa1912f"> کوئی خاص وجہ نہیں </string>
+    <string name="hfa1906d"> دیگر وضاحت </string>
+    <string name="hfa1907"> جو کیس آپ ریفر کرتے ہیں ان کے بارے میں آپ ریفر کرنے والے ہسپتال کو معلومات فراہم کرتے ہیں؟ </string>
+    <string name="hfa1907a"> ہاں </string>
+    <string name="hfa1907b"> نہیں </string>
+    <string name="hfa1907c"> معلوم نہیں </string>
 
     <!--Tool 2-->
     <!--Section A-->

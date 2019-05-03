@@ -92,11 +92,7 @@ public class SectionIActivity extends AppCompatActivity {
         if (radioGroup.getCheckedRadioButtonId() != bi.hfa1905a.getId())
             ClearClass.ClearAllFields(bi.fldGrpllSecI02, null);
 
-        if (radioGroup.getCheckedRadioButtonId() != bi.hfa1909a.getId())
-            bi.hfa1910.clearCheck();
 
-        if (radioGroup.getCheckedRadioButtonId() != bi.hfa1911a.getId())
-            bi.hfa1912.clearCheck();
 
     }
 }

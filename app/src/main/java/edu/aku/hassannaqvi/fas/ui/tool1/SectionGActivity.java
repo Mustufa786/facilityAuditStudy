@@ -18,6 +18,7 @@ import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
 import edu.aku.hassannaqvi.fas.databinding.ActivitySectionGBinding;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
+import edu.aku.hassannaqvi.fas.validation.ClearClass;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
 public class SectionGActivity extends AppCompatActivity {
@@ -39,6 +40,7 @@ public class SectionGActivity extends AppCompatActivity {
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
 
+        ClearClass.ClearAllFields(bi.hfa1700, false);
         String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_SURVEY_TYPE);
         if (!getSurvey.equals("0"))
             bi.hfa1700.check(bi.hfa1700.getChildAt(Integer.valueOf(getSurvey) - 1).getId());

@@ -416,7 +416,6 @@
 
                 </android.support.v7.widget.CardView>
 
-
                 <!--hfa1713-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
@@ -436,12 +435,14 @@
                             android:id="@+id/hfa1713"
                             style="@style/textInput"
 
+
                             />
 
 
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
+
 
 
             </LinearLayout>
