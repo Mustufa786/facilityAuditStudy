@@ -33,23 +33,14 @@ public class MainApp extends Application {
     public static final String _IP = "43.245.131.159"; // Test PHP server
     //    public static final String _IP = "f49461"; // Test PHP server
     public static final Integer _PORT = 8080; // Port - with colon (:)
-    public static final String _HOST_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/fas/api/";
+    public static final String _HOST_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/hfagb/api/";
     // public static final String TEST_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/leapsup/api/";
 
     //    public static final String _UPDATE_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/wfp_recruit_form/app/app-debug.apk";
-    public static final String _UPDATE_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/fas/app/app-debug.apk";
+    public static final String _UPDATE_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/hfagb/app/app-debug.apk";
 
     public static final Integer MONTHS_LIMIT = 11;
     public static final Integer DAYS_LIMIT = 29;
-    public static final String FORM01A = "1a";
-    public static final String FORM01B = "1b";
-    public static final String FORM04 = "4";
-    public static final String FORM05 = "5";
-    public static final String FORM06 = "6";
-    public static final String FORM07 = "7";
-    public static final String FORM08 = "8";
-    public static final String FORM09 = "9";
-    public static final String FORM14 = "14";
     //public static final long MILLISECONDS_IN_5YEAR = (MILLISECONDS_IN_YEAR + MILLISECONDS_IN_YEAR + MILLISECONDS_IN_YEAR + MILLISECONDS_IN_YEAR + MILLISECONDS_IN_YEAR);
     private static final long MINIMUM_DISTANCE_CHANGE_FOR_UPDATES = 1; // in Meters
     private static final long MINIMUM_TIME_BETWEEN_UPDATES = 1000; // in Milliseconds
@@ -78,11 +69,6 @@ public class MainApp extends Application {
     public static String versionName;
     public static String[] loginMem;
     public static String userName2 = "0000";
-    public static int round = 1;
-    public static int tehsilCode = 0;
-    public static int villageCode = 0;
-    public static int lhwCode = 0;
-    public static String HHno;
     public static String IMEI;
     protected static LocationManager locationManager;
 
