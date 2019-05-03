@@ -88,8 +88,7 @@ public class SectionD03Activity extends AppCompatActivity {
             bi.hfa1459bf.clearCheck();
         else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1460avc.getId())
             bi.hfa1460bf.clearCheck();
-        else if (radioGroup.getCheckedRadioButtonId() == bi.hfa1461avc.getId())
-            bi.hfa1461bf.clearCheck();
+
     }
 
 

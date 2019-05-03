@@ -105,7 +105,7 @@
     <style name="textInput" parent="android:Widget.Material.Light.EditText">
         <item name="android:textSize">20sp</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_height">40dp</item>
         <item name="android:layout_margin">8dp</item>
         <item name="android:background">@drawable/et_style</item>
         <item name="android:textColorHint">@color/gray</item>

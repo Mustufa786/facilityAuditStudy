@@ -38,20 +38,20 @@ public class SectionDActivity extends AppCompatActivity {
     }
 
     private void setListeners() {
-        bi.hfa1416.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i != bi.hfa1416a.getId())
-                    ClearClass.ClearAllFields(bi.fldGrpllSecD01, null);
-            }
-        });
-        bi.hfa1418.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i != bi.hfa1418.getId())
-                    ClearClass.ClearAllFields(bi.fldGrpllSecD02, null);
-            }
-        });
+//        bi.hfa1416.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+//                if (i != bi.hfa1416a.getId())
+//                    ClearClass.ClearAllFields(bi.fldGrpllSecD01, null);
+//            }
+//        });
+//        bi.hfa1418.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+//                if (i != bi.hfa1418.getId())
+//                    ClearClass.ClearAllFields(bi.fldGrpllSecD02, null);
+//            }
+//        });
     }
 
     private void setContentUI() {

@@ -65,7 +65,8 @@ public class SectionCActivity extends AppCompatActivity {
     private boolean UpdateDB() {
         try {
 
-            Long longID = new crudOperations(this, FormsDAO.class.getName(), "formsDao", "updateForm", fc).execute().get();
+            Long longID = new crudOperations(this, FormsDAO.class.getName(),
+                    "formsDao", "updateForm", fc).execute().get();
             return longID == 1;
 
         } catch (InterruptedException e) {

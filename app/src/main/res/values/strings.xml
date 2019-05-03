@@ -107,24 +107,32 @@
     <string name="hfa1107e"> پانچ دن </string>
     <string name="hfa1107f"> چھے دن </string>
     <string name="hfa1107g"> سات دن </string>
+    <string name="hfa1108"> آؤٹ ریچ سہولیات </string>
 
-    <string name="hfa1108"> نارمل ڈیلیوری </string>
-    <string name="hfa1109"> بنیادی ایمرجنسی زچگی کا علاج </string>
-    <string name="hfa1110"> جامع ایمرجنسی زچگی کا علاج </string>
-    <string name="hfa1111"> نوزائیدہ کی دیکھ بھال کی خدمات </string>
+    <string name="hfa1109"> آؤٹ پیشینٹ سہولیات </string>
 
-    <string name="hfa11h1">کیا یہ مرکزِ صحت  مندرجہ بالاکوئی بھی خواتین، نوزائیدہ اور بچے کی صحت کی خدمات فراہم کرتا ہے؟</string>
+    <string name="hfa1110"> ان پیشینٹ سہولیات </string>
 
-    <string name="hfa1112"> آؤٹ ریچ خدمات </string>
-    <string name="hfa1113"> آؤٹ پیشینٹ خدمات </string>
-    <string name="hfa1114"> ان پیشینٹ خدمات </string>
-    <string name="hfa1115"> ابتدائی طبی امداد اور ریفرل کی سہولیات </string>
-    <string name="hfa1116"> ای پی آئی کا مرکز </string>
-    <string name="hfa1117"> کیا یہ مرکزِ صحت اچھی خاصی آبادی کواپنےاحاطے میں لیا ہوا ہے؟ </string>
-    <string name="hfa1118"> اگر ہاں، تو کیا کمیونٹی آگاہ ہے کہ یہ ان کے علاقے میں سب سے قریبی مرکزِ صحت ہے؟ </string>
+    <string name="hfa1111"> ابتدائی طبی امداد اور ریفرل کی سہولیات </string>
 
+    <string name="hfa1112"> ای پی آئی کا مرکز </string>
+
+    <string name="hfa1113"> دیگر وضاحت </string>
+
+    <string name="hfa1114"> کیا یہ مرکزِ صحت ایک مخصوص آبادی کے لئے صحت کی سہولیات فراہم کرتا ہے؟ </string>
+
+    <string name="hfa1115"> اگر ہاں، تو کیا کمیونٹی آگاہ ہے کہ یہ ان کے علاقے میں سب سے قریبی مرکزِ صحت ہے؟ </string>
+
+    <string name="hfa1116"> کیا یہ مرکزِ صحت کوئی بھی زچگی کی سہولیات فراہم کرتا ہے؟ </string>
+
+    <string name="hfa1117"> نارمل ڈیلیوری کی سہولت </string>
+
+    <string name="hfa1118"> بنیادی ایمرجنسی زچگی کی سہولت </string>
+
+    <string name="hfa1119"> جامع ایمرجنسی زچگی کی سہولت </string>
+
+    <string name="hfa1120"> نوزائیدہ کی دیکھ بھال کی سہولت </string>
     <!--Section B include in section A-->
-    <string name="hfa1119">Do I have your agreement to proceed?</string>
 
     <!--Section C-->
 
@@ -241,26 +249,20 @@
     <string name="hfa1417c"> پرائیوٹ بلڈ بنک </string>
     <string name="hfa1417d"> نامعلوم ذریعہ </string>
     <string name="hfa1417e"> دیگر وضاحت کریں </string>
-
     <string name="hfa1418"> کیا مریضوں کے لئے عطیہ خون کی کوئی پالیسی ہے؟ </string>
-
     <string name="hfa1419"> اگر ہاں، توعطیہ خون کی پہلی ترجیح کیا ہے؟ </string>
     <string name="hfa1419a"> خاندان یا خاندان کا متبادل ڈونر </string>
     <string name="hfa1419b"> فری فراہم کرنے والا ڈونر </string>
     <string name="hfa1419c"> پیشہ ور ڈونر </string>
-
     <string name="hfa1420"> اگر ایک سے زیادہ ہوں توعطیہ خون کی دوسری ترجیح کیا ہے؟ </string>
     <string name="hfa1420a"> خاندان یا خاندان کا متبادل ڈونر </string>
     <string name="hfa1420b"> فری فراہم کرنے والا ڈونر </string>
     <string name="hfa1420c"> پیشہ ور ڈونر </string>
-
     <string name="hfa1421"> اگر دو سے زیادہ ہوں توعطیہ خون کی تیسرے ترجیح کیا ہے؟ </string>
     <string name="hfa1421a"> خاندان یا خاندان کا متبادل ڈونر </string>
     <string name="hfa1421b"> فری فراہم کرنے والا ڈونر </string>
     <string name="hfa1421c"> پیشہ ور ڈونر </string>
-
     <string name="hfa1422"> ڈونررجسثریشن </string>
-
     <string name="hfa1423"> خون کا نمونہ لینے کے لیے </string>
     <string name="hfa1424"> خون کا گروپ اور ملاپ </string>
     <string name="hfa1425"> ایچ آئی وی / ایچ بی وی / ایچ سی وی کے لئے خون کی اسکریننگ </string>
@@ -377,8 +379,6 @@
     <string name="hfa1711"> لیڈی ہیلتھ وزیٹر </string>
     <string name="hfa1712"> مرد دیگر (وضاحت) </string>
     <string name="hfa1713"> خاتون دیگر (وضاحت) </string>
-    <string name="hfa1714"> اس سہولت میں کتنے مرد لیڈرشیپ کی پوزیشن رکھتے ہیں؟ اس میں لیڈرشیپ اور مینجمنٹ پوزیشن شامل ہیں جن کے لئے اضافی تنخواہ فراہم کی جاتی ہے. مثال کے طور پر سہولیات کے سربراہ / ڈائریکٹر، محکموں کے سربراہ، یونٹس اور وارڈ کے سربرا اور ذیلی ملکی ہیلتھ مینجمنٹ ٹیم کے ارکان شامل ہیں </string>
-    <string name="hfa1715"> اس سہولت میں کتنے خواتین لیڈرشیپ کی پوزیشن رکھتے ہیں؟ اس میں لیڈرشیپ اور مینجمنٹ پوزیشن شامل ہیں جن کے لئے اضافی تنخواہ فراہم کی جاتی ہے. مثال کے طور پر سہولیات کے سربراہ / ڈائریکٹر، محکموں کے سربراہ، یونٹس اور وارڈ کے سربرا اور ذیلی ملکی ہیلتھ مینجمنٹ ٹیم کے ارکان شامل ہیں </string>
 
     <!--Section H-->
     <string name="hfa1801"> کیا آپکی مرکزِ صحت کی اسٹاف میٹنگ باقاعدگی سے ہوتی ہیں؟ </string>

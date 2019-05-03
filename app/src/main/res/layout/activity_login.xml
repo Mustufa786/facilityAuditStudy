@@ -95,10 +95,6 @@
                     <EditText
                         android:id="@+id/email"
                         style="@style/textInput"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:layout_weight="0.99"
                         android:drawableStart="@drawable/ic_person"
                         android:drawablePadding="8dp"
                         android:hint="Username/Code"
@@ -127,11 +123,7 @@
                         <EditText
                             android:id="@+id/password"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_weight="0.99"
+
                             android:drawableStart="@drawable/ic_lock_close"
                             android:drawablePadding="2dp"
                             android:hint="@string/prompt_password"
