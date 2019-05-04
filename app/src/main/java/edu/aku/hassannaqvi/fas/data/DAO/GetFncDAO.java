@@ -43,11 +43,9 @@ public interface GetFncDAO {
     @Query("SELECT * FROM " + CONSTANTS.TABLE_FORMS + " where participantID=:part_id and istatus = '1' and formType != '14' order by id DESC")
     Forms checkParticipantExist(String part_id);
 
-
     /*
     * Spinner Items
     */
-
     @Query("SELECT * FROM " + CONSTANTS.TABLE_DISTRICTS)
     List<Districts> getAllDistricts();
 

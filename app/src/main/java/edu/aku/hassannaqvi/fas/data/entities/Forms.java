@@ -24,7 +24,6 @@ public class Forms implements Serializable {
     private int id;
 
     @ColumnInfo
-    private String uuid = "";
     private String formType = "";
     private String uid = "";
     private String formDate = ""; // Date
@@ -59,7 +58,6 @@ public class Forms implements Serializable {
     @Ignore
     public Forms(Forms forms) {
 
-        this.uuid = forms.uuid;
         this.formType = forms.formType;
         this.uid = forms.uid;
         this.formDate = forms.formDate;
@@ -170,14 +168,6 @@ public class Forms implements Serializable {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getUuid() {
-        return uuid;
-    }
-
-    public void setUuid(String uuid) {
-        this.uuid = uuid;
     }
 
     public String getFormType() {
