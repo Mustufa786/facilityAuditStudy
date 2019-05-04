@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.json.JSONObject;
@@ -40,11 +41,12 @@ import edu.aku.hassannaqvi.fas.data.entities.UCs;
 import edu.aku.hassannaqvi.fas.databinding.ActivityInfoBinding;
 import edu.aku.hassannaqvi.fas.get.db.GetAllDBData;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
+import edu.aku.hassannaqvi.fas.validation.ClearClass;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
 import static edu.aku.hassannaqvi.fas.ui.LoginActivity.db;
 
-public class InfoActivity extends AppCompatActivity {
+public class InfoActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
 
     private static final String TAG = InfoActivity.class.getName();
     ActivityInfoBinding bi;
@@ -313,4 +315,12 @@ public class InfoActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+        if(group.getCheckedRadioButtonId() == bi.hfa1116b.getId()){
+            ClearClass.ClearAllFields(bi.fldGrp11720,null);
+        }
+
+    }
 }
