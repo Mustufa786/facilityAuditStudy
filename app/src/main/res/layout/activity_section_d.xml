@@ -1154,7 +1154,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
-                                    android:text="@string/observed" />
+                                    android:text="@string/yes" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1420b"
@@ -1162,15 +1162,15 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
-                                    android:text="@string/reported" />
+                                    android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/hfa1420c"
+                                    android:id="@+id/hfa142098"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
-                                    android:text="@string/not_available" />
+                                    android:text="@string/dkn" />
 
 
                             </RadioGroup>
@@ -1207,7 +1207,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
-                                    android:text="@string/observed" />
+                                    android:text="@string/yes" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1421b"
@@ -1215,15 +1215,15 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
-                                    android:text="@string/reported" />
+                                    android:text="@string/no" />
 
                                 <RadioButton
-                                    android:id="@+id/hfa1421c"
+                                    android:id="@+id/hfa142198"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
-                                    android:text="@string/not_available" />
+                                    android:text="@string/dkn" />
 
 
                             </RadioGroup>

@@ -79,33 +79,41 @@
     <string name="section3_tool2">ANTENATAL AND CHILDBIRTH MODULE (CB)</string>
     <string name="section4_tool2">DANGER SIGNS MODULE (DW)</string>
 
-    <string name="hfa1100">سروے نمبر</string>
-    <string name="hfa1100a">انٹرونشن سے پہلے </string>
-    <string name="hfa1100b"> انٹرونشن کے بعد</string>
+    <string name="hfa1100"> سروے نمبر </string>
+    <string name="hfa1100a"> انٹرونشن سے پہلے </string>
+    <string name="hfa1100b"> انٹرونشن کے بعد </string>
 
-    <string name="hfa1101">مرکزِ صحت کا اسٹیڈی نمبر </string>
-    <string name="hfa1102">مرکزِ صحت کا نام </string>
-    <string name="hfa1103">مرکزِ صحت کس جگہ واقع ہے</string>
-    <string name="hfa1103a">ڈسٹرکٹ </string>
-    <string name="hfa1103b">یونین کونسل</string>
-    <string name="hfa1103c">ہیلت فیسیلیٹی</string>
-    <string name="hfa1103e">گاؤں </string>
-    <string name="hfa1104">مرکزِ صحت کی قسم</string>
-    <string name="hfa1104a">گورنمنٹ           </string>
-    <string name="hfa1104b"> اے کے ایچ ایس پی</string>
-    <string name="hfa1105">مرکزِ صحت کس معیار کا ہے </string>
-    <string name="hfa1105a">پرائمری            </string>
-    <string name="hfa1105b">سیکنڈری        </string>
-    <string name="hfa1105c">ٹرشری             </string>
+    <string name="hfa1101"> مرکزِ صحت کا اسٹیڈی نمبر </string>
+
+    <string name="hfa1102"> مرکزِ صحت کا نام </string>
+
+    <string name="hfa1103"> مرکزِ صحت کس جگہ واقع ہے </string>
+    <string name="hfa1103a"> ضلع/علاقہ/صوبہ </string>
+    <string name="hfa1103b"> ڈسٹرکٹ </string>
+    <string name="hfa1103c"> تحصیل </string>
+    <string name="hfa1103d"> یونین کونسل </string>
+    <string name="hfa1103e"> گاؤں </string>
+
+    <string name="hfa1104"> مرکزِ صحت کی قسم </string>
+    <string name="hfa1104a"> گورنمنٹ </string>
+    <string name="hfa1104b"> اے کے ایچ ایس پی </string>
+    <string name="hfa1104c"> دیگر /تفصیل </string>
+    <string name="hfa1105"> مرکزِ صحت کس معیار کا ہے </string>
+    <string name="hfa1105a"> پرائمری </string>
+    <string name="hfa1105b"> سیکنڈری </string>
+    <string name="hfa1105c"> ٹرشری </string>
     <string name="hfa1106"> اس مرکزِ صحت کے اوقات کار کیا ہیں؟ </string>
     <string name="hfa1107"> یہ مرکزِ صحت ہفتے میں کتنے دن کھلا رہتا ہے؟ </string>
     <string name="hfa1107a"> ایک دن </string>
     <string name="hfa1107b"> دو دن </string>
-    <string name="hfa1107c"> تین دن </string>
-    <string name="hfa1107d"> چار دن </string>
+    <string name="hfa1107c"> تین </string>
+    <string name="hfa1107d"> چار </string>
     <string name="hfa1107e"> پانچ دن </string>
-    <string name="hfa1107f"> چھے دن </string>
+    <string name="hfa1107f"> دن چھے </string>
     <string name="hfa1107g"> سات دن </string>
+    <string name="hfa11h"> کیا یہ مرکزِ صحت مندرجہ بالاکوئی بھی ماں اور نوزائیدہ بچوں کی صحت کی سہولیات فراہم کرتا ہے؟ </string>
+
+
     <string name="hfa1108"> آؤٹ ریچ سہولیات </string>
 
     <string name="hfa1109"> آؤٹ پیشینٹ سہولیات </string>
@@ -131,6 +139,8 @@
     <string name="hfa1119"> جامع ایمرجنسی زچگی کی سہولت </string>
 
     <string name="hfa1120"> نوزائیدہ کی دیکھ بھال کی سہولت </string>
+
+
     <!--Section B include in section A-->
 
     <!--Section C-->
@@ -343,31 +353,33 @@
     <string name="hfa1503av">جینٹا مائی سین انجکشن</string>
     <string name="hfa1504av">ایمپسلین پاؤڈر انجکشن کے لیے</string>
     <string name="hfa1505av"> بنزائیل پنسیلین انجکشن </string>
-    <string name="hfa1506av"> نارمل سیلائن انجیک ٹیبل </string>
-    <string name="hfa1507av"> گیر رین لیکٹیٹ انجیک ٹیبل </string>
+    <string name="hfa1506av"> نارمل سیلائن انجیک ایبل </string>
+    <string name="hfa1507av"> رینگر لیکٹیٹ انجیک ایبل </string>
     <string name="hfa1508av"> ہیمسل انجیک ٹیبل </string>
     <string name="hfa1509av"> ڈسٹروز واٹر٪25 انجیک ٹیبل </string>
     <string name="hfa1510av"> ڈیکوڈرون انجیک ٹیبل </string>
     <string name="hfa1511av"> لیسک انجیک ٹیبل </string>
     <string name="hfa1512av"> ہائی ڈیرزین انجیک ٹیبل </string>
-    <string name="hfa1513av"> ویلیم انجیک ٹیبل </string>
-    <string name="hfa1514av"> کورٹیسکو سٹرائیڈ </string>
-    <string name="hfa1515av"> (منہ سے دوائی کھانا)اورل فنسیڑار </string>
-    <string name="hfa1516av"> (منہ سے دوائی کھانا)اورل کونین </string>
+    <string name="hfa1513av"> ویلیم انجکشن </string>
+    <string name="hfa1514av"> کورٹیزون </string>
+    <string name="hfa1515av"> (منہ کے ذرئعے دی جانی والی) اورل فنسیڑار</string>
+    <string name="hfa1516av"> (منہ کے ذرئعے دی جانی والی) اورل کونین </string>
     <string name="hfa1517av"> دوسرے اورل اینٹی ملیریا </string>
     <string name="hfa1518av"> اوکسیٹوسن انجیکشن </string>
-    <string name="hfa1519bv"> اوکسیٹوسن اگر موجود ہے تو کیا یہ ٹھنڈی جگہ پر رکھا ہوا ہے؟ </string>
+    <string name="hfa1519av">  اگر موجود ہے تو کیا اوکسیٹوسن ٹھنڈی جگہ پر رکھا ہوا ہے؟    </string>
     <string name="hfa1520av"> میگنیشیم سلفیٹ </string>
     <string name="hfa1521av"> پایوڈین سلوشن </string>
 
+
     <!--Section F-->
-    <string name="hfa1601"> کیا آپ کے پاس جامع ایمرجنسی زچگی کے علاج کے لیے قومی سطح پر موجود ہدایات ہیں دستاویز دیکھنے کا پوچھے </string>
-    <string name="hfa1602"> کیا اس مرکز صحت میں ایک فعال آپریشن تھیٹر موجود ہے ؟ آپریشن تھیٹر دیکھنے کا کہیے </string>
+    <string name="hfa1601"> کیا آپ کے پاس جامع ایمرجنسی زچگی کے علاج کے لیے قومی سطح پر موجود ہدایات ہیں۔ دستاویز دیکھنے کا پوچھے۔ </string>
+    <string name="hfa1602"> کیا اس مرکز صحت میں ایک فعال آپریشن تھیٹر موجود ہے ؟ آپریشن تھیٹر دیکھنے کا کہے </string>
     <string name="hfa1603"> کیا اس مرکز صحت پر ایک پیشہ وار ماہر موجود ہیں جوکہ بڑا آپریشن کرتی/کرتا ہو یا جوکہ 24 گھنٹے کے لیے اس مرکز صحت میں بلایا جا سکتا ہو؟(اس میں پورا ہفتہ اور تعطیلات بھی شامل ہیں ) </string>
-    <string name="hfa1604"> کیا اس مرکز صحت پر پیشہ وارنہ بیہوشی کے ماہر موجود ہیں جو 24 گھنٹے/ہفتہ کے اختتام پر عام اور تعطیلات میں بھی موجود ہوں؟ </string>
-    <string name="hfa1605"> کیا اس مرکز صحت پر ایمرجنسی میں جانے اور آنے کے لیے ایک فعال ایمبولینس یا دوسری گاڑیاں ہیں جو مریضوں کی ہنگامی نقل و حرکت کے لئے یہ سہولت فراہم کرسکیں ؟ </string>
-    <string name="hfa1606"> کیا اس جگہ ایمرجنسی میں ایمبولینس تک رسائی ممکن ہے جو ایمرجنسی کی صورت میں مریض کو ایک مرکز صحت سے دوسرے مرکز صحت لے جاسکے (ہفتے کے آخر اور عام تعطیلات میں بھی ) </string>
-    <string name="hfa1607"> کیا ایمبولینس یا دوسری ایمرجنسی گاڑیوں کے لیے آج پیٹرول موجود ہے ؟ </string>
+    <string name="hfa1604"> کیا اس مرکز صحت پر پیشہ وارنہ بیہوشی کے ماہر موجود ہیں جو 24 گھنٹے/ہفتہ کے اختتام پر اورعام ا تعطیلات میں بھی موجود ہوں؟ </string>
+    <string name="hfa1605"> کیا اس مرکز صحت پر ایمرجنسی میں جانے اور آنے کے لیے ایک فعال ایمبولینس یا دوسری گاڑیاں ہیں جو مریضوں کی ہنگامی نقل و حرکت کے لئے یہ سہولت فراہم کرسکیں ؟ (24 گھنٹے/ہفتہ کے اختتام پر اورعام ا تعطیلات میں بھی موجود ہوں) </string>
+    <string name="hfa1606"> کیا ایمبولینس یا دوسری ایمرجنسی گاڑیوں کے لیے آج پیٹرول موجود ہے ؟ </string>
+    <string name="hfa1607"> کیا اس جگہ ایمرجنسی میں ایمبولینس تک رسائی ممکن ہے جو ایمرجنسی کی صورت میں مریض کو ایک مرکز صحت سے دوسرے مرکز صحت لے جاسکے - (24 گھنٹے/ہفتہ کے اختتام پر اورعام ا تعطیلات میں بھی موجود ہوں) </string>
+
 
     <!--Section G-->
     <string name="hfa1701"> مرد جنرل پریکٹیشنرز(غیر ماہر طبی ڈاکٹروں کی تعداد) </string>
@@ -446,31 +458,16 @@
     <string name="hfa1902b"> آر ایچ سی </string>
     <string name="hfa1902c"> ٹی ایچ کیو </string>
     <string name="hfa1902d"> اے کے ایچ ایس پی </string>
-    <string name="hfa1902e"> معلوم نہیں </string>
-    <string name="hfa1902f"> دیگر وضاحت </string>
-    <string name="hfa1903"> اگر ایک سے زیادہ اقسام ہیں تو رسمی ریفرل نظام کا دوسرا قسم کیا ہے؟ </string>
-    <string name="hfa1903a"> رسمی / معاہدے کا انتظام </string>
-    <string name="hfa1903b"> غیررسمی مفاہمت </string>
-    <string name="hfa1903c"> خریدوفروخت کی حکمت عملی / طریقہ کار </string>
-    <string name="hfa1903d"> انفرادی کنسلٹنٹس کے ریفرل تعلقات </string>
-    <string name="hfa1903e"> معلوم نہیں </string>
-    <string name="hfa1903f"> دیگر وضاحت </string>
-    <string name="hfa1904"> جو کیس یہاں ریفر کرتے ہیں ان کے بارے میں ریفر کرنے والے ہسپتال سے آپکو معلومات بھی فراہم کرتے ہیں؟ </string>
-    <string name="hfa1904a"> ہمیشہ </string>
-    <string name="hfa1904b"> زیادہ تر </string>
-    <string name="hfa1904c"> کبھی کبھی </string>
-    <string name="hfa1904d"> کبھی نہیں </string>
-    <string name="hfa1904e"> معلوم نہیں </string>
-    <string name="hfa1905"> کیا آپ کی مرکزِ صحت کیسسز کو دیگر مراکزِ صحت ریفرکرتی ہے ؟ </string>
-    <string name="hfa1906"> آپ کیسسز کہاں ریفر کرتے ہیں؟ </string>
-    <string name="hfa1906a"> گورنمنٹ ہسپتال </string>
-    <string name="hfa1906b"> اے کے ایچ پی ہسپتال </string>
-    <string name="hfa1906c"> ریفر کرتے ہیں اور تمام ریفرل کا ریکارڑ رکھتے ہیں </string>
-    <string name="hfa1906d"> دیگر وضاحت </string>
-    <string name="hfa1907"> جو کیس آپ ریفر کرتے ہیں ان کے بارے میں آپ ریفر کرنے والے ہسپتال کو معلومات فراہم کرتے ہیں؟ </string>
-    <string name="hfa1907a"> ہاں </string>
-    <string name="hfa1907b"> نہیں </string>
-    <string name="hfa1907c"> معلوم نہیں </string>
+    <string name="hfa1903"> جو کیس یہاں ریفر کرتے ہیں ان کے بارے میں ریفر کرنے والے ہسپتال سے آپکو معلومات بھی فراہم کرتے ہیں؟ </string>
+    <string name="hfa1903a"> ہمیشہ </string>
+    <string name="hfa1903b"> زیادہ تر </string>
+    <string name="hfa1903c"> کبھی کبھی </string>
+    <string name="hfa1903d"> کبھی نہیں </string>
+    <string name="hfa1904"> کیا آپ کی مرکزِ صحت کیسسز کو دیگر مراکزِ صحت ریفرکرتی ہے ؟ </string>
+    <string name="hfa1905"> آپ کیسسز کہاں ریفر کرتے ہیں؟ </string>
+    <string name="hfa1905a"> گورنمنٹ ہسپتال </string>
+    <string name="hfa1905b"> اے کے ایچ پی ہسپتال </string>
+    <string name="hfa1906"> جو کیس آپ ریفر کرتے ہیں ان کے بارے میں آپ ریفر کرنے والے ہسپتال کو معلومات فراہم کرتے ہیں؟ </string>
 
     <!--Tool 2-->
     <!--Section A-->

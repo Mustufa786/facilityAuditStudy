@@ -86,12 +86,8 @@ public class SectionIActivity extends AppCompatActivity {
 
     public void onRadioClickChanged(RadioGroup radioGroup, int id) {
 
-        if (radioGroup.getCheckedRadioButtonId() != bi.hfa1901a.getId())
-            ClearClass.ClearAllFields(bi.fldGrpllSecI01, null);
-
-        if (radioGroup.getCheckedRadioButtonId() != bi.hfa1905a.getId())
-            ClearClass.ClearAllFields(bi.fldGrpllSecI02, null);
-
+        if (radioGroup.getCheckedRadioButtonId() != bi.hfa1904a.getId())
+            ClearClass.ClearAllFields(bi.fldgrp0506, null);
 
 
     }
