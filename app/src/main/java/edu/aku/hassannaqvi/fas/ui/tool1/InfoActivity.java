@@ -10,12 +10,20 @@ import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateFormat;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 import edu.aku.hassannaqvi.fas.JSON.GeneratorClass;
@@ -24,10 +32,17 @@ import edu.aku.hassannaqvi.fas.RMOperations.crudOperations;
 import edu.aku.hassannaqvi.fas.core.CONSTANTS;
 import edu.aku.hassannaqvi.fas.core.MainApp;
 import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
+import edu.aku.hassannaqvi.fas.data.DAO.GetFncDAO;
+import edu.aku.hassannaqvi.fas.data.entities.Districts;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
+import edu.aku.hassannaqvi.fas.data.entities.HFA;
+import edu.aku.hassannaqvi.fas.data.entities.UCs;
 import edu.aku.hassannaqvi.fas.databinding.ActivityInfoBinding;
+import edu.aku.hassannaqvi.fas.get.db.GetAllDBData;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
+
+import static edu.aku.hassannaqvi.fas.ui.LoginActivity.db;
 
 public class InfoActivity extends AppCompatActivity {
 
@@ -37,6 +52,8 @@ public class InfoActivity extends AppCompatActivity {
     String fTYPE = "", fExt = "", deviceID;
     Class<?> routeClass;
     private Forms fc;
+    Map<String, HFA> hfaMap;
+    List<String> district_code, uc_code;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +67,92 @@ public class InfoActivity extends AppCompatActivity {
     }
 
     private void setContentUI() {
+        //districts
+        district_code = new ArrayList<>();
+        List<String> district_names = new ArrayList<>();
+        district_code.add("....");
+        district_names.add("....");
+        try {
+            Collection<Districts> col_districts = (Collection<Districts>) new GetAllDBData(db, GetFncDAO.class.getName(), "getFncDao", "getAllDistricts").execute().get();
+            for (Districts dist : col_districts) {
+                district_names.add(dist.getDist_name());
+                district_code.add(dist.getDist_code());
+            }
 
+            bi.hfa1103a.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, district_names));
+
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        bi.hfa1103a.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 0) return;
+
+                //UC
+                uc_code = new ArrayList<>();
+                List<String> uc_names = new ArrayList<>();
+                uc_code.add("....");
+                uc_names.add("....");
+                try {
+                    Collection<UCs> col_ucs = (Collection<UCs>) new GetAllDBData(db, GetFncDAO.class.getName(), "getFncDao", "getAllUcsByDistricts")
+                            .execute(district_code.get(i)).get();
+                    for (UCs uc : col_ucs) {
+                        uc_names.add(uc.getUc_name());
+                        uc_code.add(uc.getUc_code());
+                    }
+
+                    bi.hfa1103b.setAdapter(new ArrayAdapter<>(InfoActivity.this, android.R.layout.simple_spinner_dropdown_item, uc_names));
+
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+        bi.hfa1103b.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 0) return;
+
+                //HFA
+                hfaMap = new HashMap<>();
+                List<String> hfa_names = new ArrayList<>();
+                hfa_names.add("....");
+                try {
+                    Collection<HFA> col_ucs = (Collection<HFA>) new GetAllDBData(db, GetFncDAO.class.getName(), "getFncDao", "getAllHfaByDistrictUC")
+                            .execute(district_code.get(bi.hfa1103a.getSelectedItemPosition()), uc_code.get(bi.hfa1103b.getSelectedItemPosition())).get();
+                    for (HFA hfa : col_ucs) {
+                        hfa_names.add(hfa.getHf_name());
+                        hfaMap.put(hfa.getHf_name(), hfa);
+                    }
+
+                    bi.hfa1103c.setAdapter(new ArrayAdapter<>(InfoActivity.this, android.R.layout.simple_spinner_dropdown_item, hfa_names));
+
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
 
     }
 
@@ -131,6 +233,10 @@ public class InfoActivity extends AppCompatActivity {
         fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
         fc.setDeviceID(deviceID);
         fc.setFormType(CONSTANTS._URI_FORM_TOOL1);
+        fc.setDistrictcode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getDist_code());
+        fc.setUccode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getUc_code());
+        fc.setHfcode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getHf_code());
+
         setGPS(fc);
 
         JSONObject Json = GeneratorClass.getContainerJSON(bi.fldGrpllInfoA, true);

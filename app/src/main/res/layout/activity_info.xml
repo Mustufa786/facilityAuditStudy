@@ -131,16 +131,13 @@
 
                     <LinearLayout style="@style/linerlayout_view">
 
-
                         <TextView
                             style="@style/i_textview"
                             android:text="@string/hfa1103a" />
 
                         <Spinner
                             android:id="@+id/hfa1103a"
-                            style="@style/spinner">
-
-                        </Spinner>
+                            style="@style/spinner" />
 
                         <TextView
                             style="@style/i_textview"
@@ -148,9 +145,7 @@
 
                         <Spinner
                             android:id="@+id/hfa1103b"
-                            style="@style/spinner">
-
-                        </Spinner>
+                            style="@style/spinner" />
 
                         <TextView
                             style="@style/i_textview"
@@ -158,9 +153,7 @@
 
                         <Spinner
                             android:id="@+id/hfa1103c"
-                            style="@style/spinner">
-
-                        </Spinner>
+                            style="@style/spinner" />
 
 
                     </LinearLayout>

@@ -101,7 +101,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
                         case "Districts":
                             GetSyncFncs.syncDistricts(mContext, jsonArray);
                             break;
-                        case "hfa":
+                        case "HF":
                             GetSyncFncs.syncHfa(mContext, jsonArray);
                             break;
                     }

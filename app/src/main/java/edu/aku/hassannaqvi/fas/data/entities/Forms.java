@@ -16,7 +16,9 @@ import edu.aku.hassannaqvi.fas.core.CONSTANTS;
 public class Forms implements Serializable {
 
     @Ignore
-    private final String _projectName = "FACILITY-AUDIT";
+    private final String _projectName = "HEALTH-FACILITY-AUDIT";
+    @Ignore
+    private final String round = "1";
 
     @PrimaryKey(autoGenerate = true)
     private int id;
@@ -40,9 +42,9 @@ public class Forms implements Serializable {
     private String sa9 = "";     // Section 9
     private String istatus = "";
     private String endtime = "";
-    private String clustercode = "";
-    private String districtname = "";
-    private String studyID = "";
+    private String districtcode = "";
+    private String uccode = "";
+    private String hfcode = "";
     private String gpsLat = "";
     private String gpsLng = "";
     private String gpsDT = "";
@@ -53,7 +55,6 @@ public class Forms implements Serializable {
     private String synced = "";
     private String synced_date = "";
     private String appversion = "";
-    private String round = "";
 
     @Ignore
     public Forms(Forms forms) {
@@ -65,7 +66,7 @@ public class Forms implements Serializable {
         this.username = forms.username;
         this.participantID = forms.participantID;
         this.participantName = forms.participantName;
-        this.studyID = forms.studyID;
+        this.hfcode = forms.hfcode;
         this.sa1 = forms.sa1;
         this.sa2 = forms.sa2;
         this.sa3 = forms.sa3;
@@ -77,8 +78,8 @@ public class Forms implements Serializable {
         this.sa9 = forms.sa9;
         this.istatus = forms.istatus;
         this.endtime = forms.endtime;
-        this.clustercode = forms.clustercode;
-        this.districtname = forms.districtname;
+        this.districtcode = forms.districtcode;
+        this.uccode = forms.uccode;
         this.gpsLat = forms.gpsLat;
         this.gpsLng = forms.gpsLng;
         this.gpsDT = forms.gpsDT;
@@ -89,7 +90,6 @@ public class Forms implements Serializable {
         this.synced = forms.synced;
         this.synced_date = forms.synced_date;
         this.appversion = forms.appversion;
-        this.round = forms.round;
 
     }
 
@@ -107,12 +107,12 @@ public class Forms implements Serializable {
         json.put("formDate", this.formDate == null ? JSONObject.NULL : this.formDate);
         json.put("uid", this.uid == null ? JSONObject.NULL : this.uid);
         json.put("username", this.username == null ? JSONObject.NULL : this.username);
-        json.put("participantID", this.participantID == null ? JSONObject.NULL : this.participantID);
-        json.put("participantName", this.participantName == null ? JSONObject.NULL : this.participantName);
-        json.put("studyID", this.studyID == null ? JSONObject.NULL : this.studyID);
-        json.put("clustercode", this.clustercode == null ? JSONObject.NULL : this.clustercode);
+//        json.put("participantID", this.participantID == null ? JSONObject.NULL : this.participantID);
+//        json.put("participantName", this.participantName == null ? JSONObject.NULL : this.participantName);
+        json.put("hfcode", this.hfcode == null ? JSONObject.NULL : this.hfcode);
+        json.put("districtcode", this.districtcode == null ? JSONObject.NULL : this.districtcode);
         json.put("endtime", this.endtime == null ? JSONObject.NULL : this.endtime);
-        json.put("districtname", this.districtname == null ? JSONObject.NULL : this.districtname);
+        json.put("uccode", this.uccode == null ? JSONObject.NULL : this.uccode);
         json.put("gpsLat", this.gpsLat == null ? JSONObject.NULL : this.gpsLat);
         json.put("gpsLng", this.gpsLng == null ? JSONObject.NULL : this.gpsLng);
         json.put("gpsDT", this.gpsDT == null ? JSONObject.NULL : this.gpsDT);
@@ -122,7 +122,7 @@ public class Forms implements Serializable {
         json.put("devicetagID", this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
         json.put("appversion", this.appversion == null ? JSONObject.NULL : this.appversion);
         json.put("istatus", this.istatus == null ? JSONObject.NULL : this.istatus);
-        json.put("round", this.round == null ? JSONObject.NULL : this.round);
+        json.put("round", this.round);
 
         if (!this.sa1.equals("")) {
             json.put("sa1", this.sa1.equals("") ? JSONObject.NULL : new JSONObject(this.sa1));
@@ -228,12 +228,12 @@ public class Forms implements Serializable {
         this.participantName = participantName;
     }
 
-    public String getStudyID() {
-        return studyID;
+    public String getHfcode() {
+        return hfcode;
     }
 
-    public void setStudyID(String studyID) {
-        this.studyID = studyID;
+    public void setHfcode(String hfcode) {
+        this.hfcode = hfcode;
     }
 
     public String getSa1() {
@@ -316,20 +316,20 @@ public class Forms implements Serializable {
         this.endtime = endtime;
     }
 
-    public String getClustercode() {
-        return clustercode;
+    public String getDistrictcode() {
+        return districtcode;
     }
 
-    public void setClustercode(String clustercode) {
-        this.clustercode = clustercode;
+    public void setDistrictcode(String districtcode) {
+        this.districtcode = districtcode;
     }
 
-    public String getDistrictname() {
-        return districtname;
+    public String getUccode() {
+        return uccode;
     }
 
-    public void setDistrictname(String districtname) {
-        this.districtname = districtname;
+    public void setUccode(String uccode) {
+        this.uccode = uccode;
     }
 
     public String getGpsLat() {
@@ -410,14 +410,6 @@ public class Forms implements Serializable {
 
     public void setAppversion(String appversion) {
         this.appversion = appversion;
-    }
-
-    public String getRound() {
-        return round;
-    }
-
-    public void setRound(String round) {
-        this.round = round;
     }
 
 }

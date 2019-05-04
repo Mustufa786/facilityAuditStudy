@@ -121,7 +121,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
                     .getPackageManager()
                     .getPackageInfo("edu.aku.hassannaqvi.fas", 0)
                     .versionName;
-            bi.txtinstalldate.setText("Ver. " + versionName + "." + String.valueOf(versionCode) + " \r\n( Last Updated: " + new SimpleDateFormat("dd MMM. yyyy").format(new Date(installedOn)) + " )");
+            bi.txtinstalldate.setText("Ver. " + versionName + "." + versionCode + " \r\n( Last Updated: " + new SimpleDateFormat("dd MMM. yyyy").format(new Date(installedOn)) + " )");
 
             MainApp.versionCode = versionCode;
             MainApp.versionName = versionName;
@@ -866,7 +866,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
                     Toast.makeText(LoginActivity.this, "Sync Districts", Toast.LENGTH_LONG).show();
                     new GetAllData(mContext, "Districts", MainApp._HOST_URL + CONSTANTS.URL_DISTRICTS).execute();
                     Toast.makeText(LoginActivity.this, "Sync Health Facilities", Toast.LENGTH_LONG).show();
-                    new GetAllData(mContext, "hfa", MainApp._HOST_URL + CONSTANTS.URL_HFA).execute();
+                    new GetAllData(mContext, "HF", MainApp._HOST_URL + CONSTANTS.URL_HFA).execute();
                     /*Toast.makeText(LoginActivity.this, "Sync Clusters", Toast.LENGTH_LONG).show();
                     new GetAllData(mContext, "Clusters", MainApp._HOST_URL + CONSTANTS.URL_CLUSTERS).execute();*/
                 }
