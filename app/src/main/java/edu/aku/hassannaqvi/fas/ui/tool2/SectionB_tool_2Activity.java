@@ -49,7 +49,7 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i != bi.fas02b03a.getId())
-                    ClearClass.ClearAllFields(bi.fldGrpfas02ba, null);
+                    ClearClass.ClearAllCardFields(bi.fldGrpfas02ba);
             }
         });
 
@@ -58,7 +58,7 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == bi.fas02b04a.getId())
-                    ClearClass.ClearAllFields(bi.fldGrpfas02bb, null);
+                    ClearClass.ClearAllCardFields(bi.fldGrpfas02bb);
             }
         });
 

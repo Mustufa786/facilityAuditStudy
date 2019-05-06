@@ -3,6 +3,8 @@ package edu.aku.hassannaqvi.fas.ui.tool1;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.json.JSONObject;
@@ -21,7 +23,7 @@ import edu.aku.hassannaqvi.fas.ui.EndingActivity;
 import edu.aku.hassannaqvi.fas.validation.ClearClass;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
-public class SectionFActivity extends AppCompatActivity {
+public class SectionFActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
 
     private ActivitySectionFBinding bi;
     private Forms fc;
@@ -86,5 +88,20 @@ public class SectionFActivity extends AppCompatActivity {
 
     public void BtnEnd() {
         MainApp.endActivityDirectRouting(this, this, EndingActivity.class, false, fc);
+    }
+
+    @Override
+    public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+        if(group.getCheckedRadioButtonId() == bi.hfa160501.getId()){
+            bi.fldgrp06.setVisibility(View.VISIBLE);
+            bi.fldgrp07.setVisibility(View.GONE);
+            ClearClass.ClearAllFields(bi.fldgrp07,null);
+        }else{
+            bi.fldgrp06.setVisibility(View.GONE);
+            ClearClass.ClearAllFields(bi.fldgrp06,null);
+            bi.fldgrp07.setVisibility(View.VISIBLE);
+        }
+
     }
 }

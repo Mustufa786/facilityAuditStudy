@@ -30,5 +30,8 @@
     <color name="dullWhile">#d6d6d6</color>
     <color name="dullWhileOverlay">#99d6d6d6</color>
 
+    <color name="darkRed">#D50000</color>
+    <color name="lightOrange">#FFE0B2</color>
+
 
 </resources>

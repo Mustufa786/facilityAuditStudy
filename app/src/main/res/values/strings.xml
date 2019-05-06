@@ -85,9 +85,7 @@
     <string name="hfa1100b"> انٹرونشن کے بعد </string>
 
     <string name="hfa1101"> مرکزِ صحت کا اسٹیڈی نمبر </string>
-
     <string name="hfa1102"> مرکزِ صحت کا نام </string>
-
     <string name="hfa1103"> مرکزِ صحت کس جگہ واقع ہے </string>
     <!--<string name="hfa1103a"> ضلع/علاقہ/صوبہ </string>-->
     <string name="hfa1103a"> ڈسٹرکٹ </string>
@@ -418,9 +416,7 @@
     <string name="hfa1804d"> ہر چار مہینے بعد </string>
     <string name="hfa1804e"> ضرورت پڑنے پر </string>
     <string name="hfa1804f"> معلوم نہیں </string>
-
     <string name="hfa1805"> کیا آپ شامل ہوتے/ہوتی ہیں؟ </string>
-
     <string name="hfa1806"> اور کون ان کمیونٹی سطح پرصحت سے متعلق میٹنگ میں شامل ہوتا/ہوتی ہیں؟ </string>
     <string name="hfa1806a"> خواتین تنظیم کی کوئی ممبر </string>
     <string name="hfa1806b"> لیڈی ہیلتھ وزٹر </string>
