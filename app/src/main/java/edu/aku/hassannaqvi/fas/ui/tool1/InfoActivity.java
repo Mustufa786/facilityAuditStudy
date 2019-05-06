@@ -46,7 +46,7 @@ import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
 import static edu.aku.hassannaqvi.fas.ui.LoginActivity.db;
 
-public class InfoActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
+public class InfoActivity extends AppCompatActivity {
 
     private static final String TAG = InfoActivity.class.getName();
     ActivityInfoBinding bi;
@@ -66,6 +66,43 @@ public class InfoActivity extends AppCompatActivity implements RadioGroup.OnChec
         this.setTitle(R.string.hfa11);
         deviceID = Settings.Secure.getString(InfoActivity.this.getContentResolver(), Settings.Secure.ANDROID_ID);
         setContentUI();
+
+        listeneres();
+    }
+
+    private void listeneres() {
+
+        bi.hfa1116.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (group.getCheckedRadioButtonId() == bi.hfa1116b.getId()) {
+                    bi.fldGrp11720.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldGrp11720, null);
+                    bi.btnEnd.setVisibility(View.VISIBLE);
+                    bi.btnContinue.setVisibility(View.GONE);
+                } else {
+                    bi.fldGrp11720.setVisibility(View.VISIBLE);
+                    bi.btnEnd.setVisibility(View.GONE);
+                    bi.btnContinue.setVisibility(View.VISIBLE);
+                }
+
+            }
+        });
+        bi.hfa1119.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (group.getCheckedRadioButtonId() == bi.hfa1119a.getId()) {
+                    bi.btnContinue.setVisibility(View.VISIBLE);
+                    bi.btnEnd.setVisibility(View.GONE);
+                } else {
+                    bi.btnEnd.setVisibility(View.VISIBLE);
+                    bi.btnContinue.setVisibility(View.GONE);
+                }
+
+            }
+        });
     }
 
     private void setContentUI() {
@@ -315,15 +352,7 @@ public class InfoActivity extends AppCompatActivity implements RadioGroup.OnChec
 
     }
 
-    @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-        if (group.getCheckedRadioButtonId() == bi.hfa1116b.getId()) {
-            ClearClass.ClearAllFields(bi.fldGrp11720, null);
-        }
-        if (group.getCheckedRadioButtonId() == bi.hfa1114b.getId()) {
-            bi.hfa1115.clearCheck();
-        }
 
     }
 }

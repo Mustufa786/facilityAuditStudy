@@ -90,4 +90,12 @@ public class SectionCActivity extends AppCompatActivity {
     public void BtnEnd() {
         MainApp.endActivityDirectRouting(this, this, EndingActivity.class, false, fc);
     }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        Toast.makeText(this, "You can't go back", Toast.LENGTH_SHORT).show();
+    }
 }

@@ -216,4 +216,11 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         }
 
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        Toast.makeText(this, "You can't go back", Toast.LENGTH_SHORT).show();
+    }
+
 }
