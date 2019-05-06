@@ -15,6 +15,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import edu.aku.hassannaqvi.fas.core.MainApp;
+
 
 public class GetAllData extends AsyncTask<String, String, String> {
 
@@ -104,6 +106,9 @@ public class GetAllData extends AsyncTask<String, String, String> {
                         case "HF":
                             GetSyncFncs.syncHfa(mContext, jsonArray);
                             break;
+                        case "appversion":
+                            MainApp.savingAppVersion(mContext, jsonArray);
+                            break;
                     }
 
                     pd.setMessage("Received: " + jsonArray.length());
@@ -121,5 +126,6 @@ public class GetAllData extends AsyncTask<String, String, String> {
             pd.show();
         }
     }
+
 
 }

@@ -330,6 +330,7 @@
                             android:id="@+id/hfa1605"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{callback.onCheckedChanged}"
                             android:orientation="vertical">
 
                             <RadioButton
@@ -365,7 +366,9 @@
                 </android.support.v7.widget.CardView>
 
                 <!--hfa1606-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/fldgrp06"
+                    style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
 
@@ -417,10 +420,10 @@
 
                 </android.support.v7.widget.CardView>
 
-
-
                 <!--hfa1607-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/fldgrp07"
+                    style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
 

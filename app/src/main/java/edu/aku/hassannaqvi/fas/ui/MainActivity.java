@@ -1,14 +1,19 @@
 package edu.aku.hassannaqvi.fas.ui;
 
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DownloadManager;
 import android.app.ProgressDialog;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.databinding.DataBindingUtil;
-import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -16,6 +21,11 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.StrictMode;
+import android.support.v4.app.DialogFragment;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.Log;
 import android.view.View;
@@ -24,19 +34,18 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+
 import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 import edu.aku.hassannaqvi.fas.R;
+import edu.aku.hassannaqvi.fas.appVersion.VersionAppContract;
 import edu.aku.hassannaqvi.fas.core.CONSTANTS;
 import edu.aku.hassannaqvi.fas.core.MainApp;
 import edu.aku.hassannaqvi.fas.data.DAO.GetFncDAO;
@@ -51,7 +60,7 @@ import im.dino.dbinspector.activities.DbInspectorActivity;
 import static edu.aku.hassannaqvi.fas.ui.LoginActivity.db;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     public static String[] usersArray;
     private final String TAG = "MainActivity";
@@ -66,6 +75,13 @@ public class MainActivity extends Activity {
     private Boolean exit = false;
     private String rSumText = "";
     private boolean updata = false;
+    DownloadManager downloadManager;
+    Long refID;
+    SharedPreferences sharedPrefDownload;
+    SharedPreferences.Editor editorDownload;
+    VersionAppContract versionAppContract;
+    String preVer = "", newVer = "";
+    static File file;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -227,8 +243,102 @@ public class MainActivity extends Activity {
             e.printStackTrace();
         }
 
+        BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                if (DownloadManager.ACTION_DOWNLOAD_COMPLETE.equals(intent.getAction())) {
+
+                    DownloadManager.Query query = new DownloadManager.Query();
+                    query.setFilterById(sharedPrefDownload.getLong("refID", 0));
+
+                    downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
+                    Cursor cursor = downloadManager.query(query);
+                    if (cursor.moveToFirst()) {
+                        int colIndex = cursor.getColumnIndex(DownloadManager.COLUMN_STATUS);
+                        if (DownloadManager.STATUS_SUCCESSFUL == cursor.getInt(colIndex)) {
+
+                            editorDownload.putBoolean("flag", true);
+                            editorDownload.commit();
+
+                            Toast.makeText(context, "New App downloaded!!", Toast.LENGTH_SHORT).show();
+                            mainBinding.lblAppVersion.setText("HFA App New Version " + newVer + "  Downloaded.");
+
+                            ActivityManager am = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
+                            List<ActivityManager.RunningTaskInfo> taskInfo = am.getRunningTasks(1);
+                            if (taskInfo.get(0).topActivity.getClassName().equals(MainActivity.class.getName())) {
+//                                InstallNewApp(newVer, preVer);
+                                showDialog(newVer, preVer);
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        versionAppContract = new Gson().fromJson(getSharedPreferences("main", Context.MODE_PRIVATE).getString("appVersion", ""), VersionAppContract.class);
+        if (versionAppContract != null) {
+
+            if (versionAppContract.getVersioncode() != null) {
+                preVer = MainApp.versionName + "." + MainApp.versionCode;
+                newVer = versionAppContract.getVersionname() + "." + versionAppContract.getVersioncode();
+
+                if (MainApp.versionCode < Integer.valueOf(versionAppContract.getVersioncode())) {
+                    mainBinding.lblAppVersion.setVisibility(View.VISIBLE);
+
+                    String fileName = CONSTANTS.DATABASE_NAME.replace(".db", "-New-Apps");
+                    file = new File(Environment.getExternalStorageDirectory() + File.separator + fileName, versionAppContract.getPathname());
+
+                    if (file.exists()) {
+                        mainBinding.lblAppVersion.setText("HFA New Version " + newVer + "  Downloaded.");
+//                    InstallNewApp(newVer, preVer);
+                        showDialog(newVer, preVer);
+                    } else {
+                        NetworkInfo networkInfo = ((ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
+                        if (networkInfo != null && networkInfo.isConnected()) {
+
+                            mainBinding.lblAppVersion.setText("HFA App New Version " + newVer + " Downloading..");
+                            downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
+                            Uri uri = Uri.parse(MainApp._UPDATE_URL + versionAppContract.getPathname());
+                            DownloadManager.Request request = new DownloadManager.Request(uri);
+                            request.setDestinationInExternalPublicDir(fileName, versionAppContract.getPathname())
+                                    .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                                    .setTitle("Downloading HFA App new App ver." + newVer);
+                            refID = downloadManager.enqueue(request);
+
+                            editorDownload.putLong("refID", refID);
+                            editorDownload.putBoolean("flag", false);
+                            editorDownload.commit();
+
+                        } else {
+                            mainBinding.lblAppVersion.setText("HFA App New Version " + newVer + "  Available..\n(Can't download.. Internet connectivity issue!!)");
+                        }
+                    }
+
+                } else {
+                    mainBinding.lblAppVersion.setVisibility(View.GONE);
+                    mainBinding.lblAppVersion.setText(null);
+                }
+            }
+        }
+
+        registerReceiver(broadcastReceiver, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
+
 
     }
+
+    void showDialog(String newVer, String preVer) {
+        FragmentManager ft = getSupportFragmentManager();
+        FragmentTransaction transaction = ft.beginTransaction();
+        Fragment prev = ft.findFragmentByTag("dialog");
+        if (prev != null) {
+            transaction.remove(prev);
+        }
+        transaction.addToBackStack(null);
+        DialogFragment newFragment = MyDialogFragment.newInstance(newVer, preVer);
+        newFragment.show(ft, "dialog");
+
+    }
+
 
     public void openForm(String fType) {
         final Intent oF = new Intent(MainActivity.this, selectedForm(fType));
@@ -304,61 +414,61 @@ public class MainActivity extends Activity {
 
     }
 
-    public void updateApp(View v) {
-        v.setBackgroundColor(Color.GREEN);
-
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                MainActivity.this);
-        alertDialogBuilder
-                .setMessage("Are you sure to download new app??")
-                .setCancelable(false)
-                .setPositiveButton("Yes",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,
-                                                int id) {
-                                // this is how you fire the downloader
-                                try {
-                                    URL url = new URL(MainApp._UPDATE_URL);
-                                    HttpURLConnection c = (HttpURLConnection) url.openConnection();
-                                    c.setRequestMethod("GET");
-                                    c.setDoOutput(true);
-                                    c.connect();
-
-                                    String PATH = Environment.getExternalStorageDirectory() + "/download/";
-                                    File file = new File(PATH);
-                                    file.mkdirs();
-                                    File outputFile = new File(file, "app.apk");
-                                    FileOutputStream fos = new FileOutputStream(outputFile);
-
-                                    InputStream is = c.getInputStream();
-
-                                    byte[] buffer = new byte[1024];
-                                    int len1 = 0;
-                                    while ((len1 = is.read(buffer)) != -1) {
-                                        fos.write(buffer, 0, len1);
-                                    }
-                                    fos.close();
-                                    is.close();//till here, it works fine - .apk is download to my sdcard in download file
-
-                                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                                    intent.setDataAndType(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/download/" + "app.apk")), "application/vnd.android.package-archive");
-                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                    startActivity(intent);
-
-                                } catch (IOException e) {
-                                    Toast.makeText(getApplicationContext(), "Update error!", Toast.LENGTH_LONG).show();
-                                }
-                            }
-                        });
-        alertDialogBuilder.setNegativeButton("No",
-                new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        dialog.cancel();
-                    }
-                });
-        AlertDialog alert = alertDialogBuilder.create();
-        alert.show();
-    }
+//    public void updateApp(View v) {
+//        v.setBackgroundColor(Color.GREEN);
+//
+//        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+//                MainActivity.this);
+//        alertDialogBuilder
+//                .setMessage("Are you sure to download new app??")
+//                .setCancelable(false)
+//                .setPositiveButton("Yes",
+//                        new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog,
+//                                                int id) {
+//                                // this is how you fire the downloader
+//                                try {
+//                                    URL url = new URL(MainApp._UPDATE_URL);
+//                                    HttpURLConnection c = (HttpURLConnection) url.openConnection();
+//                                    c.setRequestMethod("GET");
+//                                    c.setDoOutput(true);
+//                                    c.connect();
+//
+//                                    String PATH = Environment.getExternalStorageDirectory() + "/download/";
+//                                    File file = new File(PATH);
+//                                    file.mkdirs();
+//                                    File outputFile = new File(file, "app.apk");
+//                                    FileOutputStream fos = new FileOutputStream(outputFile);
+//
+//                                    InputStream is = c.getInputStream();
+//
+//                                    byte[] buffer = new byte[1024];
+//                                    int len1 = 0;
+//                                    while ((len1 = is.read(buffer)) != -1) {
+//                                        fos.write(buffer, 0, len1);
+//                                    }
+//                                    fos.close();
+//                                    is.close();//till here, it works fine - .apk is download to my sdcard in download file
+//
+//                                    Intent intent = new Intent(Intent.ACTION_VIEW);
+//                                    intent.setDataAndType(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/download/" + "app.apk")), "application/vnd.android.package-archive");
+//                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                                    startActivity(intent);
+//
+//                                } catch (IOException e) {
+//                                    Toast.makeText(getApplicationContext(), "Update error!", Toast.LENGTH_LONG).show();
+//                                }
+//                            }
+//                        });
+//        alertDialogBuilder.setNegativeButton("No",
+//                new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog, int id) {
+//                        dialog.cancel();
+//                    }
+//                });
+//        AlertDialog alert = alertDialogBuilder.create();
+//        alert.show();
+//    }
 
     public void openDB(View v) {
         Intent dbmanager = new Intent(getApplicationContext(), DbInspectorActivity.class);
@@ -595,6 +705,45 @@ public class MainActivity extends Activity {
 
     private void startActivity1(final Class<? extends Activity> ActivityToOpen) {
         startActivity(new Intent(getBaseContext(), ActivityToOpen));
+    }
+
+    public static class MyDialogFragment extends DialogFragment {
+
+        String newVer, preVer;
+
+        static MyDialogFragment newInstance(String newVer, String preVer) {
+            MyDialogFragment f = new MyDialogFragment();
+
+            Bundle args = new Bundle();
+            args.putString("newVer", newVer);
+            args.putString("preVer", preVer);
+            f.setArguments(args);
+
+            return f;
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            newVer = getArguments().getString("newVer");
+            preVer = getArguments().getString("preVer");
+
+            return new AlertDialog.Builder(getActivity())
+                    .setIcon(android.R.drawable.ic_dialog_info)
+                    .setTitle("HFA App is available!")
+                    .setMessage("HFA App " + newVer + " is now available. Your are currently using older version " + preVer + ".\nInstall new version to use this app.")
+                    .setPositiveButton("INSTALL!!",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int whichButton) {
+                                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                                    intent.setDataAndType(Uri.fromFile(file), "application/vnd.android.package-archive");
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
+                                }
+                            }
+                    )
+                    .create();
+        }
+
     }
 
 }

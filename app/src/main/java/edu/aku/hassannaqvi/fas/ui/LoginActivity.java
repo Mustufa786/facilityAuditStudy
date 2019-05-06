@@ -867,6 +867,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
                     new GetAllData(mContext, "Districts", MainApp._HOST_URL + CONSTANTS.URL_DISTRICTS).execute();
                     Toast.makeText(LoginActivity.this, "Sync Health Facilities", Toast.LENGTH_LONG).show();
                     new GetAllData(mContext, "HF", MainApp._HOST_URL + CONSTANTS.URL_HFA).execute();
+                    Toast.makeText(LoginActivity.this, "Sync Health Facilities", Toast.LENGTH_LONG).show();
+                    new GetAllData(mContext, "appversion", MainApp._HOST_URL + CONSTANTS.URL_UPDATE_APP).execute();
                     /*Toast.makeText(LoginActivity.this, "Sync Clusters", Toast.LENGTH_LONG).show();
                     new GetAllData(mContext, "Clusters", MainApp._HOST_URL + CONSTANTS.URL_CLUSTERS).execute();*/
                 }

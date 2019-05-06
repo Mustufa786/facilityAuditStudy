@@ -18,6 +18,12 @@ import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.text.format.DateFormat;
 
+import com.google.gson.Gson;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -25,6 +31,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import edu.aku.hassannaqvi.fas.R;
+import edu.aku.hassannaqvi.fas.appVersion.VersionAppContract;
 import edu.aku.hassannaqvi.fas.utils.TypefaceUtil;
 
 
@@ -156,6 +163,21 @@ public class MainApp extends Application {
         alert.show();
     }
 
+    public static void savingAppVersion(Context context,JSONArray array) {
+
+        JSONObject object = null;
+        try {
+            object = array.getJSONObject(0);
+            VersionAppContract contract = new VersionAppContract();
+            contract.Sync(object);
+            String json = new Gson().toJson(contract);
+            context.getSharedPreferences("main", MODE_PRIVATE).edit().putString("appVersion", json).apply();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+
+    }
 
     @Override
     public void onCreate() {

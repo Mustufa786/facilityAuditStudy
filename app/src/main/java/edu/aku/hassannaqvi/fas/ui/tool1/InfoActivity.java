@@ -318,8 +318,11 @@ public class InfoActivity extends AppCompatActivity implements RadioGroup.OnChec
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-        if(group.getCheckedRadioButtonId() == bi.hfa1116b.getId()){
-            ClearClass.ClearAllFields(bi.fldGrp11720,null);
+        if (group.getCheckedRadioButtonId() == bi.hfa1116b.getId()) {
+            ClearClass.ClearAllFields(bi.fldGrp11720, null);
+        }
+        if (group.getCheckedRadioButtonId() == bi.hfa1114b.getId()) {
+            bi.hfa1115.clearCheck();
         }
 
     }

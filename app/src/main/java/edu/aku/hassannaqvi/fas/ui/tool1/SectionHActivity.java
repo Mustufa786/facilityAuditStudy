@@ -34,6 +34,43 @@ public class SectionHActivity extends AppCompatActivity {
         bi.setCallback(this);
 
         setContentUI();
+        listeners();
+    }
+
+    private void listeners() {
+
+        bi.hfa1801.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (checkedId != bi.hfa1801a.getId())
+                    ClearClass.ClearAllCardFields(bi.fldGrp1802);
+            }
+        });
+        bi.hfa1803.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (checkedId != bi.hfa1803a.getId()) {
+                    ClearClass.ClearAllCardFields(bi.fldGrp456);
+
+                }
+            }
+        });
+        bi.hfa1805.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (checkedId != bi.hfa180501.getId())
+                    ClearClass.ClearAllCardFields(bi.fldGrp1806);
+            }
+        });
+        bi.hfa1807.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (checkedId != bi.hfa1807a.getId()) {
+                    ClearClass.ClearAllCardFields(bi.fldgrp89);
+
+                }
+            }
+        });
     }
 
     private void setContentUI() {
@@ -89,24 +126,5 @@ public class SectionHActivity extends AppCompatActivity {
         MainApp.endActivityDirectRouting(this, this, EndingActivity.class, false, fc);
     }
 
-    public void onRadioClickChanged(RadioGroup radioGroup, int id) {
 
-        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1801.getId())
-            bi.hfa1802.clearCheck();
-
-        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1803.getId()) {
-            bi.hfa1804.clearCheck();
-            bi.hfa1805.clearCheck();
-            bi.hfa1806.clearCheck();
-        }
-
-        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1805.getId())
-            bi.hfa1806.clearCheck();
-
-        if (radioGroup.getCheckedRadioButtonId() == bi.hfa1807.getId()) {
-            bi.hfa1808.clearCheck();
-            bi.hfa1809.clearCheck();
-        }
-
-    }
 }

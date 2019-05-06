@@ -48,6 +48,7 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
         ClearClass.ClearAllFields(bi.fas02c00, false);
+
         String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_02_SURVEY_TYPE);
         if (!getSurvey.equals("0"))
             bi.fas02c00.check(bi.fas02c00.getChildAt(Integer.valueOf(getSurvey) - 1).getId());

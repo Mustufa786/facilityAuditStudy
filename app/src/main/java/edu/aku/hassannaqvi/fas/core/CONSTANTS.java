@@ -18,6 +18,7 @@ public interface CONSTANTS {
     String URL_HFA = "health_facilities.php";
     String URL_DEVICES = "devices.php";
     String URL_FORMS = "forms.php";
+    String URL_UPDATE_APP = "output.json";
 
     String _URI_END_FLAG = "complete";
     String _URI_FC_OBJ = "fc_data";
@@ -31,5 +32,6 @@ public interface CONSTANTS {
     String _URI_DATAMAP_02_SURVEY_TYPE = "fas02c00";
     String _URI_DATAMAP_02_HF_NO = "fas01c001";
     String _URI_DATAMAP_02_W_ID = "fas01cmw01";
+
 
 }
