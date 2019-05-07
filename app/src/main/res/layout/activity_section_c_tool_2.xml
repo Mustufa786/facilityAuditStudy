@@ -654,8 +654,12 @@
 
                                     <RadioButton
                                         android:id="@+id/fas02c07a"
-                                        style="@style/radiobutton"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
                                         android:text="@string/week" />
+
 
                                     <EditText
                                         android:id="@+id/fas02c07w"
@@ -669,9 +673,13 @@
                                         android:text='@{fas02c07a.checked ? fas02c07w.getText.toString : ""}'
                                         android:visibility='@{fas02c07a.checked ? View.VISIBLE : View.GONE}' />
 
+
                                     <RadioButton
                                         android:id="@+id/fas02c07b"
-                                        style="@style/radiobutton"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
                                         android:text="@string/month" />
 
                                     <EditText
@@ -688,7 +696,10 @@
 
                                     <RadioButton
                                         android:id="@+id/fas02c0798"
-                                        style="@style/radiobutton"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
                                         android:text="@string/dkn" />
 
                                 </RadioGroup>
