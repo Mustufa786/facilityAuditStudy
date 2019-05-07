@@ -782,221 +782,221 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--hfa1324-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <!--&lt;!&ndash;hfa1324&ndash;&gt;-->
+                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
 
-                    <LinearLayout style="@style/linerlayout_view">
+                    <!--<LinearLayout style="@style/linerlayout_view">-->
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1324"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_horizontal"-->
+                            <!--android:background="@color/colorPrimary"-->
+                            <!--android:text="@string/hfa1324"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                            <!--android:textColor="@android:color/white"-->
+                            <!--android:textSize="20sp" />-->
 
-                        <EditText
-                            android:id="@+id/hfa1324"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1324"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
-
-                    </LinearLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <!--hfa1325-->
-                <android.support.v7.widget.CardView style="@style/cardView">
-
-                    <LinearLayout style="@style/linerlayout_view">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1325"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:id="@+id/hfa1325"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1325"
-                            android:inputType="number"
-                            android:maxLength="3" />
+                        <!--<EditText-->
+                            <!--android:id="@+id/hfa1324"-->
+                            <!--style="@style/textInput"-->
+                            <!--android:hint="@string/hfa1324"-->
+                            <!--android:inputType="number"-->
+                            <!--android:maxLength="3" />-->
 
 
-                    </LinearLayout>
+                    <!--</LinearLayout>-->
 
-                </android.support.v7.widget.CardView>
+                <!--</android.support.v7.widget.CardView>-->
 
-                <!--hfa1326-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <!--&lt;!&ndash;hfa1325&ndash;&gt;-->
+                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
 
-                    <LinearLayout style="@style/linerlayout_view">
+                    <!--<LinearLayout style="@style/linerlayout_view">-->
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1326"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_horizontal"-->
+                            <!--android:background="@color/colorPrimary"-->
+                            <!--android:text="@string/hfa1325"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                            <!--android:textColor="@android:color/white"-->
+                            <!--android:textSize="20sp" />-->
 
-                        <EditText
-                            android:id="@+id/hfa1326"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1326"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
-
-                    </LinearLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <!--hfa1327-->
-                <android.support.v7.widget.CardView style="@style/cardView">
-
-                    <LinearLayout style="@style/linerlayout_view">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1327"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:id="@+id/hfa1327"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1327"
-                            android:inputType="number"
-                            android:maxLength="3" />
+                        <!--<EditText-->
+                            <!--android:id="@+id/hfa1325"-->
+                            <!--style="@style/textInput"-->
+                            <!--android:hint="@string/hfa1325"-->
+                            <!--android:inputType="number"-->
+                            <!--android:maxLength="3" />-->
 
 
-                    </LinearLayout>
+                    <!--</LinearLayout>-->
 
-                </android.support.v7.widget.CardView>
+                <!--</android.support.v7.widget.CardView>-->
 
-                <!--hfa1328-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <!--&lt;!&ndash;hfa1326&ndash;&gt;-->
+                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
 
-                    <LinearLayout style="@style/linerlayout_view">
+                    <!--<LinearLayout style="@style/linerlayout_view">-->
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1328"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_horizontal"-->
+                            <!--android:background="@color/colorPrimary"-->
+                            <!--android:text="@string/hfa1326"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                            <!--android:textColor="@android:color/white"-->
+                            <!--android:textSize="20sp" />-->
 
-                        <EditText
-                            android:id="@+id/hfa1328"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1328"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
-
-                    </LinearLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <!--hfa1329-->
-                <android.support.v7.widget.CardView style="@style/cardView">
-
-                    <LinearLayout style="@style/linerlayout_view">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1329"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:id="@+id/hfa1329"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1329"
-                            android:inputType="number"
-                            android:maxLength="3" />
+                        <!--<EditText-->
+                            <!--android:id="@+id/hfa1326"-->
+                            <!--style="@style/textInput"-->
+                            <!--android:hint="@string/hfa1326"-->
+                            <!--android:inputType="number"-->
+                            <!--android:maxLength="3" />-->
 
 
-                    </LinearLayout>
+                    <!--</LinearLayout>-->
 
-                </android.support.v7.widget.CardView>
+                <!--</android.support.v7.widget.CardView>-->
 
-                <!--hfa1330-->
-                <android.support.v7.widget.CardView style="@style/cardView">
+                <!--&lt;!&ndash;hfa1327&ndash;&gt;-->
+                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
 
-                    <LinearLayout style="@style/linerlayout_view">
+                    <!--<LinearLayout style="@style/linerlayout_view">-->
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1330"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_horizontal"-->
+                            <!--android:background="@color/colorPrimary"-->
+                            <!--android:text="@string/hfa1327"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                            <!--android:textColor="@android:color/white"-->
+                            <!--android:textSize="20sp" />-->
 
-                        <EditText
-                            android:id="@+id/hfa1330"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1330"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
-
-                    </LinearLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <!--hfa1331-->
-                <android.support.v7.widget.CardView style="@style/cardView">
-
-                    <LinearLayout style="@style/linerlayout_view">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1331"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:id="@+id/hfa1331"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1331"
-                            android:inputType="number"
-                            android:maxLength="3" />
+                        <!--<EditText-->
+                            <!--android:id="@+id/hfa1327"-->
+                            <!--style="@style/textInput"-->
+                            <!--android:hint="@string/hfa1327"-->
+                            <!--android:inputType="number"-->
+                            <!--android:maxLength="3" />-->
 
 
-                    </LinearLayout>
+                    <!--</LinearLayout>-->
 
-                </android.support.v7.widget.CardView>
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--&lt;!&ndash;hfa1328&ndash;&gt;-->
+                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
+
+                    <!--<LinearLayout style="@style/linerlayout_view">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_horizontal"-->
+                            <!--android:background="@color/colorPrimary"-->
+                            <!--android:text="@string/hfa1328"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                            <!--android:textColor="@android:color/white"-->
+                            <!--android:textSize="20sp" />-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/hfa1328"-->
+                            <!--style="@style/textInput"-->
+                            <!--android:hint="@string/hfa1328"-->
+                            <!--android:inputType="number"-->
+                            <!--android:maxLength="3" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--&lt;!&ndash;hfa1329&ndash;&gt;-->
+                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
+
+                    <!--<LinearLayout style="@style/linerlayout_view">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_horizontal"-->
+                            <!--android:background="@color/colorPrimary"-->
+                            <!--android:text="@string/hfa1329"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                            <!--android:textColor="@android:color/white"-->
+                            <!--android:textSize="20sp" />-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/hfa1329"-->
+                            <!--style="@style/textInput"-->
+                            <!--android:hint="@string/hfa1329"-->
+                            <!--android:inputType="number"-->
+                            <!--android:maxLength="3" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--&lt;!&ndash;hfa1330&ndash;&gt;-->
+                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
+
+                    <!--<LinearLayout style="@style/linerlayout_view">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_horizontal"-->
+                            <!--android:background="@color/colorPrimary"-->
+                            <!--android:text="@string/hfa1330"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                            <!--android:textColor="@android:color/white"-->
+                            <!--android:textSize="20sp" />-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/hfa1330"-->
+                            <!--style="@style/textInput"-->
+                            <!--android:hint="@string/hfa1330"-->
+                            <!--android:inputType="number"-->
+                            <!--android:maxLength="3" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--&lt;!&ndash;hfa1331&ndash;&gt;-->
+                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
+
+                    <!--<LinearLayout style="@style/linerlayout_view">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_horizontal"-->
+                            <!--android:background="@color/colorPrimary"-->
+                            <!--android:text="@string/hfa1331"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                            <!--android:textColor="@android:color/white"-->
+                            <!--android:textSize="20sp" />-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/hfa1331"-->
+                            <!--style="@style/textInput"-->
+                            <!--android:hint="@string/hfa1331"-->
+                            <!--android:inputType="number"-->
+                            <!--android:maxLength="3" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</android.support.v7.widget.CardView>-->
 
             </LinearLayout>
 

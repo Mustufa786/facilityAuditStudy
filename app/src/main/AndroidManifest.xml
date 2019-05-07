@@ -35,6 +35,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+
         </activity>
         <activity android:name="im.dino.dbinspector.activities.DbInspectorActivity">
             <intent-filter tools:node="removeAll">
@@ -116,7 +117,10 @@
             android:name=".ui.tool1.SectionIActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"
-            android:theme="@style/AppTheme1" />
+            android:theme="@style/AppTheme1">
+
+
+        </activity>
         <activity
             android:name=".ui.tool2.SectionA_tool_2Activity"
             android:screenOrientation="portrait"

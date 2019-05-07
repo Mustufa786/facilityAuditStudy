@@ -93,35 +93,34 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
-                            <RadioGroup
-                                android:id="@+id/hfa1902"
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
-                                <RadioButton
+                                <CheckBox
                                     android:id="@+id/hfa1902a"
-                                    style="@style/i_radiobutton"
+                                    style="@style/checkbox"
                                     android:text="@string/hfa1902a" />
 
-                                <RadioButton
+                                <CheckBox
                                     android:id="@+id/hfa1902b"
-                                    style="@style/i_radiobutton"
+                                    style="@style/checkbox"
                                     android:text="@string/hfa1902b" />
 
-                                <RadioButton
+                                <CheckBox
                                     android:id="@+id/hfa1902c"
-                                    style="@style/i_radiobutton"
+                                    style="@style/checkbox"
                                     android:text="@string/hfa1902c" />
 
-                                <RadioButton
+                                <CheckBox
                                     android:id="@+id/hfa190298"
-                                    style="@style/i_radiobutton"
+                                    style="@style/checkbox"
                                     android:text="@string/dkn" />
 
-                                <RadioButton
+                                <CheckBox
                                     android:id="@+id/hfa190296"
-                                    style="@style/i_radiobutton"
+                                    style="@style/checkbox"
                                     android:text="@string/other" />
 
                                 <EditText
@@ -133,7 +132,9 @@
                                     android:text='@{hfa190296.checked ? hfa190296x.getText.toString : ""}'
                                     android:visibility='@{hfa190296.checked? View.VISIBLE : View.GONE}' />
 
-                            </RadioGroup>
+
+                            </LinearLayout>
+
 
                         </LinearLayout>
 

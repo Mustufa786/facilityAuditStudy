@@ -43,14 +43,14 @@ public class SectionHActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId != bi.hfa1801a.getId())
-                    ClearClass.ClearAllCardFields(bi.fldGrp1802);
+                    ClearClass.ClearAllFields(bi.fldGrp1802,null);
             }
         });
         bi.hfa1803.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId != bi.hfa1803a.getId()) {
-                    ClearClass.ClearAllCardFields(bi.fldGrp456);
+                    ClearClass.ClearAllFields(bi.fldGrp456,null);
 
                 }
             }
@@ -59,14 +59,14 @@ public class SectionHActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId != bi.hfa180501.getId())
-                    ClearClass.ClearAllCardFields(bi.fldGrp1806);
+                    ClearClass.ClearAllFields(bi.fldGrp1806,null);
             }
         });
         bi.hfa1807.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId != bi.hfa1807a.getId()) {
-                    ClearClass.ClearAllCardFields(bi.fldgrp89);
+                    ClearClass.ClearAllFields(bi.fldgrp89,null);
 
                 }
             }
