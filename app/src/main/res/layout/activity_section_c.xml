@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.tool1.SectionCActivity">
 
@@ -100,6 +101,33 @@
 
                 </android.support.v7.widget.CardView>
 
+                <!--hfa1332-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout style="@style/linerlayout_view">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/hfa1300"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
+                            android:id="@+id/hfa1332"
+                            style="@style/textInput"
+                            android:hint="@string/hfa1300"
+                            app:dateFormat="dd-MM-yyyy"
+                            app:minDate="01/04/2018"
+                            app:maxDate="31/03/2019"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
                 <!--hfa1301-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
@@ -120,7 +148,7 @@
                             style="@style/textInput"
                             android:hint="@string/hfa1301"
                             android:inputType="number"
-                            android:maxLength="3" />
+                            android:maxLength="4" />
 
                     </LinearLayout>
 
@@ -146,7 +174,7 @@
                             style="@style/textInput"
                             android:hint="@string/hfa1302"
                             android:inputType="number"
-                            android:maxLength="3" />
+                            android:maxLength="4" />
 
 
                     </LinearLayout>
@@ -173,7 +201,7 @@
                             style="@style/textInput"
                             android:hint="@string/hfa1303"
                             android:inputType="number"
-                            android:maxLength="3" />
+                            android:maxLength="4" />
 
 
                     </LinearLayout>
