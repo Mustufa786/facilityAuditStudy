@@ -108,7 +108,7 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         fc.setUsername(MainApp.userName);
         fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
         fc.setDeviceID(deviceID);
-        fc.setFormType(CONSTANTS._URI_FORM_TOOL1);
+        fc.setFormType(CONSTANTS._URI_FORM_TOOL2);
         setGPS(fc);
 
 
