@@ -3,7 +3,6 @@ package edu.aku.hassannaqvi.fas.ui.tool1;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.json.JSONObject;
@@ -109,8 +108,6 @@ public class SectionDActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-
         Toast.makeText(this, "You can't go back", Toast.LENGTH_SHORT).show();
     }
 }
