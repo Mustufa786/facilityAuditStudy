@@ -99,6 +99,8 @@ public class MainActivity extends AppCompatActivity {
         /*TagID Start*/
         sharedPref = getSharedPreferences("tagName", MODE_PRIVATE);
         editor = sharedPref.edit();
+        sharedPrefDownload = getSharedPreferences("appDownload", MODE_PRIVATE);
+        editorDownload = sharedPrefDownload.edit();
 
         builder = new AlertDialog.Builder(MainActivity.this);
         final AlertDialog dialog = builder.create();
