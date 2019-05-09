@@ -3,6 +3,8 @@ package edu.aku.hassannaqvi.fas.ui.tool1;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.json.JSONObject;
@@ -51,6 +53,19 @@ public class SectionDActivity extends AppCompatActivity {
 //                    ClearClass.ClearAllFields(bi.fldGrpllSecD02, null);
 //            }
 //        });
+
+        bi.hfa1415.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == bi.hfa1415a.getId()) {
+                    bi.fldGrp1617.setVisibility(View.VISIBLE);
+                } else {
+                    bi.fldGrp1617.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldGrp1617, null);
+                }
+            }
+        });
     }
 
     private void setContentUI() {

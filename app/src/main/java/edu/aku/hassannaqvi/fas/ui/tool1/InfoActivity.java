@@ -89,20 +89,20 @@ public class InfoActivity extends AppCompatActivity {
 
             }
         });
-        bi.hfa1119.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-                if (group.getCheckedRadioButtonId() == bi.hfa1119a.getId()) {
-                    bi.btnContinue.setVisibility(View.VISIBLE);
-                    bi.btnEnd.setVisibility(View.GONE);
-                } else {
-                    bi.btnEnd.setVisibility(View.VISIBLE);
-                    bi.btnContinue.setVisibility(View.GONE);
-                }
-
-            }
-        });
+//        bi.hfa1119.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup group, int checkedId) {
+//
+//                if (group.getCheckedRadioButtonId() == bi.hfa1119a.getId()) {
+//                    bi.btnContinue.setVisibility(View.VISIBLE);
+//                    bi.btnEnd.setVisibility(View.GONE);
+//                } else {
+//                    bi.btnEnd.setVisibility(View.VISIBLE);
+//                    bi.btnContinue.setVisibility(View.GONE);
+//                }
+//
+//            }
+//        });
     }
 
     private void setContentUI() {

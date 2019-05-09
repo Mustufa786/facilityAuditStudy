@@ -91,7 +91,6 @@
     <string name="hfa1103a"> ڈسٹرکٹ </string>
     <string name="hfa1103b"> یونین کونسل </string>
     <string name="hfa1103c"> مرکزِ صحت </string>
-
     <string name="hfa1104"> مرکزِ صحت کی قسم </string>
     <string name="hfa1104a"> گورنمنٹ </string>
     <string name="hfa1104b"> اے کے ایچ ایس پی </string>
@@ -110,32 +109,18 @@
     <string name="hfa1107f"> دن چھے </string>
     <string name="hfa1107g"> سات دن </string>
     <string name="hfa11h"> کیا یہ مرکزِ صحت مندرجہ بالاکوئی بھی ماں اور نوزائیدہ بچوں کی صحت کی سہولیات فراہم کرتا ہے؟ </string>
-
-
     <string name="hfa1108"> آؤٹ ریچ سہولیات </string>
-
     <string name="hfa1109"> آؤٹ پیشینٹ سہولیات </string>
-
     <string name="hfa1110"> ان پیشینٹ سہولیات </string>
-
     <string name="hfa1111"> ابتدائی طبی امداد اور ریفرل کی سہولیات </string>
-
     <string name="hfa1112"> ای پی آئی کا مرکز </string>
-
     <string name="hfa1113"> دیگر وضاحت </string>
-
     <string name="hfa1114"> کیا یہ مرکزِ صحت ایک مخصوص آبادی کے لئے صحت کی سہولیات فراہم کرتا ہے؟ </string>
-
     <string name="hfa1115"> اگر ہاں، تو کیا کمیونٹی آگاہ ہے کہ یہ ان کے علاقے میں سب سے قریبی مرکزِ صحت ہے؟ </string>
-
     <string name="hfa1116"> کیا یہ مرکزِ صحت کوئی بھی زچگی کی سہولیات فراہم کرتا ہے؟ </string>
-
     <string name="hfa1117"> نارمل ڈیلیوری کی سہولت </string>
-
     <string name="hfa1118"> بنیادی ایمرجنسی زچگی کی سہولت </string>
-
     <string name="hfa1119"> جامع ایمرجنسی زچگی کی سہولت </string>
-
     <string name="hfa1120"> نوزائیدہ کی دیکھ بھال کی سہولت </string>
 
 
@@ -150,61 +135,33 @@
     <string name="hfa1304"> مرکز ِصحت پر مردہ بچوں کے لیے کونسی تعریف استعمال کی گئ؟ </string>
     <string name="hfa1304a"> ≤ہفتے یا اس سے کم عمر اور 500 گرام یا اس سے کم وزن22 weeks and ≤500g </string>
     <string name="hfa1304b"> 28 ہفتے یا اس سے کم 1000 گرام یا اس سے کم ≤28 weeks and ≤1000g </string>
-
     <string name="hfa1305"> مرکزِ صحت پر پیدا ہونے والے مردہ بچوں کی تعداد </string>
-
     <string name="hfa1306"> زچگی کے دوران ہونے والے بچوں کی اموات کی تعداد </string>
-
     <string name="hfa1307"> مرکزِ صحت پرپیدائش سے قبل پیدا ہونے والے مردہ بچوں کی تعداد </string>
-
     <string name="hfa1308"> مرکزِ صحت پرپیدائش کے فوراً بعد بچوں کی اموات کی تعداد (0 سے 7 دنوں کے دوران) </string>
-
     <string name="hfa1309"> مرکزِ صحت پر پیدائش کے بعد بچوں کی اموات( 0 سے 28 دن کے دوران) </string>
-
     <string name="hfa1310"> مرکزِ صحت پر ہونے والی زچگیوں میں حاملہ عورتوں کی اموات کی تعداد </string>
-
     <string name="hfa1311"> اوزاروں کی مدد سے کی گئی زچگیوں کی تعداد </string>
-
     <string name="hfa1312"> مرکزِ صحت پر ہونے والے بڑے آپریشن کے ذریعے ڈیلیوری کی تعداد </string>
-
     <string name="hfa1313"> مرکزِ صحت پر خون کی منتقلی کی تعداد </string>
-
     <string name="hfa1314"> مرکزِ صحت پر بچہ دانی نکال دینے والے آپریشن کی تعداد </string>
-
     <string name="hfa1315"> ان خواتین کی تعداد جوزچگی کے بعد دوسرے مرکزِ صحت پر بھیجی گئی </string>
-
     <string name="hfa1316"> دوسرے مراکز صحت سے ریفر ہونے والی خواتین کی تعداد </string>
-
     <string name="hfa1317"> نوزائیدہ بچوں کی تعداد جو دیگرمراکزصحت کی طرف ریفر کیا گیا </string>
-
     <string name="hfa1318"> دوسرے مراکز صحت سے ریفر ہونے والے نوزائیدہ بچوں کی تعداد </string>
-
     <string name="hfa1319"> ان نوزائیدہ بچوں کی تعداد جن کےسیپسس کا علاج مرکزِ صحت پر ہوا </string>
-
     <string name="hfa1320"> ان نوزائیدہ بچوں کی تعداد جن کےنمونیا کا علاج مرکزِ صحت پر ہوا </string>
-
     <string name="hfa1321"> ان نوازائیدہ بچوں کی تعداد جن کا پیدائش کے وقت سانس لینے کا آغاز تاخیر سے ہو ا </string>
-
     <string name="hfa1322"> ان بچوں کی تعداد جن کا وزن پیدائش کے وقت 2500 گرام سے کم تھا </string>
-
     <string name="hfa1323"> ان بچوں کی تعداد جن کی پیدائش 37 ہفتوں سے کم کے حمل پر ہوئی </string>
-
     <string name="hfa1324"> تاخیر کی کل تعداد جن کی نشاندہی پچھلے 4 مہینوں میں کی گئی </string>
-
     <string name="hfa1325"> تاخیر 1 کی تعداد (صرف واقعات جو پچھلے 4 مہینوں میں ہوئے) </string>
-
     <string name="hfa1326"> تاخیر 2 کی تعداد (صرف واقعات جو پچھلے 4 مہینوں میں ہوئے) </string>
-
     <string name="hfa1327"> تاخیر 3 کی تعداد (صرف واقعات جو پچھلے 4 مہینوں میں ہوئے) </string>
-
     <string name="hfa1328"> تاخیر 1 اور تاخیر 2 ملا کر واقعات کی تعداد جو پچھلے 4 مہینوں میں ہوئے </string>
-
     <string name="hfa1329"> تاخیر 1 اور تاخیر 3 ملا کر واقعات کی تعداد جو پچھلے 4 مہینوں میں ہوئے </string>
-
     <string name="hfa1330"> تاخیر 2 اور تاخیر 3 ملا کر واقعات کی تعداد جو پچھلے 4 مہینوں میں ہوئے </string>
-
     <string name="hfa1331"> تاخیر 1 ، تاخیر 2 اور تاخیر 3 ملا کر واقعات کی تعداد جو پچھلے 4 مہینوں میں ہوئے </string>
-
     <string name="available">Available?  </string>
     <string name="functioning">Functioning?  </string>
     <string name="observed">مشاہدہ </string>
@@ -221,128 +178,66 @@
     <string name="hfa14Heading03">برائے کرم مجھے بتائیے کیا مندرجہ ذیل آلات جو ڈیلیوری کے لیے استعمال ہوتے ہیں آج مرکزِ صحت  پر موجود ہیں اور فعال ہیں؟ </string>
 
     <string name="hfa1401"> تمام خواتین میں زچگی کے فوراً بعد زیادہ خون بہہ جانے کی روک تھام کے عمل کے لیے انجیکشن آکسیٹوسن کا استعمال کیا </string>
-
     <string name="hfa1402"> پارٹو گرام کے ذریعہ سے لیبر کی نگرانی اور انتظام </string>
-
     <string name="hfa1403"> پیدائش کے فوراً بعد بچے کو فوری طور پر ماں کا دودھ پلانا </string>
-
     <string name="hfa1404"> پیدائش کے بعد بچے کو چھ ماہ تک صرف اور صرف ماں کا دودھ پلانا </string>
-
     <string name="hfa1405"> مرکزِ صحت پر حفظان صحت کے مطابق آنول نال کی دیکھ بھال (جراثیم سے پاک آلات کا استعمال) </string>
-
     <string name="hfa1406"> مرکزِ صحت پر بچے کے درجہ حرارت کا تحفظ (پیدائش کے فوراً بعد بچے کو خشک کرنا) </string>
-
     <string name="hfa1407"> مرکزِ صحت پر درجہ حرارت کا تحفظ (پیدائش کے بعد 6 گھنٹے تک پہلا غسل نہ دینا) </string>
-
     <string name="hfa1408"> حاملہ کے لیے اینٹی بائیوٹیکس (آئی وی یا آئی ایم انجکشن) کا انتظام </string>
-
     <string name="hfa1409"> زچگی کے فوراً بعد زیادہ خون بہہ جانے کی روک تھام کے عمل کے لیے آکسیٹوسن کا علاج کے لیے انتظام (آئی وی یاآئی ایم انجکشن) </string>
-
     <string name="hfa1410"> حاملہ کے لیے پری-ایکیلیمسیا/ ایکیلیمسیا کی روک تھام کے لیے میگنیشم سلفیٹ (آئی وی یا آئی ایم ) کا انتظام </string>
-
     <string name="hfa1411"> اوزار کی مدد سے زچگی </string>
-
     <string name="hfa1412"> پلاسینٹہ کو ہاتھوں سے نکالنا </string>
-
     <string name="hfa1413"> حمل کے باقیات کی صفائی/ نکالنا </string>
-
     <string name="hfa1414"> نوازائیدہ بچے کی زندگی کو بچانے کے لیے ایمبوبیگ اور ماسک کا استعمال </string>
     <string name="hfa1415"> بڑا آپریشن (سی سیکشن) </string>
-
     <string name="hfa1416"> انتقال خون کی سہولت موجود ہے؟ </string>
-
     <string name="hfa1417"> کیا اس مرکزِ صحت میں بلڈبنک صحیح طریقے سے کام رہا ہے؟ </string>
-
     <string name="hfa1418"> انفیکشن کی روک تھام کے لیے پریٹرم یا طویل پروم(بچہ دانی کا وقت سے پہلے پھٹ جانا) کے لیے اینٹی بائیوٹیکس </string>
-
     <string name="hfa1419"> وقت سے پہلےشروع ہونے والے بچے کی پیدائش کے درد میں کورٹیزون کا استعمال </string>
-
     <string name="hfa1420"> کے ایم سی ( ماں اور بچے کا جلد سے جلد کا رابط) قبل از وقت پیدائش یا پیدائش کے وقت اور کم وزن بچوں کے لیے </string>
-
     <string name="hfa1421"> نوزائیدہ سیپسس کے لیے اینٹی بائیوٹِکس انجکشن کا استعمال </string>
-
     <string name="hfa1422"> پیدائش کے وقت بچے کی دیکھ بھال کے لیے قومی سطح پر موجود ہدایات کا استعمال </string>
-
     <string name="hfa1423"> پیدائش کے وقت بچے کی دیکھ بھال کے لیےضروری چیک لسٹ (ہدایات کی فہرست) </string>
-
     <string name="hfa1424"> نوزائیدہ بچوں کی دیکھ بھال کی قومی سطح پر موجود ہدایات کی فہرست کا استعمال </string>
-
     <string name="hfa1425"> بنیادی اور ہنگامی بچے کی پیدائش اور نوزائیدہ کی دیکھ بھال کے لیے قومی سطح پر موجود ہدایات کی فہرست ( نیشنل گائیڈ لائن) </string>
-
-
     <string name="hfa1426av"> معائنے کے لیے فلش لائٹ </string>
-
     <string name="hfa1427av"> ناف باندھنے کےلئے کلیمپ کورڈ کلیم </string>
-
     <string name="hfa1428av"> ایپی زیاٹومی سیزر( فرج شگافی قینچی) </string>
-
     <string name="hfa1429av"> ناف کو کاٹنے کے لیے قینچی یا بلیڈ </string>
-
     <string name="hfa1430av"> ٹانکے لگانے کے لیے جراحی سوئی دھاگہ </string>
-
     <string name="hfa1431av"> جراحی سوئی ہولڈر </string>
-
     <string name="hfa1432av"> مینول ویکیوم ایکسٹرریکٹر </string>
-
-
     <string name="hfa1433av"> ویکیوم اسپیریٹریا ڈی اینڈ سی کٹ </string>
-
     <string name="hfa1434av"> انکیوبیٹر </string>
-
     <string name="hfa1435av"> صاف لیٹکس د ستانے (ڈسپوزایبل) </string>
-
     <string name="hfa1436av"> خالی پارٹو گراف </string>
-
     <string name="hfa1437av"> ڈیلیوری بیڈ </string>
-
     <string name="hfa1438av"> نوازئیدہ بچے کو ہوش میں لانے کے لیے ریسیسیٹیشن ٹیبل کا استعمال ہیٹ سورس کے ساتھ </string>
-
     <string name="hfa1439av"> نوازئیدہ بچوں کی ریسیسیٹیشن کے لیے ایک نمبر سائزکا بیگ اور ماسک </string>
-
     <string name="hfa1440av"> نوازئیدہ بچوں کی ریسیسیٹیشن کے لیے صفر نمبر سائزکا بیگ اور ماسک </string>
-
     <string name="hfa1441av"> ایلکٹریک سکشن پمپ (سکشن کے آلات) </string>
-
     <string name="hfa1442av"> سکشن کیتیھٹر نوازئیدہ بچوں کی سکشن کے لیے </string>
-
     <string name="hfa1443av"> سکشن بلب ایک بار استعمال کے لیے </string>
-
     <string name="hfa1444av"> جراثیم سے پاک سکشن بلب ایک سے زائد بار استعمال کے لیے </string>
-
     <string name="hfa1445av"> اسپیکیولم </string>
-
     <string name="hfa1446av"> شیرخوار بچے کی وزن کی مشین </string>
-
     <string name="hfa1447av"> فشار خون (بلڈ پریشر) چیک کرنے کے لیے ڈیجیٹل یا مینول مشین اسٹیتھو اسکوپ کے ساتھ </string>
-
     <string name="hfa1448av"> صاف ستھرا استعمال کا پانی (پائپ نل بالٹی اور باروچی خانہ ) </string>
-
     <string name="hfa1449av"> ہاتھ دھونے کے لیے مائع صابن اور صابن </string>
-
     <string name="hfa1450av"> فیٹو اسکوپ </string>
-
     <string name="hfa1451av"> ڈیپٹون یا جنین کی نگرانی </string>
-
     <string name="hfa1452av"> الٹرا ساؤنڈ مشین </string>
-
     <string name="hfa1453av"> 5 ملی لیٹر ڈسپوزایبل سرنج </string>
-
     <string name="hfa1454av"> 2.5 ملی لیٹر ڈسپوزایبل سرنج </string>
-
     <string name="hfa1455av"> 24 جی بٹر فلائی انجکشن </string>
-
     <string name="hfa1456av"> 23 جی بٹر فلائی انجکشن </string>
-
     <string name="hfa1457av"> 18جی کا آئی/ وی کینولہ </string>
-
     <string name="hfa1458av"> 20 جی آئی/ وی کینولہ </string>
-
     <string name="hfa1459av"> 22 جی آئی/ وی کینولہ </string>
-
     <string name="hfa1460av"> غیراستعمال شدہ صاف دستانے(ڈسپوزیبل) </string>
-
     <string name="hfa1461av"> یو پی ایس </string>
-
     <string name="hfa1462av"> جنریٹر </string>
 
 
@@ -397,8 +292,6 @@
 
     <!--Section H-->
     <string name="hfa1801"> کیا مرکزِ صحت کی اسٹاف میٹنگ باقاعدگی سے ہوتی ہیں؟ </string>
-
-
     <string name="hfa1802"> کتنی دفعہ ہوتی ہیں؟ </string>
     <string name="hfa1802a"> ہر دن </string>
     <string name="hfa1802b"> ہفتہ وار </string>
@@ -407,9 +300,7 @@
     <string name="hfa1802e"> ضرورت پڑنے پر </string>
     <string name="hfa1802f"> معلوم نہیں </string>
     <string name="hfa1802g"> دیگر وضاحت </string>
-
     <string name="hfa1803"> کیا اس علاقے میں کمیونٹی کی سطح پرصحت سے متعلق میٹنگ ہوتی ہیں؟ </string>
-
     <string name="hfa1804"> کتنی دفعہ یہ منعقد ہوتی ہیں؟ </string>
     <string name="hfa1804a"> ہر دن </string>
     <string name="hfa1804b"> ہفتہ وار </string>
@@ -424,9 +315,7 @@
     <string name="hfa1806c"> کمیونٹی مڈوائف </string>
     <string name="hfa1806d"> گاوں کا سربراہ </string>
     <string name="hfa1806e"> سماجی کارکن </string>
-
     <string name="hfa1807"> کیا یہ مرکزِ صحت خواتین اورنوزائیدہ کی اموات سے متعلق جانچ پڑتال کی میٹنگ کرتی ہے؟ </string>
-
     <string name="hfa1808"> تو کتنی بار؟ </string>
     <string name="hfa1808a"> ہر دن </string>
     <string name="hfa1808b"> ہفتہ وار </string>
@@ -435,7 +324,6 @@
     <string name="hfa1808e"> ضرورت پڑنے پر </string>
     <string name="hfa1808f"> معلوم نہیں </string>
     <string name="hfa1808g"> دیگر وضاحت </string>
-
     <string name="hfa1809"> کون خواتین اورنوزائیدہ کی اموات سے متعلق جانچ پڑتال کی میٹنگ میں شرکت کرتا/کرتی ہے؟ </string>
     <string name="hfa1809a"> میڈیکل سپرنٹنڈنٹ </string>
     <string name="hfa1809b"> ماہر میڈیکل ڈاکٹر </string>
@@ -481,7 +369,6 @@
     <string name="fas02b01">آپ کی پیدائش کس مہینے اور سال میں ہوئی تھی</string>
     <string name="fas02b0101b">مہینہ معلوم نہیں</string>
     <string name="fas02b0102b">سال معلوم نہیں </string>
-
     <string name="fas02b02">آپ کی عمر کتنی ہے ؟</string>
     <string name="fas02b03">کیا آپ نے کبھی رسمی تعلیم حاصل کی ہے ؟</string>
     <string name="fas02b04">آپ نے  اسکول کے کس لیول تک پڑھا؟</string>
@@ -509,7 +396,6 @@
     <string name="fas02b08d"> والد یا سُسر  </string>
     <string name="fas02b08e">والدہ یا ساس</string>
     <string name="fas02b08f">فیملی کے دوسرے مرد </string>
-
     <string name="fas02b09">آپ کی صحت اور دیکھ بھال کے متعلق فیصلے عام طور پر کون کرتا ہے ؟ </string>
     <string name="fas02b10"> آپ کے بچوں کی صحت اور دیکھ بھال کے متعلق فیصلے عام طور پر کون کرتا ہے ؟  </string>
     <string name="fas02b11">آپ کے گھر سے سب سے قریبی مرکز صحت کتنے فاصلے پر ہے؟ </string>
@@ -537,7 +423,6 @@
     <string name="fas02c04j"> صحت کی سہولیات کا خراب معیار</string>
     <string name="fas02c04k">پراویسی کی کمی/پردے کا انتظام نہیں</string>
     <string name="fas02c04l"> اسٹاف کا خراب رویہ</string>
-
     <string name="fas02c05">اس حمل کے دوران آپ نے اپنا طبی معانئہ کہاں کروایا ؟</string>
     <string name="fas02c05a"> اپنے گھر پر </string>
     <string name="fas02c05b">کسی اور کے گھر پر  </string>
@@ -551,7 +436,6 @@
     <string name="fas02c05j"> ہومیو پیتھک</string>
     <string name="fas02c05k">اس حمل کے دوران آپ نے اپنا طبی معانئہ کہاں کروایا ؟</string>
     <string name="fas02c05l">اس حمل کے دوران آپ نے اپنا طبی معانئہ کہاں کروایا ؟</string>
-
     <string name="fas02c06"> آپ نے کس سے معائنہ کروایا تھا ؟ </string>
     <string name="fas02c06a"> ڈاکٹر </string>
     <string name="fas02c06b"> نرس/کمیونٹی مڈوائف/ایل ایچ وی </string>
@@ -561,40 +445,29 @@
     <string name="fas02c06f"> حکیم </string>
     <string name="fas02c06g"> ڈسپنسری /کمپاونڈر </string>
     <string name="fas02c06h"> رشتہ دار/دوست </string>
-
     <string name="fas02c07"> جب آپ نے اس حمل کے دوران پہلی دفعہ معائنہ کروایا تو آپ کا حمل کتنے ہفتوں ،یا مہینہ کا تھا؟ </string>
-
     <string name="fas02c08"> جب آپ (نام) کے ساتھ حاملہ تھی تو حمل کے دوران آپ نے کتنی مرتبہ اپنا معائنہ کروایا؟ </string>
     <string name="fas02c08a"> معائنوں کی تعداد </string>
-
     <string name="fas02c09"> کیا آپ کا شوہرحمل کے کسی معائنہ میں آپ کے ساتھ آیا تھا ؟ </string>
-
     <string name="fas02c10"> کیا کوئی اور حمل کے کسی معائنے میں آپ کے ہمراہ تھا؟ </string>
-
     <string name="fas02c11"> حمل کے معائنے میں کون آپ کے ساتھ تھا؟ تمام جوابات درج کریں </string>
     <string name="fas02c11a"> فیملی/خاندان کا دوسرا مرد(وضاحت کریں) </string>
     <string name="fas02c11b"> فیملی/خاندان کی عورت (وضاحت کریں) </string>
-
     <string name="fas02c12"> آپ کے اس (موجودہ) حمل کے دوران طبی معائنہ کے وقت کیا مندرجہ ذیل میں سے کوئی عمل کم از کم ایک دفعہ کیا تھا؟کیا آپ کا بلڈپریشر چیک کیا گیا ؟کیا آپ نے پیشاب کا نمونہ دیا؟کیا آپ نے خون کا نمونہ دیا؟ </string>
     <string name="fas02c1201">  بلڈ پریشر </string>
     <string name="fas02c1202"> پیشاب کانمونہ </string>
     <string name="fas02c1203"> خون کا نمونہ </string>
-
     <string name="fas02c13"> جب آپ حمل سے تھی تو کیا آپ نے بازو پر تشنج سے بچاؤ کے ٹیکے لگوائے تھے؟ </string>
     <string name="fas02c13a"> Yes ہاں </string>
     <string name="fas02c13b"> No نہیں </string>
-
     <string name="fas02c14"> آپ نے دوران حمل کتنی مرتبہ تشنج کی بیماری سے بچاؤ والے ٹیکے لگوائے تھے؟ </string>
     <string name="fas02c14a"> معائنوں کی تعداد </string>
-
     <string name="fas02c15"> اس حمل کے دوران کیا آپ کو فولاد کی گولیاں /شربت یا فولاد /فولک ایسڈ کی اشیاملی تھی یا آپ نے خود خریدی تھی؟ </string>
     <string name="fas02c15a"> ہاں </string>
     <string name="fas02c15b"> نہیں </string>
-
     <string name="fas02c16"> کیا اس حمل کے دوران آپ نے پیٹ کے کیڑوں کی کوئی دوا استعمال کیں؟ </string>
     <string name="fas02c16a"> ہاں </string>
     <string name="fas02c16b"> نہیں </string>
-
     <string name="fas02c17"> (نام) کی پیدائش کہاں ہوئی تھی ؟صرف ایک جواب کا انتخآب کریں زریعہ کے لیے دائیں طرف دئے گئے کوڑ پر دائرہ لگائیں </string>
     <string name="fas02c17a"> گھر پر </string>
     <string name="fas02c17b"> مرکز صحت جاتے ہوئے راستے میں </string>
@@ -605,7 +478,6 @@
     <string name="fas02c17g"> نجی ہسپتال/کلینک </string>
     <string name="fas02c17h"> دیگر وضاحت </string>
     <string name="fas02c17i"> اے کے ایچ ایس پی کا مرکز صحت </string>
-
     <string name="fas02c18"> (نام) کی کسی مرکز صحت پر پیدائش کیونہیں ہوئی ؟دوسری کوئی وجہ معلوم کرنے کے لیے مزید سوالات پوچھیں تمام جوابات ریکارڈ کریں(نام) </string>
     <string name="fas02c18a"> خرچہ بہت زیادہ </string>
     <string name="fas02c18b"> مرکزصحت کھلا نہیں </string>
@@ -618,7 +490,6 @@
     <string name="fas02c18i"> ٹرانسپورٹ نہیں </string>
     <string name="fas02c18j"> صحت کی سہولیات کا خراب معیار </string>
     <string name="fas02c18k"> ڈیلیوری تیزی سے ہوئی </string>
-
     <string name="fas02c19"> (نام) کے پیدائش کے دوران کس نے مدد کرائی تھی؟ </string>
     <string name="fas02c19a"> ڈاکٹر </string>
     <string name="fas02c19b"> نرس </string>
@@ -630,7 +501,6 @@
     <string name="fas02c19h"> رشتہ دار/دوست </string>
     <string name="fas02c19i"> خود/کوئی موجود نہیں </string>
     <string name="fas02c19j"> دوسرا شخص(وضاحت کریں) </string>
-
     <string name="fas02c20"> وہ کیا وجوہات تھے جس کے باعث آپ نے (نام) کی پیدائش کے وقت مدد کے لیے دائی /دوست کو ترجیح دی؟کوئی اور وجہ معلوم کرنے کے لیے پوچھیںتمام جوابات لکھیں </string>
     <string name="fas02c20a"> فاصلہ </string>
     <string name="fas02c20b"> مرکز صحت کے مقابلے میں بہتر دیکھ بھال </string>
@@ -639,12 +509,9 @@
     <string name="fas02c20e"> پردہ </string>
     <string name="fas02c20f"> کم خرچہ </string>
     <string name="fas02c20g"> دیگر وضاحت کریں </string>
-
-
     <string name="fas02c21"> جب آپ حمل سے تھی تو کیا آپ یا آپ کی فیملی نے (نام ) کی پیدائش کے لیے پہلے کوئی تیاری کی تھی؟ </string>
     <string name="fas02c21a"> ہاں </string>
     <string name="fas02c21b"> نہیں </string>
-
     <string name="fas02c22"> مندرجہ ذیل میں سے کون سی تیاری کی تھی ؟ </string>
     <string name="fas02c2201"> زچگی کی جگہ </string>
     <string name="fas02c2202"> زچگی کون کرائے گا </string>
@@ -654,7 +521,6 @@
     <string name="fas02c2206"> خون کا ڈونر </string>
     <string name="fas02c2207"> خطرناک علامات </string>
     <string name="fas02c2208"> عورت کے ہمراہ کوئی شخص </string>
-
     <string name="fas02c23"> اس حمل کے دوران آپ کے شوہر کی طرف سے کیا مندرجہ ذیل کاموں میں سے کسی کام میں کو ئی مدد ملی ؟ </string>
     <string name="fas02c2301"> طبی معائنے کرانے کے لیے آپ کو لے کر چلیں </string>
     <string name="fas02c2302"> زچگی کے وقت جاتے ہوئے آپ کے ساتھ چلیں </string>
@@ -662,7 +528,6 @@
     <string name="fas02c2304"> گھریلو کام کاج </string>
     <string name="fas02c2305"> بچوں کی دیکھ بھال </string>
     <string name="fas02c2306"> حمل کے دوران طبی معائنے کرانے کی حوصلہ افزائی </string>
-
     <string name="fas02c24"> اگر نہیں تو کیا بنیادی وجہ تھی کہ آپ کو دوران حمل مرد نہیں ملی </string>
     <string name="fas02c24a"> شوہر /فیملی کا مدد دور تھا؟ </string>
     <string name="fas02c24b"> پیدائش /حمل مردوں کے لیے نہیں </string>
@@ -670,7 +535,6 @@
     <string name="fas02c24d"> میرے پاس فیملی کی دوسری عورتیں موجود ہیں تو مدد فراہم کرتی ہیں </string>
     <string name="fas02c24e"> میرے پاس اپنا پیسہ /آمدنی ہے </string>
     <string name="fas02c24f"> مجھے مدد کی ضرورت نہیں ہے </string>
-
     <string name="fas02c25"> آپ کے پاس ماں اور بچے کی صحت (MNCH) سے متعلقہ ضرورت کو پورا کرنے کے لیے مالی امداد کے کیا زرائع موجود ہیں؟ </string>
     <string name="fas02c25a"> فیملی (شوہر یا اپنے وسائل) </string>
     <string name="fas02c25b"> بنک/کسی ادارے سے قرض </string>
@@ -678,7 +542,6 @@
     <string name="fas02c25d"> دوست /رشتہ دار سے ادھار پیسہ </string>
     <string name="fas02c25e"> اثاثے بھیجنا </string>
     <string name="fas02c25f"> کسی بھی چیز کی ضروت نہیں </string>
-
     <string name="fas02c26"> مالی امداد کا زیادہ ترحصہ کس مقصد کے لیے استعمال کیاگیا ؟ </string>
     <string name="fas02c26a"> ٹرانسپورٹ </string>
     <string name="fas02c26b"> دوران حمل طبی معائنہ </string>
@@ -689,7 +552,6 @@
 
     <!--D-Tool2-->
     <string name="fas02d01"> کیاآپ کو دوران حمل خطرناک علامات کے بارے میں علم ہے ؟ </string>
-
     <string name="fas02d02"> برائے مہربانی کیا آپ حمل کے دوران خطرناک علامات میں سے کسی کا نام بتا سکیں گے؟ </string>
     <string name="fas02d02a"> سانس لینے میں دشواری </string>
     <string name="fas02d02b"> تھکاوٹ </string>
