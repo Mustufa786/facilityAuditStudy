@@ -17,12 +17,13 @@ import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.edittextpicker.aliazaz.textpicker.TextPicker;
+import com.edittextpicker.aliazaz.EditTextPicker;
 import com.shashank.sony.fancytoastlib.FancyToast;
 
 import java.lang.reflect.Field;
 
 import edu.aku.hassannaqvi.fas.R;
+
 
 /**
  * Created by ali.azaz on 12/04/17.
@@ -310,20 +311,21 @@ public abstract class ValidatorClass {
                 }
             } else if (view instanceof EditText) {
 
-                if (view instanceof TextPicker) {
+                if (view instanceof EditTextPicker) {
 
-                    if (((TextPicker) view).getType() == 1) {
-                        if (!((TextPicker) view).isEmptyTextBox()) {
-                            return false;
-                        }
-                    } else {
-                        if (!((TextPicker) view).isRangePickerValidate()) {
-                            return false;
-                        }
+                    if (!((EditTextPicker) view).isEmptyTextBox())
+                        return false;
+
+                    if (!((EditTextPicker) view).isRangeTextValidate())
+                        return false;
+
+                    if (!((EditTextPicker) view).isTextEqualToPattern())
+                        return false;
+
+                } else {
+                    if (!EmptyTextBox(context, (EditText) view, getString(context, getIDComponent(view)))) {
+                        return false;
                     }
-
-                } else if (!EmptyTextBox(context, (EditText) view, getString(context, getIDComponent(view)))) {
-                    return false;
                 }
             } else if (view instanceof CheckBox) {
                 if (!((CheckBox) view).isChecked()) {
@@ -332,21 +334,16 @@ public abstract class ValidatorClass {
                     return false;
                 }
             } else if (view instanceof LinearLayout) {
-
-                int length = ((LinearLayout) view).getChildCount();
-
-                if (length > 0) {
-                    if (((LinearLayout) view).getChildAt(0) instanceof CheckBox) {
-                        if (!EmptyCheckBox(context, ((LinearLayout) view),
-                                (CheckBox) ((LinearLayout) view).getChildAt(0),
-                                getString(context, getIDComponent(((LinearLayout) view).getChildAt(0))))) {
-                            return false;
-                        }
-                    } else if (!EmptyCheckingContainer(context, (LinearLayout) view)) {
+                if (view.getTag() != null && view.getTag().equals("0")) {
+                    if (!EmptyCheckBox(context, ((LinearLayout) view),
+                            (CheckBox) ((LinearLayout) view).getChildAt(0),
+                            getString(context, getIDComponent(((LinearLayout) view).getChildAt(0))))) {
                         return false;
                     }
-                } else if (!EmptyCheckingContainer(context, (LinearLayout) view)) {
-                    return false;
+                } else {
+                    if (!EmptyCheckingContainer(context, (LinearLayout) view)) {
+                        return false;
+                    }
                 }
             }
         }
