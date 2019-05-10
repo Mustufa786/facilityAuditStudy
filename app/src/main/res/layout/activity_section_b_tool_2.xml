@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.tool2.SectionB_tool_2Activity">
-
+<layout
+    >
     <data>
 
         <import type="android.view.View" />
@@ -13,6 +11,9 @@
     </data>
 
     <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5sp"
@@ -66,7 +67,7 @@
                             android:layout_weight="1"
                             android:text="@string/month" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/fas02b0101ax"
                             style="@style/textInput"
                             android:layout_width="match_parent"
@@ -75,6 +76,10 @@
                             android:hint="@string/month"
                             android:inputType="number"
                             android:tag="fas02b0101a"
+                            app:type="range"
+                            app:minValue="1"
+                            app:maxValue="11"
+                            android:maxLength="2"
                             android:text='@{fas02b0101a.checked ? fas02b0101ax.getText.toString : ""}'
                             android:visibility='@{fas02b0101a.checked ? View.VISIBLE : View.GONE}' />
 
@@ -122,6 +127,7 @@
                             android:hint="@string/year"
                             android:inputType="number"
                             android:tag="fas02b0102a"
+                            android:maxLength="4"
                             android:text='@{fas02b0102a.checked ? fas02b0102ax.getText.toString : ""}'
                             android:visibility='@{fas02b0102a.checked ? View.VISIBLE : View.GONE}' />
 
@@ -162,7 +168,8 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:hint="@string/fas02b02"
-                        android:inputType="number" />
+                        android:inputType="number"
+                        android:maxLength="2"/>
 
 
                 </LinearLayout>

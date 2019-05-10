@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.tool2.SectionC_tool_2Activity">
 
     <data>
@@ -100,6 +101,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
                             android:enabled="false"
+                            android:maxLength="6"
                             android:hint="@string/fas02a01"
                             android:inputType="number" />
 
@@ -173,16 +175,21 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/fas02c02m"
                                 style="@style/textInput"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="10dp"
                                 android:hint="@string/month"
-                                android:inputType="number" />
+                                android:inputType="number"
+                                android:maxLength="2"
+                                app:maxValue="11"
+                                app:minValue="1"
+                                app:type="range"/>
 
                             <EditText
+                                android:maxLength="4"
                                 android:id="@+id/fas02c02y"
                                 style="@style/textInput"
                                 android:layout_width="match_parent"
@@ -662,6 +669,7 @@
 
 
                                     <EditText
+                                        android:maxLength="2"
                                         android:id="@+id/fas02c07w"
                                         style="@style/textInput"
                                         android:layout_width="match_parent"
@@ -682,7 +690,10 @@
                                         android:layout_weight="1"
                                         android:text="@string/month" />
 
-                                    <EditText
+                                    <com.edittextpicker.aliazaz.EditTextPicker
+                                        app:type="range"
+                                        app:maxValue="11"
+                                        app:minValue="1"
                                         android:id="@+id/fas02c07m"
                                         style="@style/textInput"
                                         android:layout_width="match_parent"
@@ -730,7 +741,8 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
                                     android:hint="@string/times"
-                                    android:inputType="number" />
+                                    android:inputType="number"
+                                    android:maxLength="2"/>
 
                                 <CheckBox
                                     android:id="@+id/fas02c0898"
@@ -1144,7 +1156,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
-                                    android:hint="@string/fas02c04c"
+                                    android:hint="تعداد"
                                     android:inputType="number" />
 
                                 <CheckBox

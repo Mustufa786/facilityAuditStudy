@@ -76,12 +76,8 @@
 
                 <!--fas02d02-->
                 <android.support.v7.widget.CardView
-
-
                     android:id="@+id/fldGrpllSecD02fas02d02"
                     style="@style/cardView"
-
-
                     android:visibility="@{fas02d01a.checked ? View.VISIBLE : View.GONE}"
 
 
@@ -192,19 +188,18 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d02k" />
 
+
+
                         </LinearLayout>
 
                         <CheckBox
-                                android:id="@+id/fas02d0298"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
+                            android:id="@+id/fas02d0298"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
                             android:tag="-1"
-                                android:text="@string/dkn" />
-
-
-
+                            android:text="@string/dkn" />
 
 
                     </LinearLayout>
@@ -385,18 +380,18 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d04m" />
 
+
+
                         </LinearLayout>
 
                         <CheckBox
-                                android:id="@+id/fas02d0498"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
+                            android:id="@+id/fas02d0498"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
                             android:tag="-1"
-                                android:text="@string/dkn" />
-
-
+                            android:text="@string/dkn" />
 
 
                     </LinearLayout>
@@ -540,15 +535,18 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06h" />
 
+
+
                         </LinearLayout>
 
                         <CheckBox
-                                android:id="@+id/fas02d0698"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/dkn" />
+                            android:tag="-1"
+                            android:id="@+id/fas02d0698"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/dkn" />
 
 
                     </LinearLayout>
