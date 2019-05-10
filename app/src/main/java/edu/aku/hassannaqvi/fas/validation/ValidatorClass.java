@@ -358,7 +358,7 @@ public abstract class ValidatorClass {
                 }
             } else if (view instanceof LinearLayout) {
 
-                /*int length = ((LinearLayout) view).getChildCount();
+                int length = ((LinearLayout) view).getChildCount();
 
                 if (length > 0) {
                     if (((LinearLayout) view).getChildAt(0) instanceof CheckBox) {
@@ -372,9 +372,9 @@ public abstract class ValidatorClass {
                     }
                 } else if (!EmptyCheckingContainer(context, (LinearLayout) view)) {
                     return false;
-                }*/
+                }
 
-                if (view.getTag() != null && view.getTag().equals("0")) {
+                /*if (view.getTag() != null && view.getTag().equals("0")) {
                     if (!EmptyCheckBox(context, ((LinearLayout) view),
                             (CheckBox) ((LinearLayout) view).getChildAt(0),
                             getString(context, getIDComponent(((LinearLayout) view).getChildAt(0))))) {
@@ -384,7 +384,7 @@ public abstract class ValidatorClass {
                     if (!EmptyCheckingContainer(context, (LinearLayout) view)) {
                         return false;
                     }
-                }
+                }*/
 
             }
         }
