@@ -114,6 +114,11 @@
                                     android:text="@string/hfa1902c" />
 
                                 <CheckBox
+                                    android:id="@+id/hfa1902d"
+                                    style="@style/checkbox"
+                                    android:text="@string/hfa1902d" />
+
+                                <CheckBox
                                     android:id="@+id/hfa190298"
                                     style="@style/checkbox"
                                     android:text="@string/dkn" />

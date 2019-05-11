@@ -89,6 +89,16 @@ public class InfoActivity extends AppCompatActivity {
 
             }
         });
+
+        bi.hfa1114.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if(checkedId != bi.hfa1114a.getId()){
+                    ClearClass.ClearAllFields(bi.fldGrphfa1115,null);
+                }
+            }
+        });
 //        bi.hfa1119.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 //            @Override
 //            public void onCheckedChanged(RadioGroup group, int checkedId) {
