@@ -5,6 +5,9 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import edu.aku.hassannaqvi.fas.core.CONSTANTS;
 
 @Entity(tableName = CONSTANTS.TABLE_USERS)
@@ -55,4 +58,11 @@ public class Users {
     public void setROW_PASSWORD(String ROW_PASSWORD) {
         this.ROW_PASSWORD = ROW_PASSWORD;
     }
+
+    public Users Sync(JSONObject jsonObjectUser) throws JSONException {
+        this.ROW_USERNAME = jsonObjectUser.getString("username");
+        this.ROW_PASSWORD = jsonObjectUser.getString("password");
+        return this;
+    }
+
 }

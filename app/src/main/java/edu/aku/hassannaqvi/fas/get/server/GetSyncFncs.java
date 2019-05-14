@@ -7,6 +7,7 @@ import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.fas.RMOperations.crudOperations;
 import edu.aku.hassannaqvi.fas.RMOperations.syncOperations;
+import edu.aku.hassannaqvi.fas.data.AppDatabase;
 import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
 import edu.aku.hassannaqvi.fas.data.entities.Clusters;
 import edu.aku.hassannaqvi.fas.data.entities.Districts;
@@ -14,11 +15,11 @@ import edu.aku.hassannaqvi.fas.data.entities.HFA;
 import edu.aku.hassannaqvi.fas.data.entities.UCs;
 import edu.aku.hassannaqvi.fas.data.entities.Users;
 
-import static edu.aku.hassannaqvi.fas.ui.LoginActivity.db;
-
 public abstract class GetSyncFncs {
 
     public static void syncUsers(Context mContext, JSONArray userlist) {
+
+        AppDatabase db = AppDatabase.getDatabase(mContext);
 
         new syncOperations(db).execute(FormsDAO.class.getName(), "formsDao", "deleteUsers");
 
@@ -26,10 +27,10 @@ public abstract class GetSyncFncs {
             JSONArray jsonArray = userlist;
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObjectUser = jsonArray.getJSONObject(i);
-                String userName = jsonObjectUser.getString("username");
-                String password = jsonObjectUser.getString("password");
 
-                Users users = new Users(userName, password);
+                Users users = new Users();
+                users.Sync(jsonObjectUser);
+
                 new crudOperations(mContext, FormsDAO.class.getName(), "formsDao", "insertUsers", users).execute().get();
             }
             db.close();
@@ -39,6 +40,8 @@ public abstract class GetSyncFncs {
     }
 
     public static void syncClusters(Context mContext, JSONArray clusterList) {
+
+        AppDatabase db = AppDatabase.getDatabase(mContext);
 
         new syncOperations(db).execute(FormsDAO.class.getName(), "formsDao", "deleteClusters");
 
@@ -60,6 +63,8 @@ public abstract class GetSyncFncs {
 
     public static void syncDistricts(Context mContext, JSONArray distList) {
 
+        AppDatabase db = AppDatabase.getDatabase(mContext);
+
         new syncOperations(db).execute(FormsDAO.class.getName(), "formsDao", "deleteDistricts");
 
         try {
@@ -80,6 +85,8 @@ public abstract class GetSyncFncs {
 
     public static void syncUcs(Context mContext, JSONArray ucsList) {
 
+        AppDatabase db = AppDatabase.getDatabase(mContext);
+
         new syncOperations(db).execute(FormsDAO.class.getName(), "formsDao", "deleteUCs");
 
         try {
@@ -99,6 +106,8 @@ public abstract class GetSyncFncs {
     }
 
     public static void syncHfa(Context mContext, JSONArray hfaList) {
+
+        AppDatabase db = AppDatabase.getDatabase(mContext);
 
         new syncOperations(db).execute(FormsDAO.class.getName(), "formsDao", "deleteHfa");
 
