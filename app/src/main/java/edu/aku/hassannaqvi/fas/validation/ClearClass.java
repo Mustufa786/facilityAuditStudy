@@ -145,6 +145,9 @@ public class ClearClass {
                 if (flag != null)
                     v.setEnabled(flag);
 
+            } else if (v instanceof RadioButton) {
+                if (flag != null)
+                    v.setEnabled(flag);
             } else if (v instanceof CardView) {
                 ClearAllFields(v, flag);
             } else if (v instanceof LinearLayout) {
