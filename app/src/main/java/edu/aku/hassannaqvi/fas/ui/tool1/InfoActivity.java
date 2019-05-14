@@ -94,8 +94,8 @@ public class InfoActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                if(checkedId != bi.hfa1114a.getId()){
-                    ClearClass.ClearAllFields(bi.fldGrphfa1115,null);
+                if (checkedId != bi.hfa1114a.getId()) {
+                    ClearClass.ClearAllFields(bi.fldGrphfa1115, null);
                 }
             }
         });
@@ -195,6 +195,20 @@ public class InfoActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+        bi.hfa1103c.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 0) return;
+                bi.hfa1101.setText(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getHf_code());
+                bi.hfa1102.setText(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getHf_name());
             }
 
             @Override

@@ -74,58 +74,6 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--hfa1101-->
-                <android.support.v7.widget.CardView style="@style/cardView">
-
-                    <LinearLayout style="@style/linerlayout_view">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1101"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:id="@+id/hfa1101"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1101"
-                            android:inputType="number"
-                            android:maxLength="6" />
-
-                    </LinearLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <!--hfa1102-->
-                <android.support.v7.widget.CardView style="@style/cardView">
-
-                    <LinearLayout style="@style/linerlayout_view">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1102"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:id="@+id/hfa1102"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1102"
-                            android:inputType="text"
-                            android:maxLength="25" />
-
-                    </LinearLayout>
-
-                </android.support.v7.widget.CardView>
-
                 <!--hfa1103-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
@@ -159,6 +107,63 @@
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
+
+
+                <!--hfa1101-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout style="@style/linerlayout_view">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/hfa1101"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/hfa1101"
+                            style="@style/textInput"
+                            android:enabled="false"
+                            android:hint="@string/hfa1101"
+                            android:inputType="number"
+                            android:maxLength="6" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--hfa1102-->
+                <android.support.v7.widget.CardView
+                    style="@style/cardView"
+                    android:visibility="gone">
+
+                    <LinearLayout style="@style/linerlayout_view">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/hfa1102"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/hfa1102"
+                            style="@style/textInput"
+                            android:hint="@string/hfa1102"
+                            android:inputType="text"
+                            android:maxLength="25" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
 
                 <!--hfa1104-->
                 <android.support.v7.widget.CardView style="@style/cardView">
