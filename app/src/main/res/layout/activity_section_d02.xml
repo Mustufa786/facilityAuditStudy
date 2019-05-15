@@ -222,7 +222,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
-                                    android:text="@string/yes" />
+                                    android:text="@string/observed" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1425b"
@@ -230,7 +230,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
-                                    android:text="@string/no" />
+                                    android:text="@string/reported" />
 
                                 <RadioButton
                                     android:id="@+id/hfa1425c"
@@ -238,7 +238,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
-                                    android:text="@string/dkn" />
+                                    android:text="@string/not_available" />
 
 
                             </RadioGroup>
