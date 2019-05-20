@@ -38,6 +38,13 @@ public abstract class GeneratorClass {
                             getContainerJSON((LinearLayout) view1, false, assig_id);
                         }
                     }
+                } else if (view instanceof LinearLayout) {
+                    for (int j = 0; j < ((LinearLayout) view).getChildCount(); j++) {
+                        View view1 = ((LinearLayout) view).getChildAt(j);
+                        if (view1 instanceof LinearLayout) {
+                            getContainerJSON((LinearLayout) view1, false, assig_id);
+                        }
+                    }
                 } else if (view instanceof RadioGroup) {
 
                     RadioGroup rdp = (RadioGroup) view;
