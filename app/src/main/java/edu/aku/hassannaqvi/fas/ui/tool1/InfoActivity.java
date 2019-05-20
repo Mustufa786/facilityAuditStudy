@@ -16,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
@@ -246,7 +247,11 @@ public class InfoActivity extends AppCompatActivity {
         if (!formValidation())
             return;
 
-        SaveDraft();
+        try {
+            SaveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         if (UpdateDB()) {
 
             String surveyType = bi.hfa1100a.isChecked() ? "1" : bi.hfa1100b.isChecked() ? "2" : "0";
@@ -288,7 +293,7 @@ public class InfoActivity extends AppCompatActivity {
 
     }
 
-    private void SaveDraft() {
+    private void SaveDraft() throws JSONException {
         fc = new Forms();
         fc.setDevicetagID(MainApp.getTagName(this));
         fc.setAppversion(MainApp.versionName + "." + MainApp.versionCode);
@@ -302,13 +307,27 @@ public class InfoActivity extends AppCompatActivity {
 
         setGPS(fc);
 
-        JSONObject Json = GeneratorClass.getContainerJSON(bi.fldGrpllInfoA, true);
+        //JSONObject Json = GeneratorClass.getContainerJSON(bi.fldGrpllInfoA, true);
+
+        JSONObject Json = new JSONObject();
+
+        Json.put("hfa1100", bi.hfa1100a.isChecked() ? "1" : bi.hfa1100b.isChecked() ? "2" : "0");
+        Json.put("hfa1101", bi.hfa1101.getText().toString());
+        Json.put("hfa1102", bi.hfa1102.getText().toString());
+        Json.put("hfa1103a", bi.hfa1103a.getSelectedItem().toString());
+        Json.put("hfa1103b", bi.hfa1103a.getSelectedItem().toString());
+        Json.put("hfa1103c", bi.hfa1103a.getSelectedItem().toString());
+        Json.put("hfa1104", bi.hfa1104a.isChecked() ? "1" : bi.hfa1104b.isChecked() ? "2" : bi.hfa110496.isChecked() ? "96" :"0");
+        Json.put("hfa110496x", bi.hfa110496x.getText().toString());
+
         fc.setSa1(String.valueOf(Json));
     }
+
 
     private boolean formValidation() {
         return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllInfoA);
     }
+
 
     public void BtnEnd() {
 
@@ -328,7 +347,11 @@ public class InfoActivity extends AppCompatActivity {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        SaveDraft();
+                        try {
+                            SaveDraft();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                         if (!UpdateDB()) {
                             Toast.makeText(InfoActivity.this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
                             return;
@@ -375,6 +398,7 @@ public class InfoActivity extends AppCompatActivity {
         }
 
     }
+
 
     public void onCheckedChanged(RadioGroup group, int checkedId) {
 
