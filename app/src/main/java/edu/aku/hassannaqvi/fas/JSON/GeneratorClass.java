@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.fas.JSON;
 
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -19,33 +20,19 @@ public abstract class GeneratorClass {
 
     private static JSONObject formJSON;
 
-    public static JSONObject getContainerJSON(LinearLayout lv, boolean flag, String... convention) {
+    public static JSONObject getContainerJSON(View lv, boolean flag, String... convention) {
 
         if (flag)
             formJSON = new JSONObject();
 
         try {
 
-            for (int i = 0; i < lv.getChildCount(); i++) {
-                View view = lv.getChildAt(i);
+            for (int i = 0; i < ((ViewGroup) lv).getChildCount(); i++) {
+                View view = ((ViewGroup) lv).getChildAt(i);
 
                 String assig_id = convention.length > 0 ? convention[0] : "";
 
-                if (view instanceof CardView) {
-                    for (int j = 0; j < ((CardView) view).getChildCount(); j++) {
-                        View view1 = ((CardView) view).getChildAt(j);
-                        if (view1 instanceof LinearLayout) {
-                            getContainerJSON((LinearLayout) view1, false, assig_id);
-                        }
-                    }
-                } else if (view instanceof LinearLayout) {
-                    for (int j = 0; j < ((LinearLayout) view).getChildCount(); j++) {
-                        View view1 = ((LinearLayout) view).getChildAt(j);
-                        if (view1 instanceof LinearLayout) {
-                            getContainerJSON((LinearLayout) view1, false, assig_id);
-                        }
-                    }
-                } else if (view instanceof RadioGroup) {
+                if (view instanceof RadioGroup) {
 
                     RadioGroup rdp = (RadioGroup) view;
                     assig_id += ValidatorClass.getIDComponent(rdp);
@@ -88,6 +75,10 @@ public abstract class GeneratorClass {
                     } else {
                         formJSON.put(assig_id, "");
                     }
+                } else if (view instanceof CardView) {
+                    getContainerJSON(view, false, assig_id);
+                } else if (view instanceof LinearLayout) {
+                    getContainerJSON(view, false, assig_id);
                 }
 
             }
