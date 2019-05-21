@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     SharedPreferences sharedPref;
     SharedPreferences.Editor editor;
     AlertDialog.Builder builder;
-    String m_Text = "";
+    String m_Text = "", preVer = "", newVer = "";
     ProgressDialog mProgressDialog;
     ActivityMainBinding mainBinding;
     private ProgressDialog pd;
@@ -80,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
     SharedPreferences sharedPrefDownload;
     SharedPreferences.Editor editorDownload;
     VersionAppContract versionAppContract;
-    String preVer = "", newVer = "";
     static File file;
 
     @Override
