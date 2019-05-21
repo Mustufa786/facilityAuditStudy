@@ -51,7 +51,7 @@ public abstract class GeneratorClass {
 
                                 for (byte k = 0; k < ((RadioGroup) view).getChildCount(); k++) {
 
-                                    if (((RadioGroup) view).getChildAt(k).getTag() == rdbID) {
+                                    if (((RadioGroup) view).getChildAt(k).getTag().equals(String.valueOf(rdbID))) {
 
                                         EditText edtTxt = rdp.findViewById(((RadioGroup) view).getChildAt(k).getId());
 
