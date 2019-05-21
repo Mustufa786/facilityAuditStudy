@@ -51,6 +51,9 @@ public abstract class GeneratorClass {
 
                                 for (byte k = 0; k < ((RadioGroup) view).getChildCount(); k++) {
 
+                                    if (((RadioGroup) view).getChildAt(k).getTag() == null)
+                                        continue;
+
                                     if (((RadioGroup) view).getChildAt(k).getTag().equals(String.valueOf(rdbID))) {
 
                                         assig_id += ValidatorClass.getIDComponent(((RadioGroup) view).getChildAt(k));
