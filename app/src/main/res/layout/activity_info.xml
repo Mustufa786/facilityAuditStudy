@@ -731,6 +731,20 @@
                                 android:layout_weight="1"
                                 android:text="@string/yes" />
 
+                            <EditText
+                                android:id="@+id/hfa111396x"
+                                style="@style/textInput"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:hint="@string/other"
+                                android:inputType="text"
+                                android:tag="hfa1113a"
+                                android:text='@{hfa1113a.checked? hfa111396x.getText.toString : ""}'
+                                android:visibility='@{hfa1113a.checked? View.VISIBLE : View.GONE}' />
+
+
                             <RadioButton
                                 android:id="@+id/hfa1113b"
                                 android:layout_width="match_parent"
@@ -739,13 +753,6 @@
                                 android:layout_weight="1"
                                 android:text="@string/no" />
 
-                            <RadioButton
-                                android:id="@+id/hfa111398"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/dkn" />
 
                         </RadioGroup>
 

@@ -293,7 +293,7 @@ public class InfoActivity extends AppCompatActivity {
 
     }
 
-    private void SaveDraft() throws JSONException {
+    private void SaveDraft() {
         fc = new Forms();
         fc.setDevicetagID(MainApp.getTagName(this));
         fc.setAppversion(MainApp.versionName + "." + MainApp.versionCode);
@@ -308,17 +308,7 @@ public class InfoActivity extends AppCompatActivity {
         setGPS(fc);
 
         //JSONObject Json = GeneratorClass.getContainerJSON(bi.fldGrpllInfoA, true);
-
-        JSONObject Json = new JSONObject();
-
-        Json.put("hfa1100", bi.hfa1100a.isChecked() ? "1" : bi.hfa1100b.isChecked() ? "2" : "0");
-        Json.put("hfa1101", bi.hfa1101.getText().toString());
-        Json.put("hfa1102", bi.hfa1102.getText().toString());
-        Json.put("hfa1103a", bi.hfa1103a.getSelectedItem().toString());
-        Json.put("hfa1103b", bi.hfa1103a.getSelectedItem().toString());
-        Json.put("hfa1103c", bi.hfa1103a.getSelectedItem().toString());
-        Json.put("hfa1104", bi.hfa1104a.isChecked() ? "1" : bi.hfa1104b.isChecked() ? "2" : bi.hfa110496.isChecked() ? "96" :"0");
-        Json.put("hfa110496x", bi.hfa110496x.getText().toString());
+        JSONObject Json = GeneratorClass.getContainerJSON(bi.fldGrpllInfoA, true);
 
         fc.setSa1(String.valueOf(Json));
     }
