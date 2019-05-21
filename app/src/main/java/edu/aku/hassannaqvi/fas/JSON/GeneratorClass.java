@@ -48,6 +48,20 @@ public abstract class GeneratorClass {
 
                                 formJSON.put(assig_id, getValues(ValidatorClass.getIDComponent(rdb)));
 
+
+                                for (byte k = 0; k < ((RadioGroup) view).getChildCount(); k++) {
+
+                                    if (((RadioGroup) view).getChildAt(k).getTag() == rdbID) {
+
+                                        EditText edtTxt = rdp.findViewById(((RadioGroup) view).getChildAt(k).getId());
+
+                                        formJSON.put(assig_id, getValues(ValidatorClass.getIDComponent(edtTxt)));
+
+                                        break;
+                                    }
+
+                                }
+
                                 break;
                             }
 
