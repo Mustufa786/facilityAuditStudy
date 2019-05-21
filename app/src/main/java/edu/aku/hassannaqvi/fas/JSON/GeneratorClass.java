@@ -53,9 +53,8 @@ public abstract class GeneratorClass {
 
                                     if (((RadioGroup) view).getChildAt(k).getTag().equals(String.valueOf(rdbID))) {
 
-                                        EditText edtTxt = rdp.findViewById(((RadioGroup) view).getChildAt(k).getId());
-
-                                        formJSON.put(assig_id, getValues(ValidatorClass.getIDComponent(edtTxt)));
+                                        assig_id += ValidatorClass.getIDComponent(((RadioGroup) view).getChildAt(k));
+                                        formJSON.put(assig_id, ((EditText) ((RadioGroup) view).getChildAt(k)).getText().toString());
 
                                         break;
                                     }
