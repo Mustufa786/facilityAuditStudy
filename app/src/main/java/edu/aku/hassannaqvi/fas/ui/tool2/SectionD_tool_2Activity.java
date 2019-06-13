@@ -131,6 +131,20 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                 }
             }
         });
+        bi.fas02d0898.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02d08, false);
+                    bi.fldGrpfas02d08.setTag("-1");
+                    bi.fas02d0898.setTag(null);
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02d08, true);
+                    bi.fldGrpfas02d08.setTag(null);
+                    bi.fas02d0898.setTag("-1");
+                }
+            }
+        });
 
 
     }

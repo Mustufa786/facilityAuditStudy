@@ -126,6 +126,27 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
             }
         });
 
+        bi.fas02c27.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == bi.fas02c27a.getId()) {
+                    bi.fas02c03.clearCheck();
+                }
+            }
+        });
+
+        bi.fas02c13.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == bi.fas02c13b.getId()) {
+                    bi.fas02c14.setText(null);
+                    bi.fas02c1498.setChecked(false);
+                }
+            }
+        });
+
 //        fas02c24f
         bi.fas02c24f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -185,12 +206,11 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         CheckBox.OnCheckedChangeListener chbxc19 = new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (!bi.fas02c19e.isChecked() || !bi.fas02c19f.isChecked())
+                if (!bi.fas02c19e.isChecked())
                     ClearClass.ClearAllFields(bi.fldGrpfas02c20, null);
             }
         };
         bi.fas02c19e.setOnCheckedChangeListener(chbxc19);
-        bi.fas02c19f.setOnCheckedChangeListener(chbxc19);
         bi.fas02c1998.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -331,8 +351,6 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
                         : bi.fas02c05h.isChecked() ? "8"
                         : bi.fas02c05i.isChecked() ? "9"
                         : bi.fas02c05j.isChecked() ? "10"
-                        : bi.fas02c05k.isChecked() ? "11"
-                        : bi.fas02c05l.isChecked() ? "12"
                         : bi.fas02c0596.isChecked() ? "96"
                         : "0");
 

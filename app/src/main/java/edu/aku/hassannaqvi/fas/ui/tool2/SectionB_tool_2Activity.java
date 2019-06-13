@@ -3,12 +3,15 @@ package edu.aku.hassannaqvi.fas.ui.tool2;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Calendar;
 import java.util.concurrent.ExecutionException;
 
 import edu.aku.hassannaqvi.fas.R;
@@ -19,6 +22,7 @@ import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
 import edu.aku.hassannaqvi.fas.databinding.ActivitySectionBTool2Binding;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
+import edu.aku.hassannaqvi.fas.utils.DateUtils;
 import edu.aku.hassannaqvi.fas.validation.ClearClass;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
@@ -38,8 +42,37 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
     }
 
     private void setContentUI() {
-        this.setTitle(R.string.section3_tool2);
+        this.setTitle(R.string.section2_tool2);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
+
+        bi.fas02b0102ax.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                if (!s.toString().equalsIgnoreCase("")) {
+                    if ((bi.fas02b0102ax.getText().toString().length() == 4)) {
+                        if (Integer.parseInt(bi.fas02b0102ax.getText().toString()) >= 1920 && Integer.parseInt(bi.fas02b0102ax.getText().toString()) <= Calendar.getInstance().get(Calendar.YEAR)) {
+                            bi.fas02b02.setText(String.valueOf(DateUtils.getAgeInYears(Integer.parseInt(bi.fas02b0102ax.getText().toString()))));
+                        } else {
+                            Toast.makeText(SectionB_tool_2Activity.this, "Age must be between 1920 to " + Calendar.getInstance().get(Calendar.YEAR), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
     }
 
     private void setListeners() {
@@ -53,14 +86,16 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
             }
         });
 
-//        fas02b04
         bi.fas02b04.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i == bi.fas02b04a.getId())
-                    ClearClass.ClearAllCardFields(bi.fldGrpfas02bb);
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == bi.fas02b04a.getId()) {
+                    ClearClass.ClearAllCardFields(bi.fldGrpfas02b05);
+                }
             }
         });
+
 
     }
 
@@ -206,6 +241,8 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
                         : bi.fas02b10c.isChecked() ? "4"
                         : bi.fas02b10e.isChecked() ? "5"
                         : bi.fas02b10f.isChecked() ? "6"
+                        : bi.fas02b10g.isChecked() ? "97"
+                        : bi.fas02b10h.isChecked() ? "99"
                         : bi.fas02b1096.isChecked() ? "96"
                         : "0");
 
