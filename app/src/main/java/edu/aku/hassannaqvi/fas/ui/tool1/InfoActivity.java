@@ -16,7 +16,6 @@ import android.widget.ArrayAdapter;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
@@ -247,11 +246,7 @@ public class InfoActivity extends AppCompatActivity {
         if (!formValidation())
             return;
 
-        try {
-            SaveDraft();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+        SaveDraft();
         if (UpdateDB()) {
 
             String surveyType = bi.hfa1100a.isChecked() ? "1" : bi.hfa1100b.isChecked() ? "2" : "0";
@@ -337,11 +332,7 @@ public class InfoActivity extends AppCompatActivity {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        try {
-                            SaveDraft();
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
+                        SaveDraft();
                         if (!UpdateDB()) {
                             Toast.makeText(InfoActivity.this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
                             return;
