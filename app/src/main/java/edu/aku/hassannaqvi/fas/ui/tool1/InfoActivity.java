@@ -288,7 +288,7 @@ public class InfoActivity extends AppCompatActivity {
 
     }
 
-    private void SaveDraft() throws JSONException {
+    private void SaveDraft() {
         fc = new Forms();
         fc.setDevicetagID(MainApp.getTagName(this));
         fc.setAppversion(MainApp.versionName + "." + MainApp.versionCode);

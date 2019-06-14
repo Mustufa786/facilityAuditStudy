@@ -364,42 +364,42 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
 
         s03.put("fas02c06b",
-                bi.fas02c06b.isChecked() ? "1"
+                bi.fas02c06b.isChecked() ? "2"
                         : "0");
 
 
         s03.put("fas02c06c",
-                bi.fas02c06c.isChecked() ? "1"
+                bi.fas02c06c.isChecked() ? "3"
                         : "0");
 
 
         s03.put("fas02c06d",
-                bi.fas02c06d.isChecked() ? "1"
+                bi.fas02c06d.isChecked() ? "4"
                         : "0");
 
 
         s03.put("fas02c06e",
-                bi.fas02c06e.isChecked() ? "1"
+                bi.fas02c06e.isChecked() ? "5"
                         : "0");
 
 
         s03.put("fas02c06f",
-                bi.fas02c06f.isChecked() ? "1"
+                bi.fas02c06f.isChecked() ? "6"
                         : "0");
 
 
         s03.put("fas02c06g",
-                bi.fas02c06g.isChecked() ? "1"
+                bi.fas02c06g.isChecked() ? "7"
                         : "0");
 
 
         s03.put("fas02c06h",
-                bi.fas02c06h.isChecked() ? "1"
+                bi.fas02c06h.isChecked() ? "8"
                         : "0");
 
 
         s03.put("fas02c0696",
-                bi.fas02c0696.isChecked() ? "1"
+                bi.fas02c0696.isChecked() ? "96"
                         : "0");
 
 
@@ -500,13 +500,13 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         s03.put("fas02c17",
                 bi.fas02c17a.isChecked() ? "1"
                         : bi.fas02c17b.isChecked() ? "2"
-                        : bi.fas02c17c.isChecked() ? "11"
-                        : bi.fas02c17d.isChecked() ? "12"
-                        : bi.fas02c17e.isChecked() ? "13"
-                        : bi.fas02c17f.isChecked() ? "16"
-                        : bi.fas02c17g.isChecked() ? "21"
-                        : bi.fas02c17h.isChecked() ? "26"
-                        : bi.fas02c17i.isChecked() ? "31"
+                        : bi.fas02c17c.isChecked() ? "3"
+                        : bi.fas02c17d.isChecked() ? "4"
+                        : bi.fas02c17e.isChecked() ? "5"
+                        : bi.fas02c17f.isChecked() ? "6"
+                        : bi.fas02c17g.isChecked() ? "7"
+                        : bi.fas02c17h.isChecked() ? "8"
+                        : bi.fas02c17i.isChecked() ? "9"
                         : bi.fas02c1796.isChecked() ? "96"
                         : "0");
 
@@ -522,62 +522,62 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
 
         s03.put("fas02c18b",
-                bi.fas02c18b.isChecked() ? "1"
+                bi.fas02c18b.isChecked() ? "2"
                         : "0");
 
 
         s03.put("fas02c18c",
-                bi.fas02c18c.isChecked() ? "1"
+                bi.fas02c18c.isChecked() ? "3"
                         : "0");
 
         s03.put("fas02c18d",
-                bi.fas02c18d.isChecked() ? "1"
+                bi.fas02c18d.isChecked() ? "4"
                         : "0");
 
 
         s03.put("fas02c18e",
-                bi.fas02c18e.isChecked() ? "1"
+                bi.fas02c18e.isChecked() ? "5"
                         : "0");
 
         s03.put("fas02c18f",
-                bi.fas02c18f.isChecked() ? "1"
+                bi.fas02c18f.isChecked() ? "6"
                         : "0");
 
         s03.put("fas02c18g",
-                bi.fas02c18g.isChecked() ? "1"
+                bi.fas02c18g.isChecked() ? "7"
                         : "0");
 
         s03.put("fas02c18h",
-                bi.fas02c18h.isChecked() ? "1"
+                bi.fas02c18h.isChecked() ? "8"
                         : "0");
 
         s03.put("fas02c18i",
-                bi.fas02c18i.isChecked() ? "1"
+                bi.fas02c18i.isChecked() ? "9"
                         : "0");
 
         s03.put("fas02c18j",
-                bi.fas02c18j.isChecked() ? "1"
+                bi.fas02c18j.isChecked() ? "10"
                         : "0");
 
         s03.put("fas02c18k",
-                bi.fas02c18k.isChecked() ? "1"
+                bi.fas02c18k.isChecked() ? "11"
                         : "0");
 
         s03.put("fas02c1896",
-                bi.fas02c1896.isChecked() ? "1"
+                bi.fas02c1896.isChecked() ? "96"
                         : "0");
         s03.put("fas02c1896x", bi.fas02c1896x.getText().toString());
 
 
-        s03.put("fas02c19a", bi.fas02c19a.isChecked() ? "11" : "0");
-        s03.put("fas02c19b", bi.fas02c19b.isChecked() ? "12" : "0");
-        s03.put("fas02c19c", bi.fas02c19c.isChecked() ? "13" : "0");
-        s03.put("fas02c19d", bi.fas02c19d.isChecked() ? "14" : "0");
-        s03.put("fas02c19e", bi.fas02c19e.isChecked() ? "21" : "0");
-        s03.put("fas02c19f", bi.fas02c19f.isChecked() ? "22" : "0");
-        s03.put("fas02c19g", bi.fas02c19g.isChecked() ? "23" : "0");
-        s03.put("fas02c19h", bi.fas02c19h.isChecked() ? "24" : "0");
-        s03.put("fas02c19i", bi.fas02c19i.isChecked() ? "25" : "0");
+        s03.put("fas02c19a", bi.fas02c19a.isChecked() ? "1" : "0");
+        s03.put("fas02c19b", bi.fas02c19b.isChecked() ? "2" : "0");
+        s03.put("fas02c19c", bi.fas02c19c.isChecked() ? "3" : "0");
+        s03.put("fas02c19d", bi.fas02c19d.isChecked() ? "4" : "0");
+        s03.put("fas02c19e", bi.fas02c19e.isChecked() ? "5" : "0");
+        s03.put("fas02c19f", bi.fas02c19f.isChecked() ? "6" : "0");
+        s03.put("fas02c19g", bi.fas02c19g.isChecked() ? "7" : "0");
+        s03.put("fas02c19h", bi.fas02c19h.isChecked() ? "8" : "0");
+        s03.put("fas02c19i", bi.fas02c19i.isChecked() ? "9" : "0");
         s03.put("fas02c1996", bi.fas02c1996.isChecked() ? "96" : "0");
         s03.put("fas02c1998", bi.fas02c1998.isChecked() ? "98" : "0");
 
@@ -590,32 +590,32 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
 
         s03.put("fas02c20b",
-                bi.fas02c20b.isChecked() ? "1"
+                bi.fas02c20b.isChecked() ? "2"
                         : "0");
 
 
         s03.put("fas02c20c",
-                bi.fas02c20c.isChecked() ? "1"
+                bi.fas02c20c.isChecked() ? "3"
                         : "0");
 
 
         s03.put("fas02c20d",
-                bi.fas02c20d.isChecked() ? "1"
+                bi.fas02c20d.isChecked() ? "4"
                         : "0");
 
 
         s03.put("fas02c20e",
-                bi.fas02c20e.isChecked() ? "1"
+                bi.fas02c20e.isChecked() ? "5"
                         : "0");
 
 
         s03.put("fas02c20f",
-                bi.fas02c20f.isChecked() ? "1"
+                bi.fas02c20f.isChecked() ? "6"
                         : "0");
 
 
         s03.put("fas02c2096",
-                bi.fas02c2096.isChecked() ? "1"
+                bi.fas02c2096.isChecked() ? "96"
                         : "0");
 
 
@@ -719,26 +719,26 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
 
         s03.put("fas02c24b",
-                bi.fas02c24b.isChecked() ? "1"
+                bi.fas02c24b.isChecked() ? "2"
                         : "0");
 
 
         s03.put("fas02c24c",
-                bi.fas02c24c.isChecked() ? "1"
+                bi.fas02c24c.isChecked() ? "3"
                         : "0");
 
         s03.put("fas02c24d",
-                bi.fas02c24d.isChecked() ? "1"
+                bi.fas02c24d.isChecked() ? "4"
                         : "0");
 
 
         s03.put("fas02c24e",
-                bi.fas02c24e.isChecked() ? "1"
+                bi.fas02c24e.isChecked() ? "5"
                         : "0");
 
 
         s03.put("fas02c2496",
-                bi.fas02c2496.isChecked() ? "1"
+                bi.fas02c2496.isChecked() ? "96"
                         : "0");
 
         s03.put("fas02c24f",
