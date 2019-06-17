@@ -124,9 +124,7 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         fc.setFormType(CONSTANTS._URI_FORM_TOOL2);
         setGPS(fc);
 
-
         JSONObject s01 = new JSONObject();
-
 
         s01.put("fas02a00",
                 bi.fas02a00a.isChecked() ? "1"

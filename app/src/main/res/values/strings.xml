@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Facility Audit Study</string>
+    <string name="app_name">Facility Audit Study-01</string>
     <string name="head_name"> REVIEW OF CHILDBIRTH SERVICES IN HEALTH FACILITIES </string>
 
     <!--copied Strings for splash, login and main screen-->
@@ -80,6 +80,7 @@
     <string name="section3_tool2">ANTENATAL AND CHILDBIRTH MODULE (CB)</string>
     <string name="section4_tool2">DANGER SIGNS MODULE (DW)</string>
 
+    <string name="formInputDATE"> فارم کی تاریخ </string>
     <string name="hfa1100"> سروے نمبر </string>
     <string name="hfa1100a"> انٹرونشن سے پہلے </string>
     <string name="hfa1100b"> انٹرونشن کے بعد </string>

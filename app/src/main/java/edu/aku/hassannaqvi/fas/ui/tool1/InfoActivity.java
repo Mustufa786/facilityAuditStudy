@@ -65,8 +65,8 @@ public class InfoActivity extends AppCompatActivity {
         bi.setCallback(this);
         this.setTitle(R.string.hfa11);
         deviceID = Settings.Secure.getString(InfoActivity.this.getContentResolver(), Settings.Secure.ANDROID_ID);
-        setContentUI();
 
+        setContentUI();
         listeneres();
     }
 
