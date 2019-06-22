@@ -155,8 +155,8 @@
                             style="@style/textInput"
                             android:hint="@string/formInputDATE"
                             app:dateFormat="dd-MM-yyyy"
-                            app:maxDate="CR_DATE"
-                            app:minDate="01/01/2017" />
+                            app:maxDate="31/05/2019"
+                            app:minDate="01/05/2019" />
 
                     </LinearLayout>
 
