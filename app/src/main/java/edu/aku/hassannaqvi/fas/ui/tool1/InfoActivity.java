@@ -72,33 +72,33 @@ public class InfoActivity extends AppCompatActivity {
 
     private void listeneres() {
 
-        bi.hfa1116.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-                if (group.getCheckedRadioButtonId() == bi.hfa1116b.getId()) {
-                    bi.fldGrp11720.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(bi.fldGrp11720, null);
-                    bi.btnEnd.setVisibility(View.VISIBLE);
-                    bi.btnContinue.setVisibility(View.GONE);
-                } else {
-                    bi.fldGrp11720.setVisibility(View.VISIBLE);
-                    bi.btnEnd.setVisibility(View.GONE);
-                    bi.btnContinue.setVisibility(View.VISIBLE);
-                }
-
-            }
-        });
-
-        bi.hfa1114.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-                if (checkedId != bi.hfa1114a.getId()) {
-                    ClearClass.ClearAllFields(bi.fldGrphfa1115, null);
-                }
-            }
-        });
+//        bi.hfa1116.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup group, int checkedId) {
+//
+//                if (group.getCheckedRadioButtonId() == bi.hfa1116b.getId()) {
+//                    bi.fldGrp11720.setVisibility(View.GONE);
+//                    ClearClass.ClearAllFields(bi.fldGrp11720, null);
+//                    bi.btnEnd.setVisibility(View.VISIBLE);
+//                    bi.btnContinue.setVisibility(View.GONE);
+//                } else {
+//                    bi.fldGrp11720.setVisibility(View.VISIBLE);
+//                    bi.btnEnd.setVisibility(View.GONE);
+//                    bi.btnContinue.setVisibility(View.VISIBLE);
+//                }
+//
+//            }
+//        });
+//
+//        bi.hfa1114.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup group, int checkedId) {
+//
+//                if (checkedId != bi.hfa1114a.getId()) {
+//                    ClearClass.ClearAllFields(bi.fldGrphfa1115, null);
+//                }
+//            }
+//        });
 //        bi.hfa1119.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 //            @Override
 //            public void onCheckedChanged(RadioGroup group, int checkedId) {
