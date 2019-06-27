@@ -121,7 +121,7 @@
                             style="@style/textInput"
                             android:hint="@string/hfa1300"
                             app:dateFormat="dd-MM-yyyy"
-                            app:maxDate="31/05/2019"
+                            app:maxDate="31/03/2020"
                             app:minDate="01/05/2019" />
 
                     </LinearLayout>

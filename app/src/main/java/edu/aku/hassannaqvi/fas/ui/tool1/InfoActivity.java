@@ -18,10 +18,8 @@ import android.widget.Toast;
 
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -41,7 +39,7 @@ import edu.aku.hassannaqvi.fas.data.entities.UCs;
 import edu.aku.hassannaqvi.fas.databinding.ActivityInfoBinding;
 import edu.aku.hassannaqvi.fas.get.db.GetAllDBData;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
-import edu.aku.hassannaqvi.fas.validation.ClearClass;
+import edu.aku.hassannaqvi.fas.utils.DateUtils;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
 import static edu.aku.hassannaqvi.fas.ui.LoginActivity.db;
@@ -66,6 +64,9 @@ public class InfoActivity extends AppCompatActivity {
         this.setTitle(R.string.hfa11);
         deviceID = Settings.Secure.getString(InfoActivity.this.getContentResolver(), Settings.Secure.ANDROID_ID);
 
+
+        //setting formdate
+        bi.hfa11.setMinDate(DateUtils.getMonthsBack("dd/MM/yyyy", -2));
         setContentUI();
         listeneres();
     }
@@ -293,7 +294,7 @@ public class InfoActivity extends AppCompatActivity {
         fc.setDevicetagID(MainApp.getTagName(this));
         fc.setAppversion(MainApp.versionName + "." + MainApp.versionCode);
         fc.setUsername(MainApp.userName);
-        fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+//        fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
         fc.setDeviceID(deviceID);
         fc.setFormType(CONSTANTS._URI_FORM_TOOL1);
         fc.setDistrictcode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getDist_code());
