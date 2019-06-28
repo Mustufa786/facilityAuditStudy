@@ -54,6 +54,7 @@ public class InfoActivity extends AppCompatActivity {
     private Forms fc;
     Map<String, HFA> hfaMap;
     List<String> district_code, uc_code;
+    String formType;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +65,9 @@ public class InfoActivity extends AppCompatActivity {
         this.setTitle(R.string.hfa11);
         deviceID = Settings.Secure.getString(InfoActivity.this.getContentResolver(), Settings.Secure.ANDROID_ID);
 
+        formType = getIntent().getStringExtra("fType");
+
+        bi.formTypeText.setText(formType.equals("q") ? "Quarterly Followup" : formType.equals("m") ? "Monthly Followup" : "");
 
         //setting formdate
         bi.hfa11.setMinDate(DateUtils.getMonthsBack("dd/MM/yyyy", -2));
@@ -293,12 +297,13 @@ public class InfoActivity extends AppCompatActivity {
         fc = new Forms();
         fc.setDevicetagID(MainApp.getTagName(this));
         fc.setAppversion(MainApp.versionName + "." + MainApp.versionCode);
+        fc.setUccode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getUc_code());
         fc.setUsername(MainApp.userName);
+        fc.setFollowupType(formType.equals("m") ? "monthly" : formType.equals("q") ? "quarterly" : "");
 //        fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
         fc.setDeviceID(deviceID);
         fc.setFormType(CONSTANTS._URI_FORM_TOOL1);
         fc.setDistrictcode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getDist_code());
-        fc.setUccode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getUc_code());
         fc.setHfcode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getHf_code());
 
         setGPS(fc);
