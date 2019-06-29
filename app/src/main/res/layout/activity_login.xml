@@ -95,6 +95,7 @@
                     <EditText
                         android:id="@+id/email"
                         style="@style/textInput"
+                        android:layout_centerHorizontal="true"
                         android:drawableStart="@drawable/ic_person"
                         android:drawablePadding="8dp"
                         android:hint="Username/Code"

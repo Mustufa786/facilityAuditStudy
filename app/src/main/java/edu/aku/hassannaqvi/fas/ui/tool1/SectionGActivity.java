@@ -38,8 +38,6 @@ public class SectionGActivity extends AppCompatActivity {
     private void setContentUI() {
         this.setTitle(R.string.hfa17);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
-
-
         ClearClass.ClearAllFields(bi.hfa1700, false);
         String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_SURVEY_TYPE);
         if (!getSurvey.equals("0"))
