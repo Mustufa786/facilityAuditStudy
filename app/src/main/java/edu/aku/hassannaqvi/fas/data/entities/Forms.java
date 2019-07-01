@@ -33,7 +33,6 @@ public class Forms implements Serializable {
 
     @ColumnInfo
     private String formType = "";
-    private String followupType = "";
     private String uid = "";
     private String formDate = ""; // Date
     private String username = ""; // Interviewer
@@ -63,6 +62,9 @@ public class Forms implements Serializable {
     private String synced = "";
     private String synced_date = "";
     private String appversion = "";
+
+    @ColumnInfo(name = "followupType")
+    private String followupType = "";
 
     @Ignore
     public Forms(Forms forms) {

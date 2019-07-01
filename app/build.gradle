@@ -25,7 +25,7 @@ android {
 
 
             versionCode code
-            versionName "0.5"
+            versionName "0.6"
             testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         }
     } else {
