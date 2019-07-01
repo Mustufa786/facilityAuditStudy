@@ -1,8 +1,10 @@
 package edu.aku.hassannaqvi.fas.data;
 
+import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
+import android.arch.persistence.room.migration.Migration;
 import android.content.Context;
 
 import edu.aku.hassannaqvi.fas.core.CONSTANTS;
@@ -18,16 +20,14 @@ import edu.aku.hassannaqvi.fas.data.entities.Users;
 @Database(entities = {Forms.class, Clusters.class, Users.class, Districts.class, UCs.class, HFA.class}, version = CONSTANTS.DATABASE_VERSION, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
 
-    /*@VisibleForTesting
-    public static final String DATABASE_NAME = "wfppishincr.db";
     // Alter table for Database Update
-    static final Migration MIGRATION_v2_v3 = new Migration(2, 3) {
+    static final Migration MIGRATION_v1_v2 = new Migration(1, 2) {
         @Override
         public void migrate(SupportSQLiteDatabase database) {
-            database.execSQL("ALTER TABLE forms "
-                    + " ADD COLUMN last_update TEXT");
+            database.execSQL("ALTER TABLE " + CONSTANTS.TABLE_FORMS
+                    + " ADD COLUMN followupType TEXT");
         }
-    };*/
+    };
 
     private static AppDatabase sInstance;
 
@@ -36,7 +36,7 @@ public abstract class AppDatabase extends RoomDatabase {
             synchronized (AppDatabase.class) {
                 if (sInstance == null) {
                     sInstance = Room.databaseBuilder(context, AppDatabase.class, CONSTANTS.DATABASE_NAME)
-//                            .addMigrations(MIGRATION_v1_v2, MIGRATION_v2_v3)
+                            .addMigrations(MIGRATION_v1_v2)
                             .setJournalMode(JournalMode.TRUNCATE)
                             .build();
                 }
