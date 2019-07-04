@@ -38,7 +38,7 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
     }
 
     private void setContentUI() {
-        this.setTitle(R.string.section3_tool2);
+        this.setTitle(R.string.section2_tool2);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
     }
 
@@ -136,7 +136,7 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
                 bi.fas02b06a.isChecked() ? "1"
                         : bi.fas02b06b.isChecked() ? "2"
                         : bi.fas02b06c.isChecked() ? "3"
-                        : bi.fas02b06c.isChecked() ? "4"
+                        : bi.fas02b06d.isChecked() ? "4"
                         : bi.fas02b06e.isChecked() ? "5"
                         : bi.fas02b0699.isChecked() ? "99"
                         : "0");
@@ -175,13 +175,11 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
                 bi.fas02b08a.isChecked() ? "1"
                         : bi.fas02b08b.isChecked() ? "2"
                         : bi.fas02b08c.isChecked() ? "3"
-                        : bi.fas02b08c.isChecked() ? "4"
+                        : bi.fas02b08d.isChecked() ? "4"
                         : bi.fas02b08e.isChecked() ? "5"
                         : bi.fas02b08f.isChecked() ? "6"
                         : bi.fas02b0896.isChecked() ? "96"
                         : "0");
-
-
         s02.put("fas02b0896x", bi.fas02b0896x.getText().toString());
 
 
@@ -189,13 +187,11 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
                 bi.fas02b09a.isChecked() ? "1"
                         : bi.fas02b09b.isChecked() ? "2"
                         : bi.fas02b09c.isChecked() ? "3"
-                        : bi.fas02b09c.isChecked() ? "4"
+                        : bi.fas02b09d.isChecked() ? "4"
                         : bi.fas02b09e.isChecked() ? "5"
                         : bi.fas02b09f.isChecked() ? "6"
                         : bi.fas02b0996.isChecked() ? "96"
                         : "0");
-
-
         s02.put("fas02b0996x", bi.fas02b0996x.getText().toString());
 
 
@@ -203,13 +199,11 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
                 bi.fas02b10a.isChecked() ? "1"
                         : bi.fas02b10b.isChecked() ? "2"
                         : bi.fas02b10c.isChecked() ? "3"
-                        : bi.fas02b10c.isChecked() ? "4"
+                        : bi.fas02b10d.isChecked() ? "4"
                         : bi.fas02b10e.isChecked() ? "5"
                         : bi.fas02b10f.isChecked() ? "6"
                         : bi.fas02b1096.isChecked() ? "96"
                         : "0");
-
-
         s02.put("fas02b1096x", bi.fas02b1096x.getText().toString());
 
 
@@ -217,9 +211,8 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
                 bi.fas02b11a.isChecked() ? "1"
                         : bi.fas02b11b.isChecked() ? "2"
                         : bi.fas02b11c.isChecked() ? "3"
-                        : bi.fas02b11c.isChecked() ? "4"
+                        : bi.fas02b11d.isChecked() ? "4"
                         : bi.fas02b11e.isChecked() ? "5"
-
                         : bi.fas02b1198.isChecked() ? "98"
                         : "0");
 

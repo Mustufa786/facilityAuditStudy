@@ -115,9 +115,9 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         JSONObject s01 = new JSONObject();
 
 
-        s01.put("fas02a00",
-                bi.fas02a00a.isChecked() ? "1"
-                        : bi.fas02a00b.isChecked() ? "2" : "0");
+        s01.put("fas02a00", bi.fas02a00a.isChecked() ? "1"
+                : bi.fas02a00b.isChecked() ? "2"
+                : "0");
 
         s01.put("fas02a001", bi.fas02a001.getText().toString());
         s01.put("fas02amw01", bi.fas02amw01.getText().toString());
@@ -125,8 +125,7 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         s01.put("fas02a02", bi.fas02a02.getText().toString());
 
 
-        s01.put("fas02a07",
-                bi.fas02a07a.isChecked() ? "1"
+        s01.put("fas02a07", bi.fas02a07a.isChecked() ? "1"
                         : bi.fas02a07b.isChecked() ? "2"
                         : "0");
 
