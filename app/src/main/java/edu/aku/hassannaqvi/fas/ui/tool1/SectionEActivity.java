@@ -97,7 +97,7 @@ public class SectionEActivity extends AppCompatActivity {
 
         SaveDraft();
         if (UpdateDB()) {
-            MainApp.stActivity(this, this, SectionFActivity.class, fc);
+            MainApp.endActivitySetRouting(this, this, EndingActivity.class, true, fc);
         } else {
             Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
         }

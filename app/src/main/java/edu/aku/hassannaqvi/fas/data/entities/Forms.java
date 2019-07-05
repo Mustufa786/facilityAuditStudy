@@ -20,6 +20,14 @@ public class Forms implements Serializable {
     @Ignore
     private final String round = "1";
 
+    public String getFollowupType() {
+        return followupType;
+    }
+
+    public void setFollowupType(String followupType) {
+        this.followupType = followupType;
+    }
+
     @PrimaryKey(autoGenerate = true)
     private int id;
 
@@ -55,10 +63,14 @@ public class Forms implements Serializable {
     private String synced_date = "";
     private String appversion = "";
 
+    @ColumnInfo(name = "followupType")
+    private String followupType = "";
+
     @Ignore
     public Forms(Forms forms) {
 
         this.formType = forms.formType;
+        this.followupType = forms.followupType;
         this.uid = forms.uid;
         this.formDate = forms.formDate;
         this.username = forms.username;
@@ -102,6 +114,7 @@ public class Forms implements Serializable {
         json.put("projectName", this._projectName);
         json.put("_id", this.id == 0 ? JSONObject.NULL : this.id);
         json.put("formType", this.formType == null ? JSONObject.NULL : this.formType);
+        json.put("followup", this.followupType == null ? JSONObject.NULL : this.followupType);
         json.put("formDate", this.formDate == null ? JSONObject.NULL : this.formDate);
         json.put("uid", this.uid == null ? JSONObject.NULL : this.uid);
         json.put("username", this.username == null ? JSONObject.NULL : this.username);

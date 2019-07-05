@@ -3,7 +3,7 @@ package edu.aku.hassannaqvi.fas.core;
 public interface CONSTANTS {
 
     String DATABASE_NAME = "facility_audit";
-    int DATABASE_VERSION = 1;
+    int DATABASE_VERSION = 2;
     String TABLE_FORMS = "forms";
     String TABLE_USERS = "users";
     String TABLE_CLUSTERS = "clusters";

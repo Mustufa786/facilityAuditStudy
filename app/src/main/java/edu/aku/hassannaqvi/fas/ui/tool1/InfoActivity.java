@@ -18,10 +18,8 @@ import android.widget.Toast;
 
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -41,7 +39,7 @@ import edu.aku.hassannaqvi.fas.data.entities.UCs;
 import edu.aku.hassannaqvi.fas.databinding.ActivityInfoBinding;
 import edu.aku.hassannaqvi.fas.get.db.GetAllDBData;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
-import edu.aku.hassannaqvi.fas.validation.ClearClass;
+import edu.aku.hassannaqvi.fas.utils.DateUtils;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
 import static edu.aku.hassannaqvi.fas.ui.LoginActivity.db;
@@ -56,6 +54,7 @@ public class InfoActivity extends AppCompatActivity {
     private Forms fc;
     Map<String, HFA> hfaMap;
     List<String> district_code, uc_code;
+    String formType;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,40 +64,46 @@ public class InfoActivity extends AppCompatActivity {
         bi.setCallback(this);
         this.setTitle(R.string.hfa11);
         deviceID = Settings.Secure.getString(InfoActivity.this.getContentResolver(), Settings.Secure.ANDROID_ID);
-        setContentUI();
 
+        formType = getIntent().getStringExtra("fType");
+
+        bi.formTypeText.setText(formType.equals("q") ? "Quarterly Followup" : formType.equals("m") ? "Monthly Followup" : "");
+
+        //setting formdate
+        bi.hfa11.setMinDate(DateUtils.getMonthsBack("dd/MM/yyyy", -2));
+        setContentUI();
         listeneres();
     }
 
     private void listeneres() {
 
-        bi.hfa1116.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-                if (group.getCheckedRadioButtonId() == bi.hfa1116b.getId()) {
-                    bi.fldGrp11720.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(bi.fldGrp11720, null);
-                    bi.btnEnd.setVisibility(View.VISIBLE);
-                    bi.btnContinue.setVisibility(View.GONE);
-                } else {
-                    bi.fldGrp11720.setVisibility(View.VISIBLE);
-                    bi.btnEnd.setVisibility(View.GONE);
-                    bi.btnContinue.setVisibility(View.VISIBLE);
-                }
-
-            }
-        });
-
-        bi.hfa1114.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-                if (checkedId != bi.hfa1114a.getId()) {
-                    ClearClass.ClearAllFields(bi.fldGrphfa1115, null);
-                }
-            }
-        });
+//        bi.hfa1116.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup group, int checkedId) {
+//
+//                if (group.getCheckedRadioButtonId() == bi.hfa1116b.getId()) {
+//                    bi.fldGrp11720.setVisibility(View.GONE);
+//                    ClearClass.ClearAllFields(bi.fldGrp11720, null);
+//                    bi.btnEnd.setVisibility(View.VISIBLE);
+//                    bi.btnContinue.setVisibility(View.GONE);
+//                } else {
+//                    bi.fldGrp11720.setVisibility(View.VISIBLE);
+//                    bi.btnEnd.setVisibility(View.GONE);
+//                    bi.btnContinue.setVisibility(View.VISIBLE);
+//                }
+//
+//            }
+//        });
+//
+//        bi.hfa1114.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup group, int checkedId) {
+//
+//                if (checkedId != bi.hfa1114a.getId()) {
+//                    ClearClass.ClearAllFields(bi.fldGrphfa1115, null);
+//                }
+//            }
+//        });
 //        bi.hfa1119.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 //            @Override
 //            public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -292,12 +297,13 @@ public class InfoActivity extends AppCompatActivity {
         fc = new Forms();
         fc.setDevicetagID(MainApp.getTagName(this));
         fc.setAppversion(MainApp.versionName + "." + MainApp.versionCode);
+        fc.setUccode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getUc_code());
         fc.setUsername(MainApp.userName);
-        fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+        fc.setFollowupType(formType.equals("m") ? "monthly" : formType.equals("q") ? "quarterly" : "");
+//        fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
         fc.setDeviceID(deviceID);
         fc.setFormType(CONSTANTS._URI_FORM_TOOL1);
         fc.setDistrictcode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getDist_code());
-        fc.setUccode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getUc_code());
         fc.setHfcode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getHf_code());
 
         setGPS(fc);

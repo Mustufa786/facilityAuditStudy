@@ -3,10 +3,14 @@ package edu.aku.hassannaqvi.fas.ui.tool1;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.Toast;
 
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.ExecutionException;
 
 import edu.aku.hassannaqvi.fas.JSON.GeneratorClass;
@@ -33,6 +37,45 @@ public class SectionCActivity extends AppCompatActivity {
         bi.setCallback(this);
 
         setContentUI();
+        setListeners();
+    }
+
+    private void setListeners() {
+
+        bi.hfa1332.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                if (!s.toString().isEmpty()) {
+                    String[] nums = s.toString().split("-");
+                    int day = Integer.parseInt(nums[0]);
+                    int month = Integer.parseInt(nums[1]);
+                    int year = Integer.parseInt(nums[2]);
+                    String currentDate = new SimpleDateFormat("dd-MM-yyyy").format(new Date().getTime());
+                    String nums1[] = currentDate.split("-");
+                    int cr_day = Integer.parseInt(nums1[0]);
+                    int cr_month = Integer.parseInt(nums1[1]);
+                    int cr_year = Integer.parseInt(nums1[2]);
+
+                    if (day > cr_day || month > cr_month || year > cr_year) {
+                        bi.hfa1332.setError("Can not be greater than " + currentDate);
+                    } else {
+                        bi.hfa1332.setError(null);
+                    }
+
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
     }
 
     private void setContentUI() {

@@ -341,8 +341,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void openForm(String fType) {
-        final Intent oF = new Intent(MainActivity.this, selectedForm(fType));
+    public void openForm(String fType, String formType) {
+        final Intent oF = new Intent(MainActivity.this, selectedForm(fType)).putExtra("fType", formType);
 
         if (sharedPref.getString("tagName", null) != "" && sharedPref.getString("tagName", null) != null && !MainApp.userName.equals("0000")) {
             startActivity(oF);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.tool2.SectionC_tool_2Activity">
 
     <data>
@@ -101,9 +101,9 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
                             android:enabled="false"
-                            android:maxLength="6"
                             android:hint="@string/fas02a01"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:maxLength="6" />
 
 
                     </LinearLayout>
@@ -121,6 +121,16 @@
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
                             android:text="@string/fas02c01"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimaryDark"
+                            android:text="@string/fas02c01sub"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
@@ -175,6 +185,27 @@
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:text="@string/fas02c02sub1"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
+                                android:text="@string/fas02c02sub2"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/fas02c02m"
                                 style="@style/textInput"
@@ -186,17 +217,116 @@
                                 android:maxLength="2"
                                 app:maxValue="11"
                                 app:minValue="1"
-                                app:type="range"/>
+                                app:type="range" />
 
                             <EditText
-                                android:maxLength="4"
                                 android:id="@+id/fas02c02y"
                                 style="@style/textInput"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="10dp"
                                 android:hint="@string/year"
-                                android:inputType="number" />
+                                android:inputType="number"
+                                android:maxLength="4" />
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--fas02c27-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/fas02c27"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <RadioGroup
+                                android:id="@+id/fas02c27"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/fas02c27a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/fas02c27b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <!--fas02c28-->
+                    <android.support.v7.widget.CardView
+                        style="@style/cardView"
+                        android:visibility="@{fas02c27a.checked ? View.GONE : View.VISIBLE}">
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/fas02c28"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <RadioGroup
+                                android:id="@+id/fas02c28"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/fas02c28a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/fas02c28a" />
+
+                                <RadioButton
+                                    android:id="@+id/fas02c28b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/fas02c28b" />
+
+                                <RadioButton
+                                    android:id="@+id/fas02c28c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/fas02c28c" />
+
+
+                            </RadioGroup>
 
 
                         </LinearLayout>
@@ -510,21 +640,6 @@
                                         android:layout_weight="1"
                                         android:text="@string/fas02c05j" />
 
-                                    <RadioButton
-                                        android:id="@+id/fas02c05k"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02c05k" />
-
-                                    <RadioButton
-                                        android:id="@+id/fas02c05l"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginBottom="1dp"
-                                        android:layout_weight="1"
-                                        android:text="@string/fas02c05l" />
 
                                     <RadioButton
                                         android:id="@+id/fas02c0596"
@@ -570,6 +685,16 @@
                                     android:textColor="@android:color/white"
                                     android:textSize="20sp" />
 
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@color/colorPrimaryDark"
+                                    android:text="@string/fas02c06sub"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="20sp" />
+
                                 <LinearLayout
                                     android:id="@+id/fldGrpfas02c06"
                                     style="@style/linerlayout_view">
@@ -583,6 +708,16 @@
                                         android:id="@+id/fas02c06b"
                                         style="@style/checkbox"
                                         android:text="@string/fas02c06b" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="@color/colorPrimaryDark"
+                                        android:text="@string/fas02c06sub1"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="20sp" />
 
                                     <CheckBox
                                         android:id="@+id/fas02c06c"
@@ -669,7 +804,6 @@
 
 
                                     <EditText
-                                        android:maxLength="2"
                                         android:id="@+id/fas02c07w"
                                         style="@style/textInput"
                                         android:layout_width="match_parent"
@@ -677,6 +811,7 @@
                                         android:layout_margin="10dp"
                                         android:hint="@string/week"
                                         android:inputType="number"
+                                        android:maxLength="2"
                                         android:tag="fas02c07a"
                                         android:text='@{fas02c07a.checked ? fas02c07w.getText.toString : ""}'
                                         android:visibility='@{fas02c07a.checked ? View.VISIBLE : View.GONE}' />
@@ -688,22 +823,22 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginBottom="1dp"
                                         android:layout_weight="1"
-                                        android:text="@string/month" />
+                                        android:text="@string/fas02c07m" />
 
                                     <com.edittextpicker.aliazaz.EditTextPicker
-                                        app:type="range"
-                                        app:maxValue="11"
-                                        app:minValue="1"
                                         android:id="@+id/fas02c07m"
                                         style="@style/textInput"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_margin="10dp"
-                                        android:hint="@string/month"
+                                        android:hint="@string/fas02c07m"
                                         android:inputType="number"
                                         android:tag="fas02c07b"
                                         android:text='@{fas02c07b.checked ? fas02c07m.getText.toString : ""}'
-                                        android:visibility='@{fas02c07b.checked ? View.VISIBLE : View.GONE}' />
+                                        android:visibility='@{fas02c07b.checked ? View.VISIBLE : View.GONE}'
+                                        app:maxValue="11"
+                                        app:minValue="1"
+                                        app:type="range" />
 
                                     <RadioButton
                                         android:id="@+id/fas02c0798"
@@ -742,7 +877,7 @@
                                     android:layout_margin="10dp"
                                     android:hint="@string/times"
                                     android:inputType="number"
-                                    android:maxLength="2"/>
+                                    android:maxLength="2" />
 
                                 <CheckBox
                                     android:id="@+id/fas02c0898"
@@ -955,7 +1090,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_horizontal"
-                                    android:background="@color/colorPrimary"
+                                    android:background="@color/colorPrimaryDark"
                                     android:text="@string/fas02c1201"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@android:color/white"
@@ -1136,7 +1271,10 @@
                         </android.support.v7.widget.CardView>
 
                         <!--fas02c14-->
-                        <android.support.v7.widget.CardView style="@style/cardView">
+                        <android.support.v7.widget.CardView
+
+                            style="@style/cardView"
+                            android:visibility='@{fas02c13b.checked? View.GONE : View.VISIBLE}'>
 
                             <LinearLayout style="@style/linerlayout_view">
 
@@ -1280,6 +1418,16 @@
                         </android.support.v7.widget.CardView>
 
                     </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="@string/fas02c17Heading"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
 
                     <!--fas02c17-->
                     <android.support.v7.widget.CardView style="@style/cardView">
@@ -1595,6 +1743,16 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimaryDark"
+                                android:text="@string/fas02c19sub"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimaryDark"
                                 android:gravity="center"
                                 android:text="HEALTH PROFESSIONAL"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -1728,7 +1886,7 @@
                     <android.support.v7.widget.CardView
                         android:id="@+id/fldGrpfas02c20"
                         style="@style/cardView"
-                        android:visibility="@{!fas02c19e.checked || !fas02c19f.checked ? View.GONE : View.VISIBLE}">
+                        android:visibility="@{fas02c19e.checked ? View.VISIBLE : View.GONE}">
 
                         <LinearLayout style="@style/linerlayout_view">
 

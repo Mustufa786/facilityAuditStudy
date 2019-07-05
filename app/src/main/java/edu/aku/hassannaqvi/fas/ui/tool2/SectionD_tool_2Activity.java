@@ -131,6 +131,20 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                 }
             }
         });
+        bi.fas02d0898.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02d08, false);
+                    bi.fldGrpfas02d08.setTag("-1");
+                    bi.fas02d0898.setTag(null);
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02d08, true);
+                    bi.fldGrpfas02d08.setTag(null);
+                    bi.fas02d0898.setTag("-1");
+                }
+            }
+        });
 
 
     }
@@ -190,7 +204,8 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                         : bi.fas02d02i.isChecked() ? "9"
                         : bi.fas02d02j.isChecked() ? "10"
                         : bi.fas02d02k.isChecked() ? "11"
-
+                        : bi.fas02d02l.isChecked() ? "12"
+                        : bi.fas02d02m.isChecked() ? "13"
                         : bi.fas02d0298.isChecked() ? "98"
 
 
@@ -201,37 +216,37 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                 bi.fas02d02a.isChecked() ? "1"
                         : "0");
         s04.put("fas02d02b",
-                bi.fas02d02b.isChecked() ? "1"
+                bi.fas02d02b.isChecked() ? "2"
                         : "0");
         s04.put("fas02d02c",
-                bi.fas02d02c.isChecked() ? "1"
+                bi.fas02d02c.isChecked() ? "3"
                         : "0");
         s04.put("fas02d02d",
-                bi.fas02d02d.isChecked() ? "1"
+                bi.fas02d02d.isChecked() ? "4"
                         : "0");
         s04.put("fas02d02e",
-                bi.fas02d02e.isChecked() ? "1"
+                bi.fas02d02e.isChecked() ? "5"
                         : "0");
         s04.put("fas02d02f",
-                bi.fas02d02f.isChecked() ? "1"
+                bi.fas02d02f.isChecked() ? "6"
                         : "0");
         s04.put("fas02d02g",
-                bi.fas02d02g.isChecked() ? "1"
+                bi.fas02d02g.isChecked() ? "7"
                         : "0");
         s04.put("fas02d02h",
-                bi.fas02d02h.isChecked() ? "1"
+                bi.fas02d02h.isChecked() ? "8"
                         : "0");
         s04.put("fas02d02i",
-                bi.fas02d02i.isChecked() ? "1"
+                bi.fas02d02i.isChecked() ? "9"
                         : "0");
         s04.put("fas02d02j",
-                bi.fas02d02j.isChecked() ? "1"
+                bi.fas02d02j.isChecked() ? "10"
                         : "0");
         s04.put("fas02d02k",
-                bi.fas02d02k.isChecked() ? "1"
+                bi.fas02d02k.isChecked() ? "11"
                         : "0");
         s04.put("fas02d0298",
-                bi.fas02d0298.isChecked() ? "1"
+                bi.fas02d0298.isChecked() ? "98"
                         : "0");
 
 
@@ -245,37 +260,43 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                 bi.fas02d04a.isChecked() ? "1"
                         : "0");
         s04.put("fas02d04b",
-                bi.fas02d04b.isChecked() ? "1"
+                bi.fas02d04b.isChecked() ? "2"
                         : "0");
         s04.put("fas02d04c",
-                bi.fas02d04c.isChecked() ? "1"
+                bi.fas02d04c.isChecked() ? "3"
                         : "0");
         s04.put("fas02d04d",
-                bi.fas02d04d.isChecked() ? "1"
+                bi.fas02d04d.isChecked() ? "4"
                         : "0");
         s04.put("fas02d04e",
-                bi.fas02d04e.isChecked() ? "1"
+                bi.fas02d04e.isChecked() ? "5"
                         : "0");
         s04.put("fas02d04f",
-                bi.fas02d04f.isChecked() ? "1"
+                bi.fas02d04f.isChecked() ? "6"
                         : "0");
         s04.put("fas02d04g",
-                bi.fas02d04g.isChecked() ? "1"
+                bi.fas02d04g.isChecked() ? "7"
                         : "0");
         s04.put("fas02d04h",
-                bi.fas02d04h.isChecked() ? "1"
+                bi.fas02d04h.isChecked() ? "8"
                         : "0");
         s04.put("fas02d04i",
-                bi.fas02d04i.isChecked() ? "1"
+                bi.fas02d04i.isChecked() ? "9"
                         : "0");
         s04.put("fas02d04j",
-                bi.fas02d04j.isChecked() ? "1"
+                bi.fas02d04j.isChecked() ? "10"
                         : "0");
         s04.put("fas02d04k",
-                bi.fas02d04k.isChecked() ? "1"
+                bi.fas02d04k.isChecked() ? "11"
+                        : "0");
+        s04.put("fas02d04l",
+                bi.fas02d04l.isChecked() ? "12"
+                        : "0");
+        s04.put("fas02d04m",
+                bi.fas02d04m.isChecked() ? "13"
                         : "0");
         s04.put("fas02d0498",
-                bi.fas02d0498.isChecked() ? "1"
+                bi.fas02d0498.isChecked() ? "98"
                         : "0");
 
 
@@ -291,39 +312,39 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                         : "0");
 
         s04.put("fas02d06b",
-                bi.fas02d06b.isChecked() ? "1"
+                bi.fas02d06b.isChecked() ? "2"
 
                         : "0");
 
         s04.put("fas02d06c",
-                bi.fas02d06c.isChecked() ? "1"
+                bi.fas02d06c.isChecked() ? "3"
 
                         : "0");
 
 
         s04.put("fas02d06d",
-                bi.fas02d06d.isChecked() ? "1"
+                bi.fas02d06d.isChecked() ? "4"
 
                         : "0");
 
         s04.put("fas02d06e",
-                bi.fas02d06e.isChecked() ? "1"
+                bi.fas02d06e.isChecked() ? "5"
 
                         : "0");
         s04.put("fas02d06f",
-                bi.fas02d06f.isChecked() ? "1"
+                bi.fas02d06f.isChecked() ? "5"
 
                         : "0");
         s04.put("fas02d06g",
-                bi.fas02d06g.isChecked() ? "1"
+                bi.fas02d06g.isChecked() ? "6"
 
                         : "0");
         s04.put("fas02d06h",
-                bi.fas02d06h.isChecked() ? "1"
+                bi.fas02d06h.isChecked() ? "6"
 
                         : "0");
         s04.put("fas02d0698",
-                bi.fas02d0698.isChecked() ? "1"
+                bi.fas02d0698.isChecked() ? "98"
 
                         : "0");
 
@@ -334,16 +355,16 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                         : "0");
 
 
-        s04.put("fas02d08",
-                bi.fas02d08a.isChecked() ? "1"
-                        : bi.fas02d08b.isChecked() ? "2"
-                        : bi.fas02d08c.isChecked() ? "3"
-                        : bi.fas02d08d.isChecked() ? "4"
-                        : bi.fas02d08e.isChecked() ? "5"
-                        : bi.fas02d08f.isChecked() ? "6"
-                        : bi.fas02d08g.isChecked() ? "7"
-                        : bi.fas02d08h.isChecked() ? "8"
-                        : bi.fas02d0898.isChecked() ? "98" : "0");
+        s04.put("fas02d08a", bi.fas02d08a.isChecked() ? "1" : "0");
+        s04.put("fas02d08b", bi.fas02d08b.isChecked() ? "2" : "0");
+        s04.put("fas02d08c", bi.fas02d08c.isChecked() ? "3" : "0");
+        s04.put("fas02d08d", bi.fas02d08d.isChecked() ? "4" : "0");
+        s04.put("fas02d08e", bi.fas02d08e.isChecked() ? "5" : "0");
+        s04.put("fas02d08f", bi.fas02d08f.isChecked() ? "6" : "0");
+        s04.put("fas02d08g", bi.fas02d08g.isChecked() ? "7" : "0");
+        s04.put("fas02d08h", bi.fas02d08h.isChecked() ? "8" : "0");
+        s04.put("fas02d08i", bi.fas02d08i.isChecked() ? "9" : "0");
+        s04.put("fas02d0898", bi.fas02d0898.isChecked() ? "98" : "0");
 
         fc.setSa4(String.valueOf(s04));
 
