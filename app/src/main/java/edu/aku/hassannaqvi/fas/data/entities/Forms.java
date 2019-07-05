@@ -20,49 +20,6 @@ public class Forms implements Serializable {
     @Ignore
     private final String round = "1";
 
-    public String getFollowupType() {
-        return followupType;
-    }
-
-    public void setFollowupType(String followupType) {
-        this.followupType = followupType;
-    }
-
-    @PrimaryKey(autoGenerate = true)
-    private int id;
-
-    @ColumnInfo
-    private String formType = "";
-    private String uid = "";
-    private String formDate = ""; // Date
-    private String username = ""; // Interviewer
-    private String participantID = ""; // Child ID
-    private String participantName = ""; // Child Name
-    private String sa1 = "";     // Section 1 - Info
-    private String sa2 = "";     // Section 2
-    private String sa3 = "";     // Section 3
-    private String sa4 = "";     // Section 4
-    private String sa5 = "";     // Section 5
-    private String sa6 = "";     // Section 6
-    private String sa7 = "";     // Section 7
-    private String sa8 = "";     // Section 8
-    private String sa9 = "";     // Section 9
-    private String istatus = "";
-    private String endtime = "";
-    private String districtcode = "";
-    private String uccode = "";
-    private String hfcode = "";
-    private String gpsLat = "";
-    private String gpsLng = "";
-    private String gpsDT = "";
-    private String gpsAcc = "";
-    private String gpsElev = "";
-    private String deviceID = "";
-    private String devicetagID = "";
-    private String synced = "";
-    private String synced_date = "";
-    private String appversion = "";
-
     @ColumnInfo(name = "followupType")
     private String followupType = "";
 
@@ -101,6 +58,49 @@ public class Forms implements Serializable {
         this.synced_date = forms.synced_date;
         this.appversion = forms.appversion;
 
+    }
+
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+
+    @ColumnInfo
+    private String formType = "";
+    private String uid = "";
+    private String formDate = ""; // Date
+    private String username = ""; // Interviewer
+    private String participantID = ""; // Child ID
+    private String participantName = ""; // Child Name
+    private String sa1 = "";     // Section 1 - Info
+    private String sa2 = "";     // Section 2
+    private String sa3 = "";     // Section 3
+    private String sa4 = "";     // Section 4
+    private String sa5 = "";     // Section 5
+    private String sa6 = "";     // Section 6
+    private String sa7 = "";     // Section 7
+    private String sa8 = "";     // Section 8
+    private String sa9 = "";     // Section 9
+    private String istatus = "";
+    private String endtime = "";
+    private String districtcode = "";
+    private String uccode = "";
+    private String hfcode = "";
+    private String gpsLat = "";
+    private String gpsLng = "";
+    private String gpsDT = "";
+    private String gpsAcc = "";
+    private String gpsElev = "";
+    private String deviceID = "";
+    private String devicetagID = "";
+    private String synced = "";
+    private String synced_date = "";
+    private String appversion = "";
+
+    public String getFollowupType() {
+        return followupType;
+    }
+
+    public void setFollowupType(String followupType) {
+        this.followupType = followupType;
     }
 
     public Forms() {

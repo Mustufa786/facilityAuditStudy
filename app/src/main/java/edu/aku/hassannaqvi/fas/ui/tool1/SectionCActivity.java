@@ -57,7 +57,7 @@ public class SectionCActivity extends AppCompatActivity {
                     int month = Integer.parseInt(nums[1]);
                     int year = Integer.parseInt(nums[2]);
                     String currentDate = new SimpleDateFormat("dd-MM-yyyy").format(new Date().getTime());
-                    String nums1[] = currentDate.split("-");
+                    String[] nums1 = currentDate.split("-");
                     int cr_day = Integer.parseInt(nums1[0]);
                     int cr_month = Integer.parseInt(nums1[1]);
                     int cr_year = Integer.parseInt(nums1[2]);

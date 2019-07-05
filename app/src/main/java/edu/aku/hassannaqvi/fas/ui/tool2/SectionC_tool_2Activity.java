@@ -332,11 +332,7 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
                         : bi.fas02c04k.isChecked() ? "11"
                         : bi.fas02c04l.isChecked() ? "12"
                         : bi.fas02c0496.isChecked() ? "96"
-
-
                         : "0");
-
-
         s03.put("fas02c0496x", bi.fas02c0496x.getText().toString());
 
 
@@ -353,8 +349,6 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
                         : bi.fas02c05j.isChecked() ? "10"
                         : bi.fas02c0596.isChecked() ? "96"
                         : "0");
-
-
         s03.put("fas02c0596x", bi.fas02c0596x.getText().toString());
 
 
@@ -405,12 +399,16 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
         s03.put("fas02c0696x", bi.fas02c0696x.getText().toString());
 
-        s03.put("fas02c07", bi.fas02c07a.isChecked() ? "1" : bi.fas02c07b.isChecked() ? "2" : bi.fas02c0798.isChecked() ? "98" : "0");
+        s03.put("fas02c07", bi.fas02c07a.isChecked() ? "1"
+                : bi.fas02c07b.isChecked() ? "2"
+                : bi.fas02c0798.isChecked() ? "98"
+                : "0");
+
         s03.put("fas02c07w", bi.fas02c07w.getText().toString());
         s03.put("fas02c07m", bi.fas02c07m.getText().toString());
 
         s03.put("fas02c0898",
-                bi.fas02c0898.isChecked() ? "1"
+                bi.fas02c0898.isChecked() ? "98"
                         : "0");
         s03.put("fas02c08t", bi.fas02c08t.getText().toString());
 
@@ -471,7 +469,7 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
 
         s03.put("fas02c1498",
-                bi.fas02c1498.isChecked() ? "1"
+                bi.fas02c1498.isChecked() ? "98"
                         : "0");
         s03.put("fas02c14", bi.fas02c14.getText().toString());
 
@@ -761,7 +759,7 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         s03.put("fas02c2596x", bi.fas02c2596x.getText().toString());
 
 
-        s03.put("fas02c2601",
+        s03.put("fas02c26",
                 bi.fas02c26a.isChecked() ? "1"
                         : bi.fas02c26b.isChecked() ? "2"
                         : bi.fas02c26c.isChecked() ? "3"
