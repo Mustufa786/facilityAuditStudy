@@ -120,7 +120,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/fas02c01"
+                            android:text="@string/fas02c02"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
@@ -136,13 +136,13 @@
                             android:textSize="20sp" />
 
                         <RadioGroup
-                            android:id="@+id/fas02c01"
+                            android:id="@+id/fas02c02"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
                             <RadioButton
-                                android:id="@+id/fas02c01a"
+                                android:id="@+id/fas02c02a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
@@ -150,16 +150,14 @@
                                 android:text="@string/yes" />
 
                             <RadioButton
-                                android:id="@+id/fas02c01b"
+                                android:id="@+id/fas02c02b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
                                 android:text="@string/no" />
 
-
                         </RadioGroup>
-
 
                     </LinearLayout>
 
@@ -278,6 +276,7 @@
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
+
                     <!--fas02c28-->
                     <android.support.v7.widget.CardView
                         style="@style/cardView"
@@ -823,7 +822,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginBottom="1dp"
                                         android:layout_weight="1"
-                                        android:text="@string/fas02c07m" />
+                                        android:text="@string/month" />
 
                                     <com.edittextpicker.aliazaz.EditTextPicker
                                         android:id="@+id/fas02c07m"
@@ -831,7 +830,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_margin="10dp"
-                                        android:hint="@string/fas02c07m"
+                                        android:hint="@string/month"
                                         android:inputType="number"
                                         android:tag="fas02c07b"
                                         android:text='@{fas02c07b.checked ? fas02c07m.getText.toString : ""}'
