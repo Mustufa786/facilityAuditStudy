@@ -18,10 +18,11 @@
 
 
     <string name="seconds">Seconds</string>
+    <string name="formInputDATE"></string>
 
     <string name="yes"> ہاں </string>
     <string name="no"> نہیں </string>
-    <string name="dkn"> معلوم نہیں </string>
+    <string name="dkn"> معلوم نہیں</string>
     <string name="non">کوئی نہیں  </string>
     <string name="never">کبھی نہیں </string>
     <string name="not_applicable">	غير موضوع</string>
@@ -353,7 +354,7 @@
     <!--Tool 2-->
     <!--Section A-->
 
-    <string name="fas02a01"> عورت کی آئی ڈی </string>
+    <string name="fas02a01">عورت کی آئی ڈی</string>
     <string name="fas02a02">       انٹرویو کا سال /مہینہ/ دن</string>
     <string name="fas02a07"> کیا اس انٹرویو کے دوران عورت اکیلی تھی ؟</string>
     <string name="fas02a08"> انٹرویو کے دوران اور کوئی موجود تھا؟</string>
@@ -365,52 +366,57 @@
     <!--Section B-->
 
     <string name="fas02b01">آپ کی پیدائش کس مہینے اور سال میں ہوئی تھی</string>
-    <string name="fas02b0101b"> مہینہ معلوم نہیں </string>
-    <string name="fas02b0102b"> سال معلوم نہیں </string>
-    <string name="fas02b02"> آپ کی عمر کتنی ہے ؟ </string>
-    <string name="fas02b03"> کیا آپ نے کبھی رسمی تعلیم حاصل کی ہے ؟ </string>
-    <string name="fas02b04"> آپ نے  اسکول کے کس لیول تک پڑھا؟ </string>
-    <string name="fas02b04a"> پری اسکول </string>
-    <string name="fas02b04b"> پرائمری </string>
-    <string name="fas02b04c"> سیکنڈری </string>
-    <string name="fas02b04d"> اس سے زیادہ </string>
-    <string name="fas02b05"> اس لیول پر آپ نے سب سے بڑا کونسا گریڈ مکمل کیا ؟ </string>
-    <string name="fas02b06"> اس وقت آپ کی ازواجی حیثیت کیا ہے ؟ </string>
+    <string name="fas02b0101b">مہینہ معلوم نہیں</string>
+    <string name="fas02b0102b">سال معلوم نہیں </string>
+    <string name="fas02b02">آپ کی عمر کتنی ہے ؟</string>
+    <string name="fas02b03">کیا آپ نے کبھی رسمی تعلیم حاصل کی ہے ؟</string>
+    <string name="fas02b04">آپ نے  اسکول کے کس لیول تک پڑھا؟</string>
+    <string name="fas02b04a">پری اسکول</string>
+    <string name="fas02b04b">پرائمری</string>
+    <string name="fas02b04c">سیکنڈری</string>
+    <string name="fas02b04d">اس سے زیادہ </string>
+    <string name="fas02b05">اس لیول پر آپ نے سب سے بڑا کونسا گریڈ مکمل کیا ؟</string>
+    <string name="fas02b06">اس وقت آپ کی ازواجی حیثیت کیا ہے ؟</string>
     <string name="fas02b06a"> اس وقت شادی شدہ </string>
-    <string name="fas02b06b"> بیوہ </string>
-    <string name="fas02b06c"> طلاق یافتہ </string>
-    <string name="fas02b06d"> الگ رہتی </string>
-    <string name="fas02b06e"> کبھی شادی نہیں ہوئی </string>
+    <string name="fas02b06b">بیوہ</string>
+    <string name="fas02b06c">طلاق یافتہ </string>
+    <string name="fas02b06d">شوہر سے الگ رہتی ہے </string>
+    <string name="fas02b06e">کبھی شادی نہیں ہوئی</string>
     <string name="fas02b07">کیا آپ کے گھر کے کسی فرد کے پاس یہ چیزیں اپنی ہیں </string>
-    <string name="fas02b07a"> گھڑی </string>
-    <string name="fas02b07b"> بائسکل  </string>
-    <string name="fas02b07c"> موٹر سائیکل یا اسکوٹر </string>
-    <string name="fas02b07d"> کار،ٹرک یا گاڑی </string>
-    <string name="fas02b07e"> جانوروں سے چلائی جانے والی گاڑی </string>
-    <string name="fas02b08"> گھر میں بڑی خریداری کے متعلق فیصلے عام طورپر کون کرتا ہے ؟ </string>
-    <string name="fas02b08a"> جواب دہندہ  </string>
-    <string name="fas02b08b"> شوہر </string>
-    <string name="fas02b08c"> جواب دہندہ اور شوہر </string>
+    <string name="fas02b07a">گھڑی </string>
+    <string name="fas02b07b">بائی سائیکل  </string>
+    <string name="fas02b07c">موٹر سائیکل یا اسکوٹر </string>
+    <string name="fas02b07d">کار،ٹرک یا گاڑی </string>
+    <string name="fas02b07e">جانوروں سے چلائی جانے والی گاڑی </string>
+    <string name="fas02b08">گھر میں بڑی خریداری کے متعلق فیصلے عام طورپر کون کرتا ہے ؟ </string>
+    <string name="fas02b08a">جواب دہندہ  </string>
+    <string name="fas02b08b">شوہر </string>
+    <string name="fas02b08c">جواب دہندہ اور شوہر </string>
     <string name="fas02b08d"> والد یا سُسر  </string>
-    <string name="fas02b08e"> والدہ یا ساس </string>
-    <string name="fas02b08f"> فیملی کے دوسرے مرد </string>
-    <string name="fas02b09"> آپ کی صحت اور دیکھ بھال کے متعلق فیصلے عام طور پر کون کرتا ہے ؟ </string>
+    <string name="fas02b08e">والدہ یا ساس</string>
+    <string name="fas02b08f">فیملی کے دوسرے مرد </string>
+    <string name="fas02b08g">قابل اطلاق نہیں   </string>
+    <string name="fas02b08h">جواب دینا پسند نہیں کرونگی    </string>
+    <string name="fas02b09">آپ کی صحت اور دیکھ بھال کے متعلق فیصلے عام طور پر کون کرتا ہے ؟ </string>
     <string name="fas02b10"> آپ کے بچوں کی صحت اور دیکھ بھال کے متعلق فیصلے عام طور پر کون کرتا ہے ؟  </string>
-    <string name="fas02b11"> آپ کے گھر سے سب سے قریبی مرکز صحت کتنے فاصلے پر ہے؟ </string>
-    <string name="fas02b11a"> 1.0km ایک کلو میٹر سے کم </string>
-    <string name="fas02b11b"> 1.0-2.5km ایک سے ڈھائی کلو میڑ کے درمیان </string>
-    <string name="fas02b11c"> 2.5-5.0km 2.5 کلو میڑ سے 5 کلو میڑ کے درمیان </string>
-    <string name="fas02b11d">5 کلو میڑ سے 7.5 کلو میڑ کے درمیان 5.0-7.5km  </string>
-    <string name="fas02b11e">7.5 کلو میڑ سے زیادہ فاصلے پر 7.5km  </string>
+    <string name="fas02b11">آپ کے گھر سے سب سے قریبی مرکز صحت کتنے فاصلے پر ہے؟ </string>
+    <string name="fas02b11a">ایک کلو میٹر سے کم </string>
+    <string name="fas02b11b">ایک سے ڈھائی کلو میڑ کے درمیان </string>
+    <string name="fas02b11c">کلو میڑ سے 5 کلو میڑ کے درمیان </string>
+    <string name="fas02b11d">5 کلو میڑ سے 7.5 کلو میڑ کے درمیان  </string>
+    <string name="fas02b11e">کلو میڑ سے زیادہ فاصلے پر  </string>
 
 
     <!--Section C-->
-    <string name="fas02c01"> کیا آپ نے کبھی بچے کو جنم دیا ہے؟  </string>
-    <string name="fas02c02"> آپ کی حالیہ ڈیلیوری کی تاریخ اور مہینہ کونسا تھا ؟ </string>
-    <string name="fas02c03"> جب آپ (نام) کے ساتھ حاملہ تھی تو کیا آپ نے کسی سے اپنا طبی معائنہ کرایا تھا ؟ </string>
-    <string name="fas02c04"> (نام) کے ساتھ حمل کے دوران آپ نے اپنا طبی معائنہ کسی سے کیو نہیں کروایا ؟ </string>
-    <string name="fas02c04a"> خرید بہت زیادہ تھا </string>
-    <string name="fas02c04b"> مرکز صحت کھلا نہیں </string>
+    <string name="fas02c01">کیا آپ نے کبھی بچے کو جنم دیا ہے؟</string>
+    <string name="fas02c01sub">میرا مطلب ایسا بچہ ہے جس نے کبھی سانس لی ہو یا رویا ہو. یا جس میں زندگی کی دوسری علامات ظاہر تھیں اگرچہ وہ چند منٹ یا  گھنٹوں تک ہی زندہ رہا ہو</string>
+    <string name="fas02c02">آپ کی حالیہ ڈیلیوری کی تاریخ اور مہینہ کونسا تھا ؟</string>
+    <string name="fas02c02sub1">میرا مطلب آپ کی آخری ڈیلیوری سے  ہے اگرچہ اب وہ بچہ زندہ نہیں یا اس بچہ کا والد آپ کا موجود شوہر بھی نہیں ہو</string>
+    <string name="fas02c02sub2">اگر جواب دہندہ کو صحیح تاریخ معلوم نہیں تو مہینہ اور سال کا اندازہ لگانے کے لیے مزید  تفصیل پوچھں </string>
+    <string name="fas02c03">جب آپ (نام) کے ساتھ حاملہ تھی تو کیا آپ نے کسی سے اپنا طبی معائنہ کرایا تھا ؟</string>
+    <string name="fas02c04">(نام) کے ساتھ حمل کے دوران آپ نے اپنا طبی معائنہ کسی سے کیو نہیں کروایا ؟</string>
+    <string name="fas02c04a">خرید بہت زیادہ تھا</string>
+    <string name="fas02c04b"> مرکز صحت کھلانہیں </string>
     <string name="fas02c04c">بہت دور</string>
     <string name="fas02c04d"> مرکز صحت پر اعتماد نہیں</string>
     <string name="fas02c04e">مرکز صحت پر صحت کے دیکھ بھال کے لیے عورت موجود نہیں  </string>
@@ -421,20 +427,22 @@
     <string name="fas02c04j"> صحت کی سہولیات کا خراب معیار</string>
     <string name="fas02c04k">پراویسی کی کمی/پردے کا انتظام نہیں</string>
     <string name="fas02c04l"> اسٹاف کا خراب رویہ</string>
-    <string name="fas02c05"> اس حمل کے دوران آپ نے اپنا طبی معانئہ کہاں کروایا ؟ </string>
+    <string name="fas02c05">اس حمل کے دوران آپ نے اپنا طبی معانئہ کہاں کروایا ؟</string>
     <string name="fas02c05a"> اپنے گھر پر </string>
-    <string name="fas02c05b"> کسی اور کے گھر پر  </string>
-    <string name="fas02c05c"> سرکاری ہسپتال </string>
-    <string name="fas02c05d"> آر ایچ سی /ایم سی ایچ </string>
-    <string name="fas02c05e"> ایچ یو /ایف ڈیلوسی </string>
-    <string name="fas02c05f"> اے کیو ایچ ایس پی کا مرکز صحت </string>
-    <string name="fas02c05g"> نجی ہسپتال /کلینک </string>
-    <string name="fas02c05h"> کیمونٹی مڈوائف </string>
-    <string name="fas02c05i"> حکیم </string>
-    <string name="fas02c05j"> ہومیو پیتھک </string>
+    <string name="fas02c05b">کسی اور کے گھر پر  </string>
+    <string name="fas02c05c">سرکاری ہسپتال</string>
+    <string name="fas02c05d"> آر ایچ سی /ایم سی ایچ</string>
+    <string name="fas02c05e">ایچ یو /ایف ڈیلوسی</string>
+    <string name="fas02c05f">اے کے ایچ ایس پی کا مرکز صحت</string>
+    <string name="fas02c05g"> نجی ہسپتال /کلینک</string>
+    <string name="fas02c05h">کیمونٹی مڈوائف</string>
+    <string name="fas02c05i">حکیم </string>
+    <string name="fas02c05j"> ہومیو پیتھک</string>
     <string name="fas02c05k">اس حمل کے دوران آپ نے اپنا طبی معانئہ کہاں کروایا ؟</string>
     <string name="fas02c05l">اس حمل کے دوران آپ نے اپنا طبی معانئہ کہاں کروایا ؟</string>
     <string name="fas02c06"> آپ نے کس سے معائنہ کروایا تھا ؟ </string>
+    <string name="fas02c06sub"> صحت کے اہل کار </string>
+    <string name="fas02c06sub1">   دوسرا شخص </string>
     <string name="fas02c06a"> ڈاکٹر </string>
     <string name="fas02c06b"> نرس/کمیونٹی مڈوائف/ایل ایچ وی </string>
     <string name="fas02c06c"> دائی  </string>
@@ -444,6 +452,7 @@
     <string name="fas02c06g"> ڈسپنسری /کمپاونڈر </string>
     <string name="fas02c06h"> رشتہ دار/دوست </string>
     <string name="fas02c07"> جب آپ نے اس حمل کے دوران پہلی دفعہ معائنہ کروایا تو آپ کا حمل کتنے ہفتوں ،یا مہینہ کا تھا؟ </string>
+    <string name="fas02c07m"> مہینے </string>
     <string name="fas02c08"> جب آپ (نام) کے ساتھ حاملہ تھی تو حمل کے دوران آپ نے کتنی مرتبہ اپنا معائنہ کروایا؟ </string>
     <string name="fas02c08a"> معائنوں کی تعداد </string>
     <string name="fas02c09"> کیا آپ کا شوہرحمل کے کسی معائنہ میں آپ کے ساتھ آیا تھا ؟ </string>
@@ -466,7 +475,8 @@
     <string name="fas02c16"> کیا اس حمل کے دوران آپ نے پیٹ کے کیڑوں کی کوئی دوا استعمال کیں؟ </string>
     <string name="fas02c16a"> ہاں </string>
     <string name="fas02c16b"> نہیں </string>
-    <string name="fas02c17"> (نام) کی پیدائش کہاں ہوئی تھی ؟صرف ایک جواب کا انتخآب کریں زریعہ کے لیے دائیں طرف دئے گئے کوڑ پر دائرہ لگائیں </string>
+    <string name="fas02c17"> (نام) کی پیدائش کہاں ہوئی تھی ؟صرف ایک جواب کا انتخاب کریں. اندازہ لگانے کے لیے مزید  تفصیل پوچھں. ذریعہ کے لیے دائیں طرف دئیے گئے کوڈ پر دائرہ لگائیں  </string>
+    <string name="fas02c17Heading"> ابھی میں آپ سے (نام) کی پیدائش سے متعلق سوالات پوچھوں گی </string>
     <string name="fas02c17a"> گھر پر </string>
     <string name="fas02c17b"> مرکز صحت جاتے ہوئے راستے میں </string>
     <string name="fas02c17c"> سرکاری ہسپتال </string>
@@ -489,11 +499,14 @@
     <string name="fas02c18j"> صحت کی سہولیات کا خراب معیار </string>
     <string name="fas02c18k"> ڈیلیوری تیزی سے ہوئی </string>
     <string name="fas02c19"> (نام) کے پیدائش کے دوران کس نے مدد کرائی تھی؟ </string>
+    <string name="fas02c19sub"> تمام جوابات ریکارڈ کریں،زچگی میں مدد کرانے والوں کا معلوم کرنے کے لیے پوچھیں ۔
+اگر جواب دہندہ کہتی ہے کہ کسی نے بھی مدد نہیں کروائی تو پوچھیں آیا کوئی بالغ شخص موجود تھا
+</string>
     <string name="fas02c19a"> ڈاکٹر </string>
     <string name="fas02c19b"> نرس </string>
     <string name="fas02c19c"> مڈوائف </string>
     <string name="fas02c19d"> ایل ایچ وی </string>
-    <string name="fas02c19e"> ڈائی </string>
+    <string name="fas02c19e"> دائی  </string>
     <string name="fas02c19f"> کمیونٹی مڈ وائف </string>
     <string name="fas02c19g"> لیڈی ہیلتھ ورکر </string>
     <string name="fas02c19h"> رشتہ دار/دوست </string>
@@ -522,7 +535,7 @@
     <string name="fas02c23"> اس حمل کے دوران آپ کے شوہر کی طرف سے کیا مندرجہ ذیل کاموں میں سے کسی کام میں کو ئی مدد ملی ؟ </string>
     <string name="fas02c2301"> طبی معائنے کرانے کے لیے آپ کو لے کر چلیں </string>
     <string name="fas02c2302"> زچگی کے وقت جاتے ہوئے آپ کے ساتھ چلیں </string>
-    <string name="fas02c2303"> اشیائ خریدی </string>
+    <string name="fas02c2303"> چیزیں  خریدی </string>
     <string name="fas02c2304"> گھریلو کام کاج </string>
     <string name="fas02c2305"> بچوں کی دیکھ بھال </string>
     <string name="fas02c2306"> حمل کے دوران طبی معائنے کرانے کی حوصلہ افزائی </string>
@@ -533,7 +546,7 @@
     <string name="fas02c24d"> میرے پاس فیملی کی دوسری عورتیں موجود ہیں تو مدد فراہم کرتی ہیں </string>
     <string name="fas02c24e"> میرے پاس اپنا پیسہ /آمدنی ہے </string>
     <string name="fas02c24f"> مجھے مدد کی ضرورت نہیں ہے </string>
-    <string name="fas02c25"> آپ کے پاس ماں اور بچے کی صحت (MNCH) سے متعلقہ ضرورت کو پورا کرنے کے لیے مالی امداد کے کیا زرائع موجود ہیں؟ </string>
+    <string name="fas02c25">آپ کے پاس ماں اور بچے کی صحت (MNCH) سے متعلقہ ضرورت کو پورا کرنے کے لیے مالی امداد کے کیا ذرائع موجود ہیں؟ </string>
     <string name="fas02c25a"> فیملی (شوہر یا اپنے وسائل) </string>
     <string name="fas02c25b"> بنک/کسی ادارے سے قرض </string>
     <string name="fas02c25c"> کمیونٹی ہیلتھ ریوالونگ فنڈ </string>
@@ -547,6 +560,12 @@
     <string name="fas02c26d"> ایمرجنسی </string>
     <string name="fas02c26e"> زچگی کے بعد کا دیکھ بھال </string>
     <string name="fas02c26f"> نومولود یا 5 سال سے کم عمر بچے کی صحت </string>
+
+    <string name="fas02c27"> کیا آپ کا آخری پیدا ہو نے وا لا بچہ /بچی (نام) ابھی بھی زندہ ہے ؟ </string>
+    <string name="fas02c28"> مرتے وقت اسی بچہ /بچی کی (نام) عمر کیا تھی؟ </string>
+    <string name="fas02c28a">پیدائش کے فوراً بعد</string>
+    <string name="fas02c28b"> پیدائش کے 7 دن بعد </string>
+    <string name="fas02c28c"> پیدائش کے 28 دن بعد </string>
 
     <!--D-Tool2-->
     <string name="fas02d01"> کیاآپ کو دوران حمل خطرناک علامات کے بارے میں علم ہے ؟ </string>
@@ -564,9 +583,10 @@
     <string name="fas02d02k"> الٹی، بخار، سردی محسوس کرنا </string>
     <string name="fas02d02l"> بلند خون فشار </string>
     <string name="fas02d02m"> چہرے اور بازو میں سوجن </string>
-    <string name="fas02d03"> کیا آپ کو دوران ِ زچگی اور لیبر کے خطرناک علامات میں سے کسی کا نام بتا سکیں گے ؟ </string>
+    <string name="fas02d02n"> مندرجہ بالا علامات  میں سے کسی کے بارے میں کوئی علم نہیں </string>
+    <string name="fas02d03"> کیا آپ دوران ِ زچگی کے د رد اور بچے کی پیدائش کی خطرناک علامات میں سے کسی سے آگاہ ہیں  ؟ </string>
     <string name="fas02d04"> دوران پیدائش یا لیبر کے خطرناک علامات میں سے کسی علامات کا نام بتا سکیں گے؟ </string>
-    <string name="fas02d04a"> (12 گنھٹے سے زیادہ) فرح سے خون کا بہت زیادہ بہہ جانا </string>
+    <string name="fas02d04a"> 12گھنٹے سے زیادہ ) فرح سے خون کا بہت زیادہ بہہ جانا </string>
     <string name="fas02d04b"> بچے کی پیدائش کا عمل طویل ہونا </string>
     <string name="fas02d04c"> جھٹکے </string>
     <string name="fas02d04d"> پیدائش کے وقت پورے انول کا خارج نہیں ہونا </string>
@@ -579,16 +599,18 @@
     <string name="fas02d04k"> ریفلکس کا ضرورت سے بڑھ کے فعال ہونا </string>
     <string name="fas02d04l"> بلند خون فشار </string>
     <string name="fas02d04m"> چھوٹے پیشاب میں پروٹین </string>
+    <string name="fas02d04n"> مندرجہ بالا علامات میں سے کسی کے بارے میں کوئی علم نہیں </string>
     <string name="fas02d05"> کیا آپ کو زچگی کے بعد کی کسی خطرناک علامات کےبارے میں علم ہے </string>
     <string name="fas02d06"> زچگی کے بعد وہ چند کو ن سے خطرناک علامات ہیں جن سے آپ کو خبردار رہنا چاہے؟ </string>
-    <string name="fas02d06a"> تیز بخار، پیٹ کے نیچلے حصے میں درد یا بدبو دار رطوبت </string>
+    <string name="fas02d06a"> تیز بخار، پیٹ کے نیچلے  حصے میں درد یا بدبو دار رطوبت </string>
     <string name="fas02d06b"> شدید سر درد ، آنکھوں کا دھندلا پن ، بلند فشار خون </string>
     <string name="fas02d06c"> جھٹکے دورے (حمل کے دوران بلڈ پریشر کا بڑھ جانا اور پیشاب میں پروٹین کا اخراج اور جھٹکے) </string>
-    <string name="fas02d06d"> زچگی کے 24 گھنٹے کے اندر و بار خون کا ضیائ </string>
+    <string name="fas02d06d"> زچگی کے 24 گھنٹے کے اندر و بار خون  کاضیاع </string>
     <string name="fas02d06e"> فصلے یا پیشاب کو کنٹرول کرنے کی صلاحیت کا کمزور ہونا </string>
     <string name="fas02d06f"> بہت زیادہ تھکاوٹ یا خون کی کمی </string>
     <string name="fas02d06g"> پریشانی یا ڈیپریشن </string>
     <string name="fas02d06h"> ) چھاتی کے مسائل (چھاتی کا سخت ہونا اور سوجھ جانا ، زخم یا خون کا آنا ، کپتان کا اندر کی طرف جانا </string>
+    <string name="fas02d06i"> مندرجہ بالا علامات میں سے کسی کے بارے میں کوئی علم نہیں </string>
     <string name="fas02d07"> کیا آپ کو نومولود بچے کی خطرناک علامات کے بارے میں معلومات ہے؟ </string>
     <string name="fas02d08"> برائے مہربانی کیا آپ نومولود بچوں کے خطرناک علامات میں سے کوئی علامت کا نام بتا سکیں گے۔ </string>
     <string name="fas02d08a"> جھٹکے / مروڑ </string>

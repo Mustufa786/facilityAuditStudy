@@ -29,6 +29,7 @@ import edu.aku.hassannaqvi.fas.databinding.ActivitySectionATool2Binding;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
+
 public class SectionA_tool_2Activity extends AppCompatActivity {
 
     private static final String TAG = SectionA_tool_2Activity.class.getName();

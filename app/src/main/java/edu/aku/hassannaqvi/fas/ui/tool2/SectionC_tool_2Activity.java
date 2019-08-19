@@ -162,13 +162,13 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         });
 
 //        fas02c01
-        bi.fas02c01.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i != bi.fas02c01a.getId())
-                    ClearClass.ClearAllFields(bi.fldGrpllSecC02a, null);
-            }
-        });
+//        bi.fas02c01.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+//                if (i != bi.fas02c01a.getId())
+//                    ClearClass.ClearAllFields(bi.fldGrpllSecC02a, null);
+//            }
+//        });
 
 //        fas02c03
         bi.fas02c03.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

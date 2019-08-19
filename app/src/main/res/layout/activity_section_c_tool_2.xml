@@ -165,8 +165,7 @@
 
                 <LinearLayout
                     android:id="@+id/fldGrpllSecC02a"
-                    style="@style/linerlayout_view_wt_bound"
-                    android:visibility="@{fas02c01a.checked ? View.VISIBLE : View.GONE}">
+                    style="@style/linerlayout_view_wt_bound">
 
                     <!--fas02c02-->
                     <android.support.v7.widget.CardView style="@style/cardView">

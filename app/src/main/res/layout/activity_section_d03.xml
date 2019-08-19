@@ -63,7 +63,7 @@
                                 android:id="@+id/hfa1426av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -194,7 +194,7 @@
                                 android:id="@+id/hfa1427av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -325,7 +325,7 @@
                                 android:id="@+id/hfa1428av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -456,7 +456,7 @@
                                 android:id="@+id/hfa1429av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -587,7 +587,7 @@
                                 android:id="@+id/hfa1430av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -718,7 +718,7 @@
                                 android:id="@+id/hfa1431av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -849,7 +849,7 @@
                                 android:id="@+id/hfa1432av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -980,7 +980,7 @@
                                 android:id="@+id/hfa1433av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -1111,7 +1111,7 @@
                                 android:id="@+id/hfa1434av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -1242,7 +1242,7 @@
                                 android:id="@+id/hfa1435av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -1373,7 +1373,7 @@
                                 android:id="@+id/hfa1436av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -1504,7 +1504,7 @@
                                 android:id="@+id/hfa1437av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -1635,7 +1635,7 @@
                                 android:id="@+id/hfa1438av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -1766,7 +1766,7 @@
                                 android:id="@+id/hfa1439av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -1897,7 +1897,7 @@
                                 android:id="@+id/hfa1440av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -2028,7 +2028,7 @@
                                 android:id="@+id/hfa1441av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -2159,7 +2159,7 @@
                                 android:id="@+id/hfa1442av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
@@ -2290,7 +2290,7 @@
                                 android:id="@+id/hfa1443av"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:onCheckedChanged="@{callback.onRadioClickChanged}"
+                                android:onCheckedChanged="@{callback::onRadioClickChanged}"
                                 android:orientation="vertical">
 
                                 <RadioButton
