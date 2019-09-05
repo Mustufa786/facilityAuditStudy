@@ -26,7 +26,7 @@
     <string name="non">کوئی نہیں  </string>
     <string name="never">کبھی نہیں </string>
     <string name="not_applicable">	غير موضوع</string>
-    <string name="sometimes">	ڪڏهن ڪڏهن   </string>
+    <string name="sometimes"> ڪڏهن ڪڏهن </string>
     <string name="refused"> جواب دینے سے انکار کیا </string>
 
     <string name="correct"> صحيح </string>
@@ -35,7 +35,7 @@
     <string name="skp"> ڇڏي ڏنو </string>
 
     <string name="almostN">ڪڏهن به نه</string>
-    <string name="some">ڪڏهن ڪڏهن</string>
+    <string name="some"> ڪڏهن ڪڏهن </string>
     <string name="often">اڪثر ڪري</string>
     <string name="almostA">هميشه</string>
 
@@ -386,7 +386,7 @@
     <string name="fas02b07a">گھڑی </string>
     <string name="fas02b07b">بائی سائیکل  </string>
     <string name="fas02b07c">موٹر سائیکل یا اسکوٹر </string>
-    <string name="fas02b07d">کار،ٹرک یا گاڑی </string>
+    <string name="fas02b07d">  گاڑی ،ٹرک یا گاڑی </string>
     <string name="fas02b07e">جانوروں سے چلائی جانے والی گاڑی </string>
     <string name="fas02b08">گھر میں بڑی خریداری کے متعلق فیصلے عام طورپر کون کرتا ہے ؟ </string>
     <string name="fas02b08a">جواب دہندہ  </string>
@@ -402,14 +402,14 @@
     <string name="fas02b11">آپ کے گھر سے سب سے قریبی مرکز صحت کتنے فاصلے پر ہے؟ </string>
     <string name="fas02b11a">ایک کلو میٹر سے کم </string>
     <string name="fas02b11b">ایک سے ڈھائی کلو میڑ کے درمیان </string>
-    <string name="fas02b11c">کلو میڑ سے 5 کلو میڑ کے درمیان </string>
-    <string name="fas02b11d">5 کلو میڑ سے 7.5 کلو میڑ کے درمیان  </string>
-    <string name="fas02b11e">کلو میڑ سے زیادہ فاصلے پر  </string>
+    <string name="fas02b11c"> 2.5 کلو میڑ سے 5 کلو میڑ کے درمیان </string>
+    <string name="fas02b11d"> 5 کلو میڑ سے 7.5 کلو میڑ کے درمیان </string>
+    <string name="fas02b11e"> 7.5 کلو میڑ سے زیادہ فاصلے پر  </string>
 
 
     <!--Section C-->
     <string name="fas02c01">کیا آپ نے کبھی بچے کو جنم دیا ہے؟</string>
-    <string name="fas02c01sub">میرا مطلب ایسا بچہ ہے جس نے کبھی سانس لی ہو یا رویا ہو. یا جس میں زندگی کی دوسری علامات ظاہر تھیں اگرچہ وہ چند منٹ یا  گھنٹوں تک ہی زندہ رہا ہو</string>
+    <string name="fas02c01sub"> میرا مطلب ایسا بچہ ہے جس نے کبھی سانس لی ہو یا رویا ہو. یا جس میں زندگی کی دوسری علامات ظاہر تھیں اگرچہ وہ چند منٹ یا  گھنٹوں تک ہی زندہ رہا ہو </string>
     <string name="fas02c02">آپ کی حالیہ ڈیلیوری کی تاریخ اور مہینہ کونسا تھا ؟</string>
     <string name="fas02c02sub1">میرا مطلب آپ کی آخری ڈیلیوری سے  ہے اگرچہ اب وہ بچہ زندہ نہیں یا اس بچہ کا والد آپ کا موجود شوہر بھی نہیں ہو</string>
     <string name="fas02c02sub2">اگر جواب دہندہ کو صحیح تاریخ معلوم نہیں تو مہینہ اور سال کا اندازہ لگانے کے لیے مزید  تفصیل پوچھں </string>
@@ -431,18 +431,18 @@
     <string name="fas02c05a"> اپنے گھر پر </string>
     <string name="fas02c05b">کسی اور کے گھر پر  </string>
     <string name="fas02c05c">سرکاری ہسپتال</string>
-    <string name="fas02c05d"> آر ایچ سی /ایم سی ایچ</string>
+    <string name="fas02c05d"> آر ایچ سی /ایم سی ایچ </string>
     <string name="fas02c05e">ایچ یو /ایف ڈیلوسی</string>
     <string name="fas02c05f">اے کے ایچ ایس پی کا مرکز صحت</string>
     <string name="fas02c05g"> نجی ہسپتال /کلینک</string>
     <string name="fas02c05h">کیمونٹی مڈوائف</string>
     <string name="fas02c05i">حکیم </string>
-    <string name="fas02c05j"> ہومیو پیتھک</string>
+    <string name="fas02c05j"> ہومیو پیتھک </string>
     <string name="fas02c05k">اس حمل کے دوران آپ نے اپنا طبی معانئہ کہاں کروایا ؟</string>
     <string name="fas02c05l">اس حمل کے دوران آپ نے اپنا طبی معانئہ کہاں کروایا ؟</string>
     <string name="fas02c06"> آپ نے کس سے معائنہ کروایا تھا ؟ </string>
     <string name="fas02c06sub"> صحت کے اہل کار </string>
-    <string name="fas02c06sub1">   دوسرا شخص </string>
+    <string name="fas02c06sub1"> دوسرا شخص </string>
     <string name="fas02c06a"> ڈاکٹر </string>
     <string name="fas02c06b"> نرس/کمیونٹی مڈوائف/ایل ایچ وی </string>
     <string name="fas02c06c"> دائی  </string>
