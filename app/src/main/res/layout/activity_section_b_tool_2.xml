@@ -878,7 +878,7 @@
                             android:text="@string/fas02b08f" />
 
                         <RadioButton
-                            android:id="@+id/fas02b10g"
+                            android:id="@+id/fas02b1097"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
@@ -886,7 +886,7 @@
                             android:text="@string/fas02b08g" />
 
                         <RadioButton
-                            android:id="@+id/fas02b10h"
+                            android:id="@+id/fas02b1099"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"

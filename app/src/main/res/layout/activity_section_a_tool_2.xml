@@ -146,7 +146,6 @@
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
-
                         <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
                             android:id="@+id/fas02a02"
                             style="@style/textInput"
@@ -157,7 +156,6 @@
                             app:dateFormat="dd-MM-yyyy"
                             app:maxDate="CR_DATE"
                             app:minDate="01/01/2017" />
-
 
                     </LinearLayout>
 
@@ -201,7 +199,6 @@
                                 android:layout_weight="1"
                                 android:text="@string/no" />
 
-
                         </RadioGroup>
 
 
@@ -211,8 +208,9 @@
 
                 <!--fas02a08-->
                 <android.support.v7.widget.CardView
+                    android:id="@+id/fas02a08cv"
                     style="@style/cardView"
-                    android:visibility='@{fas02a07a.checked? View.GONE : View.VISIBLE}'>
+                    android:visibility='@{fas02a07b.checked? View.VISIBLE : View.GONE}'>
 
                     <LinearLayout style="@style/linerlayout_view">
 

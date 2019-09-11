@@ -10,6 +10,7 @@ import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateFormat;
 import android.util.Log;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -27,6 +28,7 @@ import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
 import edu.aku.hassannaqvi.fas.databinding.ActivitySectionATool2Binding;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
+import edu.aku.hassannaqvi.fas.validation.ClearClass;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
 
@@ -42,14 +44,24 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a_tool_2);
         bi.setCallback(this);
-
         setContentUI();
     }
 
     private void setContentUI() {
         this.setTitle(R.string.section1_tool2);
-
         deviceID = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
+
+        bi.fas02a07.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == bi.fas02a07a.getId()) {
+                    ClearClass.ClearAllFields(bi.fas02a08cv, null);
+                } else {
+                    ClearClass.ClearAllFields(bi.fas02a08cv, null);
+                }
+            }
+        });
     }
 
     public void BtnContinue() {

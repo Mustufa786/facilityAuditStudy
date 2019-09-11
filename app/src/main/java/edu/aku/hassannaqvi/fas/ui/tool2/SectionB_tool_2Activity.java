@@ -59,7 +59,7 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
                         if (Integer.parseInt(bi.fas02b0102ax.getText().toString()) >= 1920 && Integer.parseInt(bi.fas02b0102ax.getText().toString()) <= Calendar.getInstance().get(Calendar.YEAR)) {
                             bi.fas02b02.setText(String.valueOf(DateUtils.getAgeInYears(Integer.parseInt(bi.fas02b0102ax.getText().toString()))));
                         } else {
-                            Toast.makeText(SectionB_tool_2Activity.this, "Age must be between 1920 to " + Calendar.getInstance().get(Calendar.YEAR), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SectionB_tool_2Activity.this, "Age must be between 1920 to " + Calendar.getInstance().get(Calendar.YEAR), Toast.LENGTH_LONG).show();
                         }
                     }
 
@@ -237,8 +237,8 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
                         : bi.fas02b10d.isChecked() ? "4"
                         : bi.fas02b10e.isChecked() ? "5"
                         : bi.fas02b10f.isChecked() ? "6"
-                        : bi.fas02b10g.isChecked() ? "97"
-                        : bi.fas02b10h.isChecked() ? "99"
+                        : bi.fas02b1097.isChecked() ? "97"
+                        : bi.fas02b1099.isChecked() ? "99"
                         : bi.fas02b1096.isChecked() ? "96"
                         : "0");
         s02.put("fas02b1096x", bi.fas02b1096x.getText().toString());
