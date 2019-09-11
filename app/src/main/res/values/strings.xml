@@ -18,7 +18,7 @@
 
 
     <string name="seconds">Seconds</string>
-    <string name="formInputDATE"></string>
+    <string name="formInputDATE">تاریخ</string>
 
     <string name="yes"> ہاں </string>
     <string name="no"> نہیں </string>
