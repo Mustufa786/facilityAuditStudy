@@ -628,14 +628,13 @@
     <string name="fas02d02d"> بچے کا حرکت نہ کرنا </string>
     <string name="fas02d02e"> بے ہوش ہونا </string>
     <string name="fas02d02f"> جھٹکے </string>
-    <string name="fas02d02g"> سر میں درد اورآنکھوں دھندلا پن </string>
-    <string name="fas02d02h"> وقت سے پہلے لیبر کا درد </string>
+    <string name="fas02d02g"> سر میں درد اور دھندلی نظر </string>
+    <string name="fas02d02h"> وقت سے پہلے زچگی کا درد </string>
     <string name="fas02d02i"> فرج سے رطوبت کا اخراج </string>
-    <string name="fas02d02j"> ملیریا کے علامات </string>
-    <string name="fas02d02k"> الٹی، بخار، سردی محسوس کرنا </string>
-    <string name="fas02d02l"> بلند خون فشار </string>
-    <string name="fas02d02m"> چہرے اور بازو میں سوجن </string>
-    <string name="fas02d02n"> مندرجہ بالا علامات  میں سے کسی کے بارے میں کوئی علم نہیں </string>
+    <string name="fas02d02j"> ملیریا کے علامات (الٹی، بخار، سردی) محسوس کرنا </string>
+    <string name="fas02d02k"> بلند خون فشار </string>
+    <string name="fas02d02l"> چہرے اور بازو میں سوجن </string>
+    <string name="fas02d0298"> مندرجہ بالا علامات  میں سے کسی کے بارے میں کوئی علم نہیں </string>
 
     <string name="fas02d03"> کیا آپ دوران ِ زچگی کے د رد اور بچے کی پیدائش کی خطرناک علامات میں سے کسی سے آگاہ ہیں  ؟ </string>
 
@@ -652,7 +651,7 @@
     <string name="fas02d04j"> پیٹ کے اوپر والے حصے میں اچانک شدید درد </string>
     <string name="fas02d04k"> ریفلکس کا ضرورت سے بڑھ کے فعال ہونا </string>
     <string name="fas02d04l"> بلند خون فشار </string>
-    <string name="fas02d04m"> چھوٹے پیشاب میں پروٹین </string>
+    <string name="fas02d04m"> چھوٹے پیشاب میں لحمیات </string>
     <string name="fas02d04n"> مندرجہ بالا علامات میں سے کسی کے بارے میں کوئی علم نہیں </string>
 
     <string name="fas02d05"> کیا آپ کو زچگی کے بعد کی کسی خطرناک علامات کےبارے میں علم ہے </string>

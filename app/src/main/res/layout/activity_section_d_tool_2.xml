@@ -193,14 +193,6 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d02l" />
 
-                            <CheckBox
-                                android:id="@+id/fas02d02m"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/fas02d02m" />
-
 
                         </LinearLayout>
 
@@ -211,7 +203,7 @@
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
                             android:tag="-1"
-                            android:text="@string/dkn" />
+                            android:text="@string/fas02d0298" />
 
                     </LinearLayout>
 
