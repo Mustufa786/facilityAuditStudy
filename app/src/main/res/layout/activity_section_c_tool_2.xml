@@ -27,11 +27,8 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-
                             style="@style/i_textview"
-                            android:text="@string/hfa1100"
-
-                            />
+                            android:text="@string/hfa1100" />
 
                         <RadioGroup
                             android:id="@+id/fas02c00"
@@ -40,14 +37,12 @@
                             <RadioButton
                                 android:id="@+id/fas02c00a"
                                 style="@style/i_radiobutton"
-
                                 android:text="@string/hfa1100a" />
 
                             <RadioButton
                                 android:id="@+id/fas02c00b"
                                 style="@style/i_radiobutton"
-                                android:text="@string/hfa1100b"
-                                android:visibility="gone" />
+                                android:text="@string/hfa1100b" />
 
                         </RadioGroup>
 

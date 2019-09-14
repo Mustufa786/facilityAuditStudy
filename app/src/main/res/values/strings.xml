@@ -370,7 +370,7 @@
     <string name="fas02a08d"> دوسرے رشتہ دار خواتین </string>
 
     <!--Section B-->
-    <string name="fas02b01">آپ کی پیدائش کس مہینے اور سال میں ہوئی تھی</string>
+    <string name="fas02b01"> آپ کی پیدائش کس مہینے اور سال میں ہوئی تھی </string>
     <string name="fas02b0101b"> مہینہ معلوم نہیں </string>
     <string name="fas02b0102b"> سال معلوم نہیں </string>
 
@@ -407,12 +407,24 @@
     <string name="fas02b08d"> والد یا سُسر </string>
     <string name="fas02b08e"> والدہ یا ساس </string>
     <string name="fas02b08f"> فیملی کے دوسرے مرد </string>
-    <string name="fas02b08g"> قابل اطلاق نہیں </string>
-    <string name="fas02b08h"> جواب دینا پسند نہیں کرونگی </string>
 
     <string name="fas02b09"> آپ کی صحت اور دیکھ بھال کے متعلق فیصلے عام طور پر کون کرتا ہے ؟ </string>
+    <string name="fas02b09a"> جواب دہندہ </string>
+    <string name="fas02b09b"> شوہر </string>
+    <string name="fas02b09c"> جواب دہندہ اور شوہر </string>
+    <string name="fas02b09d"> والد یا سُسر </string>
+    <string name="fas02b09e"> والدہ یا ساس </string>
+    <string name="fas02b09f"> فیملی کے دوسرے مرد </string>
 
     <string name="fas02b10"> آپ کے بچوں کی صحت اور دیکھ بھال کے متعلق فیصلے عام طور پر کون کرتا ہے ؟ </string>
+    <string name="fas02b10a"> جواب دہندہ </string>
+    <string name="fas02b10b"> شوہر </string>
+    <string name="fas02b10c"> جواب دہندہ اور شوہر </string>
+    <string name="fas02b10d"> والد یا سُسر </string>
+    <string name="fas02b10e"> والدہ یا ساس </string>
+    <string name="fas02b10f"> فیملی کے دوسرے مرد </string>
+    <string name="fas02b10g"> قابل اطلاق نہیں </string>
+    <string name="fas02b10h"> جواب دینا پسند نہیں کرونگی </string>
 
     <string name="fas02b11"> آپ کے گھر سے سب سے قریبی مرکز صحت کتنے فاصلے پر ہے ؟ </string>
     <string name="fas02b11a"> ایک کلو میٹر سے کم </string>
@@ -591,7 +603,7 @@
     <string name="fas02c25e"> اثاثے بھیجنا </string>
     <string name="fas02c25f"> کسی بھی چیز کی ضروت نہیں </string>
 
-    <string name="fas02c26"> مالی امداد کا زیادہ ترحصہ کس مقصد کے لیے استعمال کیاگیا ؟ </string>
+    <string name="fas02c26"> مالی امداد کا زیادہ ترحصہ کس مقصد کے لیے استعمال کیا گیا ؟ </string>
     <string name="fas02c26a"> ٹرانسپورٹ </string>
     <string name="fas02c26b"> دوران حمل طبی معائنہ </string>
     <string name="fas02c26c"> زچگی/بڑا آپریشن </string>
@@ -599,9 +611,10 @@
     <string name="fas02c26e"> زچگی کے بعد کا دیکھ بھال </string>
     <string name="fas02c26f"> نومولود یا 5 سال سے کم عمر بچے کی صحت </string>
 
-    <string name="fas02c27"> کیا آپ کا آخری پیدا ہو نے وا لا بچہ /بچی (نام) ابھی بھی زندہ ہے ؟ </string>
-    <string name="fas02c28"> مرتے وقت اسی بچہ /بچی کی (نام) عمر کیا تھی؟ </string>
-    <string name="fas02c28a">پیدائش کے فوراً بعد</string>
+    <string name="fas02c27"> کیا آپ کا آخری پیدا ہو نے وا لا بچہ / بچی (نام) ابھی بھی زندہ ہے ؟ </string>
+
+    <string name="fas02c28"> مرتے وقت اسی بچہ / بچی کی (نام) عمر کیا تھی؟ </string>
+    <string name="fas02c28a"> پیدائش کے فوراً بعد </string>
     <string name="fas02c28b"> پیدائش کے 7 دن بعد </string>
     <string name="fas02c28c"> پیدائش کے 28 دن بعد </string>
 

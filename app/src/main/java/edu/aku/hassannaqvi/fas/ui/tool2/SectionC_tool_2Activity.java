@@ -309,6 +309,15 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         s03.put("fas02c02m", bi.fas02c02m.getText().toString());
         s03.put("fas02c02y", bi.fas02c02y.getText().toString());
 
+        s03.put("fas02c27", bi.fas02c27a.isChecked() ? "1"
+                : bi.fas02c27b.isChecked() ? "2"
+                : "0");
+
+        s03.put("fas02c28", bi.fas02c28a.isChecked() ? "1"
+                : bi.fas02c28b.isChecked() ? "2"
+                : bi.fas02c28c.isChecked() ? "3"
+                : "0");
+
 
         s03.put("fas02c03", bi.fas02c03a.isChecked() ? "1"
                         : bi.fas02c03b.isChecked() ? "2"
@@ -478,45 +487,16 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         s03.put("fas02c19i", bi.fas02c19i.isChecked() ? "9" : "0");
         s03.put("fas02c1996", bi.fas02c1996.isChecked() ? "96" : "0");
         s03.put("fas02c1998", bi.fas02c1998.isChecked() ? "98" : "0");
-
         s03.put("fas02c1996x", bi.fas02c1996x.getText().toString());
 
 
-        s03.put("fas02c20a",
-                bi.fas02c20a.isChecked() ? "1"
-                        : "0");
-
-
-        s03.put("fas02c20b",
-                bi.fas02c20b.isChecked() ? "2"
-                        : "0");
-
-
-        s03.put("fas02c20c",
-                bi.fas02c20c.isChecked() ? "3"
-                        : "0");
-
-
-        s03.put("fas02c20d",
-                bi.fas02c20d.isChecked() ? "4"
-                        : "0");
-
-
-        s03.put("fas02c20e",
-                bi.fas02c20e.isChecked() ? "5"
-                        : "0");
-
-
-        s03.put("fas02c20f",
-                bi.fas02c20f.isChecked() ? "6"
-                        : "0");
-
-
-        s03.put("fas02c2096",
-                bi.fas02c2096.isChecked() ? "96"
-                        : "0");
-
-
+        s03.put("fas02c20a", bi.fas02c20a.isChecked() ? "1" : "0");
+        s03.put("fas02c20b", bi.fas02c20b.isChecked() ? "2" : "0");
+        s03.put("fas02c20c", bi.fas02c20c.isChecked() ? "3" : "0");
+        s03.put("fas02c20d", bi.fas02c20d.isChecked() ? "4" : "0");
+        s03.put("fas02c20e", bi.fas02c20e.isChecked() ? "5" : "0");
+        s03.put("fas02c20f", bi.fas02c20f.isChecked() ? "6" : "0");
+        s03.put("fas02c2096", bi.fas02c2096.isChecked() ? "96" : "0");
         s03.put("fas02c2096x", bi.fas02c2096x.getText().toString());
 
         s03.put("fas02c21",
