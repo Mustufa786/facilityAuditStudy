@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.tool2.SectionA_tool_2Activity">
 
@@ -56,7 +55,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
                                 android:text="@string/hfa1100a" />
 
                             <RadioButton
@@ -64,12 +62,149 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/hfa1100b"
-                                android:visibility="gone" />
+                                android:text="@string/hfa1100b" />
 
                         </RadioGroup>
 
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--fas02a001a-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout
+                        android:id="@+id/llhfas02a001a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:animateLayoutChanges="true"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:text="@string/hfa1103a"
+                            android:textAlignment="center" />
+
+                        <Spinner
+                            android:id="@+id/fas02a001a"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:spinnerMode="dialog"
+                            android:textDirection="ltr" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--fas02a001d-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout
+                        android:id="@+id/llfas02a001d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:animateLayoutChanges="true"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:text="@string/hfa1103d"
+                            android:textAlignment="center" />
+
+                        <Spinner
+                            android:id="@+id/fas02a001d"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:spinnerMode="dialog"
+                            android:textDirection="ltr" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--fas02a001b-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout
+                        android:id="@+id/llfas02a001b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:animateLayoutChanges="true"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:text="@string/hfa1103b"
+                            android:textAlignment="center" />
+
+                        <Spinner
+                            android:id="@+id/fas02a001b"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:spinnerMode="dialog"
+                            android:textDirection="ltr" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--fas02a001c-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout
+                        android:id="@+id/llfas02a001c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:animateLayoutChanges="true"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:text="@string/hfa1103c"
+                            android:textAlignment="center" />
+
+                        <Spinner
+                            android:id="@+id/fas02a001c"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:spinnerMode="dialog"
+                            android:textDirection="rtl" />
 
                     </LinearLayout>
 
@@ -94,6 +229,58 @@
                             android:id="@+id/fas02a001"
                             style="@style/textInput"
                             android:hint="@string/hfa1101"
+                            android:enabled="false"
+                            android:inputType="number"
+                            android:maxLength="4" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--fas02a002-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout style="@style/linerlayout_view">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/fas02a002"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/fas02a002"
+                            style="@style/textInput"
+                            android:hint="@string/fas02a002"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--fas02a003-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout style="@style/linerlayout_view">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/fas02a003"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/fas02a003"
+                            style="@style/textInput"
+                            android:hint="@string/fas02a003"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -126,36 +313,6 @@
                             android:hint="@string/fas02a01"
                             android:inputType="number"
                             android:maxLength="6" />
-
-                    </LinearLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <!--fas02a02-->
-                <android.support.v7.widget.CardView style="@style/cardView">
-
-                    <LinearLayout style="@style/linerlayout_view">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/fas02a02"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
-
-                        <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
-                            android:id="@+id/fas02a02"
-                            style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:hint="@string/fas02a02"
-                            app:dateFormat="dd-MM-yyyy"
-                            app:maxDate="CR_DATE"
-                            app:minDate="01/01/2017" />
 
                     </LinearLayout>
 

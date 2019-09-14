@@ -90,6 +90,7 @@
     <string name="hfa1103a"> ڈسٹرکٹ </string>
     <string name="hfa1103b"> یونین کونسل </string>
     <string name="hfa1103c"> مرکزِ صحت </string>
+    <string name="hfa1103d"> تحصیل </string>
     <string name="hfa1104"> مرکزِ صحت کی قسم </string>
     <string name="hfa1104a"> گورنمنٹ </string>
     <string name="hfa1104b"> اے کے ایچ ایس پی </string>
@@ -351,12 +352,17 @@
     <string name="hfa1905b"> اے کے ایچ پی ہسپتال </string>
     <string name="hfa1906"> جو کیس آپ ریفر کرتے ہیں ان کے بارے میں آپ ریفر کرنے والے ہسپتال کو معلومات فراہم کرتے ہیں؟ </string>
 
-    <!--Tool 2-->
 
+    <!--TOOL 2-->
     <!--Section A-->
-    <string name="fas02a01">عورت کی آئی ڈی</string>
+    <string name="fas02a01"> عورت کی آئی ڈی </string>
+    <string name="fas02a002"> گاؤں کا نام: </string>
+    <string name="fas02a003"> گھرانہ نمبر: </string>
+
     <string name="fas02a02"> انٹرویو کا سال /مہینہ/ دن </string>
+
     <string name="fas02a07"> کیا اس انٹرویو کے دوران عورت اکیلی تھی ؟</string>
+
     <string name="fas02a08"> انٹرویو کے دوران اور کوئی موجود تھا؟</string>
     <string name="fas02a08a"> شوہر </string>
     <string name="fas02a08b"> بچے </string>
@@ -599,7 +605,7 @@
     <string name="fas02c28b"> پیدائش کے 7 دن بعد </string>
     <string name="fas02c28c"> پیدائش کے 28 دن بعد </string>
 
-    <!--D-Tool2-->
+    <!--TOOL 02 SECTION D-->
     <string name="fas02d01"> کیاآپ کو دوران حمل خطرناک علامات کے بارے میں علم ہے ؟ </string>
 
     <string name="fas02d02"> برائے مہربانی کیا آپ حمل کے دوران خطرناک علامات میں سے کسی کا نام بتا سکیں گے؟ </string>
@@ -661,6 +667,7 @@
     <string name="fas02d08g"> جلد / آنکھوں کا پیلا ہونا، زرد ہونا </string>
     <string name="fas02d08h"> پیدائش کے وقت کم وزن </string>
     <string name="fas02d08i"> بچہ نہیں رو رہا </string>
+    <!--TOOL 02 ENDS HERE-->
 
 </resources>
 
