@@ -31,7 +31,7 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
     private ActivitySectionCTool2Binding bi;
     private Forms fc;
-    private boolean c23Flag = false;
+    private boolean c25Flag = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,12 +54,14 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
             bi.fas02c00.check(bi.fas02c00.getChildAt(Integer.valueOf(getSurvey) - 1).getId());
         bi.fas02c001.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_02_HF_NO));
         bi.fas02cmw01.setText(MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_02_W_ID));
+
     }
+
 
     private void setListenersUI() {
 
-//        fas02c08t
-        bi.fas02c08t.addTextChangedListener(new TextWatcher() {
+//        fas02c10t
+        bi.fas02c10t.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
@@ -67,11 +69,11 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if (bi.fas02c08t.getText().toString().length() > 0) {
-                    bi.fas02c0898.setChecked(false);
-                    bi.fas02c0898.setEnabled(false);
+                if (bi.fas02c10t.getText().toString().length() > 0) {
+                    bi.fas02c1098.setChecked(false);
+                    bi.fas02c1098.setEnabled(false);
                 } else {
-                    bi.fas02c0898.setEnabled(true);
+                    bi.fas02c1098.setEnabled(true);
                 }
             }
 
@@ -80,20 +82,20 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
             }
         });
-        bi.fas02c0898.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        bi.fas02c1098.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
-                    bi.fas02c08t.setText(null);
-                    bi.fas02c08t.setEnabled(false);
+                    bi.fas02c10t.setText(null);
+                    bi.fas02c10t.setEnabled(false);
                 } else {
-                    bi.fas02c08t.setEnabled(true);
+                    bi.fas02c10t.setEnabled(true);
                 }
             }
         });
 
-//        fas02c14
-        bi.fas02c14.addTextChangedListener(new TextWatcher() {
+//        fas02c16
+        bi.fas02c16.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
@@ -101,11 +103,11 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if (bi.fas02c14.getText().toString().length() > 0) {
-                    bi.fas02c1498.setChecked(false);
-                    bi.fas02c1498.setEnabled(false);
+                if (bi.fas02c16.getText().toString().length() > 0) {
+                    bi.fas02c1698.setChecked(false);
+                    bi.fas02c1698.setEnabled(false);
                 } else {
-                    bi.fas02c1498.setEnabled(true);
+                    bi.fas02c1698.setEnabled(true);
                 }
             }
 
@@ -114,14 +116,14 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
             }
         });
-        bi.fas02c1498.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        bi.fas02c1698.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
-                    bi.fas02c14.setText(null);
-                    bi.fas02c14.setEnabled(false);
+                    bi.fas02c16.setText(null);
+                    bi.fas02c16.setEnabled(false);
                 } else {
-                    bi.fas02c14.setEnabled(true);
+                    bi.fas02c16.setEnabled(true);
                 }
             }
         });
@@ -136,19 +138,19 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
             }
         });
 
-        bi.fas02c13.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        bi.fas02c15.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                if (checkedId == bi.fas02c13b.getId()) {
-                    bi.fas02c14.setText(null);
-                    bi.fas02c1498.setChecked(false);
+                if (checkedId == bi.fas02c15b.getId()) {
+                    bi.fas02c16.setText(null);
+                    bi.fas02c1698.setChecked(false);
                 }
             }
         });
 
-//        fas02c24f
-        bi.fas02c24f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//        fas02c26f
+        bi.fas02c26f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
@@ -170,24 +172,24 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 //            }
 //        });
 
-//        fas02c03
-        bi.fas02c03.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//        fas02c05
+        bi.fas02c05.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i == bi.fas02c03a.getId()) {
-                    bi.fas02c04.clearCheck();
+                if (i == bi.fas02c05a.getId()) {
+                    bi.fas02c06.clearCheck();
                 } else {
                     ClearClass.ClearAllFields(bi.fldGrpllSecC02b, null);
                 }
             }
         });
 
-//        fas02c10
-        bi.fas02c10.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//        fas02c12
+        bi.fas02c12.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i != bi.fas02c10a.getId()) {
-                    ClearClass.ClearAllFields(bi.fldGrpfas02c11, null);
+                if (i != bi.fas02c12a.getId()) {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c13, null);
                 }
             }
         });
@@ -197,71 +199,71 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i != bi.fas02c17a.getId() || i != bi.fas02c17b.getId()) {
-                    ClearClass.ClearAllFields(bi.fldGrpfas02c18, null);
-                }
-            }
-        });
-
-//        fas02c19
-        CheckBox.OnCheckedChangeListener chbxc19 = new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (!bi.fas02c19e.isChecked())
                     ClearClass.ClearAllFields(bi.fldGrpfas02c20, null);
-            }
-        };
-        bi.fas02c19e.setOnCheckedChangeListener(chbxc19);
-        bi.fas02c1998.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b) {
-                    ClearClass.ClearAllFields(bi.fldGrpfas02c19, false);
-                    bi.fldGrpfas02c19.setTag("-1");
-                    bi.fas02c1998.setTag(null);
-                } else {
-                    ClearClass.ClearAllFields(bi.fldGrpfas02c19, true);
-                    bi.fldGrpfas02c19.setTag(null);
-                    bi.fas02c1998.setTag("-1");
                 }
             }
         });
 
 //        fas02c21
-        bi.fas02c21.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        CheckBox.OnCheckedChangeListener chbxc19 = new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i != bi.fas02c21a.getId())
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (!bi.fas02c21e.isChecked())
                     ClearClass.ClearAllFields(bi.fldGrpfas02c22, null);
+            }
+        };
+        bi.fas02c21e.setOnCheckedChangeListener(chbxc19);
+        bi.fas02c2198.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c21, false);
+                    bi.fldGrpfas02c21.setTag("-1");
+                    bi.fas02c2198.setTag(null);
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c21, true);
+                    bi.fldGrpfas02c21.setTag(null);
+                    bi.fas02c2198.setTag("-1");
+                }
             }
         });
 
 //        fas02c23
-        RadioGroup.OnCheckedChangeListener rdg23 = new RadioGroup.OnCheckedChangeListener() {
+        bi.fas02c23.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.fas02c23a.getId())
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c24, null);
+            }
+        });
+
+//        fas02c25
+        RadioGroup.OnCheckedChangeListener rdg25 = new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
-                c23Flag = bi.fas02c2301b.isChecked();
-                c23Flag = bi.fas02c2302b.isChecked();
-                c23Flag = bi.fas02c2303b.isChecked();
-                c23Flag = bi.fas02c2304b.isChecked();
-                c23Flag = bi.fas02c2305b.isChecked();
-                c23Flag = bi.fas02c2306b.isChecked();
+                c25Flag = bi.fas02c2501b.isChecked();
+                c25Flag = bi.fas02c2502b.isChecked();
+                c25Flag = bi.fas02c2503b.isChecked();
+                c25Flag = bi.fas02c2504b.isChecked();
+                c25Flag = bi.fas02c2505b.isChecked();
+                c25Flag = bi.fas02c2506b.isChecked();
 
-                if (c23Flag) {
-                    bi.fldGrpfas02c24.setVisibility(View.VISIBLE);
+                if (c25Flag) {
+                    bi.fldGrpfas02c26.setVisibility(View.VISIBLE);
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpfas02c24, null);
-                    bi.fldGrpfas02c24.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldGrpfas02c26, null);
+                    bi.fldGrpfas02c26.setVisibility(View.GONE);
                 }
 
             }
         };
-        bi.fas02c2301.setOnCheckedChangeListener(rdg23);
-        bi.fas02c2302.setOnCheckedChangeListener(rdg23);
-        bi.fas02c2303.setOnCheckedChangeListener(rdg23);
-        bi.fas02c2304.setOnCheckedChangeListener(rdg23);
-        bi.fas02c2305.setOnCheckedChangeListener(rdg23);
-        bi.fas02c2306.setOnCheckedChangeListener(rdg23);
+        bi.fas02c2501.setOnCheckedChangeListener(rdg25);
+        bi.fas02c2502.setOnCheckedChangeListener(rdg25);
+        bi.fas02c2503.setOnCheckedChangeListener(rdg25);
+        bi.fas02c2504.setOnCheckedChangeListener(rdg25);
+        bi.fas02c2505.setOnCheckedChangeListener(rdg25);
+        bi.fas02c2506.setOnCheckedChangeListener(rdg25);
 
     }
 
@@ -309,185 +311,149 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         s03.put("fas02c02m", bi.fas02c02m.getText().toString());
         s03.put("fas02c02y", bi.fas02c02y.getText().toString());
 
-        s03.put("fas02c27", bi.fas02c27a.isChecked() ? "1"
-                : bi.fas02c27b.isChecked() ? "2"
-                : "0");
-
-        s03.put("fas02c28", bi.fas02c28a.isChecked() ? "1"
-                : bi.fas02c28b.isChecked() ? "2"
-                : bi.fas02c28c.isChecked() ? "3"
-                : "0");
-
-
         s03.put("fas02c03", bi.fas02c03a.isChecked() ? "1"
-                        : bi.fas02c03b.isChecked() ? "2"
-                        : bi.fas02c0398.isChecked() ? "98"
-                        : "0");
+                : bi.fas02c03b.isChecked() ? "2"
+                : "0");
 
-        s03.put("fas02c04",
-                bi.fas02c04a.isChecked() ? "1"
-                        : bi.fas02c04b.isChecked() ? "2"
-                        : bi.fas02c04c.isChecked() ? "3"
-                        : bi.fas02c04d.isChecked() ? "4"
-                        : bi.fas02c04e.isChecked() ? "5"
-                        : bi.fas02c04f.isChecked() ? "6"
-                        : bi.fas02c04g.isChecked() ? "7"
-                        : bi.fas02c04h.isChecked() ? "8"
-                        : bi.fas02c04i.isChecked() ? "9"
-                        : bi.fas02c04j.isChecked() ? "10"
-                        : bi.fas02c04k.isChecked() ? "11"
-                        : bi.fas02c04l.isChecked() ? "12"
-                        : bi.fas02c0496.isChecked() ? "96"
-                        : "0");
+        s03.put("fas02c04", bi.fas02c04a.isChecked() ? "1"
+                : bi.fas02c04b.isChecked() ? "2"
+                : bi.fas02c04c.isChecked() ? "3"
+                : bi.fas02c0496.isChecked() ? "96"
+                : "0");
         s03.put("fas02c0496x", bi.fas02c0496x.getText().toString());
 
 
-        s03.put("fas02c05",
-                bi.fas02c05a.isChecked() ? "1"
-                        : bi.fas02c05b.isChecked() ? "2"
-                        : bi.fas02c05c.isChecked() ? "3"
-                        : bi.fas02c05d.isChecked() ? "4"
-                        : bi.fas02c05e.isChecked() ? "5"
-                        : bi.fas02c05f.isChecked() ? "6"
-                        : bi.fas02c05g.isChecked() ? "7"
-                        : bi.fas02c05h.isChecked() ? "8"
-                        : bi.fas02c05i.isChecked() ? "9"
-                        : bi.fas02c05j.isChecked() ? "10"
-                        : bi.fas02c0596.isChecked() ? "96"
+        s03.put("fas02c05", bi.fas02c05a.isChecked() ? "1"
+                : bi.fas02c05b.isChecked() ? "2"
+                : bi.fas02c0598.isChecked() ? "98"
                         : "0");
-        s03.put("fas02c0596x", bi.fas02c0596x.getText().toString());
 
-
-        s03.put("fas02c06a", bi.fas02c06a.isChecked() ? "1" : "0");
-        s03.put("fas02c06b", bi.fas02c06b.isChecked() ? "2" : "0");
-        s03.put("fas02c06c", bi.fas02c06c.isChecked() ? "3" : "0");
-        s03.put("fas02c06d", bi.fas02c06d.isChecked() ? "4" : "0");
-        s03.put("fas02c06e", bi.fas02c06e.isChecked() ? "5" : "0");
-        s03.put("fas02c06f", bi.fas02c06f.isChecked() ? "6" : "0");
-        s03.put("fas02c06g", bi.fas02c06g.isChecked() ? "7" : "0");
-        s03.put("fas02c06h", bi.fas02c06h.isChecked() ? "8" : "0");
-        s03.put("fas02c0696", bi.fas02c0696.isChecked() ? "96" : "0");
+        s03.put("fas02c06", bi.fas02c06a.isChecked() ? "1"
+                : bi.fas02c06b.isChecked() ? "2"
+                : bi.fas02c06c.isChecked() ? "3"
+                : bi.fas02c06d.isChecked() ? "4"
+                : bi.fas02c06e.isChecked() ? "5"
+                : bi.fas02c06f.isChecked() ? "6"
+                : bi.fas02c06g.isChecked() ? "7"
+                : bi.fas02c06h.isChecked() ? "8"
+                : bi.fas02c06i.isChecked() ? "9"
+                : bi.fas02c06j.isChecked() ? "10"
+                : bi.fas02c06k.isChecked() ? "11"
+                : bi.fas02c06l.isChecked() ? "12"
+                : bi.fas02c0696.isChecked() ? "96"
+                        : "0");
         s03.put("fas02c0696x", bi.fas02c0696x.getText().toString());
 
 
         s03.put("fas02c07", bi.fas02c07a.isChecked() ? "1"
                 : bi.fas02c07b.isChecked() ? "2"
-                : bi.fas02c0798.isChecked() ? "98"
-                : "0");
-        s03.put("fas02c07w", bi.fas02c07w.getText().toString());
-        s03.put("fas02c07m", bi.fas02c07m.getText().toString());
+                : bi.fas02c07c.isChecked() ? "3"
+                : bi.fas02c07d.isChecked() ? "4"
+                : bi.fas02c07e.isChecked() ? "5"
+                : bi.fas02c07f.isChecked() ? "6"
+                : bi.fas02c07g.isChecked() ? "7"
+                : bi.fas02c07h.isChecked() ? "8"
+                : bi.fas02c07i.isChecked() ? "9"
+                : bi.fas02c07j.isChecked() ? "10"
+                : bi.fas02c0796.isChecked() ? "96"
+                        : "0");
+        s03.put("fas02c0796x", bi.fas02c0796x.getText().toString());
 
 
-        s03.put("fas02c0898", bi.fas02c0898.isChecked() ? "98" : "0");
-        s03.put("fas02c08t", bi.fas02c08t.getText().toString());
+        s03.put("fas02c08a", bi.fas02c08a.isChecked() ? "1" : "0");
+        s03.put("fas02c08b", bi.fas02c08b.isChecked() ? "2" : "0");
+        s03.put("fas02c08c", bi.fas02c08c.isChecked() ? "3" : "0");
+        s03.put("fas02c08d", bi.fas02c08d.isChecked() ? "4" : "0");
+        s03.put("fas02c08e", bi.fas02c08e.isChecked() ? "5" : "0");
+        s03.put("fas02c08f", bi.fas02c08f.isChecked() ? "6" : "0");
+        s03.put("fas02c08g", bi.fas02c08g.isChecked() ? "7" : "0");
+        s03.put("fas02c08h", bi.fas02c08h.isChecked() ? "8" : "0");
+        s03.put("fas02c0896", bi.fas02c0896.isChecked() ? "96" : "0");
+        s03.put("fas02c0896x", bi.fas02c0896x.getText().toString());
 
 
         s03.put("fas02c09", bi.fas02c09a.isChecked() ? "1"
-                        : bi.fas02c09b.isChecked() ? "2"
+                : bi.fas02c09b.isChecked() ? "2"
+                : bi.fas02c0998.isChecked() ? "98"
+                : "0");
+        s03.put("fas02c09w", bi.fas02c09w.getText().toString());
+        s03.put("fas02c09m", bi.fas02c09m.getText().toString());
+
+
+        s03.put("fas02c1098", bi.fas02c1098.isChecked() ? "98" : "0");
+        s03.put("fas02c10t", bi.fas02c10t.getText().toString());
+
+
+        s03.put("fas02c11", bi.fas02c11a.isChecked() ? "1"
+                : bi.fas02c11b.isChecked() ? "2"
                         : "0");
 
-        s03.put("fas02c10", bi.fas02c10a.isChecked() ? "1"
-                        : bi.fas02c10b.isChecked() ? "2"
+        s03.put("fas02c12", bi.fas02c12a.isChecked() ? "1"
+                : bi.fas02c12b.isChecked() ? "2"
                         : "0");
 
-        s03.put("fas02c11a", bi.fas02c11a.isChecked() ? "1" : "0");
-        s03.put("fas02c11ax", bi.fas02c11ax.getText().toString());
+        s03.put("fas02c13a", bi.fas02c13a.isChecked() ? "1" : "0");
+        s03.put("fas02c13ax", bi.fas02c13ax.getText().toString());
 
-        s03.put("fas02c11b", bi.fas02c11b.isChecked() ? "1" : "0");
-        s03.put("fas02c11bx", bi.fas02c11bx.getText().toString());
+        s03.put("fas02c13b", bi.fas02c13b.isChecked() ? "2" : "0");
+        s03.put("fas02c13bx", bi.fas02c13bx.getText().toString());
 
-        s03.put("fas02c11c", bi.fas02c11c.isChecked() ? "1" : "0");
-        s03.put("fas02c11cx", bi.fas02c11bx.getText().toString());
+        s03.put("fas02c1396", bi.fas02c1396.isChecked() ? "96" : "0");
+        s03.put("fas02c1396x", bi.fas02c1396x.getText().toString());
 
 
-        s03.put("fas02c1201",
-                bi.fas02c1201a.isChecked() ? "1"
-                        : bi.fas02c1201b.isChecked() ? "2"
-                        : bi.fas02c120198.isChecked() ? "98"
+        s03.put("fas02c1401", bi.fas02c1401a.isChecked() ? "1"
+                : bi.fas02c1401b.isChecked() ? "2"
+                : bi.fas02c140198.isChecked() ? "98"
                         : "0");
 
-        s03.put("fas02c1202",
-                bi.fas02c1202a.isChecked() ? "1"
-                        : bi.fas02c1202b.isChecked() ? "2"
-                        : bi.fas02c120298.isChecked() ? "98"
+        s03.put("fas02c1402", bi.fas02c1402a.isChecked() ? "1"
+                : bi.fas02c1402b.isChecked() ? "2"
+                : bi.fas02c140298.isChecked() ? "98"
                         : "0");
 
-        s03.put("fas02c1203",
-                bi.fas02c1203a.isChecked() ? "1"
-                        : bi.fas02c1203b.isChecked() ? "2"
-                        : bi.fas02c120398.isChecked() ? "98"
-                        : "0");
-
-
-        s03.put("fas02c13",
-                bi.fas02c13a.isChecked() ? "1"
-                        : bi.fas02c13b.isChecked() ? "2"
-                        : bi.fas02c1398.isChecked() ? "98"
-                        : "0");
-
-
-        s03.put("fas02c1498", bi.fas02c1498.isChecked() ? "98" : "0");
-        s03.put("fas02c14", bi.fas02c14.getText().toString());
-
-
-        s03.put("fas02c15",
-                bi.fas02c15a.isChecked() ? "1"
-                        : bi.fas02c15b.isChecked() ? "2"
-                        : bi.fas02c1598.isChecked() ? "98"
+        s03.put("fas02c1403", bi.fas02c1403a.isChecked() ? "1"
+                : bi.fas02c1403b.isChecked() ? "2"
+                : bi.fas02c140398.isChecked() ? "98"
                         : "0");
 
 
-        s03.put("fas02c16",
-                bi.fas02c16a.isChecked() ? "1"
-                        : bi.fas02c16b.isChecked() ? "2"
-                        : bi.fas02c1698.isChecked() ? "98"
+        s03.put("fas02c15", bi.fas02c15a.isChecked() ? "1"
+                : bi.fas02c15b.isChecked() ? "2"
+                : bi.fas02c1598.isChecked() ? "98"
                         : "0");
 
 
-        s03.put("fas02c17",
-                bi.fas02c17a.isChecked() ? "1"
-                        : bi.fas02c17b.isChecked() ? "2"
-                        : bi.fas02c17c.isChecked() ? "3"
-                        : bi.fas02c17d.isChecked() ? "4"
-                        : bi.fas02c17e.isChecked() ? "5"
-                        : bi.fas02c17f.isChecked() ? "6"
-                        : bi.fas02c17g.isChecked() ? "7"
-                        : bi.fas02c17h.isChecked() ? "8"
-                        : bi.fas02c17i.isChecked() ? "9"
-                        : bi.fas02c1796.isChecked() ? "96"
+        s03.put("fas02c1698", bi.fas02c1698.isChecked() ? "98" : "0");
+        s03.put("fas02c16", bi.fas02c16.getText().toString());
+
+
+        s03.put("fas02c17", bi.fas02c17a.isChecked() ? "1"
+                : bi.fas02c17b.isChecked() ? "2"
+                : bi.fas02c1798.isChecked() ? "98"
                         : "0");
-        s03.put("fas02c1796x", bi.fas02c1796x.getText().toString());
-        s03.put("fas02c17fx", bi.fas02c17fx.getText().toString());
-        s03.put("fas02c17hx", bi.fas02c17hx.getText().toString());
 
 
-        s03.put("fas02c18a", bi.fas02c18a.isChecked() ? "1" : "0");
-        s03.put("fas02c18b", bi.fas02c18b.isChecked() ? "2" : "0");
-        s03.put("fas02c18c", bi.fas02c18c.isChecked() ? "3" : "0");
-        s03.put("fas02c18d", bi.fas02c18d.isChecked() ? "4" : "0");
-        s03.put("fas02c18e", bi.fas02c18e.isChecked() ? "5" : "0");
-        s03.put("fas02c18f", bi.fas02c18f.isChecked() ? "6" : "0");
-        s03.put("fas02c18g", bi.fas02c18g.isChecked() ? "7" : "0");
-        s03.put("fas02c18h", bi.fas02c18h.isChecked() ? "8" : "0");
-        s03.put("fas02c18i", bi.fas02c18i.isChecked() ? "9" : "0");
-        s03.put("fas02c18j", bi.fas02c18j.isChecked() ? "10" : "0");
-        s03.put("fas02c18k", bi.fas02c18k.isChecked() ? "11" : "0");
-        s03.put("fas02c1896", bi.fas02c1896.isChecked() ? "96" : "0");
-        s03.put("fas02c1896x", bi.fas02c1896x.getText().toString());
+        s03.put("fas02c18", bi.fas02c18a.isChecked() ? "1"
+                : bi.fas02c18b.isChecked() ? "2"
+                : bi.fas02c1898.isChecked() ? "98"
+                        : "0");
 
 
-        s03.put("fas02c19a", bi.fas02c19a.isChecked() ? "1" : "0");
-        s03.put("fas02c19b", bi.fas02c19b.isChecked() ? "2" : "0");
-        s03.put("fas02c19c", bi.fas02c19c.isChecked() ? "3" : "0");
-        s03.put("fas02c19d", bi.fas02c19d.isChecked() ? "4" : "0");
-        s03.put("fas02c19e", bi.fas02c19e.isChecked() ? "5" : "0");
-        s03.put("fas02c19f", bi.fas02c19f.isChecked() ? "6" : "0");
-        s03.put("fas02c19g", bi.fas02c19g.isChecked() ? "7" : "0");
-        s03.put("fas02c19h", bi.fas02c19h.isChecked() ? "8" : "0");
-        s03.put("fas02c19i", bi.fas02c19i.isChecked() ? "9" : "0");
-        s03.put("fas02c1996", bi.fas02c1996.isChecked() ? "96" : "0");
-        s03.put("fas02c1998", bi.fas02c1998.isChecked() ? "98" : "0");
+        s03.put("fas02c19", bi.fas02c19a.isChecked() ? "1"
+                : bi.fas02c19b.isChecked() ? "2"
+                : bi.fas02c19c.isChecked() ? "3"
+                : bi.fas02c19d.isChecked() ? "4"
+                : bi.fas02c19e.isChecked() ? "5"
+                : bi.fas02c19f.isChecked() ? "6"
+                : bi.fas02c19g.isChecked() ? "7"
+                : bi.fas02c19h.isChecked() ? "8"
+                : bi.fas02c19i.isChecked() ? "9"
+                : bi.fas02c1996.isChecked() ? "96"
+                        : "0");
         s03.put("fas02c1996x", bi.fas02c1996x.getText().toString());
+        s03.put("fas02c19fx", bi.fas02c19fx.getText().toString());
+        s03.put("fas02c19hx", bi.fas02c19hx.getText().toString());
 
 
         s03.put("fas02c20a", bi.fas02c20a.isChecked() ? "1" : "0");
@@ -496,160 +462,144 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         s03.put("fas02c20d", bi.fas02c20d.isChecked() ? "4" : "0");
         s03.put("fas02c20e", bi.fas02c20e.isChecked() ? "5" : "0");
         s03.put("fas02c20f", bi.fas02c20f.isChecked() ? "6" : "0");
+        s03.put("fas02c20g", bi.fas02c20g.isChecked() ? "7" : "0");
+        s03.put("fas02c20h", bi.fas02c20h.isChecked() ? "8" : "0");
+        s03.put("fas02c20i", bi.fas02c20i.isChecked() ? "9" : "0");
+        s03.put("fas02c20j", bi.fas02c20j.isChecked() ? "10" : "0");
+        s03.put("fas02c20k", bi.fas02c20k.isChecked() ? "11" : "0");
         s03.put("fas02c2096", bi.fas02c2096.isChecked() ? "96" : "0");
         s03.put("fas02c2096x", bi.fas02c2096x.getText().toString());
 
-        s03.put("fas02c21",
-                bi.fas02c21a.isChecked() ? "1"
-                        : bi.fas02c21b.isChecked() ? "2"
+
+        s03.put("fas02c21a", bi.fas02c21a.isChecked() ? "1" : "0");
+        s03.put("fas02c21b", bi.fas02c21b.isChecked() ? "2" : "0");
+        s03.put("fas02c21c", bi.fas02c21c.isChecked() ? "3" : "0");
+        s03.put("fas02c21d", bi.fas02c21d.isChecked() ? "4" : "0");
+        s03.put("fas02c21e", bi.fas02c21e.isChecked() ? "5" : "0");
+        s03.put("fas02c21f", bi.fas02c21f.isChecked() ? "6" : "0");
+        s03.put("fas02c21g", bi.fas02c21g.isChecked() ? "7" : "0");
+        s03.put("fas02c21h", bi.fas02c21h.isChecked() ? "8" : "0");
+        s03.put("fas02c21i", bi.fas02c21i.isChecked() ? "9" : "0");
+        s03.put("fas02c2196", bi.fas02c2196.isChecked() ? "96" : "0");
+        s03.put("fas02c2198", bi.fas02c2198.isChecked() ? "98" : "0");
+        s03.put("fas02c2196x", bi.fas02c2196x.getText().toString());
+
+
+        s03.put("fas02c22a", bi.fas02c22a.isChecked() ? "1" : "0");
+        s03.put("fas02c22b", bi.fas02c22b.isChecked() ? "2" : "0");
+        s03.put("fas02c22c", bi.fas02c22c.isChecked() ? "3" : "0");
+        s03.put("fas02c22d", bi.fas02c22d.isChecked() ? "4" : "0");
+        s03.put("fas02c22e", bi.fas02c22e.isChecked() ? "5" : "0");
+        s03.put("fas02c22f", bi.fas02c22f.isChecked() ? "6" : "0");
+        s03.put("fas02c2296", bi.fas02c2296.isChecked() ? "96" : "0");
+        s03.put("fas02c2296x", bi.fas02c2296x.getText().toString());
+
+        s03.put("fas02c23", bi.fas02c23a.isChecked() ? "1"
+                : bi.fas02c23b.isChecked() ? "2"
                         : "0");
 
 
-        s03.put("fas02c2201",
-                bi.fas02c2201a.isChecked() ? "1"
-                        : bi.fas02c2201b.isChecked() ? "2"
+        s03.put("fas02c2401", bi.fas02c2401a.isChecked() ? "1"
+                : bi.fas02c2401b.isChecked() ? "2"
                         : "0");
 
 
-        s03.put("fas02c2202",
-                bi.fas02c2202a.isChecked() ? "1"
-                        : bi.fas02c2202b.isChecked() ? "2"
+        s03.put("fas02c2402", bi.fas02c2402a.isChecked() ? "1"
+                : bi.fas02c2402b.isChecked() ? "2"
                         : "0");
 
 
-        s03.put("fas02c2203",
-                bi.fas02c2203a.isChecked() ? "1"
-                        : bi.fas02c2203b.isChecked() ? "2"
+        s03.put("fas02c2403", bi.fas02c2403a.isChecked() ? "1"
+                : bi.fas02c2403b.isChecked() ? "2"
                         : "0");
 
 
-        s03.put("fas02c2204",
-                bi.fas02c2204a.isChecked() ? "1"
-                        : bi.fas02c2204b.isChecked() ? "2"
+        s03.put("fas02c2404", bi.fas02c2404a.isChecked() ? "1"
+                : bi.fas02c2404b.isChecked() ? "2"
                         : "0");
 
 
-        s03.put("fas02c2205",
-                bi.fas02c2205a.isChecked() ? "1"
-                        : bi.fas02c2205b.isChecked() ? "2"
+        s03.put("fas02c2405", bi.fas02c2405a.isChecked() ? "1"
+                : bi.fas02c2405b.isChecked() ? "2"
                         : "0");
 
 
-        s03.put("fas02c2206",
-                bi.fas02c2206a.isChecked() ? "1"
-                        : bi.fas02c2206b.isChecked() ? "2"
+        s03.put("fas02c2406", bi.fas02c2406a.isChecked() ? "1"
+                : bi.fas02c2406b.isChecked() ? "2"
                         : "0");
 
 
-        s03.put("fas02c2207",
-                bi.fas02c2207a.isChecked() ? "1"
-                        : bi.fas02c2207b.isChecked() ? "2"
+        s03.put("fas02c2407", bi.fas02c2407a.isChecked() ? "1"
+                : bi.fas02c2407b.isChecked() ? "2"
                         : "0");
 
 
-        s03.put("fas02c2208",
-                bi.fas02c2208a.isChecked() ? "1"
-                        : bi.fas02c2208b.isChecked() ? "2"
+        s03.put("fas02c2408", bi.fas02c2408a.isChecked() ? "1"
+                : bi.fas02c2408b.isChecked() ? "2"
                         : "0");
 
 
-        s03.put("fas02c2301",
-                bi.fas02c2301a.isChecked() ? "1"
-                        : bi.fas02c2301b.isChecked() ? "2"
-                        : bi.fas02c230198.isChecked() ? "98"
+        s03.put("fas02c2501", bi.fas02c2501a.isChecked() ? "1"
+                : bi.fas02c2501b.isChecked() ? "2"
+                : bi.fas02c250198.isChecked() ? "98"
                         : "0");
 
-        s03.put("fas02c2302",
-                bi.fas02c2302a.isChecked() ? "1"
-                        : bi.fas02c2302b.isChecked() ? "2"
-                        : bi.fas02c230298.isChecked() ? "98"
-                        : "0");
-
-
-        s03.put("fas02c2303",
-                bi.fas02c2303a.isChecked() ? "1"
-                        : bi.fas02c2303b.isChecked() ? "2"
-                        : bi.fas02c230398.isChecked() ? "98"
-                        : "0");
-
-        s03.put("fas02c2304",
-                bi.fas02c2304a.isChecked() ? "1"
-                        : bi.fas02c2304b.isChecked() ? "2"
-                        : bi.fas02c230498.isChecked() ? "98"
-                        : "0");
-
-        s03.put("fas02c2305",
-                bi.fas02c2305a.isChecked() ? "1"
-                        : bi.fas02c2305b.isChecked() ? "2"
-                        : bi.fas02c230598.isChecked() ? "98"
-                        : "0");
-
-        s03.put("fas02c2306",
-                bi.fas02c2306a.isChecked() ? "1"
-                        : bi.fas02c2306b.isChecked() ? "2"
-                        : bi.fas02c230698.isChecked() ? "98"
+        s03.put("fas02c2502", bi.fas02c2502a.isChecked() ? "1"
+                : bi.fas02c2502b.isChecked() ? "2"
+                : bi.fas02c250298.isChecked() ? "98"
                         : "0");
 
 
-        s03.put("fas02c24a",
-                bi.fas02c24a.isChecked() ? "1"
+        s03.put("fas02c2503", bi.fas02c2503a.isChecked() ? "1"
+                : bi.fas02c2503b.isChecked() ? "2"
+                : bi.fas02c250398.isChecked() ? "98"
+                        : "0");
+
+        s03.put("fas02c2504", bi.fas02c2504a.isChecked() ? "1"
+                : bi.fas02c2504b.isChecked() ? "2"
+                : bi.fas02c250498.isChecked() ? "98"
+                        : "0");
+
+        s03.put("fas02c2505", bi.fas02c2505a.isChecked() ? "1"
+                : bi.fas02c2505b.isChecked() ? "2"
+                : bi.fas02c250598.isChecked() ? "98"
+                        : "0");
+
+        s03.put("fas02c2506", bi.fas02c2506a.isChecked() ? "1"
+                : bi.fas02c2506b.isChecked() ? "2"
+                : bi.fas02c250698.isChecked() ? "98"
                         : "0");
 
 
-        s03.put("fas02c24b",
-                bi.fas02c24b.isChecked() ? "2"
-                        : "0");
-
-
-        s03.put("fas02c24c",
-                bi.fas02c24c.isChecked() ? "3"
-                        : "0");
-
-        s03.put("fas02c24d",
-                bi.fas02c24d.isChecked() ? "4"
-                        : "0");
-
-
-        s03.put("fas02c24e",
-                bi.fas02c24e.isChecked() ? "5"
-                        : "0");
-
-
-        s03.put("fas02c2496",
-                bi.fas02c2496.isChecked() ? "96"
-                        : "0");
-
-        s03.put("fas02c24f",
-                bi.fas02c24f.isChecked() ? "1"
-                        : "0");
-
-        s03.put("fas02c2496x", bi.fas02c2496x.getText().toString());
-
-
-        s03.put("fas02c25",
-                bi.fas02c25a.isChecked() ? "1"
-                        : bi.fas02c25b.isChecked() ? "2"
-                        : bi.fas02c25c.isChecked() ? "3"
-                        : bi.fas02c25d.isChecked() ? "4"
-                        : bi.fas02c25e.isChecked() ? "5"
-                        : bi.fas02c25f.isChecked() ? "6"
-                        : bi.fas02c2596.isChecked() ? "96"
-                        : "0");
-
-        s03.put("fas02c2596x", bi.fas02c2596x.getText().toString());
-
-
-        s03.put("fas02c26",
-                bi.fas02c26a.isChecked() ? "1"
-                        : bi.fas02c26b.isChecked() ? "2"
-                        : bi.fas02c26c.isChecked() ? "3"
-                        : bi.fas02c26d.isChecked() ? "4"
-                        : bi.fas02c26e.isChecked() ? "5"
-                        : bi.fas02c26f.isChecked() ? "6"
-                        : bi.fas02c2696.isChecked() ? "96"
-                        : "0");
-
+        s03.put("fas02c26a", bi.fas02c26a.isChecked() ? "1" : "0");
+        s03.put("fas02c26b", bi.fas02c26b.isChecked() ? "2" : "0");
+        s03.put("fas02c26c", bi.fas02c26c.isChecked() ? "3" : "0");
+        s03.put("fas02c26d", bi.fas02c26d.isChecked() ? "4" : "0");
+        s03.put("fas02c26e", bi.fas02c26e.isChecked() ? "5" : "0");
+        s03.put("fas02c26f", bi.fas02c26f.isChecked() ? "6" : "0");
+        s03.put("fas02c2696", bi.fas02c2696.isChecked() ? "96" : "0");
         s03.put("fas02c2696x", bi.fas02c2696x.getText().toString());
+
+
+        s03.put("fas02c27", bi.fas02c27a.isChecked() ? "1"
+                : bi.fas02c27b.isChecked() ? "2"
+                : bi.fas02c27c.isChecked() ? "3"
+                : bi.fas02c27d.isChecked() ? "4"
+                : bi.fas02c27e.isChecked() ? "5"
+                : bi.fas02c27f.isChecked() ? "6"
+                : bi.fas02c2796.isChecked() ? "96"
+                        : "0");
+        s03.put("fas02c2796x", bi.fas02c2796x.getText().toString());
+
+        s03.put("fas02c28", bi.fas02c28a.isChecked() ? "1"
+                : bi.fas02c28b.isChecked() ? "2"
+                : bi.fas02c28c.isChecked() ? "3"
+                : bi.fas02c28d.isChecked() ? "4"
+                : bi.fas02c28e.isChecked() ? "5"
+                : bi.fas02c28f.isChecked() ? "6"
+                : bi.fas02c2896.isChecked() ? "96"
+                        : "0");
+        s03.put("fas02c2896x", bi.fas02c2896x.getText().toString());
 
         fc.setSa3(String.valueOf(s03));
 

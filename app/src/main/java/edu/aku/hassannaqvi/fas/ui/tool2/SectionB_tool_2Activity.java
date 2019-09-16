@@ -45,6 +45,7 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
         this.setTitle(R.string.section2_tool2);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
+
         bi.fas02b0102ax.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -61,6 +62,8 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
                         } else {
                             Toast.makeText(SectionB_tool_2Activity.this, "Age must be between 1920 to " + Calendar.getInstance().get(Calendar.YEAR), Toast.LENGTH_LONG).show();
                         }
+                    } else {
+                        Toast.makeText(SectionB_tool_2Activity.this, "year format is YYYY " + Calendar.getInstance().get(Calendar.YEAR), Toast.LENGTH_LONG).show();
                     }
 
 
