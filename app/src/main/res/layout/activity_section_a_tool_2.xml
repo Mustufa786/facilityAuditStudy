@@ -333,6 +333,16 @@
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimaryAlpha"
+                            android:text="@string/fas02a071"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
 
                         <RadioGroup
                             android:id="@+id/fas02a07"
@@ -377,6 +387,16 @@
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
                             android:text="@string/fas02a08"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimaryAlpha"
+                            android:text="@string/fas02a081"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />

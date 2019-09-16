@@ -606,6 +606,7 @@
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
+
                         <LinearLayout
                             android:id="@+id/fldGrpfas02d08"
                             style="@style/linerlayout_view_wt_bound">
