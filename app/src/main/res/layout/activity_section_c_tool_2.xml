@@ -131,13 +131,13 @@
                             android:textSize="20sp" />
 
                         <RadioGroup
-                            android:id="@+id/fas02c02"
+                            android:id="@+id/fas02c01"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
                             <RadioButton
-                                android:id="@+id/fas02c02a"
+                                android:id="@+id/fas02c01a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
@@ -145,7 +145,7 @@
                                 android:text="@string/yes" />
 
                             <RadioButton
-                                android:id="@+id/fas02c02b"
+                                android:id="@+id/fas02c01b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
@@ -160,7 +160,8 @@
 
                 <LinearLayout
                     android:id="@+id/fldGrpllSecC02a"
-                    style="@style/linerlayout_view_wt_bound">
+                    style="@style/linerlayout_view_wt_bound"
+                    android:visibility="gone">
 
                     <!--fas02c02-->
                     <android.support.v7.widget.CardView style="@style/cardView">
@@ -1586,7 +1587,6 @@
 
                             </RadioGroup>
 
-
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
@@ -1891,7 +1891,7 @@
                     <android.support.v7.widget.CardView
                         android:id="@+id/fldGrpfas02c22"
                         style="@style/cardView"
-                        android:visibility="@{fas02c19e.checked ? View.VISIBLE : View.GONE}">
+                        android:visibility="@{fas02c21e.checked ? View.VISIBLE : View.GONE}">
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -2790,9 +2790,7 @@
                                     android:text='@{fas02c2796.checked ? fas02c2796x.getText.toString : ""}'
                                     android:visibility='@{fas02c2796.checked ? View.VISIBLE : View.GONE}' />
 
-
                             </RadioGroup>
-
 
                         </LinearLayout>
 

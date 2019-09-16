@@ -60,6 +60,21 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
     private void setListenersUI() {
 
+        //fas02c01
+        bi.fas02c01.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.fas02c01a.getId()) {
+                    ClearClass.ClearAllFields(bi.fldGrpllSecC02a, null);
+                    bi.fldGrpllSecC02a.setVisibility(View.VISIBLE);
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpllSecC02a, null);
+                    bi.fldGrpllSecC02a.setVisibility(View.GONE);
+                }
+            }
+        });
+
+
 //        fas02c10t
         bi.fas02c10t.addTextChangedListener(new TextWatcher() {
             @Override
@@ -82,6 +97,7 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
             }
         });
+
         bi.fas02c1098.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -163,14 +179,6 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
             }
         });
 
-//        fas02c01
-//        bi.fas02c01.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-//                if (i != bi.fas02c01a.getId())
-//                    ClearClass.ClearAllFields(bi.fldGrpllSecC02a, null);
-//            }
-//        });
 
 //        fas02c05
         bi.fas02c05.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -305,9 +313,10 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         s03.put("fas02c001", bi.fas02c001.getText().toString());
         s03.put("fas02cmw01", bi.fas02cmw01.getText().toString());
 
-        s03.put("fas02c02", bi.fas02c02a.isChecked() ? "1"
-                : bi.fas02c02b.isChecked() ? "2"
+        s03.put("fas02c01", bi.fas02c01a.isChecked() ? "1"
+                : bi.fas02c01b.isChecked() ? "2"
                         : "0");
+
         s03.put("fas02c02m", bi.fas02c02m.getText().toString());
         s03.put("fas02c02y", bi.fas02c02y.getText().toString());
 

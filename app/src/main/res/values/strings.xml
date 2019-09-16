@@ -565,7 +565,7 @@
     <string name="fas02c21i"> خود/کوئی موجود نہیں </string>
     <string name="fas02c21j"> دوسرا شخص(وضاحت کریں) </string>
 
-    <string name="fas02c22"> وہ کیا وجوہات تھے جس کے باعث آپ نے (نام) کی پیدائش کے وقت مدد کے لیے دائی /دوست کو ترجیح دی؟کوئی اور وجہ معلوم کرنے کے لیے پوچھیںتمام جوابات لکھیں </string>
+    <string name="fas02c22"> وہ کیا وجوہات تھے جس کے باعث آپ نے (نام) کی پیدائش کے وقت مدد کے لیے دائی / دوست کو ترجیح دی؟ کوئی اور وجہ معلوم کرنے کے لیے پوچھیں تمام جوابات لکھیں </string>
     <string name="fas02c22a"> فاصلہ </string>
     <string name="fas02c22b"> مرکز صحت کے مقابلے میں بہتر دیکھ بھال </string>
     <string name="fas02c22c"> مذہبی وجوہات </string>
@@ -605,17 +605,17 @@
     <string name="fas02c26f"> مجھے مدد کی ضرورت نہیں ہے </string>
 
     <string name="fas02c27">آپ کے پاس ماں اور بچے کی صحت (MNCH) سے متعلقہ ضرورت کو پورا کرنے کے لیے مالی امداد کے کیا ذرائع موجود ہیں؟ </string>
-    <string name="fas02c27a"> فیملی (شوہر یا اپنے وسائل) </string>
-    <string name="fas02c27b"> بنک/کسی ادارے سے قرض </string>
+    <string name="fas02c27a"> (شوہر یا اپنے وسائل) خاندان </string>
+    <string name="fas02c27b"> بنک / کسی ادارے سے قرض </string>
     <string name="fas02c27c"> کمیونٹی ہیلتھ ریوالونگ فنڈ </string>
     <string name="fas02c27d"> دوست /رشتہ دار سے ادھار پیسہ </string>
-    <string name="fas02c27e"> اثاثے بھیجنا </string>
+    <string name="fas02c27e"> اثاثوں کی فروخت </string>
     <string name="fas02c27f"> کسی بھی چیز کی ضروت نہیں </string>
 
     <string name="fas02c28"> مالی امداد کا زیادہ ترحصہ کس مقصد کے لیے استعمال کیا گیا ؟ </string>
     <string name="fas02c28a"> ٹرانسپورٹ </string>
     <string name="fas02c28b"> دوران حمل طبی معائنہ </string>
-    <string name="fas02c28c"> زچگی/بڑا آپریشن </string>
+    <string name="fas02c28c"> زچگی / بڑا آپریشن </string>
     <string name="fas02c28d"> ایمرجنسی </string>
     <string name="fas02c28e"> زچگی کے بعد کا دیکھ بھال </string>
     <string name="fas02c28f"> نومولود یا 5 سال سے کم عمر بچے کی صحت </string>
