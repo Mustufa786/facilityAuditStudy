@@ -199,7 +199,7 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
             SaveDraft();
             if (UpdateDB()) {
 
-                String surveyType = bi.fas02a00a.isChecked() ? "1" : bi.fas02a00b.isChecked() ? "4" : "0";
+                String surveyType = bi.fas02a00a.isChecked() ? "1" : bi.fas02a00b.isChecked() ? "2" : "0";
                 MainApp.setParamValues(this, CONSTANTS._URI_DATAMAP_02_SURVEY_TYPE, surveyType);
                 MainApp.setParamValues(this, CONSTANTS._URI_DATAMAP_02_HF_NO, bi.fas02a001.getText().toString());
                 MainApp.setParamValues(this, CONSTANTS._URI_DATAMAP_02_W_ID, bi.fas02amw01.getText().toString());
@@ -261,7 +261,7 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         JSONObject s01 = new JSONObject();
 
         s01.put("fas02a00", bi.fas02a00a.isChecked() ? "1"
-                : bi.fas02a00b.isChecked() ? "2"
+                : bi.fas02a00b.isChecked() ? "4"
                 : "0");
 
         s01.put("fas02a001", bi.fas02a001.getText().toString());

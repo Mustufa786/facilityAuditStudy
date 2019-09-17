@@ -693,7 +693,7 @@
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
                             android:tag="-1"
-                            android:text="@string/dkn" />
+                            android:text="@string/fas02d0898" />
 
                     </LinearLayout>
 
