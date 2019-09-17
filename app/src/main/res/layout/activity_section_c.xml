@@ -107,14 +107,8 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1300"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1300" />
 
                         <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
                             android:id="@+id/hfa1332"
@@ -128,26 +122,19 @@
 
                 </android.support.v7.widget.CardView>
 
-
                 <!--hfa1301-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1301"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1301" />
 
                         <EditText
                             android:id="@+id/hfa1301"
                             style="@style/textInput"
-                            android:hint="@string/hfa1301"
+                            android:hint="@string/num"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -161,22 +148,15 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1302"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1302" />
 
                         <EditText
                             android:id="@+id/hfa1302"
                             style="@style/textInput"
-                            android:hint="@string/hfa1302"
+                            android:hint="@string/num"
                             android:inputType="number"
                             android:maxLength="4" />
-
 
                     </LinearLayout>
 
@@ -188,19 +168,13 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1303"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1303" />
 
                         <EditText
                             android:id="@+id/hfa1303"
                             style="@style/textInput"
-                            android:hint="@string/hfa1303"
+                            android:hint="@string/num"
                             android:inputType="number"
                             android:maxLength="4" />
 
@@ -215,14 +189,8 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1304a"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1304a" />
 
                         <RadioGroup
                             android:id="@+id/hfa1304"
@@ -277,19 +245,13 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1305"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1305" />
 
                         <EditText
                             android:id="@+id/hfa1305"
                             style="@style/textInput"
-                            android:hint="@string/hfa1305"
+                            android:hint="@string/num"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -303,19 +265,13 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1306"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1306" />
 
                         <EditText
                             android:id="@+id/hfa1306"
                             style="@style/textInput"
-                            android:hint="@string/hfa1306"
+                            android:hint="@string/num"
                             android:inputType="number"
                             android:maxLength="3" />
 
@@ -330,22 +286,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1307"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1307" />
 
                         <EditText
                             android:id="@+id/hfa1307"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1307"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -357,22 +303,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1308"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1308" />
 
                         <EditText
                             android:id="@+id/hfa1308"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1308"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -384,22 +320,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1309"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1309" />
 
                         <EditText
                             android:id="@+id/hfa1309"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1309"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -411,22 +337,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1310"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1310" />
 
                         <EditText
                             android:id="@+id/hfa1310"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1310"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -438,22 +354,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1311"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1311" />
 
                         <EditText
                             android:id="@+id/hfa1311"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1311"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -465,22 +371,15 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1312"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1312" />
 
                         <EditText
                             android:id="@+id/hfa1312"
                             style="@style/textInput"
-                            android:hint="@string/hfa1312"
+                            android:hint="@string/num"
                             android:inputType="number"
                             android:maxLength="4" />
-
 
                     </LinearLayout>
 
@@ -492,22 +391,15 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1313"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1313" />
 
                         <EditText
                             android:id="@+id/hfa1313"
                             style="@style/textInput"
-                            android:hint="@string/hfa1313"
+                            android:hint="@string/num"
                             android:inputType="number"
                             android:maxLength="4" />
-
 
                     </LinearLayout>
 
@@ -519,22 +411,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1314"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1314" />
 
                         <EditText
                             android:id="@+id/hfa1314"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1314"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -546,22 +428,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1315"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1315" />
 
                         <EditText
                             android:id="@+id/hfa1315"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1315"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -573,22 +445,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1316"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1316" />
 
                         <EditText
                             android:id="@+id/hfa1316"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1316"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -600,22 +462,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1317"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1317" />
 
                         <EditText
                             android:id="@+id/hfa1317"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1317"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -627,22 +479,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1318"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1318" />
 
                         <EditText
                             android:id="@+id/hfa1318"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1318"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -654,22 +496,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1319"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1319" />
 
                         <EditText
                             android:id="@+id/hfa1319"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1319"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -681,22 +513,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1320"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1320" />
 
                         <EditText
                             android:id="@+id/hfa1320"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1320"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -708,22 +530,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1321"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1321" />
 
                         <EditText
                             android:id="@+id/hfa1321"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1321"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -735,22 +547,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1322"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1322" />
 
                         <EditText
                             android:id="@+id/hfa1322"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1322"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
@@ -762,242 +564,152 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1323"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1323" />
 
                         <EditText
                             android:id="@+id/hfa1323"
-                            style="@style/textInput"
-                            android:hint="@string/hfa1323"
-                            android:inputType="number"
-                            android:maxLength="3" />
-
+                            style="@style/numbox" />
 
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
 
-                <!--&lt;!&ndash;hfa1324&ndash;&gt;-->
-                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
+                <!--hfa1324-->
+                <android.support.v7.widget.CardView style="@style/cardView">
 
-                <!--<LinearLayout style="@style/linerlayout_view">-->
+                    <LinearLayout style="@style/linerlayout_view">
 
-                <!--<TextView-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal"-->
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:text="@string/hfa1324"-->
-                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
-                <!--android:textColor="@android:color/white"-->
-                <!--android:textSize="20sp" />-->
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/hfa1324" />
 
-                <!--<EditText-->
-                <!--android:id="@+id/hfa1324"-->
-                <!--style="@style/textInput"-->
-                <!--android:hint="@string/hfa1324"-->
-                <!--android:inputType="number"-->
-                <!--android:maxLength="3" />-->
+                        <EditText
+                            android:id="@+id/hfa1324"
+                            style="@style/numbox" />
 
+                    </LinearLayout>
 
-                <!--</LinearLayout>-->
+                </android.support.v7.widget.CardView>
 
-                <!--</android.support.v7.widget.CardView>-->
+                <!--hfa1325-->
+                <android.support.v7.widget.CardView style="@style/cardView">
 
-                <!--&lt;!&ndash;hfa1325&ndash;&gt;-->
-                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
+                    <LinearLayout style="@style/linerlayout_view">
 
-                <!--<LinearLayout style="@style/linerlayout_view">-->
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/hfa1325" />
 
-                <!--<TextView-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal"-->
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:text="@string/hfa1325"-->
-                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
-                <!--android:textColor="@android:color/white"-->
-                <!--android:textSize="20sp" />-->
+                        <EditText
+                            android:id="@+id/hfa1325"
+                            style="@style/numbox" />
 
-                <!--<EditText-->
-                <!--android:id="@+id/hfa1325"-->
-                <!--style="@style/textInput"-->
-                <!--android:hint="@string/hfa1325"-->
-                <!--android:inputType="number"-->
-                <!--android:maxLength="3" />-->
+                    </LinearLayout>
 
+                </android.support.v7.widget.CardView>
 
-                <!--</LinearLayout>-->
+                <!--hfa1326-->
+                <android.support.v7.widget.CardView style="@style/cardView">
 
-                <!--</android.support.v7.widget.CardView>-->
+                    <LinearLayout style="@style/linerlayout_view">
 
-                <!--&lt;!&ndash;hfa1326&ndash;&gt;-->
-                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/hfa1326" />
 
-                <!--<LinearLayout style="@style/linerlayout_view">-->
+                        <EditText
+                            android:id="@+id/hfa1326"
+                            style="@style/numbox" />
 
-                <!--<TextView-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal"-->
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:text="@string/hfa1326"-->
-                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
-                <!--android:textColor="@android:color/white"-->
-                <!--android:textSize="20sp" />-->
+                    </LinearLayout>
 
-                <!--<EditText-->
-                <!--android:id="@+id/hfa1326"-->
-                <!--style="@style/textInput"-->
-                <!--android:hint="@string/hfa1326"-->
-                <!--android:inputType="number"-->
-                <!--android:maxLength="3" />-->
+                </android.support.v7.widget.CardView>
 
+                <!--hfa1327-->
+                <android.support.v7.widget.CardView style="@style/cardView">
 
-                <!--</LinearLayout>-->
+                    <LinearLayout style="@style/linerlayout_view">
 
-                <!--</android.support.v7.widget.CardView>-->
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/hfa1327" />
 
-                <!--&lt;!&ndash;hfa1327&ndash;&gt;-->
-                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
+                        <EditText
+                            android:id="@+id/hfa1327"
+                            style="@style/numbox" />
 
-                <!--<LinearLayout style="@style/linerlayout_view">-->
+                    </LinearLayout>
 
-                <!--<TextView-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal"-->
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:text="@string/hfa1327"-->
-                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
-                <!--android:textColor="@android:color/white"-->
-                <!--android:textSize="20sp" />-->
+                </android.support.v7.widget.CardView>
 
-                <!--<EditText-->
-                <!--android:id="@+id/hfa1327"-->
-                <!--style="@style/textInput"-->
-                <!--android:hint="@string/hfa1327"-->
-                <!--android:inputType="number"-->
-                <!--android:maxLength="3" />-->
+                <!--hfa1328-->
+                <android.support.v7.widget.CardView style="@style/cardView">
 
+                    <LinearLayout style="@style/linerlayout_view">
 
-                <!--</LinearLayout>-->
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/hfa1328" />
 
-                <!--</android.support.v7.widget.CardView>-->
+                        <EditText
+                            android:id="@+id/hfa1328"
+                            style="@style/numbox" />
 
-                <!--&lt;!&ndash;hfa1328&ndash;&gt;-->
-                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
+                    </LinearLayout>
 
-                <!--<LinearLayout style="@style/linerlayout_view">-->
+                </android.support.v7.widget.CardView>
 
-                <!--<TextView-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal"-->
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:text="@string/hfa1328"-->
-                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
-                <!--android:textColor="@android:color/white"-->
-                <!--android:textSize="20sp" />-->
+                <!--hfa1329-->
+                <android.support.v7.widget.CardView style="@style/cardView">
 
-                <!--<EditText-->
-                <!--android:id="@+id/hfa1328"-->
-                <!--style="@style/textInput"-->
-                <!--android:hint="@string/hfa1328"-->
-                <!--android:inputType="number"-->
-                <!--android:maxLength="3" />-->
+                    <LinearLayout style="@style/linerlayout_view">
 
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/hfa1329" />
 
-                <!--</LinearLayout>-->
+                        <EditText
+                            android:id="@+id/hfa1329"
+                            style="@style/numbox" />
 
-                <!--</android.support.v7.widget.CardView>-->
+                    </LinearLayout>
 
-                <!--&lt;!&ndash;hfa1329&ndash;&gt;-->
-                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
+                </android.support.v7.widget.CardView>
 
-                <!--<LinearLayout style="@style/linerlayout_view">-->
+                <!--hfa1330-->
+                <android.support.v7.widget.CardView style="@style/cardView">
 
-                <!--<TextView-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal"-->
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:text="@string/hfa1329"-->
-                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
-                <!--android:textColor="@android:color/white"-->
-                <!--android:textSize="20sp" />-->
+                    <LinearLayout style="@style/linerlayout_view">
 
-                <!--<EditText-->
-                <!--android:id="@+id/hfa1329"-->
-                <!--style="@style/textInput"-->
-                <!--android:hint="@string/hfa1329"-->
-                <!--android:inputType="number"-->
-                <!--android:maxLength="3" />-->
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/hfa1330" />
 
+                        <EditText
+                            android:id="@+id/hfa1330"
+                            style="@style/numbox" />
 
-                <!--</LinearLayout>-->
+                    </LinearLayout>
 
-                <!--</android.support.v7.widget.CardView>-->
+                </android.support.v7.widget.CardView>
 
-                <!--&lt;!&ndash;hfa1330&ndash;&gt;-->
-                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
+                <!--hfa1331-->
+                <android.support.v7.widget.CardView style="@style/cardView">
 
-                <!--<LinearLayout style="@style/linerlayout_view">-->
+                    <LinearLayout style="@style/linerlayout_view">
 
-                <!--<TextView-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal"-->
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:text="@string/hfa1330"-->
-                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
-                <!--android:textColor="@android:color/white"-->
-                <!--android:textSize="20sp" />-->
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/hfa1331" />
 
-                <!--<EditText-->
-                <!--android:id="@+id/hfa1330"-->
-                <!--style="@style/textInput"-->
-                <!--android:hint="@string/hfa1330"-->
-                <!--android:inputType="number"-->
-                <!--android:maxLength="3" />-->
+                        <EditText
+                            android:id="@+id/hfa1331"
+                            style="@style/numbox" />
 
+                    </LinearLayout>
 
-                <!--</LinearLayout>-->
-
-                <!--</android.support.v7.widget.CardView>-->
-
-                <!--&lt;!&ndash;hfa1331&ndash;&gt;-->
-                <!--<android.support.v7.widget.CardView style="@style/cardView">-->
-
-                <!--<LinearLayout style="@style/linerlayout_view">-->
-
-                <!--<TextView-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal"-->
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:text="@string/hfa1331"-->
-                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
-                <!--android:textColor="@android:color/white"-->
-                <!--android:textSize="20sp" />-->
-
-                <!--<EditText-->
-                <!--android:id="@+id/hfa1331"-->
-                <!--style="@style/textInput"-->
-                <!--android:hint="@string/hfa1331"-->
-                <!--android:inputType="number"-->
-                <!--android:maxLength="3" />-->
-
-
-                <!--</LinearLayout>-->
-
-                <!--</android.support.v7.widget.CardView>-->
+                </android.support.v7.widget.CardView>
 
             </LinearLayout>
 
