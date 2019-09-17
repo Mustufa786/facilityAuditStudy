@@ -116,7 +116,7 @@
                             android:layout_weight="1"
                             android:text="@string/year" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/fas02b0102ax"
                             style="@style/textInput"
                             android:layout_width="match_parent"
@@ -127,7 +127,10 @@
                             android:maxLength="4"
                             android:tag="fas02b0102a"
                             android:text='@{fas02b0102a.checked ? fas02b0102ax.getText.toString : ""}'
-                            android:visibility='@{fas02b0102a.checked ? View.VISIBLE : View.GONE}' />
+                            android:visibility='@{fas02b0102a.checked ? View.VISIBLE : View.GONE}'
+                            app:maxValue="2019"
+                            app:minValue="1920"
+                            app:type="range" />
 
                         <RadioButton
                             android:id="@+id/fas02b0102b"

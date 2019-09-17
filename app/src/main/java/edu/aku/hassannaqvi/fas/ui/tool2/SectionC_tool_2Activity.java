@@ -14,6 +14,7 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Calendar;
 import java.util.concurrent.ExecutionException;
 
 import edu.aku.hassannaqvi.fas.R;
@@ -59,6 +60,9 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
 
     private void setListenersUI() {
+
+        bi.fas02c02y.setMax(Calendar.getInstance().get(Calendar.YEAR));
+        bi.fas02c02y.setMin(1920);
 
         //fas02c01
         bi.fas02c01.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

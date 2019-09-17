@@ -212,7 +212,7 @@
                                 app:minValue="1"
                                 app:type="range" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/fas02c02y"
                                 style="@style/textInput"
                                 android:layout_width="match_parent"
@@ -220,8 +220,10 @@
                                 android:layout_margin="10dp"
                                 android:hint="@string/year"
                                 android:inputType="number"
-                                android:maxLength="4" />
-
+                                android:maxLength="4"
+                                app:maxValue="2019"
+                                app:minValue="1920"
+                                app:type="range" />
 
                         </LinearLayout>
 
