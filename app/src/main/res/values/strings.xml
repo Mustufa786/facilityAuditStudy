@@ -39,7 +39,8 @@
     <string name="often">اڪثر ڪري</string>
     <string name="almostA">هميشه</string>
 
-    <string name="other"> دیگر /تفصیل </string>
+    <string name="other"> دیگر </string>
+    <string name="specify"> تفصیل </string>
     <string name="week"> ہفتے  </string>
     <string name="month"> مہینہ  </string>
     <string name="year"> سال </string>

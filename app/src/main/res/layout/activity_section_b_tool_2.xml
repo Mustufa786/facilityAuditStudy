@@ -175,7 +175,8 @@
                         android:enabled="false"
                         android:hint="مکمل سالوں میں"
                         android:inputType="number"
-                        android:maxLength="2" />
+                        android:maxLength="2"
+                        android:text='@{fas02b0102a.checked ? fas02b02.getText.toString : ""}' />
 
 
                 </LinearLayout>
@@ -698,7 +699,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                            android:hint="@string/other"
+                            android:hint="@string/specify"
                             android:inputType="text"
                             android:tag="fas02b0896"
                             android:text='@{fas02b0896.checked? fas02b0896x.getText.toString : ""}'
@@ -797,7 +798,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                            android:hint="@string/other"
+                            android:hint="@string/specify"
                             android:inputType="text"
                             android:tag="fas02b0996"
                             android:text='@{fas02b0996.checked? fas02b0996x.getText.toString : ""}'
@@ -912,7 +913,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                            android:hint="@string/other"
+                            android:hint="@string/specify"
                             android:inputType="text"
                             android:tag="fas02b1096"
                             android:text='@{fas02b1096.checked? fas02b1096x.getText.toString : ""}'

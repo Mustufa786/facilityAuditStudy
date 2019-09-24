@@ -336,7 +336,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="fas02c0496"
                                     android:text='@{fas02c0496.checked ? fas02c0496x.getText.toString : ""}'
@@ -534,7 +534,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="fas02c0696"
                                     android:text='@{fas02c0696.checked ? fas02c0696x.getText.toString : ""}'
@@ -668,7 +668,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_margin="10dp"
                                         android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                        android:hint="@string/other"
+                                        android:hint="@string/specify"
                                         android:inputType="text"
                                         android:tag="fas02c0796"
                                         android:text='@{fas02c0796.checked ? fas02c0796x.getText.toString : ""}'
@@ -773,7 +773,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_margin="10dp"
                                         android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                        android:hint="@string/other"
+                                        android:hint="@string/specify"
                                         android:inputType="text"
                                         android:tag="fas02c0896"
                                         android:text='@{fas02c0896.checked ? fas02c0896x.getText.toString : ""}'
@@ -1067,7 +1067,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_margin="10dp"
                                         android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                        android:hint="@string/other"
+                                        android:hint="@string/specify"
                                         android:inputType="text"
                                         android:tag="fas02c1396"
                                         android:text='@{fas02c1396.checked ? fas02c1396x.getText.toString : ""}'
@@ -1518,7 +1518,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="fas02c19f"
                                     android:text='@{fas02c19f.checked ? fas02c19fx.getText.toString : ""}'
@@ -1552,7 +1552,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="fas02c19h"
                                     android:text='@{fas02c19h.checked ? fas02c19hx.getText.toString : ""}'
@@ -1581,7 +1581,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="fas02c1996"
                                     android:text='@{fas02c1996.checked ? fas02c1996x.getText.toString : ""}'
@@ -1718,7 +1718,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="fas02c2096"
                                     android:text='@{fas02c2096.checked ? fas02c2096x.getText.toString : ""}'
@@ -1868,7 +1868,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="fas02c2196"
                                     android:text='@{fas02c2196.checked ? fas02c2196x.getText.toString : ""}'
@@ -1974,7 +1974,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="fas02c2296"
                                     android:text='@{fas02c2296.checked ? fas02c2296x.getText.toString : ""}'
@@ -2681,7 +2681,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="fas02c2696"
                                     android:text='@{fas02c2696.checked ? fas02c2696x.getText.toString : ""}'
@@ -2786,7 +2786,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="fas02c2796"
                                     android:text='@{fas02c2796.checked ? fas02c2796x.getText.toString : ""}'
@@ -2882,7 +2882,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="fas02c2896"
                                     android:text='@{fas02c2896.checked ? fas02c2896x.getText.toString : ""}'

@@ -239,7 +239,7 @@
                                 android:id="@+id/hfa180296x"
                                 style="@style/textInput"
                                 android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                android:hint="@string/other"
+                                android:hint="@string/specify"
                                 android:inputType="text"
                                 android:tag="hfa180296"
                                 android:text='@{hfa180296.checked? hfa180296x.getText.toString : ""}'
@@ -401,7 +401,7 @@
                                     android:id="@+id/hfa180496x"
                                     style="@style/textInput"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="hfa180496"
                                     android:text='@{hfa180496.checked? hfa180496x.getText.toString : ""}'
@@ -553,7 +553,7 @@
                                     android:id="@+id/hfa180696x"
                                     style="@style/textInput"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="hfa180696"
                                     android:text='@{hfa180696.checked? hfa180696x.getText.toString : ""}'
@@ -712,7 +712,7 @@
                                     android:id="@+id/hfa180896x"
                                     style="@style/textInput"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="hfa180896"
                                     android:text='@{hfa180896.checked? hfa180896x.getText.toString : ""}'
@@ -808,7 +808,7 @@
                                     android:id="@+id/hfa180996x"
                                     style="@style/textInput"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:inputType="text"
                                     android:tag="hfa180996"
                                     android:text='@{hfa180996.checked? hfa180996x.getText.toString : ""}'

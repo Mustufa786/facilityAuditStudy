@@ -147,11 +147,11 @@ public class InfoActivity extends AppCompatActivity {
                 if (i == 0) return;
 
                 //Tehsil
-                tehsil_code = new ArrayList<>();
+                /*tehsil_code = new ArrayList<>();
                 List<String> tehsil_names = new ArrayList<>();
                 tehsil_code.add("1234");
                 tehsil_names.add("Working");
-                bi.hfa1103d.setAdapter(new ArrayAdapter<>(InfoActivity.this, android.R.layout.simple_spinner_dropdown_item, tehsil_names));
+                bi.hfa1103d.setAdapter(new ArrayAdapter<>(InfoActivity.this, android.R.layout.simple_spinner_dropdown_item, tehsil_names));*/
 
 
                 //UC

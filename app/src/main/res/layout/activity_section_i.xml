@@ -132,7 +132,7 @@
                                     android:id="@+id/hfa190296x"
                                     style="@style/EditText"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:tag="hfa190296"
                                     android:text='@{hfa190296.checked ? hfa190296x.getText.toString : ""}'
                                     android:visibility='@{hfa190296.checked? View.VISIBLE : View.GONE}' />
@@ -291,7 +291,7 @@
                                     android:id="@+id/hfa190596x"
                                     style="@style/EditText"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/other"
+                                    android:hint="@string/specify"
                                     android:tag="hfa190596"
                                     android:text='@{hfa190596.checked ? hfa190596x.getText.toString : ""}'
                                     android:visibility='@{hfa190596.checked? View.VISIBLE : View.GONE}' />

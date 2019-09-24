@@ -121,7 +121,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <!--hfa1103d-->
+                <!--hfa1103d--><!--
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout
@@ -154,7 +154,7 @@
 
                     </LinearLayout>
 
-                </android.support.v7.widget.CardView>
+                </android.support.v7.widget.CardView>-->
 
                 <!--hfa1103b-->
                 <android.support.v7.widget.CardView style="@style/cardView">
@@ -486,7 +486,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_margin="10dp"
                                 android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                android:hint="@string/other"
+                                android:hint="@string/specify"
                                 android:inputType="text"
                                 android:tag="hfa110496"
                                 android:text='@{hfa110496.checked? hfa110496x.getText.toString : ""}'
@@ -691,7 +691,7 @@
                 <!--android:layout_height="wrap_content"-->
                 <!--android:layout_margin="10dp"-->
                 <!--android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"-->
-                <!--android:hint="@string/other"-->
+                <!--android:hint="@string/specify"-->
                 <!--android:inputType="text"-->
                 <!--android:tag="hfa1113a"-->
                 <!--android:text='@{hfa1113a.checked? hfa111396x.getText.toString : ""}'-->

@@ -127,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                 android:maxLength="40"
-                android:text="@string/other" />-->
+                android:text="@string/specify" />-->
 
             <Button
                 android:id="@+id/btn_End"

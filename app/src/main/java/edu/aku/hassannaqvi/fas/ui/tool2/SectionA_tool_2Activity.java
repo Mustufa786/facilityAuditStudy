@@ -107,11 +107,11 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
                 if (i == 0) return;
 
                 //Tehsil
-                tehsil_code = new ArrayList<>();
+                /*tehsil_code = new ArrayList<>();
                 List<String> tehsil_names = new ArrayList<>();
                 tehsil_code.add("1234");
                 tehsil_names.add("Working");
-                bi.fas02a001d.setAdapter(new ArrayAdapter<>(SectionA_tool_2Activity.this, android.R.layout.simple_spinner_dropdown_item, tehsil_names));
+                bi.fas02a001d.setAdapter(new ArrayAdapter<>(SectionA_tool_2Activity.this, android.R.layout.simple_spinner_dropdown_item, tehsil_names));*/
 
 
                 //UC
@@ -254,8 +254,10 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         fc.setUccode(bi.fas02a001b.getSelectedItemPosition());
         fc.setHfcode();*/
         fc.setDistrictcode(hfaMap.get(bi.fas02a001c.getSelectedItem().toString()).getDist_code());
+        //fc.setTehsilcode(hfaMap.get(bi.fas02a001c.getSelectedItem().toString()).getTehsil_code());
         fc.setUccode(hfaMap.get(bi.fas02a001c.getSelectedItem().toString()).getUc_code());
         fc.setHfcode(hfaMap.get(bi.fas02a001c.getSelectedItem().toString()).getHf_code());
+        fc.setHfname(hfaMap.get(bi.fas02a001c.getSelectedItem().toString()).getHf_name());
         setGPS(fc);
 
         JSONObject s01 = new JSONObject();
@@ -264,7 +266,6 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
                 : bi.fas02a00b.isChecked() ? "4"
                 : "0");
 
-        s01.put("fas02a001", bi.fas02a001.getText().toString());
         s01.put("fas02a002", bi.fas02a002.getText().toString());
         s01.put("fas02a003", bi.fas02a003.getText().toString());
 

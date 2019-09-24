@@ -226,7 +226,7 @@
                                 android:id="@+id/hfa130496x"
                                 style="@style/textInput"
                                 android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                android:hint="@string/other"
+                                android:hint="@string/specify"
                                 android:inputType="text"
                                 android:tag="hfa130496"
                                 android:text='@{hfa130496.checked? hfa130496x.getText.toString : ""}'
