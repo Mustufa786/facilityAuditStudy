@@ -1463,7 +1463,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
-                                    android:text="@string/fas02c19f" />
+                                    android:text="@string/other" />
 
                                 <EditText
                                     android:id="@+id/fas02c19fx"

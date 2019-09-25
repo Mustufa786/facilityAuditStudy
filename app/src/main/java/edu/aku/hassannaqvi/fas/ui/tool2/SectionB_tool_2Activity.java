@@ -75,9 +75,40 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
 
             }
         });
+
+
+        bi.fas02b0100ax.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                if (!s.toString().equalsIgnoreCase("")) {
+                    bi.fas02b02.setText(String.valueOf(DateUtils.ageInYearByDOB(bi.fas02b0100ax.getText().toString())));
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
     }
 
     private void setListeners() {
+
+//        fas02b0100
+        bi.fas02b0100.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.fas02b0100a.getId())
+                    ClearClass.ClearAllCardFields(bi.llfas02b0100);
+            }
+        });
 
 //        fas02b03
         bi.fas02b03.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -136,6 +167,12 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
     private void SaveDraft() throws JSONException {
 
         JSONObject s02 = new JSONObject();
+
+        s02.put("fas02b0100",
+                bi.fas02b0100a.isChecked() ? "1"
+                        : bi.fas02b0100b.isChecked() ? "98"
+                        : "0");
+        s02.put("fas02b0100ax", bi.fas02b0100ax.getText().toString());
 
         s02.put("fas02b0101",
                 bi.fas02b0101a.isChecked() ? "1"

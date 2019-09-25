@@ -46,95 +46,148 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:background="@color/colorPrimaryAlpha"
-                        android:text="@string/month"
+                        android:text="@string/fas02b0100"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white"
                         android:textSize="20sp" />
 
                     <RadioGroup
-                        android:id="@+id/fas02b0101"
+                        android:id="@+id/fas02b0100"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <RadioButton
-                            android:id="@+id/fas02b0101a"
+                            android:id="@+id/fas02b0100a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
-                            android:text="@string/month" />
+                            android:text="@string/fas02b0100" />
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/fas02b0101ax"
+                        <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
+                            android:id="@+id/fas02b0100ax"
                             style="@style/textInput"
-                            android:hint="@string/month"
-                            android:inputType="number"
-                            android:maxLength="2"
-                            android:tag="fas02b0101a"
-                            android:text='@{fas02b0101a.checked ? fas02b0101ax.getText.toString : ""}'
-                            android:visibility='@{fas02b0101a.checked ? View.VISIBLE : View.GONE}'
-                            app:maxValue="11"
-                            app:minValue="1"
-                            app:type="range" />
+                            android:focusable="false"
+                            android:hint="DD/MM/YYYY"
+                            android:text='@{fas02b0100a.checked ? fas02b0100ax.getText.toString : ""}'
+                            android:textColor="@android:color/black"
+                            android:visibility='@{fas02b0100a.checked ? View.VISIBLE : View.GONE}'
+                            app:dateFormat="dd-MM-yyyy"
+                            app:maxDate="CR_DATE" />
 
                         <RadioButton
-                            android:id="@+id/fas02b0101b"
+                            android:id="@+id/fas02b0100b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
-                            android:text="@string/fas02b0101b" />
-
+                            android:text="@string/fas02b0100b" />
 
                     </RadioGroup>
 
-                    <TextView
+                    <LinearLayout
+                        android:id="@+id/llfas02b0100"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimaryAlpha"
-                        android:text="@string/year"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        android:orientation="vertical"
+                        android:visibility='@{fas02b0100a.checked ? View.GONE : View.VISIBLE}'>
 
-                    <RadioGroup
-                        android:id="@+id/fas02b0102"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <RadioButton
-                            android:id="@+id/fas02b0102a"
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:layout_weight="1"
-                            android:text="@string/year" />
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimaryAlpha"
+                            android:text="@string/month"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/fas02b0102ax"
-                            style="@style/textInput"
-                            android:hint="@string/year"
-                            android:inputType="number"
-                            android:maxLength="4"
-                            android:tag="fas02b0102a"
-                            android:text='@{fas02b0102a.checked ? fas02b0102ax.getText.toString : ""}'
-                            android:visibility='@{fas02b0102a.checked ? View.VISIBLE : View.GONE}'
-                            app:maxValue="2019"
-                            app:minValue="1920"
-                            app:type="range" />
-
-                        <RadioButton
-                            android:id="@+id/fas02b0102b"
+                        <RadioGroup
+                            android:id="@+id/fas02b0101"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:layout_weight="1"
-                            android:text="@string/fas02b0102b" />
+                            android:orientation="vertical">
 
-                    </RadioGroup>
+                            <RadioButton
+                                android:id="@+id/fas02b0101a"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/month" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/fas02b0101ax"
+                                style="@style/textInput"
+                                android:hint="@string/month"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="fas02b0101a"
+                                android:text='@{fas02b0101a.checked ? fas02b0101ax.getText.toString : ""}'
+                                android:visibility='@{fas02b0101a.checked ? View.VISIBLE : View.GONE}'
+                                app:maxValue="11"
+                                app:minValue="1"
+                                app:type="range" />
+
+                            <RadioButton
+                                android:id="@+id/fas02b0101b"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/fas02b0101b" />
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimaryAlpha"
+                            android:text="@string/year"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <RadioGroup
+                            android:id="@+id/fas02b0102"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/fas02b0102a"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/year" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/fas02b0102ax"
+                                style="@style/textInput"
+                                android:hint="@string/year"
+                                android:inputType="number"
+                                android:maxLength="4"
+                                android:tag="fas02b0102a"
+                                android:text='@{fas02b0102a.checked ? fas02b0102ax.getText.toString : ""}'
+                                android:visibility='@{fas02b0102a.checked ? View.VISIBLE : View.GONE}'
+                                app:maxValue="2019"
+                                app:minValue="1920"
+                                app:type="range" />
+
+                            <RadioButton
+                                android:id="@+id/fas02b0102b"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/fas02b0102b" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -143,7 +196,7 @@
             <!--fas02b02-->
             <android.support.v7.widget.CardView
                 style="@style/cardView"
-                android:visibility='@{fas02b0102a.checked? View.VISIBLE : View.GONE}'>
+                android:visibility='@{fas02b0102a.checked || fas02b0100a.checked ? View.VISIBLE : View.GONE}'>
 
                 <LinearLayout style="@style/linerlayout_view">
 
@@ -166,7 +219,7 @@
                         android:hint="مکمل سالوں میں"
                         android:inputType="number"
                         android:maxLength="2"
-                        android:text='@{fas02b0102a.checked ? fas02b02.getText.toString : ""}' />
+                        android:text='@{fas02b0102a.checked || fas02b0100a.checked ? fas02b02.getText.toString : ""}' />
 
 
                 </LinearLayout>

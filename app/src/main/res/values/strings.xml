@@ -375,6 +375,8 @@
 
     <!--Section B-->
     <string name="fas02b01"> آپ کی پیدائش کس مہینے اور سال میں ہوئی تھی </string>
+    <string name="fas02b0100"> تاریخ پیدائش </string>
+    <string name="fas02b0100b"> تاریخ پیدائش معلوم نہیں </string>
     <string name="fas02b0101b"> مہینہ معلوم نہیں </string>
     <string name="fas02b0102b"> سال معلوم نہیں </string>
 

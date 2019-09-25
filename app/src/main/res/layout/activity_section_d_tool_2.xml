@@ -66,9 +66,7 @@
                                 android:layout_weight="1"
                                 android:text="@string/no" />
 
-
                         </RadioGroup>
-
 
                     </LinearLayout>
 
@@ -381,7 +379,6 @@
                                 android:layout_weight="1"
                                 android:text="@string/fas02d04m" />
 
-
                         </LinearLayout>
 
                         <CheckBox
@@ -527,7 +524,6 @@
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
                                 android:text="@string/fas02d06h" />
-
 
                         </LinearLayout>
 
