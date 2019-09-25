@@ -407,9 +407,7 @@
 
                         <EditText
                             android:id="@+id/hfa1712"
-                            style="@style/textInput"
-
-                            />
+                            style="@style/textInput" />
 
 
                     </LinearLayout>
@@ -433,10 +431,7 @@
 
                         <EditText
                             android:id="@+id/hfa1713"
-                            style="@style/textInput"
-
-
-                            />
+                            style="@style/textInput" />
 
 
                     </LinearLayout>

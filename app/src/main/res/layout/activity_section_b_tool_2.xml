@@ -68,9 +68,6 @@
                         <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/fas02b0101ax"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:hint="@string/month"
                             android:inputType="number"
                             android:maxLength="2"
@@ -119,9 +116,6 @@
                         <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/fas02b0102ax"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:hint="@string/year"
                             android:inputType="number"
                             android:maxLength="4"
@@ -167,11 +161,7 @@
                     <EditText
                         android:id="@+id/fas02b02"
                         style="@style/textInput"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:clickable="false"
-                        android:editable="false"
                         android:enabled="false"
                         android:hint="مکمل سالوں میں"
                         android:inputType="number"
@@ -297,7 +287,6 @@
 
                         </RadioGroup>
 
-
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -324,13 +313,9 @@
                         <EditText
                             android:id="@+id/fas02b05"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:hint="@string/fas02b05"
                             android:inputType="number"
                             android:maxLength="2" />
-
 
                     </LinearLayout>
 
@@ -408,7 +393,6 @@
                             android:text="@string/refused" />
 
                     </RadioGroup>
-
 
                 </LinearLayout>
 
@@ -606,9 +590,7 @@
                             android:layout_weight="1"
                             android:text="@string/no" />
 
-
                     </RadioGroup>
-
 
                 </LinearLayout>
 
@@ -695,9 +677,6 @@
                         <EditText
                             android:id="@+id/fas02b0896x"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/specify"
                             android:inputType="text"
@@ -705,9 +684,7 @@
                             android:text='@{fas02b0896.checked? fas02b0896x.getText.toString : ""}'
                             android:visibility='@{fas02b0896.checked? View.VISIBLE : View.GONE}' />
 
-
                     </RadioGroup>
-
 
                 </LinearLayout>
 
@@ -727,7 +704,6 @@
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white"
                         android:textSize="20sp" />
-
 
                     <RadioGroup
                         android:id="@+id/fas02b09"
@@ -794,9 +770,6 @@
                         <EditText
                             android:id="@+id/fas02b0996x"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/specify"
                             android:inputType="text"
@@ -804,9 +777,7 @@
                             android:text='@{fas02b0996.checked? fas02b0996x.getText.toString : ""}'
                             android:visibility='@{fas02b0996.checked? View.VISIBLE : View.GONE}' />
 
-
                     </RadioGroup>
-
 
                 </LinearLayout>
 
@@ -826,7 +797,6 @@
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white"
                         android:textSize="20sp" />
-
 
                     <RadioGroup
                         android:id="@+id/fas02b10"
@@ -909,9 +879,6 @@
                         <EditText
                             android:id="@+id/fas02b1096x"
                             style="@style/textInput"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/specify"
                             android:inputType="text"
@@ -919,9 +886,7 @@
                             android:text='@{fas02b1096.checked? fas02b1096x.getText.toString : ""}'
                             android:visibility='@{fas02b1096.checked? View.VISIBLE : View.GONE}' />
 
-
                     </RadioGroup>
-
 
                 </LinearLayout>
 
@@ -941,7 +906,6 @@
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white"
                         android:textSize="20sp" />
-
 
                     <RadioGroup
                         android:id="@+id/fas02b11"
@@ -997,9 +961,7 @@
                             android:layout_weight="1"
                             android:text="@string/dkn" />
 
-
                     </RadioGroup>
-
 
                 </LinearLayout>
 

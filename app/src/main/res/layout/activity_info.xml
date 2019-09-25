@@ -482,9 +482,6 @@
                             <EditText
                                 android:id="@+id/hfa110496x"
                                 style="@style/textInput"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                 android:hint="@string/specify"
                                 android:inputType="text"
@@ -687,9 +684,6 @@
                 <!--<EditText-->
                 <!--android:id="@+id/hfa111396x"-->
                 <!--style="@style/textInput"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_margin="10dp"-->
                 <!--android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"-->
                 <!--android:hint="@string/specify"-->
                 <!--android:inputType="text"-->

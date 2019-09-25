@@ -62,23 +62,14 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a_tool_2);
         bi.setCallback(this);
         setContentUI();
+
+
     }
+
 
     private void setContentUI() {
         this.setTitle(R.string.section1_tool2);
         deviceID = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
-
-        bi.fas02a07.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-                if (checkedId == bi.fas02a07a.getId()) {
-                    ClearClass.ClearAllFields(bi.fas02a08cv, null);
-                } else {
-                    ClearClass.ClearAllFields(bi.fas02a08cv, null);
-                }
-            }
-        });
 
 
         //districts
@@ -181,7 +172,6 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i == 0) return;
                 bi.fas02a001.setText(hfaMap.get(bi.fas02a001c.getSelectedItem().toString()).getHf_code());
-                //bi.fas02a002.setText(hfaMap.get(bi.fas02a001c.getSelectedItem().toString()).getHf_name());
             }
 
             @Override
@@ -189,6 +179,20 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
 
             }
         });
+
+
+        bi.fas02a07.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == bi.fas02a07a.getId()) {
+                    ClearClass.ClearAllFields(bi.fas02a08cv, null);
+                } else {
+                    ClearClass.ClearAllFields(bi.fas02a08cv, null);
+                }
+            }
+        });
+
     }
 
     public void BtnContinue() {
