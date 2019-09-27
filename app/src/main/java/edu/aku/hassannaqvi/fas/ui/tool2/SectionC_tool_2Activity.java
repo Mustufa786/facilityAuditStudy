@@ -3,8 +3,6 @@ package edu.aku.hassannaqvi.fas.ui.tool2;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -114,39 +112,20 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         });
 
 
-//        fas02c16
-        bi.fas02c16.addTextChangedListener(new TextWatcher() {
+        //fas02c15
+        bi.fas02c15.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if (bi.fas02c16.getText().toString().length() > 0) {
-                    bi.fas02c1698.setChecked(false);
-                    bi.fas02c1698.setEnabled(false);
+                if (checkedId == bi.fas02c15b.getId()) {
+                    ClearClass.ClearAllFields(bi.fas02c16cv, null);
+                    bi.fas02c16cv.setVisibility(View.GONE);
                 } else {
-                    bi.fas02c1698.setEnabled(true);
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
-        bi.fas02c1698.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b) {
-                    bi.fas02c16.setText(null);
-                    bi.fas02c16.setEnabled(false);
-                } else {
-                    bi.fas02c16.setEnabled(true);
+                    bi.fas02c16cv.setVisibility(View.VISIBLE);
                 }
             }
         });
+
 
         bi.fas02c27.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -158,16 +137,6 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
             }
         });
 
-        bi.fas02c15.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-                if (checkedId == bi.fas02c15b.getId()) {
-                    bi.fas02c16.setText(null);
-                    bi.fas02c1698.setChecked(false);
-                }
-            }
-        });
 
 //        fas02c26f
         bi.fas02c26f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -388,8 +357,8 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         s03.put("fas02c09m", bi.fas02c09m.getText().toString());
 
 
+        s03.put("fas02c10", bi.fas02c10.getText().toString());
         s03.put("fas02c1098", bi.fas02c1098.isChecked() ? "98" : "0");
-        s03.put("fas02c10t", bi.fas02c10t.getText().toString());
 
 
         s03.put("fas02c11", bi.fas02c11a.isChecked() ? "1"

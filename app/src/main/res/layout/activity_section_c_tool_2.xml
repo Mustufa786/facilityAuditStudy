@@ -925,12 +925,12 @@
                                     android:textSize="20sp" />
 
                                 <EditText
-                                    android:id="@+id/fas02c10t"
+                                    android:id="@+id/fas02c10"
                                     style="@style/textInput"
-                                    android:hint="@string/times"
+                                    android:hint="@string/num"
                                     android:inputType="number"
                                     android:maxLength="2"
-                                    android:text='@{fas02c1098.checked ? "" : fas02c10t.getText().toString()}'
+                                    android:text='@{fas02c1098.checked ? "" : fas02c10.getText().toString()}'
                                     android:visibility='@{fas02c1098.checked ? View.GONE : View.VISIBLE }' />
 
                                 <CheckBox
@@ -1310,33 +1310,28 @@
 
                         <!--fas02c16-->
                         <android.support.v7.widget.CardView
-
-                            style="@style/cardView"
-                            android:visibility='@{fas02c13b.checked? View.GONE : View.VISIBLE}'>
+                            android:id="@+id/fas02c16cv"
+                            style="@style/cardView">
 
                             <LinearLayout style="@style/linerlayout_view">
 
                                 <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_horizontal"
-                                    android:background="@color/colorPrimary"
-                                    android:text="@string/fas02c16"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@android:color/white"
-                                    android:textSize="20sp" />
+                                    style="@style/i_textview"
+                                    android:text="@string/fas02c16" />
 
                                 <EditText
                                     android:id="@+id/fas02c16"
                                     style="@style/textInput"
                                     android:hint="تعداد"
-                                    android:inputType="number" />
+                                    android:inputType="number"
+                                    android:maxLength="1"
+                                    android:text='@{fas02c1698.checked ? "" : fas02c16.getText().toString() }'
+                                    android:visibility='@{fas02c1698.checked ? View.GONE : View.VISIBLE }' />
 
                                 <CheckBox
                                     android:id="@+id/fas02c1698"
                                     style="@style/checkbox"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:tag="-1"
                                     android:text="@string/dkn" />
 
 
@@ -1358,7 +1353,6 @@
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@android:color/white"
                                     android:textSize="20sp" />
-
 
                                 <RadioGroup
                                     android:id="@+id/fas02c17"
@@ -1390,9 +1384,7 @@
                                         android:layout_weight="1"
                                         android:text="@string/dkn" />
 
-
                                 </RadioGroup>
-
 
                             </LinearLayout>
 
@@ -1444,9 +1436,7 @@
                                         android:layout_weight="1"
                                         android:text="@string/dkn" />
 
-
                                 </RadioGroup>
-
 
                             </LinearLayout>
 
@@ -1470,15 +1460,8 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/fas02c19"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
-
+                                style="@style/i_textview"
+                                android:text="@string/fas02c19" />
 
                             <RadioGroup
                                 android:id="@+id/fas02c19"
@@ -1503,7 +1486,7 @@
                                     android:text="@string/fas02c19b" />
 
                                 <TextView
-                                    style="@style/textView2"
+                                    style="@style/i_textview_h"
                                     android:text="Public Health Sector" />
 
                                 <RadioButton
