@@ -77,6 +77,7 @@ public class MainApp extends Application {
     public static String[] loginMem;
     public static String userName2 = "0000";
     public static String IMEI;
+    public static String WI2C;
     protected static LocationManager locationManager;
 
     public static String getTagName(Context mContext) {

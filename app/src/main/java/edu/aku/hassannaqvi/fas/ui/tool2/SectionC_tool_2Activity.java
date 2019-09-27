@@ -14,7 +14,6 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.Calendar;
 import java.util.concurrent.ExecutionException;
 
 import edu.aku.hassannaqvi.fas.R;
@@ -48,6 +47,13 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         this.setTitle(R.string.section3_tool2);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
+        if (MainApp.WI2C.equals("1")) {
+            bi.fas02c11cv.setVisibility(View.VISIBLE);
+        } else {
+            ClearClass.ClearAllFields(bi.fas02c11cv, null);
+            bi.fas02c11cv.setVisibility(View.GONE);
+        }
+
         ClearClass.ClearAllFields(bi.fas02c00, false);
 
         String getSurvey = MainApp.getParamValue(this, CONSTANTS._URI_DATAMAP_02_SURVEY_TYPE);
@@ -60,9 +66,6 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
 
     private void setListenersUI() {
-
-        bi.fas02c02y.setMax(Calendar.getInstance().get(Calendar.YEAR));
-        bi.fas02c02y.setMin(1920);
 
         //fas02c01
         bi.fas02c01.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -110,41 +113,6 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
             }
         });
 
-
-//        fas02c10t
-        bi.fas02c10t.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if (bi.fas02c10t.getText().toString().length() > 0) {
-                    bi.fas02c1098.setChecked(false);
-                    bi.fas02c1098.setEnabled(false);
-                } else {
-                    bi.fas02c1098.setEnabled(true);
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
-
-        bi.fas02c1098.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b) {
-                    bi.fas02c10t.setText(null);
-                    bi.fas02c10t.setEnabled(false);
-                } else {
-                    bi.fas02c10t.setEnabled(true);
-                }
-            }
-        });
 
 //        fas02c16
         bi.fas02c16.addTextChangedListener(new TextWatcher() {
@@ -220,8 +188,11 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         bi.fas02c12.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i != bi.fas02c12a.getId()) {
-                    ClearClass.ClearAllFields(bi.fldGrpfas02c13, null);
+                if (i == bi.fas02c12a.getId()) {
+                    bi.fas02c13cv.setVisibility(View.VISIBLE);
+                } else {
+                    ClearClass.ClearAllFields(bi.fas02c13cv, null);
+                    bi.fas02c13cv.setVisibility(View.GONE);
                 }
             }
         });
@@ -628,7 +599,7 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
                         : "0");
         s03.put("fas02c2796x", bi.fas02c2796x.getText().toString());
 
-        s03.put("fas02c28", bi.fas02c28a.isChecked() ? "1"
+        /*s03.put("fas02c28", bi.fas02c28a.isChecked() ? "1"
                 : bi.fas02c28b.isChecked() ? "2"
                 : bi.fas02c28c.isChecked() ? "3"
                 : bi.fas02c28d.isChecked() ? "4"
@@ -636,7 +607,7 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
                 : bi.fas02c28f.isChecked() ? "6"
                 : bi.fas02c2896.isChecked() ? "96"
                         : "0");
-        s03.put("fas02c2896x", bi.fas02c2896x.getText().toString());
+        s03.put("fas02c2896x", bi.fas02c2896x.getText().toString());*/
 
         fc.setSa3(String.valueOf(s03));
 
@@ -651,8 +622,13 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
             if (Integer.parseInt(bi.fas02c02m.getText().toString().trim()) + Integer.parseInt(bi.fas02c02y.getText().toString().trim()) == 0) {
                 return ValidatorClass.EmptyCustomeTextBox(this, bi.fas02c02m, "Month & Year both can't be Zero!!");
             }
-            if (Integer.parseInt(String.valueOf(bi.fas02c02y.getText().toString().trim().length())) != 4) {
-                return ValidatorClass.EmptyCustomeTextBox(this, bi.fas02c02y, "Year format YYYY");
+            if (Integer.parseInt(bi.fas02c02y.getText().toString().trim()) == 2019) {
+                bi.fas02c02m.setMax(8);
+                return ValidatorClass.EmptyCustomeTextBox(this, bi.fas02c02m, "Max date is August 2019");
+            }
+            if (Integer.parseInt(bi.fas02c02y.getText().toString().trim()) == 2018) {
+                bi.fas02c02m.setMin(9);
+                return ValidatorClass.EmptyCustomeTextBox(this, bi.fas02c02m, "Min date is September 2018");
             }
             //return ValidatorClass.EmptyCustomeTextBox(this, bi.pocfk06b, "please check below question!!");
         }

@@ -88,7 +88,6 @@
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
-
                         <EditText
                             android:id="@+id/fas02cmw01"
                             style="@style/textInput"
@@ -96,7 +95,6 @@
                             android:hint="@string/fas02a01"
                             android:inputType="number"
                             android:maxLength="6" />
-
 
                     </LinearLayout>
 
@@ -202,7 +200,7 @@
                                 android:hint="@string/month"
                                 android:inputType="number"
                                 android:maxLength="2"
-                                app:maxValue="11"
+                                app:maxValue="12"
                                 app:minValue="1"
                                 app:type="range" />
 
@@ -213,7 +211,7 @@
                                 android:inputType="number"
                                 android:maxLength="4"
                                 app:maxValue="2019"
-                                app:minValue="1920"
+                                app:minValue="2018"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -931,13 +929,14 @@
                                     style="@style/textInput"
                                     android:hint="@string/times"
                                     android:inputType="number"
-                                    android:maxLength="2" />
+                                    android:maxLength="2"
+                                    android:text='@{fas02c1098.checked ? "" : fas02c10t.getText().toString()}'
+                                    android:visibility='@{fas02c1098.checked ? View.GONE : View.VISIBLE }' />
 
                                 <CheckBox
                                     android:id="@+id/fas02c1098"
                                     style="@style/checkbox"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:tag="-1"
                                     android:text="@string/dkn" />
 
                             </LinearLayout>
@@ -945,7 +944,9 @@
                         </android.support.v7.widget.CardView>
 
                         <!--fas02c11-->
-                        <android.support.v7.widget.CardView style="@style/cardView">
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/fas02c11cv"
+                            style="@style/cardView">
 
                             <LinearLayout style="@style/linerlayout_view">
 
@@ -1033,9 +1034,8 @@
 
                         <!--fas02c13-->
                         <android.support.v7.widget.CardView
-                            android:id="@+id/fldGrpfas02c13"
-                            style="@style/cardView"
-                            android:visibility="@{fas02c12a.checked ? View.VISIBLE : View.GONE}">
+                            android:id="@+id/fas02c13cv"
+                            style="@style/cardView">
 
                             <LinearLayout style="@style/linerlayout_view">
 
@@ -1302,9 +1302,7 @@
                                         android:layout_weight="1"
                                         android:text="@string/dkn" />
 
-
                                 </RadioGroup>
-
 
                             </LinearLayout>
 
@@ -2804,97 +2802,97 @@
                     </android.support.v7.widget.CardView>
 
                     <!--fas02c28-->
-                    <android.support.v7.widget.CardView style="@style/cardView">
+                    <!-- <android.support.v7.widget.CardView style="@style/cardView">
 
-                        <LinearLayout style="@style/linerlayout_view">
+                         <LinearLayout style="@style/linerlayout_view">
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/fas02c28"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                             <TextView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_gravity="center_horizontal"
+                                 android:background="@color/colorPrimary"
+                                 android:text="@string/fas02c28"
+                                 android:textAppearance="?android:attr/textAppearanceLarge"
+                                 android:textColor="@android:color/white"
+                                 android:textSize="20sp" />
 
-                            <RadioGroup
-                                android:id="@+id/fas02c2801"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                             <RadioGroup
+                                 android:id="@+id/fas02c2801"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:orientation="vertical">
 
-                                <RadioButton
-                                    android:id="@+id/fas02c28a"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:layout_weight="1"
-                                    android:text="@string/fas02c28a" />
+                                 <RadioButton
+                                     android:id="@+id/fas02c28a"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:layout_marginBottom="1dp"
+                                     android:layout_weight="1"
+                                     android:text="@string/fas02c28a" />
 
-                                <RadioButton
-                                    android:id="@+id/fas02c28b"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:layout_weight="1"
-                                    android:text="@string/fas02c28b" />
+                                 <RadioButton
+                                     android:id="@+id/fas02c28b"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:layout_marginBottom="1dp"
+                                     android:layout_weight="1"
+                                     android:text="@string/fas02c28b" />
 
-                                <RadioButton
-                                    android:id="@+id/fas02c28c"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:layout_weight="1"
-                                    android:text="@string/fas02c28c" />
+                                 <RadioButton
+                                     android:id="@+id/fas02c28c"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:layout_marginBottom="1dp"
+                                     android:layout_weight="1"
+                                     android:text="@string/fas02c28c" />
 
-                                <RadioButton
-                                    android:id="@+id/fas02c28d"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:layout_weight="1"
-                                    android:text="@string/fas02c28d" />
+                                 <RadioButton
+                                     android:id="@+id/fas02c28d"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:layout_marginBottom="1dp"
+                                     android:layout_weight="1"
+                                     android:text="@string/fas02c28d" />
 
-                                <RadioButton
-                                    android:id="@+id/fas02c28e"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:layout_weight="1"
-                                    android:text="@string/fas02c28e" />
+                                 <RadioButton
+                                     android:id="@+id/fas02c28e"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:layout_marginBottom="1dp"
+                                     android:layout_weight="1"
+                                     android:text="@string/fas02c28e" />
 
-                                <RadioButton
-                                    android:id="@+id/fas02c28f"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:layout_weight="1"
-                                    android:text="@string/fas02c28f" />
+                                 <RadioButton
+                                     android:id="@+id/fas02c28f"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:layout_marginBottom="1dp"
+                                     android:layout_weight="1"
+                                     android:text="@string/fas02c28f" />
 
-                                <RadioButton
-                                    android:id="@+id/fas02c2896"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:layout_weight="1"
-                                    android:text="@string/other" />
+                                 <RadioButton
+                                     android:id="@+id/fas02c2896"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:layout_marginBottom="1dp"
+                                     android:layout_weight="1"
+                                     android:text="@string/other" />
 
-                                <EditText
-                                    android:id="@+id/fas02c2896x"
-                                    style="@style/textInput"
-                                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/specify"
-                                    android:inputType="text"
-                                    android:tag="fas02c2896"
-                                    android:text='@{fas02c2896.checked ? fas02c2896x.getText.toString : ""}'
-                                    android:visibility='@{fas02c2896.checked ? View.VISIBLE : View.GONE}' />
+                                 <EditText
+                                     android:id="@+id/fas02c2896x"
+                                     style="@style/textInput"
+                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                     android:hint="@string/specify"
+                                     android:inputType="text"
+                                     android:tag="fas02c2896"
+                                     android:text='@{fas02c2896.checked ? fas02c2896x.getText.toString : ""}'
+                                     android:visibility='@{fas02c2896.checked ? View.VISIBLE : View.GONE}' />
 
-                            </RadioGroup>
+                             </RadioGroup>
 
-                        </LinearLayout>
+                         </LinearLayout>
 
-                    </android.support.v7.widget.CardView>
+                     </android.support.v7.widget.CardView>-->
 
                 </LinearLayout>
 

@@ -147,6 +147,8 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        MainApp.WI2C = bi.fas02b06a.isChecked() ? "1" : "0";
+
     }
 
     private boolean UpdateDB() {
