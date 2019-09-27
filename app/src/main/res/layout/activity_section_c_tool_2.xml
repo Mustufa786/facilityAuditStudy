@@ -549,6 +549,26 @@
                                     android:textColor="@android:color/white"
                                     android:textSize="20sp" />
 
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@color/colorPrimaryAlpha"
+                                    android:text="@string/fas02c0701"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@color/colorPrimaryAlpha"
+                                    android:text="@string/fas02c0702"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="20sp" />
+
                                 <RadioGroup
                                     android:id="@+id/fas02c07"
                                     android:layout_width="match_parent"
@@ -570,6 +590,16 @@
                                         android:layout_marginBottom="1dp"
                                         android:layout_weight="1"
                                         android:text="@string/fas02c07b" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="@color/colorPrimaryAlpha"
+                                        android:text="@string/fas02c0703"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="20sp" />
 
                                     <RadioButton
                                         android:id="@+id/fas02c07c"
@@ -603,6 +633,26 @@
                                         android:layout_weight="1"
                                         android:text="@string/fas02c07f" />
 
+                                    <EditText
+                                        android:id="@+id/fas02c07fx"
+                                        style="@style/textInput"
+                                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                        android:hint="@string/hfname"
+                                        android:inputType="text"
+                                        android:tag="fas02c07f"
+                                        android:text='@{fas02c07f.checked ? fas02c07fx.getText.toString : ""}'
+                                        android:visibility='@{fas02c07f.checked ? View.VISIBLE : View.GONE}' />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="@color/colorPrimaryAlpha"
+                                        android:text="@string/fas02c0704"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="20sp" />
+
                                     <RadioButton
                                         android:id="@+id/fas02c07g"
                                         android:layout_width="match_parent"
@@ -635,6 +685,32 @@
                                         android:layout_weight="1"
                                         android:text="@string/fas02c07j" />
 
+                                    <EditText
+                                        android:id="@+id/fas02c07jx"
+                                        style="@style/textInput"
+                                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                        android:hint="@string/hfname"
+                                        android:inputType="text"
+                                        android:tag="fas02c07j"
+                                        android:text='@{fas02c07j.checked ? fas02c07jx.getText.toString : ""}'
+                                        android:visibility='@{fas02c07j.checked ? View.VISIBLE : View.GONE}' />
+
+                                    <RadioButton
+                                        android:id="@+id/fas02c07k"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:text="@string/fas02c07k" />
+
+                                    <RadioButton
+                                        android:id="@+id/fas02c07l"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_weight="1"
+                                        android:text="@string/fas02c07l" />
+
 
                                     <RadioButton
                                         android:id="@+id/fas02c0796"
@@ -648,7 +724,7 @@
                                         android:id="@+id/fas02c0796x"
                                         style="@style/textInput"
                                         android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                        android:hint="@string/specify"
+                                        android:hint="@string/hfname"
                                         android:inputType="text"
                                         android:tag="fas02c0796"
                                         android:text='@{fas02c0796.checked ? fas02c0796x.getText.toString : ""}'
