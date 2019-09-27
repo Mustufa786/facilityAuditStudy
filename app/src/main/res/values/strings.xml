@@ -457,15 +457,15 @@
 
     <string name="fas02c05"> جب آپ (نام) کے ساتھ حاملہ تھی تو کیا آپ نے کسی سے اپنا طبی معائنہ کرایا تھا ؟ </string>
 
-    <string name="fas02c06"> (نام) کے ساتھ حمل کے دوران آپ نے اپنا طبی معائنہ کسی سے کیو نہیں کروایا ؟</string>
-    <string name="fas02c06a">خرید بہت زیادہ تھا</string>
-    <string name="fas02c06b"> مرکز صحت کھلانہیں </string>
-    <string name="fas02c06c">بہت دور</string>
-    <string name="fas02c06d"> مرکز صحت پر اعتماد نہیں</string>
-    <string name="fas02c06e">مرکز صحت پر صحت کے دیکھ بھال کے لیے عورت موجود نہیں  </string>
+    <string name="fas02c06"> (نام) کے ساتھ حمل کے دوران آپ نے اپنا طبی معائنہ کسی سے کیو نہیں کروایا؟ </string>
+    <string name="fas02c06a"> خرید بہت زیادہ تھا</string>
+    <string name="fas02c06b"> مرکز صحت کھلا نہیں </string>
+    <string name="fas02c06c"> بہت دور</string>
+    <string name="fas02c06d"> مرکز صحت پر اعتماد نہیں </string>
+    <string name="fas02c06e"> مرکز صحت پر صحت کے دیکھ بھال کے لیے عورت موجود نہیں </string>
     <string name="fas02c06f"> شوہر /فیملی نے اجازت نہیں دی </string>
-    <string name="fas02c06g">ضروری نہیں</string>
-    <string name="fas02c06h">رواج نہیں</string>
+    <string name="fas02c06g"> ضروری نہیں </string>
+    <string name="fas02c06h"> رواج نہیں </string>
     <string name="fas02c06i">ٹراسپورٹ نہیں </string>
     <string name="fas02c06j"> صحت کی سہولیات کا خراب معیار</string>
     <string name="fas02c06k">پراویسی کی کمی/پردے کا انتظام نہیں</string>

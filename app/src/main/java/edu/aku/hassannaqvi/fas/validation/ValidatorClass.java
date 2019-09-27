@@ -48,6 +48,18 @@ public abstract class ValidatorClass {
 
     }
 
+
+    public static boolean EmptyCustomeTextBox(Context context, TextView txt, String msg) {
+        FancyToast.makeText(context, "ERROR: " + msg, FancyToast.LENGTH_SHORT, FancyToast.ERROR, false).show();
+        txt.setError(msg);
+        txt.setFocusableInTouchMode(true);
+        txt.requestFocus();
+        Log.i(context.getClass().getName(), context.getResources().getResourceEntryName(txt.getId()) + ": " + msg);
+        return false;
+    }
+
+
+
     private static boolean EmptyEditTextPicker(Context context, EditText txt, String msg) {
         String messageConv = "";
         boolean flag = true;

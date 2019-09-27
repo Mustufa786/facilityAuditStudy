@@ -78,6 +78,38 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
             }
         });
 
+        //fas02c03
+        bi.fas02c03.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.fas02c03b.getId()) {
+                    bi.fas02c04cv.setVisibility(View.VISIBLE);
+                } else {
+                    ClearClass.ClearAllFields(bi.fas02c04cv, null);
+                    bi.fas02c04cv.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        //fas02c05
+        bi.fas02c05.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                ClearClass.ClearAllFields(bi.fas02c06cv, null);
+                ClearClass.ClearAllFields(bi.fldGrpllSecC02b, null);
+                bi.fas02c06cv.setVisibility(View.GONE);
+                bi.fldGrpllSecC02b.setVisibility(View.GONE);
+
+                if (i == bi.fas02c05b.getId()) {
+                    bi.fas02c06cv.setVisibility(View.VISIBLE);
+                } else if (i != bi.fas02c05b.getId()) {
+                    bi.fldGrpllSecC02b.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
 
 //        fas02c10t
         bi.fas02c10t.addTextChangedListener(new TextWatcher() {
@@ -619,7 +651,22 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecC02);
+
+        if (!ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecC02))
+            return false;
+
+        if (bi.fas02c02m.getVisibility() == View.VISIBLE) {
+            if (Integer.parseInt(bi.fas02c02m.getText().toString().trim()) + Integer.parseInt(bi.fas02c02y.getText().toString().trim()) == 0) {
+                return ValidatorClass.EmptyCustomeTextBox(this, bi.fas02c02m, "Month & Year both can't be Zero!!");
+            }
+            if (Integer.parseInt(String.valueOf(bi.fas02c02y.getText().toString().trim().length())) != 4) {
+                return ValidatorClass.EmptyCustomeTextBox(this, bi.fas02c02y, "Year format YYYY");
+            }
+            //return ValidatorClass.EmptyCustomeTextBox(this, bi.pocfk06b, "please check below question!!");
+        }
+        return true;
+
+
     }
 
     public void BtnEnd() {

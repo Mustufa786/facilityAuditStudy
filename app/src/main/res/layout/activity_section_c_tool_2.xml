@@ -265,8 +265,8 @@
 
                     <!--fas02c04-->
                     <android.support.v7.widget.CardView
-                        style="@style/cardView"
-                        android:visibility="@{fas02c03a.checked ? View.GONE : View.VISIBLE}">
+                        android:id="@+id/fas02c04cv"
+                        style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -385,11 +385,10 @@
 
                     </android.support.v7.widget.CardView>
 
-
                     <!--fas02c06-->
                     <android.support.v7.widget.CardView
-                        style="@style/cardView"
-                        android:visibility="@{fas02c03a.checked ? View.GONE : View.VISIBLE}">
+                        android:id="@+id/fas02c06cv"
+                        style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -531,11 +530,12 @@
 
                     <LinearLayout
                         android:id="@+id/fldGrpllSecC02b"
-                        style="@style/linerlayout_view_wt_bound"
-                        android:visibility="@{fas02c03a.checked ? View.VISIBLE : View.GONE}">
+                        style="@style/linerlayout_view_wt_bound">
 
                         <!--fas02c07-->
-                        <android.support.v7.widget.CardView style="@style/cardView">
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/fas02c07cv"
+                            style="@style/cardView">
 
                             <LinearLayout style="@style/linerlayout_view">
 
@@ -926,7 +926,6 @@
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@android:color/white"
                                     android:textSize="20sp" />
-
 
                                 <RadioGroup
                                     android:id="@+id/fas02c12"
