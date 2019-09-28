@@ -40,7 +40,7 @@
     <string name="almostA">هميشه</string>
 
     <string name="other"> دیگر </string>
-    <string name="specify"> تفصیل </string>
+    <string name="specify"> وضاحت / تفصیل </string>
     <string name="week"> ہفتے  </string>
     <string name="month"> مہینہ  </string>
     <string name="year"> سال </string>
@@ -540,13 +540,16 @@
     <string name="fas02c19Heading"> ابھی میں آپ سے (نام) کی پیدائش سے متعلق سوالات پوچھوں گی </string>
     <string name="fas02c19a"> گھر پر </string>
     <string name="fas02c19b"> مرکز صحت جاتے ہوئے راستے میں </string>
+    <string name="fas02c1901"> عوامی شعبہ </string>
     <string name="fas02c19c"> سرکاری ہسپتال </string>
     <string name="fas02c19d"> آر ایچ سی/ایم سی ایچ </string>
     <string name="fas02c19e"> بی ایچ یو/ایف ڈیلیو سی </string>
-    <string name="fas02c19f"> دیگر وضاحت </string>
-    <string name="fas02c19g"> نجی ہسپتال/کلینک </string>
-    <string name="fas02c19h"> دیگر وضاحت </string>
+    <string name="fas02c19f"> دیگر عوامی شعبہ </string>
+    <string name="fas02c1902"> نجی شعبہ </string>
+    <string name="fas02c19g"> نجی ہسپتال / کلینک </string>
+    <string name="fas02c19h"> دیگر نجی شعبہ </string>
     <string name="fas02c19i"> اے کے ایچ ایس پی کا مرکز صحت </string>
+    <string name="fas02c1996"> دیگر شعبہ </string>
 
     <string name="fas02c20"> (نام) کی کسی مرکز صحت پر پیدائش کیونہیں ہوئی ؟دوسری کوئی وجہ معلوم کرنے کے لیے مزید سوالات پوچھیں تمام جوابات ریکارڈ کریں(نام) </string>
     <string name="fas02c20a"> خرچہ بہت زیادہ </string>
@@ -554,7 +557,7 @@
     <string name="fas02c20c"> بہت دور </string>
     <string name="fas02c20d"> مرکز صحت پر اعتماد نہیں </string>
     <string name="fas02c20e"> مرکز صحت پر دیکھ بھال کے لیے کوئی عورت موجود نہیں </string>
-    <string name="fas02c20f"> شوہر /فیملی نے اجازت نہیں دی </string>
+    <string name="fas02c20f"> شوہر / فیملی نے اجازت نہیں دی </string>
     <string name="fas02c20g"> مرکز صحت پر جانا ضروری نہیں </string>
     <string name="fas02c20h"> رواج نہیں </string>
     <string name="fas02c20i"> ٹرانسپورٹ نہیں </string>
@@ -562,7 +565,9 @@
     <string name="fas02c20k"> ڈیلیوری تیزی سے ہوئی </string>
 
     <string name="fas02c21"> (نام) کے پیدائش کے دوران کس نے مدد کرائی تھی؟ </string>
-    <string name="fas02c21sub"> تمام جوابات ریکارڈ کریں،زچگی میں مدد کرانے والوں کا معلوم کرنے کے لیے پوچھیں ۔اگر جواب دہندہ کہتی ہے کہ کسی نے بھی مدد نہیں کروائی تو پوچھیں آیا کوئی بالغ شخص موجود تھا</string>
+    <string name="fas02c2101"> تمام جوابات ریکارڈ کریں،زچگی میں مدد کرانے والوں کا معلوم کرنے کے لیے پوچھیں ۔اگر جواب دہندہ کہتی ہے کہ کسی نے بھی مدد نہیں کروائی تو پوچھیں آیا کوئی بالغ شخص موجود تھا</string>
+    <string name="fas02c2102"> صحت سے متعلق پیشہ ور </string>
+    <string name="fas02c2103"> کوئی اور فرد </string>
     <string name="fas02c21a"> ڈاکٹر </string>
     <string name="fas02c21b"> نرس </string>
     <string name="fas02c21c"> مڈوائف </string>
@@ -572,13 +577,13 @@
     <string name="fas02c21g"> لیڈی ہیلتھ ورکر </string>
     <string name="fas02c21h"> رشتہ دار/دوست </string>
     <string name="fas02c21i"> خود/کوئی موجود نہیں </string>
-    <string name="fas02c21j"> دوسرا شخص(وضاحت کریں) </string>
+    <string name="fas02c2196"> دوسرا شخص </string>
 
     <string name="fas02c22"> وہ کیا وجوہات تھے جس کے باعث آپ نے (نام) کی پیدائش کے وقت مدد کے لیے دائی / دوست کو ترجیح دی؟ کوئی اور وجہ معلوم کرنے کے لیے پوچھیں تمام جوابات لکھیں </string>
     <string name="fas02c22a"> فاصلہ </string>
     <string name="fas02c22b"> مرکز صحت کے مقابلے میں بہتر دیکھ بھال </string>
     <string name="fas02c22c"> مذہبی وجوہات </string>
-    <string name="fas02c22d"> شوہر/فمیلی کی ترجیح </string>
+    <string name="fas02c22d"> شوہر/فیملی کی ترجیح </string>
     <string name="fas02c22e"> پردہ </string>
     <string name="fas02c22f"> کم خرچہ </string>
     <string name="fas02c22g"> دیگر وضاحت کریں </string>

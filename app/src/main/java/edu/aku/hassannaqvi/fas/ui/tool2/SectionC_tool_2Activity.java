@@ -4,7 +4,6 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -112,6 +111,20 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         });
 
 
+        //fas02c12
+        bi.fas02c12.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.fas02c12a.getId()) {
+                    bi.fas02c13cv.setVisibility(View.VISIBLE);
+                } else {
+                    ClearClass.ClearAllFields(bi.fas02c13cv, null);
+                    bi.fas02c13cv.setVisibility(View.GONE);
+                }
+            }
+        });
+
+
         //fas02c15
         bi.fas02c15.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -122,6 +135,20 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
                     bi.fas02c16cv.setVisibility(View.GONE);
                 } else {
                     bi.fas02c16cv.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+
+        //fas02c19
+        bi.fas02c19.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.fas02c19a.getId() || i == bi.fas02c19b.getId()) {
+                    bi.fas02c20cv.setVisibility(View.VISIBLE);
+                } else {
+                    ClearClass.ClearAllFields(bi.fas02c20cv, null);
+                    bi.fas02c20cv.setVisibility(View.GONE);
                 }
             }
         });
@@ -138,7 +165,7 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         });
 
 
-//        fas02c26f
+        //fas02c26f
         bi.fas02c26f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -153,54 +180,43 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         });
 
 
-//        fas02c12
-        bi.fas02c12.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i == bi.fas02c12a.getId()) {
-                    bi.fas02c13cv.setVisibility(View.VISIBLE);
-                } else {
-                    ClearClass.ClearAllFields(bi.fas02c13cv, null);
-                    bi.fas02c13cv.setVisibility(View.GONE);
-                }
-            }
-        });
-
-//        fas02c17
-        bi.fas02c17.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i != bi.fas02c17a.getId() || i != bi.fas02c17b.getId()) {
-                    ClearClass.ClearAllFields(bi.fldGrpfas02c20, null);
-                }
-            }
-        });
-
-//        fas02c21
-        CheckBox.OnCheckedChangeListener chbxc19 = new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (!bi.fas02c21e.isChecked())
-                    ClearClass.ClearAllFields(bi.fldGrpfas02c22, null);
-            }
-        };
-        bi.fas02c21e.setOnCheckedChangeListener(chbxc19);
+        //fas02c21
         bi.fas02c2198.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
-                    ClearClass.ClearAllFields(bi.fldGrpfas02c21, false);
-                    bi.fldGrpfas02c21.setTag("-1");
+                    ClearClass.ClearAllFields(bi.llfas02c21, false);
+                    bi.llfas02c21.setTag("-1");
                     bi.fas02c2198.setTag(null);
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpfas02c21, true);
-                    bi.fldGrpfas02c21.setTag(null);
+                    ClearClass.ClearAllFields(bi.llfas02c21, true);
+                    bi.llfas02c21.setTag(null);
                     bi.fas02c2198.setTag("-1");
                 }
             }
         });
+        bi.fas02c21e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.llfas02c22, null);
+                } else {
+                    ClearClass.ClearAllFields(bi.llfas02c22, null);
+                }
+            }
+        });
+        bi.fas02c21h.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.llfas02c22, null);
+                } else {
+                    ClearClass.ClearAllFields(bi.llfas02c22, null);
+                }
+            }
+        });
 
-//        fas02c23
+        //fas02c23
         bi.fas02c23.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {

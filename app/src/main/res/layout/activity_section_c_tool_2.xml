@@ -1487,7 +1487,7 @@
 
                                 <TextView
                                     style="@style/i_textview_h"
-                                    android:text="Public Health Sector" />
+                                    android:text="@string/fas02c1901" />
 
                                 <RadioButton
                                     android:id="@+id/fas02c19c"
@@ -1519,13 +1519,13 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
-                                    android:text="@string/other" />
+                                    android:text="@string/fas02c19f" />
 
                                 <EditText
                                     android:id="@+id/fas02c19fx"
                                     style="@style/textInput"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/specify"
+                                    android:hint="@string/hfname"
                                     android:inputType="text"
                                     android:tag="fas02c19f"
                                     android:text='@{fas02c19f.checked ? fas02c19fx.getText.toString : ""}'
@@ -1533,8 +1533,8 @@
 
 
                                 <TextView
-                                    style="@style/textView2"
-                                    android:text="Private Health Sector" />
+                                    style="@style/i_textview_h"
+                                    android:text="@string/fas02c1902" />
 
                                 <RadioButton
                                     android:id="@+id/fas02c19g"
@@ -1556,7 +1556,7 @@
                                     android:id="@+id/fas02c19hx"
                                     style="@style/textInput"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/specify"
+                                    android:hint="@string/hfname"
                                     android:inputType="text"
                                     android:tag="fas02c19h"
                                     android:text='@{fas02c19h.checked ? fas02c19hx.getText.toString : ""}'
@@ -1576,13 +1576,13 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
-                                    android:text="@string/other" />
+                                    android:text="@string/fas02c1996" />
 
                                 <EditText
                                     android:id="@+id/fas02c1996x"
                                     style="@style/textInput"
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    android:hint="@string/specify"
+                                    android:hint="@string/hfname"
                                     android:inputType="text"
                                     android:tag="fas02c1996"
                                     android:text='@{fas02c1996.checked ? fas02c1996x.getText.toString : ""}'
@@ -1596,9 +1596,8 @@
 
                     <!--fas02c20-->
                     <android.support.v7.widget.CardView
-                        android:id="@+id/fldGrpfas02c20"
-                        style="@style/cardView"
-                        android:visibility="@{fas02c17a.checked || fas02c17b.checked ? View.VISIBLE : View.GONE}">
+                        android:id="@+id/fas02c20cv"
+                        style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -1613,7 +1612,7 @@
                                 android:textSize="20sp" />
 
                             <LinearLayout
-                                android:id="@+id/fldGrpfas02c20a"
+                                android:id="@+id/llfas02c20"
                                 style="@style/linerlayout_view_wt_bound">
 
                                 <CheckBox
@@ -1734,38 +1733,19 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/fas02c21"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                style="@style/i_textview"
+                                android:text="@string/fas02c21" />
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimaryAlpha"
-                                android:text="@string/fas02c21sub"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                style="@style/i_textview_h"
+                                android:text="@string/fas02c2101" />
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimaryAlpha"
-                                android:gravity="center"
-                                android:text="HEALTH PROFESSIONAL"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                style="@style/i_textview_h"
+                                android:text="@string/fas02c2102" />
 
                             <LinearLayout
-                                android:id="@+id/fldGrpfas02c21"
+                                android:id="@+id/llfas02c21"
                                 style="@style/linerlayout_view_wt_bound">
 
                                 <CheckBox
@@ -1801,15 +1781,8 @@
                                     android:text="@string/fas02c21d" />
 
                                 <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_horizontal"
-                                    android:background="@color/colorPrimaryAlpha"
-                                    android:gravity="center"
-                                    android:text="OTHER PERSON"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@android:color/white"
-                                    android:textSize="20sp" />
+                                    style="@style/i_textview_h"
+                                    android:text="@string/fas02c2103" />
 
                                 <CheckBox
                                     android:id="@+id/fas02c21e"
@@ -1857,7 +1830,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
-                                    android:text="@string/other" />
+                                    android:text="@string/fas02c2196" />
 
                                 <EditText
                                     android:id="@+id/fas02c2196x"
@@ -1886,9 +1859,9 @@
 
                     <!--fas02c22-->
                     <android.support.v7.widget.CardView
-                        android:id="@+id/fldGrpfas02c22"
+                        android:id="@+id/fas02c22cv"
                         style="@style/cardView"
-                        android:visibility="@{fas02c21e.checked ? View.VISIBLE : View.GONE}">
+                        android:visibility='@{fas02c21e.checked || fas02c21h.checked ? View.VISIBLE : View.GONE}'>
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -1903,7 +1876,7 @@
                                 android:textSize="20sp" />
 
                             <LinearLayout
-                                android:id="@+id/fldGrpfas02c22a"
+                                android:id="@+id/llfas02c22"
                                 style="@style/linerlayout_view">
 
                                 <CheckBox
