@@ -189,7 +189,6 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
                         : bi.fas02d01b.isChecked() ? "2"
                         : "0");
 
-
         s04.put("fas02d02a", bi.fas02d02a.isChecked() ? "1" : "0");
         s04.put("fas02d02b", bi.fas02d02b.isChecked() ? "2" : "0");
         s04.put("fas02d02c", bi.fas02d02c.isChecked() ? "3" : "0");
@@ -256,7 +255,7 @@ public class SectionD_tool_2Activity extends AppCompatActivity {
         s04.put("fas02d08i", bi.fas02d08i.isChecked() ? "9" : "0");
         s04.put("fas02d0898", bi.fas02d0898.isChecked() ? "98" : "0");
 
-        fc.setSa4(String.valueOf(s04));
+        fc.setSa5(String.valueOf(s04));
 
     }
 

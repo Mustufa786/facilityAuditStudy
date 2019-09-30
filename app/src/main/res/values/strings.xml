@@ -516,10 +516,10 @@
     <string name="fas02c13a"> فیملی / خاندان کا دوسرا مرد </string>
     <string name="fas02c13b"> فیملی / خاندان کی عورت </string>
 
-    <string name="fas02c14"> آپ کے اس (موجودہ) حمل کے دوران طبی معائنہ کے وقت کیا مندرجہ ذیل میں سے کوئی عمل کم از کم ایک دفعہ کیا تھا؟کیا آپ کا بلڈپریشر چیک کیا گیا ؟کیا آپ نے پیشاب کا نمونہ دیا؟کیا آپ نے خون کا نمونہ دیا؟ </string>
-    <string name="fas02c1401">  بلڈ پریشر </string>
-    <string name="fas02c1402"> پیشاب کانمونہ </string>
-    <string name="fas02c1403"> خون کا نمونہ </string>
+    <string name="fas02c14"> آپ کے اس (موجودہ) حمل کے دوران طبی معائنہ کے وقت کیا مندرجہ ذیل میں سے کوئی عمل کم از کم ایک دفعہ کیا تھا ؟ </string>
+    <string name="fas02c1401">  کیا آپ کا بلڈپریشر چیک کیا گیا ؟ </string>
+    <string name="fas02c1402"> کیا آپ نے پیشاب کا نمونہ دیا ؟ </string>
+    <string name="fas02c1403">  کیا آپ نے خون کا نمونہ دیا ؟ </string>
 
     <string name="fas02c15"> جب آپ حمل سے تھی تو کیا آپ نے بازو پر تشنج سے بچاؤ کے ٹیکے لگوائے تھے؟ </string>
     <string name="fas02c15a"> Yes ہاں </string>
@@ -536,8 +536,9 @@
     <string name="fas02c18a"> ہاں </string>
     <string name="fas02c18b"> نہیں </string>
 
-    <string name="fas02c19"> (نام) کی پیدائش کہاں ہوئی تھی ؟صرف ایک جواب کا انتخاب کریں. اندازہ لگانے کے لیے مزید  تفصیل پوچھں. ذریعہ کے لیے دائیں طرف دئیے گئے کوڈ پر دائرہ لگائیں  </string>
     <string name="fas02c19Heading"> ابھی میں آپ سے (نام) کی پیدائش سے متعلق سوالات پوچھوں گی </string>
+    <string name="fas02c19"> (نام) کی پیدائش کہاں ہوئی تھی ؟  </string>
+    <string name="fas02c1900"> اندازہ لگانے کے لیے مزید  تفصیل پوچھں </string>
     <string name="fas02c19a"> گھر پر </string>
     <string name="fas02c19b"> مرکز صحت جاتے ہوئے راستے میں </string>
     <string name="fas02c1901"> عوامی شعبہ </string>
@@ -551,7 +552,8 @@
     <string name="fas02c19i"> اے کے ایچ ایس پی کا مرکز صحت </string>
     <string name="fas02c1996"> دیگر شعبہ </string>
 
-    <string name="fas02c20"> (نام) کی کسی مرکز صحت پر پیدائش کیونہیں ہوئی ؟دوسری کوئی وجہ معلوم کرنے کے لیے مزید سوالات پوچھیں تمام جوابات ریکارڈ کریں(نام) </string>
+    <string name="fas02c20"> آپ نے (نام) کی پیدائش کسی مرکز صحت پر کیوں نہیں کروا ئی ؟ </string>
+    <string name="fas02c201"> دوسری کوئی وجہ معلوم کرنے کے لیے مزید سوالات پوچھیں </string>
     <string name="fas02c20a"> خرچہ بہت زیادہ </string>
     <string name="fas02c20b"> مرکزصحت کھلا نہیں </string>
     <string name="fas02c20c"> بہت دور </string>
@@ -579,7 +581,8 @@
     <string name="fas02c21i"> خود/کوئی موجود نہیں </string>
     <string name="fas02c2196"> دوسرا شخص </string>
 
-    <string name="fas02c22"> وہ کیا وجوہات تھے جس کے باعث آپ نے (نام) کی پیدائش کے وقت مدد کے لیے دائی / دوست کو ترجیح دی؟ کوئی اور وجہ معلوم کرنے کے لیے پوچھیں تمام جوابات لکھیں </string>
+    <string name="fas02c22"> وہ کیا وجوہات تھیں جس کے باعث آپ نے (نام) کی پیدائش کے وقت مدد کے لیے دائی/دوست کو ترجیح دی؟ </string>
+    <string name="fas02c221"> کوئی اور وجہ معلوم کرنے کے لیے پوچھیں </string>
     <string name="fas02c22a"> فاصلہ </string>
     <string name="fas02c22b"> مرکز صحت کے مقابلے میں بہتر دیکھ بھال </string>
     <string name="fas02c22c"> مذہبی وجوہات </string>
@@ -588,7 +591,7 @@
     <string name="fas02c22f"> کم خرچہ </string>
     <string name="fas02c22g"> دیگر وضاحت کریں </string>
 
-    <string name="fas02c23"> جب آپ حمل سے تھی تو کیا آپ یا آپ کی فیملی نے (نام ) کی پیدائش کے لیے پہلے کوئی تیاری کی تھی؟ </string>
+    <string name="fas02c23"> جب آپ حمل سے تھی تو کیا آپ یا آپ کی فیملی نے (نام ) کی پیدائش کے لیے پہلے کوئی تیاری کی تھی ؟ </string>
     <string name="fas02c23a"> ہاں </string>
     <string name="fas02c23b"> نہیں </string>
 
@@ -610,15 +613,15 @@
     <string name="fas02c2505"> بچوں کی دیکھ بھال </string>
     <string name="fas02c2506"> حمل کے دوران طبی معائنے کرانے کی حوصلہ افزائی </string>
 
-    <string name="fas02c26"> اگر نہیں تو کیا بنیادی وجہ تھی کہ آپ کو دوران حمل مرد نہیں ملی </string>
-    <string name="fas02c26a"> شوہر /فیملی کا مدد دور تھا؟ </string>
-    <string name="fas02c26b"> پیدائش /حمل مردوں کے لیے نہیں </string>
-    <string name="fas02c26c"> شوہر/فیملی کے مرد اس کو اہم نہیں سمجھتے ہیں </string>
+    <string name="fas02c26"> اگر نہیں تو کیا بنیادی وجہ تھی کہ آپ کو دوران حمل مدد نہیں ملی </string>
+    <string name="fas02c26a"> شوہر / فیملی کا مرد رکن دور تھا ؟ </string>
+    <string name="fas02c26b"> پیدائش / حمل مردوں کے لیے نہیں </string>
+    <string name="fas02c26c"> شوہر / فیملی کے مرد اس کو اہم نہیں سمجھتے ہیں </string>
     <string name="fas02c26d"> میرے پاس فیملی کی دوسری عورتیں موجود ہیں تو مدد فراہم کرتی ہیں </string>
-    <string name="fas02c26e"> میرے پاس اپنا پیسہ /آمدنی ہے </string>
+    <string name="fas02c26e"> میرے پاس اپنا پیسہ / آمدنی ہے </string>
     <string name="fas02c26f"> مجھے مدد کی ضرورت نہیں ہے </string>
 
-    <string name="fas02c27">آپ کے پاس ماں اور بچے کی صحت (MNCH) سے متعلقہ ضرورت کو پورا کرنے کے لیے مالی امداد کے کیا ذرائع موجود ہیں؟ </string>
+    <string name="fas02c27">آپ کے پاس ماں اور بچے کی صحت (MNCH) سے متعلقہ ضرورت کو پورا کرنے کے لیے مالی امداد کے کیا ذرائع موجود ہیں ؟ </string>
     <string name="fas02c27a"> (شوہر یا اپنے وسائل) خاندان </string>
     <string name="fas02c27b"> بنک / کسی ادارے سے قرض </string>
     <string name="fas02c27c"> کمیونٹی ہیلتھ ریوالونگ فنڈ </string>
