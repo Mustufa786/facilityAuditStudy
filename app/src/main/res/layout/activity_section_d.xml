@@ -48,14 +48,8 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/hfa1100"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                style="@style/i_textview"
+                                android:text="@string/hfa1100" />
 
                             <RadioGroup
                                 android:id="@+id/hfa1400"
@@ -81,7 +75,6 @@
 
                             </RadioGroup>
 
-
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
@@ -92,14 +85,8 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/hfa1101"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                style="@style/i_textview"
+                                android:text="@string/hfa1101" />
 
                             <EditText
                                 android:id="@+id/hfa14001"
@@ -118,14 +105,8 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/hfa1401"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                style="@style/i_textview"
+                                android:text="@string/hfa1401" />
 
                             <RadioGroup
                                 android:id="@+id/hfa1401"
@@ -157,9 +138,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/dkn" />
 
-
                             </RadioGroup>
-
 
                         </LinearLayout>
 
@@ -171,14 +150,8 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/hfa1402"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                style="@style/i_textview"
+                                android:text="@string/hfa1402" />
 
                             <RadioGroup
                                 android:id="@+id/hfa1402"
@@ -210,9 +183,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/dkn" />
 
-
                             </RadioGroup>
-
 
                         </LinearLayout>
 
@@ -224,14 +195,8 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/hfa1403"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                style="@style/i_textview"
+                                android:text="@string/hfa1403" />
 
                             <RadioGroup
                                 android:id="@+id/hfa1403"
@@ -263,9 +228,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/dkn" />
 
-
                             </RadioGroup>
-
 
                         </LinearLayout>
 
@@ -277,14 +240,8 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/hfa1404"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                style="@style/i_textview"
+                                android:text="@string/hfa1404" />
 
                             <RadioGroup
                                 android:id="@+id/hfa1404"
@@ -316,9 +273,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/dkn" />
 
-
                             </RadioGroup>
-
 
                         </LinearLayout>
 
@@ -330,14 +285,8 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/hfa1405"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                style="@style/i_textview"
+                                android:text="@string/hfa1405" />
 
                             <RadioGroup
                                 android:id="@+id/hfa1405"
@@ -369,9 +318,7 @@
                                     android:layout_weight="1"
                                     android:text="@string/dkn" />
 
-
                             </RadioGroup>
-
 
                         </LinearLayout>
 
@@ -383,14 +330,8 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/hfa1406"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                style="@style/i_textview"
+                                android:text="@string/hfa1406" />
 
                             <RadioGroup
                                 android:id="@+id/hfa1406"
@@ -1034,15 +975,8 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/hfa1418"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
-
+                                style="@style/i_textview"
+                                android:text="@string/hfa1418" />
 
                             <RadioGroup
                                 android:id="@+id/hfa1418"
@@ -1074,7 +1008,6 @@
                                     android:layout_weight="1"
                                     android:text="@string/dkn" />
 
-
                             </RadioGroup>
 
                         </LinearLayout>
@@ -1087,15 +1020,8 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/hfa1419"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
-
+                                style="@style/i_textview"
+                                android:text="@string/hfa1419" />
 
                             <RadioGroup
                                 android:id="@+id/hfa1419"
@@ -1127,7 +1053,6 @@
                                     android:layout_weight="1"
                                     android:text="@string/dkn" />
 
-
                             </RadioGroup>
 
                         </LinearLayout>
@@ -1141,14 +1066,8 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/hfa1420"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                style="@style/i_textview"
+                                android:text="@string/hfa1420" />
 
 
                             <RadioGroup
@@ -1194,14 +1113,8 @@
                         <LinearLayout style="@style/linerlayout_view">
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/hfa1421"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                style="@style/i_textview"
+                                android:text="@string/hfa1421" />
 
 
                             <RadioGroup
@@ -1233,7 +1146,6 @@
                                     android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
                                     android:text="@string/dkn" />
-
 
                             </RadioGroup>
 
