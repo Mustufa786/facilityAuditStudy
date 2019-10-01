@@ -32,24 +32,12 @@
                 <LinearLayout style="@style/linerlayout_view">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimary"
-                        android:text="@string/fas02b01"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        style="@style/i_textview"
+                        android:text="@string/fas02b01" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimaryAlpha"
-                        android:text="@string/fas02b0100"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        style="@style/i_textview_h"
+                        android:text="@string/fas02b0100" />
 
                     <RadioGroup
                         android:id="@+id/fas02b0100"
@@ -94,14 +82,8 @@
                         android:visibility='@{fas02b0100a.checked ? View.GONE : View.VISIBLE}'>
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimaryAlpha"
-                            android:text="@string/month"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview_h"
+                            android:text="@string/month" />
 
                         <RadioGroup
                             android:id="@+id/fas02b0101"
@@ -119,14 +101,14 @@
 
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/fas02b0101ax"
-                                style="@style/textInput"
                                 android:hint="@string/month"
+                                style="@style/textInput"
                                 android:inputType="number"
-                                android:maxLength="2"
                                 android:tag="fas02b0101a"
                                 android:text='@{fas02b0101a.checked ? fas02b0101ax.getText.toString : ""}'
                                 android:visibility='@{fas02b0101a.checked ? View.VISIBLE : View.GONE}'
-                                app:maxValue="11"
+                                app:mask="##"
+                                app:maxValue="12"
                                 app:minValue="1"
                                 app:type="range" />
 
@@ -141,14 +123,8 @@
                         </RadioGroup>
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimaryAlpha"
-                            android:text="@string/year"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview_h"
+                            android:text="@string/year" />
 
                         <RadioGroup
                             android:id="@+id/fas02b0102"
@@ -166,13 +142,13 @@
 
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/fas02b0102ax"
-                                style="@style/textInput"
                                 android:hint="@string/year"
+                                style="@style/textInput"
                                 android:inputType="number"
-                                android:maxLength="4"
                                 android:tag="fas02b0102a"
                                 android:text='@{fas02b0102a.checked ? fas02b0102ax.getText.toString : ""}'
                                 android:visibility='@{fas02b0102a.checked ? View.VISIBLE : View.GONE}'
+                                app:mask="####"
                                 app:maxValue="2019"
                                 app:minValue="1920"
                                 app:type="range" />
@@ -212,7 +188,8 @@
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fas02b02"
-                        style="@style/EditText_number"
+                        style="@style/textInput"
+                        android:inputType="number"
                         android:hint="مکمل سالوں میں"
                         app:mask="##"
                         app:maxValue="49"
@@ -229,14 +206,8 @@
                 <LinearLayout style="@style/linerlayout_view">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimary"
-                        android:text="@string/fas02b03"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        style="@style/i_textview"
+                        android:text="@string/fas02b03" />
 
                     <RadioGroup
                         android:id="@+id/fas02b03"
@@ -279,14 +250,8 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/fas02b04"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/fas02b04" />
 
                         <RadioGroup
                             android:id="@+id/fas02b04"
@@ -350,20 +315,18 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/fas02b05"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/fas02b05" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/fas02b05"
-                            style="@style/EditText_number"
+                            style="@style/textInput"
+                            android:inputType="number"
                             android:hint="@string/fas02b05"
-                            android:maxLength="2" />
+                            app:mask="##"
+                            app:maxValue="22"
+                            app:minValue="0"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -377,14 +340,8 @@
                 <LinearLayout style="@style/linerlayout_view">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimary"
-                        android:text="@string/fas02b06"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        style="@style/i_textview"
+                        android:text="@string/fas02b06" />
 
                     <RadioGroup
                         android:id="@+id/fas02b06"
@@ -470,24 +427,12 @@
                 <LinearLayout style="@style/linerlayout_view">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimary"
-                        android:text="@string/fas02b07"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        style="@style/i_textview"
+                        android:text="@string/fas02b07" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimaryAlpha"
-                        android:text="@string/fas02b07a"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        style="@style/i_textview_h"
+                        android:text="@string/fas02b07a" />
 
 
                     <RadioGroup
@@ -512,19 +457,12 @@
                             android:layout_weight="1"
                             android:text="@string/no" />
 
-
                     </RadioGroup>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimaryAlpha"
-                        android:text="@string/fas02b07b"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
 
+                    <TextView
+                        style="@style/i_textview_h"
+                        android:text="@string/fas02b07b" />
 
                     <RadioGroup
                         android:id="@+id/fas02b07b"
@@ -548,19 +486,11 @@
                             android:layout_weight="1"
                             android:text="@string/no" />
 
-
                     </RadioGroup>
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimaryAlpha"
-                        android:text="@string/fas02b07c"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
-
+                        style="@style/i_textview_h"
+                        android:text="@string/fas02b07c" />
 
                     <RadioGroup
                         android:id="@+id/fas02b07c"
@@ -584,18 +514,11 @@
                             android:layout_weight="1"
                             android:text="@string/no" />
 
-
                     </RadioGroup>
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimaryAlpha"
-                        android:text="@string/fas02b07d"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        style="@style/i_textview_h"
+                        android:text="@string/fas02b07d" />
 
 
                     <RadioGroup
@@ -620,18 +543,11 @@
                             android:layout_weight="1"
                             android:text="@string/no" />
 
-
                     </RadioGroup>
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimaryAlpha"
-                        android:text="@string/fas02b07e"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        style="@style/i_textview_h"
+                        android:text="@string/fas02b07e" />
 
 
                     <RadioGroup
@@ -668,14 +584,8 @@
                 <LinearLayout style="@style/linerlayout_view">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimary"
-                        android:text="@string/fas02b08"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        style="@style/i_textview"
+                        android:text="@string/fas02b08" />
 
 
                     <RadioGroup
@@ -762,14 +672,8 @@
                 <LinearLayout style="@style/linerlayout_view">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimary"
-                        android:text="@string/fas02b09"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        style="@style/i_textview"
+                        android:text="@string/fas02b09" />
 
                     <RadioGroup
                         android:id="@+id/fas02b09"
@@ -855,14 +759,8 @@
                 <LinearLayout style="@style/linerlayout_view">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimary"
-                        android:text="@string/fas02b10"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        style="@style/i_textview"
+                        android:text="@string/fas02b10" />
 
                     <RadioGroup
                         android:id="@+id/fas02b10"
@@ -964,14 +862,8 @@
                 <LinearLayout style="@style/linerlayout_view">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:background="@color/colorPrimary"
-                        android:text="@string/fas02b11"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        style="@style/i_textview"
+                        android:text="@string/fas02b11" />
 
                     <RadioGroup
                         android:id="@+id/fas02b11"

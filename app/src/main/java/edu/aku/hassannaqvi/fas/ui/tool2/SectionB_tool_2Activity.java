@@ -20,6 +20,7 @@ import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
 import edu.aku.hassannaqvi.fas.databinding.ActivitySectionBTool2Binding;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
+import edu.aku.hassannaqvi.fas.utils.DateUtils;
 import edu.aku.hassannaqvi.fas.validation.ClearClass;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
@@ -42,6 +43,8 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
         this.setTitle(R.string.section2_tool2);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
+        bi.fas02b0100ax.setMaxDate(DateUtils.getYearsBack("dd/MM/yyyy", -15));
+        bi.fas02b0100ax.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -49));
         bi.fas02b0102ax.setMax(Calendar.getInstance().get(Calendar.YEAR) - 15);
         bi.fas02b0102ax.setMin(Calendar.getInstance().get(Calendar.YEAR) - 49);
 
