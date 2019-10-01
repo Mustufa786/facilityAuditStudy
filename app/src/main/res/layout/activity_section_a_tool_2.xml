@@ -36,14 +36,8 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1100"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1100" />
 
                         <RadioGroup
                             android:id="@+id/fas02a00"
@@ -217,14 +211,8 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1101"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/hfa1101" />
 
                         <EditText
                             android:id="@+id/fas02a001"
@@ -244,14 +232,8 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/fas02a002"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/fas02a002" />
 
                         <EditText
                             android:id="@+id/fas02a002"
@@ -269,14 +251,8 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/fas02a003"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/fas02a003" />
 
                         <EditText
                             android:id="@+id/fas02a003"
@@ -295,14 +271,8 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/fas02a004"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/fas02a004" />
 
                         <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
                             android:id="@+id/fas02a004"
@@ -323,14 +293,8 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/fas02a01"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/fas02a01" />
 
                         <EditText
                             android:id="@+id/fas02amw01"
@@ -349,25 +313,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/fas02a07"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/fas02a07" />
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimaryAlpha"
-                            android:text="@string/fas02a071"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
-
+                            style="@style/i_textview_h"
+                            android:text="@string/fas02a071" />
 
                         <RadioGroup
                             android:id="@+id/fas02a07"
@@ -393,7 +344,6 @@
 
                         </RadioGroup>
 
-
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -407,24 +357,12 @@
                     <LinearLayout style="@style/linerlayout_view">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/fas02a08"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview"
+                            android:text="@string/fas02a08" />
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimaryAlpha"
-                            android:text="@string/fas02a081"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            style="@style/i_textview_h"
+                            android:text="@string/fas02a081" />
 
                         <LinearLayout
                             android:id="@+id/fldGrpfas02a08"

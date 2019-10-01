@@ -212,7 +212,7 @@
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fas02b02"
-                        style="@style/textInput"
+                        style="@style/EditText_number"
                         android:hint="مکمل سالوں میں"
                         app:mask="##"
                         app:maxValue="49"
@@ -361,9 +361,8 @@
 
                         <EditText
                             android:id="@+id/fas02b05"
-                            style="@style/textInput"
+                            style="@style/EditText_number"
                             android:hint="@string/fas02b05"
-                            android:inputType="number"
                             android:maxLength="2" />
 
                     </LinearLayout>
