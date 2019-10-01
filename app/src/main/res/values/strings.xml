@@ -360,8 +360,7 @@
     <string name="fas02a01"> عورت کی آئی ڈی </string>
     <string name="fas02a002"> گاؤں کا نام: </string>
     <string name="fas02a003"> گھرانہ نمبر: </string>
-
-    <string name="fas02a02"> انٹرویو کا سال /مہینہ/ دن </string>
+    <string name="fas02a004"> انٹرویو کا سال/مہینہ/دن (انٹرویو کی تاریخ): </string>
 
     <string name="fas02a07"> کیا اس انٹرویو کے دوران عورت اکیلی تھی ؟ </string>
     <string name="fas02a071"> مشاہدہ کرے:  کیا اس انٹرویو کے دوران کوئی اور شخص موجود تھا اور سن رہا تھا اس عورت کے علاوہ جس کا انٹرویو لیا جارہا تھا ؟ </string>
@@ -381,6 +380,8 @@
     <string name="fas02b0102b"> سال معلوم نہیں </string>
 
     <string name="fas02b02"> آپ کی عمر کتنی ہے ؟ </string>
+    <string name="fas02b021"> پوچھیں: آپ کی آخری سالگر ہ پر عمر کتنی تھی ؟ </string>
+    <string name="fas02b022"> سوال نمبر WI1 اور WI1A کا موازنہ کریں اور اگر دونوں جوابات مختلف ہیں تو درست کریں </string>
 
     <string name="fas02b03"> کیا آپ نے کبھی رسمی تعلیم حاصل کی ہے ؟ </string>
 

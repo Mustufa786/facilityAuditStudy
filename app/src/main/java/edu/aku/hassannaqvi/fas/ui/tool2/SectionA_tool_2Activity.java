@@ -41,6 +41,7 @@ import edu.aku.hassannaqvi.fas.data.entities.UCs;
 import edu.aku.hassannaqvi.fas.databinding.ActivitySectionATool2Binding;
 import edu.aku.hassannaqvi.fas.get.db.GetAllDBData;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
+import edu.aku.hassannaqvi.fas.utils.DateUtils;
 import edu.aku.hassannaqvi.fas.validation.ClearClass;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
@@ -61,8 +62,8 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a_tool_2);
         bi.setCallback(this);
+        bi.fas02a004.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -1));
         setContentUI();
-
 
     }
 
@@ -272,6 +273,7 @@ public class SectionA_tool_2Activity extends AppCompatActivity {
 
         s01.put("fas02a002", bi.fas02a002.getText().toString());
         s01.put("fas02a003", bi.fas02a003.getText().toString());
+        s01.put("fas02a004", bi.fas02a004.getText().toString());
 
         s01.put("fas02amw01", bi.fas02amw01.getText().toString());
 
