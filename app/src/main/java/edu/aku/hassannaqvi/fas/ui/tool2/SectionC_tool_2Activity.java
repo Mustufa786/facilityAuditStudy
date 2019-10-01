@@ -253,8 +253,8 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
                 : bi.fas02c09b.isChecked() ? "2"
                 : bi.fas02c0998.isChecked() ? "98"
                 : "0");
-        s03.put("fas02c09w", bi.fas02c09w.getText().toString());
-        s03.put("fas02c09m", bi.fas02c09m.getText().toString());
+        s03.put("fas02c09ax", bi.fas02c09ax.getText().toString());
+        s03.put("fas02c09bx", bi.fas02c09bx.getText().toString());
 
 
         s03.put("fas02c10", bi.fas02c10.getText().toString());
