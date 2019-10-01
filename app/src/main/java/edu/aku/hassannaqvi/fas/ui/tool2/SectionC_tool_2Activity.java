@@ -68,7 +68,6 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == bi.fas02c01a.getId()) {
-                    ClearClass.ClearAllFields(bi.fldGrpllSecC02a, null);
                     bi.fldGrpllSecC02a.setVisibility(View.VISIBLE);
                 } else {
                     ClearClass.ClearAllFields(bi.fldGrpllSecC02a, null);
@@ -321,33 +320,16 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
 
     }
 
+
     private boolean formValidation() {
-
-        if (!ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecC02))
-            return false;
-
-        if (bi.fas02c02m.getVisibility() == View.VISIBLE) {
-            if (Integer.parseInt(bi.fas02c02m.getText().toString().trim()) + Integer.parseInt(bi.fas02c02y.getText().toString().trim()) == 0) {
-                return ValidatorClass.EmptyCustomeTextBox(this, bi.fas02c02m, "Month & Year both can't be Zero!!");
-            }
-            if (Integer.parseInt(bi.fas02c02y.getText().toString().trim()) == 2019) {
-                bi.fas02c02m.setMax(8);
-                return ValidatorClass.EmptyCustomeTextBox(this, bi.fas02c02m, "Max date is August 2019");
-            }
-            if (Integer.parseInt(bi.fas02c02y.getText().toString().trim()) == 2018) {
-                bi.fas02c02m.setMin(9);
-                return ValidatorClass.EmptyCustomeTextBox(this, bi.fas02c02m, "Min date is September 2018");
-            }
-            //return ValidatorClass.EmptyCustomeTextBox(this, bi.pocfk06b, "please check below question!!");
-        }
-        return true;
-
-
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpllSecC02);
     }
+
 
     public void BtnEnd() {
         MainApp.endActivityDirectRouting(this, this, EndingActivity.class, false, fc);
     }
+
 
     @Override
     public void onBackPressed() {

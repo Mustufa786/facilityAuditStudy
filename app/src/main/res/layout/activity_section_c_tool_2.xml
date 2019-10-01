@@ -159,7 +159,9 @@
                     android:visibility="gone">
 
                     <!--fas02c02-->
-                    <android.support.v7.widget.CardView style="@style/cardView">
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/fas02c02cv"
+                        style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
 
@@ -172,7 +174,6 @@
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
-
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -199,9 +200,9 @@
                                 style="@style/textInput"
                                 android:hint="@string/month"
                                 android:inputType="number"
-                                android:maxLength="2"
                                 app:maxValue="12"
                                 app:minValue="1"
+                                app:mask="##"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -209,9 +210,9 @@
                                 style="@style/textInput"
                                 android:hint="@string/year"
                                 android:inputType="number"
-                                android:maxLength="4"
                                 app:maxValue="2019"
                                 app:minValue="2018"
+                                app:mask="####"
                                 app:type="range" />
 
                         </LinearLayout>
