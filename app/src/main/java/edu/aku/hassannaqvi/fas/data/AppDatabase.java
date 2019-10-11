@@ -28,6 +28,15 @@ public abstract class AppDatabase extends RoomDatabase {
                     + " ADD COLUMN followupType TEXT");
         }
     };
+    static final Migration MIGRATION_v2_v3 = new Migration(2, 3) {
+        @Override
+        public void migrate(SupportSQLiteDatabase database) {
+            database.execSQL("ALTER TABLE " + CONSTANTS.TABLE_FORMS
+                    + " ADD COLUMN tehsilcode TEXT");
+            database.execSQL("ALTER TABLE " + CONSTANTS.TABLE_FORMS
+                    + " ADD COLUMN hfname TEXT");
+        }
+    };
 
     private static AppDatabase sInstance;
 
@@ -37,6 +46,7 @@ public abstract class AppDatabase extends RoomDatabase {
                 if (sInstance == null) {
                     sInstance = Room.databaseBuilder(context, AppDatabase.class, CONSTANTS.DATABASE_NAME)
                             .addMigrations(MIGRATION_v1_v2)
+                            .addMigrations(MIGRATION_v2_v3)
                             .setJournalMode(JournalMode.TRUNCATE)
                             .build();
                 }
