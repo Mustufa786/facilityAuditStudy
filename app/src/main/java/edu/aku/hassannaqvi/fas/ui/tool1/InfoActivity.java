@@ -53,7 +53,7 @@ public class InfoActivity extends AppCompatActivity {
     Class<?> routeClass;
     private Forms fc;
     Map<String, HFA> hfaMap;
-    List<String> district_code, uc_code;
+    List<String> district_code, tehsil_code, uc_code;
     String formType;
 
     @Override
@@ -145,6 +145,14 @@ public class InfoActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i == 0) return;
+
+                //Tehsil
+                /*tehsil_code = new ArrayList<>();
+                List<String> tehsil_names = new ArrayList<>();
+                tehsil_code.add("1234");
+                tehsil_names.add("Working");
+                bi.hfa1103d.setAdapter(new ArrayAdapter<>(InfoActivity.this, android.R.layout.simple_spinner_dropdown_item, tehsil_names));*/
+
 
                 //UC
                 uc_code = new ArrayList<>();
@@ -297,13 +305,13 @@ public class InfoActivity extends AppCompatActivity {
         fc = new Forms();
         fc.setDevicetagID(MainApp.getTagName(this));
         fc.setAppversion(MainApp.versionName + "." + MainApp.versionCode);
-        fc.setUccode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getUc_code());
         fc.setUsername(MainApp.userName);
         fc.setFollowupType(formType.equals("m") ? "monthly" : formType.equals("q") ? "quarterly" : "");
 //        fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
         fc.setDeviceID(deviceID);
         fc.setFormType(CONSTANTS._URI_FORM_TOOL1);
         fc.setDistrictcode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getDist_code());
+        fc.setUccode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getUc_code());
         fc.setHfcode(hfaMap.get(bi.hfa1103c.getSelectedItem().toString()).getHf_code());
 
         setGPS(fc);

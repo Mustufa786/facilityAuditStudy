@@ -3,8 +3,6 @@ package edu.aku.hassannaqvi.fas.ui.tool2;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -45,7 +43,12 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
         this.setTitle(R.string.section2_tool2);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
 
-        bi.fas02b0102ax.addTextChangedListener(new TextWatcher() {
+        bi.fas02b0100ax.setMaxDate(DateUtils.getYearsBack("dd/MM/yyyy", -15));
+        bi.fas02b0100ax.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -49));
+        bi.fas02b0102ax.setMax(Calendar.getInstance().get(Calendar.YEAR) - 15);
+        bi.fas02b0102ax.setMin(Calendar.getInstance().get(Calendar.YEAR) - 49);
+
+        /*bi.fas02b0102ax.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -59,10 +62,9 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
                         if (Integer.parseInt(bi.fas02b0102ax.getText().toString()) >= 1920 && Integer.parseInt(bi.fas02b0102ax.getText().toString()) <= Calendar.getInstance().get(Calendar.YEAR)) {
                             bi.fas02b02.setText(String.valueOf(DateUtils.getAgeInYears(Integer.parseInt(bi.fas02b0102ax.getText().toString()))));
                         } else {
-                            Toast.makeText(SectionB_tool_2Activity.this, "Age must be between 1920 to " + Calendar.getInstance().get(Calendar.YEAR), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SectionB_tool_2Activity.this, "Age must be between 1920 to " + Calendar.getInstance().get(Calendar.YEAR), Toast.LENGTH_LONG).show();
                         }
                     }
-
 
                 }
 
@@ -72,10 +74,41 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
 
             }
-        });
+        });*/
+
+
+        /*bi.fas02b0100ax.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                if (!s.toString().equalsIgnoreCase("")) {
+                    bi.fas02b02.setText(String.valueOf(DateUtils.ageInYearByDOB(bi.fas02b0100ax.getText().toString())));
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });*/
     }
 
     private void setListeners() {
+
+//        fas02b0100
+        bi.fas02b0100.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.fas02b0100a.getId())
+                    ClearClass.ClearAllCardFields(bi.llfas02b0100);
+            }
+        });
 
 //        fas02b03
         bi.fas02b03.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -114,6 +147,8 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        MainApp.WI2C = bi.fas02b06a.isChecked() ? "1" : "0";
+
     }
 
     private boolean UpdateDB() {
@@ -135,29 +170,30 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
 
         JSONObject s02 = new JSONObject();
 
-        s02.put("fas02b0101",
-                bi.fas02b0101a.isChecked() ? "1"
+        s02.put("fas02b0100", bi.fas02b0100a.isChecked() ? "1"
+                        : bi.fas02b0100b.isChecked() ? "98"
+                        : "0");
+        s02.put("fas02b0100ax", bi.fas02b0100ax.getText().toString());
+
+        s02.put("fas02b0101", bi.fas02b0101a.isChecked() ? "1"
                         : bi.fas02b0101b.isChecked() ? "98"
                         : "0");
         s02.put("fas02b0101ax", bi.fas02b0101ax.getText().toString());
 
 
-        s02.put("fas02b0102",
-                bi.fas02b0102a.isChecked() ? "1"
+        s02.put("fas02b0102", bi.fas02b0102a.isChecked() ? "1"
                         : bi.fas02b0102b.isChecked() ? "98"
                         : "0");
         s02.put("fas02b0102ax", bi.fas02b0102ax.getText().toString());
 
         s02.put("fas02b02", bi.fas02b02.getText().toString());
 
-        s02.put("fas02b03",
-                bi.fas02b03a.isChecked() ? "1"
+        s02.put("fas02b03", bi.fas02b03a.isChecked() ? "1"
                         : bi.fas02b03b.isChecked() ? "2"
                         : "0");
 
 
-        s02.put("fas02b04",
-                bi.fas02b04a.isChecked() ? "1"
+        s02.put("fas02b04", bi.fas02b04a.isChecked() ? "1"
                         : bi.fas02b04b.isChecked() ? "2"
                         : bi.fas02b04c.isChecked() ? "3"
                         : bi.fas02b04d.isChecked() ? "4"
@@ -167,47 +203,42 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
         s02.put("fas02b05", bi.fas02b05.getText().toString());
 
 
-        s02.put("fas02b06",
-                bi.fas02b06a.isChecked() ? "1"
+        s02.put("fas02b06", bi.fas02b06a.isChecked() ? "1"
                         : bi.fas02b06b.isChecked() ? "2"
                         : bi.fas02b06c.isChecked() ? "3"
                         : bi.fas02b06d.isChecked() ? "4"
                         : bi.fas02b06e.isChecked() ? "5"
+                        : bi.fas02b0696.isChecked() ? "96"
                         : bi.fas02b0699.isChecked() ? "99"
                         : "0");
+        s02.put("fas02b0696x", bi.fas02b0696x.getText().toString());
 
 
-        s02.put("fas02b07a",
-                bi.fas02b07a01.isChecked() ? "1"
+        s02.put("fas02b07a", bi.fas02b07a01.isChecked() ? "1"
                         : bi.fas02b07a02.isChecked() ? "2"
                         : "0");
 
 
-        s02.put("fas02b07b",
-                bi.fas02b07b01.isChecked() ? "1"
+        s02.put("fas02b07b", bi.fas02b07b01.isChecked() ? "1"
                         : bi.fas02b07b02.isChecked() ? "2"
                         : "0");
 
 
-        s02.put("fas02b07c",
-                bi.fas02b07c01.isChecked() ? "1"
+        s02.put("fas02b07c", bi.fas02b07c01.isChecked() ? "1"
                         : bi.fas02b07c02.isChecked() ? "2"
                         : "0");
 
 
-        s02.put("fas02b07d",
-                bi.fas02b07d01.isChecked() ? "1"
+        s02.put("fas02b07d", bi.fas02b07d01.isChecked() ? "1"
                         : bi.fas02b07d02.isChecked() ? "2"
                         : "0");
 
 
-        s02.put("fas02b07e",
-                bi.fas02b07e01.isChecked() ? "1"
+        s02.put("fas02b07e", bi.fas02b07e01.isChecked() ? "1"
                         : bi.fas02b07e02.isChecked() ? "2"
                         : "0");
 
-        s02.put("fas02b08",
-                bi.fas02b08a.isChecked() ? "1"
+        s02.put("fas02b08", bi.fas02b08a.isChecked() ? "1"
                         : bi.fas02b08b.isChecked() ? "2"
                         : bi.fas02b08c.isChecked() ? "3"
                         : bi.fas02b08d.isChecked() ? "4"
@@ -218,8 +249,7 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
         s02.put("fas02b0896x", bi.fas02b0896x.getText().toString());
 
 
-        s02.put("fas02b09",
-                bi.fas02b09a.isChecked() ? "1"
+        s02.put("fas02b09", bi.fas02b09a.isChecked() ? "1"
                         : bi.fas02b09b.isChecked() ? "2"
                         : bi.fas02b09c.isChecked() ? "3"
                         : bi.fas02b09d.isChecked() ? "4"
@@ -230,22 +260,20 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
         s02.put("fas02b0996x", bi.fas02b0996x.getText().toString());
 
 
-        s02.put("fas02b10",
-                bi.fas02b10a.isChecked() ? "1"
+        s02.put("fas02b10", bi.fas02b10a.isChecked() ? "1"
                         : bi.fas02b10b.isChecked() ? "2"
                         : bi.fas02b10c.isChecked() ? "3"
                         : bi.fas02b10d.isChecked() ? "4"
                         : bi.fas02b10e.isChecked() ? "5"
                         : bi.fas02b10f.isChecked() ? "6"
-                        : bi.fas02b10g.isChecked() ? "97"
-                        : bi.fas02b10h.isChecked() ? "99"
+                        : bi.fas02b1097.isChecked() ? "97"
+                        : bi.fas02b1099.isChecked() ? "99"
                         : bi.fas02b1096.isChecked() ? "96"
                         : "0");
         s02.put("fas02b1096x", bi.fas02b1096x.getText().toString());
 
 
-        s02.put("fas02b11",
-                bi.fas02b11a.isChecked() ? "1"
+        s02.put("fas02b11", bi.fas02b11a.isChecked() ? "1"
                         : bi.fas02b11b.isChecked() ? "2"
                         : bi.fas02b11c.isChecked() ? "3"
                         : bi.fas02b11d.isChecked() ? "4"

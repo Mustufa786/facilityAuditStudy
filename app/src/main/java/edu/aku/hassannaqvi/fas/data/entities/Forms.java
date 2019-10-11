@@ -23,42 +23,7 @@ public class Forms implements Serializable {
     @ColumnInfo(name = "followupType")
     private String followupType = "";
 
-    @Ignore
-    public Forms(Forms forms) {
-
-        this.formType = forms.formType;
-        this.followupType = forms.followupType;
-        this.uid = forms.uid;
-        this.formDate = forms.formDate;
-        this.username = forms.username;
-        this.participantID = forms.participantID;
-        this.participantName = forms.participantName;
-        this.hfcode = forms.hfcode;
-        this.sa1 = forms.sa1;
-        this.sa2 = forms.sa2;
-        this.sa3 = forms.sa3;
-        this.sa4 = forms.sa4;
-        this.sa5 = forms.sa5;
-        this.sa6 = forms.sa6;
-        this.sa7 = forms.sa7;
-        this.sa8 = forms.sa8;
-        this.sa9 = forms.sa9;
-        this.istatus = forms.istatus;
-        this.endtime = forms.endtime;
-        this.districtcode = forms.districtcode;
-        this.uccode = forms.uccode;
-        this.gpsLat = forms.gpsLat;
-        this.gpsLng = forms.gpsLng;
-        this.gpsDT = forms.gpsDT;
-        this.gpsAcc = forms.gpsAcc;
-        this.gpsElev = forms.gpsElev;
-        this.deviceID = forms.deviceID;
-        this.devicetagID = forms.devicetagID;
-        this.synced = forms.synced;
-        this.synced_date = forms.synced_date;
-        this.appversion = forms.appversion;
-
-    }
+    private String tehsilcode = "";
 
     @PrimaryKey(autoGenerate = true)
     private int id;
@@ -82,8 +47,47 @@ public class Forms implements Serializable {
     private String istatus = "";
     private String endtime = "";
     private String districtcode = "";
+    private String hfname = "";
     private String uccode = "";
     private String hfcode = "";
+    @Ignore
+    public Forms(Forms forms) {
+
+        this.formType = forms.formType;
+        this.followupType = forms.followupType;
+        this.uid = forms.uid;
+        this.formDate = forms.formDate;
+        this.username = forms.username;
+        this.participantID = forms.participantID;
+        this.participantName = forms.participantName;
+        this.hfcode = forms.hfcode;
+        this.hfname = forms.hfname;
+        this.sa1 = forms.sa1;
+        this.sa2 = forms.sa2;
+        this.sa3 = forms.sa3;
+        this.sa4 = forms.sa4;
+        this.sa5 = forms.sa5;
+        this.sa6 = forms.sa6;
+        this.sa7 = forms.sa7;
+        this.sa8 = forms.sa8;
+        this.sa9 = forms.sa9;
+        this.istatus = forms.istatus;
+        this.endtime = forms.endtime;
+        this.districtcode = forms.districtcode;
+        this.tehsilcode = forms.tehsilcode;
+        this.uccode = forms.uccode;
+        this.gpsLat = forms.gpsLat;
+        this.gpsLng = forms.gpsLng;
+        this.gpsDT = forms.gpsDT;
+        this.gpsAcc = forms.gpsAcc;
+        this.gpsElev = forms.gpsElev;
+        this.deviceID = forms.deviceID;
+        this.devicetagID = forms.devicetagID;
+        this.synced = forms.synced;
+        this.synced_date = forms.synced_date;
+        this.appversion = forms.appversion;
+
+    }
     private String gpsLat = "";
     private String gpsLng = "";
     private String gpsDT = "";
@@ -121,7 +125,9 @@ public class Forms implements Serializable {
 //        json.put("participantID", this.participantID == null ? JSONObject.NULL : this.participantID);
 //        json.put("participantName", this.participantName == null ? JSONObject.NULL : this.participantName);
         json.put("hfcode", this.hfcode == null ? JSONObject.NULL : this.hfcode);
+        json.put("hfname", this.hfname == null ? JSONObject.NULL : this.hfname);
         json.put("districtcode", this.districtcode == null ? JSONObject.NULL : this.districtcode);
+        json.put("tehsilcode", this.tehsilcode == null ? JSONObject.NULL : this.tehsilcode);
         json.put("endtime", this.endtime == null ? JSONObject.NULL : this.endtime);
         json.put("uccode", this.uccode == null ? JSONObject.NULL : this.uccode);
         json.put("gpsLat", this.gpsLat == null ? JSONObject.NULL : this.gpsLat);
@@ -239,6 +245,14 @@ public class Forms implements Serializable {
         this.hfcode = hfcode;
     }
 
+    public String getHfname() {
+        return hfname;
+    }
+
+    public void setHfname(String hfname) {
+        this.hfname = hfname;
+    }
+
     public String getSa1() {
         return sa1;
     }
@@ -325,6 +339,14 @@ public class Forms implements Serializable {
 
     public void setDistrictcode(String districtcode) {
         this.districtcode = districtcode;
+    }
+
+    public String getTehsilcode() {
+        return tehsilcode;
+    }
+
+    public void setTehsilcode(String tehsilcode) {
+        this.tehsilcode = tehsilcode;
     }
 
     public String getUccode() {

@@ -124,7 +124,6 @@
                         <EditText
                             android:id="@+id/password"
                             style="@style/textInput"
-
                             android:drawableStart="@drawable/ic_lock_close"
                             android:drawablePadding="2dp"
                             android:hint="@string/prompt_password"
