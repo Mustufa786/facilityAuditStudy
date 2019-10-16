@@ -150,6 +150,7 @@ public class SectionC2_tool_2Activity extends AppCompatActivity {
 
             }
         };
+
         bi.fas02c2501.setOnCheckedChangeListener(rdg25);
         bi.fas02c2502.setOnCheckedChangeListener(rdg25);
         bi.fas02c2503.setOnCheckedChangeListener(rdg25);

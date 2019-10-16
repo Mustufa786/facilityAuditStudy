@@ -146,7 +146,11 @@ public class SectionC_tool_2Activity extends AppCompatActivity {
         try {
             SaveDraft();
             if (UpdateDB()) {
-                MainApp.stActivity(this, this, SectionC2_tool_2Activity.class, fc);
+                if (bi.fas02c01b.isChecked()) {
+                    MainApp.endActivitySetRouting(this, this, EndingActivity.class, true, fc);
+                } else {
+                    MainApp.stActivity(this, this, SectionC2_tool_2Activity.class, fc);
+                }
             } else {
                 Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
             }
