@@ -61,11 +61,12 @@ public class SectionC2_tool_2Activity extends AppCompatActivity {
         bi.fas02c19.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
                 if (i == bi.fas02c19a.getId() || i == bi.fas02c19b.getId()) {
                     bi.fas02c20cv.setVisibility(View.VISIBLE);
                 } else {
-                    ClearClass.ClearAllFields(bi.fas02c20cv, null);
                     bi.fas02c20cv.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fas02c20cv, null);
                 }
             }
         });
