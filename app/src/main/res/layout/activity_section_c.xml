@@ -190,7 +190,7 @@
 
                         <TextView
                             style="@style/i_textview"
-                            android:text="@string/hfa1304a" />
+                            android:text="@string/hfa1304" />
 
                         <RadioGroup
                             android:id="@+id/hfa1304"
