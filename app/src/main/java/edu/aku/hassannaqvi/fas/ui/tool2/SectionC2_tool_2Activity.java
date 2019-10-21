@@ -132,12 +132,17 @@ public class SectionC2_tool_2Activity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
-                c25Flag = bi.fas02c2501b.isChecked();
-                c25Flag = bi.fas02c2502b.isChecked();
-                c25Flag = bi.fas02c2503b.isChecked();
-                c25Flag = bi.fas02c2504b.isChecked();
-                c25Flag = bi.fas02c2505b.isChecked();
-                c25Flag = bi.fas02c2506b.isChecked();
+                c25Flag = bi.fas02c2501b.isChecked()
+                        && bi.fas02c2502b.isChecked()
+                        && bi.fas02c2503b.isChecked()
+                        && bi.fas02c2504b.isChecked()
+                        && bi.fas02c2505b.isChecked()
+                        && bi.fas02c2506b.isChecked();
+                //c25Flag = bi.fas02c2502b.isChecked();
+                //c25Flag = bi.fas02c2503b.isChecked();
+                //c25Flag = bi.fas02c2504b.isChecked();
+                //c25Flag = bi.fas02c2505b.isChecked();
+                //c25Flag = bi.fas02c2506b.isChecked();
 
                 if (c25Flag) {
                     bi.fldGrpfas02c26.setVisibility(View.VISIBLE);

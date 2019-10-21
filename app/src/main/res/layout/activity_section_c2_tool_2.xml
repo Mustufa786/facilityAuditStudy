@@ -1045,7 +1045,8 @@
             <!--fas02c26-->
             <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpfas02c26"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility="gone">
 
                 <LinearLayout style="@style/linerlayout_view">
 
