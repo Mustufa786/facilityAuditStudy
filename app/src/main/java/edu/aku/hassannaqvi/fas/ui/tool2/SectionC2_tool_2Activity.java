@@ -4,6 +4,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -54,6 +55,19 @@ public class SectionC2_tool_2Activity extends AppCompatActivity {
     }
 
 
+    public CheckBox.OnCheckedChangeListener check21 = new CompoundButton.OnCheckedChangeListener() {
+        @Override
+        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+            if (bi.fas02c21e.isChecked() || bi.fas02c21h.isChecked()) {
+                bi.fas02c22cv.setVisibility(View.VISIBLE);
+            } else {
+                ClearClass.ClearAllFields(bi.llfas02c22, null);
+                bi.fas02c22cv.setVisibility(View.GONE);
+            }
+        }
+    };
+
+
     private void setListenersUI() {
 
 
@@ -98,28 +112,11 @@ public class SectionC2_tool_2Activity extends AppCompatActivity {
                 }
             }
         });
-        bi.fas02c21e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b) {
-                    bi.fas02c22cv.setVisibility(View.VISIBLE);
-                } else {
-                    ClearClass.ClearAllFields(bi.llfas02c22, null);
-                    bi.fas02c22cv.setVisibility(View.GONE);
-                }
-            }
-        });
-        bi.fas02c21h.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b) {
-                    bi.fas02c22cv.setVisibility(View.VISIBLE);
-                } else {
-                    ClearClass.ClearAllFields(bi.llfas02c22, null);
-                    bi.fas02c22cv.setVisibility(View.GONE);
-                }
-            }
-        });
+
+
+        bi.fas02c21e.setOnCheckedChangeListener(check21);
+        bi.fas02c21h.setOnCheckedChangeListener(check21);
+
 
         //fas02c23
         bi.fas02c23.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -135,12 +132,17 @@ public class SectionC2_tool_2Activity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
-                c25Flag = bi.fas02c2501b.isChecked();
-                c25Flag = bi.fas02c2502b.isChecked();
-                c25Flag = bi.fas02c2503b.isChecked();
-                c25Flag = bi.fas02c2504b.isChecked();
-                c25Flag = bi.fas02c2505b.isChecked();
-                c25Flag = bi.fas02c2506b.isChecked();
+                c25Flag = bi.fas02c2501b.isChecked()
+                        && bi.fas02c2502b.isChecked()
+                        && bi.fas02c2503b.isChecked()
+                        && bi.fas02c2504b.isChecked()
+                        && bi.fas02c2505b.isChecked()
+                        && bi.fas02c2506b.isChecked();
+                //c25Flag = bi.fas02c2502b.isChecked();
+                //c25Flag = bi.fas02c2503b.isChecked();
+                //c25Flag = bi.fas02c2504b.isChecked();
+                //c25Flag = bi.fas02c2505b.isChecked();
+                //c25Flag = bi.fas02c2506b.isChecked();
 
                 if (c25Flag) {
                     bi.fldGrpfas02c26.setVisibility(View.VISIBLE);
