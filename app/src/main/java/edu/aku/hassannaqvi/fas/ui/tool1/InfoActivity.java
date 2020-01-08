@@ -39,7 +39,6 @@ import edu.aku.hassannaqvi.fas.data.entities.UCs;
 import edu.aku.hassannaqvi.fas.databinding.ActivityInfoBinding;
 import edu.aku.hassannaqvi.fas.get.db.GetAllDBData;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
-import edu.aku.hassannaqvi.fas.utils.DateUtils;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
 import static edu.aku.hassannaqvi.fas.ui.LoginActivity.db;
@@ -70,7 +69,7 @@ public class InfoActivity extends AppCompatActivity {
         bi.formTypeText.setText(formType.equals("q") ? "Quarterly Followup" : formType.equals("m") ? "Monthly Followup" : "");
 
         //setting formdate
-        bi.hfa11.setMinDate(DateUtils.getMonthsBack("dd/MM/yyyy", -2));
+//        bi.hfa11.setMinDate("01");
         setContentUI();
         listeneres();
     }
