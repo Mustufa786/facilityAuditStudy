@@ -44,8 +44,8 @@ public interface GetFncDAO {
     Forms checkParticipantExist(String part_id);
 
     /*
-    * Spinner Items
-    */
+     * Spinner Items
+     */
     @Query("SELECT * FROM " + CONSTANTS.TABLE_DISTRICTS)
     List<Districts> getAllDistricts();
 
