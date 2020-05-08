@@ -22,16 +22,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.tool1.SectionNActivity"></activity>
+        <activity android:name=".ui.tool1.SectionMActivity" />
+        <activity android:name=".ui.tool1.SectionLActivity" />
         <activity android:name=".ui.tool1.SectionJActivity"></activity>
         <activity
             android:name=".ui.SplashscreenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name="im.dino.dbinspector.activities.DbInspectorActivity">
             <intent-filter tools:node="removeAll">
                 <action android:name="android.intent.action.MAIN" />
@@ -131,8 +134,15 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool2.SectionD_tool_2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.tool3.Section3A"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />

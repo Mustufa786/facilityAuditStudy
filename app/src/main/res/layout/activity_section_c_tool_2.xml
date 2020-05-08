@@ -32,7 +32,7 @@
 
                         <RadioGroup
                             android:id="@+id/fas02c00"
-                            style="@style/i_radiogroup">
+                            style="@style/vradiogroup">
 
                             <RadioButton
                                 android:id="@+id/fas02c00a"
