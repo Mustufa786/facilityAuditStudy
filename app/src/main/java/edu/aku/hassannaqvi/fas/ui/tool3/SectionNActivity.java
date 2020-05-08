@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.fas.ui.tool1;
+package edu.aku.hassannaqvi.fas.ui.tool3;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -16,19 +16,19 @@ import edu.aku.hassannaqvi.fas.RMOperations.crudOperations;
 import edu.aku.hassannaqvi.fas.core.MainApp;
 import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
-import edu.aku.hassannaqvi.fas.databinding.ActivitySectionMBinding;
+import edu.aku.hassannaqvi.fas.databinding.ActivitySectionNBinding;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
-public class SectionMActivity extends AppCompatActivity {
+public class SectionNActivity extends AppCompatActivity {
 
-    ActivitySectionMBinding bi;
+    ActivitySectionNBinding bi;
     private Forms fc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_m);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_n);
         bi.setCallback(this);
 
     }
@@ -77,35 +77,36 @@ public class SectionMActivity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("ax41", bi.ax41.getText().toString());
-        json.put("ax411", bi.ax411.getText().toString());
-        json.put("ax42",
-                bi.ax42a.isChecked() ? "1" :
-                        bi.ax42b.isChecked() ? "2" :
-                                bi.ax42c.isChecked() ? "3" :
-                                        bi.ax42d.isChecked() ? "4" :
-                                                "-1");
-        json.put("ax43",
-                bi.ax43a.isChecked() ? "1" :
-                        bi.ax43b.isChecked() ? "2" :
-                                bi.ax43c.isChecked() ? "98" :
-                                        "-1");
-        json.put("ax44",
-                bi.ax44a.isChecked() ? "1" :
-                        bi.ax44b.isChecked() ? "2" :
-                                bi.ax44c.isChecked() ? "3" :
-                                        bi.ax44d.isChecked() ? "4" :
-                                                bi.ax44e.isChecked() ? "5" :
-                                                        bi.ax44f.isChecked() ? "96" :
-                                                                bi.ax44g.isChecked() ? "98" :
-                                                                        "-1");
-        json.put("ax44fx", bi.ax44fx.getText().toString());
+        json.put("ax52a",
+                "-1");
+        json.put("ax52b",
+                "-1");
+        json.put("ax53a",
+                "-1");
+        json.put("ax53b",
+                "-1");
+        json.put("ax54a",
+                "-1");
+        json.put("ax54b",
+                "-1");
+        json.put("ax56a",
+                "-1");
+        json.put("ax56b", bi.ax56b.getText().toString());
+        json.put("ax57a",
+                "-1");
+        json.put("ax57b", bi.ax57b.getText().toString());
+        json.put("ax58a",
+                "-1");
+        json.put("ax58b", bi.ax58b.getText().toString());
+        json.put("ax59a",
+                "-1");
+        json.put("ax59b", bi.ax59b.getText().toString());
 
     }
 
 
     private boolean formValidation() {
-        return ValidatorClass.EmptyCheckingContainer(this, bi.GrpNameSectionM);
+        return ValidatorClass.EmptyCheckingContainer(this, bi.GrpNameSectionN);
     }
 
 

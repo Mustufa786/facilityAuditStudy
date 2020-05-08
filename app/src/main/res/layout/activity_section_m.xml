@@ -8,7 +8,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.fas.ui.tool1.SectionMActivity" />
+            type="edu.aku.hassannaqvi.fas.ui.tool3.SectionMActivity" />
     </data>
 
     <ScrollView
@@ -17,7 +17,7 @@
         android:fadeScrollbars="false"
         android:fillViewport="true"
         android:scrollbarSize="10dip"
-        tools:context=".ui.Myactivity">
+        tools:context=".ui.tool3.SectionMActivity">
 
         <LinearLayout
             android:id="@+id/GrpNameSectionM"
