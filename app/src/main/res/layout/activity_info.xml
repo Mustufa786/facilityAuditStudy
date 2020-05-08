@@ -45,23 +45,38 @@
                 <!--hfa1100-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
-                    <LinearLayout style="@style/linerlayout_view">
+                    <LinearLayout style="@style/vlinerlayout">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/hfa1100"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                        <LinearLayout style="@style/hlinerlayout">
+
+                            <!--<TextView
+                                style="@style/i_textview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/hfa1100"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />-->
+
+                            <TextView
+                                style="@style/qtextview"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/q_hfa1100" />
+
+                            <TextView
+                                style="@style/textview"
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:text="@string/hfa1100" />
+
+                        </LinearLayout>
 
                         <RadioGroup
                             android:id="@+id/hfa1100"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            style="@style/vradiogroup">
 
                             <RadioButton
                                 android:id="@+id/hfa1100a"
@@ -80,7 +95,6 @@
                                 android:text="@string/hfa1100b" />
 
                         </RadioGroup>
-
 
                     </LinearLayout>
 
@@ -487,7 +501,7 @@
                                 android:hint="@string/specify"
                                 android:inputType="text"
                                 android:tag="hfa110496"
-                                android:text='@{hfa110496.checked? hfa110496x.getText.toString : ""}'
+                                android:text='@{hfa110496.checked? hfa110496x.getText().toString() : ""}'
                                 android:visibility='@{hfa110496.checked? View.VISIBLE : View.GONE}' />
 
                         </RadioGroup>

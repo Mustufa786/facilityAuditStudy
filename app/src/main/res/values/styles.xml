@@ -152,6 +152,18 @@
         <item name="android:padding">2dp</item>
     </style>
 
+    <style name="vlinerlayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="hlinerlayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
     <style name="linerlayout_view_h">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -172,7 +184,6 @@
     <!-- Irfan Scrollview  -->
 
     <style name="i_scrollview">
-
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">5sp</item>
@@ -195,6 +206,31 @@
         <item name="android:textSize">23sp</item>
     </style>
 
+    <!-- SAJID Textview  -->
+    <style name="textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <!-- SAJID Textview  -->
+    <style name="qtextview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
     <!-- Irfan Textview  -->
     <style name="i_textview_h">
         <item name="android:layout_width">match_parent</item>
@@ -209,10 +245,17 @@
 
 
     <!-- Irfan RadioGroup  -->
-    <style name="i_radiogroup">
+    <style name="vradiogroup">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- RadioGroup  -->
+    <style name="hradiogroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
     </style>
 
     <!-- Irfan RadioButton  -->

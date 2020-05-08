@@ -248,7 +248,6 @@ public class InfoActivity extends AppCompatActivity {
                 fExt = "f6_";
                 //retClass = Form6AnthroActivity.class;
                 break;
-
         }
 
         return retClass;
