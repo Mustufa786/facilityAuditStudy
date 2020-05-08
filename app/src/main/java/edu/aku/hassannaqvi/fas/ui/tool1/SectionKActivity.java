@@ -5,11 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.concurrent.ExecutionException;
 
-import edu.aku.hassannaqvi.fas.JSON.GeneratorClass;
 import edu.aku.hassannaqvi.fas.R;
 import edu.aku.hassannaqvi.fas.RMOperations.crudOperations;
 import edu.aku.hassannaqvi.fas.core.CONSTANTS;
@@ -18,7 +18,6 @@ import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
 import edu.aku.hassannaqvi.fas.databinding.ActivitySectionKBinding;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
-import edu.aku.hassannaqvi.fas.validation.ClearClass;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
 public class SectionKActivity extends AppCompatActivity {
@@ -92,7 +91,11 @@ public class SectionKActivity extends AppCompatActivity {
         if (!formValidation())
             return;
 
-        SaveDraft();
+        try {
+            SaveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         if (UpdateDB()) {
             MainApp.stActivity(this, this, SectionDActivity.class, fc);
         } else {
@@ -117,9 +120,56 @@ public class SectionKActivity extends AppCompatActivity {
         return false;
     }
 
-    private void SaveDraft() {
-        JSONObject Json = GeneratorClass.getContainerJSON(bi.GrpNameSectionK, true);
-        fc.setSa3(String.valueOf(Json));
+    private void SaveDraft() throws JSONException {
+        JSONObject json = new JSONObject();
+        json.put("ax21a", bi.ax21a.getText().toString());
+        json.put("ax21b", bi.ax21b.getText().toString());
+        json.put("ax21c", bi.ax21c.getText().toString());
+        json.put("ax21d", bi.ax21d.getText().toString());
+        json.put("ax21e", bi.ax21e.getText().toString());
+        json.put("ax21f", bi.ax21f.getText().toString());
+        json.put("ax21g", bi.ax21g.getText().toString());
+        json.put("ax22", bi.ax22.getText().toString());
+        json.put("ax23", bi.ax23a.isChecked() ? "1"
+                : bi.ax23b.isChecked() ? "2"
+                : bi.ax23c.isChecked() ? "3"
+                : bi.ax23d.isChecked() ? "98"
+                : "-1");
+        json.put("ax23cx", bi.ax23cx.getText().toString());
+        json.put("ax24", bi.ax24a.isChecked() ? "1"
+                : bi.ax24b.isChecked() ? "2"
+                : bi.ax24c.isChecked() ? "3"
+                : bi.ax24d.isChecked() ? "4"
+                : bi.ax24e.isChecked() ? "5"
+                : bi.ax24f.isChecked() ? "98"
+                : "-1");
+        json.put("ax25",
+                bi.ax25a.isChecked() ? "1" :
+                        bi.ax25b.isChecked() ? "2" :
+                                bi.ax25c.isChecked() ? "3" :
+                                        bi.ax25d.isChecked() ? "4" :
+                                                bi.ax25e.isChecked() ? "5" :
+                                                        bi.ax25f.isChecked() ? "98" :
+                                                                "-1");
+        json.put("ax26",
+                bi.ax26a.isChecked() ? "1" :
+                        bi.ax26b.isChecked() ? "2" :
+                                bi.ax26c.isChecked() ? "66" :
+                                        bi.ax26d.isChecked() ? "98" :
+                                                "-1");
+        json.put("ax27",
+                bi.ax27a.isChecked() ? "1" :
+                        bi.ax27b.isChecked() ? "2" :
+                                bi.ax27c.isChecked() ? "3" :
+                                        bi.ax27d.isChecked() ? "98" :
+                                                "-1");
+        json.put("ax271",
+                bi.ax271a.isChecked() ? "1" :
+                        bi.ax271b.isChecked() ? "2" :
+                                bi.ax271c.isChecked() ? "96" :
+                                        "-1");
+        json.put("ax271cx", bi.ax271cx.getText().toString());
+
     }
 
     private boolean formValidation() {
