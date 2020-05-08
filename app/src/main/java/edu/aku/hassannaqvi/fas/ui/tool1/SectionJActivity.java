@@ -131,19 +131,22 @@ public class SectionJActivity extends AppCompatActivity {
         json.put("ax11", bi.ax11.getText().toString());
         json.put("ax12", bi.ax12.getText().toString());
         json.put("ax13", bi.ax13.getText().toString());
-        json.put("ax14",
-                bi.ax14a.isChecked() ?"1" :
-                        bi.ax14b.isChecked() ?"2" :
-                                bi.ax14c.isChecked() ?"3" :
-                                        bi.ax14d.isChecked() ?"4" :
-                                                "-1");
+
+        json.put("ax14", bi.ax14a.isChecked() ? "1"
+                : bi.ax14b.isChecked() ? "2"
+                : bi.ax14c.isChecked() ? "3"
+                : bi.ax14d.isChecked() ? "4"
+                : "-1");
+
         json.put("ax15", bi.ax15.getText().toString());
-        json.put("ax16",
-                bi.ax16a.isChecked() ?"1" :
-                        bi.ax16b.isChecked() ?"2" :
-                                bi.ax16c.isChecked() ?"3" :
-                                        "-1");
+
+        json.put("ax16", bi.ax16a.isChecked() ? "1"
+                : bi.ax16b.isChecked() ? "2"
+                : bi.ax16c.isChecked() ? "3"
+                : "-1");
+
         json.put("ax16bx", bi.ax16bx.getText().toString());
+
         json.put("ax16cx", bi.ax16cx.getText().toString());
 
         fc.setSa3(String.valueOf(json));
