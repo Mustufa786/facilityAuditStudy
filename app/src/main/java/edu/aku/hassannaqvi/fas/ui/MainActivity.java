@@ -55,6 +55,7 @@ import edu.aku.hassannaqvi.fas.get.db.GetAllDBData;
 import edu.aku.hassannaqvi.fas.sync.SyncAllData;
 import edu.aku.hassannaqvi.fas.ui.tool1.InfoActivity;
 import edu.aku.hassannaqvi.fas.ui.tool2.SectionA_tool_2Activity;
+import edu.aku.hassannaqvi.fas.ui.tool3.Section3A;
 import im.dino.dbinspector.activities.DbInspectorActivity;
 
 import static edu.aku.hassannaqvi.fas.ui.LoginActivity.db;
@@ -393,6 +394,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "t2":
                 retClass = SectionA_tool_2Activity.class;
+                break;
+            case "t3":
+                retClass = Section3A.class;
                 break;
         }
 

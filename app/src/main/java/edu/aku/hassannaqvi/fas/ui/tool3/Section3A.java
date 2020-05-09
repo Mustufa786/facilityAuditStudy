@@ -152,9 +152,9 @@ public class Section3A extends AppCompatActivity {
         MainApp.endActivityDirectRouting(this, this, EndingActivity.class, false, fc);
     }
 
-    @Override
+    /*@Override
     public void onBackPressed() {
         Toast.makeText(this, "Back Press NOT Allowed", Toast.LENGTH_SHORT).show();
-    }
+    }*/
 
 }
