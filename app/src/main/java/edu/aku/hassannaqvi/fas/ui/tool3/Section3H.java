@@ -16,19 +16,19 @@ import edu.aku.hassannaqvi.fas.RMOperations.crudOperations;
 import edu.aku.hassannaqvi.fas.core.MainApp;
 import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
-import edu.aku.hassannaqvi.fas.databinding.ActivitySectionNBinding;
+import edu.aku.hassannaqvi.fas.databinding.ActivitySection3hBinding;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
-public class SectionNActivity extends AppCompatActivity {
+public class Section3H extends AppCompatActivity {
 
-    ActivitySectionNBinding bi;
+    ActivitySection3hBinding bi;
     private Forms fc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_n);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section3h);
         bi.setCallback(this);
 
     }
@@ -77,30 +77,34 @@ public class SectionNActivity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("ax52a",
-                "-1");
-        json.put("ax52b",
-                "-1");
-        json.put("ax53a",
-                "-1");
-        json.put("ax53b",
-                "-1");
-        json.put("ax54a",
-                "-1");
-        json.put("ax54b",
-                "-1");
-        json.put("ax56a",
-                "-1");
-        json.put("ax56b", bi.ax56b.getText().toString());
-        json.put("ax57a",
-                "-1");
-        json.put("ax57b", bi.ax57b.getText().toString());
-        json.put("ax58a",
-                "-1");
-        json.put("ax58b", bi.ax58b.getText().toString());
-        json.put("ax59a",
-                "-1");
-        json.put("ax59b", bi.ax59b.getText().toString());
+        json.put("ax52a", "-1");
+
+        json.put("ax52b", "-1");
+
+        json.put("ax53a", "-1");
+
+        json.put("ax53b", "-1");
+
+        json.put("ax54a", "-1");
+
+        json.put("ax54b", "-1");
+
+        json.put("ax56a", "-1");
+
+        json.put("ax56b", bi.ax56b.getText().toString().trim().isEmpty() ? "-1" : bi.ax56b.getText().toString());
+
+        json.put("ax57a", "-1");
+
+        json.put("ax57b", bi.ax57b.getText().toString().trim().isEmpty() ? "-1" : bi.ax57b.getText().toString());
+
+        json.put("ax58a", "-1");
+
+        json.put("ax58b", bi.ax58b.getText().toString().trim().isEmpty() ? "-1" : bi.ax58b.getText().toString());
+
+        json.put("ax59a", "-1");
+
+        json.put("ax59b", bi.ax59b.getText().toString().trim().isEmpty() ? "-1" : bi.ax59b.getText().toString());
+
 
     }
 
@@ -117,7 +121,7 @@ public class SectionNActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "You can't go back", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Back Press NOT Allowed", Toast.LENGTH_SHORT).show();
     }
 
 }

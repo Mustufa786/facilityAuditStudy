@@ -25,7 +25,7 @@
         <activity android:name=".ui.tool3.Section3C"></activity>
         <activity android:name=".ui.tool3.Section3B" />
 
-        <activity android:name=".ui.tool3.SectionNActivity"></activity>
+        <activity android:name=".ui.tool3.Section3H"></activity>
         <activity android:name=".ui.tool3.Section3G" />
         <activity android:name=".ui.tool3.Section3F" />
         <activity android:name=".ui.tool3.Section3D"></activity>

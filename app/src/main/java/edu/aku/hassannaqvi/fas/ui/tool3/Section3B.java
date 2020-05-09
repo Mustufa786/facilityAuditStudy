@@ -142,7 +142,7 @@ public class Section3B extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "Back Press Locked", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Back Press NOT Allowed", Toast.LENGTH_SHORT).show();
     }
 
 }

@@ -295,6 +295,6 @@ public class SectionB_tool_2Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "You can't go back", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Back Press NOT Allowed", Toast.LENGTH_SHORT).show();
     }
 }
