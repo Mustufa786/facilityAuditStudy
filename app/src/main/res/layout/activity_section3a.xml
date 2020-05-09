@@ -80,7 +80,7 @@
                         android:layout_width="0dp"
                         android:layout_marginStart="3dp"
                         android:layout_weight="1"
-                        android:hint="@string/hf1_01" />
+                        android:text="@string/num" />
 
                 </LinearLayout>
 
@@ -123,15 +123,11 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/hf1_03" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/textview"
                         android:text="@string/hf1_03a" />
 
                     <EditText
@@ -142,9 +138,7 @@
                         android:hint="@string/hf1_03a" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/textview"
                         android:text="@string/hf1_03b" />
 
                     <EditText
@@ -155,9 +149,7 @@
                         android:hint="@string/hf1_03b" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/textview"
                         android:text="@string/hf1_03c" />
 
                     <EditText
@@ -168,9 +160,7 @@
                         android:hint="@string/hf1_03c" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/textview"
                         android:text="@string/hf1_03d" />
 
                     <EditText
@@ -190,21 +180,15 @@
                 android:id="@+id/fldGrpCVhf1_04"
                 style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/vlinerlayout">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/hf1_04" />
 
                     <RadioGroup
                         android:id="@+id/hf1_04"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/vradiogroup">
 
                         <RadioButton
                             android:id="@+id/hf1_04a"
@@ -226,12 +210,9 @@
 
                         <EditText
                             android:id="@+id/hf1_04cx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditText"
                             android:hint="@string/hf1_04c"
-                            android:tag="hf104c"
-                            android:text='@{hf104c.checked ? hf104cx.getText().toString() : "-1"}'
+                            android:text='@{hf104c.checked ? hf104cx.getText().toString() : ""}'
                             android:visibility='@{hf104c.checked ? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
@@ -252,9 +233,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/hf1_05" />
 
                     <RadioGroup
