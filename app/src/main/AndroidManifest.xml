@@ -24,10 +24,11 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ui.tool3.Section3C"></activity>
         <activity android:name=".ui.tool3.Section3B" />
-        <activity android:name=".ui.tool1.SectionNActivity" />
-        <activity android:name=".ui.tool1.SectionMActivity" />
-        <activity android:name=".ui.tool1.SectionLActivity" />
-        <activity android:name=".ui.tool1.SectionJActivity" />
+
+        <activity android:name=".ui.tool3.SectionNActivity"></activity>
+        <activity android:name=".ui.tool3.SectionMActivity" />
+        <activity android:name=".ui.tool3.SectionLActivity" />
+        <activity android:name=".ui.tool1.SectionJActivity"></activity>
         <activity
             android:name=".ui.SplashscreenActivity"
             android:screenOrientation="portrait">
@@ -136,11 +137,13 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool2.SectionD_tool_2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool3.Section3A"
             android:screenOrientation="portrait"
