@@ -727,16 +727,25 @@
 
 
     <string name="hf1_00">سروے نمبر</string>
-    <string name="hf1_00a">Quarter 1</string>
-    <string name="hf1_00b">Quarter 2</string>
-    <string name="hf1_00v">Quarter 3</string>
+
+    <string name="hf1_00a"> پہلا کوارٹر </string>
+    <string name="hf1_00b"> دوسرا کوارٹر </string>
+    <string name="hf1_00v"> تیسرا کوارٹر </string>
+
+    <!-- <string name="hf1_00a">Quarter 1 </string>
+     <string name="hf1_00b">Quarter 2</string>
+     <string name="hf1_00v">Quarter 3</string>-->
+
     <string name="hf1_01">مرکزِ صحت  کا اسٹیڈی نمبر </string>
+
     <string name="hf1_02">مرکزِ صحت کا نام</string>
+
     <string name="hf1_03">مرکزِ صحت کس جگہ واقع ہے</string>
     <string name="hf1_03a">ضلع/علاقہ/صوبہ </string>
     <string name="hf1_03b">ڈسٹرکٹ </string>
     <string name="hf1_03c"> یونین کونسل </string>
     <string name="hf1_03d">گاؤں </string>
+
     <string name="hf1_04">مرکزِ صحت کی قسم</string>
     <string name="hf1_04a">گورنمنٹ</string>
     <string name="hf1_04b"> اے کے ایچ ایس پ</string>

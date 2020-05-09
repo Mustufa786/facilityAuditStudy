@@ -20,40 +20,37 @@
             <!-- hf1_00  Radio   -->
             <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVhf1_00"
-                style="@style/cardViewDark">
+                style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/vlinerlayout">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/hf1_00" />
 
                     <RadioGroup
                         android:id="@+id/hf1_00"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/hradiogroup">
 
                         <RadioButton
                             android:id="@+id/hf1_00a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/i_radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/hf1_00a" />
 
                         <RadioButton
                             android:id="@+id/hf1_00b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/i_radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/hf1_00b" />
 
                         <RadioButton
                             android:id="@+id/hf1_00v"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/i_radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/hf1_00v" />
 
                     </RadioGroup>
@@ -66,24 +63,23 @@
             <!-- hf1_01  Input   -->
             <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVhf1_01"
-                style="@style/cardViewDark">
+                style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/hlinerlayout">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_weight="1"
                         android:text="@string/hf1_01" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/hf1_01"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
+                        style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_weight="1"
                         android:hint="@string/hf1_01" />
 
                 </LinearLayout>
@@ -94,24 +90,21 @@
             <!-- hf1_02  Input   -->
             <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVhf1_02"
-                style="@style/cardViewDark">
+                style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/hlinerlayout">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:text="@string/hf1_02" />
 
                     <EditText
                         android:id="@+id/hf1_02"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
+                        style="@style/EditText"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:hint="@string/hf1_02" />
 
                 </LinearLayout>
