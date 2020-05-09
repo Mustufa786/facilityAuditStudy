@@ -174,6 +174,8 @@ public class Section3F extends AppCompatActivity {
                 : bi.ax39e.isChecked() ? "98"
                 : "-1");
 
+        fc.setSa6(String.valueOf(json));
+
     }
 
 

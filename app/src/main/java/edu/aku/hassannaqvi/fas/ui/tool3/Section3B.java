@@ -127,7 +127,7 @@ public class Section3B extends AppCompatActivity {
 
         json.put("hf2_30", bi.hf230.getText().toString().trim().isEmpty() ? "-1" : bi.hf230.getText().toString());
 
-        fc.setSa5(String.valueOf(json));
+        fc.setSa2(String.valueOf(json));
 
     }
 

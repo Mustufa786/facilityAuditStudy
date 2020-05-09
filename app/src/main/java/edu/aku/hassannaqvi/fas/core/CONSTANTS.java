@@ -25,6 +25,7 @@ public interface CONSTANTS {
 
     String _URI_FORM_TOOL1 = "ftool1";
     String _URI_FORM_TOOL2 = "ftool2";
+    String _URI_FORM_TOOL3 = "ftool3";
 
     String _URI_DATAMAP_SURVEY_TYPE = "fas01a00";
     String _URI_DATAMAP_HF_NO = "fas01a01";

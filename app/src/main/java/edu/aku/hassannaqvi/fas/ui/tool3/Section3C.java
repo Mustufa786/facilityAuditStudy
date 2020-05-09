@@ -167,7 +167,7 @@ public class Section3C extends AppCompatActivity {
 
         json.put("mt7_03b1gx", bi.mt703b1gx.getText().toString().trim().isEmpty() ? "-1" : bi.mt703b1gx.getText().toString());
 
-        fc.setSa5(String.valueOf(json));
+        fc.setSa3(String.valueOf(json));
 
     }
 

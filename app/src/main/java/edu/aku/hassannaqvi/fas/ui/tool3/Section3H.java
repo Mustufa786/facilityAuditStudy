@@ -105,6 +105,8 @@ public class Section3H extends AppCompatActivity {
 
         json.put("ax59b", bi.ax59b.getText().toString().trim().isEmpty() ? "-1" : bi.ax59b.getText().toString());
 
+        fc.setSa8(String.valueOf(json));
+
 
     }
 

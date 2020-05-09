@@ -102,6 +102,8 @@ public class Section3G extends AppCompatActivity {
                 : "-1");
         json.put("ax44fx", bi.ax44fx.getText().toString());
 
+        fc.setSa7(String.valueOf(json));
+
     }
 
 

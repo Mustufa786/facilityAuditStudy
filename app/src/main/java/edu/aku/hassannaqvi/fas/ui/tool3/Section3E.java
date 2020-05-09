@@ -186,6 +186,8 @@ public class Section3E extends AppCompatActivity {
 
         json.put("ax271cx", bi.ax271cx.getText().toString().trim().isEmpty() ? "-1" : bi.ax271cx.getText().toString());
 
+        fc.setSa5(String.valueOf(json));
+
     }
 
 

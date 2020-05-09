@@ -150,7 +150,7 @@ public class Section3D extends AppCompatActivity {
 
         json.put("ax16cx", bi.ax16cx.getText().toString().trim().isEmpty() ? "-1" : bi.ax16cx.getText().toString());
 
-        fc.setSa3(String.valueOf(json));
+        fc.setSa4(String.valueOf(json));
     }
 
 

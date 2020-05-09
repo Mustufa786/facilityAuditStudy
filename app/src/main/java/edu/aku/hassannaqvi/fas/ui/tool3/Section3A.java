@@ -1,13 +1,20 @@
 package edu.aku.hassannaqvi.fas.ui.tool3;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
+import android.text.format.DateFormat;
+import android.util.Log;
 import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.ExecutionException;
 
 import edu.aku.hassannaqvi.fas.R;
@@ -17,12 +24,13 @@ import edu.aku.hassannaqvi.fas.core.MainApp;
 import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
 import edu.aku.hassannaqvi.fas.databinding.ActivitySection3aBinding;
-import edu.aku.hassannaqvi.fas.ui.EndingActivity;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
 public class Section3A extends AppCompatActivity {
 
+    private static final String TAG = Section3A.class.getName();
     private ActivitySection3aBinding bi;
+    String deviceID;
     private Forms fc;
 
     @Override
@@ -39,6 +47,7 @@ public class Section3A extends AppCompatActivity {
 
     private void setContentUI() {
         this.setTitle(R.string.section4_tool2);
+        deviceID = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
         fc = (Forms) getIntent().getSerializableExtra(CONSTANTS._URI_FC_OBJ);
     }
 
@@ -84,17 +93,29 @@ public class Section3A extends AppCompatActivity {
             e.printStackTrace();
         }
         if (UpdateDB()) {
-            MainApp.endActivitySetRouting(this, this, EndingActivity.class, true, fc);
+            MainApp.endActivitySetRouting(this, this, Section3B.class, true, fc);
         } else {
             Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
         }
     }
 
     private boolean UpdateDB() {
+
         try {
 
-            Long longID = new crudOperations(this, FormsDAO.class.getName(), "formsDao", "updateForm", fc).execute().get();
-            return longID == 1;
+            Long longID = new crudOperations(Section3A.this, FormsDAO.class.getName(), "formsDao", "insertForm", fc).execute().get();
+
+            if (longID != 0) {
+                fc.setId(longID.intValue());
+
+                fc.setUid(deviceID + fc.getId());
+
+                longID = new crudOperations(Section3A.this, FormsDAO.class.getName(), "formsDao", "updateForm", fc).execute().get();
+                return longID == 1;
+
+            } else {
+                return false;
+            }
 
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -106,6 +127,16 @@ public class Section3A extends AppCompatActivity {
     }
 
     private void SaveDraft() throws JSONException {
+        fc = new Forms();
+        fc.setDevicetagID(MainApp.getTagName(this));
+        fc.setAppversion(MainApp.versionName + "." + MainApp.versionCode);
+        fc.setUsername(MainApp.userName);
+        fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+        fc.setDeviceID(deviceID);
+        fc.setFormType(CONSTANTS._URI_FORM_TOOL2);
+        setGPS(fc);
+
+
 
         JSONObject json = new JSONObject();
 
@@ -139,7 +170,7 @@ public class Section3A extends AppCompatActivity {
                 : bi.hf105d.isChecked() ? "98"
                 : "-1");
 
-        fc.setSa5(String.valueOf(json));
+        fc.setSa1(String.valueOf(json));
 
     }
 
@@ -148,13 +179,44 @@ public class Section3A extends AppCompatActivity {
         return ValidatorClass.EmptyCheckingContainer(this, bi.GrpName);
     }
 
-    public void BtnEnd() {
+    /*public void BtnEnd() {
         MainApp.endActivityDirectRouting(this, this, EndingActivity.class, false, fc);
-    }
+    }*/
 
     /*@Override
     public void onBackPressed() {
         Toast.makeText(this, "Back Press NOT Allowed", Toast.LENGTH_SHORT).show();
     }*/
+
+
+    public void setGPS(Forms fc) {
+        SharedPreferences GPSPref = getSharedPreferences("GPSCoordinates", Context.MODE_PRIVATE);
+        try {
+            String lat = GPSPref.getString("Latitude", "0");
+            String lang = GPSPref.getString("Longitude", "0");
+            String acc = GPSPref.getString("Accuracy", "0");
+            String elevation = GPSPref.getString("Elevation", "0");
+
+            if (lat == "0" && lang == "0") {
+                Toast.makeText(this, "Could not obtained GPS points", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "GPS set", Toast.LENGTH_SHORT).show();
+            }
+
+            String date = DateFormat.format("dd-MM-yyyy HH:mm", Long.parseLong(GPSPref.getString("Time", "0"))).toString();
+
+            fc.setGpsLat(lat);
+            fc.setGpsLng(lang);
+            fc.setGpsAcc(acc);
+            fc.setGpsDT(date); // Timestamp is converted to date above
+            fc.setGpsElev(elevation);
+
+            Toast.makeText(this, "GPS set", Toast.LENGTH_SHORT).show();
+
+        } catch (Exception e) {
+            Log.e(TAG, "setGPS: " + e.getMessage());
+        }
+
+    }
 
 }
