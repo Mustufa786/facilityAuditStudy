@@ -114,18 +114,24 @@ public class Section3A extends AppCompatActivity {
                 : bi.hf100v.isChecked() ? "4"
                 : "-1");
 
-        json.put("hf1_01", bi.hf101.getText().toString());
-        json.put("hf1_02", bi.hf102.getText().toString());
-        json.put("hf1_03a", bi.hf103a.getText().toString());
-        json.put("hf1_03b", bi.hf103b.getText().toString());
-        json.put("hf1_03c", bi.hf103c.getText().toString());
-        json.put("hf1_03d", bi.hf103d.getText().toString());
+        json.put("hf1_01", bi.hf101.getText().toString().trim().isEmpty() ? "-1" : bi.hf101.getText().toString());
+
+        json.put("hf1_02", bi.hf102.getText().toString().trim().isEmpty() ? "-1" : bi.hf102.getText().toString());
+
+        json.put("hf1_03a", bi.hf103a.getText().toString().trim().isEmpty() ? "-1" : bi.hf103a.getText().toString());
+
+        json.put("hf1_03b", bi.hf103b.getText().toString().trim().isEmpty() ? "-1" : bi.hf103b.getText().toString());
+
+        json.put("hf1_03c", bi.hf103c.getText().toString().trim().isEmpty() ? "-1" : bi.hf103c.getText().toString());
+
+        json.put("hf1_03d", bi.hf103d.getText().toString().trim().isEmpty() ? "-1" : bi.hf103d.getText().toString());
 
         json.put("hf1_04", bi.hf104a.isChecked() ? "1"
                 : bi.hf104b.isChecked() ? "2"
                 : bi.hf104c.isChecked() ? "96"
                 : "-1");
-        json.put("hf1_04cx", bi.hf104cx.getText().toString());
+
+        json.put("hf1_04cx", bi.hf104cx.getText().toString().trim().isEmpty() ? "-1" : bi.hf104cx.getText().toString());
 
         json.put("hf1_05", bi.hf105a.isChecked() ? "1"
                 : bi.hf105b.isChecked() ? "2"
