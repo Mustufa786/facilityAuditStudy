@@ -1,5 +1,4 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -8,7 +7,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.fas.ui.tool1.SectionJActivity" />
+            type="edu.aku.hassannaqvi.fas.ui.tool3.SectionJActivity" />
     </data>
 
     <ScrollView
@@ -17,7 +16,7 @@
         android:fadeScrollbars="false"
         android:fillViewport="true"
         android:scrollbarSize="10dip"
-        tools:context=".ui.tool1.SectionJActivity">
+        tools:context=".ui.tool3.SectionJActivity">
 
         <LinearLayout
             android:id="@+id/GrpName"
