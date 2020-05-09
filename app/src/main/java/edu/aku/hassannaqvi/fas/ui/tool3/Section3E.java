@@ -16,25 +16,27 @@ import edu.aku.hassannaqvi.fas.core.CONSTANTS;
 import edu.aku.hassannaqvi.fas.core.MainApp;
 import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
-import edu.aku.hassannaqvi.fas.databinding.ActivitySectionKBinding;
+import edu.aku.hassannaqvi.fas.databinding.ActivitySection3eBinding;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
 import edu.aku.hassannaqvi.fas.ui.tool1.SectionDActivity;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
-public class SectionKActivity extends AppCompatActivity {
+public class Section3E extends AppCompatActivity {
 
-    ActivitySectionKBinding bi;
+    ActivitySection3eBinding bi;
     private Forms fc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_k);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section3e);
         bi.setCallback(this);
 
         setContentUI();
         setListeners();
     }
+
+
     private void setListeners() {
 
 //        bi.hfa1332.addTextChangedListener(new TextWatcher() {
@@ -122,21 +124,33 @@ public class SectionKActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() throws JSONException {
+
         JSONObject json = new JSONObject();
-        json.put("ax21a", bi.ax21a.getText().toString());
-        json.put("ax21b", bi.ax21b.getText().toString());
-        json.put("ax21c", bi.ax21c.getText().toString());
-        json.put("ax21d", bi.ax21d.getText().toString());
-        json.put("ax21e", bi.ax21e.getText().toString());
-        json.put("ax21f", bi.ax21f.getText().toString());
-        json.put("ax21g", bi.ax21g.getText().toString());
-        json.put("ax22", bi.ax22.getText().toString());
+
+        json.put("ax21a", bi.ax21a.getText().toString().trim().isEmpty() ? "-1" : bi.ax21a.getText().toString());
+
+        json.put("ax21b", bi.ax21b.getText().toString().trim().isEmpty() ? "-1" : bi.ax21b.getText().toString());
+
+        json.put("ax21c", bi.ax21c.getText().toString().trim().isEmpty() ? "-1" : bi.ax21c.getText().toString());
+
+        json.put("ax21d", bi.ax21d.getText().toString().trim().isEmpty() ? "-1" : bi.ax21d.getText().toString());
+
+        json.put("ax21e", bi.ax21e.getText().toString().trim().isEmpty() ? "-1" : bi.ax21e.getText().toString());
+
+        json.put("ax21f", bi.ax21f.getText().toString().trim().isEmpty() ? "-1" : bi.ax21f.getText().toString());
+
+        json.put("ax21g", bi.ax21g.getText().toString().trim().isEmpty() ? "-1" : bi.ax21g.getText().toString());
+
+        json.put("ax22", bi.ax22.getText().toString().trim().isEmpty() ? "-1" : bi.ax22.getText().toString());
+
         json.put("ax23", bi.ax23a.isChecked() ? "1"
                 : bi.ax23b.isChecked() ? "2"
                 : bi.ax23c.isChecked() ? "3"
                 : bi.ax23d.isChecked() ? "98"
                 : "-1");
-        json.put("ax23cx", bi.ax23cx.getText().toString());
+
+        json.put("ax23cx", bi.ax23cx.getText().toString().trim().isEmpty() ? "-1" : bi.ax23cx.getText().toString());
+
         json.put("ax24", bi.ax24a.isChecked() ? "1"
                 : bi.ax24b.isChecked() ? "2"
                 : bi.ax24c.isChecked() ? "3"
@@ -144,32 +158,33 @@ public class SectionKActivity extends AppCompatActivity {
                 : bi.ax24e.isChecked() ? "5"
                 : bi.ax24f.isChecked() ? "98"
                 : "-1");
-        json.put("ax25",
-                bi.ax25a.isChecked() ? "1" :
-                        bi.ax25b.isChecked() ? "2" :
-                                bi.ax25c.isChecked() ? "3" :
-                                        bi.ax25d.isChecked() ? "4" :
-                                                bi.ax25e.isChecked() ? "5" :
-                                                        bi.ax25f.isChecked() ? "98" :
-                                                                "-1");
-        json.put("ax26",
-                bi.ax26a.isChecked() ? "1" :
-                        bi.ax26b.isChecked() ? "2" :
-                                bi.ax26c.isChecked() ? "66" :
-                                        bi.ax26d.isChecked() ? "98" :
-                                                "-1");
-        json.put("ax27",
-                bi.ax27a.isChecked() ? "1" :
-                        bi.ax27b.isChecked() ? "2" :
-                                bi.ax27c.isChecked() ? "3" :
-                                        bi.ax27d.isChecked() ? "98" :
-                                                "-1");
-        json.put("ax271",
-                bi.ax271a.isChecked() ? "1" :
-                        bi.ax271b.isChecked() ? "2" :
-                                bi.ax271c.isChecked() ? "96" :
-                                        "-1");
-        json.put("ax271cx", bi.ax271cx.getText().toString());
+
+        json.put("ax25", bi.ax25a.isChecked() ? "1"
+                : bi.ax25b.isChecked() ? "2"
+                : bi.ax25c.isChecked() ? "3"
+                : bi.ax25d.isChecked() ? "4"
+                : bi.ax25e.isChecked() ? "5"
+                : bi.ax25f.isChecked() ? "98"
+                : "-1");
+
+        json.put("ax26", bi.ax26a.isChecked() ? "1"
+                : bi.ax26b.isChecked() ? "2"
+                : bi.ax26c.isChecked() ? "66"
+                : bi.ax26d.isChecked() ? "98"
+                : "-1");
+
+        json.put("ax27", bi.ax27a.isChecked() ? "1"
+                : bi.ax27b.isChecked() ? "2"
+                : bi.ax27c.isChecked() ? "3"
+                : bi.ax27d.isChecked() ? "98"
+                : "-1");
+
+        json.put("ax271", bi.ax271a.isChecked() ? "1"
+                : bi.ax271b.isChecked() ? "2"
+                : bi.ax271c.isChecked() ? "96"
+                : "-1");
+
+        json.put("ax271cx", bi.ax271cx.getText().toString().trim().isEmpty() ? "-1" : bi.ax271cx.getText().toString());
 
     }
 
