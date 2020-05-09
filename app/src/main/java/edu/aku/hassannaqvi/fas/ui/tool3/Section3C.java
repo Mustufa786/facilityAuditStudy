@@ -138,7 +138,7 @@ public class Section3C extends AppCompatActivity {
                 : bi.mt702a1g.isChecked() ? "96"
                 : "-1");
 
-        json.put("mt7_02a1gx", bi.mt702a1gx.getText().toString());
+        json.put("mt7_02a1gx", bi.mt702a1gx.getText().toString().trim().isEmpty() ? "-1" : bi.mt702a1gx.getText().toString());
 
         json.put("mt7_03", bi.mt703a.isChecked() ? "1"
                 : bi.mt703b.isChecked() ? "2"
@@ -154,7 +154,7 @@ public class Section3C extends AppCompatActivity {
                 : bi.mt703a1g.isChecked() ? "96"
                 : "-1");
 
-        json.put("mt7_03a1gx", bi.mt703a1gx.getText().toString());
+        json.put("mt7_03a1gx", bi.mt703a1gx.getText().toString().trim().isEmpty() ? "-1" : bi.mt703a1gx.getText().toString());
 
         json.put("mt7_03b1", bi.mt703b1a.isChecked() ? "1"
                 : bi.mt703b1b.isChecked() ? "2"
@@ -165,7 +165,7 @@ public class Section3C extends AppCompatActivity {
                 : bi.mt703b1g.isChecked() ? "96"
                 : "-1");
 
-        json.put("mt7_03b1gx", bi.mt703b1gx.getText().toString());
+        json.put("mt7_03b1gx", bi.mt703b1gx.getText().toString().trim().isEmpty() ? "-1" : bi.mt703b1gx.getText().toString());
 
         fc.setSa5(String.valueOf(json));
 
