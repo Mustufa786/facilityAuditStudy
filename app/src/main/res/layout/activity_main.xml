@@ -138,6 +138,7 @@
 
 
                     <android.support.v7.widget.CardView
+                        style="@style/CardView.Dark"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
@@ -189,6 +190,7 @@
                         android:layout_height="match_parent" />
 
                     <android.support.v7.widget.CardView
+                        style="@style/CardView.Dark"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
@@ -249,6 +251,7 @@
                     android:orientation="horizontal">
 
                     <android.support.v7.widget.CardView
+                        style="@style/CardView.Dark"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"
@@ -286,7 +289,13 @@
                     </android.support.v7.widget.CardView>
 
 
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+
                     <android.support.v7.widget.CardView
+                        style="@style/CardView.Dark"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_margin="@dimen/cardview_compat_inset_shadow"

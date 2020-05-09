@@ -26,7 +26,7 @@
             android:orientation="vertical">
 
             <!-- ax41  Input-Numeric   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax41"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -54,10 +54,10 @@
                         app:minValue="0"
                         app:type="range" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax411  Input-Numeric   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax411"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -85,10 +85,10 @@
                         app:minValue="0"
                         app:type="range" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax42  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax42"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -134,10 +134,10 @@
                             android:text="@string/ax42d" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax43  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax43"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -177,10 +177,10 @@
                             android:text="@string/ax43c" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax44  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax44"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -254,7 +254,7 @@
                             android:text="@string/ax44g" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <LinearLayout
                 android:layout_width="match_parent"

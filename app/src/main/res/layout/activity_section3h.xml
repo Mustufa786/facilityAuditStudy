@@ -25,7 +25,7 @@
             android:orientation="vertical">
 
             <!-- ax51  Title   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax51"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -59,10 +59,10 @@
                         android:layout_height="wrap_content"
                         android:text="@string/ax54" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax52a  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax52a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -78,10 +78,10 @@
                         android:layout_marginTop="12dp"
                         android:text="@string/ax52a" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax52b  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax52b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -97,10 +97,10 @@
                         android:layout_marginTop="12dp"
                         android:text="@string/ax52b" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax53a  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax53a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -116,10 +116,10 @@
                         android:layout_marginTop="12dp"
                         android:text="@string/ax53a" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax53b  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax53b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -135,10 +135,10 @@
                         android:layout_marginTop="12dp"
                         android:text="@string/ax53b" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax54a  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax54a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -154,10 +154,10 @@
                         android:layout_marginTop="12dp"
                         android:text="@string/ax54a" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax54b  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax54b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -173,10 +173,10 @@
                         android:layout_marginTop="12dp"
                         android:text="@string/ax54b" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax55  Title   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax55"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -216,10 +216,10 @@
                         android:layout_height="wrap_content"
                         android:text="@string/ax59" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax56a  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax56a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -235,10 +235,10 @@
                         android:layout_marginTop="12dp"
                         android:text="@string/ax56a" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax56b  Input   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax56b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -261,10 +261,10 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/ax56b" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax57a  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax57a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -280,10 +280,10 @@
                         android:layout_marginTop="12dp"
                         android:text="@string/ax57a" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax57b  Input   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax57b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -306,10 +306,10 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/ax57b" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax58a  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax58a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -325,10 +325,10 @@
                         android:layout_marginTop="12dp"
                         android:text="@string/ax58a" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax58b  Input   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax58b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -351,10 +351,10 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/ax58b" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax59a  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax59a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -370,10 +370,10 @@
                         android:layout_marginTop="12dp"
                         android:text="@string/ax59a" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax59b  Input   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax59b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -396,7 +396,7 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/ax59b" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <LinearLayout
                 android:layout_width="match_parent"

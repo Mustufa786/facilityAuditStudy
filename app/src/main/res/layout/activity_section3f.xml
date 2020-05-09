@@ -25,7 +25,7 @@
             android:orientation="vertical">
 
             <!-- ax31  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax31"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -72,10 +72,10 @@
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax310  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax310"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -121,10 +121,10 @@
                             android:text="@string/ax310d" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax311  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax311"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -186,10 +186,10 @@
                             android:text="@string/ax311e" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax312  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax312"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -229,10 +229,10 @@
                             android:text="@string/ax312c" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax313  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax313"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -290,10 +290,10 @@
                             android:text="@string/ax313f" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax32  Input   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax32"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -322,10 +322,10 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/ax321" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax33  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax33"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -369,10 +369,10 @@
                             android:text="@string/ax33b" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax331  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax331"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -434,10 +434,10 @@
                             android:visibility='@{ax331e.checked? View.VISIBLE : View.GONE}' />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax34  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax34"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -499,10 +499,10 @@
                             android:text="@string/ax34e" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax341  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax341"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -570,10 +570,10 @@
                             android:text="@string/ax341f" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax35  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax35"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -619,10 +619,10 @@
                             android:text="@string/ax35d" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax36  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax36"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -662,10 +662,10 @@
                             android:text="@string/ax36c" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax37  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax37"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -705,10 +705,10 @@
                             android:text="@string/ax37c" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax38  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax38"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -770,10 +770,10 @@
                             android:text="@string/ax38e" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- ax39  Radio   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVax39"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -825,7 +825,7 @@
                             android:text="@string/ax39e" />
                     </RadioGroup>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <LinearLayout
                 android:layout_width="match_parent"

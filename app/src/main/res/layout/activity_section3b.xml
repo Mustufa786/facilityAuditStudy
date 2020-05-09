@@ -24,7 +24,7 @@
             style="@style/vlinerlayout">
 
             <!-- hf2_23  Input   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVhf2_23"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -47,10 +47,10 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/hf2_23" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- hf2_24  Input   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVhf2_24"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -73,10 +73,10 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/hf2_24" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- hf2_25  Input   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVhf2_25"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -99,10 +99,10 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/hf2_25" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- hf2_26  Input   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVhf2_26"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -125,10 +125,10 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/hf2_26" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- hf2_27  Input   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVhf2_27"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -151,10 +151,10 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/hf2_27" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- hf2_28  Input   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVhf2_28"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -177,10 +177,10 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/hf2_28" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- hf2_29  Input   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVhf2_29"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -203,10 +203,10 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/hf2_29" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
             <!-- hf2_30  Input   -->
-            <androidx.cardview.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/fldGrpCVhf2_30"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -231,7 +231,7 @@
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+            </android.support.v7.widget.CardView>
 
 
             <LinearLayout
