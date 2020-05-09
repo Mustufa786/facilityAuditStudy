@@ -16,20 +16,20 @@ import edu.aku.hassannaqvi.fas.core.CONSTANTS;
 import edu.aku.hassannaqvi.fas.core.MainApp;
 import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
-import edu.aku.hassannaqvi.fas.databinding.ActivitySectionJBinding;
+import edu.aku.hassannaqvi.fas.databinding.ActivitySection3dBinding;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
 import edu.aku.hassannaqvi.fas.ui.tool1.SectionDActivity;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
-public class SectionJActivity extends AppCompatActivity {
+public class Section3D extends AppCompatActivity {
 
-    ActivitySectionJBinding bi;
+    ActivitySection3dBinding bi;
     private Forms fc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_j);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section3d);
         bi.setCallback(this);
 
         setContentUI();
@@ -122,13 +122,16 @@ public class SectionJActivity extends AppCompatActivity {
         return false;
     }
 
+
     private void SaveDraft() throws JSONException {
 
         JSONObject json = new JSONObject();
 
-        json.put("ax11", bi.ax11.getText().toString());
-        json.put("ax12", bi.ax12.getText().toString());
-        json.put("ax13", bi.ax13.getText().toString());
+        json.put("ax11", bi.ax11.getText().toString().trim().isEmpty() ? "-1" : bi.ax11.getText().toString());
+
+        json.put("ax12", bi.ax12.getText().toString().trim().isEmpty() ? "-1" : bi.ax12.getText().toString());
+
+        json.put("ax13", bi.ax13.getText().toString().trim().isEmpty() ? "-1" : bi.ax13.getText().toString());
 
         json.put("ax14", bi.ax14a.isChecked() ? "1"
                 : bi.ax14b.isChecked() ? "2"
@@ -136,30 +139,34 @@ public class SectionJActivity extends AppCompatActivity {
                 : bi.ax14d.isChecked() ? "4"
                 : "-1");
 
-        json.put("ax15", bi.ax15.getText().toString());
+        json.put("ax15", bi.ax15.getText().toString().trim().isEmpty() ? "-1" : bi.ax15.getText().toString());
 
         json.put("ax16", bi.ax16a.isChecked() ? "1"
                 : bi.ax16b.isChecked() ? "2"
                 : bi.ax16c.isChecked() ? "3"
                 : "-1");
 
-        json.put("ax16bx", bi.ax16bx.getText().toString());
+        json.put("ax16bx", bi.ax16bx.getText().toString().trim().isEmpty() ? "-1" : bi.ax16bx.getText().toString());
 
-        json.put("ax16cx", bi.ax16cx.getText().toString());
+        json.put("ax16cx", bi.ax16cx.getText().toString().trim().isEmpty() ? "-1" : bi.ax16cx.getText().toString());
 
         fc.setSa3(String.valueOf(json));
     }
+
 
     private boolean formValidation() {
         return ValidatorClass.EmptyCheckingContainer(this, bi.GrpName);
     }
 
+
     public void BtnEnd() {
         MainApp.endActivityDirectRouting(this, this, EndingActivity.class, false, fc);
     }
+
 
     @Override
     public void onBackPressed() {
         Toast.makeText(this, "You can't go back", Toast.LENGTH_SHORT).show();
     }
+
 }
