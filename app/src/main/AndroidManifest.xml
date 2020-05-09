@@ -27,7 +27,7 @@
 
         <activity android:name=".ui.tool3.SectionNActivity"></activity>
         <activity android:name=".ui.tool3.SectionMActivity" />
-        <activity android:name=".ui.tool3.SectionLActivity" />
+        <activity android:name=".ui.tool3.Section3F" />
         <activity android:name=".ui.tool3.Section3D"></activity>
         <activity
             android:name=".ui.SplashscreenActivity"
