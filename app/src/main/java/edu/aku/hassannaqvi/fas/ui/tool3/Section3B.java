@@ -16,19 +16,20 @@ import edu.aku.hassannaqvi.fas.core.CONSTANTS;
 import edu.aku.hassannaqvi.fas.core.MainApp;
 import edu.aku.hassannaqvi.fas.data.DAO.FormsDAO;
 import edu.aku.hassannaqvi.fas.data.entities.Forms;
-import edu.aku.hassannaqvi.fas.databinding.ActivitySection3aBinding;
+import edu.aku.hassannaqvi.fas.databinding.ActivitySection3bBinding;
 import edu.aku.hassannaqvi.fas.ui.EndingActivity;
 import edu.aku.hassannaqvi.fas.validation.ValidatorClass;
 
-public class Section3A extends AppCompatActivity {
 
-    private ActivitySection3aBinding bi;
+public class Section3B extends AppCompatActivity {
+
+    private ActivitySection3bBinding bi;
     private Forms fc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section3a);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section3b);
         bi.setCallback(this);
 
         setContentUI();
@@ -108,30 +109,14 @@ public class Section3A extends AppCompatActivity {
     private void SaveDraft() throws JSONException {
 
         JSONObject json = new JSONObject();
-
-        json.put("hf1_00", bi.hf100a.isChecked() ? "2"
-                : bi.hf100b.isChecked() ? "3"
-                : bi.hf100v.isChecked() ? "4"
-                : "-1");
-
-        json.put("hf1_01", bi.hf101.getText().toString());
-        json.put("hf1_02", bi.hf102.getText().toString());
-        json.put("hf1_03a", bi.hf103a.getText().toString());
-        json.put("hf1_03b", bi.hf103b.getText().toString());
-        json.put("hf1_03c", bi.hf103c.getText().toString());
-        json.put("hf1_03d", bi.hf103d.getText().toString());
-
-        json.put("hf1_04", bi.hf104a.isChecked() ? "1"
-                : bi.hf104b.isChecked() ? "2"
-                : bi.hf104c.isChecked() ? "96"
-                : "-1");
-        json.put("hf1_04cx", bi.hf104cx.getText().toString());
-
-        json.put("hf1_05", bi.hf105a.isChecked() ? "1"
-                : bi.hf105b.isChecked() ? "2"
-                : bi.hf105c.isChecked() ? "3"
-                : bi.hf105d.isChecked() ? "98"
-                : "-1");
+        json.put("hf2_23", bi.hf223.getText().toString());
+        json.put("hf2_24", bi.hf224.getText().toString());
+        json.put("hf2_25", bi.hf225.getText().toString());
+        json.put("hf2_26", bi.hf226.getText().toString());
+        json.put("hf2_27", bi.hf227.getText().toString());
+        json.put("hf2_28", bi.hf228.getText().toString());
+        json.put("hf2_29", bi.hf229.getText().toString());
+        json.put("hf2_30", bi.hf230.getText().toString());
 
         fc.setSa5(String.valueOf(json));
 

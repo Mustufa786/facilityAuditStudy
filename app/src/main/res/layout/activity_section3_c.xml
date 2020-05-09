@@ -1,0 +1,484 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.fas.ui.tool3.Section3C" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:scrollbarSize="10dip"
+        tools:context=".ui.tool3.Section3C">
+
+        <LinearLayout
+            android:id="@+id/GrpName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- mt7_01  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVmt7_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/mt7_01" />
+
+                    <RadioGroup
+                        android:id="@+id/mt7_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/mt7_01a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_01a" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_01b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_01b" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_01c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_01c" />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- mt7_01a1  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVmt7_01a1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/mt7_01a1" />
+
+                    <RadioGroup
+                        android:id="@+id/mt7_01a1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/mt7_01aa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_01aa" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_01ab"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_01ab" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_01ac"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_01ac" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_01ad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_01ad" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_01ae"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_01ae" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_01af"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_01af" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_01ag"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_01ag" />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- mt7_02  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVmt7_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/mt7_02" />
+
+                    <RadioGroup
+                        android:id="@+id/mt7_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/mt7_02a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_02a" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_02b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_02b" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_02c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_02c" />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- mt7_02a1  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVmt7_02a1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/mt7_02a1" />
+
+                    <RadioGroup
+                        android:id="@+id/mt7_02a1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/mt7_02a1a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_02a1a" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_02a1b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_02a1b" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_02a1c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_02a1c" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_02a1d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_02a1d" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_02a1e"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_02a1e" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_02a1f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_02a1f" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_02a1g"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_02a1g" />
+
+                        <EditText
+                            android:id="@+id/mt7_02a1gx"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:layout_marginBottom="12dp"
+                            android:hint="@string/mt7_02a1g"
+                            android:tag="mt7_02a1g"
+                            android:text='@{mt7_02a1g.checked? mt7_02a1gx.getText().toString() : "-1"}'
+                            android:visibility='@{mt7_02a1g.checked? View.VISIBLE : View.GONE}' />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- mt7_03  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVmt7_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/mt7_03" />
+
+                    <RadioGroup
+                        android:id="@+id/mt7_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/mt7_03a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03a" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03b" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03c" />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- mt7_03a1  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVmt7_03a1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/mt7_03a1" />
+
+                    <RadioGroup
+                        android:id="@+id/mt7_03a1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/mt7_03a1a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03a1a" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03a1b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03a1b" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03a1c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03a1c" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03a1d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03a1d" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03a1e"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03a1e" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03a1f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03a1f" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03a1g"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03a1g" />
+
+                        <EditText
+                            android:id="@+id/mt7_03a1gx"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:layout_marginBottom="12dp"
+                            android:hint="@string/mt7_03a1g"
+                            android:tag="mt7_03a1g"
+                            android:text='@{mt7_03a1g.checked? mt7_03a1gx.getText().toString() : "-1"}'
+                            android:visibility='@{mt7_03a1g.checked? View.VISIBLE : View.GONE}' />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- mt7_03b1  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVmt7_03b1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/mt7_03b1" />
+
+                    <RadioGroup
+                        android:id="@+id/mt7_03b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/mt7_03b1a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03b1a" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03b1b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03b1b" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03b1c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03b1c" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03b1d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03b1d" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03b1e"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03b1e" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03b1f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03b1f" />
+
+                        <RadioButton
+                            android:id="@+id/mt7_03b1g"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mt7_03b1g" />
+
+                        <EditText
+                            android:id="@+id/mt7_03b1gx"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:layout_marginBottom="12dp"
+                            android:hint="@string/mt7_03b1g"
+                            android:tag="mt7_03b1g"
+                            android:text='@{mt7_03b1g.checked? mt7_03b1gx.getText().toString() : "-1"}'
+                            android:visibility='@{mt7_03b1g.checked? View.VISIBLE : View.GONE}' />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_End"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save" />
+                <!--'onClick' for btn_End will NOT change and always call 'endInterview'-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

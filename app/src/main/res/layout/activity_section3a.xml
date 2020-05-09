@@ -27,8 +27,7 @@
             <!-- hf1_00  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVhf1_00"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -74,8 +73,7 @@
             <!-- hf1_01  Input   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVhf1_01"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -94,14 +92,16 @@
                         android:layout_height="56dp"
                         android:layout_marginBottom="12dp"
                         android:hint="@string/hf1_01" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
+
 
             <!-- hf1_02  Input   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVhf1_02"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -120,14 +120,16 @@
                         android:layout_height="56dp"
                         android:layout_marginBottom="12dp"
                         android:hint="@string/hf1_02" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
+
 
             <!-- hf1_03  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVhf1_03"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -196,11 +198,11 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- hf1_04  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVhf1_04"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -252,11 +254,11 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- hf1_05  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVhf1_05"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -304,12 +306,11 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/hlinerlayout"
                 android:layout_gravity="end"
-                android:layout_marginTop="24dp"
-                android:orientation="horizontal">
+                android:layout_marginTop="24dp">
 
                 <Button
                     android:id="@+id/btn_End"
@@ -328,6 +329,10 @@
                     android:text="Save" />
                 <!--'onClick' for btn_End will NOT change and always call 'endInterview'-->
             </LinearLayout>
+
+
         </LinearLayout>
+
     </ScrollView>
+
 </layout>
