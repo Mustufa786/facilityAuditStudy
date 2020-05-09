@@ -110,14 +110,22 @@ public class Section3B extends AppCompatActivity {
     private void SaveDraft() throws JSONException {
 
         JSONObject json = new JSONObject();
-        json.put("hf2_23", bi.hf223.getText().toString());
-        json.put("hf2_24", bi.hf224.getText().toString());
-        json.put("hf2_25", bi.hf225.getText().toString());
-        json.put("hf2_26", bi.hf226.getText().toString());
-        json.put("hf2_27", bi.hf227.getText().toString());
-        json.put("hf2_28", bi.hf228.getText().toString());
-        json.put("hf2_29", bi.hf229.getText().toString());
-        json.put("hf2_30", bi.hf230.getText().toString());
+
+        json.put("hf2_23", bi.hf223.getText().toString().trim().isEmpty() ? "-1" : bi.hf223.getText().toString());
+
+        json.put("hf2_24", bi.hf224.getText().toString().trim().isEmpty() ? "-1" : bi.hf224.getText().toString());
+
+        json.put("hf2_25", bi.hf225.getText().toString().trim().isEmpty() ? "-1" : bi.hf225.getText().toString());
+
+        json.put("hf2_26", bi.hf226.getText().toString().trim().isEmpty() ? "-1" : bi.hf226.getText().toString());
+
+        json.put("hf2_27", bi.hf227.getText().toString().trim().isEmpty() ? "-1" : bi.hf227.getText().toString());
+
+        json.put("hf2_28", bi.hf228.getText().toString().trim().isEmpty() ? "-1" : bi.hf228.getText().toString());
+
+        json.put("hf2_29", bi.hf229.getText().toString().trim().isEmpty() ? "-1" : bi.hf229.getText().toString());
+
+        json.put("hf2_30", bi.hf230.getText().toString().trim().isEmpty() ? "-1" : bi.hf230.getText().toString());
 
         fc.setSa5(String.valueOf(json));
 
