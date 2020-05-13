@@ -22,13 +22,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.tool3.Section3C"></activity>
-        <activity android:name=".ui.tool3.Section3B" />
 
-        <activity android:name=".ui.tool3.Section3H"></activity>
-        <activity android:name=".ui.tool3.Section3G" />
-        <activity android:name=".ui.tool3.Section3F" />
-        <activity android:name=".ui.tool3.Section3D"></activity>
+
         <activity
             android:name=".ui.SplashscreenActivity"
             android:screenOrientation="portrait">
@@ -38,6 +33,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
         <activity android:name="im.dino.dbinspector.activities.DbInspectorActivity">
             <intent-filter tools:node="removeAll">
                 <action android:name="android.intent.action.MAIN" />
@@ -45,93 +42,113 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+
         <activity
             android:name=".ui.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.EndingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
+
         <activity
             android:name=".ui.MainActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".ui.tool1.InfoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool1.SectionCActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool1.SectionDActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool1.SectionD02Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool1.SectionD03Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool1.SectionD04Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool1.SectionD05Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool1.SectionEActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool1.SectionFActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool1.SectionGActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool1.SectionHActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool1.SectionIActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool2.SectionA_tool_2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool2.SectionB_tool_2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool2.SectionC_tool_2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".ui.tool2.SectionC2_tool_2Activity"
             android:screenOrientation="portrait"
@@ -149,6 +166,43 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.tool3.Section3B"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.tool3.Section3C"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.tool3.Section3D"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.tool3.Section3F"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.tool3.Section3G"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.tool3.Section3H"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="adjustResize" />
+
     </application>
 
 </manifest>
